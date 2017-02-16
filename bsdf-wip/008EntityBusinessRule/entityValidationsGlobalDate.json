@@ -1,0 +1,74 @@
+{
+	"id": "entityValidationsGlobalDate",
+	"name": "Entity Validations Global Date",
+	"entityModelInfo": {
+		"entityModelType": "businessRule"
+	},
+	"systemInfo": {
+		"tenantId": "bsdf"
+	},
+	"properties": {
+		"modifiedByService": "modelservice",
+		"modifiedBy": "joe",
+		"modifiedDate": "2016-07-16T18:33:52.412-07:00"
+	},
+	"data": {
+		"ctxInfo": [{
+			"ctxGroup": {
+				"list": "self"
+			},
+			"attributes": {
+				"name": {
+					"values": [{
+						"value": "Entity Validations Global Date"
+					}]
+				},
+				"type": {
+					"values": [{
+						"value": "keyword"
+					}]
+				},
+				"executionMode": {
+					"values": [{
+						"value": "async"
+					}]
+				},
+				"isSystemRule": {
+					"values": [{
+						"value": "false"
+					}]
+				},
+				"isDraft": {
+					"values": [{
+						"value": "false"
+					}]
+				},
+				"enabled": {
+					"values": [{
+						"value": "true"
+					}]
+				},
+				"isDeleted": {
+					"values": [{
+						"value": "false"
+					}]
+				},
+				"description": {
+					"values": [{
+						"value": "When one of the source attributes is being updated, the new data value is checked against the following rule: LaunchDate < RelaunchDate < ExitDate If the chronological order is not maintained, the update will be rejected."
+					}]
+				},
+				"dependencies": {
+					"values": [{
+						"value": ""
+					}]
+				},
+				"definition": {
+					"values": [{
+						"value": "iif[GetAttributeValue[\"global launch date\"]<GetAttributeValue[\"local launch date\"] AND GetAttributeValue[\"local launch date\"] < GetAttributeValue[\"local exit date\"] AND GetAttributeValue[\"global launch date\"] < GetAttributeValue[\"local exit date\"], true, AddAttributeError[]]"
+					}]
+				}
+			}
+		}]
+	}
+}

@@ -1,0 +1,300 @@
+{
+	"id": "PV Workflow",
+	"dataObjectInfo": {
+		"dataObjectType": "workflow",
+		"dataObjectDomain": "workflowConstructs"
+	},
+	"systemInfo": {
+		"tenantId": "bsdf"
+	},
+	"data": {
+		"ctxInfo": [{
+			"ctxGroup": {
+				
+			},
+			"attributes": {
+				"workflows": {
+					"groups": [{
+						"workflowName": {
+							"values": [{
+								"value": "PV Workflow"
+							}]
+						},
+						"workflowVersion": {
+							"values": [{
+								"value": "V1.1"
+							}]
+						},
+						"published": {
+							"values": [{
+								"value": true
+							}]
+						},
+						"activities": {
+							"groups": [{
+								"activityGuid": {
+									"values": [{
+										"value": "activityGuidId1"
+									}]
+								},
+								"activityName": {
+									"values": [{
+										"value": "1. Create SPGR PV"
+									}]
+								},
+								"assignmentType": {
+									"values": [{
+										"value": "Queue"
+									}]
+								},
+								"allowedRoles": {
+									"values": [{
+										"value": "PIM_PM_GBU"
+									},
+									{
+										"value": "PIM_ADMIN"
+									}]
+								},
+								"allowedUsers": {
+									"values": []
+								},
+								"actions": {
+									"groups": [{
+										"actionName": {
+											"values": [{
+												"value": "done"
+											}]
+										},
+										"actionText": {
+											"values": [{
+												"value": "Done"
+											}]
+										},
+										"actionIcon": {
+											"values": [{
+												"value": "done.png"
+											}]
+										},
+										"commentsMode": {
+											"values": [{
+												"value": "None"
+											}]
+										}
+									}]
+								}
+							},
+							{
+								"activityGuid": {
+									"values": [{
+										"value": "activityGuidId2a"
+									}]
+								},
+								"activityName": {
+									"values": [{
+										"value": "2a. Start GBU Data Maintenance"
+									}]
+								},
+								"assignmentType": {
+									"values": [{
+										"value": "Queue"
+									}]
+								},
+								"allowedRoles": {
+									"values": [{
+										"value": "PIM_PM_GBU"
+									},
+									{
+										"value": "PIM_ADMIN"
+									}]
+								},
+								"allowedUsers": {
+									"values": []
+								},
+								"actions": {
+									"groups": [{
+										"actionName": {
+											"values": [{
+												"value": "done"
+											}]
+										},
+										"actionText": {
+											"values": [{
+												"value": "Done"
+											}]
+										},
+										"actionIcon": {
+											"values": [{
+												"value": "done.png"
+											}]
+										},
+										"commentsMode": {
+											"values": [{
+												"value": "None"
+											}]
+										}
+									}]
+								}
+							},
+							{
+								"activityGuid": {
+									"values": [{
+										"value": "activityGuidId4"
+									}]
+								},
+								"activityName": {
+									"values": [{
+										"value": "2b. Assign GBU Media Assets"
+									}]
+								},
+								"assignmentType": {
+									"values": [{
+										"value": "Queue"
+									}]
+								},
+								"allowedRoles": {
+									"values": [{
+										"value": "PIM_PM_GBU"
+									},
+									{
+										"value": "PIM_ADMIN"
+									}]
+								},
+								"allowedUsers": {
+									"values": []
+								},
+								"actions": {
+									"groups": [{
+										"actionName": {
+											"values": [{
+												"value": "done"
+											}]
+										},
+										"actionText": {
+											"values": [{
+												"value": "Done"
+											}]
+										},
+										"actionIcon": {
+											"values": [{
+												"value": "done.png"
+											}]
+										},
+										"commentsMode": {
+											"values": [{
+												"value": "None"
+											}]
+										}
+									}]
+								}
+							},
+							{
+								"activityGuid": {
+									"values": [{
+										"value": "activityGuidId5"
+									}]
+								},
+								"activityName": {
+									"values": [{
+										"value": "2c. R&D Maintain INCI"
+									}]
+								},
+								"assignmentType": {
+									"values": [{
+										"value": "Queue"
+									}]
+								},
+								"allowedRoles": {
+									"values": [{
+										"value": "PIM_PM_GBU"
+									},
+									{
+										"value": "PIM_ADMIN"
+									}]
+								},
+								"allowedUsers": {
+									"values": []
+								},
+								"actions": {
+									"groups": [{
+										"actionName": {
+											"values": [{
+												"value": "done"
+											}]
+										},
+										"actionText": {
+											"values": [{
+												"value": "Done"
+											}]
+										},
+										"actionIcon": {
+											"values": [{
+												"value": "done.png"
+											}]
+										},
+										"commentsMode": {
+											"values": [{
+												"value": "None"
+											}]
+										}
+									}]
+								}
+							},
+							{
+								"activityGuid": {
+									"values": [{
+										"value": "activityGuidId3"
+									}]
+								},
+								"activityName": {
+									"values": [{
+										"value": "3. Release PV Data for MLU"
+									}]
+								},
+								"assignmentType": {
+									"values": [{
+										"value": "Queue"
+									}]
+								},
+								"allowedRoles": {
+									"values": [{
+										"value": "PIM_PM_GBU"
+									},
+									{
+										"value": "PIM_ADMIN"
+									}]
+								},
+								"allowedUsers": {
+									"values": []
+								},
+								"actions": {
+									"groups": [{
+										"actionName": {
+											"values": [{
+												"value": "done"
+											}]
+										},
+										"actionText": {
+											"values": [{
+												"value": "Done"
+											}]
+										},
+										"actionIcon": {
+											"values": [{
+												"value": "done.png"
+											}]
+										},
+										"commentsMode": {
+											"values": [{
+												"value": "None"
+											}]
+										}
+									}]
+								}
+							}]
+						}
+					}]
+				}
+			}
+		}]
+	}
+}

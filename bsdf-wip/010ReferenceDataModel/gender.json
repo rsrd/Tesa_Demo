@@ -1,0 +1,34 @@
+{
+	"id": "gender",
+	"dataObjectInfo": {
+		"dataObjectType": "entitymanagemodel",
+		"dataObjectDomain": "entityModel"
+	},
+	"systemInfo": {
+		"tenantId": "bsdf"
+	},
+	"data": {
+		"ctxInfo": [{
+			"ctxGroup": [{
+				"ctxType": "self"
+			}],
+			"attributes": [{
+				"attributeName": "value",
+				"attributePath": "attributes/value",
+				"properties": {
+					"attributeType": "string",
+					"isReusable": false
+				}
+			},
+			{
+				"attributeName": "valuekey",
+				"attributePath": "attributes/valuekey",
+				"properties": {
+					"attributeType": "string",
+					"isReferenceType": true,
+					"isReusable": false
+				}
+			}]
+		}]
+	}
+}
