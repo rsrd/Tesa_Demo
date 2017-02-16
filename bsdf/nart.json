@@ -2,6 +2,506 @@
     "entityOperationResponse": {
         "entities": [
             {
+                "id": "bsdf_entity1",
+                "systemInfo": {
+                    "tenantId": "bsdf"
+                },
+                "data": {
+                    "ctxInfo": [
+                        {
+                            "ctxGroup": {
+                                "list": "productMaster",
+                                "classification": "nivea/niveaBodyCare/niveaBody/nbodyEssential/nbody/ess/nourishingMilkDry"
+                            },
+                            "attributes": {
+                                "csapDescriptionOfNart": {
+                                    "alias": "Description Of Nart",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapDescriptionOfNart",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "bsdf_entity1 - NBODY ESS RCH_CRG_MLK 250ML"
+                                        }
+                                    ]
+                                },
+                                "cpimProductName": {
+                                    "alias": "Product Name",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimProductName",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "bsdf entity 1"
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimProductName",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Weiches Shampoo u. Bad"
+                                        }
+                                    ]
+                                },
+                                "cpimWebsiteEmotionalDescription": {
+                                    "alias": "Website Emotional Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimWebsiteEmotionalDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Superior sun care for your kids"
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimWebsiteEmotionalDescription",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Superior Sonnenbetreuung für Ihre Kinder"
+                                        }
+                                    ]
+                                },
+                                "cpimWarningText": {
+                                    "alias": "Warning Text",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimWarningText",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "IMPORTANT USAGE INSTRUCTIONS Apply generously before sun exposure and reapply frequently, especially after swimming, perspiring or toweling to maintain theoriginal protection • Reducing the quantity will lower the level of protection significantly • Do not stay too long in the sun, even while using a sunscreen product; Over-exposure to the sun is a serious health threat • Keep babies and young children out of direct sunlight • Allow to absorb completely and avoid direct contact with textiles and hard surfaces to prevent staining • Skin compatibility dermatologically proven."
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimWarningText",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "WICHTIGE BEDIENUNGSANLEITUNGVor der Sonnenbestrahlung großzügig auftragen und häufig wieder auftragen, besonders nach dem Schwimmen, Schwitzen oder Frotten, um den ursprünglichen Schutz zu erhalten. • Verringerung der Menge senkt das Schutzniveau erheblich. • Bleiben Sie nicht zu lange in der Sonne, auch nicht unter Verwendung eines Sonnenschutzmittels. Überbelichtung der Sonne ist eine ernste Gesundheitsgefahr • Halten Sie Babys und Kleinkinder vor direkter Sonneneinstrahlung • Lassen Sie sich vollständig absorbieren und vermeiden Sie direkten Kontakt mit Textilien und harten Oberflächen, um Flecken zu vermeiden • Hautverträglichkeit dermatologisch bewiesen."
+                                        }
+                                    ]
+                                },
+                                "csapApplicationForms": {
+                                    "alias": "Application Forms",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapApplicationForms",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "PUMPS / Pump Spray"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapApplicationForms",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "PUMPEN / Pumpspray"
+                                        }
+                                    ]
+                                },
+                                "csapApplicationFormsDescription": {
+                                    "alias": "Application Forms Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapApplicationFormsDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Milk"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapApplicationFormsDescription",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Milch"
+                                        }
+                                    ]
+                                },
+                                "csapApplicationFormsKey": {
+                                    "alias": "Application Forms Key",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapApplicationFormsKey",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "PUMPS"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapApplicationFormsKey",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "PUMPS"
+                                        }
+                                    ]
+                                },
+                                "cpimBacksideText": {
+                                    "alias": "Backside Text",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimBacksideText",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Caring formula with highly effective UVA/UVB protection supports the skin’s protective barrier."
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimBacksideText",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Pflege-Formel mit hochwirksamem UVA / UVB-Schutz unterstützt die Schutzbarriere der Haut."
+                                        }
+                                    ]
+                                },
+                                "csapChangenumberDescription": {
+                                    "alias": "Changenumber Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapChangenumberDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "04NSUN_C_My Fair Lady"
+                                        }
+                                    ]
+                                },
+                                "csapDangerousGoods": {
+                                    "alias": "Dangerous Goods",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapDangerousGoods",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "GPP / Relevant for dangerous goods, checks, and documents"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapDangerousGoods",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "GPP / Relevant für Gefahrgut, Schecks und Dokumente"
+                                        }
+                                    ]
+                                },
+                                "csapDangerousGoodsDescription": {
+                                    "alias": "Dangerous Goods Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapDangerousGoodsDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Relevant for dangerous goods, checks, and documents"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapDangerousGoodsDescription",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Relevant für Gefahrgut, Schecks und Dokumente"
+                                        }
+                                    ]
+                                },
+                                "cpimShortDescription": {
+                                    "alias": "Short Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimShortDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Superior moisture in no time: NIVEA Express Hydration Body Lotion."
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimShortDescription",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Überlegene Feuchtigkeit in kürzester Zeit: NIVEA Express Hydratation Body Lotion."
+                                        }
+                                    ]
+                                },
+                                "csapFranchiseRangeDescription": {
+                                    "alias": "Franchise Range Description",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapFranchiseRangeDescription",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Skin Appearance"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapFranchiseRangeDescription",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Hautaussehen"
+                                        }
+                                    ]
+                                },
+                                "cpimGiftWrapping": {
+                                    "alias": "Gift Wrapping",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimGiftWrapping",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "csapFranchiseRanges": {
+                                    "alias": "Franchise Ranges",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapFranchiseRanges",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "MSTCR / Moisture Care"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapFranchiseRanges",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "MSTCR / Feuchtigkeitspflege"
+                                        }
+                                    ]
+                                },
+                                "cpimSkinType": {
+                                    "alias": "Skin Type",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimSkinType",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "All skin types"
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimSkinType",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Alle Hauttypen"
+                                        }
+                                    ]
+                                },
+                                "csapMaterialStatusGlobal": {
+                                    "alias": "Material Status Global",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapMaterialStatusGlobal",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "A / NART active"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapMaterialStatusGlobal",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "A / NART ist aktiv"
+                                        }
+                                    ]
+                                },
+                                "cpimFrontSideText": {
+                                    "alias": "Front Side Text",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimFrontSideText",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "Protect & Bronze"
+                                        },
+                                        {
+                                            "attribute": "attributes/cpimFrontSideText",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Schützen und Bronze"
+                                        }
+                                    ]
+                                },
+                                "csapGender": {
+                                    "alias": "Gender",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/csapGender",
+                                            "source": "SAP",
+                                            "locale": "en-US",
+                                            "value": "MALE / Male"
+                                        },
+                                        {
+                                            "attribute": "attributes/csapGender",
+                                            "source": "translation.com",
+                                            "locale": "de-DE",
+                                            "value": "Männlicher Mann"
+                                        }
+                                    ]
+                                }
+                            },
+                            "relationships": {
+                                "crosssell": [
+                                    {
+                                        "id": "rel1",
+                                        "direction": "both",
+                                        "source": "SAP",
+                                        "relationshipType": "association",
+                                        "attributes": {
+                                            "status": {
+                                                "values": [
+                                                    {
+                                                        "value": "Active",
+                                                        "source": "SAP",
+                                                        "locale": "en-US"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "relToObject": {
+                                            "id": "e4",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "id": "rel2",
+                                        "direction": "both",
+                                        "source": "SAP",
+                                        "relationshipType": "association",
+                                        "attributes": {
+                                            "status": {
+                                                "values": [
+                                                    {
+                                                        "value": "Active",
+                                                        "source": "SAP",
+                                                        "locale": "en-US"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "relToObject": {
+                                            "id": "e5",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "id": "rel3",
+                                        "direction": "both",
+                                        "source": "SAP",
+                                        "relationshipType": "association",
+                                        "attributes": {
+                                            "status": {
+                                                "values": [
+                                                    {
+                                                        "value": "Active",
+                                                        "source": "SAP",
+                                                        "locale": "en-US"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "relToObject": {
+                                            "id": "e6",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "id": "rel4",
+                                        "direction": "both",
+                                        "source": "PLM",
+                                        "relationshipType": "association",
+                                        "attributes": {
+                                            "status": {
+                                                "values": [
+                                                    {
+                                                        "value": "Active",
+                                                        "source": "PLM",
+                                                        "locale": "en-US"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "relToObject": {
+                                            "id": "e7",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "accessories": [
+                                    {
+                                        "id": "rel5",
+                                        "direction": "both",
+                                        "source": "SAP",
+                                        "relationshipType": "association",
+                                        "relToObject": {
+                                            "id": "e6",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "id": "rel6",
+                                        "direction": "both",
+                                        "source": "SAP",
+                                        "relationshipType": "association",
+                                        "relToObject": {
+                                            "id": "e4",
+                                            "entityInfo": {
+                                                "entityType": "product",
+                                                "entityDomain": "thing"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "ctxGroup": {
+                                "list": "uk website data",
+                                "classification": "product hierarchy/NIVEA/NIVEA Men's Care/NIVEA Men's Shaving/NM SHAVING"
+                            },
+                            "attributes": {
+                                "cpimCustomerWishDateOfDelivery": {
+                                    "alias": "Customer Wish Date Of Delivery",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimCustomerWishDateOfDelivery",
+                                            "locale": "en-US",
+                                            "source": "SAP",
+                                            "value": "11/1/2016"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "ctxGroup": {
+                                "list": "ieWebsiteData",
+                                "classification": "product hierarchy/NIVEA/NIVEA Men's Care/NIVEA Men's Shaving/NM SHAVING"
+                            },
+                            "attributes": {
+                                "cpimCustomerWishDateOfDelivery": {
+                                    "alias": "Customer Wish Date Of Delivery",
+                                    "values": [
+                                        {
+                                            "attribute": "attributes/cpimCustomerWishDateOfDelivery",
+                                            "locale": "en-US",
+                                            "source": "SAP",
+                                            "value": "2/2/2016"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "ctxGroup": {
+                                "self": "self/e6"
+                            }
+                        }
+                    ]
+                },
+                "entityInfo": {
+                    "entityType": "nart"
+                },
+                "properties": {
+                    "createdBy": "vishal"
+                }
+            },
+            {
                 "id": "nart1",
                 "systemInfo": {
                     "tenantId": "t1"
