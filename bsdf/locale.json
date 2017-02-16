@@ -10,7 +10,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
-                "description": "English - United States",
+                "displayName": "English - United States",
                 "culture": "en-US"
             }
         },
@@ -24,7 +24,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
-                "description": "German - Germany",
+                "displayName": "German - Germany",
                 "culture": "de-DE"
             }
         },
@@ -38,8 +38,22 @@
                 "tenantId": "bsdf"
             },
             "properties": {
-                "description": "French - France",
+                "displayName": "French - France",
                 "culture": "fr-FR"
+            }
+        },
+        {
+            "id": "es-SP",
+            "name": "es-SP",
+            "entityModelInfo": {
+                "entityModelType": "locale"
+            },
+            "systemInfo": {
+                "tenantId": "bsdf"
+            },
+            "properties": {
+                "displayName": "Spanish - Spain",
+                "culture": "es-SP"
             }
         }
     ]

@@ -10,6 +10,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "Bill Of Materials",
                 "description": "billOfMaterials"
             }
         },
@@ -23,19 +24,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
-                "description": "parts"
-            }
-        },
-        {
-            "id": "parts",
-            "name": "parts",
-            "entityModelInfo": {
-                "entityModelType": "relatinshipType"
-            },
-            "systemInfo": {
-                "tenantId": "bsdf"
-            },
-            "properties": {
+                "displayName": "Parts",
                 "description": "parts"
             }
         },
@@ -49,6 +38,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "Predecessor",
                 "description": "predecessor"
             }
         },
@@ -62,6 +52,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "Recommandations",
                 "description": "recommandations"
             }
         }

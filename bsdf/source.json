@@ -1,5 +1,19 @@
 {
     "entities": [
+          {
+            "id": "internal",
+            "name": "internal",
+            "entityModelInfo": {
+                "entityModelType": "source"
+            },
+            "systemInfo": {
+                "tenantId": "bsdf"
+            },
+            "properties": {
+                "displayName": "Internal",
+                "description": "Internal source"
+            }
+        },
         {
             "id": "plm",
             "name": "plm",
@@ -10,6 +24,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "PLM",
                 "description": "plm source description"
             }
         },
@@ -23,6 +38,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "SAP",
                 "description": "sap source description"
             }
         },
@@ -36,6 +52,7 @@
                 "tenantId": "bsdf"
             },
             "properties": {
+                "displayName": "Indix",
                 "description": "indix source description"
             }
         }
