@@ -1,0 +1,116 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "entityOperationResponse"
+    },
+    "entities": [
+        {
+            "id": "webcatalog",
+            "entityInfo": {
+                "entityType": "channel"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Catalog"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "merchandisingtaxonomy",
+            "entityInfo": {
+                "entityType": "taxonomy"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Merchandising Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "webtaxonomy",
+            "entityInfo": {
+                "entityType": "taxonomy"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "apparel",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Apparel"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "shoes",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Shoes"
+                            }
+                        ]
+                    }
+                },
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingtaxonomy"
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "id": "",
+                                    "direction": "both",
+                                    "relationshipType": "aggregation",
+                                    "relTo": {
+                                        "id": "apparel",
+                                        "entityModelInfo": {
+                                            "entityModelType": "classification"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

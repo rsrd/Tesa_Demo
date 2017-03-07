@@ -1,0 +1,59 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "administrator",
+            "name": "administrator",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "the system administrator with complete authorization of the system"
+            }
+        },
+        {
+            "id": "dataReader",
+            "name": "dataReader",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "user role with read only permissions on data"
+            }
+        },
+        {
+            "id": "translationAdmin",
+            "name": "translationAdmin",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "user role with admin permissions to manage data translations"
+            }
+        },
+        {
+            "id": "vendor",
+            "name": "vendor",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Vendor user role"
+            }
+        },
+        {
+            "id": "buyer",
+            "name": "buyer",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Buyer user role"
+            }
+        }
+    ]
+}

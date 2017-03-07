@@ -1,0 +1,99 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "entityDisplayModel_lot",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "attributes": {
+                    "cpimProductName": {
+                        "properties": {
+                            "displayType": "textbox"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "entityValidationModel_sku",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "attributes": {
+                    "cpimProductName": {
+                        "properties": {
+                            "displayType": "textbox"
+                        }
+                    }
+                },
+                "relationships": {
+                    "crosssell": {
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        },
+                        "attributes": {
+                            "status": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "entityValidationModel_productpresentation",
+            "name": "productpresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "relationships": {
+                    "productpresentationtolot": {
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "entityValidationModel_ensemble",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "relationships": {
+                    "ensembletopresentation": {
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

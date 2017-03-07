@@ -1,0 +1,39 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "crosssell",
+            "name": "crosssell",
+            "entityModelInfo": {
+                "entityModelType": "relationshipType"
+            },
+            "properties": {
+                "description": "Cross sell"
+            }
+        },
+        {
+            "id": "productpresentationtolot",
+            "name": "productpresentationtolot",
+            "entityModelInfo": {
+                "entityModelType": "relationshipType"
+            },
+            "properties": {
+                "description": "Product Presentation to Lot"
+            }
+        },
+        {
+            "id": "ensembletopresentation",
+            "name": "ensembletopresentation",
+            "entityModelInfo": {
+                "entityModelType": "relationshipType"
+            },
+            "properties": {
+                "description": "Ensemble to Presentation"
+            }
+        }
+    ]
+}

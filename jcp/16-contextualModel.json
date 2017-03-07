@@ -1,0 +1,28 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "entityManageModel_classification",
+            "name": "classification",
+            "entityModelInfo": {
+                "entityModelType": "entityManageModel"
+            },
+            "data": {
+                "relationships": {
+                    "ensembletopresentation": [
+                        {
+                            "properties": {
+                                "externalName": "Ensemble to Presentation",
+                                "relationshipType": "association"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
