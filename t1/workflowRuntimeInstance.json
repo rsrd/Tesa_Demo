@@ -1,6 +1,6 @@
 {
     "metaInfo": {
-        "objectType": "entityGovernData",
+        "dataIndex": "entityGovernData",
         "collectionName": "entities",
         "responseObjectName": "entityGovernOperationResponse"
     },
@@ -9,9 +9,6 @@
             "id": "e1_workflow_runtimeinstance",
             "entityGovernInfo": {
                 "entityGovernType": "workflowRuntimeInstance"
-            },
-            "systemInfo": {
-                "tenantId": "t1"
             },
             "properties": {
                 "source": "GovernanceStore",

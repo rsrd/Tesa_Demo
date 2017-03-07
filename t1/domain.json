@@ -1,6 +1,6 @@
 {
     "metaInfo": {
-        "objectType": "entityModel",
+        "dataIndex": "entityModel",
         "collectionName": "entityModels",
         "responseObjectName": "entityModelOperationResponse"
     },
@@ -10,9 +10,6 @@
             "name": "party",
             "entityModelInfo": {
                 "entityModelType": "domain"
-            },
-            "systemInfo": {
-                "tenantId": "t1"
             },
             "properties": {
                 "externalName": "Party",
@@ -25,9 +22,6 @@
             "entityModelInfo": {
                 "entityModelType": "domain"
             },
-            "systemInfo": {
-                "tenantId": "t1"
-            },
             "properties": {
                 "externalName": "Thing",
                 "description": "Thing domain manages the entirety of data related to products, and maintains a single, consistent version of this data"
@@ -38,9 +32,6 @@
             "name": "referenceData",
             "entityModelInfo": {
                 "entityModelType": "domain"
-            },
-            "systemInfo": {
-                "tenantId": "t1"
             },
             "properties": {
                 "externalName": "Reference Data",
