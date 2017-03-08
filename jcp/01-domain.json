@@ -14,6 +14,23 @@
             "properties": {
                 "externalName": "Party",
                 "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "domains",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -25,6 +42,23 @@
             "properties": {
                 "externalName": "Thing",
                 "description": "Thing domain manages the entirety of data related to products, and maintains a single, consistent version of this data"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "domains",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -36,6 +70,23 @@
             "properties": {
                 "externalName": "Reference Data",
                 "description": "Reference data domain manages all the reference data maintained in the platform to support MDM functionality"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "domains",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -47,6 +98,23 @@
             "properties": {
                 "externalName": "Generic",
                 "description": "Generic domain is a place holder for all domain agnostic data maintained in the platform to support MDM functionality"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "domains",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     ]

@@ -6,14 +6,31 @@
     },
     "entityModels": [
         {
-            "id": "internal",
-            "name": "internal",
+            "id": "default",
+            "name": "default",
             "entityModelInfo": {
                 "entityModelType": "source"
             },
             "properties": {
-                "externalName": "Internal",
+                "externalName": "Default source",
                 "description": "Internal source"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "sources",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     ]

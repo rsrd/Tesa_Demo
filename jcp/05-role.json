@@ -13,6 +13,23 @@
             },
             "properties": {
                 "description": "the system administrator with complete authorization of the system"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -23,6 +40,23 @@
             },
             "properties": {
                 "description": "user role with read only permissions on data"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -33,6 +67,23 @@
             },
             "properties": {
                 "description": "user role with admin permissions to manage data translations"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -43,6 +94,23 @@
             },
             "properties": {
                 "description": "Vendor user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -53,6 +121,23 @@
             },
             "properties": {
                 "description": "Buyer user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     ]

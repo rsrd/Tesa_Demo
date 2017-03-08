@@ -21,6 +21,23 @@
                     "administrator",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -38,6 +55,23 @@
                 "roles": [
                     "vendor"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -56,6 +90,23 @@
                     "buyer",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -74,6 +125,23 @@
                     "buyerops",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -92,6 +160,23 @@
                     "administrator",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -110,6 +195,23 @@
                     "administrator",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "users",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     ]

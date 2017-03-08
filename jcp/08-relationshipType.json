@@ -6,13 +6,51 @@
     },
     "entityModels": [
         {
+            "id": "isChildOf",
+            "name": "isChildOf",
+            "entityModelInfo": {
+                "entityModelType": "relationshipType"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipTypes",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "id": "crosssell",
             "name": "crosssell",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
             },
-            "properties": {
-                "description": "Cross sell"
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipTypes",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -21,8 +59,22 @@
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
             },
-            "properties": {
-                "description": "Product Presentation to Lot"
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipTypes",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         },
         {
@@ -31,8 +83,22 @@
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
             },
-            "properties": {
-                "description": "Ensemble to Presentation"
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipTypes",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     ]

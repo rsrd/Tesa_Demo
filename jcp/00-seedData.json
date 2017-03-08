@@ -6,14 +6,17 @@
     },
     "entityModels": [
         {
-            "id": "en-US",
-            "name": "en-US",
+            "id": "corp",
+            "name": "corp",
             "entityModelInfo": {
-                "entityModelType": "locale"
-            },
-            "properties": {
-                "externalName": "English - United States",
-                "culture": "en-US"
+                "entityModelType": "list"
+            }
+        },
+        {
+            "id": "domains",
+            "name": "domains",
+            "entityModelInfo": {
+                "entityModelType": "list"
             },
             "data": {
                 "relationships": {
@@ -23,7 +26,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "locales",
+                                "id": "corp",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -34,14 +37,10 @@
             }
         },
         {
-            "id": "de-DE",
-            "name": "de-DE",
+            "id": "entityTypes",
+            "name": "entityTypes",
             "entityModelInfo": {
-                "entityModelType": "locale"
-            },
-            "properties": {
-                "externalName": "German - Germany",
-                "culture": "de-DE"
+                "entityModelType": "list"
             },
             "data": {
                 "relationships": {
@@ -51,7 +50,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "locales",
+                                "id": "corp",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -62,14 +61,10 @@
             }
         },
         {
-            "id": "fr-FR",
-            "name": "fr-FR",
+            "id": "sources",
+            "name": "sources",
             "entityModelInfo": {
-                "entityModelType": "locale"
-            },
-            "properties": {
-                "externalName": "French - France",
-                "culture": "fr-FR"
+                "entityModelType": "list"
             },
             "data": {
                 "relationships": {
@@ -79,7 +74,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "locales",
+                                "id": "corp",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -90,14 +85,10 @@
             }
         },
         {
-            "id": "es-SP",
-            "name": "es-SP",
+            "id": "users",
+            "name": "users",
             "entityModelInfo": {
-                "entityModelType": "locale"
-            },
-            "properties": {
-                "externalName": "Spanish - Spain",
-                "culture": "es-SP"
+                "entityModelType": "list"
             },
             "data": {
                 "relationships": {
@@ -107,7 +98,31 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "locales",
+                                "id": "corp",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "roles",
+            "name": "roles",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "corp",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
