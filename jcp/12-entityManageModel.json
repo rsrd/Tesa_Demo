@@ -7915,13 +7915,6 @@
             },
             "data": {
                 "attributes": {
-                    "categoryId": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "CATEGORY_ID"
-                        }
-                    },
                     "creationDate": {
                         "properties": {
                             "isEntityIdentifier": false,
@@ -8355,6 +8348,24 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "id": "entityManageModel_classification",
+            "name": "classification",
+            "entityModelInfo": {
+                "entityModelType": "entityManageModel"
+            },
+            "data": {
+                "attributes": {
+                    "categoryId": {
+                        "properties": {
+                            "isEntityIdentifier": true,
+                            "dataType": "string",
+                            "externalName": "Category Id"
+                        }
+                    }
+                }
             }
         }
     ]
