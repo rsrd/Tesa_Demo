@@ -48,20 +48,6 @@
                             "externalName": "FILLING CONTENT"
                         }
                     },
-                    "threadCount": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "THREAD COUNT"
-                        }
-                    },
-                    "secondCompLiningMaterial": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "2ND COMP LINING MATERIAL"
-                        }
-                    },
                     "OfControllers": {
                         "properties": {
                             "isEntityIdentifier": false,
@@ -1656,13 +1642,6 @@
                             "isEntityIdentifier": false,
                             "dataType": "string",
                             "externalName": "SWIMWEAR ENHANCERS"
-                        }
-                    },
-                    "sleeveStyle": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE STYLE"
                         }
                     },
                     "secondCompNumberOfPockets": {
@@ -4239,13 +4218,6 @@
                             "isEntityIdentifier": false,
                             "dataType": "string",
                             "externalName": "RING TOP LENGTH"
-                        }
-                    },
-                    "sleeveLength": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE LENGTH"
                         }
                     },
                     "handleDropLength": {
@@ -7153,7 +7125,22 @@
                             "externalName": "PARENT_PDP"
                         }
                     }
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -7190,13 +7177,6 @@
                             "isEntityIdentifier": false,
                             "dataType": "string",
                             "externalName": "WIDTH"
-                        }
-                    },
-                    "sleeve": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE"
                         }
                     },
                     "size": {
@@ -7916,7 +7896,15 @@
                             }
                         }
                     ]
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -8329,7 +8317,16 @@
                             }
                         }
                     ]
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -8348,7 +8345,16 @@
                             }
                         }
                     ]
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         }
     ]

@@ -6,7 +6,7 @@
     },
     "entities": [
         {
-            "id": "webcatalog",
+            "id": "webCatalog",
             "entityInfo": {
                 "entityType": "channel"
             },
@@ -23,7 +23,7 @@
             }
         },
         {
-            "id": "merchandisingtaxonomy",
+            "id": "merchandisingTaxonomy",
             "entityInfo": {
                 "entityType": "taxonomy"
             },
@@ -40,7 +40,7 @@
             }
         },
         {
-            "id": "webtaxonomy",
+            "id": "webTaxonomy",
             "entityInfo": {
                 "entityType": "taxonomy"
             },
@@ -91,7 +91,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "taxonomy": "merchandisingtaxonomy"
+                            "taxonomy": "merchandisingTaxonomy"
                         },
                         "relationships": {
                             "isChildOf": [

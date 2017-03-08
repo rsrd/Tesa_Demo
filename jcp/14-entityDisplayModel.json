@@ -37,13 +37,6 @@
                 },
                 "relationships": {
                     "crosssell": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        },
                         "attributes": {
                             "status": {
                                 "properties": {
@@ -60,19 +53,6 @@
             "name": "productpresentation",
             "entityModelInfo": {
                 "entityModelType": "entityDisplayModel"
-            },
-            "data": {
-                "relationships": {
-                    "productpresentationtolot": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        }
-                    }
-                }
             }
         },
         {
@@ -80,19 +60,6 @@
             "name": "ensemble",
             "entityModelInfo": {
                 "entityModelType": "entityDisplayModel"
-            },
-            "data": {
-                "relationships": {
-                    "ensembletopresentation": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        }
-                    }
-                }
             }
         }
     ]

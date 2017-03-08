@@ -18,7 +18,37 @@
                             "required": true
                         }
                     }
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -52,7 +82,23 @@
                             }
                         }
                     }
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -72,7 +118,37 @@
                             ]
                         }
                     }
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -92,7 +168,37 @@
                             ]
                         }
                     }
-                }
+                },
+                "cxtInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         }
     ]
