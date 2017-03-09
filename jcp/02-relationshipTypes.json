@@ -76,6 +76,30 @@
                     ]
                 }
             }
+        },
+        {
+            "id": "genericdomainrelationshipTypes",
+            "name": "genericdomainrelationshipTypes",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "generic",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         }
     ]
 }

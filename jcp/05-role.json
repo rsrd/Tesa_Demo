@@ -6,6 +6,33 @@
     },
     "entityModels": [
         {
+            "id": "rdpAllDataAccess",
+            "name": "rdpAllDataAccess",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "A system role to bypass data ownership (AVS) check"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "id": "administrator",
             "name": "administrator",
             "entityModelInfo": {
@@ -116,6 +143,33 @@
         {
             "id": "buyer",
             "name": "buyer",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Buyer user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "buyerOps",
+            "name": "buyerOps",
             "entityModelInfo": {
                 "entityModelType": "role"
             },
