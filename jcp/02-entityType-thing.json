@@ -6,34 +6,6 @@
     },
     "entityModels": [
         {
-            "id": "list",
-            "name": "list",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
-            "properties": {
-                "externalName": "List",
-                "description": "List"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "generic",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
             "id": "lot",
             "name": "lot",
             "entityModelInfo": {
@@ -146,34 +118,6 @@
             }
         },
         {
-            "id": "brand",
-            "name": "brand",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
-            "properties": {
-                "externalName": "Brand",
-                "description": "Brand"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "referenceData",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
             "id": "channel",
             "name": "channel",
             "entityModelInfo": {
@@ -248,34 +192,6 @@
                             "relationshipType": "aggregation",
                             "relTo": {
                                 "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "id": "supplier",
-            "name": "supplier",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
-            "properties": {
-                "externalName": "Supplier",
-                "description": "Supplier"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "party",
                                 "entityModelInfo": {
                                     "entityModelType": "domain"
                                 }
