@@ -12,16 +12,10 @@
                 "entityModelType": "entityValidationModel"
             },
             "data": {
-                "attributes": {
-                    "cpimProductName": {
-                        "properties": {
-                            "required": true
-                        }
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL_"
                         },
@@ -32,6 +26,13 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "required": true
+                                }
+                            }
                         }
                     },
                     {
@@ -58,34 +59,10 @@
                 "entityModelType": "entityValidationModel"
             },
             "data": {
-                "attributes": {
-                    "cpimProductName": {
-                        "properties": {
-                            "required": true
-                        }
-                    }
-                },
-                "relationships": {
-                    "crosssell": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        },
-                        "attributes": {
-                            "status": {
-                                "properties": {
-                                    "required": true
-                                }
-                            }
-                        }
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL_"
                         },
@@ -96,6 +73,31 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "required": true
+                                }
+                            }
+                        },
+                        "relationships": {
+                            "crosssell": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                },
+                                "attributes": {
+                                    "status": {
+                                        "properties": {
+                                            "required": true
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 ]
@@ -108,20 +110,10 @@
                 "entityModelType": "entityValidationModel"
             },
             "data": {
-                "relationships": {
-                    "productpresentationtolot": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        }
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL_"
                         },
@@ -132,6 +124,17 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+                        "relationships": {
+                            "productpresentationtolot": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     },
                     {
@@ -158,20 +161,10 @@
                 "entityModelType": "entityValidationModel"
             },
             "data": {
-                "relationships": {
-                    "ensembletopresentation": {
-                        "properties": {
-                            "cardinality": [
-                                {
-                                    "minimum": 1
-                                }
-                            ]
-                        }
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL_"
                         },
@@ -182,6 +175,17 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+                        "relationships": {
+                            "ensembletopresentation": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
                         }
                     },
                     {

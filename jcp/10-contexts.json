@@ -6,6 +6,23 @@
     },
     "entities": [
         {
+            "id": "productMaster",
+            "entityInfo": {
+                "entityType": "list"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Product Master"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
             "id": "webCatalog",
             "entityInfo": {
                 "entityType": "channel"
