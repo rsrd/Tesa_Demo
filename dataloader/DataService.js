@@ -15,7 +15,7 @@ async function sendRequest(tenantId, serviceUrl, req) {
         body: req,
         json: true,
         simple: false,
-        timeout: 30000
+        timeout: 5000
     };
 
     var reqPromise = request(options)

@@ -11,6 +11,8 @@ var path = "";
 
 var logPath = './logs';
 
+var counters = {};
+
 function getListOfDir(path) {
     this.path = path;
     return fs.readdirSync(path);
@@ -18,6 +20,13 @@ function getListOfDir(path) {
 
 function startLoadingData(tenant) {
     if (this.path) {
+        var timestamp = Date.now();
+
+        var logDir = logPath + '/' + tenant + '/' + timestamp;
+        fs.mkdirSync(logDir);
+    
+        logPath = logDir;
+
         var dir = this.path + tenant + "/";
         console.log("Started loading data from : " + tenant);
         var files = getListOfDir(dir);
@@ -29,13 +38,16 @@ function startLoadingData(tenant) {
                 loadData(tenant, file, JSON.parse(fileData.toString()));
             }, this);
         } else {}
+
+        if(counters) {
+            console.log('Total RDF requests generated: ', JSON.stringify(counters, null, 3));
+        }
     }
 }
 
 async function loadData(tenant, fileName, fileData) {
     if (fileData) {
         console.log("loading file: " + fileName);
-
         var serviceName;
         var data;
         var dataIndex;
@@ -71,12 +83,17 @@ async function loadData(tenant, fileName, fileData) {
 async function sendDataToService(fileName, dataIndex, serviceName, tenant, data) {
     var serviceUrl;
     var dataIndexInfo;
-    var logFileName = logPath + '/' + tenant + '/' + fileName + '.log';
+    
+    var logFileName = logPath + '/' + fileName + '.log';
 
-    truncateFile(logFileName);
+    console.log(logFileName);
 
-    var fatalErrorLogFileName = logPath + '/' + tenant + '/fatal-errors.log';
-    truncateFile(fatalErrorLogFileName);
+    if(counters[dataIndex] === undefined) {
+        //console.log('counters are undefined for data index', dataIndex);
+        counters[dataIndex] = 0;
+    }
+
+    //truncateFile(logFileName);
 
     //console.log(logFileName);
     var serConfig = serviceConfig.services[serviceName + "/create"];
@@ -106,6 +123,10 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
             requestObj[dataIndexInfo.name] = dataObj;
         
             sleep(delay); // sleep for 100 ms
+
+            if(counters[dataIndex] !== undefined) {
+                counters[dataIndex] = counters[dataIndex] + 1;
+            }
 
             res = await dataService.sendRequest(tenant, serviceUrl, requestObj);
 
