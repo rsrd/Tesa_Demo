@@ -5,6 +5,8 @@ var dataService = require('./DataService');
 
 var path = "";
 
+var logPath = './logs';
+
 function getListOfDir(path) {
     this.path = path;
     return fs.readdirSync(path);
@@ -29,6 +31,7 @@ function startLoadingData(tenant) {
 async function loadData(tenant, fileName, fileData) {
     if (fileData) {
         console.log("loading file: " + fileName);
+
         var serviceName;
         var data;
         var dataIndex;
@@ -51,20 +54,29 @@ async function loadData(tenant, fileName, fileData) {
 
         if (serviceName && data) {
             var loaded = false;
-            loaded = await sendDataToService(dataIndex, serviceName, tenant, data);
+            loaded = await sendDataToService(fileName, dataIndex, serviceName, tenant, data);
             if(loaded) {
-                console.log(fileName + " got loaded successfully.\n");
+                console.log(fileName + " loaded successfully.\n");
             } else {
-                console.log(fileName + " has some issue while loading.\n");                
+                console.log(fileName + " has issues. Please check logs.\n");                
             }
         }
     }
 }
 
-async function sendDataToService(dataIndex, serviceName, tenant, data) {
+async function sendDataToService(fileName, dataIndex, serviceName, tenant, data) {
     var serviceUrl;
     var dataIndexInfo;
+    var logFileName = logPath + '/' + tenant + '/' + fileName + '.log';
+
+    truncateFile(logFileName);
+
+    var fatalErrorLogFileName = logPath + '/' + tenant + '/fatal-errors.log';
+    truncateFile(fatalErrorLogFileName);
+
+    console.log(logFileName);
     var serConfig = serviceConfig.services[serviceName + "/create"];
+
     if (serConfig) {
         serviceUrl = serConfig.url;
     } else {
@@ -73,43 +85,56 @@ async function sendDataToService(dataIndex, serviceName, tenant, data) {
 
     if (dataIndexConfig) {
         dataIndexInfo = dataIndexConfig[dataIndex];
-    } else {
-
+    } 
+    else {
     }
 
     if (serviceUrl && dataIndexInfo) {
         data.forEach(async function (dataObj) {
-            var dataOperation = {};
+            var res = {};
             var requestObj = {
                 'includeRequest': false,
                 'dataIndex': dataIndex
             };
 
             requestObj[dataIndexInfo.name] = dataObj;
-            dataOperation = await dataService.sendRequest(tenant, serviceUrl, requestObj);
 
-            if (dataOperation) {
-                if (dataOperation.entityOperationResponse) {
-                    if (dataOperation.entityOperationResponse.status != "success") {
-                        fs.appendFileSync("./errors.log", JSON.stringify(dataOperation));
-                    } else {
-                        fs.appendFileSync("./info.log", JSON.stringify(dataOperation));
+            res = await dataService.sendRequest(tenant, serviceUrl, requestObj);
+
+            if(res) {
+                var response = res[dataIndexInfo.responseObjectName];
+
+                if(response) {
+                    if (response.status == 'success') {
+                        writeLog(logFileName, response.status, response);
                     }
-                } else if (dataOperation.entityModelOperationResponse) {
-                    if (dataOperation.entityModelOperationResponse.status != "success") {
-                         fs.appendFileSync("./errors.log", JSON.stringify(dataOperation));
-                    } else {
-                        fs.appendFileSync("./info.log", JSON.stringify(dataOperation));                        
+                    else {
+                        writeLog(logFileName, response.status, response);
                     }
-                } else {
-                    fs.appendFileSync("./errors.log", JSON.stringify(dataOperation));
+                }
+                else {
+                    writeLog(fatalErrorLogFileName, 'error', res);
                 }
             }
+
         }, this);
         return await true;
     } else {
         console.error("service URL or data index info is not available.");
         return await false;
+    }
+}
+
+function writeLog(logFile, status, res) {
+    var timestamp = Date().toLocaleString();
+    var message = timestamp + ":" + status.toUpperCase() + ":" + JSON.stringify(res) + "\r\n";
+    //console.log(message);
+    fs.appendFileSync(logFile, message);
+}
+
+function truncateFile(fileName) {
+    if (fs.existsSync(fileName)) {
+        fs.truncateSync(fileName, 0, function () { console.log('done') });
     }
 }
 
