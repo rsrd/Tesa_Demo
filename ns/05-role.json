@@ -1,0 +1,198 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "rdpAllDataAccess",
+            "name": "rdpAllDataAccess",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "A system role to bypass data ownership (AVS) check"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "administrator",
+            "name": "administrator",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "the system administrator with complete authorization of the system"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dataReader",
+            "name": "dataReader",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "user role with read only permissions on data"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "translationAdmin",
+            "name": "translationAdmin",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "user role with admin permissions to manage data translations"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "vendor",
+            "name": "vendor",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Vendor user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "buyer",
+            "name": "buyer",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Buyer user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "buyerOps",
+            "name": "buyerOps",
+            "entityModelInfo": {
+                "entityModelType": "role"
+            },
+            "properties": {
+                "description": "Buyer user role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "roles",
+                                "entityModelInfo": {
+                                    "entityModelType": "list"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
