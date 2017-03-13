@@ -1,6 +1,10 @@
 var fs = require('fs');
+var sleep = require('system-sleep');
+
 var serviceConfig = require('./config/serviceConfig.json');
 var dataIndexConfig = require('./config/dataIndexConfig.json');
+var config = require('./config/config');
+
 var dataService = require('./DataService');
 
 var path = "";
@@ -74,7 +78,7 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     var fatalErrorLogFileName = logPath + '/' + tenant + '/fatal-errors.log';
     truncateFile(fatalErrorLogFileName);
 
-    console.log(logFileName);
+    //console.log(logFileName);
     var serConfig = serviceConfig.services[serviceName + "/create"];
 
     if (serConfig) {
@@ -89,6 +93,8 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     else {
     }
 
+    var delay = config.delay;
+
     if (serviceUrl && dataIndexInfo) {
         data.forEach(async function (dataObj) {
             var res = {};
@@ -98,6 +104,8 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
             };
 
             requestObj[dataIndexInfo.name] = dataObj;
+        
+            sleep(delay); // sleep for 100 ms
 
             res = await dataService.sendRequest(tenant, serviceUrl, requestObj);
 
@@ -105,15 +113,10 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
                 var response = res[dataIndexInfo.responseObjectName];
 
                 if(response) {
-                    if (response.status == 'success') {
-                        writeLog(logFileName, response.status, response);
-                    }
-                    else {
-                        writeLog(logFileName, response.status, response);
-                    }
+                    writeLog(logFileName, response.status, res);
                 }
                 else {
-                    writeLog(fatalErrorLogFileName, 'error', res);
+                    writeLog(logFileName, 'error', res);
                 }
             }
 
