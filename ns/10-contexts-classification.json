@@ -1,0 +1,65 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "entityOperationResponse"
+    },
+    "entities": [
+        {
+            "id": "apparel",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Apparel"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "shoes",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Shoes"
+                            }
+                        ]
+                    }
+                },
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchHierarchy"
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "id": "",
+                                    "direction": "both",
+                                    "relationshipType": "aggregation",
+                                    "relTo": {
+                                        "id": "apparel",
+                                        "entityModelInfo": {
+                                            "entityModelType": "classification"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
