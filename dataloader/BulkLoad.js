@@ -22,20 +22,26 @@ function startLoadingData(tenant) {
     if (this.path) {
         var timestamp = Date.now();
 
-        var logDir = logPath + '/' + tenant + '/' + timestamp;
-        fs.mkdirSync(logDir);
-    
-        logPath = logDir;
+        var tenantLogDir = logPath + '/' + tenant;
+
+        if (!fs.existsSync(tenantLogDir)) {
+            fs.mkdirSync(tenantLogDir);
+        }
+        
+        logPath = tenantLogDir + '/' + timestamp;
+        fs.mkdirSync(logPath);
 
         var dir = this.path + tenant + "/";
         console.log("Started loading data from : " + tenant);
+
         var files = getListOfDir(dir);
+
         console.log("\n-----------------------------Logs-----------------------------------\n");
         if (files && files.length > 0) {
             files.forEach(function (file) {
                 console.log("reading file: " + file);
                 var fileData = fs.readFileSync(dir + file);
-                loadData(tenant, file, JSON.parse(fileData.toString()));
+                var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
             }, this);
         } else {}
 
@@ -46,8 +52,11 @@ function startLoadingData(tenant) {
 }
 
 async function loadData(tenant, fileName, fileData) {
+    var loaded = false;
+
     if (fileData) {
         console.log("loading file: " + fileName);
+
         var serviceName;
         var data;
         var dataIndex;
@@ -69,7 +78,7 @@ async function loadData(tenant, fileName, fileData) {
         }
 
         if (serviceName && data) {
-            var loaded = false;
+            
             loaded = await sendDataToService(fileName, dataIndex, serviceName, tenant, data);
             if(loaded) {
                 console.log(fileName + " loaded successfully.\n");
@@ -78,6 +87,8 @@ async function loadData(tenant, fileName, fileData) {
             }
         }
     }
+
+    return await loaded;
 }
 
 async function sendDataToService(fileName, dataIndex, serviceName, tenant, data) {
@@ -86,7 +97,7 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     
     var logFileName = logPath + '/' + fileName + '.log';
 
-    console.log(logFileName);
+    //console.log(logFileName);
 
     if(counters[dataIndex] === undefined) {
         //console.log('counters are undefined for data index', dataIndex);
@@ -110,7 +121,8 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     else {
     }
 
-    var delay = config.delay;
+    var delay = config.toolConfig.delay;
+    //console.log(delay);
 
     if (serviceUrl && dataIndexInfo) {
         data.forEach(async function (dataObj) {
@@ -177,8 +189,6 @@ function getServiceName(dataIndex) {
         return "entitymanageservice";
     }
 }
-
-
 
 module.exports = {
     getListOfDir: getListOfDir,
