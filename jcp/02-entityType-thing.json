@@ -14,6 +14,15 @@
             "properties": {
                 "externalName": "Lot",
                 "description": "lot"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/lot_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -25,6 +34,15 @@
             "properties": {
                 "externalName": "SKU",
                 "description": "SKU"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/sku_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -36,6 +54,15 @@
             "properties": {
                 "externalName": "Product Presentation",
                 "description": "Product Presentation"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/productPresentation_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -47,6 +74,15 @@
             "properties": {
                 "externalName": "Ensemble",
                 "description": "Ensemble"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/ensemble_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -58,6 +94,15 @@
             "properties": {
                 "externalName": "Channel",
                 "description": "Channel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/channel_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -69,6 +114,15 @@
             "properties": {
                 "externalName": "Taxonomy",
                 "description": "Taxonomy"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/taxonomy_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -80,6 +134,15 @@
             "properties": {
                 "externalName": "Classification",
                 "description": "Classification"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/classification_entityType"
+                        }
+                    }
+                ]
             }
         }
     ]

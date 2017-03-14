@@ -14,6 +14,15 @@
             "properties": {
                 "externalName": "List",
                 "description": "List"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/list_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -25,6 +34,15 @@
             "properties": {
                 "externalName": "Image",
                 "description": "Image"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/image_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -36,6 +54,15 @@
             "properties": {
                 "externalName": "Video",
                 "description": "Video"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/video_entityType"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -47,6 +74,15 @@
             "properties": {
                 "externalName": "Document",
                 "description": "Document"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/document_entityType"
+                        }
+                    }
+                ]
             }
         }
     ]
