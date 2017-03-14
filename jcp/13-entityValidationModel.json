@@ -26,13 +26,6 @@
                                     "maximum": 1
                                 }
                             ]
-                        },
-                        "attributes": {
-                            "cpimProductName": {
-                                "properties": {
-                                    "required": true
-                                }
-                            }
                         }
                     },
                     {
@@ -74,13 +67,6 @@
                                 }
                             ]
                         },
-                        "attributes": {
-                            "cpimProductName": {
-                                "properties": {
-                                    "required": true
-                                }
-                            }
-                        },
                         "relationships": {
                             "crosssell": {
                                 "properties": {
@@ -89,13 +75,6 @@
                                             "minimum": 1
                                         }
                                     ]
-                                },
-                                "attributes": {
-                                    "status": {
-                                        "properties": {
-                                            "required": true
-                                        }
-                                    }
                                 }
                             }
                         }
