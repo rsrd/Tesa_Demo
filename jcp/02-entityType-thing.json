@@ -14,23 +14,6 @@
             "properties": {
                 "externalName": "Lot",
                 "description": "lot"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -42,23 +25,6 @@
             "properties": {
                 "externalName": "SKU",
                 "description": "SKU"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -70,23 +36,6 @@
             "properties": {
                 "externalName": "Product Presentation",
                 "description": "Product Presentation"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -98,23 +47,6 @@
             "properties": {
                 "externalName": "Ensemble",
                 "description": "Ensemble"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -126,23 +58,6 @@
             "properties": {
                 "externalName": "Channel",
                 "description": "Channel"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -154,23 +69,6 @@
             "properties": {
                 "externalName": "Taxonomy",
                 "description": "Taxonomy"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -182,23 +80,6 @@
             "properties": {
                 "externalName": "Classification",
                 "description": "Classification"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

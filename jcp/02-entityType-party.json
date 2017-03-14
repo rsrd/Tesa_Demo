@@ -14,23 +14,6 @@
             "properties": {
                 "externalName": "Supplier",
                 "description": "Supplier"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "party",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

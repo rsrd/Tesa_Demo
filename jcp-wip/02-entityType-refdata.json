@@ -1,0 +1,37 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "brand_entityType",
+            "name": "brand",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Brand",
+                "description": "Brand"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

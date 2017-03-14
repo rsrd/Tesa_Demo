@@ -1,0 +1,37 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "supplier_entityType",
+            "name": "supplier",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Supplier",
+                "description": "Supplier"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "party",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -10,23 +10,6 @@
             "name": "thingdomainrelationshipTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thing",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -34,23 +17,6 @@
             "name": "partydomainrelationshipTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "party",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -58,23 +24,6 @@
             "name": "referencedatadomainrelationshipTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "referenceData",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -82,23 +31,6 @@
             "name": "genericdomainrelationshipTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "generic",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

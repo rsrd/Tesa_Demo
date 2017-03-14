@@ -1,0 +1,133 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "entityOperationResponse"
+    },
+    "entities": [
+        {
+            "id": "productMaster",
+            "entityInfo": {
+                "entityType": "list"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Product Master"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "webCatalog",
+            "entityInfo": {
+                "entityType": "channel"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Catalog"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "merchandisingTaxonomy",
+            "entityInfo": {
+                "entityType": "taxonomy"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Merchandising Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "webTaxonomy",
+            "entityInfo": {
+                "entityType": "taxonomy"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "apparel",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Apparel"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "shoes",
+            "entityInfo": {
+                "entityType": "classification"
+            },
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Shoes"
+                            }
+                        ]
+                    }
+                },
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy"
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "id": "",
+                                    "direction": "both",
+                                    "relationshipType": "aggregation",
+                                    "relTo": {
+                                        "id": "apparel",
+                                        "entityModelInfo": {
+                                            "entityModelType": "classification"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

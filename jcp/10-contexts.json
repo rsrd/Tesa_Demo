@@ -11,15 +11,22 @@
                 "entityType": "list"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Product Master"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Product Master"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -28,15 +35,22 @@
                 "entityType": "channel"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Web Catalog"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Web Catalog"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -45,15 +59,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Merchandising Taxonomy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Merchandising Taxonomy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -62,15 +83,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Web Taxonomy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "webTaxonomy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Web Taxonomy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -79,15 +107,22 @@
                 "entityType": "classification"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Apparel"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "classification": "apparel"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Apparel"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -96,19 +131,20 @@
                 "entityType": "classification"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Shoes"
-                            }
-                        ]
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "classification": "shoes",
                             "taxonomy": "merchandisingTaxonomy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Shoes"
+                                    }
+                                ]
+                            }
                         },
                         "relationships": {
                             "isChildOf": [

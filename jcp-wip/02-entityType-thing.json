@@ -1,0 +1,205 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityType",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Lot",
+                "description": "lot"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sku_entityType",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "SKU",
+                "description": "SKU"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productPresentation_entityType",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Product Presentation",
+                "description": "Product Presentation"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ensemble_entityType",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Ensemble",
+                "description": "Ensemble"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "channel_entityType",
+            "name": "channel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Channel",
+                "description": "Channel"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "taxonomy_entityType",
+            "name": "taxonomy",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Taxonomy",
+                "description": "Taxonomy"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "classification_entityType",
+            "name": "classification",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Classification",
+                "description": "Classification"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

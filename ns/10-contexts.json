@@ -11,15 +11,22 @@
                 "entityType": "list"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Core Master"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "coreMaster"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Core Master"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -28,32 +35,46 @@
                 "entityType": "channel"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Web Catalog"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "webCatalog"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Web Catalog"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
-            "id": "US",
+            "id": "usa",
             "entityInfo": {
                 "entityType": "country"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "U.S.A"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "usa"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "U.S.A"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -62,15 +83,22 @@
                 "entityType": "country"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Canada"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "canada"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Canada"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -79,15 +107,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Product Class Hierarchy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productClassHierarchy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Product Class Hierarchy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -96,15 +131,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Merch Hierarchy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "merchHierarchy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Merch Hierarchy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -113,15 +155,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Web Hierarchy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "webHierarchy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Web Hierarchy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -130,15 +179,22 @@
                 "entityType": "taxonomy"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Product Workspace Hierarchy"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productWorkspaceHierarchy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Product Workspace Hierarchy"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         }
     ]

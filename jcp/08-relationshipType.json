@@ -10,23 +10,6 @@
             "name": "isChildOf",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thingdomainrelationshipTypes",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -34,23 +17,6 @@
             "name": "crosssell",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thingdomainrelationshipTypes",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -58,23 +24,6 @@
             "name": "productPresentationtolot",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thingdomainrelationshipTypes",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -82,23 +31,6 @@
             "name": "ensembletopresentation",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "thingdomainrelationshipTypes",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

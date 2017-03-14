@@ -1,0 +1,209 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityValidationModel",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "required": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sku_entityValidationModel",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "required": true
+                                }
+                            }
+                        },
+                        "relationships": {
+                            "crosssell": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                },
+                                "attributes": {
+                                    "status": {
+                                        "properties": {
+                                            "required": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "productPresentation_entityValidationModel",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+                        "relationships": {
+                            "productPresentationtolot": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ensemble_entityValidationModel",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+                        "relationships": {
+                            "ensembletopresentation": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "taxonomy": "webTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

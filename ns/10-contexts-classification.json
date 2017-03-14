@@ -11,15 +11,22 @@
                 "entityType": "classification"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Apparel"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "classification": "apparel"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Apparel"
+                                    }
+                                ]
                             }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -28,19 +35,20 @@
                 "entityType": "classification"
             },
             "data": {
-                "attributes": {
-                    "externalName": {
-                        "values": [
-                            {
-                                "value": "Shoes"
-                            }
-                        ]
-                    }
-                },
                 "ctxInfo": [
                     {
                         "ctxGroup": {
+                            "classification": "shoes",
                             "taxonomy": "merchHierarchy"
+                        },
+                        "attributes": {
+                            "externalName": {
+                                "values": [
+                                    {
+                                        "value": "Shoes"
+                                    }
+                                ]
+                            }
                         },
                         "relationships": {
                             "isChildOf": [

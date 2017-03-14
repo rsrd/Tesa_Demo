@@ -1,0 +1,105 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "thingdomainattributemodels_list",
+            "name": "thingdomainattributemodels",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thing",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "partydomainattributemodels_list",
+            "name": "partydomainattributemodels",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "party",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "referencedatadomainattributemodels_list",
+            "name": "referencedatadomainattributemodels",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "genericdomainattributemodels_list",
+            "name": "genericdomainattributemodels",
+            "entityModelInfo": {
+                "entityModelType": "list"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "generic",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

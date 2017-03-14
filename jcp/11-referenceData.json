@@ -11,32 +11,39 @@
                 "entityType": "brand"
             },
             "data": {
-                "attributes": {
-                    "brandId": {
-                        "values": [
-                            {
-                                "value": "B001",
-                                "locale": "en-US"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "listOfbrand"
+                        },
+                        "attributes": {
+                            "brandId": {
+                                "values": [
+                                    {
+                                        "value": "B001",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "brandName": {
+                                "values": [
+                                    {
+                                        "value": "Sony Corporation",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "brandLogo": {
+                                "values": [
+                                    {
+                                        "value": "sony.png",
+                                        "locale": "en-US"
+                                    }
+                                ]
                             }
-                        ]
-                    },
-                    "brandName": {
-                        "values": [
-                            {
-                                "value": "Sony Corporation",
-                                "locale": "en-US"
-                            }
-                        ]
-                    },
-                    "brandLogo": {
-                        "values": [
-                            {
-                                "value": "sony.png",
-                                "locale": "en-US"
-                            }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         },
         {
@@ -45,32 +52,39 @@
                 "entityType": "brand"
             },
             "data": {
-                "attributes": {
-                    "brandId": {
-                        "values": [
-                            {
-                                "value": "B002",
-                                "locale": "en-US"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "listOfbrand"
+                        },
+                        "attributes": {
+                            "brandId": {
+                                "values": [
+                                    {
+                                        "value": "B002",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "brandName": {
+                                "values": [
+                                    {
+                                        "value": "Panasonic Corporation",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "brandLogo": {
+                                "values": [
+                                    {
+                                        "value": "Panasonic.png",
+                                        "locale": "en-US"
+                                    }
+                                ]
                             }
-                        ]
-                    },
-                    "brandName": {
-                        "values": [
-                            {
-                                "value": "Panasonic Corporation",
-                                "locale": "en-US"
-                            }
-                        ]
-                    },
-                    "brandLogo": {
-                        "values": [
-                            {
-                                "value": "Panasonic.png",
-                                "locale": "en-US"
-                            }
-                        ]
+                        }
                     }
-                }
+                ]
             }
         }
     ]

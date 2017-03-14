@@ -17,23 +17,6 @@
             "name": "domains",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -41,23 +24,6 @@
             "name": "entityTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -65,23 +31,6 @@
             "name": "sources",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -89,23 +38,6 @@
             "name": "users",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -113,23 +45,6 @@
             "name": "roles",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         },
         {
@@ -137,23 +52,6 @@
             "name": "locales",
             "entityModelInfo": {
                 "entityModelType": "list"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "corp",
-                                "entityModelInfo": {
-                                    "entityModelType": "list"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

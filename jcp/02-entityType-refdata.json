@@ -14,23 +14,6 @@
             "properties": {
                 "externalName": "Brand",
                 "description": "Brand"
-            },
-            "data": {
-                "relationships": {
-                    "listedUnder": [
-                        {
-                            "id": "",
-                            "direction": "both",
-                            "relationshipType": "aggregation",
-                            "relTo": {
-                                "id": "referenceData",
-                                "entityModelInfo": {
-                                    "entityModelType": "domain"
-                                }
-                            }
-                        }
-                    ]
-                }
             }
         }
     ]

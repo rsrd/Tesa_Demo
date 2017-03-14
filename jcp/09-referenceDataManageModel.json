@@ -12,27 +12,34 @@
                 "entityModelType": "entityManageModel"
             },
             "data": {
-                "attributes": {
-                    "brandId": {
-                        "properties": {
-                            "isEntityIdentifier": true,
-                            "dataType": "string",
-                            "externalName": "Brand Id"
-                        }
-                    },
-                    "brandName": {
-                        "properties": {
-                            "dataType": "string",
-                            "externalName": "Brand Name"
-                        }
-                    },
-                    "brandLogo": {
-                        "properties": {
-                            "dataType": "string",
-                            "externalName": "Hyperlink to the Logo of the brand"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "brands"
+                        },
+                        "attributes": {
+                            "brandId": {
+                                "properties": {
+                                    "isEntityIdentifier": true,
+                                    "dataType": "string",
+                                    "externalName": "Brand Id"
+                                }
+                            },
+                            "brandName": {
+                                "properties": {
+                                    "dataType": "string",
+                                    "externalName": "Brand Name"
+                                }
+                            },
+                            "brandLogo": {
+                                "properties": {
+                                    "dataType": "string",
+                                    "externalName": "Hyperlink to the Logo of the brand"
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         }
     ]

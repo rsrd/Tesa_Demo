@@ -1,0 +1,5441 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "productColor_entityType",
+            "name": "productColor",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Product_Color",
+                "description": "Product_Color"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "status_entityType",
+            "name": "status",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Status",
+                "description": "Status"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ageGroup_entityType",
+            "name": "ageGroup",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Age_Group",
+                "description": "vw_Age_Group"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "aggregateItemSellType_entityType",
+            "name": "aggregateItemSellType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Aggregate_Item_Sell_Type",
+                "description": "vw_Aggregate_Item_Sell_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "backingType_entityType",
+            "name": "backingType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Backing_Type",
+                "description": "vw_Backing_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "batteryType_entityType",
+            "name": "batteryType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Battery_Type",
+                "description": "vw_Battery_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "binding_entityType",
+            "name": "binding",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Binding",
+                "description": "vw_Binding"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "certificationType_entityType",
+            "name": "certificationType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Certification_Type",
+                "description": "vw_Certification_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "chainType_entityType",
+            "name": "chainType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Chain_Type",
+                "description": "vw_Chain_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "class_entityType",
+            "name": "class",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Class",
+                "description": "vw_Class"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "closureAccessories_entityType",
+            "name": "closureAccessories",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Closure_Accessories",
+                "description": "vw_Closure_Accessories"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "closureClothing_entityType",
+            "name": "closureClothing",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Closure_Clothing",
+                "description": "vw_Closure_Clothing"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "closureShoe_entityType",
+            "name": "closureShoe",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Closure_Shoe",
+                "description": "vw_Closure_Shoe"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "collarType_entityType",
+            "name": "collarType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Collar_Type",
+                "description": "vw_Collar_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentColorPearl_entityType",
+            "name": "componentColorPearl",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Color_Pearl",
+                "description": "vw_Component_Color_Pearl"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentColorStone_entityType",
+            "name": "componentColorStone",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Color_Stone",
+                "description": "vw_Component_Color_Stone"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentShapeEyewear_entityType",
+            "name": "componentShapeEyewear",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Shape_Eyewear",
+                "description": "vw_Component_Shape_Eyewear"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentShapeFace_entityType",
+            "name": "componentShapeFace",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Shape_Face",
+                "description": "vw_Component_Shape_Face"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentShapePearl_entityType",
+            "name": "componentShapePearl",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Shape_Pearl",
+                "description": "vw_Component_Shape_Pearl"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentShapeStone_entityType",
+            "name": "componentShapeStone",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Shape_Stone",
+                "description": "vw_Component_Shape_Stone"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "componentShapeWatch_entityType",
+            "name": "componentShapeWatch",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Component_Shape_Watch",
+                "description": "vw_Component_Shape_Watch"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "concessionName_entityType",
+            "name": "concessionName",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Concession_Name",
+                "description": "vw_Concession_Name"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "controlType_entityType",
+            "name": "controlType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Control_Type",
+                "description": "vw_Control_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "country_entityType",
+            "name": "country",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Country",
+                "description": "vw_Country"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "crystalType_entityType",
+            "name": "crystalType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Crystal_Type",
+                "description": "vw_Crystal_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "cuffType_entityType",
+            "name": "cuffType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Cuff_Type",
+                "description": "vw_Cuff_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "currency_entityType",
+            "name": "currency",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Currency",
+                "description": "vw_Currency"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dataSource_entityType",
+            "name": "dataSource",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Data_Source",
+                "description": "vw_Data_Source"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "denimType_entityType",
+            "name": "denimType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Denim_Type",
+                "description": "vw_Denim_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "denimWash_entityType",
+            "name": "denimWash",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Denim_Wash",
+                "description": "vw_Denim_Wash"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "department_entityType",
+            "name": "department",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Department",
+                "description": "vw_Department"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "depositRange_entityType",
+            "name": "depositRange",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Deposit_Range",
+                "description": "vw_Deposit_Range"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "displayType_entityType",
+            "name": "displayType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Display_Type",
+                "description": "vw_Display_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "doNotSellReason_entityType",
+            "name": "doNotSellReason",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Do_Not_Sell_Reason",
+                "description": "vw_Do_Not_Sell_Reason"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "edgeFinish_entityType",
+            "name": "edgeFinish",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Edge_Finish",
+                "description": "vw_Edge_Finish"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "eligibleChannels_entityType",
+            "name": "eligibleChannels",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Eligible_Channels",
+                "description": "vw_Eligible_Channels"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "eligibleFulfillmentTypeAssignment_entityType",
+            "name": "eligibleFulfillmentTypeAssignment",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Eligible_Fulfillment_Type_Assignment",
+                "description": "vw_Eligible_Fulfillment_Type_Assignment"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "embellishments_entityType",
+            "name": "embellishments",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Embellishments",
+                "description": "vw_Embellishments"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "exclusivity_entityType",
+            "name": "exclusivity",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Exclusivity",
+                "description": "vw_Exclusivity"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "eyelashBenefits_entityType",
+            "name": "eyelashBenefits",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Eyelash_Benefits",
+                "description": "vw_Eyelash_Benefits"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fillerType_entityType",
+            "name": "fillerType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Filler_Type",
+                "description": "vw_Filler_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "finish_entityType",
+            "name": "finish",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Finish",
+                "description": "vw_Finish"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fitCategory_entityType",
+            "name": "fitCategory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Fit_Category",
+                "description": "vw_Fit_Category"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "formulation_entityType",
+            "name": "formulation",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Formulation",
+                "description": "vw_Formulation"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fragranceFamily_entityType",
+            "name": "fragranceFamily",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Fragrance_Family",
+                "description": "vw_Fragrance_Family"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "gender_entityType",
+            "name": "gender",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Gender",
+                "description": "vw_Gender"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "hairBenefits_entityType",
+            "name": "hairBenefits",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Hair_Benefits",
+                "description": "vw_Hair_Benefits"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "hazardousMaterialClass_entityType",
+            "name": "hazardousMaterialClass",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Hazardous_Material_Class",
+                "description": "vw_Hazardous_Material_Class"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "headphoneFit_entityType",
+            "name": "headphoneFit",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Headphone_Fit",
+                "description": "vw_Headphone_Fit"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "heelStyle_entityType",
+            "name": "heelStyle",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Heel_Style",
+                "description": "vw_Heel_Style"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ingredientConcern_entityType",
+            "name": "ingredientConcern",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Ingredient_Concern",
+                "description": "vw_Ingredient_Concern"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "itemType_entityType",
+            "name": "itemType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Item_Type",
+                "description": "vw_Item_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "laptopCapacity_entityType",
+            "name": "laptopCapacity",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Laptop_Capacity",
+                "description": "vw_Laptop_Capacity"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "legStyle_entityType",
+            "name": "legStyle",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Leg_Style",
+                "description": "vw_Leg_Style"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "lensType_entityType",
+            "name": "lensType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Lens_Type",
+                "description": "vw_Lens_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "licensedProductType_entityType",
+            "name": "licensedProductType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Licensed_Product_Type",
+                "description": "vw_Licensed_Product_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "linedType_entityType",
+            "name": "linedType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Lined_Type",
+                "description": "vw_Lined_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "materialComponentType_entityType",
+            "name": "materialComponentType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Material_Component_Type",
+                "description": "vw_Material_Component_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "materialOpacity_entityType",
+            "name": "materialOpacity",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Material_Opacity",
+                "description": "vw_Material_Opacity"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "movementType_entityType",
+            "name": "movementType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Movement_Type",
+                "description": "vw_Movement_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "neckStyle_entityType",
+            "name": "neckStyle",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Neck_Style",
+                "description": "vw_Neck_Style"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "normalizedFitType_entityType",
+            "name": "normalizedFitType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Normalized_Fit_Type",
+                "description": "vw_Normalized_Fit_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "occasion_entityType",
+            "name": "occasion",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Occasion",
+                "description": "vw_Occasion"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pearlLustre_entityType",
+            "name": "pearlLustre",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Pearl_Lustre",
+                "description": "vw_Pearl_Lustre"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pearlSizeRange_entityType",
+            "name": "pearlSizeRange",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Pearl_Size_Range",
+                "description": "vw_Pearl_Size_Range"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pearlStringingMethod_entityType",
+            "name": "pearlStringingMethod",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Pearl_Stringing_Method",
+                "description": "vw_Pearl_Stringing_Method"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "pearlUniformity_entityType",
+            "name": "pearlUniformity",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Pearl_Uniformity",
+                "description": "vw_Pearl_Uniformity"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningBottomsFitDept_entityType",
+            "name": "planningBottomsFitDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Bottoms_Fit_Dept",
+                "description": "vw_Planning_Bottoms_Fit_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningCorpPriceDept_entityType",
+            "name": "planningCorpPriceDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Corp_Price_Dept",
+                "description": "vw_Planning_Corp_Price_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningCorpStyleDept_entityType",
+            "name": "planningCorpStyleDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Corp_Style_Dept",
+                "description": "vw_Planning_Corp_Style_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningCustomerAssortmentDept_entityType",
+            "name": "planningCustomerAssortmentDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Customer_Assortment_Dept",
+                "description": "vw_Planning_Customer_Assortment_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningCustomerDept_entityType",
+            "name": "planningCustomerDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Customer_Dept",
+                "description": "vw_Planning_Customer_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeliveryDept_entityType",
+            "name": "planningDeliveryDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Delivery_Dept",
+                "description": "vw_Planning_Delivery_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeptColorDept_entityType",
+            "name": "planningDeptColorDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Dept_Color_Dept",
+                "description": "vw_Planning_Dept_Color_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeptFitDept_entityType",
+            "name": "planningDeptFitDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Dept_Fit_Dept",
+                "description": "vw_Planning_Dept_Fit_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeptPreferenceDept_entityType",
+            "name": "planningDeptPreferenceDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Dept_Preference_Dept",
+                "description": "vw_Planning_Dept_Preference_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeptPriceDept_entityType",
+            "name": "planningDeptPriceDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Dept_Price_Dept",
+                "description": "vw_Planning_Dept_Price_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningDeptStyleDept_entityType",
+            "name": "planningDeptStyleDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Dept_Style_Dept",
+                "description": "vw_Planning_Dept_Style_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningEventDept_entityType",
+            "name": "planningEventDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Event_Dept",
+                "description": "vw_Planning_Event_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningFabricationDept_entityType",
+            "name": "planningFabricationDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Fabrication_Dept",
+                "description": "vw_Planning_Fabrication_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningFitDept_entityType",
+            "name": "planningFitDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Fit_Dept",
+                "description": "vw_Planning_Fit_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningFunctionDept_entityType",
+            "name": "planningFunctionDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Function_Dept",
+                "description": "vw_Planning_Function_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningGenderDept_entityType",
+            "name": "planningGenderDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Gender_Dept",
+                "description": "vw_Planning_Gender_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningGenderSizeDept_entityType",
+            "name": "planningGenderSizeDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Gender_Size_Dept",
+                "description": "vw_Planning_Gender_Size_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningItemCategoryDept_entityType",
+            "name": "planningItemCategoryDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Item_Category_Dept",
+                "description": "vw_Planning_Item_Category_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningMixOfBusinessDept_entityType",
+            "name": "planningMixOfBusinessDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Mix_of_Business_Dept",
+                "description": "vw_Planning_Mix_of_Business_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningOccasionDept_entityType",
+            "name": "planningOccasionDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Occasion_Dept",
+                "description": "vw_Planning_Occasion_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningProductCategoryDept_entityType",
+            "name": "planningProductCategoryDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Product_Category_Dept",
+                "description": "vw_Planning_Product_Category_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningProductPriceDept_entityType",
+            "name": "planningProductPriceDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Product_Price_Dept",
+                "description": "vw_Planning_Product_Price_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningProductSourceDept_entityType",
+            "name": "planningProductSourceDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Product_Source_Dept",
+                "description": "vw_Planning_Product_Source_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningShadeDept_entityType",
+            "name": "planningShadeDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Shade_Dept",
+                "description": "vw_Planning_Shade_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningSilhouetteDept_entityType",
+            "name": "planningSilhouetteDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Silhouette_Dept",
+                "description": "vw_Planning_Silhouette_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningSkinTypeDept_entityType",
+            "name": "planningSkinTypeDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Skin_Type_Dept",
+                "description": "vw_Planning_Skin_Type_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningSupplierRoleDept_entityType",
+            "name": "planningSupplierRoleDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Supplier_Role_Dept",
+                "description": "vw_Planning_Supplier_Role_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "planningToneDept_entityType",
+            "name": "planningToneDept",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Planning_Tone_Dept",
+                "description": "vw_Planning_Tone_Dept"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productClassificationLevel_entityType",
+            "name": "productClassificationLevel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Classification_Level",
+                "description": "vw_Product_Classification_Level"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productColor_entityType",
+            "name": "productColor",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Color",
+                "description": "vw_Product_Color"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productColorFamily_entityType",
+            "name": "productColorFamily",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Color_Family",
+                "description": "vw_Product_Color_Family"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productContainerType_entityType",
+            "name": "productContainerType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Container_Type",
+                "description": "vw_Product_Container_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productCustomerDeliveryRule_entityType",
+            "name": "productCustomerDeliveryRule",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Customer_Delivery_Rule",
+                "description": "vw_Product_Customer_Delivery_Rule"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productCustomizationType_entityType",
+            "name": "productCustomizationType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Customization_Type",
+                "description": "vw_Product_Customization_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productDryInstr_entityType",
+            "name": "productDryInstr",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Dry_Instr",
+                "description": "vw_Product_Dry_Instr"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productEdiNrfSizeCode_entityType",
+            "name": "productEdiNrfSizeCode",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_EDI_NRF_Size_Code",
+                "description": "vw_Product_EDI_NRF_Size_Code"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productFinish_entityType",
+            "name": "productFinish",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Finish",
+                "description": "vw_Product_Finish"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productGroupType_entityType",
+            "name": "productGroupType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Group_Type",
+                "description": "vw_Product_Group_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productHangerType_entityType",
+            "name": "productHangerType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Hanger_Type",
+                "description": "vw_Product_Hanger_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productHierarchyLevel_entityType",
+            "name": "productHierarchyLevel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Hierarchy_Level",
+                "description": "vw_Product_Hierarchy_Level"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productInnerPackType_entityType",
+            "name": "productInnerPackType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Inner_Pack_Type",
+                "description": "vw_Product_Inner_Pack_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productLabel_entityType",
+            "name": "productLabel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Label",
+                "description": "vw_Product_Label"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productLifeCycleStatus_entityType",
+            "name": "productLifeCycleStatus",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Life_Cycle_Status",
+                "description": "vw_Product_Life_Cycle_Status"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productManufacturer_entityType",
+            "name": "productManufacturer",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Manufacturer",
+                "description": "vw_Product_Manufacturer"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productMaterial_entityType",
+            "name": "productMaterial",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Material",
+                "description": "vw_Product_Material"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productMaterialMetal_entityType",
+            "name": "productMaterialMetal",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Material_Metal",
+                "description": "vw_Product_Material_Metal"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productMaterialPearl_entityType",
+            "name": "productMaterialPearl",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Material_Pearl",
+                "description": "vw_Product_Material_Pearl"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productMaterialStone_entityType",
+            "name": "productMaterialStone",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Material_Stone",
+                "description": "vw_Product_Material_Stone"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productMaterialType_entityType",
+            "name": "productMaterialType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Material_Type",
+                "description": "vw_Product_Material_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productOriginType_entityType",
+            "name": "productOriginType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Origin_Type",
+                "description": "vw_Product_Origin_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productPackOrderType_entityType",
+            "name": "productPackOrderType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Pack_Order_Type",
+                "description": "vw_Product_Pack_Order_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productPackingMethod_entityType",
+            "name": "productPackingMethod",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Packing_Method",
+                "description": "vw_Product_Packing_Method"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productPattern_entityType",
+            "name": "productPattern",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Pattern",
+                "description": "vw_Product_Pattern"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productReturnDisposition_entityType",
+            "name": "productReturnDisposition",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Return_Disposition",
+                "description": "vw_Product_Return_Disposition"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSellingChannel_entityType",
+            "name": "productSellingChannel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Selling_Channel",
+                "description": "vw_Product_Selling_Channel"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSellingStatus_entityType",
+            "name": "productSellingStatus",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Selling_Status",
+                "description": "vw_Product_Selling_Status"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSizeRangeDefault_entityType",
+            "name": "productSizeRangeDefault",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Size_Range_Default",
+                "description": "vw_Product_Size_Range_Default"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSizeRangeGroup_entityType",
+            "name": "productSizeRangeGroup",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Size_Range_Group",
+                "description": "vw_Product_Size_Range_Group"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSizeType_entityType",
+            "name": "productSizeType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Size_Type",
+                "description": "vw_Product_Size_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productSpecialTreatmentType_entityType",
+            "name": "productSpecialTreatmentType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Special_Treatment_Type",
+                "description": "vw_Product_Special_Treatment_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productTaxCategory_entityType",
+            "name": "productTaxCategory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Tax_Category",
+                "description": "vw_Product_Tax_Category"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productTicketType_entityType",
+            "name": "productTicketType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Ticket_Type",
+                "description": "vw_Product_Ticket_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productTurnoverEvent_entityType",
+            "name": "productTurnoverEvent",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Turnover_Event",
+                "description": "vw_Product_Turnover_Event"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productWashInstr_entityType",
+            "name": "productWashInstr",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Product_Wash_Instr",
+                "description": "vw_Product_Wash_Instr"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "promotionalProductType_entityType",
+            "name": "promotionalProductType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Promotional_Product_Type",
+                "description": "vw_Promotional_Product_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "remindAutoFulfill_entityType",
+            "name": "remindAutoFulfill",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Remind_Auto_Fulfill",
+                "description": "vw_Remind_Auto_Fulfill"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sellingMarket_entityType",
+            "name": "sellingMarket",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Selling_Market",
+                "description": "vw_Selling_Market"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "serviceAddOns_entityType",
+            "name": "serviceAddOns",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Service_Add_Ons",
+                "description": "vw_Service_Add_Ons"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "serviceTargetUseApplication_entityType",
+            "name": "serviceTargetUseApplication",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Service_Target_Use_Application",
+                "description": "vw_Service_Target_Use_Application"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "settingType_entityType",
+            "name": "settingType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Setting_Type",
+                "description": "vw_Setting_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "shoeSupportType_entityType",
+            "name": "shoeSupportType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Shoe_Support_Type",
+                "description": "vw_Shoe_Support_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "silhouette_entityType",
+            "name": "silhouette",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Silhouette",
+                "description": "vw_Silhouette"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sizeGroupmerge_entityType",
+            "name": "sizeGroupmerge",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Size_GroupMerge",
+                "description": "vw_Size_GroupMerge"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sizeRangeDetailCombo_entityType",
+            "name": "sizeRangeDetailCombo",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Size_Range_Detail_Combo",
+                "description": "vw_Size_Range_Detail_Combo"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "skinConcern_entityType",
+            "name": "skinConcern",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Skin_Concern",
+                "description": "vw_Skin_Concern"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "skinCoverage_entityType",
+            "name": "skinCoverage",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Skin_Coverage",
+                "description": "vw_Skin_Coverage"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "skinTone_entityType",
+            "name": "skinTone",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Skin_Tone",
+                "description": "vw_Skin_Tone"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "skinType_entityType",
+            "name": "skinType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Skin_Type",
+                "description": "vw_Skin_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "skirtLengthType_entityType",
+            "name": "skirtLengthType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Skirt_Length_Type",
+                "description": "vw_Skirt_Length_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sleeveType_entityType",
+            "name": "sleeveType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Sleeve_Type",
+                "description": "vw_Sleeve_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sockType_entityType",
+            "name": "sockType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Sock_Type",
+                "description": "vw_Sock_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sourcingCategory_entityType",
+            "name": "sourcingCategory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Sourcing_Category",
+                "description": "vw_Sourcing_Category"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sport_entityType",
+            "name": "sport",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Sport",
+                "description": "vw_Sport"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "stoneClarity_entityType",
+            "name": "stoneClarity",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Stone_Clarity",
+                "description": "vw_Stone_Clarity"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "stoneCutGrading_entityType",
+            "name": "stoneCutGrading",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Stone_Cut_Grading",
+                "description": "vw_Stone_Cut_Grading"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "strapHandbag_entityType",
+            "name": "strapHandbag",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Strap_Handbag",
+                "description": "vw_Strap_Handbag"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "strapShoe_entityType",
+            "name": "strapShoe",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Strap_Shoe",
+                "description": "vw_Strap_Shoe"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "strapUnderwearSwimwear_entityType",
+            "name": "strapUnderwearSwimwear",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Strap_Underwear_Swimwear",
+                "description": "vw_Strap_Underwear_Swimwear"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "strollerBrakeType_entityType",
+            "name": "strollerBrakeType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Stroller_Brake_Type",
+                "description": "vw_Stroller_Brake_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureBelt_entityType",
+            "name": "styleFeatureBelt",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Belt",
+                "description": "vw_Style_Feature_Belt"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureClothing_entityType",
+            "name": "styleFeatureClothing",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Clothing",
+                "description": "vw_Style_Feature_Clothing"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureCoatsOutwr_entityType",
+            "name": "styleFeatureCoatsOutwr",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Coats_Outwr",
+                "description": "vw_Style_Feature_Coats_Outwr"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureEyewear_entityType",
+            "name": "styleFeatureEyewear",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Eyewear",
+                "description": "vw_Style_Feature_Eyewear"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureGlove_entityType",
+            "name": "styleFeatureGlove",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Glove",
+                "description": "vw_Style_Feature_Glove"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureHairAccessory_entityType",
+            "name": "styleFeatureHairAccessory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Hair_Accessory",
+                "description": "vw_Style_Feature_Hair_Accessory"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureHandbag_entityType",
+            "name": "styleFeatureHandbag",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Handbag",
+                "description": "vw_Style_Feature_Handbag"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureHat_entityType",
+            "name": "styleFeatureHat",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Hat",
+                "description": "vw_Style_Feature_Hat"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureHosiery_entityType",
+            "name": "styleFeatureHosiery",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Hosiery",
+                "description": "vw_Style_Feature_Hosiery"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureJewelry_entityType",
+            "name": "styleFeatureJewelry",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Jewelry",
+                "description": "vw_Style_Feature_Jewelry"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureLuggage_entityType",
+            "name": "styleFeatureLuggage",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Luggage",
+                "description": "vw_Style_Feature_Luggage"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureNeckwear_entityType",
+            "name": "styleFeatureNeckwear",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Neckwear",
+                "description": "vw_Style_Feature_Neckwear"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeaturePant_entityType",
+            "name": "styleFeaturePant",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Pant",
+                "description": "vw_Style_Feature_Pant"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureShoe_entityType",
+            "name": "styleFeatureShoe",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Shoe",
+                "description": "vw_Style_Feature_Shoe"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureSuit_entityType",
+            "name": "styleFeatureSuit",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Suit",
+                "description": "vw_Style_Feature_Suit"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureTechAccessory_entityType",
+            "name": "styleFeatureTechAccessory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Tech_Accessory",
+                "description": "vw_Style_Feature_Tech_Accessory"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureTop_entityType",
+            "name": "styleFeatureTop",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Top",
+                "description": "vw_Style_Feature_Top"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureUnderwearSwimwear_entityType",
+            "name": "styleFeatureUnderwearSwimwear",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Underwear_Swimwear",
+                "description": "vw_Style_Feature_Underwear_Swimwear"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureWallet_entityType",
+            "name": "styleFeatureWallet",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Wallet",
+                "description": "vw_Style_Feature_Wallet"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "styleFeatureWatch_entityType",
+            "name": "styleFeatureWatch",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Style_Feature_Watch",
+                "description": "vw_Style_Feature_Watch"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sunSpectrum_entityType",
+            "name": "sunSpectrum",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Sun_Spectrum",
+                "description": "vw_Sun_Spectrum"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "supplier_entityType",
+            "name": "supplier",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Supplier",
+                "description": "vw_Supplier"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "targetUseApplicationBeautyItem_entityType",
+            "name": "targetUseApplicationBeautyItem",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Target_Use_Application_Beauty_Item",
+                "description": "vw_Target_Use_Application_Beauty_Item"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "targetUseApplicationHomeItem_entityType",
+            "name": "targetUseApplicationHomeItem",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Target_Use_Application_Home_Item",
+                "description": "vw_Target_Use_Application_Home_Item"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ticketPoPrintType_entityType",
+            "name": "ticketPoPrintType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Ticket_PO_Print_Type",
+                "description": "vw_Ticket_PO_Print_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "toeStyle_entityType",
+            "name": "toeStyle",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Toe_Style",
+                "description": "vw_Toe_Style"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfDeposit_entityType",
+            "name": "typeOfDeposit",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Deposit",
+                "description": "vw_Type_of_Deposit"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfFee_entityType",
+            "name": "typeOfFee",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Fee",
+                "description": "vw_Type_of_Fee"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfFragrance_entityType",
+            "name": "typeOfFragrance",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Fragrance",
+                "description": "vw_Type_of_Fragrance"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfNonInventoriedProductCategory_entityType",
+            "name": "typeOfNonInventoriedProductCategory",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Non_Inventoried_Product_Category",
+                "description": "vw_Type_of_Non_Inventoried_Product_Category"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfProductCosmetic_entityType",
+            "name": "typeOfProductCosmetic",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Product_Cosmetic",
+                "description": "vw_Type_of_Product_Cosmetic"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfProductHome_entityType",
+            "name": "typeOfProductHome",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Product_Home",
+                "description": "vw_Type_of_Product_Home"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfProductSkin_entityType",
+            "name": "typeOfProductSkin",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Product_Skin",
+                "description": "vw_Type_of_Product_Skin"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "typeOfService_entityType",
+            "name": "typeOfService",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Type_of_Service",
+                "description": "vw_Type_of_Service"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "uomClass_entityType",
+            "name": "uomClass",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_UOM_Class",
+                "description": "vw_UOM_Class"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "upcType_entityType",
+            "name": "upcType",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_UPC_Type",
+                "description": "vw_UPC_Type"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "vendorRole_entityType",
+            "name": "vendorRole",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Vendor_Role",
+                "description": "vw_Vendor_Role"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "waterResistance_entityType",
+            "name": "waterResistance",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "vw_Water_Resistance",
+                "description": "vw_Water_Resistance"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "referenceData",
+                                "entityModelInfo": {
+                                    "entityModelType": "domain"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityDisplayModel",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "attributes": {
+                    "cpimProductName": {
+                        "properties": {
+                            "displayType": "textbox"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "sku_entityDisplayModel",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "attributes": {
+                    "cpimProductName": {
+                        "properties": {
+                            "displayType": "textbox"
+                        }
+                    }
+                },
+                "relationships": {
+                    "crosssell": {
+                        "attributes": {
+                            "status": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "productPresentation_entityDisplayModel",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            }
+        },
+        {
+            "id": "ensemble_entityDisplayModel",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            }
+        }
+    ]
+}
