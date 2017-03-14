@@ -19,7 +19,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "thingdomainrelationshipTypes",
+                                "id": "thingDomainRelationshipTypes",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -43,7 +43,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "thingdomainrelationshipTypes",
+                                "id": "thingDomainRelationshipTypes",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -54,8 +54,8 @@
             }
         },
         {
-            "id": "productPresentationtolot_relationshipType",
-            "name": "productPresentationtolot",
+            "id": "productPresentationToLot_relationshipType",
+            "name": "productPresentationToLot",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
             },
@@ -67,7 +67,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "thingdomainrelationshipTypes",
+                                "id": "thingDomainRelationshipTypes",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
@@ -78,8 +78,8 @@
             }
         },
         {
-            "id": "ensembletopresentation_relationshipType",
-            "name": "ensembletopresentation",
+            "id": "ensembleToPresentation_relationshipType",
+            "name": "ensembleToPresentation",
             "entityModelInfo": {
                 "entityModelType": "relationshipType"
             },
@@ -91,7 +91,7 @@
                             "direction": "both",
                             "relationshipType": "aggregation",
                             "relTo": {
-                                "id": "thingdomainrelationshipTypes",
+                                "id": "thingDomainRelationshipTypes",
                                 "entityModelInfo": {
                                     "entityModelType": "list"
                                 }
