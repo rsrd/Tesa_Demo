@@ -6,8 +6,8 @@
     },
     "entityModels": [
         {
-            "id": "productCreationWorkflow_id",
-            "name": "productCreationWorkflow",
+            "id": "newProductSetup_workflowDefinition",
+            "name": "newProductSetup",
             "entityModelInfo": {
                 "entityModelType": "workflowDefinition"
             },
@@ -15,880 +15,620 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "workflowDefinitions"
+                            "self": "self/newProductSetup_workflowDefinition"
                         },
                         "attributes": {
-                            "workflowName": {
-                                "values": [
-                                    {
-                                        "value": "Product Creation Workflow"
-                                    }
-                                ]
-                            },
-                            "workflowVersion": {
-                                "values": [
-                                    {
-                                        "value": "V1.0"
-                                    }
-                                ]
-                            },
-                            "published": {
-                                "values": [
-                                    {
-                                        "value": true
-                                    }
-                                ]
-                            },
-                            "activities": {
+                            "workflows": {
                                 "group": [
                                     {
-                                        "activityGuid": {
+                                        "workflowName": {
                                             "values": [
                                                 {
-                                                    "value": "cd28e78b-b521-4fc8-8677-5bbef853b969"
+                                                    "value": "New Product Setup"
                                                 }
                                             ]
                                         },
-                                        "sequence": {
+                                        "workflowVersion": {
                                             "values": [
                                                 {
-                                                    "value": 1
+                                                    "value": "V1.2"
                                                 }
                                             ]
                                         },
-                                        "activityName": {
+                                        "published": {
                                             "values": [
                                                 {
-                                                    "value": "Create Product"
+                                                    "value": true
                                                 }
                                             ]
                                         },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Vendor creates a product and fills in the mandatory attributes. Once ready, Vendor can submit the new product for review. Vendor can discard the new product as well."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "AssignToActor"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Vendors"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
+                                        "activities": {
                                             "group": [
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "submit"
+                                                                "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Submit"
+                                                                "value": "New SKUs to Submit"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "none"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": true
+                                                                "value": "cfadmin"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "actions": {
+                                                        "group": [
+                                                            {
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Submit"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Submit"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Submit.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Save for Later"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Save for Later"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "SaveforLater.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "discard"
+                                                                "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Discard"
+                                                                "value": "Review Assortment"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "required"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": false
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "e52f6a96-b521-4fc8-8677-0aeef853b899"
-                                                }
-                                            ]
-                                        },
-                                        "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": 2
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Review Product"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyer reviews the product data and approves if all fine. Otheriwse, Buyer can reject and send the product back to Vendor with comments."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyers"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "approve"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": "Approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Approve Assortment"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Approve Assortment"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "ApproveAssortment.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
                                                             {
-                                                                "value": "optional"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Request Info"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Request Info"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "RequestInfo.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Mendatory"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
                                                             {
-                                                                "value": true
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "reject"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Reject"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "required"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": false
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "8b51c52e-8a41-a5f6-19cc-24c896e2ab12"
-                                                }
-                                            ]
-                                        },
-                                        "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": 3
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Merchandising Approval"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Merchant reviews the product data and approves if all fine. Otheriwse, Buyer can reject and send the product back to Buyer with comments."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyers"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "optional"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": true
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Reject"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Reject"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Reject.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Mendatory"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "reject"
+                                                                "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Reject"
+                                                                "value": "Provide Additional Info"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "required"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": false
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "365b1c52-7a31-35b6-59ca-14c926e2df19"
-                                                }
-                                            ]
-                                        },
-                                        "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": 4
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Enrich Marketing Content"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Content admin required to enrich the marketing content for the product version and NART in this workflow step."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyers"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "review"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": "Review"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "required"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": false
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Resubmit"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Resubmit"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Resubmit.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "submit"
+                                                                "value": "aa582e37-90f1-45b6-ac95-725cea087981"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Submit"
+                                                                "value": "Assign Internal Information"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "optional"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": true
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "activityGuidId1"
-                                                }
-                                            ]
-                                        },
-                                        "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": 5
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Add Packshot"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Product Manager reviews the product data and approves if all fine. Otheriwse, manager can reject and send the product back to Vendor with comments."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyers"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "approve"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": "Approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Approve"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Approve"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Approve.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
                                                             {
-                                                                "value": "optional"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": true
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Request Info"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Request Info"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "RequestInfo.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Mendatory"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "review"
+                                                                "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Reject"
+                                                                "value": "Rejected SKUs"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "required"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": true
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "id": "productEnrichmentWorkflow_id",
-            "name": "productEnrichmentWorkflow",
-            "entityModelInfo": {
-                "entityModelType": "workflowDefinition"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "list": "workflowDefinitions"
-                        },
-                        "attributes": {
-                            "workflowName": {
-                                "values": [
-                                    {
-                                        "value": "Product Enrichment Workflow"
-                                    }
-                                ]
-                            },
-                            "workflowVersion": {
-                                "values": [
-                                    {
-                                        "value": "V1"
-                                    }
-                                ]
-                            },
-                            "published": {
-                                "values": [
-                                    {
-                                        "value": true
-                                    }
-                                ]
-                            },
-                            "activities": {
-                                "group": [
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "activityGuidId3"
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Enrich Product Data"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "enrich the data"
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "AssignToActor"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Vendors"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "submit"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": "Submit"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "submit.png"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "none"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": true
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Done"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Done"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Done.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "None"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "discard"
+                                                                "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Discard"
+                                                                "value": "Enrich Copy"
                                                             }
                                                         ]
                                                     },
-                                                    "actionIcon": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "discard.png"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": "required"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": true
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "activityGuidId2"
-                                                }
-                                            ]
-                                        },
-                                        "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Review Product"
-                                                }
-                                            ]
-                                        },
-                                        "activityDescription": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyer reviews the product data and approves if all fine. Otheriwse, Buyer can reject and send the product back to Vendor with comments."
-                                                }
-                                            ]
-                                        },
-                                        "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
-                                        },
-                                        "allowedRoles": {
-                                            "values": [
-                                                {
-                                                    "value": "Buyers"
-                                                },
-                                                {
-                                                    "value": "Product Managers"
-                                                }
-                                            ]
-                                        },
-                                        "allowedUsers": {
-                                            "values": []
-                                        },
-                                        "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Approve"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "approve.png"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "optional"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "happyPath": {
-                                                        "values": [
-                                                            {
-                                                                "value": true
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "actionName": {
+                                                    "activityGuid": {
                                                         "values": [
                                                             {
-                                                                "value": "reject"
+                                                                "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
                                                             }
                                                         ]
                                                     },
-                                                    "actionText": {
+                                                    "activityName": {
                                                         "values": [
                                                             {
-                                                                "value": "Reject"
+                                                                "value": "Enrich with Digital Assets"
                                                             }
                                                         ]
                                                     },
-                                                    "actionIcon": {
+                                                    "assignmentType": {
                                                         "values": [
                                                             {
-                                                                "value": "reject.png"
+                                                                "value": "RoundRobin"
                                                             }
                                                         ]
                                                     },
-                                                    "commentsMode": {
+                                                    "allowedRoles": {
+                                                        "values": []
+                                                    },
+                                                    "allowedUsers": {
                                                         "values": [
                                                             {
-                                                                "value": "required"
+                                                                "value": "cfadmin"
                                                             }
                                                         ]
                                                     },
-                                                    "happyPath": {
-                                                        "values": [
+                                                    "actions": {
+                                                        "group": [
                                                             {
-                                                                "value": true
+                                                                "actionName": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionText": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "actionIcon": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Complete.png"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "commentsMode": {
+                                                                    "values": [
+                                                                        {
+                                                                            "value": "Optional"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
