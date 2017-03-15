@@ -14,7 +14,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster"
+                            "self": "self/productMaster"
                         },
                         "attributes": {
                             "externalName": {
@@ -38,7 +38,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "channel": "webCatalog"
+                            "self": "self/webCatalog"
                         },
                         "attributes": {
                             "externalName": {
@@ -62,7 +62,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "taxonomy": "merchandisingTaxonomy"
+                            "self": "self/merchandisingTaxonomy"
                         },
                         "attributes": {
                             "externalName": {
@@ -86,7 +86,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "taxonomy": "webTaxonomy"
+                            "self": "self/webTaxonomy"
                         },
                         "attributes": {
                             "externalName": {
@@ -110,7 +110,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "classification": "apparel"
+                            "self": "self/apparel"
                         },
                         "attributes": {
                             "externalName": {
@@ -134,8 +134,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "classification": "shoes",
-                            "taxonomy": "merchandisingTaxonomy"
+                            "self": "self/shoes"
                         },
                         "attributes": {
                             "externalName": {
@@ -145,6 +144,11 @@
                                     }
                                 ]
                             }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchandisingTaxonomy"
                         },
                         "relationships": {
                             "isChildOf": [
