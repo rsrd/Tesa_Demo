@@ -15,7 +15,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "coreMaster",
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL"
                         },
@@ -994,7 +994,7 @@
                             "setupCost": {
                                 "properties": {
                                     "externalName": "Setup Cost",
-                                    "dataType": "string"
+                                    "dataType": "decimal"
                                 }
                             },
                             "setupRetail": {
@@ -1667,7 +1667,7 @@
                             "createDate": {
                                 "properties": {
                                     "externalName": "Create Date",
-                                    "dataType": "string"
+                                    "dataType": "datetime"
                                 }
                             },
                             "lastUpdatedDate": {
@@ -1706,6 +1706,32 @@
                                     "dataType": "string"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "properties": {
+                                        "externalName": "Is Child Of",
+                                        "relationshipType": "aggregation"
+                                    }
+                                }
+                            ],
+                            "supplierUpc": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier UPC",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ],
+                            "supplierVpn": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier VPN",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ]
                         }
                     },
                     {
@@ -1932,7 +1958,7 @@
                             "setupCost": {
                                 "properties": {
                                     "externalName": "Setup Cost",
-                                    "dataType": "string"
+                                    "dataType": "decimal"
                                 }
                             },
                             "setupRetail": {
@@ -2139,7 +2165,7 @@
                             "createDate": {
                                 "properties": {
                                     "externalName": "Create Date",
-                                    "dataType": "string"
+                                    "dataType": "datetime"
                                 }
                             },
                             "lastUpdatedDate": {
@@ -2194,7 +2220,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "coreMaster",
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL"
                         },
@@ -2908,7 +2934,7 @@
                             "setupCost": {
                                 "properties": {
                                     "externalName": "Setup Cost",
-                                    "dataType": "string"
+                                    "dataType": "decimal"
                                 }
                             },
                             "setupRetail": {
@@ -3393,7 +3419,7 @@
                             "createDate": {
                                 "properties": {
                                     "externalName": "Create Date",
-                                    "dataType": "string"
+                                    "dataType": "datetime"
                                 }
                             },
                             "lastUpdatedDate": {
@@ -3426,6 +3452,16 @@
                                     "dataType": "string"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "properties": {
+                                        "externalName": "Is Child Of",
+                                        "relationshipType": "aggregation"
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]
@@ -3441,7 +3477,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "coreMaster",
+                            "list": "productMaster",
                             "taxonomy": "merchandisingTaxonomy",
                             "classification": "_ALL"
                         },
@@ -3770,7 +3806,7 @@
                             "setupCost": {
                                 "properties": {
                                     "externalName": "Setup Cost",
-                                    "dataType": "string"
+                                    "dataType": "decimal"
                                 }
                             },
                             "setupRetail": {
@@ -4293,7 +4329,7 @@
                             "createDate": {
                                 "properties": {
                                     "externalName": "Create Date",
-                                    "dataType": "string"
+                                    "dataType": "datetime"
                                 }
                             },
                             "lastUpdatedDate": {
@@ -4338,6 +4374,32 @@
                                     "dataType": "string"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "properties": {
+                                        "externalName": "Is Child Of",
+                                        "relationshipType": "aggregation"
+                                    }
+                                }
+                            ],
+                            "supplierUpc": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier UPC",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ],
+                            "supplierVpn": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier VPN",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]

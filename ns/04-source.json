@@ -6,20 +6,20 @@
     },
     "entityModels": [
         {
-            "id": "default_source",
-            "name": "default",
+            "id": "internal_source",
+            "name": "internal",
             "entityModelInfo": {
                 "entityModelType": "source"
             },
             "properties": {
-                "externalName": "Default source",
+                "externalName": "Internal source",
                 "description": "Internal source"
             },
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "self": "self/default_source"
+                            "self": "self/internal_source"
                         }
                     }
                 ]
