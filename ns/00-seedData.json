@@ -10,13 +10,31 @@
             "name": "corp",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/corp_list"
+                        }
+                    }
+                ]
             }
         },
         {
-            "id": "domains",
+            "id": "domains_list",
             "name": "domains",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/domains_list"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -24,6 +42,15 @@
             "name": "entityTypes",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/entityTypes_list"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -31,6 +58,15 @@
             "name": "sources",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/sources_list"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -38,6 +74,15 @@
             "name": "users",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/users_list"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -45,6 +90,15 @@
             "name": "roles",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/roles_list"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -52,6 +106,15 @@
             "name": "locales",
             "entityModelInfo": {
                 "entityModelType": "list"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/locales_list"
+                        }
+                    }
+                ]
             }
         }
     ]

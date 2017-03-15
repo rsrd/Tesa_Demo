@@ -21,6 +21,15 @@
                     "administrator",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/admin_user"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -37,6 +46,15 @@
                 "email": "victor.smith@riversand.com",
                 "roles": [
                     "vendor"
+                ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/vendor1_user"
+                        }
+                    }
                 ]
             }
         },
@@ -56,6 +74,15 @@
                     "buyer",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/buyer1_user"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -73,6 +100,15 @@
                 "roles": [
                     "buyerOps",
                     "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/buyerops1_user"
+                        }
+                    }
                 ]
             }
         },
@@ -92,6 +128,15 @@
                     "administrator",
                     "rdpAllDataAccess"
                 ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/pottas_user"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -109,6 +154,15 @@
                 "roles": [
                     "administrator",
                     "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/bhatian_user"
+                        }
+                    }
                 ]
             }
         }
