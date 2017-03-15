@@ -6,38 +6,6 @@
     },
     "entityModels": [
         {
-            "id": "lot_workflowDefinitionMapping",
-            "name": "lot",
-            "entityModelInfo": {
-                "entityModelType": "workflowDefinitionMapping"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "list": "productMaster"
-                        },
-                        "attributes": {},
-                        "relationships": {
-                            "hasWorkflowsDefined": [
-                                {
-                                    "id": "rel101",
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "relTo": {
-                                        "id": "newProductSetup_workflowDefinition",
-                                        "entityInfo": {
-                                            "entityType": "workflowDefinition"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
             "id": "sku_workflowDefinitionMapping",
             "name": "sku",
             "entityModelInfo": {
@@ -49,7 +17,6 @@
                         "ctxGroup": {
                             "list": "productMaster"
                         },
-                        "attributes": {},
                         "relationships": {
                             "hasWorkflowsDefined": [
                                 {
