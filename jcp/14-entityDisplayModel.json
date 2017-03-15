@@ -12,13 +12,22 @@
                 "entityModelType": "entityDisplayModel"
             },
             "data": {
-                "attributes": {
-                    "cpimProductName": {
-                        "properties": {
-                            "displayType": "textbox"
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         {
@@ -28,24 +37,33 @@
                 "entityModelType": "entityDisplayModel"
             },
             "data": {
-                "attributes": {
-                    "cpimProductName": {
-                        "properties": {
-                            "displayType": "textbox"
-                        }
-                    }
-                },
-                "relationships": {
-                    "crossSell": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        },
                         "attributes": {
-                            "status": {
+                            "cpimProductName": {
                                 "properties": {
                                     "displayType": "textbox"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "crossSell": {
+                                "attributes": {
+                                    "status": {
+                                        "properties": {
+                                            "displayType": "textbox"
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         {
@@ -53,6 +71,17 @@
             "name": "productPresentation",
             "entityModelInfo": {
                 "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         },
         {
@@ -60,6 +89,17 @@
             "name": "ensemble",
             "entityModelInfo": {
                 "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL_"
+                        }
+                    }
+                ]
             }
         }
     ]
