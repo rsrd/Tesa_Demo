@@ -1706,6 +1706,32 @@
                                     "dataType": "string"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "isChildOf": [
+                                {
+                                    "properties": {
+                                        "externalName": "Is Child Of",
+                                        "relationshipType": "aggregation"
+                                    }
+                                }
+                            ],
+                            "supplierUpc": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier UPC",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ],
+                            "supplierVpn": [
+                                {
+                                    "properties": {
+                                        "externalName": "Supplier VPN",
+                                        "relationshipType": "association"
+                                    }
+                                }
+                            ]
                         }
                     },
                     {
