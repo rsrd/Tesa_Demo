@@ -38,8 +38,7 @@
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "classification": "shoes",
-                            "taxonomy": "merchHierarchy"
+                            "self": "self/shoes"
                         },
                         "attributes": {
                             "externalName": {
@@ -49,6 +48,11 @@
                                     }
                                 ]
                             }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "taxonomy": "merchHierarchy"
                         },
                         "relationships": {
                             "isChildOf": [
