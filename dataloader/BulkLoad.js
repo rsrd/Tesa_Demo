@@ -39,9 +39,11 @@ function startLoadingData(tenant) {
         console.log("\n-----------------------------Logs-----------------------------------\n");
         if (files && files.length > 0) {
             files.forEach(function (file) {
-                console.log("reading file: " + file);
-                var fileData = fs.readFileSync(dir + file);
-                var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
+                if (file != ".DS_Store") {
+                    console.log("reading file: " + file);
+                    var fileData = fs.readFileSync(dir + file);
+                    var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
+                }
             }, this);
         } else {}
 
