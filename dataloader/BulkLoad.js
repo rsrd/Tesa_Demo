@@ -142,6 +142,8 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
                 counters[dataIndex] = counters[dataIndex] + 1;
             }
 
+            //console.log('req ', JSON.stringify(requestObj, null, 2));
+
             res = await dataService.sendRequest(tenant, serviceUrl, requestObj);
 
             if(res) {

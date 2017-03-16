@@ -18,6 +18,8 @@ async function sendRequest(tenantId, serviceUrl, req) {
         timeout: 5000
     };
 
+    //console.log('RDF req ', options);
+
     var reqPromise = request(options)
         .catch(function (errors) {
             var err = {
