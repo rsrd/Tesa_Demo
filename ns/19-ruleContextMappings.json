@@ -6,8 +6,8 @@
     },
     "entityModels": [
         {
-            "id": "sku_ruleContextMappings",
-            "name": "sku",
+            "id": "style_ruleContextMappings",
+            "name": "style",
             "entityModelInfo": {
                 "entityModelType": "ruleContextMappings"
             },
@@ -23,7 +23,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_invokeNewProductSetupWFRule_businessRule_RelId",
+                                    "id": "style_invokeNewProductSetupWFRule_businessRule_RelId",
                                     "relTo": {
                                         "id": "invokeNewProductSetupWFRule_businessRule",
                                         "entityInfo": {
@@ -71,7 +71,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_populateDescription_businessRule_RelId",
+                                    "id": "style_populateDescription_businessRule_RelId",
                                     "relTo": {
                                         "id": "populateDescription_businessRule",
                                         "entityInfo": {
@@ -119,9 +119,9 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_validateLengthAndWidth_businessRule_RelId",
+                                    "id": "style_validateMSRPAndSetupCost_businessRule_RelId",
                                     "relTo": {
-                                        "id": "validateLengthAndWidth_businessRule",
+                                        "id": "validateMSRPAndSetupCost_businessRule",
                                         "entityInfo": {
                                             "entityType": "businessRule"
                                         }
