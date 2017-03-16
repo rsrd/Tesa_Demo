@@ -1,0 +1,248 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [
+		{
+			"id": "SAMPLE_NEROLI_EDT__NO_COLOR__NO SIZE",
+			"entityInfo": {
+				"entityType": "sku"
+			},
+			"properties": {
+				"source": "internal",
+				"createdByService": "entityservice",
+				"createdBy": "Miriam Pott",
+				"createdDate": "7/16/2016  6:10:52 PM",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "Miriam Pott",
+				"modifiedDate": "7/16/2016  6:33:52 PM"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "productMaster",
+							"classification": "_ALL"
+						},
+						"attributes": {
+							"shortDescription": {
+								"alias": "Short Description",
+								"values": [
+									{
+										"value": "SAMPLE NEROLI EDT:NO COLOR:NO SIZE",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"longDescription": {
+								"alias": "Long Description",
+								"values": [
+									{
+										"value": "SAMPLE NEROLI EDT:NO COLOR:NO SIZE",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupCost": {
+								"alias": "Setup Cost",
+								"values": [
+									{
+										"value": "103.00",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"departmentDescription": {
+								"alias": "Department Description",
+								"values": [
+									{
+										"value": "HLE MENS SHOES",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"departmentNumber": {
+								"alias": "Department Number",
+								"values": [
+									{
+										"value": "232",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"eligibleSellingChannels": {
+								"alias": "Eligible Selling Channels",
+								"values": [
+									{
+										"value": "2-Rack",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"isMerchandise": {
+								"alias": "Is Merchandise",
+								"values": [
+									{
+										"value": "True",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyDescDisplay": {
+								"alias": "Merch Hierarchy Description Display",
+								"values": [
+									{
+										"value": "HLE MENS SHOES//SHOES//SHOES",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyNumDisplay": {
+								"alias": "Merch Hierarchy Numeric Display",
+								"values": [
+									{
+										"value": "553//50//500",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"msrp": {
+								"alias": "MSRP",
+								"values": [
+									{
+										"value": "130",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"primarySupplier": {
+								"alias": "Primary Supplier",
+								"values": [
+									{
+										"value": "5090318 - HLS STEVE MADDEN",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"sellingMarket": {
+								"alias": "Selling Market",
+								"values": [
+									{
+										"value": "US-United States",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupRetail": {
+								"alias": "Setup Retail",
+								"values": [
+									{
+										"value": "34.33",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"sizeRange": {
+								"alias": "Size Range",
+								"values": [
+									{
+										"value": "5198 - Footwear Temp-1D",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassDescription": {
+								"alias": "Subclass Description",
+								"values": [
+									{
+										"value": "SHOES",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassNumber": {
+								"alias": "Subclass Number",
+								"values": [
+									{
+										"value": "500",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"itemTktOverPct": {
+								"alias": "Ticket Over Percent",
+								"values": [
+									{
+										"value": "7",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"ticketType": {
+								"alias": "Ticket Type",
+								"values": [
+									{
+										"value": "NL1-Item Label UPC Barcode ",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "Rel61",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "SAMPLE NEROLI EDT:No Color",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "SAMPLE_NEROLI_EDT__No Color",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,248 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [
+		{
+			"id": "VITAMIN_C_ESTER_SERUM__NO COLOR__OUNCES",
+			"entityInfo": {
+				"entityType": "sku"
+			},
+			"properties": {
+				"source": "internal",
+				"createdByService": "entityservice",
+				"createdBy": "Miriam Pott",
+				"createdDate": "7/16/2016  6:10:52 PM",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "Miriam Pott",
+				"modifiedDate": "7/16/2016  6:33:52 PM"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "productMaster",
+							"classification": "_ALL"
+						},
+						"attributes": {
+							"shortDescription": {
+								"alias": "Short Description",
+								"values": [
+									{
+										"value": "VITAMIN C ESTER SERUM:NO COLOR:OUNCES",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"longDescription": {
+								"alias": "Long Description",
+								"values": [
+									{
+										"value": "VITAMIN C ESTER SERUM:NO COLOR:OUNCES",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupCost": {
+								"alias": "Setup Cost",
+								"values": [
+									{
+										"value": "1603.00",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"departmentDescription": {
+								"alias": "Department Description",
+								"values": [
+									{
+										"value": "TR ADV TECH/TOOLS",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"departmentNumber": {
+								"alias": "Department Number",
+								"values": [
+									{
+										"value": "239",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"eligibleSellingChannels": {
+								"alias": "Eligible Selling Channels",
+								"values": [
+									{
+										"value": "2-Rack",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"isMerchandise": {
+								"alias": "Is Merchandise",
+								"values": [
+									{
+										"value": "True",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyDescDisplay": {
+								"alias": "Merch Hierarchy Description Display",
+								"values": [
+									{
+										"value": "TR ADV TECH/TOOLS//FACE SERUMS//SERUM",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyNumDisplay": {
+								"alias": "Merch Hierarchy Numeric Display",
+								"values": [
+									{
+										"value": "276//22//2201",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"msrp": {
+								"alias": "MSRP",
+								"values": [
+									{
+										"value": "10",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"primarySupplier": {
+								"alias": "Primary Supplier",
+								"values": [
+									{
+										"value": "842632197 - DR PERRICONE COSMETICS",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"sellingMarket": {
+								"alias": "Selling Market",
+								"values": [
+									{
+										"value": "US-United States",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupRetail": {
+								"alias": "Setup Retail",
+								"values": [
+									{
+										"value": "1222.22",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"sizeRange": {
+								"alias": "Size Range",
+								"values": [
+									{
+										"value": "7300 - Volume in Ounces",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassDescription": {
+								"alias": "Subclass Description",
+								"values": [
+									{
+										"value": "SERUM",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassNumber": {
+								"alias": "Subclass Number",
+								"values": [
+									{
+										"value": "2201",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"itemTktOverPct": {
+								"alias": "Ticket Over Percent",
+								"values": [
+									{
+										"value": "7",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"ticketType": {
+								"alias": "Ticket Type",
+								"values": [
+									{
+										"value": "NL1-Item Label UPC Barcode ",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "Rel63",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "VITAMIN C ESTER SERUM:NO COLOR",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "VITAMIN_C_ESTER_SERUM__NO COLOR",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

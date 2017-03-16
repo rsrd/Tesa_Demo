@@ -1,0 +1,248 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [
+		{
+			"id": "SOSTRO_DRESS_PANT__ASST__ASST",
+			"entityInfo": {
+				"entityType": "sku"
+			},
+			"properties": {
+				"source": "internal",
+				"createdByService": "entityservice",
+				"createdBy": "Miriam Pott",
+				"createdDate": "7/16/2016  6:10:52 PM",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "Miriam Pott",
+				"modifiedDate": "7/16/2016  6:33:52 PM"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "productMaster",
+							"classification": "_ALL"
+						},
+						"attributes": {
+							"shortDescription": {
+								"alias": "Short Description",
+								"values": [
+									{
+										"value": "SOSTRO DRESS PANT:ASST:ASST",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"longDescription": {
+								"alias": "Long Description",
+								"values": [
+									{
+										"value": "SOSTRO DRESS PANT:ASST:ASST",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupCost": {
+								"alias": "Setup Cost",
+								"values": [
+									{
+										"value": "100.00",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"departmentDescription": {
+								"alias": "Department Description",
+								"values": [
+									{
+										"value": "HL MENS APPAREL",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"departmentNumber": {
+								"alias": "Department Number",
+								"values": [
+									{
+										"value": "558",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"eligibleSellingChannels": {
+								"alias": "Eligible Selling Channels",
+								"values": [
+									{
+										"value": "2-Rack",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"isMerchandise": {
+								"alias": "Is Merchandise",
+								"values": [
+									{
+										"value": "True",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyDescDisplay": {
+								"alias": "Merch Hierarchy Description Display",
+								"values": [
+									{
+										"value": "HL MENS APPAREL//BOTTOMS//BOTTOMS",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"merchHierarchyNumDisplay": {
+								"alias": "Merch Hierarchy Numeric Display",
+								"values": [
+									{
+										"value": "558//50//500",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"msrp": {
+								"alias": "MSRP",
+								"values": [
+									{
+										"value": "100.00",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"primarySupplier": {
+								"alias": "Primary Supplier",
+								"values": [
+									{
+										"value": "5091990 - HLM TED BAKER",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"sellingMarket": {
+								"alias": "Selling Market",
+								"values": [
+									{
+										"value": "US-United States",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"setupRetail": {
+								"alias": "Setup Retail",
+								"values": [
+									{
+										"value": "100.00",
+										"source": "internal",
+										"locale": "en-US",
+										"uom": "USD"
+									}
+								]
+							},
+							"sizeRange": {
+								"alias": "Size Range",
+								"values": [
+									{
+										"value": "1000 - Men One Size",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassDescription": {
+								"alias": "Subclass Description",
+								"values": [
+									{
+										"value": "BOTTOMS",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"subclassNumber": {
+								"alias": "Subclass Number",
+								"values": [
+									{
+										"value": "500",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"itemTktOverPct": {
+								"alias": "Ticket Over Percent",
+								"values": [
+									{
+										"value": "5",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"ticketType": {
+								"alias": "Ticket Type",
+								"values": [
+									{
+										"value": "NH1-Hang Tag UPC Barcode (Belt)",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "Rel65",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "SOSTRO DRESS PANT:ASST",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "SOSTRO_DRESS_PANT__ASST",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}
