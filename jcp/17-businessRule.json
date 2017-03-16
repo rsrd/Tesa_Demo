@@ -5,5 +5,239 @@
         "responseObjectName": "entityModelOperationResponse"
     },
     "entityModels": [
+        {
+            "id": "invokeNewProductSetupWFRule_businessRule",
+            "name": "invokeNewProductSetupWFRule",
+            "entityModelInfo": {
+                "entityModelType": "businessRule"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/invokeNewProductSetupWFRule_businessRule"
+                        },
+                        "attributes": {
+                            "name": {
+                                "values": [
+                                    {
+                                        "value": "Invoke Workflow"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "values": [
+                                    {
+                                        "value": "Invokes the change assignment workflow when the data object is not in change assignment workflow"
+                                    }
+                                ]
+                            },
+                            "ruleType": {
+                                "values": [
+                                    {
+                                        "value": "computation"
+                                    }
+                                ]
+                            },
+                            "executionMode": {
+                                "values": [
+                                    {
+                                        "value": "any"
+                                    }
+                                ]
+                            },
+                            "definition": {
+                                "values": [
+                                    {
+                                        "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,InvokeWorkflow[\"newProductSetup\"]]"
+                                    }
+                                ]
+                            },
+                            "enabled": {
+                                "values": [
+                                    {
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            "isDraft": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "isDeleted": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "populateDescription_businessRule",
+            "entityModelInfo": {
+                "entityModelType": "businessRule"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/populateDescription_businessRule"
+                        },
+                        "attributes": {
+                            "name": {
+                                "values": [
+                                    {
+                                        "value": "populate SKU Description"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "values": [
+                                    {
+                                        "value": "Populate SKU Description attribute value by concatenating other attributes"
+                                    }
+                                ]
+                            },
+                            "ruleType": {
+                                "values": [
+                                    {
+                                        "value": "computation"
+                                    }
+                                ]
+                            },
+                            "executionMode": {
+                                "values": [
+                                    {
+                                        "value": "any"
+                                    }
+                                ]
+                            },
+                            "definition": {
+                                "values": [
+                                    {
+                                        "value": "SetAttributeValue[\"description\", Concat[GetAttributeValue[\"skuid\"], \" - \", GetAttributeValue[\"skutype\"], \" - \", GetAttributeValue[\"displayname\"] ]]"
+                                    }
+                                ]
+                            },
+                            "enabled": {
+                                "values": [
+                                    {
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            "isDraft": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "isDeleted": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "isSystemRule": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "validateLengthAndWidth_businessRule",
+            "entityModelInfo": {
+                "entityModelType": "businessRule"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/validateLengthAndWidth_businessRule"
+                        },
+                        "attributes": {
+                            "name": {
+                                "values": [
+                                    {
+                                        "value": "Validate Length Greater Than Width rule"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "values": [
+                                    {
+                                        "value": "Validate Length Greater Than Width rule"
+                                    }
+                                ]
+                            },
+                            "ruleType": {
+                                "values": [
+                                    {
+                                        "value": "validation"
+                                    }
+                                ]
+                            },
+                            "executionMode": {
+                                "values": [
+                                    {
+                                        "value": "any"
+                                    }
+                                ]
+                            },
+                            "definition": {
+                                "values": [
+                                    {
+                                        "value": "IIF[ValidateEmptyAttributes[\"length\",\"width\"], true,IIF[GetAttributeValue[\"length\"] < GetAttributeValue[\"width\"], AddAttributeError[\"133311\", \"\", \"length\"] AND AddAttributeError[\"133312\", \"\", \"width\"], true]]"
+                                    }
+                                ]
+                            },
+                            "enabled": {
+                                "values": [
+                                    {
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            "isDraft": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "isDeleted": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "isSystemRule": {
+                                "values": [
+                                    {
+                                        "value": "false"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
     ]
 }

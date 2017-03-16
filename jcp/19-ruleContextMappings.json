@@ -1,0 +1,174 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "sku_ruleContextMappings",
+            "entityModelInfo": {
+                "entityModelType": "ruleContextMappings"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "hasBusinessRules": [
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_invokeNewProductSetupWFRule_businessRule_RelId",
+                                    "relTo": {
+                                        "id": "invokeNewProductSetupWFRule_businessRule",
+                                        "entityInfo": {
+                                            "entityType": "businessRule"
+                                        }
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_populateDescription_businessRule_RelId",
+                                    "relTo": {
+                                        "id": "populateDescription_businessRule",
+                                        "entityInfo": {
+                                            "entityType": "businessRule"
+                                        }
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "asynconly"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_validateLengthAndWidth_businessRule_RelId",
+                                    "relTo": {
+                                        "id": "validateLengthAndWidth_businessRule",
+                                        "entityInfo": {
+                                            "entityType": "businessRule"
+                                        }
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
