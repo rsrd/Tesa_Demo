@@ -53,8 +53,7 @@
 									{
 										"value": "131.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -164,8 +163,7 @@
 									{
 										"value": "100.11",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -215,8 +213,7 @@
 									{
 										"value": "190.89",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -310,6 +307,35 @@
 									}
 								]
 							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "style",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "VITAMIN C ESTER",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "VITAMIN_C_ESTERSERUM__NOCOLOR",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
 						}
 					}
 				]

@@ -24,11 +24,10 @@
                     {
                         "ctxGroup": {
                             "list": "productMaster",
-							"classification":"_ALL"
+                            "classification": "_ALL"
                         },
                         "attributes": {
-                           
-							"shortDescription": {
+                            "shortDescription": {
                                 "alias": "Short Description",
                                 "values": [
                                     {
@@ -38,7 +37,7 @@
                                     }
                                 ]
                             },
-							"longDescription": {
+                            "longDescription": {
                                 "alias": "Long Description",
                                 "values": [
                                     {
@@ -48,14 +47,13 @@
                                     }
                                 ]
                             },
-							"setupCost": {
+                            "setupCost": {
                                 "alias": "Setup Cost",
                                 "values": [
                                     {
                                         "value": "100.00",
                                         "source": "internal",
-                                        "locale": "en-US",
-										"uom": "USD"
+                                        "locale": "en-US"
                                     }
                                 ]
                             },
@@ -79,8 +77,7 @@
                                     }
                                 ]
                             },
-							
-							"departmentDescription": {
+                            "departmentDescription": {
                                 "alias": "Department Description",
                                 "values": [
                                     {
@@ -90,7 +87,7 @@
                                     }
                                 ]
                             },
-							"departmentNumber": {
+                            "departmentNumber": {
                                 "alias": "Department Number",
                                 "values": [
                                     {
@@ -100,8 +97,7 @@
                                     }
                                 ]
                             },
-							
-							"eligibleSellingChannels": {
+                            "eligibleSellingChannels": {
                                 "alias": "Eligible Selling Channels",
                                 "values": [
                                     {
@@ -111,8 +107,7 @@
                                     }
                                 ]
                             },
-							
-							"isMerchandise": {
+                            "isMerchandise": {
                                 "alias": "Is Merchandise",
                                 "values": [
                                     {
@@ -122,8 +117,7 @@
                                     }
                                 ]
                             },
-							
-							"merchHierarchyDescDisplay": {
+                            "merchHierarchyDescDisplay": {
                                 "alias": "Merch Hierarchy Description Display",
                                 "values": [
                                     {
@@ -133,8 +127,7 @@
                                     }
                                 ]
                             },
-							
-							"merchHierarchyNumDisplay": {
+                            "merchHierarchyNumDisplay": {
                                 "alias": "Merch Hierarchy Numeric Display",
                                 "values": [
                                     {
@@ -144,19 +137,17 @@
                                     }
                                 ]
                             },
-							
-							"msrp": {
+                            "msrp": {
                                 "alias": "MSRP",
                                 "values": [
                                     {
                                         "value": "100",
                                         "source": "internal",
-                                        "locale": "en-US",
-										"uom": "USD"
+                                        "locale": "en-US"
                                     }
                                 ]
                             },
-							"packingMethod": {
+                            "packingMethod": {
                                 "alias": "Packing Method",
                                 "values": [
                                     {
@@ -166,8 +157,7 @@
                                     }
                                 ]
                             },
-							
-							"primarySupplier": {
+                            "primarySupplier": {
                                 "alias": "Primary Supplier",
                                 "values": [
                                     {
@@ -177,9 +167,7 @@
                                     }
                                 ]
                             },
-							
-							
-							"sellingMarket": {
+                            "sellingMarket": {
                                 "alias": "Selling Market",
                                 "values": [
                                     {
@@ -189,21 +177,17 @@
                                     }
                                 ]
                             },
-							
-							"setupRetail": {
+                            "setupRetail": {
                                 "alias": "Setup Retail",
                                 "values": [
                                     {
                                         "value": "100.00",
                                         "source": "internal",
-                                        "locale": "en-US",
-										"uom": "USD"
+                                        "locale": "en-US"
                                     }
                                 ]
                             },
-
-							
-							"sizeRange": {
+                            "sizeRange": {
                                 "alias": "Size Range",
                                 "values": [
                                     {
@@ -213,8 +197,7 @@
                                     }
                                 ]
                             },
-							
-							"subclassDescription": {
+                            "subclassDescription": {
                                 "alias": "Subclass Description",
                                 "values": [
                                     {
@@ -224,8 +207,7 @@
                                     }
                                 ]
                             },
-							
-							"subclassNumber": {
+                            "subclassNumber": {
                                 "alias": "Subclass Number",
                                 "values": [
                                     {
@@ -235,7 +217,7 @@
                                     }
                                 ]
                             },
-							"itemTktOverPct": {
+                            "itemTktOverPct": {
                                 "alias": "Ticket Over Percent",
                                 "values": [
                                     {
@@ -245,7 +227,7 @@
                                     }
                                 ]
                             },
-							"ticketType": {
+                            "ticketType": {
                                 "alias": "Ticket Type",
                                 "values": [
                                     {
@@ -255,11 +237,9 @@
                                     }
                                 ]
                             }
-		
-                    },
-					
-					 "relationships": {
-                            "isChildOf": [
+                        },
+                        "relationships": {
+                            "wasChildOf": [
                                 {
                                     "id": "Rel1",
                                     "direction": "both",
@@ -273,7 +253,7 @@
                                                 {
                                                     "value": "DAY DREAMING",
                                                     "source": "internal",
-													"locale": "en-US"
+                                                    "locale": "en-US"
                                                 }
                                             ]
                                         }
@@ -285,13 +265,36 @@
                                         }
                                     }
                                 }
-							
-                            ]
-                            
+                            ],
+							"isChildOf": [
+								{
+									"id": "Rel4",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "DAY DREAMING FLAT SHOE:NATURAL",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "DAY_DREAMING_FLAT_SHOE__NATURAL__2_5",
+										"entityInfo": {
+											"entityType": "sku"
+										}
+									}
+								}
+							]
                         }
-				
-					}
-
+                    }
                 ]
             }
         }

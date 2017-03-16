@@ -53,8 +53,7 @@
 									{
 										"value": "12.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -144,8 +143,7 @@
 									{
 										"value": "110",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -185,8 +183,7 @@
 									{
 										"value": "232.22",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -242,7 +239,7 @@
 							}
 						},
 						"relationships": {
-							"isChildOf": [
+							"wasChildOf": [
 								{
 									"id": "Rel62",
 									"direction": "both",
@@ -265,6 +262,33 @@
 										"id": "VITAMIN_C_ESTER",
 										"entityInfo": {
 											"entityType": "style"
+										}
+									}
+								}
+							],
+							"isChildOf": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "VITAMIN C ESTER SERUM:NO COLOR",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "VITAMIN_C_ESTER_SERUM__NO_COLOR__OUNCES",
+										"entityInfo": {
+											"entityType": "sku"
 										}
 									}
 								}

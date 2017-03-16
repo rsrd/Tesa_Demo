@@ -53,8 +53,7 @@
 									{
 										"value": "100.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -144,8 +143,7 @@
 									{
 										"value": "100.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -185,8 +183,7 @@
 									{
 										"value": "100.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -242,7 +239,7 @@
 							}
 						},
 						"relationships": {
-							"isChildOf": [
+							"wasChildOf": [
 								{
 									"id": "Rel64",
 									"direction": "both",
@@ -265,6 +262,33 @@
 										"id": "SOSTRO_DRESS_PANT",
 										"entityInfo": {
 											"entityType": "style"
+										}
+									}
+								}
+							],
+							"isChildOf": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "customerChoice",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "SOSTRO DRESS PANT:ASST",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "SOSTRO_DRESS_PANT__ASST__ASST",
+										"entityInfo": {
+											"entityType": "sku"
 										}
 									}
 								}

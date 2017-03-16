@@ -53,8 +53,7 @@
 									{
 										"value": "11.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -164,8 +163,7 @@
 									{
 										"value": "80.11",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -215,8 +213,7 @@
 									{
 										"value": "190.89",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -310,6 +307,35 @@
 									}
 								]
 							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "style",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "SOSTRO DRESS PANT",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "SOSTRO_DRESS_PANT__ASST",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
 						}
 					}
 				]

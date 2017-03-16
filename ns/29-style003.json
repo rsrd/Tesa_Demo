@@ -53,8 +53,7 @@
 									{
 										"value": "101.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -164,8 +163,7 @@
 									{
 										"value": "12",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -215,8 +213,7 @@
 									{
 										"value": "190.00",
 										"source": "internal",
-										"locale": "en-US",
-										"uom": "USD"
+										"locale": "en-US"
 									}
 								]
 							},
@@ -310,6 +307,35 @@
 									}
 								]
 							}
+						},
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "Rel60",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "style",
+									"attributes": {
+										"shortDescription": {
+											"alias": "Short Description",
+											"values": [
+												{
+													"value": "SAMPLE NEROLI EDT",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "SAMPLE_NEROLI_EDT__NoColor",
+										"entityInfo": {
+											"entityType": "customerChoice"
+										}
+									}
+								}
+							]
 						}
 					}
 				]
