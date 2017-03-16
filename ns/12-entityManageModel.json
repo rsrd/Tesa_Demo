@@ -1704,6 +1704,18 @@
                                     "externalName": "CorrelationID",
                                     "dataType": "string"
                                 }
+                            },
+                            "vpn": {
+                                "properties": {
+                                    "externalName": "VPN",
+                                    "dataType": "string"
+                                }
+                            },
+                            "primary": {
+                                "properties": {
+                                    "externalName": "Primary",
+                                    "dataType": "boolean"
+                                }
                             }
                         },
                         "relationships": {
