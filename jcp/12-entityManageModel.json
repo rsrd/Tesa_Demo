@@ -438,24 +438,13 @@
                             "length": {
                                 "properties": {
                                     "externalName": "LENGTH",
-                                    "dataType": "string",
-                                    "isReferenceType": true,
-                                    "referenceInfo": [
-                                        {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "length"
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "dataType": "numeric"
                                 }
                             },
                             "width": {
                                 "properties": {
                                     "externalName": "WIDTH",
-                                    "dataType": "string"
+                                    "dataType": "numeric"
                                 }
                             },
                             "sleeve": {
