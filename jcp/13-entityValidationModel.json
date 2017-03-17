@@ -25,6 +25,26 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "description": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
                         }
                     },
                     {
@@ -39,6 +59,7 @@
                                 }
                             ]
                         }
+						
                     }
                 ]
             }
@@ -64,6 +85,27 @@
                                 }
                             ]
                         },
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "description": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
+                        },
+						
                         "relationships": {
                             "crossSell": {
                                 "properties": {
@@ -99,6 +141,27 @@
                                     "maximum": 1
                                 }
                             ]
+                        },
+						
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "description": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
                         },
                         "relationships": {
                             "productPresentationToLot": {
