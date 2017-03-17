@@ -1,0 +1,218 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "entityOperationResponse"
+    },
+    "entities": [
+        {
+            "id": "sku5007213206-02-03",
+            "entityInfo": {
+                "entityType": "sku"
+            },
+            "properties": {
+                "source": "internal",
+                "createdByService": "entityservice",
+                "createdBy": "Vendor User",
+                "createdDate": "3/17/2017  6:10:52 PM",
+                "modifiedByService": "entityservice",
+                "modifiedBy": "Vendor User",
+                "modifiedDate": "3/17/2017  6:33:52 PM"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+							"classification":"_ALL"
+                        },
+                        "attributes": {
+                           
+							"creationdate": {
+                                "alias": "CREATION_DATE",
+                                "values": [
+                                    {
+                                        "value": "3/17/2017",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"startdate": {
+                                "alias": "START_DATE",
+                                "values": [
+                                    {
+                                        "value": "3/17/2017",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"enddate": {
+                                "alias": "END_DATE",
+                                "values": [
+                                    {
+                                        "value": "13/18/2017",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"displayname": {
+                                "alias": "DISPLAY_NAME",
+                                "values": [
+                                    {
+                                        "value": "Clarks Delana Macrae Womens Sandal Wide:Biege:7",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							 "description": {
+                                "alias": "DESCRIPTION",
+                                "values": [
+                                    {
+                                        "value": "Shoe Strap Type: T-Strap, Features: Comfort, Shoe Heel Height: 2 Inches",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "orin": {
+                                "alias": "ORIN",
+                                "values": [
+                                    {
+                                        "value": "5007213206",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+                            "skuid": {
+                                "alias": "SKU_ID",
+                                "values": [
+                                    {
+                                        "value": "sku5007213206-02-03",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							
+							"shortnm": {
+                                "alias": "SHORT_NM",
+                                "values": [
+                                    {
+                                        "value": "ClarksDelanaMacraeWomensSandalWide:Biege:7",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"skutype": {
+                                "alias": "SKU_TYPE",
+                                "values": [
+                                    {
+                                        "value": "Biege:7",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"skuqy": {
+                                "alias": "SKU_QY",
+                                "values": [
+                                    {
+                                        "value": "6",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"color": {
+                                "alias": "COLOR",
+                                "values": [
+                                    {
+                                        "value": "Biege",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"size": {
+                                "alias": "SIZE",
+                                "values": [
+                                    {
+                                        "value": "7",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"width": {
+                                "alias": "WIDTH",
+                                "values": [
+                                    {
+                                        "value": "WIDE",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"stuscd": {
+                                "alias": "STUS_CD",
+                                "values": [
+                                    {
+                                        "value": "Active",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+							"onlineonly": {
+                                "alias": "ONLINE_ONLY",
+                                "values": [
+                                    {
+                                        "value": "True",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            },
+						"relationships": {
+							"isChildOf": [
+								{
+									"id": "Rel1",
+									"direction": "both",
+									"source": "internal",
+									"operation": "composition",
+									"alias": "lot",
+									"attributes": {
+										"shortnm": {
+											"alias": "SHORT_NM",
+											"values": [
+												{
+													"value": "ClarksDelanaMacraeWomensSandalWide",
+													"source": "internal",
+													"locale": "en-US"
+												}
+											]
+										}
+									},
+									"relTo": {
+										"id": "lt5007213206-02",
+										"entityInfo": {
+											"entityType": "lot"
+										}
+									}
+								}
+							]
+						}
+						
+					}
+				}
+               ]
+            }
+        }
+    ]
+}
