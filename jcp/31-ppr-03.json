@@ -1,0 +1,127 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [{
+		"id": "ppr5006710147-03",
+		"entityInfo": {
+			"entityType": "productPresentation"
+		},
+		"properties": {
+			"source": "internal",
+			"createdByService": "entityservice",
+			"createdBy": "Vendor User",
+			"createdDate": "3/17/2017  6:10:52 PM",
+			"modifiedByService": "entityservice",
+			"modifiedBy": "Vendor User",
+			"modifiedDate": "3/17/2017  6:33:52 PM"
+		},
+		"data": {
+			"ctxInfo": [{
+				"ctxGroup": {
+					"list": "productMaster",
+					"classification": "_ALL"
+				},
+				"attributes": {
+					"creationdate": {
+						"alias": "CREATION_DATE",
+						"values": [{
+							"value": "1/17/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"startdate": {
+						"alias": "START_DATE",
+						"values": [{
+							"value": "2/17/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"enddate": {
+						"alias": "END_DATE",
+						"values": [{
+							"value": "3/18/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"displayname": {
+						"alias": "DISPLAY_NAME",
+						"values": [{
+							"value": "PPR Yuu Marie Womens Sandal",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"longdescription": {
+						"alias": "LONG_DESCRIPTION",
+						"values": [{
+							"value": "Shoe Strap Type is Quarter Strap",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"secondarycpytx": {
+						"alias": "SECONDARY_CPY_TX",
+						"values": [{
+							"value": "Features is Comfort",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"longcpytx": {
+						"alias": "LONG_CPY_TX",
+						"values": [{
+							"value": "Sole Outer Surf Area is 100% Rubber",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"shortnm": {
+						"alias": "SHORT_NM",
+						"values": [{
+							"value": "ppr5006710147-03",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"description": {
+						"alias": "DESCRIPTION",
+						"values": [{
+							"value": "Toe Type is Open Toe and Upper Outer Surf Area is 100 Polyurethene",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"stuscd": {
+						"alias": "STUS_CD",
+						"values": [{
+							"value": "Active",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					}
+				},
+				"relationships": {
+					"productpresentationtolot": [{
+						"id": "Rel1",
+						"direction": "both",
+						"source": "internal",
+						"operation": "association",
+						"alias": "Product Presentation to Lot",
+						"relTo": {
+							"id": "lt5006710147-01",
+							"entityInfo": {
+								"entityType": "lot"
+							}
+						}
+					}]
+				}
+			}]
+		}
+	}]
+}

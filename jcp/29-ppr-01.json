@@ -1,0 +1,140 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [{
+		"id": "ppr5007213206-01",
+		"entityInfo": {
+			"entityType": "productPresentation"
+		},
+		"properties": {
+			"source": "internal",
+			"createdByService": "entityservice",
+			"createdBy": "Vendor User",
+			"createdDate": "3/17/2017  6:10:52 PM",
+			"modifiedByService": "entityservice",
+			"modifiedBy": "Vendor User",
+			"modifiedDate": "3/17/2017  6:33:52 PM"
+		},
+		"data": {
+			"ctxInfo": [{
+				"ctxGroup": {
+					"list": "productMaster",
+					"classification": "_ALL"
+				},
+				"attributes": {
+					"creationdate": {
+						"alias": "CREATION_DATE",
+						"values": [{
+							"value": "5/17/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"startdate": {
+						"alias": "START_DATE",
+						"values": [{
+							"value": "6/17/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"enddate": {
+						"alias": "END_DATE",
+						"values": [{
+							"value": "7/18/2017",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"displayname": {
+						"alias": "DISPLAY_NAME",
+						"values": [{
+							"value": "Shoe Strap Type is Ankle Strap",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"longdescription": {
+						"alias": "LONG_DESCRIPTION",
+						"values": [{
+							"value": "Shoe Heel Height is 3 Inches",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"secondarycpytx": {
+						"alias": "SECONDARY_CPY_TX",
+						"values": [{
+							"value": "Sole Outer Surf Area is 100cent Thermoplastic-Rubber",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"longcpytx": {
+						"alias": "LONG_CPY_TX",
+						"values": [{
+							"value": "Shoe Fasten: Slip-On, Upper Outer Surf Area is 100 Leather",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"shortnm": {
+						"alias": "SHORT_NM",
+						"values": [{
+							"value": "ppr5007213206-01",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"description": {
+						"alias": "DESCRIPTION",
+						"values": [{
+							"value": "Width is medium. Upper outer surface area is 100 synthetic",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					},
+					"stuscd": {
+						"alias": "STUS_CD",
+						"values": [{
+							"value": "Active",
+							"source": "internal",
+							"locale": "en-US"
+						}]
+					}
+				},
+				"relationships": {
+					"productpresentationtolot": [{
+						"id": "Rel1",
+						"direction": "both",
+						"source": "internal",
+						"operation": "association",
+						"alias": "Product Presentation to Lot",
+						"relTo": {
+							"id": "lt5007213206-01",
+							"entityInfo": {
+								"entityType": "lot"
+							}
+						}
+					},
+					{
+						"id": "Rel2",
+						"direction": "both",
+						"source": "internal",
+						"operation": "association",
+						"alias": "Product Presentation to Lot",
+						"relTo": {
+							"id": "lt5007213206-02",
+							"entityInfo": {
+								"entityType": "lot"
+							}
+						}
+					}]
+				}
+			}]
+		}
+	}]
+}

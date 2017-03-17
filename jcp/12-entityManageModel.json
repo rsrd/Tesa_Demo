@@ -421,7 +421,18 @@
                             "color": {
                                 "properties": {
                                     "externalName": "COLOR",
-                                    "dataType": "string"
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceInfo": [
+                                        {
+                                            "relationshipName": "hasReferenceTo",
+                                            "entityInfo": [
+                                                {
+                                                    "entityType": "color"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             },
                             "length": {
@@ -467,7 +478,18 @@
                             "size": {
                                 "properties": {
                                     "externalName": "SIZE",
-                                    "dataType": "string"
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceInfo": [
+                                        {
+                                            "relationshipName": "hasReferenceTo",
+                                            "entityInfo": [
+                                                {
+                                                    "entityType": "size"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             },
                             "waist": {
