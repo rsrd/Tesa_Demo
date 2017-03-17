@@ -98,22 +98,10 @@
                                     
                                 }
                             },
-                            "description": {
+                            "displayname": {
                                 "properties": {
                                     "minLength": 1,
                                     "maxLength": 50
-                                }
-                            }
-                        },
-						
-                        "relationships": {
-                            "crossSell": {
-                                "properties": {
-                                    "cardinality": [
-                                        {
-                                            "minimum": 1
-                                        }
-                                    ]
                                 }
                             }
                         }
