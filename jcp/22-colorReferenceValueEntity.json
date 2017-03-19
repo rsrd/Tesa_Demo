@@ -4,386 +4,438 @@
 		"collectionName": "entities",
 		"responseObjectName": "entityOperationResponse"
 	},
-	"entities": [{
-		"id": "C001",
-		"name": "C001",
-		"entityInfo": {
-			"entityType": "color"
-		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"values": [{
-							"value": "C001",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"values": [{
-							"value": "Red",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+	"entities": [
+		{
+			"id": "Red",
+			"name": "Red",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Red",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Red",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C002",
-		"name": "C002",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C002",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Beige",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Beige",
+			"name": "Beige",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Beige",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Beige",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C003",
-		"name": "C003",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C003",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Black",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Black",
+			"name": "Black",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Black",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Black",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C004",
-		"name": "C004",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C004",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Blue",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Blue",
+			"name": "Blue",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Blue",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Blue",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C005",
-		"name": "C005",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C005",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Green",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Green",
+			"name": "Green",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Green",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Green",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C006",
-		"name": "C006",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C006",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Brown",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Brown",
+			"name": "Brown",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Brown",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Brown",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C007",
-		"name": "C007",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C007",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Fuchsia",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Fuchsia",
+			"name": "Fuchsia",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Fuchsia",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Fuchsia",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C008",
-		"name": "C008",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C008",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Maroon",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Maroon",
+			"name": "Maroon",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Maroon",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Maroon",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C009",
-		"name": "C009",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C009",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Aqua",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Aqua",
+			"name": "Aqua",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Aqua",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Aqua",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "navy",
-		"name": "C010",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C010",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Navy",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Navy",
+			"name": "Navy",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Navy",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Navy",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C011",
-		"name": "C011",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C011",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "Teal",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "Teal",
+			"name": "Teal",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Teal",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Teal",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
-		}
-	},
-	{
-		"id": "C012",
-		"name": "C012",
-		"entityInfo": {
-			"entityType": "color"
+				]
+			}
 		},
-		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
-					"list": "listOfcolor"
-				},
-				"attributes": {
-					"code": {
-						"alias": "Code",
-						"values": [{
-							"value": "C012",
-							"source": "internal",
-							"locale": "en-US"
-						}]
-					},
-					"value": {
-						"alias": "Value",
-						"values": [{
-							"value": "White",
-							"source": "internal",
-							"locale": "en-US"
-						}]
+		{
+			"id": "White",
+			"name": "White",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "White",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "White",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
 					}
-				}
-			}]
+				]
+			}
 		}
-	}]
+	]
 }
