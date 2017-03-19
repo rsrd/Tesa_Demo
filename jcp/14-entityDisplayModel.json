@@ -43,20 +43,28 @@
                             "classification": "_ALL"
                         },
                         "attributes": {
-                            "cpimProductName": {
+                            "color": {
                                 "properties": {
-                                    "displayType": "textbox"
-                                }
-                            }
-                        },
-                        "relationships": {
-                            "crossSell": {
-                                "attributes": {
-                                    "status": {
-                                        "properties": {
-                                            "displayType": "textbox"
+                                    "displayType": "referenceList",
+                                    "referenceInfo": [
+                                        {
+                                            "thumbnail": "/images/favicon.ico",
+                                            "listTitle": "{entity.attributes.code}",
+                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
                                         }
-                                    }
+                                    ]
+                                }
+                            },
+                            "size": {
+                                "properties": {
+                                    "displayType": "referenceList",
+                                    "referenceInfo": [
+                                        {
+                                            "thumbnail": "none",
+                                            "listTitle": "{entity.attributes.code}",
+                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                        }
+                                    ]
                                 }
                             }
                         }
