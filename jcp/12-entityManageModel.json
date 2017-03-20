@@ -1016,17 +1016,85 @@
                         "relationships": {
                             "productPresentationToLot": [
                                 {
+                                    "attributes": {
+                                        "linkDescription": {
+                                            "properties": {
+                                                "externalName": "Link Description",
+                                                "dataType": "string"
+                                            }
+                                        },
+                                        "status": {
+                                            "properties": {
+                                                "externalName": "Status",
+                                                "dataType": "string",
+                                                "referenceInfo": [
+                                                    {
+                                                        "relationshipName": "hasReferenceTo",
+                                                        "entityInfo": [
+                                                            {
+                                                                "entityType": "status"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "enabled": {
+                                            "properties": {
+                                                "externalName": "Enabled",
+                                                "dataType": "boolean"
+                                            }
+                                        }
+                                    },
                                     "properties": {
                                         "externalName": "Lots",
-                                        "relationshipType": "association"
-                                    }
+                                        "relationshipType": "association",
+                                        "relatedTo": [
+                                            {
+                                                "entityTypes": ["lot"],
+                                                "context": {
+                                                    "list": "productMaster",
+                                                    "classification": "_ALL"
+                                                }
+                                            }
+                                        ]
+                                    }                                    
                                 }
                             ],
                             "productPresentationToImage": [
                                 {
+                                    "attributes": {
+                                        "status": {
+                                            "properties": {
+                                                "externalName": "Status",
+                                                "dataType": "string",
+                                                "referenceInfo": [
+                                                    {
+                                                        "relationshipName": "hasReferenceTo",
+                                                        "entityInfo": [
+                                                            {
+                                                                "entityType": "status"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
                                     "properties": {
                                         "externalName": "Images",
-                                        "relationshipType": "association"
+                                        "relationshipType": "association", 
+                                        "relatedTo": [
+                                            {
+                                                "entityTypes": [
+                                                    "lot"
+                                                ],
+                                                "context": {
+                                                    "list": "productMaster",
+                                                    "classification": "_ALL"
+                                                }
+                                            }
+                                        ]
                                     }
                                 }
                             ]

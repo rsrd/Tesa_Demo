@@ -84,6 +84,33 @@
                         "ctxGroup": {
                             "list": "productMaster",
                             "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "productPresentationToLot": [
+                                {
+                                    "attributes": {
+                                        "status": {
+                                            "properties": {
+                                                "externalName": "Status",
+                                                "dataType": "string",
+                                                "referenceInfo": [
+                                                    {
+                                                        "thumbnail": "/images/favicon.ico",
+                                                        "listTitle": "{entity.attributes.code}",
+                                                        "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "enabled": {
+                                            "properties": {
+                                                "externalName": "Is Active?",
+                                                "displayType": "boolean"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]

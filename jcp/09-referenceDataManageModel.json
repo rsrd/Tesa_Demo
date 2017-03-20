@@ -624,6 +624,37 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "status_entityManageModel",
+            "name": "status",
+            "entityModelInfo": {
+                "entityModelType": "entityManageModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "listOfStatus"
+                        },
+                        "attributes": {
+                            "code": {
+                                "properties": {
+                                    "isEntityIdentifier": true,
+                                    "dataType": "string",
+                                    "externalName": "Code"
+                                }
+                            },
+                            "value": {
+                                "properties": {
+                                    "dataType": "string",
+                                    "externalName": "Value"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
