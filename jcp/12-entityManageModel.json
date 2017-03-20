@@ -1049,16 +1049,23 @@
                                     "properties": {
                                         "externalName": "Lots",
                                         "relationshipType": "association",
-                                        "relatedTo": [
+                                        "relatedEntityInfo": [
                                             {
-                                                "entityTypes": ["lot"],
+                                                "entityType": "lot",
+                                                "context": {
+                                                    "list": "productMaster",
+                                                    "classification": "_ALL"
+                                                }
+                                            },
+                                            {
+                                                "entityType": "sku",
                                                 "context": {
                                                     "list": "productMaster",
                                                     "classification": "_ALL"
                                                 }
                                             }
                                         ]
-                                    }                                    
+                                    }                               
                                 }
                             ],
                             "productPresentationToImage": [
@@ -1084,11 +1091,9 @@
                                     "properties": {
                                         "externalName": "Images",
                                         "relationshipType": "association", 
-                                        "relatedTo": [
+                                        "relatedEntityInfo": [
                                             {
-                                                "entityTypes": [
-                                                    "lot"
-                                                ],
+                                                "entityType": "image",
                                                 "context": {
                                                     "list": "productMaster",
                                                     "classification": "_ALL"
