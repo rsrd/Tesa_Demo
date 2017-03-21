@@ -25,9 +25,9 @@
                                     "externalName": "Age Group",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "ageGroup"
@@ -54,9 +54,9 @@
                                     "externalName": "Bottoms Fit - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningBottomsFitDept"
@@ -77,9 +77,9 @@
                                     "externalName": "Corp Price - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCorpPriceDept"
@@ -94,9 +94,9 @@
                                     "externalName": "Corp Style - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCorpStyleDept"
@@ -111,9 +111,9 @@
                                     "externalName": "Currency",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "currency"
@@ -128,9 +128,9 @@
                                     "externalName": "Customer - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCustomerDept"
@@ -145,9 +145,9 @@
                                     "externalName": "Customer Assortment - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCustomerAssortmentDept"
@@ -162,9 +162,9 @@
                                     "externalName": "Customer Delivery Rule",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomerDeliveryRule"
@@ -191,9 +191,9 @@
                                     "externalName": "Customization Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomizationType"
@@ -214,9 +214,9 @@
                                     "externalName": "Delivery - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeliveryDept"
@@ -231,9 +231,9 @@
                                     "externalName": "Deposit Range",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "depositRange"
@@ -248,9 +248,9 @@
                                     "externalName": "Dept Color - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptColorDept"
@@ -265,9 +265,9 @@
                                     "externalName": "Dept Fit - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptFitDept"
@@ -288,9 +288,9 @@
                                     "externalName": "Dept Preference - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptPreferenceDept"
@@ -305,9 +305,9 @@
                                     "externalName": "Dept Price - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptPriceDept"
@@ -322,9 +322,9 @@
                                     "externalName": "Dept Style - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptStyleDept"
@@ -339,9 +339,9 @@
                                     "externalName": "Drying Instructions",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productDryInstr"
@@ -356,9 +356,9 @@
                                     "externalName": "Do Not Sell Reason",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "doNotSellReason"
@@ -373,9 +373,9 @@
                                     "externalName": "Eligible Selling Channels",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSellingChannel"
@@ -390,9 +390,9 @@
                                     "externalName": "Event - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningEventDept"
@@ -413,9 +413,9 @@
                                     "externalName": "Fabrication - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningFabricationDept"
@@ -448,9 +448,9 @@
                                     "externalName": "Fit - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningFitDept"
@@ -465,9 +465,9 @@
                                     "externalName": "Fit Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "fitCategory"
@@ -494,9 +494,9 @@
                                     "externalName": "Function - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningFunctionDept"
@@ -517,9 +517,9 @@
                                     "externalName": "Gender",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "gender"
@@ -534,9 +534,9 @@
                                     "externalName": "Gender - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningGenderDept"
@@ -551,9 +551,9 @@
                                     "externalName": "Gender/Size - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningGenderSizeDept"
@@ -568,9 +568,9 @@
                                     "externalName": "Hanger Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productHangerType"
@@ -615,9 +615,9 @@
                                     "externalName": "Item Category - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningItemCategoryDept"
@@ -668,9 +668,9 @@
                                     "externalName": "Licensed Product Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "licensedProductType"
@@ -697,9 +697,9 @@
                                     "externalName": "Material Country Of Origin",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "country"
@@ -714,9 +714,9 @@
                                     "externalName": "Mix of Business - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningMixOfBusinessDept"
@@ -743,9 +743,9 @@
                                     "externalName": "NPG RS/RP Manufacturer",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productManufacturer"
@@ -760,9 +760,9 @@
                                     "externalName": "NPG Sourcing Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sourcingCategory"
@@ -777,9 +777,9 @@
                                     "externalName": "Occasion - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningOccasionDept"
@@ -806,9 +806,9 @@
                                     "externalName": "Packing Method",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productPackingMethod"
@@ -835,9 +835,9 @@
                                     "externalName": "Product Category - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningProductCategoryDept"
@@ -852,9 +852,9 @@
                                     "externalName": "Product Country Of Origin",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "country"
@@ -869,9 +869,9 @@
                                     "externalName": "Product Origin Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productOriginType"
@@ -886,9 +886,9 @@
                                     "externalName": "Product Price - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningProductPriceDept"
@@ -903,9 +903,9 @@
                                     "externalName": "Product Source - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningProductSourceDept"
@@ -926,9 +926,9 @@
                                     "externalName": "Promotional Product",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "promotionalProductType"
@@ -949,9 +949,9 @@
                                     "externalName": "Remind/Auto Fulfill",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "remindAutoFulfill"
@@ -1008,9 +1008,9 @@
                                     "externalName": "Shade - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningShadeDept"
@@ -1043,9 +1043,9 @@
                                     "externalName": "Silhouette - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningSilhouetteDept"
@@ -1132,9 +1132,9 @@
                                     "externalName": "Size Range",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSizeRangeGroup"
@@ -1161,9 +1161,9 @@
                                     "externalName": "Skin Type - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningSkinTypeDept"
@@ -1178,9 +1178,9 @@
                                     "externalName": "Special Treatment Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSpecialTreatmentType"
@@ -1201,9 +1201,9 @@
                                     "externalName": "Supplier Role - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningSupplierRoleDept"
@@ -1218,9 +1218,9 @@
                                     "externalName": "Tax Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTaxCategory"
@@ -1247,9 +1247,9 @@
                                     "externalName": "Ticket Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTicketType"
@@ -1264,9 +1264,9 @@
                                     "externalName": "Ticket PO Print Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "ticketPoPrintType"
@@ -1281,9 +1281,9 @@
                                     "externalName": "Tone - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningToneDept"
@@ -1310,9 +1310,9 @@
                                     "externalName": "Washing Instructions",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productWashInstr"
@@ -1417,9 +1417,9 @@
                                     "externalName": "Product Life Cycle Status",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLifeCycleStatus"
@@ -1458,9 +1458,9 @@
                                     "externalName": "Exclusivity",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "exclusivity"
@@ -1523,9 +1523,9 @@
                                     "externalName": "Pattern",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productPattern"
@@ -1558,9 +1558,9 @@
                                     "externalName": "Selling Market",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sellingMarket"
@@ -1575,9 +1575,9 @@
                                     "externalName": "Product Label",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLabel"
@@ -1640,9 +1640,9 @@
                                     "externalName": "Type of Non-Inventoried Product Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "typeOfNonInventoriedProductCategory"
@@ -1730,9 +1730,9 @@
                                     "externalName": "Product Life Cycle Status",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLifeCycleStatus"
@@ -1777,9 +1777,9 @@
                                     "externalName": "Packing Method",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productPackingMethod"
@@ -1836,9 +1836,9 @@
                                     "externalName": "Ticket Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTicketType"
@@ -1853,9 +1853,9 @@
                                     "externalName": "Ticket PO Print Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "ticketPoPrintType"
@@ -1870,9 +1870,9 @@
                                     "externalName": "Eligible Selling Channels",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSellingChannel"
@@ -1917,9 +1917,9 @@
                                     "externalName": "NPG RS/RP Manufacturer",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productManufacturer"
@@ -2042,9 +2042,9 @@
                                     "externalName": "Size Range",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSizeRangeGroup"
@@ -2101,9 +2101,9 @@
                                     "externalName": "Product Label",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLabel"
@@ -2118,9 +2118,9 @@
                                     "externalName": "Type of Non-Inventoried Product Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "typeOfNonInventoriedProductCategory"
@@ -2216,9 +2216,9 @@
                                     "externalName": "Nordstrom Color Code",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productColor"
@@ -2233,9 +2233,9 @@
                                     "externalName": "Nordstrom Color Family",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productColorFamily"
@@ -2250,9 +2250,9 @@
                                     "externalName": "Customer Delivery Rule",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomerDeliveryRule"
@@ -2279,9 +2279,9 @@
                                     "externalName": "Customization Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomizationType"
@@ -2302,9 +2302,9 @@
                                     "externalName": "Delivery - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeliveryDept"
@@ -2319,9 +2319,9 @@
                                     "externalName": "Dept Color - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptColorDept"
@@ -2342,9 +2342,9 @@
                                     "externalName": "Dept Style - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningDeptStyleDept"
@@ -2359,9 +2359,9 @@
                                     "externalName": "Drying Instructions",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productDryInstr"
@@ -2382,9 +2382,9 @@
                                     "externalName": "Do Not Sell Reason",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "doNotSellReason"
@@ -2399,9 +2399,9 @@
                                     "externalName": "Eligible Selling Channels",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSellingChannel"
@@ -2428,9 +2428,9 @@
                                     "externalName": "Fabrication - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningFabricationDept"
@@ -2451,9 +2451,9 @@
                                     "externalName": "Finish",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productFinish"
@@ -2498,9 +2498,9 @@
                                     "externalName": "Gender - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningGenderDept"
@@ -2515,9 +2515,9 @@
                                     "externalName": "Gender/Size - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningGenderSizeDept"
@@ -2562,9 +2562,9 @@
                                     "externalName": "Item Category - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningItemCategoryDept"
@@ -2615,9 +2615,9 @@
                                     "externalName": "Licensed Product Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "licensedProductType"
@@ -2644,9 +2644,9 @@
                                     "externalName": "Metal",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productMaterialMetal"
@@ -2661,9 +2661,9 @@
                                     "externalName": "Stone",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productMaterialStone"
@@ -2678,9 +2678,9 @@
                                     "externalName": "Material Country Of Origin",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "country"
@@ -2707,9 +2707,9 @@
                                     "externalName": "NPG Sourcing Category",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sourcingCategory"
@@ -2730,9 +2730,9 @@
                                     "externalName": "Packing Method",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productPackingMethod"
@@ -2747,9 +2747,9 @@
                                     "externalName": "Pattern",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productPattern"
@@ -2776,9 +2776,9 @@
                                     "externalName": "Product Country Of Origin",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "country"
@@ -2799,9 +2799,9 @@
                                     "externalName": "Product Origin Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productOriginType"
@@ -2816,9 +2816,9 @@
                                     "externalName": "Product Source - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningProductSourceDept"
@@ -2839,9 +2839,9 @@
                                     "externalName": "Promotional Product",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "promotionalProductType"
@@ -2922,9 +2922,9 @@
                                     "externalName": "Shade - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningShadeDept"
@@ -2951,9 +2951,9 @@
                                     "externalName": "Size Range",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSizeRangeGroup"
@@ -2980,9 +2980,9 @@
                                     "externalName": "Ticket Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTicketType"
@@ -2997,9 +2997,9 @@
                                     "externalName": "Ticket PO Print Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "ticketPoPrintType"
@@ -3014,9 +3014,9 @@
                                     "externalName": "Tone - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningToneDept"
@@ -3031,9 +3031,9 @@
                                     "externalName": "Turnover Event",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTurnoverEvent"
@@ -3060,9 +3060,9 @@
                                     "externalName": "Washing Instructions",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productWashInstr"
@@ -3179,9 +3179,9 @@
                                     "externalName": "Customer - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCustomerDept"
@@ -3196,9 +3196,9 @@
                                     "externalName": "Customer Assortment - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningCustomerAssortmentDept"
@@ -3213,9 +3213,9 @@
                                     "externalName": "Occasion - Planning",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "planningOccasionDept"
@@ -3254,9 +3254,9 @@
                                     "externalName": "Product Life Cycle Status",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLifeCycleStatus"
@@ -3289,9 +3289,9 @@
                                     "externalName": "Exclusivity",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "exclusivity"
@@ -3312,9 +3312,9 @@
                                     "externalName": "Selling Market",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sellingMarket"
@@ -3457,9 +3457,9 @@
                                     "externalName": "Customer Delivery Rule",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomerDeliveryRule"
@@ -3486,9 +3486,9 @@
                                     "externalName": "Customization Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productCustomizationType"
@@ -3503,9 +3503,9 @@
                                     "externalName": "Do Not Sell Reason",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "doNotSellReason"
@@ -3520,9 +3520,9 @@
                                     "externalName": "Eligible Selling Channels",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSellingChannel"
@@ -3567,9 +3567,9 @@
                                     "externalName": "Fulfillment Type Assignment",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "eligibleFulfillmentTypeAssignment"
@@ -3584,9 +3584,9 @@
                                     "externalName": "Hazardous Material Class Code",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "hazardousMaterialClass"
@@ -3691,9 +3691,9 @@
                                     "externalName": "Promotional Product",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "promotionalProductType"
@@ -3720,9 +3720,9 @@
                                     "externalName": "Returns Disposition",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productReturnDisposition"
@@ -3755,9 +3755,9 @@
                                     "externalName": "Selling Status",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSellingStatus"
@@ -3838,9 +3838,9 @@
                                     "externalName": "Size Range",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSizeRangeGroup"
@@ -3855,9 +3855,9 @@
                                     "externalName": "Size Range Detail",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sizeRangeDetailCombo"
@@ -3872,9 +3872,9 @@
                                     "externalName": "Size Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productSizeType"
@@ -3913,9 +3913,9 @@
                                     "externalName": "Ticket Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productTicketType"
@@ -3930,9 +3930,9 @@
                                     "externalName": "Ticket PO Print Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "ticketPoPrintType"
@@ -3965,9 +3965,9 @@
                                     "externalName": "UOM Class",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "uomClass"
@@ -3982,9 +3982,9 @@
                                     "externalName": "Item Type",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "itemType"
@@ -4101,9 +4101,9 @@
                                     "externalName": "Nordstrom Color Code",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productColor"
@@ -4148,9 +4148,9 @@
                                     "externalName": "Exclusivity",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "exclusivity"
@@ -4189,9 +4189,9 @@
                                     "externalName": "Selling Market",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "sellingMarket"
@@ -4272,9 +4272,9 @@
                                     "externalName": "Product Life Cycle Status",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "productLifeCycleStatus"

@@ -423,14 +423,10 @@
                                     "externalName": "COLOR",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "color"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "color"
                                         }
                                     ]
                                 }
@@ -452,14 +448,10 @@
                                     "externalName": "SLEEVE",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "sleeve"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "sleeve"
                                         }
                                     ]
                                 }
@@ -469,14 +461,10 @@
                                     "externalName": "SIZE",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "size"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "size"
                                         }
                                     ]
                                 }
@@ -486,14 +474,10 @@
                                     "externalName": "WAIST",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "waist"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "waist"
                                         }
                                     ]
                                 }
@@ -503,14 +487,10 @@
                                     "externalName": "CUP",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "cup"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "cup"
                                         }
                                     ]
                                 }
@@ -520,14 +500,10 @@
                                     "externalName": "CHEST",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "chest"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "chest"
                                         }
                                     ]
                                 }
@@ -537,14 +513,10 @@
                                     "externalName": "NECK SIZE",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "necksize"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "necksize"
                                         }
                                     ]
                                 }
@@ -560,14 +532,10 @@
                                     "externalName": "PATTERN NAME",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "patternname"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "patternname"
                                         }
                                     ]
                                 }
@@ -577,9 +545,9 @@
                                     "externalName": "PDB COLOR FAMILY",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
+                                            "refRelationshipName": "hasReferenceTo",
                                             "entityInfo": [
                                                 {
                                                     "entityType": "pdbcolorfamily"
@@ -594,14 +562,10 @@
                                     "externalName": "Letter Or Number",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "letterornumber"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "letterornumber"
                                         }
                                     ]
                                 }
@@ -611,14 +575,10 @@
                                     "externalName": "Alpha Character",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "alphacharacter"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "alphacharacter"
                                         }
                                     ]
                                 }
@@ -628,14 +588,10 @@
                                     "externalName": "Pattern",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "pattern"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "pattern"
                                         }
                                     ]
                                 }
@@ -651,14 +607,10 @@
                                     "externalName": "Color Family",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "colorfamily"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "colorfamily"
                                         }
                                     ]
                                 }
@@ -668,14 +620,10 @@
                                     "externalName": "Minor Color Family",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "minorcolorfamily"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "minorcolorfamily"
                                         }
                                     ]
                                 }
@@ -685,14 +633,10 @@
                                     "externalName": "PDB COLOR",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "pdbcolor"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "pdbcolor"
                                         }
                                     ]
                                 }
@@ -702,14 +646,10 @@
                                     "externalName": "Numeric Value",
                                     "dataType": "string",
                                     "isReferenceType": true,
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
-                                            "relationshipName": "hasReferenceTo",
-                                            "entityInfo": [
-                                                {
-                                                    "entityType": "numericvalue"
-                                                }
-                                            ]
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "numericvalue"
                                         }
                                     ]
                                 }
@@ -1027,14 +967,10 @@
                                             "properties": {
                                                 "externalName": "Status",
                                                 "dataType": "string",
-                                                "referenceInfo": [
+                                                "referenceEntityInfo": [
                                                     {
-                                                        "relationshipName": "hasReferenceTo",
-                                                        "entityInfo": [
-                                                            {
-                                                                "entityType": "status"
-                                                            }
-                                                        ]
+                                                        "refRelationshipName": "hasReferenceTo",
+                                                        "refEntityType": "status"
                                                     }
                                                 ]
                                             }
@@ -1051,21 +987,21 @@
                                         "relationshipType": "association",
                                         "relatedEntityInfo": [
                                             {
-                                                "entityType": "lot",
-                                                "context": {
+                                                "relEntityType": "lot",
+                                                "relContexts": [{
                                                     "list": "productMaster",
                                                     "classification": "_ALL"
-                                                }
+                                                }]
                                             },
                                             {
-                                                "entityType": "sku",
-                                                "context": {
+                                                "relEntityType": "sku",
+                                                "relContexts": [{
                                                     "list": "productMaster",
                                                     "classification": "_ALL"
-                                                }
+                                                }]
                                             }
                                         ]
-                                    }                               
+                                    }                  
                                 }
                             ],
                             "productPresentationToImage": [
@@ -1075,9 +1011,9 @@
                                             "properties": {
                                                 "externalName": "Status",
                                                 "dataType": "string",
-                                                "referenceInfo": [
+                                                "referenceEntityInfo": [
                                                     {
-                                                        "relationshipName": "hasReferenceTo",
+                                                        "refRelationshipName": "hasReferenceTo",
                                                         "entityInfo": [
                                                             {
                                                                 "entityType": "status"
@@ -1093,11 +1029,11 @@
                                         "relationshipType": "association", 
                                         "relatedEntityInfo": [
                                             {
-                                                "entityType": "image",
-                                                "context": {
+                                                "relEntityType": "image",
+                                                "relContexts": [{
                                                     "list": "productMaster",
                                                     "classification": "_ALL"
-                                                }
+                                                }]
                                             }
                                         ]
                                     }
