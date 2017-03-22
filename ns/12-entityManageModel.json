@@ -19,6 +19,32 @@
                             "classification": "_ALL"
                         },
                         "attributes": {
+                            "evColors": {
+                                "properties": {
+                                    "externalName": "Ev Colors",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productColor"
+                                        }
+                                    ]
+                                }
+                            },
+                            "evSizes": {
+                                "properties": {
+                                    "externalName": "EV Sizes",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productSizeType"
+                                        }
+                                    ]
+                                }
+                            },
                             "ageGroup": {
                                 "properties": {
                                     "externalName": "Age Group",
@@ -1958,6 +1984,32 @@
                             "classification": "_ALL"
                         },
                         "attributes": {
+                            "evColor": {
+                                "properties": {
+                                    "externalName": "EV Color",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productColor"
+                                        }
+                                    ]
+                                }
+                            },
+                            "evSizes": {
+                                "properties": {
+                                    "externalName": "EV Sizes",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productSizeType"
+                                        }
+                                    ]
+                                }
+                            },
                             "bindingRuling": {
                                 "properties": {
                                     "externalName": "Binding Ruling",
@@ -3058,6 +3110,32 @@
                             "classification": "_ALL"
                         },
                         "attributes": {
+                            "evColor": {
+                                "properties": {
+                                    "externalName": "EV Color",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productColor"
+                                        }
+                                    ]
+                                }
+                            },
+                            "evSize": {
+                                "properties": {
+                                    "externalName": "EV Size",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "productSizeType"
+                                        }
+                                    ]
+                                }
+                            },
                             "additionalUpc": {
                                 "properties": {
                                     "externalName": "Additional UPC",

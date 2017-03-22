@@ -27,6 +27,16 @@
                             ]
                         },
                         "attributes": {
+                            "evColors": {
+                                "properties": {
+                                    "isCollection": true
+                                }
+                            },
+                            "evSizes": {
+                                "properties": {
+                                    "isCollection": true
+                                }
+                            },
                             "ageGroup": {
                                 "properties": {
                                     "isCollection": true
@@ -526,6 +536,11 @@
                             ]
                         },
                         "attributes": {
+                            "evSizes": {
+                                "properties": {
+                                    "isCollection": true
+                                }
+                            },
                             "bindingRuling": {
                                 "properties": {
                                     "minLength": 1,
