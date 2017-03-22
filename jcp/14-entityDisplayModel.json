@@ -132,6 +132,30 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "image_entityDisplayModel",
+            "name": "image",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
