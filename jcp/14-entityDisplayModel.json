@@ -46,7 +46,7 @@
                             "color": {
                                 "properties": {
                                     "displayType": "referenceList",
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
                                             "thumbnail": "/images/favicon.ico",
                                             "listTitle": "{entity.attributes.code}",
@@ -58,7 +58,7 @@
                             "size": {
                                 "properties": {
                                     "displayType": "referenceList",
-                                    "referenceInfo": [
+                                    "referenceEntityInfo": [
                                         {
                                             "thumbnail": "none",
                                             "listTitle": "{entity.attributes.code}",
@@ -84,6 +84,33 @@
                         "ctxGroup": {
                             "list": "productMaster",
                             "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "productPresentationToLot": [
+                                {
+                                    "attributes": {
+                                        "status": {
+                                            "properties": {
+                                                "externalName": "Status",
+                                                "dataType": "string",
+                                                "referenceEntityInfo": [
+                                                    {
+                                                        "thumbnail": "/images/favicon.ico",
+                                                        "listTitle": "{entity.attributes.code}",
+                                                        "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "enabled": {
+                                            "properties": {
+                                                "externalName": "Is Active?",
+                                                "displayType": "boolean"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]
