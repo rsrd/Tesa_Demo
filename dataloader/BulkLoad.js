@@ -19,7 +19,7 @@ function getListOfDir(path) {
     return fs.readdirSync(path);
 }
 
-function startLoadingData(folder, option, tenant) {
+function startLoadingData(folder, option, tenant, flush) {
 
     var selectedFolders = getSelectedFolderNames(option);
     if (this.path && selectedFolders && selectedFolders.length) {
@@ -36,9 +36,8 @@ function startLoadingData(folder, option, tenant) {
             fs.mkdirSync(tenantLogDir);
         }
 
-        console.log("Started deleting and recreating indices for tenant : " + tenant);
-        deleteAndCreateIndices(tenant, option).then(function (results) {
-            console.log("Completed deleting and recreating indices for tenant : " + tenant);
+        deleteAndCreateIndices(tenant, option, flush).then(function (results) {
+            
             console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
 
             if (checkIndicesStatus(results)) {
@@ -190,21 +189,26 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     }
 }
 
-async function deleteAndCreateIndices(tenantId, selectedFolder) {
+async function deleteAndCreateIndices(tenantId, selectedFolder, flush) {
 
     var results = [];
     var promise;
-    promise = deleteIndices(tenantId, selectedFolder).then(function (result) {
-        results = result;
-        if (checkIndicesStatus(result)) {
-            results = createIndices(tenantId, selectedFolder);
-        } else {
-            console.log("error while deleting indices" + JSON.stringify(results));
-        }
+    
+    if(flush == "y" || flush == "Y") {
+        console.log("deleting indices...");
 
-    });
+        promise = deleteIndices(tenantId, selectedFolder).then(function (result) {
+            results = result;
+            if (checkIndicesStatus(result)) {
+                results = createIndices(tenantId, selectedFolder);
+            } else {
+                console.log("error while deleting indices" + JSON.stringify(results));
+            }
+        });
 
-    await Promise.resolve(promise);
+        await Promise.resolve(promise);
+    }
+
     return results;
 }
 
@@ -257,13 +261,15 @@ function getServiceName(dataIndex) {
     };
 
     if (dataIndex == "entityData") {
-        return "entitymanageservice";
+        return "entityservice";
     } else if (dataIndex == "entityGovernData") {
         return "entitygovernservice";
     } else if (dataIndex == "entityModel") {
         return "entitymodelservice";
+    } else if (dataIndex == "config") {
+        return "configurationservice";
     } else {
-        return "entitymanageservice";
+        return "entityservice";
     }
 }
 
@@ -309,7 +315,11 @@ function getIndices(selectedFolder) {
     return indices;
 }
 
-function checkIndicesStatus(results) {
+function checkIndicesStatus(results, flush) {
+
+    if(!flush) {
+        return true;
+    }
 
     var status = false;
 
