@@ -8,14 +8,11 @@
         {
             "id": "lot_entityValidationModel",
             "name": "lot",
-            "entityModelInfo": {
-                "entityModelType": "entityValidationModel"
-            },
+            "type": "entityValidationModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -67,14 +64,11 @@
         {
             "id": "sku_entityValidationModel",
             "name": "sku",
-            "entityModelInfo": {
-                "entityModelType": "entityValidationModel"
-            },
+            "type": "entityValidationModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -112,14 +106,11 @@
         {
             "id": "productPresentation_entityValidationModel",
             "name": "productPresentation",
-            "entityModelInfo": {
-                "entityModelType": "entityValidationModel"
-            },
+            "type": "entityValidationModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -130,7 +121,6 @@
                                 }
                             ]
                         },
-						
 						"attributes": {
                             "stuscd": {
                                 "properties": {
@@ -182,14 +172,11 @@
         {
             "id": "ensemble_entityValidationModel",
             "name": "ensemble",
-            "entityModelInfo": {
-                "entityModelType": "entityValidationModel"
-            },
+            "type": "entityValidationModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "properties": {

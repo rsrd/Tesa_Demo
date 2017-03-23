@@ -8,81 +8,45 @@
         {
             "id": "thingDomainAttributeModels_list",
             "name": "thingDomainAttributeModels",
-            "entityModelInfo": {
-                "entityModelType": "list"
-            },
+            "type": "list",
             "properties": {
                 "externalName": "Party",
                 "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/thingDomainAttributeModels_list"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "partyDomainAttributeModels_list",
             "name": "partyDomainAttributeModels",
-            "entityModelInfo": {
-                "entityModelType": "list"
-            },
+            "type": "list",
             "properties": {
                 "externalName": "Party",
                 "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/partyDomainAttributeModels_list"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "referenceDataDomainAttributeModels_list",
             "name": "referenceDataDomainAttributeModels",
-            "entityModelInfo": {
-                "entityModelType": "list"
-            },
+            "type": "list",
             "properties": {
                 "externalName": "Party",
                 "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/referenceDataDomainAttributeModels_list"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "genericDomainAttributeModels_list",
             "name": "genericDomainAttributeModels",
-            "entityModelInfo": {
-                "entityModelType": "list"
-            },
+            "type": "list",
             "properties": {
                 "externalName": "Party",
                 "description": "Party domain manages the entirety of data related to parties such as customers, vendors and suppliers, and maintains a single, consistent version of this data"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/genericDomainAttributeModels_list"
-                        }
-                    }
-                ]
             }
         }
     ]

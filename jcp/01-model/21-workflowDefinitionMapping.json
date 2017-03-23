@@ -8,14 +8,12 @@
         {
             "id": "sku_workflowDefinitionMapping",
             "name": "sku",
-            "entityModelInfo": {
-                "entityModelType": "workflowDefinitionMapping"
-            },
+            "type": "workflowDefinitionMapping",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster"
+                            "classification": "_ALL"
                         },
                         "relationships": {
                             "hasWorkflowsDefined": [
@@ -25,9 +23,7 @@
                                     "relationshipType": "association",
                                     "relTo": {
                                         "id": "newProductSetup_workflowDefinition",
-                                        "entityInfo": {
-                                            "entityType": "workflowDefinition"
-                                        }
+                                        "type": "workflowDefinition"
                                     }
                                 }
                             ]

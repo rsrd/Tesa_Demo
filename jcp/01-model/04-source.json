@@ -8,21 +8,12 @@
         {
             "id": "internal_source",
             "name": "internal",
-            "entityModelInfo": {
-                "entityModelType": "source"
-            },
+            "type": "source",
             "properties": {
                 "externalName": "Internal source",
                 "description": "Internal source"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/internal_source"
-                        }
-                    }
-                ]
             }
         }
     ]

@@ -1,123 +1,90 @@
 {
-	"metaInfo": {
-		"dataIndex": "entityData",
-		"collectionName": "entities",
-		"responseObjectName": "entityOperationResponse"
-	},
-	"entities": [
-		{
-			"id": "size_L",
-			"name": "L",
-			"entityInfo": {
-				"entityType": "size"
-			},
-			"data": {
-				"ctxInfo": [
-					{
-						"ctxGroup": {
-							"list": "listOfsize"
-						},
-						"attributes": {
-							"code": {
-								"alias": "Code",
-								"values": [
-									{
-										"value": "L",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							},
-							"value": {
-								"alias": "Value",
-								"values": [
-									{
-										"value": "Large",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							}
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "size_M",
-			"name": "M",
-			"entityInfo": {
-				"entityType": "size"
-			},
-			"data": {
-				"ctxInfo": [
-					{
-						"ctxGroup": {
-							"list": "listOfSize"
-						},
-						"attributes": {
-							"code": {
-								"alias": "Code",
-								"values": [
-									{
-										"value": "M",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							},
-							"value": {
-								"alias": "Value",
-								"values": [
-									{
-										"value": "Medium",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							}
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "size_S",
-			"name": "S",
-			"entityInfo": {
-				"entityType": "size"
-			},
-			"data": {
-				"ctxInfo": [
-					{
-						"ctxGroup": {
-							"list": "listOfsize"
-						},
-						"attributes": {
-							"code": {
-								"alias": "Code",
-								"values": [
-									{
-										"value": "S",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							},
-							"value": {
-								"alias": "Value",
-								"values": [
-									{
-										"value": "Small",
-										"source": "internal",
-										"locale": "en-US"
-									}
-								]
-							}
-						}
-					}
-				]
-			}
-		}
-	]
+   "metaInfo": {
+      "dataIndex": "entityData",
+      "collectionName": "entities",
+      "responseObjectName": "entityOperationResponse"
+   },
+   "entities": [
+      {
+         "id": "size_L",
+         "name": "L",
+         "type": "size",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "L",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "Large",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      {
+         "id": "size_M",
+         "name": "M",
+         "type": "size",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "M",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "Medium",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      {
+         "id": "size_S",
+         "name": "S",
+         "type": "size",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "S",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "Small",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      }
+   ]
 }

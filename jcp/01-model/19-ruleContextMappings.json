@@ -8,14 +8,11 @@
         {
             "id": "sku_ruleContextMappings",
             "name": "sku",
-            "entityModelInfo": {
-                "entityModelType": "ruleContextMappings"
-            },
+            "type": "ruleContextMappings",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "relationships": {
@@ -26,9 +23,7 @@
                                     "id": "sku_invokeNewProductSetupWFRule_businessRule_RelId",
                                     "relTo": {
                                         "id": "invokeNewProductSetupWFRule_businessRule",
-                                        "entityInfo": {
-                                            "entityType": "businessRule"
-                                        }
+                                        "type": "businessRule"
                                     },
                                     "attributes": {
                                         "ignoreChangeContext": {
@@ -74,9 +69,7 @@
                                     "id": "sku_populateDescription_businessRule_RelId",
                                     "relTo": {
                                         "id": "populateDescription_businessRule",
-                                        "entityInfo": {
-                                            "entityType": "businessRule"
-                                        }
+                                        "type": "businessRule"
                                     },
                                     "attributes": {
                                         "ignoreChangeContext": {
@@ -122,9 +115,7 @@
                                     "id": "sku_validateLengthAndWidth_businessRule_RelId",
                                     "relTo": {
                                         "id": "validateLengthAndWidth_businessRule",
-                                        "entityInfo": {
-                                            "entityType": "businessRule"
-                                        }
+                                        "type": "businessRule"
                                     },
                                     "attributes": {
                                         "ignoreChangeContext": {

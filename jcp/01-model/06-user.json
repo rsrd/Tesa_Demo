@@ -8,9 +8,7 @@
         {
             "id": "admin_user",
             "name": "admin",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Admin",
                 "lastName": "Admin",
@@ -23,21 +21,12 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/admin_user"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "vendor1_user",
             "name": "vendor1",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Victor",
                 "lastName": "Smith",
@@ -49,21 +38,12 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/vendor1_user"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "buyer1_user",
             "name": "buyer1",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Bob",
                 "lastName": "Jones",
@@ -76,21 +56,12 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/buyer1_user"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "buyerops1_user",
             "name": "buyerops1",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Oscar",
                 "lastName": "Williams",
@@ -103,21 +74,12 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/buyerops1_user"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "pottas_user",
             "name": "pottas",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Shyam",
                 "lastName": "Potta",
@@ -130,21 +92,12 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/pottas_user"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "bhatian_user",
             "name": "bhatian",
-            "entityModelInfo": {
-                "entityModelType": "user"
-            },
+            "type": "user",
             "properties": {
                 "firstName": "Nikhil",
                 "lastName": "Bhatia",
@@ -157,13 +110,6 @@
                 ]
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/bhatian_user"
-                        }
-                    }
-                ]
             }
         }
     ]

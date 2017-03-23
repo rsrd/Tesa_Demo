@@ -1,168 +1,97 @@
 {
-    "metaInfo": {
-        "dataIndex": "entityData",
-        "collectionName": "entities",
-        "responseObjectName": "entityOperationResponse"
-    },
-    "entities": [
-        {
-            "id": "productMaster",
-            "entityInfo": {
-                "entityType": "list"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/productMaster"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Product Master"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+   "metaInfo": {
+      "dataIndex": "entityData",
+      "collectionName": "entities",
+      "responseObjectName": "entityOperationResponse"
+   },
+   "entities": [
+      {
+         "id": "webCatalog",
+         "type": "channel",
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "values": [
+                     {
+                        "value": "Web Catalog"
+                     }
+                  ]
+               }
             }
-        },
-        {
-            "id": "webCatalog",
-            "entityInfo": {
-                "entityType": "channel"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/webCatalog"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Web Catalog"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+         }
+      },
+      {
+         "id": "merchandisingTaxonomy",
+         "type": "taxonomy",
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "values": [
+                     {
+                        "value": "Merchandising Taxonomy"
+                     }
+                  ]
+               }
             }
-        },
-        {
-            "id": "merchandisingTaxonomy",
-            "entityInfo": {
-                "entityType": "taxonomy"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/merchandisingTaxonomy"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Merchandising Taxonomy"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+         }
+      },
+      {
+         "id": "webTaxonomy",
+         "type": "taxonomy",
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "values": [
+                     {
+                        "value": "Web Taxonomy"
+                     }
+                  ]
+               }
             }
-        },
-        {
-            "id": "webTaxonomy",
-            "entityInfo": {
-                "entityType": "taxonomy"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/webTaxonomy"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Web Taxonomy"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+         }
+      },
+      {
+         "id": "apparel",
+         "type": "classification",
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "values": [
+                     {
+                        "value": "Apparel"
+                     }
+                  ]
+               }
             }
-        },
-        {
-            "id": "apparel",
-            "entityInfo": {
-                "entityType": "classification"
+         }
+      },
+      {
+         "id": "shoes",
+         "ype": "classification",
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "values": [
+                     {
+                        "value": "Shoes"
+                     }
+                  ]
+               }
             },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/apparel"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Apparel"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                ]
+            "relationships": {
+               "isChildOf": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "apparel",
+                        "type": "classification"
+                     }
+                  }
+               ]
             }
-        },
-        {
-            "id": "shoes",
-            "entityInfo": {
-                "entityType": "classification"
-            },
-            "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/shoes"
-                        },
-                        "attributes": {
-                            "externalName": {
-                                "values": [
-                                    {
-                                        "value": "Shoes"
-                                    }
-                                ]
-                            }
-                        },
-                        "relationships": {
-                            "isChildOf": [
-                                {
-                                    "id": "",
-                                    "direction": "both",
-                                    "relationshipType": "aggregation",
-                                    "relTo": {
-                                        "id": "apparel",
-                                        "entityInfo": {
-                                            "entityType": "classification"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        }
-    ]
+         }
+      }
+   ]
 }

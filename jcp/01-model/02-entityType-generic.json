@@ -8,81 +8,45 @@
         {
             "id": "list_entityType",
             "name": "list",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
+            "type": "entityType",
             "properties": {
                 "externalName": "List",
                 "description": "List"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/list_entityType"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "image_entityType",
             "name": "image",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
+            "type": "entityType",
             "properties": {
                 "externalName": "Image",
                 "description": "Image"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/image_entityType"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "video_entityType",
             "name": "video",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
+            "type": "entityType",
             "properties": {
                 "externalName": "Video",
                 "description": "Video"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/video_entityType"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "document_entityType",
             "name": "document",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
+            "type": "entityType",
             "properties": {
                 "externalName": "Document",
                 "description": "Document"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/document_entityType"
-                        }
-                    }
-                ]
             }
         }
     ]

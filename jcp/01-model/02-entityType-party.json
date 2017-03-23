@@ -8,21 +8,12 @@
         {
             "id": "supplier_entityType",
             "name": "supplier",
-            "entityModelInfo": {
-                "entityModelType": "entityType"
-            },
+            "type": "entityType",
             "properties": {
                 "externalName": "Supplier",
                 "description": "Supplier"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/supplier_entityType"
-                        }
-                    }
-                ]
             }
         }
     ]

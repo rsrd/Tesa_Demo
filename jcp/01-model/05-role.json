@@ -8,134 +8,71 @@
         {
             "id": "rdpAllDataAccess_role",
             "name": "rdpAllDataAccess",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "A system role to bypass data ownership (AVS) check"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/rdpAllDataAccess_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "administrator_role",
             "name": "administrator",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "the system administrator with complete authorization of the system"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/administrator_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "dataReader_role",
             "name": "dataReader",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "user role with read only permissions on data"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/dataReader_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "translationAdmin_role",
             "name": "translationAdmin",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "user role with admin permissions to manage data translations"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/translationAdmin_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "vendor_role",
             "name": "vendor",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "Vendor user role"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/vendor_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "buyer_role",
             "name": "buyer",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "Buyer user role"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/buyer_role"
-                        }
-                    }
-                ]
             }
         },
         {
             "id": "buyerOps_role",
             "name": "buyerOps",
-            "entityModelInfo": {
-                "entityModelType": "role"
-            },
+            "type": "role",
             "properties": {
                 "description": "Buyer user role"
             },
             "data": {
-                "ctxInfo": [
-                    {
-                        "ctxGroup": {
-                            "self": "self/buyerOps_role"
-                        }
-                    }
-                ]
             }
         }
     ]

@@ -8,14 +8,11 @@
         {
             "id": "lot_entityDisplayModel",
             "name": "lot",
-            "entityModelInfo": {
-                "entityModelType": "entityDisplayModel"
-            },
+            "type": "entityDisplayModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "attributes": {
@@ -32,14 +29,11 @@
         {
             "id": "sku_entityDisplayModel",
             "name": "sku",
-            "entityModelInfo": {
-                "entityModelType": "entityDisplayModel"
-            },
+            "type": "entityDisplayModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "attributes": {
@@ -75,14 +69,11 @@
         {
             "id": "productPresentation_entityDisplayModel",
             "name": "productPresentation",
-            "entityModelInfo": {
-                "entityModelType": "entityDisplayModel"
-            },
+            "type": "entityDisplayModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "relationships": {
@@ -119,14 +110,11 @@
         {
             "id": "ensemble_entityDisplayModel",
             "name": "ensemble",
-            "entityModelInfo": {
-                "entityModelType": "entityDisplayModel"
-            },
+            "type": "entityDisplayModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         }
                     }
@@ -136,14 +124,11 @@
         {
             "id": "image_entityDisplayModel",
             "name": "image",
-            "entityModelInfo": {
-                "entityModelType": "entityDisplayModel"
-            },
+            "type": "entityDisplayModel",
             "data": {
                 "ctxInfo": [
                     {
                         "ctxGroup": {
-                            "list": "productMaster",
                             "classification": "_ALL"
                         },
                         "attributes": {
