@@ -2,7 +2,7 @@
    "metaInfo": {
       "dataIndex": "entityModel",
       "collectionName": "entityModels",
-      "responseObjectName": "entityModelOperationResponse"
+      "responseObjectName": "response"
    },
    "entityModels": [
       {
@@ -10,9 +10,9 @@
          "name": "lot",
          "type": "entityManageModel",
          "data": {
-            "ctxInfo": [
+            "contexts": [
                {
-                  "ctxGroup": {
+                  "context": {
                      "classification": "_ALL"
                   },
                   "attributes": {
@@ -308,7 +308,7 @@
                   }
                },
                {
-                  "ctxGroup": {
+                  "context": {
                      "channel": "webCatalog",
                      "classification": "_ALL"
                   }
@@ -321,9 +321,9 @@
          "name": "sku",
          "type": "entityManageModel",
          "data": {
-            "ctxInfo": [
+            "contexts": [
                {
-                  "ctxGroup": {
+                  "context": {
                      "classification": "_ALL"
                   },
                   "attributes": {
@@ -684,9 +684,9 @@
          "name": "productPresentation",
          "type": "entityManageModel",
          "data": {
-            "ctxInfo": [
+            "contexts": [
                {
-                  "ctxGroup": {
+                  "context": {
                      "classification": "_ALL"
                   },
                   "attributes": {
@@ -1039,7 +1039,7 @@
                   }
                },
                {
-                  "ctxGroup": {
+                  "context": {
                      "channel": "webCatalog",
                      "classification": "_ALL"
                   }
@@ -1052,9 +1052,9 @@
          "name": "ensemble",
          "type": "entityManageModel",
          "data": {
-            "ctxInfo": [
+            "contexts": [
                {
-                  "ctxGroup": {
+                  "context": {
                      "classification": "_ALL"
                   },
                   "attributes": {
@@ -1332,7 +1332,7 @@
                   }
                },
                {
-                  "ctxGroup": {
+                  "context": {
                      "channel": "webCatalog",
                      "classification": "_ALL"
                   }

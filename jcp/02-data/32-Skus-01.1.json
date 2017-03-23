@@ -2,7 +2,7 @@
 	"metaInfo": {
 		"dataIndex": "entityData",
 		"collectionName": "entities",
-		"responseObjectName": "entityOperationResponse"
+		"responseObjectName": "response"
 	},
 	"entities": [{
 		"id": "sku5007213206-01-01",
@@ -19,8 +19,8 @@
 			"modifiedDate": "3/17/2017  6:33:52 PM"
 		},
 		"data": {
-			"ctxInfo": [{
-				"ctxGroup": {
+			"contexts": [{
+				"context": {
 					"list": "productMaster",
 					"classification": "_ALL"
 				},

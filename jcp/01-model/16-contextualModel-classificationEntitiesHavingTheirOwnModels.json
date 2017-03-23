@@ -2,7 +2,7 @@
     "metaInfo": {
         "dataIndex": "entityModel",
         "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
+        "responseObjectName": "response"
     },
     "entityModels": [
         {
@@ -12,9 +12,9 @@
                 "entityModelType": "entityManageModel"
             },
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "taxonomy": "merchandisingTaxonomy"
                         },
                         "attributes": {
@@ -44,9 +44,9 @@
                 "entityModelType": "entityManageModel"
             },
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "taxonomy": "merchandisingTaxonomy"
                         },
                         "attributes": {

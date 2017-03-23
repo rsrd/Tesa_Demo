@@ -2,7 +2,7 @@
     "metaInfo": {
         "dataIndex": "entityModel",
         "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
+        "responseObjectName": "response"
     },
     "entityModels": [
         {
@@ -10,9 +10,9 @@
             "name": "lot",
             "type": "entityDisplayModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "attributes": {
@@ -31,9 +31,9 @@
             "name": "sku",
             "type": "entityDisplayModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "attributes": {
@@ -71,9 +71,9 @@
             "name": "productPresentation",
             "type": "entityDisplayModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "relationships": {
@@ -112,9 +112,9 @@
             "name": "ensemble",
             "type": "entityDisplayModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         }
                     }
@@ -126,9 +126,9 @@
             "name": "image",
             "type": "entityDisplayModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "attributes": {

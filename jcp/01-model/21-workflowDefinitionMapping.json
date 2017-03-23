@@ -2,7 +2,7 @@
     "metaInfo": {
         "dataIndex": "entityModel",
         "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
+        "responseObjectName": "response"
     },
     "entityModels": [
         {
@@ -10,9 +10,9 @@
             "name": "sku",
             "type": "workflowDefinitionMapping",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "relationships": {

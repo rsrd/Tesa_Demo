@@ -2,7 +2,7 @@
     "metaInfo": {
         "dataIndex": "entityModel",
         "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
+        "responseObjectName": "response"
     },
     "entityModels": [
         {
@@ -10,9 +10,9 @@
             "name": "lot",
             "type": "entityValidationModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -45,7 +45,7 @@
                         }
                     },
                     {
-                        "ctxGroup": {
+                        "context": {
                             "channel": "webCatalog",
                             "classification": "_ALL"
                         },
@@ -66,9 +66,9 @@
             "name": "sku",
             "type": "entityValidationModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -108,9 +108,9 @@
             "name": "productPresentation",
             "type": "entityValidationModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -154,7 +154,7 @@
                         }
                     },
                     {
-                        "ctxGroup": {
+                        "context": {
                             "channel": "webCatalog",
                             "classification": "_ALL"
                         },
@@ -174,9 +174,9 @@
             "name": "ensemble",
             "type": "entityValidationModel",
             "data": {
-                "ctxInfo": [
+                "contexts": [
                     {
-                        "ctxGroup": {
+                        "context": {
                             "classification": "_ALL"
                         },
                         "properties": {
@@ -200,7 +200,7 @@
                         }
                     },
                     {
-                        "ctxGroup": {
+                        "context": {
                             "channel": "webCatalog",
                             "classification": "_ALL"
                         },
