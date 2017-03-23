@@ -1,13 +1,39 @@
-var request = require('request-promise-native');
+var dataServiceBase = require('./DataServiceBase');
 var config = require('./config/config');
 
+async function sendDataRequest(tenantId, serviceUrl, req) {
+    var url = config.toolConfig.webUrl + '/' + tenantId + '/api' + serviceUrl;
 
-async function sendRequest(tenantId, serviceUrl, req) {
-    var url = config.toolConfig.url + '/' + tenantId + '/api' + serviceUrl;
+    var options = _prepareOptions(url, "POST", req);
+    var result = await dataServiceBase.sendRequest(options);
 
+    return await result;
+}
+
+async function createIndicesRequest(tenantId, index, indexConfig) {
+    var url = config.toolConfig.elasticUrl + '/' + tenantId + index;
+
+    var options = _prepareOptions(url, "PUT", indexConfig);
+    var result = await dataServiceBase.sendRequest(options);
+    console.log(index + "create");
+    console.log(JSON.stringify(result));
+    return await result;
+}
+
+async function deleteIndicesRequest(tenantId, index) {
+    var url = config.toolConfig.elasticUrl + '/' + tenantId + index;
+    var options = _prepareOptions(url, "DELETE", "");
+    var result = await dataServiceBase.sendRequest(options);
+    console.log(index + "delete");
+    console.log(JSON.stringify(result));    
+    return result;
+}
+
+
+function _prepareOptions(url, method, req) {
     var options = {
         url: url,
-        method: "POST",
+        method: method,
         headers: {
             "Cache-Control": "no-cache",
             "version": 8.1
@@ -18,26 +44,12 @@ async function sendRequest(tenantId, serviceUrl, req) {
         timeout: 5000
     };
 
-    //console.log('RDF req ', options);
-
-    var reqPromise = request(options)
-        .catch(function (errors) {
-            var err = {
-                'status': 'error',
-                'msg': 'RDF request failed due to technical reasons',
-                'reason': errors
-            };
-
-            //console.error('EXCEPTION:', JSON.stringify(err, null, 2));
-            return err;
-        })
-        .catch(function (err) {
-            //console.error(err);
-        });
-
-    return await reqPromise;
+    return options;
 }
 
+
 module.exports = {
-    sendRequest: sendRequest
+    sendDataRequest: sendDataRequest,
+    createIndicesRequest: createIndicesRequest,
+    deleteIndicesRequest: deleteIndicesRequest
 }
