@@ -1,0 +1,149 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityType",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Lot",
+                "description": "lot"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/lot_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sku_entityType",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "SKU",
+                "description": "SKU"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/sku_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "productPresentation_entityType",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Product Presentation",
+                "description": "Product Presentation"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/productPresentation_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ensemble_entityType",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Ensemble",
+                "description": "Ensemble"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/ensemble_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "channel_entityType",
+            "name": "channel",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Channel",
+                "description": "Channel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/channel_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "taxonomy_entityType",
+            "name": "taxonomy",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Taxonomy",
+                "description": "Taxonomy"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/taxonomy_entityType"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "classification_entityType",
+            "name": "classification",
+            "entityModelInfo": {
+                "entityModelType": "entityType"
+            },
+            "properties": {
+                "externalName": "Classification",
+                "description": "Classification"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/classification_entityType"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

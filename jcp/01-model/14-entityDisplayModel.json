@@ -1,0 +1,161 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityDisplayModel",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sku_entityDisplayModel",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "color": {
+                                "properties": {
+                                    "displayType": "referenceList",
+                                    "referenceEntityInfo": [
+                                        {
+                                            "thumbnail": "/images/favicon.ico",
+                                            "listTitle": "{entity.attributes.code}",
+                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                        }
+                                    ]
+                                }
+                            },
+                            "size": {
+                                "properties": {
+                                    "displayType": "referenceList",
+                                    "referenceEntityInfo": [
+                                        {
+                                            "thumbnail": "none",
+                                            "listTitle": "{entity.attributes.code}",
+                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "productPresentation_entityDisplayModel",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "productPresentationToLot": [
+                                {
+                                    "attributes": {
+                                        "status": {
+                                            "properties": {
+                                                "externalName": "Status",
+                                                "dataType": "string",
+                                                "referenceEntityInfo": [
+                                                    {
+                                                        "thumbnail": "/images/favicon.ico",
+                                                        "listTitle": "{entity.attributes.code}",
+                                                        "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "enabled": {
+                                            "properties": {
+                                                "externalName": "Is Active?",
+                                                "displayType": "boolean"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ensemble_entityDisplayModel",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "image_entityDisplayModel",
+            "name": "image",
+            "entityModelInfo": {
+                "entityModelType": "entityDisplayModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "cpimProductName": {
+                                "properties": {
+                                    "displayType": "textbox"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

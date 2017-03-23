@@ -1,0 +1,232 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityValidationModel",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "description": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+						
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sku_entityValidationModel",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "displayname": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "productPresentation_entityValidationModel",
+            "name": "productPresentation",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+						
+						"attributes": {
+                            "stuscd": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 10
+                                }
+                            },
+							"startdate": {
+                                "properties": {
+                                    "required": true
+                                    
+                                }
+                            },
+                            "description": {
+                                "properties": {
+                                    "minLength": 1,
+                                    "maxLength": 50
+                                }
+                            }
+                        },
+                        "relationships": {
+                            "productPresentationToLot": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ensemble_entityValidationModel",
+            "name": "ensemble",
+            "entityModelInfo": {
+                "entityModelType": "entityValidationModel"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1,
+                                    "maximum": 1
+                                }
+                            ]
+                        },
+                        "relationships": {
+                            "ensembleToPresentation": {
+                                "properties": {
+                                    "cardinality": [
+                                        {
+                                            "minimum": 1
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ctxGroup": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "properties": {
+                            "cardinality": [
+                                {
+                                    "minimum": 1
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

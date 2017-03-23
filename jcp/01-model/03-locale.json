@@ -1,0 +1,89 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "en-US_locale",
+            "name": "en-US",
+            "entityModelInfo": {
+                "entityModelType": "locale"
+            },
+            "properties": {
+                "externalName": "English - United States",
+                "culture": "en-US"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/en-US_locale"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "de-DE_locale",
+            "name": "de-DE",
+            "entityModelInfo": {
+                "entityModelType": "locale"
+            },
+            "properties": {
+                "externalName": "German - Germany",
+                "culture": "de-DE"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/de-DE_locale"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fr-FR_locale",
+            "name": "fr-FR",
+            "entityModelInfo": {
+                "entityModelType": "locale"
+            },
+            "properties": {
+                "externalName": "French - France",
+                "culture": "fr-FR"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/fr-FR_locale"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "es-SP_locale",
+            "name": "es-SP",
+            "entityModelInfo": {
+                "entityModelType": "locale"
+            },
+            "properties": {
+                "externalName": "Spanish - Spain",
+                "culture": "es-SP"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "self": "self/es-SP_locale"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

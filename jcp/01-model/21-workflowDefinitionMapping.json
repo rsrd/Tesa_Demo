@@ -1,0 +1,40 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "entityModelOperationResponse"
+    },
+    "entityModels": [
+        {
+            "id": "sku_workflowDefinitionMapping",
+            "name": "sku",
+            "entityModelInfo": {
+                "entityModelType": "workflowDefinitionMapping"
+            },
+            "data": {
+                "ctxInfo": [
+                    {
+                        "ctxGroup": {
+                            "list": "productMaster"
+                        },
+                        "relationships": {
+                            "hasWorkflowsDefined": [
+                                {
+                                    "id": "rel101",
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "relTo": {
+                                        "id": "newProductSetup_workflowDefinition",
+                                        "entityInfo": {
+                                            "entityType": "workflowDefinition"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
