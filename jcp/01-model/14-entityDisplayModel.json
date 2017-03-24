@@ -10,17 +10,17 @@
             "name": "lot",
             "type": "entityDisplayModel",
             "data": {
+                "attributes": {
+                    "cpimProductName": {
+                        "properties": {
+                            "displayType": "textbox"
+                        }
+                    }
+                },
                 "contexts": [
                     {
                         "context": {
                             "classification": "_ALL"
-                        },
-                        "attributes": {
-                            "cpimProductName": {
-                                "properties": {
-                                    "displayType": "textbox"
-                                }
-                            }
                         }
                     }
                 ]
@@ -31,36 +31,36 @@
             "name": "sku",
             "type": "entityDisplayModel",
             "data": {
+                "attributes": {
+                    "color": {
+                        "properties": {
+                            "displayType": "referenceList",
+                            "referenceEntityInfo": [
+                                {
+                                    "thumbnail": "/images/favicon.ico",
+                                    "listTitle": "{entity.attributes.code}",
+                                    "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                }
+                            ]
+                        }
+                    },
+                    "size": {
+                        "properties": {
+                            "displayType": "referenceList",
+                            "referenceEntityInfo": [
+                                {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.code}",
+                                    "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                }
+                            ]
+                        }
+                    }
+                },
                 "contexts": [
                     {
                         "context": {
                             "classification": "_ALL"
-                        },
-                        "attributes": {
-                            "color": {
-                                "properties": {
-                                    "displayType": "referenceList",
-                                    "referenceEntityInfo": [
-                                        {
-                                            "thumbnail": "/images/favicon.ico",
-                                            "listTitle": "{entity.attributes.code}",
-                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
-                                        }
-                                    ]
-                                }
-                            },
-                            "size": {
-                                "properties": {
-                                    "displayType": "referenceList",
-                                    "referenceEntityInfo": [
-                                        {
-                                            "thumbnail": "none",
-                                            "listTitle": "{entity.attributes.code}",
-                                            "listSubTitle": "{entity.name} - {entity.attributes.value}"
-                                        }
-                                    ]
-                                }
-                            }
                         }
                     }
                 ]
@@ -71,37 +71,37 @@
             "name": "productPresentation",
             "type": "entityDisplayModel",
             "data": {
+                "relationships": {
+                    "productPresentationToLot": [
+                        {
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "externalName": "Status",
+                                        "dataType": "string",
+                                        "referenceEntityInfo": [
+                                            {
+                                                "thumbnail": "/images/favicon.ico",
+                                                "listTitle": "{entity.attributes.code}",
+                                                "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "enabled": {
+                                    "properties": {
+                                        "externalName": "Is Active?",
+                                        "displayType": "boolean"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
                 "contexts": [
                     {
                         "context": {
                             "classification": "_ALL"
-                        },
-                        "relationships": {
-                            "productPresentationToLot": [
-                                {
-                                    "attributes": {
-                                        "status": {
-                                            "properties": {
-                                                "externalName": "Status",
-                                                "dataType": "string",
-                                                "referenceEntityInfo": [
-                                                    {
-                                                        "thumbnail": "/images/favicon.ico",
-                                                        "listTitle": "{entity.attributes.code}",
-                                                        "listSubTitle": "{entity.name} - {entity.attributes.value}"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "enabled": {
-                                            "properties": {
-                                                "externalName": "Is Active?",
-                                                "displayType": "boolean"
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
                         }
                     }
                 ]
@@ -116,27 +116,6 @@
                     {
                         "context": {
                             "classification": "_ALL"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "id": "image_entityDisplayModel",
-            "name": "image",
-            "type": "entityDisplayModel",
-            "data": {
-                "contexts": [
-                    {
-                        "context": {
-                            "classification": "_ALL"
-                        },
-                        "attributes": {
-                            "cpimProductName": {
-                                "properties": {
-                                    "displayType": "textbox"
-                                }
-                            }
                         }
                     }
                 ]

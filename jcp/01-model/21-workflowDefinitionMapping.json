@@ -10,23 +10,23 @@
             "name": "sku",
             "type": "workflowDefinitionMapping",
             "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newProductSetup_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                },
                 "contexts": [
                     {
                         "context": {
                             "classification": "_ALL"
-                        },
-                        "relationships": {
-                            "hasWorkflowsDefined": [
-                                {
-                                    "id": "rel101",
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "relTo": {
-                                        "id": "newProductSetup_workflowDefinition",
-                                        "type": "workflowDefinition"
-                                    }
-                                }
-                            ]
                         }
                     }
                 ]
