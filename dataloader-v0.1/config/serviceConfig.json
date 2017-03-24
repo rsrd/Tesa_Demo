@@ -1,0 +1,100 @@
+{
+    "services": {
+        "entityservice/get": {
+            "url": "/entityservice/get",
+            "mode": "online",
+            "offlineSettings": {
+                "operation": "get",
+                "requestPathToSelectDataFile": "params.query.filters.typesCriterion",
+                "requestPathToFilterData": "params.query.id",
+                "fieldToCompareInData": "id"
+            }
+        },
+        "entityservice/create": {
+            "url": "/entityservice/create",
+            "mode": "online"
+        },
+        "entityservice/update": {
+            "url": "/entityservice/update",
+            "mode": "online"
+        },
+        "entityservice/delete": {
+            "url": "/entityservice/delete",
+            "mode": "online"
+        },
+        "entitymodelservice/get": {
+            "url": "/entitymanagemodelservice/get",
+            "mode": "offline",
+            "offlineSettings": {
+                "operation": "get",
+                "requestPathToSelectDataFile": "params.query.filters.typesCriterion",
+                "requestPathToFilterData": "params.query.id",
+                "fieldToCompareInData": "id"
+            }
+        },
+        "entitymodelservice/create": {
+            "url": "/entitymanagemodelservice/create",
+            "mode": "online"
+        },
+        "entitymodelservice/update": {
+            "url": "/entitymanagemodelservice/update",
+            "mode": "online"
+        },
+        "entitymodelservice/delete": {
+            "url": "/entitymanagemodelservice/delete",
+            "mode": "online"
+        },
+        "entitygovernservice/get": {
+            "url": "/entitygovernservice/get",
+            "mode": "offline",
+            "offlineSettings": {
+                "operation": "get",
+                "requestPathToSelectDataFile": "params.query.filters.typesCriterion",
+                "requestPathToFilterData": "params.query.id",
+                "fieldToCompareInData": "id"
+            }
+        },
+        "entitygovernservice/create": {
+            "url": "/entitygovernservice/create",
+            "mode": "online"
+        },
+        "entitygovernservice/update":  {
+            "url": "/entitygovernservice/update",
+            "mode": "online"
+        },
+        "entitygovernservice/delete": {
+            "url": "/entitygovernservice/delete",
+            "mode": "online"
+        },
+        "entitygovernservice/startworkflow": {
+            "url": "/entitygovernservice/startWorkflow",
+            "mode": "online",
+            "offlineSettings": {
+            }
+        },
+        "entitygovernservice/workflowChangeAssignment": {
+            "url": "/entitygovernservice/workflowChangeAssignment",
+            "mode": "online",
+            "offlineSettings": {
+            }
+        },
+        "entitygovernservice/transitionWorkflow": {
+            "url": "/entitygovernservice/transitionWorkflow",
+            "mode": "online",
+            "offlineSettings": {
+            }
+        },
+        "configurationservice/get": {
+            "url": "/configurationservice/get",
+            "mode": "offline",
+            "offlineSettings": {
+            }
+        },
+         "requestmanageservice/get": {
+            "url": "/requestmanageservice/get",
+            "mode": "online",
+            "offlineSettings": {
+            }
+        }
+    }
+}

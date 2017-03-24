@@ -19,6 +19,32 @@
                             "classification": "_ALL"
                         },
                         "attributes": {
+                            "color": {
+                                "properties": {
+                                    "externalName": "COLOR",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "color"
+                                        }
+                                    ]
+                                }
+                            },
+                            "size": {
+                                "properties": {
+                                    "externalName": "SIZE",
+                                    "dataType": "string",
+                                    "isReferenceType": true,
+                                    "referenceEntityInfo": [
+                                        {
+                                            "refRelationshipName": "hasReferenceTo",
+                                            "refEntityType": "size"
+                                        }
+                                    ]
+                                }
+                            },
                             "creationdate": {
                                 "properties": {
                                     "externalName": "CREATION_DATE",
