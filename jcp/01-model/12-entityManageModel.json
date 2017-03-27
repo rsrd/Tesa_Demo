@@ -360,8 +360,10 @@
                         },
                         "attributes": {
                             "webDiscount": {
-                                "externalName": "Web Discount",
-                                "dataType": "decimal"
+                                "properties": {
+                                    "externalName": "Web Discount",
+                                    "dataType": "decimal"
+                                }
                             }
                         }
                     }
@@ -765,8 +767,10 @@
                         },
                         "attributes": {
                             "webDiscount": {
-                                "externalName": "Web Discount",
-                                "dataType": "decimal"
+                                "properties": {
+                                    "externalName": "Web Discount",
+                                    "dataType": "decimal"
+                                }
                             }
                         }
                     }
