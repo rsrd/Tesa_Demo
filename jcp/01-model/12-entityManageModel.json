@@ -357,6 +357,12 @@
                         "context": {
                             "channel": "webCatalog",
                             "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "webDiscount": {
+                                "externalName": "Web Discount",
+                                "dataType": "decimal"
+                            }
                         }
                     }
                 ]
@@ -750,6 +756,18 @@
                     {
                         "context": {
                             "classification": "_ALL"
+                        }
+                    },
+                    {
+                        "context": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "webDiscount": {
+                                "externalName": "Web Discount",
+                                "dataType": "decimal"
+                            }
                         }
                     }
                 ]

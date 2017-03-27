@@ -39,6 +39,7 @@ function startLoadingData(folder, option, tenant, flush) {
         deleteAndCreateIndices(tenant, option, flush).then(function (results) {
             
             console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
+            
 
             if (checkIndicesStatus(results)) {
                 selectedFolders.forEach(function (selectedFolder) {
@@ -199,7 +200,9 @@ async function deleteAndCreateIndices(tenantId, selectedFolder, flush) {
 
         promise = deleteIndices(tenantId, selectedFolder).then(function (result) {
             results = result;
+            
             if (checkIndicesStatus(result)) {
+                sleep(3000);
                 results = createIndices(tenantId, selectedFolder);
             } else {
                 console.log("error while deleting indices" + JSON.stringify(results));

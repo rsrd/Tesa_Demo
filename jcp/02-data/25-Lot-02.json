@@ -132,6 +132,23 @@
                         "context": {
                             "classification": "_ALL"
                         }
+                    },
+                    {
+                        "context": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "attributes": {
+                            "webDiscount": {
+                                "values": [
+                                    {
+                                        "value": "10.5",
+                                        "source": "internal",
+                                        "locale": "en-US"
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             }

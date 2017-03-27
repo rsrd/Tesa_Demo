@@ -402,6 +402,15 @@
                                 "type": "nested"
                             }
                         }
+                    },
+                    {
+                        "jsonData": {
+                            "path_match": "data.*jsonData",
+                            "mapping": {
+                                "type": "object",
+                                "enabled": false
+                            }
+                        }
                     }
                 ],
                 "properties": {

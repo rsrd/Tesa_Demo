@@ -1,0 +1,45 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "entityOperationResponse"
+	},
+	"entities": [
+		{
+			"id": "Red",
+			"name": "Red",
+			"entityInfo": {
+				"entityType": "color"
+			},
+			"data": {
+				"ctxInfo": [
+					{
+						"ctxGroup": {
+							"list": "listOfcolor"
+						},
+						"attributes": {
+							"code": {
+								"values": [
+									{
+										"value": "Red",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							},
+							"value": {
+								"values": [
+									{
+										"value": "Red",
+										"source": "internal",
+										"locale": "en-US"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
