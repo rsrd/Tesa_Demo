@@ -708,9 +708,6 @@
                                     {
                                         "relEntityType": "kit",
                                         "relContexts": [
-                                            {
-                                                "classification": "_ALL"
-                                            }
                                         ]
                                     }
                                 ]
@@ -726,9 +723,6 @@
                                     {
                                         "relEntityType": "image",
                                         "relContexts": [
-                                            {
-                                                "classification": "_ALL"
-                                            }
                                         ]
                                     }
                                 ]
@@ -744,9 +738,6 @@
                                     {
                                         "relEntityType": "lot",
                                         "relContexts": [
-                                            {
-                                                "classification": "_ALL"
-                                            }
                                         ]
                                     }
                                 ]
@@ -772,6 +763,23 @@
                                     "dataType": "decimal"
                                 }
                             }
+                        },
+                        "relationships": {
+                            "skuToImage": [
+                                {
+                                    "properties": {
+                                        "externalName": "Images",
+                                        "relationshipType": "association",
+                                        "relatedEntityInfo": [
+                                            {
+                                                "relEntityType": "image",
+                                                "relContexts": [   
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]
