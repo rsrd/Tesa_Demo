@@ -1,0 +1,116 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "admin_user",
+            "name": "admin",
+            "type": "user",
+            "properties": {
+                "firstName": "Admin",
+                "lastName": "Admin",
+                "login": "admin",
+                "password": "admin",
+                "email": "admin@riversand.com",
+                "roles": [
+                    "administrator",
+                    "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "vendor1_user",
+            "name": "vendor1",
+            "type": "user",
+            "properties": {
+                "firstName": "Victor",
+                "lastName": "Smith",
+                "login": "vendor1",
+                "password": "vendor1",
+                "email": "victor.smith@riversand.com",
+                "roles": [
+                    "vendor"
+                ]
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "buyer1_user",
+            "name": "buyer1",
+            "type": "user",
+            "properties": {
+                "firstName": "Bob",
+                "lastName": "Jones",
+                "login": "buyer1",
+                "password": "buyer1",
+                "email": "bob.jones@riversand.com",
+                "roles": [
+                    "buyer",
+                    "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "buyerops1_user",
+            "name": "buyerops1",
+            "type": "user",
+            "properties": {
+                "firstName": "Oscar",
+                "lastName": "Williams",
+                "login": "buyerops1",
+                "password": "buyerops1",
+                "email": "Oscar.Williams@riversand.com",
+                "roles": [
+                    "buyerOps",
+                    "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "pottas_user",
+            "name": "pottas",
+            "type": "user",
+            "properties": {
+                "firstName": "Shyam",
+                "lastName": "Potta",
+                "login": "pottas",
+                "password": "pottas",
+                "email": "shyam.potta@riversand.com",
+                "roles": [
+                    "administrator",
+                    "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "bhatian_user",
+            "name": "bhatian",
+            "type": "user",
+            "properties": {
+                "firstName": "Nikhil",
+                "lastName": "Bhatia",
+                "login": "bhatian",
+                "password": "bhatian",
+                "email": "Nikhil.Bhatia@riversand.com",
+                "roles": [
+                    "administrator",
+                    "rdpAllDataAccess"
+                ]
+            },
+            "data": {
+            }
+        }
+    ]
+}

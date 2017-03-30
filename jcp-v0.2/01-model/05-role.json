@@ -1,0 +1,79 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "rdpAllDataAccess_role",
+            "name": "rdpAllDataAccess",
+            "type": "role",
+            "properties": {
+                "description": "A system role to bypass data ownership (AVS) check"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "administrator_role",
+            "name": "administrator",
+            "type": "role",
+            "properties": {
+                "description": "the system administrator with complete authorization of the system"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "dataReader_role",
+            "name": "dataReader",
+            "type": "role",
+            "properties": {
+                "description": "user role with read only permissions on data"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "translationAdmin_role",
+            "name": "translationAdmin",
+            "type": "role",
+            "properties": {
+                "description": "user role with admin permissions to manage data translations"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "vendor_role",
+            "name": "vendor",
+            "type": "role",
+            "properties": {
+                "description": "Vendor user role"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "buyer_role",
+            "name": "buyer",
+            "type": "role",
+            "properties": {
+                "description": "Buyer user role"
+            },
+            "data": {
+            }
+        },
+        {
+            "id": "buyerOps_role",
+            "name": "buyerOps",
+            "type": "role",
+            "properties": {
+                "description": "Buyer user role"
+            },
+            "data": {
+            }
+        }
+    ]
+}
