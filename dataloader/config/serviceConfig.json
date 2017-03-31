@@ -86,9 +86,14 @@
         },
         "configurationservice/get": {
             "url": "/configurationservice/get",
-            "mode": "offline",
+            "mode": "online",
             "offlineSettings": {
             }
+        },
+        "configurationservice/create": {
+            "url": "/configurationservice/create",
+            "mode": "online",
+            "offlineSettings": {}
         },
          "requestmanageservice/get": {
             "url": "/requestmanageservice/get",
