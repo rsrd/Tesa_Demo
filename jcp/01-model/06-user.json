@@ -1,116 +1,152 @@
 {
-    "metaInfo": {
-        "dataIndex": "entityModel",
-        "collectionName": "entityModels",
-        "responseObjectName": "response"
-    },
-    "entityModels": [
-        {
-            "id": "admin_user",
-            "name": "admin",
-            "type": "user",
-            "properties": {
-                "firstName": "Admin",
-                "lastName": "Admin",
-                "login": "admin",
-                "password": "admin",
-                "email": "admin@riversand.com",
-                "roles": [
-                    "administrator",
-                    "rdpAllDataAccess"
-                ]
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "vendor1_user",
-            "name": "vendor1",
-            "type": "user",
-            "properties": {
-                "firstName": "Victor",
-                "lastName": "Smith",
-                "login": "vendor1",
-                "password": "vendor1",
-                "email": "victor.smith@riversand.com",
-                "roles": [
-                    "vendor"
-                ]
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "buyer1_user",
-            "name": "buyer1",
-            "type": "user",
-            "properties": {
-                "firstName": "Bob",
-                "lastName": "Jones",
-                "login": "buyer1",
-                "password": "buyer1",
-                "email": "bob.jones@riversand.com",
-                "roles": [
-                    "buyer",
-                    "rdpAllDataAccess"
-                ]
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "buyerops1_user",
-            "name": "buyerops1",
-            "type": "user",
-            "properties": {
-                "firstName": "Oscar",
-                "lastName": "Williams",
-                "login": "buyerops1",
-                "password": "buyerops1",
-                "email": "Oscar.Williams@riversand.com",
-                "roles": [
-                    "buyerOps",
-                    "rdpAllDataAccess"
-                ]
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "pottas_user",
-            "name": "pottas",
-            "type": "user",
-            "properties": {
-                "firstName": "Shyam",
-                "lastName": "Potta",
-                "login": "pottas",
-                "password": "pottas",
-                "email": "shyam.potta@riversand.com",
-                "roles": [
-                    "administrator",
-                    "rdpAllDataAccess"
-                ]
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "bhatian_user",
-            "name": "bhatian",
-            "type": "user",
-            "properties": {
-                "firstName": "Nikhil",
-                "lastName": "Bhatia",
-                "login": "bhatian",
-                "password": "bhatian",
-                "email": "Nikhil.Bhatia@riversand.com",
-                "roles": [
-                    "administrator",
-                    "rdpAllDataAccess"
-                ]
-            },
-            "data": {
-            }
-        }
-    ]
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "admin1_user",
+			"name": "admin1",
+			"type": "user",
+			"properties": {
+				"firstName": "Admin",
+				"lastName": "Admin",
+				"login": "admin1",
+				"password": "admin1",
+				"email": "admin1@jcp.com",
+				"roles": [
+					"admin",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "vendor1_user",
+			"name": "vendor1",
+			"type": "user",
+			"properties": {
+				"firstName": "Vendor",
+				"lastName": "Vendor",
+				"login": "vendor1",
+				"password": "vendor1",
+				"email": "vendor1@jcp.com",
+				"roles": [
+					"vendor"
+				]
+			}
+		},
+		{
+			"id": "buyer1_user",
+			"name": "buyer1",
+			"type": "user",
+			"properties": {
+				"firstName": "Buyer",
+				"lastName": "Buyer",
+				"login": "buyer1",
+				"password": "buyer1",
+				"email": "buyer1@jcp.com",
+				"roles": [
+					"buyer",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "assetEnrichment1_user",
+			"name": "assetEnrichment1",
+			"type": "user",
+			"properties": {
+				"firstName": "Asset Enrichment",
+				"lastName": "Asset Enrichment",
+				"login": "assetEnrichment1",
+				"password": "assetEnrichment1",
+				"email": "assetEnrichment1@jcp.com",
+				"roles": [
+					"assetEnrichment",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "business1_user",
+			"name": "business1",
+			"type": "user",
+			"properties": {
+				"firstName": "Business",
+				"lastName": "Business",
+				"login": "business1",
+				"password": "business1",
+				"email": "business1@jcp.com",
+				"roles": [
+					"business",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "copywriter1_user",
+			"name": "copywriter1",
+			"type": "user",
+			"properties": {
+				"firstName": "CopyWriter",
+				"lastName": "CopyWriter",
+				"login": "copywriter1",
+				"password": "copywriter1",
+				"email": "copywriter1@jcp.com",
+				"roles": [
+					"copywriter",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "siteOps1_user",
+			"name": "siteOps1",
+			"type": "user",
+			"properties": {
+				"firstName": "Site Ops",
+				"lastName": "Site Ops",
+				"login": "siteOps1",
+				"password": "siteOps1",
+				"email": "siteOps1@jcp.com",
+				"roles": [
+					"siteOps",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "taxonomyTeam1_user",
+			"name": "taxonomyTeam1",
+			"type": "user",
+			"properties": {
+				"firstName": "Taxonomy Team",
+				"lastName": "Taxonomy Team",
+				"login": "taxonomyTeam1",
+				"password": "taxonomyTeam1",
+				"email": "taxonomyTeam1@jcp.com",
+				"roles": [
+					"taxonomyTeam",
+					"rdpAllDataAccess"
+				]
+			}
+		},
+		{
+			"id": "siteMerchandiser1_user",
+			"name": "siteMerchandiser1",
+			"type": "user",
+			"properties": {
+				"firstName": "Site Merchandiser",
+				"lastName": "Site Merchandiser",
+				"login": "siteMerchandiser1",
+				"password": "siteMerchandiser1",
+				"email": "siteMerchandiser1@jcp.com",
+				"roles": [
+					"siteMerchandiser",
+					"rdpAllDataAccess"
+				]
+			}
+		}
+	]
 }
