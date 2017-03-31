@@ -1,79 +1,105 @@
 {
-    "metaInfo": {
-        "dataIndex": "entityModel",
-        "collectionName": "entityModels",
-        "responseObjectName": "response"
-    },
-    "entityModels": [
-        {
-            "id": "rdpAllDataAccess_role",
-            "name": "rdpAllDataAccess",
-            "type": "role",
-            "properties": {
-                "description": "A system role to bypass data ownership (AVS) check"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "administrator_role",
-            "name": "administrator",
-            "type": "role",
-            "properties": {
-                "description": "the system administrator with complete authorization of the system"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "dataReader_role",
-            "name": "dataReader",
-            "type": "role",
-            "properties": {
-                "description": "user role with read only permissions on data"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "translationAdmin_role",
-            "name": "translationAdmin",
-            "type": "role",
-            "properties": {
-                "description": "user role with admin permissions to manage data translations"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "vendor_role",
-            "name": "vendor",
-            "type": "role",
-            "properties": {
-                "description": "Vendor user role"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "buyer_role",
-            "name": "buyer",
-            "type": "role",
-            "properties": {
-                "description": "Buyer user role"
-            },
-            "data": {
-            }
-        },
-        {
-            "id": "buyerOps_role",
-            "name": "buyerOps",
-            "type": "role",
-            "properties": {
-                "description": "Buyer user role"
-            },
-            "data": {
-            }
-        }
-    ]
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "rdpAllDataAccess_role",
+			"name": "rdpAllDataAccess",
+			"type": "role",
+			"properties": {
+				"description": "A system role to bypass data ownership (AVS) check"
+			}
+		},
+		{
+			"id": "administrator_role",
+			"name": "administrator",
+			"type": "role",
+			"properties": {
+				"description": "the system administrator with complete authorization of the system"
+			}
+		},
+		{
+			"id": "dataReader_role",
+			"name": "dataReader",
+			"type": "role",
+			"properties": {
+				"description": "user role with read only permissions on data"
+			}
+		},
+		{
+			"id": "translationAdmin_role",
+			"name": "translationAdmin",
+			"type": "role",
+			"properties": {
+				"description": "user role with admin permissions to manage data translations"
+			}
+		},
+		{
+			"id": "vendor_role",
+			"name": "vendor",
+			"type": "role",
+			"properties": {
+				"description": "Vendor"
+			}
+		},
+		{
+			"id": "buyer_role",
+			"name": "buyer",
+			"type": "role",
+			"properties": {
+				"description": "Buyer"
+			}
+		},
+		{
+			"id": "assetEnrichment_role",
+			"name": "assetEnrichment",
+			"type": "role",
+			"properties": {
+				"description": "Asset Enrichment"
+			}
+		},
+		{
+			"id": "business_role",
+			"name": "business",
+			"type": "role",
+			"properties": {
+				"description": "Business"
+			}
+		},
+		{
+			"id": "copywriter_role",
+			"name": "copywriter",
+			"type": "role",
+			"properties": {
+				"description": "CopyWriter"
+			}
+		},
+		{
+			"id": "siteOps_role",
+			"name": "siteOps",
+			"type": "role",
+			"properties": {
+				"description": "Site Ops"
+			}
+		},
+		{
+			"id": "taxonomyTeam_role",
+			"name": "taxonomyTeam",
+			"type": "role",
+			"properties": {
+				"description": "Taxonomy Team"
+			}
+		},
+		{
+			"id": "siteMerchandiser_role",
+			"name": "siteMerchandiser",
+			"type": "role",
+			"properties": {
+				"description": "Site Merchandiser"
+			}
+		}
+	]
 }
