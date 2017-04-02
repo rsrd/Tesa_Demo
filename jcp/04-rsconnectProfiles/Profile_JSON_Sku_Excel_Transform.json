@@ -1,5 +1,5 @@
 {
-  "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpLot",
+  "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpsku",
   "name": "JCPenney_Sku_Excel_Import_Transform",
   "profileType": "contentOnboarding",
   "dataInfo": "Entity",
@@ -7,7 +7,7 @@
   "inboundChannel": {
     "isDataPersistent": "true",
     "folderConnector": {
-      "sourceFolder": "/apps/import/lot",
+      "sourceFolder": "/apps/import/sku",
       "pattern": "*.xlsx"
     }
   },
