@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_uiConfig",
+			"id": "app-business-function_components-list_sku_vendor_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,11 +22,8 @@
 							"service": "_ALL",
 							"component": "_ALL",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"entityType": "sku",
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -41,8 +38,8 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-wizard_uiConfig",
-			"name": "app-business-function_rock-wizard_uiConfig",
+			"id": "app-business-function_rock-wizard_sku_vendor_uiConfig",
+			"name": "app-business-function_rock-wizard",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -57,11 +54,8 @@
 							"service": "_ALL",
 							"component": "rock-wizard",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"entityType": "sku",
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -77,14 +71,14 @@
 											"properties": {
 												"import-profile-name": "Entity Import - RSExcel 2.0",
 												"attribute-names": [
-													"skuid",
-													"productid",
-													"lottype",
-													"skutype",
-													"displayname",
+													"brand",
 													"description",
-													"startdate",
-													"enddate"
+													"displayName",
+													"id",
+													"retailSkuNumber",
+													"shortName",
+													"skuNumber",
+													"skuType"
 												]
 											}
 										},
@@ -99,8 +93,8 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_uiConfig",
-			"name": "app-business-function_rock-variants-create-grid_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_sku_vendor_uiConfig",
+			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -115,11 +109,8 @@
 							"service": "_ALL",
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"entityType": "sku",
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
