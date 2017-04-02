@@ -7,7 +7,6 @@
     "entityModels": [
         {
             "id": "sku_ruleContextMappings",
-            "name": "sku",
             "type": "ruleContextMappings",
             "data": {
                 "relationships": {
@@ -15,15 +14,16 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_invokeNewProductSetupWFRule_businessRule_RelId",
+                            "id": "sku_businesRule1",
                             "relTo": {
-                                "id": "invokeNewProductSetupWFRule_businessRule",
+                                "id": "invokenewProductSetup",
                                 "type": "businessRule"
                             },
                             "attributes": {
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
+                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -31,6 +31,7 @@
                                 "isDeleted": {
                                     "values": [
                                         {
+                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -38,6 +39,7 @@
                                 "enabled": {
                                     "values": [
                                         {
+                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -45,6 +47,7 @@
                                 "executionMode": {
                                     "values": [
                                         {
+                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -52,99 +55,8 @@
                                 "executionOrder": {
                                     "values": [
                                         {
+                                            "user": "users/system",
                                             "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "sku_populateDescription_businessRule_RelId",
-                            "relTo": {
-                                "id": "populateDescription_businessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "ignoreChangeContext": {
-                                    "values": [
-                                        {
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "enabled": {
-                                    "values": [
-                                        {
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "executionMode": {
-                                    "values": [
-                                        {
-                                            "value": "asynconly"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "2"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "sku_validateLengthAndWidth_businessRule_RelId",
-                            "relTo": {
-                                "id": "validateLengthAndWidth_businessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "ignoreChangeContext": {
-                                    "values": [
-                                        {
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "enabled": {
-                                    "values": [
-                                        {
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "executionMode": {
-                                    "values": [
-                                        {
-                                            "value": "any"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "2"
                                         }
                                     ]
                                 }
@@ -155,7 +67,427 @@
                 "contexts": [
                     {
                         "context": {
-                            "classification": "_ALL"
+                            "self": "self/sku_ruleContextMappings",
+                            "workflow": "newProductSetup"
+                        },
+                        "relationships": {
+                            "hasBusinessConditions": [
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessCondition1",
+                                    "relTo": {
+                                        "id": "vendorSKUCreate_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        },
+                                        "criteriaType": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "skipCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "New SKUs to Submit"
+                                                }
+                                            ]
+                                        },
+                                        "defaultAction": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Submit"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessCondition2",
+                                    "relTo": {
+                                        "id": "vendorSKUSubmission_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "asynconly"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "update"
+                                                }
+                                            ]
+                                        },
+                                        "criteriaType": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "New Skus to Submit"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Submit"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessCondition3",
+                                    "relTo": {
+                                        "id": "vendorSKUaddn.infosubmission_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "asynconly"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "3"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "update"
+                                                }
+                                            ]
+                                        },
+                                        "criteriaType": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Provide Additional Info"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Resubmit"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessCondition4",
+                                    "relTo": {
+                                        "id": "buyerReview_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "asynconly"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "4"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "update"
+                                                }
+                                            ]
+                                        },
+                                        "criteriaType": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Review Assortment"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Approve Assortment"
+                                                },
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Request Info"
+                                                },
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Reject"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessCondition5",
+                                    "relTo": {
+                                        "id": "businessReview_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "asynconly"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "5"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "update"
+                                                }
+                                            ]
+                                        },
+                                        "criteriaType": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Assign Internal Information"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Approve"
+                                                },
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Request Info"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     }
                 ]
