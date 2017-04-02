@@ -18,64 +18,28 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "brand_entityManageModel",
-			"name": "brand",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Brand Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "brand_entityManageModel",
-			"name": "brand",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"brandType": {
 						"properties": {
 							"externalName": "Brand Type",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "brand_entityManageModel",
-			"name": "brand",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"brandLogo": {
 						"properties": {
 							"externalName": "Logo URL",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "brand_entityManageModel",
-			"name": "brand",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"parentBrand": {
 						"properties": {
 							"externalName": "Parent Brand",
@@ -106,16 +70,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Class_entityManageModel",
-			"name": "Class",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
@@ -139,32 +94,14 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Copy_entityManageModel",
-			"name": "Copy",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Copy_entityManageModel",
-			"name": "Copy",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"copyText": {
 						"properties": {
 							"externalName": "Copy",
@@ -188,32 +125,14 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Division_entityManageModel",
-			"name": "Division",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Division_entityManageModel",
-			"name": "Division",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"subDivision": {
 						"properties": {
 							"externalName": "Sub-Divisions",
@@ -227,16 +146,7 @@
 								}
 							]
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Division_entityManageModel",
-			"name": "Division",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"entity": {
 						"properties": {
 							"externalName": "Entity",
@@ -267,32 +177,14 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Entity_entityManageModel",
-			"name": "Entity",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Entity_entityManageModel",
-			"name": "Entity",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"subDivision": {
 						"properties": {
 							"externalName": "Sub-Divisions",
@@ -323,48 +215,21 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "FactSheet_entityManageModel",
-			"name": "FactSheet",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"factsheetNumber": {
 						"properties": {
 							"externalName": "Factsheet No.",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "FactSheet_entityManageModel",
-			"name": "FactSheet",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"factsheetName": {
 						"properties": {
 							"externalName": "Factsheet Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "FactSheet_entityManageModel",
-			"name": "FactSheet",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"factsheetDescription": {
 						"properties": {
 							"externalName": "Description",
@@ -388,16 +253,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "SubDivision_entityManageModel",
-			"name": "SubDivision",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
@@ -421,32 +277,14 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Vdata_entityManageModel",
-			"name": "Vdata",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"vdataModelName": {
 						"properties": {
 							"externalName": "Model Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Vdata_entityManageModel",
-			"name": "Vdata",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"vDataComponent": {
 						"properties": {
 							"externalName": "Component",
@@ -477,144 +315,63 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentName": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentType": {
 						"properties": {
 							"externalName": "Type",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"vdataComponentImage": {
 						"properties": {
 							"externalName": "Image",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentDescription": {
 						"properties": {
 							"externalName": "Description",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentMinimumRange": {
 						"properties": {
 							"externalName": "Minimum Range",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentMaximumRange": {
 						"properties": {
 							"externalName": "Maximun Range",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentMinimumValue": {
 						"properties": {
 							"externalName": "Minimum Value",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentMaximumValue": {
 						"properties": {
 							"externalName": "Maximun Value",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponent_entityManageModel",
-			"name": "VdataComponent",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"vDataComponentRule": {
 						"properties": {
 							"externalName": "Component Rule",
@@ -645,48 +402,21 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponentRule_entityManageModel",
-			"name": "VdataComponentRule",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentRuleName": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponentRule_entityManageModel",
-			"name": "VdataComponentRule",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentRuleDescription": {
 						"properties": {
 							"externalName": "Description",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "VdataComponentRule_entityManageModel",
-			"name": "VdataComponentRule",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"componentRuleRegularExpression": {
 						"properties": {
 							"externalName": "Regular Expression",
@@ -710,32 +440,14 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Warranty_entityManageModel",
-			"name": "Warranty",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"name": {
 						"properties": {
 							"externalName": "Name",
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "Warranty_entityManageModel",
-			"name": "Warranty",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"warrantyData": {
 						"properties": {
 							"externalName": "Warranty Description",
@@ -759,16 +471,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "statusValues_entityManageModel",
-			"name": "statusValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -860,16 +563,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "continentalPrepaidValues_entityManageModel",
-			"name": "continentalPrepaidValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -893,16 +587,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "nonContinentalPrepaidValues_entityManageModel",
-			"name": "nonContinentalPrepaidValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -943,16 +628,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "lotTypeValues_entityManageModel",
-			"name": "lotTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -993,16 +669,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "originIndicatorValues_entityManageModel",
-			"name": "originIndicatorValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1026,16 +693,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "storePurchaseTypeValues_entityManageModel",
-			"name": "storePurchaseTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1059,16 +717,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "skuItemTypeValues_entityManageModel",
-			"name": "skuItemTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1092,16 +741,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "diff1TypeValues_entityManageModel",
-			"name": "diff1TypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1125,16 +765,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "diff1GroupValues_entityManageModel",
-			"name": "diff1GroupValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1209,16 +840,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "specialProgramTypeValues_entityManageModel",
-			"name": "specialProgramTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1327,16 +949,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "lifestyleValues_entityManageModel",
-			"name": "lifestyleValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1360,16 +973,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "packageTypeValues_entityManageModel",
-			"name": "packageTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1393,16 +997,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "weightUOMValues_entityManageModel",
-			"name": "weightUOMValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1426,16 +1021,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "whseSupplierValues_entityManageModel",
-			"name": "whseSupplierValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1459,16 +1045,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "eCommPurchaseTypeValues_entityManageModel",
-			"name": "eCommPurchaseTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1492,16 +1069,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "factoryShipUOMValues_entityManageModel",
-			"name": "factoryShipUOMValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1525,16 +1093,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "ticketStockNoValues_entityManageModel",
-			"name": "ticketStockNoValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1558,16 +1117,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "ticketAttributesValues_entityManageModel",
-			"name": "ticketAttributesValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1591,16 +1141,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "specialItemCodeValues_entityManageModel",
-			"name": "specialItemCodeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1624,16 +1165,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "fashionPyramidValues_entityManageModel",
-			"name": "fashionPyramidValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1657,16 +1189,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "deliveryInstructionValues_entityManageModel",
-			"name": "deliveryInstructionValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1690,16 +1213,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "priceTierValues_entityManageModel",
-			"name": "priceTierValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1740,16 +1254,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "channelAvailabilityValues_entityManageModel",
-			"name": "channelAvailabilityValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1773,16 +1278,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "lotTypeValues_entityManageModel",
-			"name": "lotTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1806,16 +1302,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "lotSelectionTypeValues_entityManageModel",
-			"name": "lotSelectionTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1839,16 +1326,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "productPresentationTypeValues_entityManageModel",
-			"name": "productPresentationTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
@@ -1872,16 +1350,7 @@
 							"groupName": "Basic",
 							"dataType": "string"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "kaTypeValues_entityManageModel",
-			"name": "kaTypeValues",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
+					},
 					"referenceDataValue": {
 						"properties": {
 							"externalName": "Value",
