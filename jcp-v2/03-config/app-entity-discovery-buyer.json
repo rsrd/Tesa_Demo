@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-discovery_components-list_uiConfig",
+			"id": "app-entity-discovery_components-list_vendor_uiConfig",
 			"name": "app-entity-discovery_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,11 +22,7 @@
 							"service": "_ALL",
 							"component": "_ALL",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -46,7 +42,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-entity-search-grid_uiConfig",
+			"id": "app-entity-discovery_rock-entity-search-grid_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-entity-search-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -62,11 +58,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-search-grid",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -75,6 +67,10 @@
 								"mode": "Read",
 								"readOnly": true,
 								"schemaType": "attribute",
+								"titleTemplates": {
+									"contextTemplate": "for the channel: {channel} ",
+									"workflowTemplate": "in workflow: {workflow}, workflow Status: {workflowStatus}"
+								},
 								"dataRequest": {
 									"typesCriterion": [
 										"sku",
@@ -82,11 +78,11 @@
 										"lot"
 									],
 									"attributes": [
-										"displayname",
+										"displayName",
 										"description",
-										"stuscd",
-										"startdate",
-										"enddate",
+										"status",
+										"startDate",
+										"endDate",
 										"webDiscount"
 									]
 								},
@@ -96,21 +92,21 @@
 									},
 									"columns": [
 										{
-											"header": "Entity Name",
-											"name": "displayname",
+											"header": "Display Name",
+											"name": "displayName",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"
 										},
 										{
-											"header": "Entity Description",
+											"header": "Description",
 											"name": "description",
 											"sortable": false,
 											"filterable": false
 										},
 										{
-											"header": "Status Code",
-											"name": "stuscd",
+											"header": "Status",
+											"name": "status",
 											"sortable": false,
 											"filterable": false
 										},
@@ -122,13 +118,13 @@
 										},
 										{
 											"header": "Start Date",
-											"name": "startdate",
+											"name": "startDate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
 											"header": "End Date",
-											"name": "enddate",
+											"name": "endDate",
 											"sortable": true,
 											"filterable": false
 										}
@@ -152,7 +148,7 @@
 									},
 									"listItems": {
 										"image": "productImageUrl",
-										"title": "displayname",
+										"title": "displayName",
 										"id": "id",
 										"fields": [
 											{
@@ -161,8 +157,8 @@
 												"noTrim": false
 											},
 											{
-												"name": "stuscd",
-												"label": "Status Code",
+												"name": "status",
+												"label": "Status",
 												"noTrim": true
 											}
 										]
@@ -186,7 +182,7 @@
 									},
 									"tileItems": {
 										"image": "productImageUrl",
-										"title": "displayname",
+										"title": "displayName",
 										"id": "id",
 										"fields": [
 											{
@@ -195,8 +191,8 @@
 												"noTrim": false
 											},
 											{
-												"name": "stuscd",
-												"label": "Status Code",
+												"name": "status",
+												"label": "Status",
 												"noTrim": true
 											}
 										]
@@ -209,7 +205,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-dimension-selector_uiConfig",
+			"id": "app-entity-discovery_rock-dimension-selector_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -225,18 +221,14 @@
 							"service": "_ALL",
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": [
 								{
 									"id": "channel",
 									"title": "Channel",
-									"icon": "pebble-lg-icons:Source",
+									"icon": "pebble-lg-icons:Master",
 									"visible": true,
 									"dataRequestType": "entity",
 									"dataRequest": {
@@ -336,7 +328,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-saved-searches_uiConfig",
+			"id": "app-entity-discovery_rock-saved-searches_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-saved-searches",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -352,17 +344,211 @@
 							"service": "_ALL",
 							"component": "rock-saved-searches",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
-								"favourites": [
+								"workflowSavedSearch": [
 									{
 										"id": 1,
+										"accesstype": "self",
+										"name": "New SKUs to Submit",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "New SKUs to Submit"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 2,
+										"accesstype": "self",
+										"name": "Provide Additional Info",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Provide Additional Info"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 3,
+										"accesstype": "self",
+										"name": "Rejected SKUs",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Rejected SKUs"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 4,
+										"accesstype": "self",
+										"name": "Review Assortment",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Review Assortment"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 5,
+										"accesstype": "self",
+										"name": "Assign Internal Information",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Assign Internal Information"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 6,
+										"accesstype": "self",
+										"name": "Enrich Copy",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Enrich Copy"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									},
+									{
+										"id": 7,
+										"accesstype": "self",
+										"name": "Enrich with Digital Assets",
+										"workflowSearchCriterion": {
+											"dataRequest": {
+												"params": {
+													"query": {
+														"contexts": [
+															{
+																"workflow": "newProductSetup"
+															}
+														],
+														"filters": {
+															"attributesCriterion": [
+																{
+																	"activities/activityName": {
+																		"eq": "Enrich with Digital Assets"
+																	}
+																}
+															],
+															"typesCriterion": []
+														}
+													}
+												}
+											}
+										}
+									}
+								],
+								"favourites": [
+									{
+										"id": 8,
 										"accesstype": "self",
 										"name": "Womens Shoes",
 										"icon": "pebble-icons:SavedSearch",
@@ -377,7 +563,9 @@
 											{
 												"name": "description",
 												"longName": "Description",
-												"displayType": "textBox",
+												"options": {
+													"displayType": "textArea"
+												},
 												"value": {
 													"eq": "Womens"
 												}
@@ -387,7 +575,7 @@
 								],
 								"my-searches": [
 									{
-										"id": 2,
+										"id": 9,
 										"accesstype": "self",
 										"name": "Mens Shoes",
 										"icon": "pebble-icons:SavedSearch",
@@ -403,7 +591,9 @@
 											{
 												"name": "description",
 												"longName": "Description",
-												"displayType": "textBox",
+												"options": {
+													"displayType": "textArea"
+												},
 												"value": {
 													"eq": "Mens"
 												}
@@ -413,7 +603,7 @@
 								],
 								"shared-searches": [
 									{
-										"id": 3,
+										"id": 10,
 										"accesstype": "self",
 										"name": "Women's Sport Wear & Dresses",
 										"icon": "pebble-icons:SavedSearch",
@@ -429,7 +619,9 @@
 											{
 												"name": "description",
 												"longName": "Description",
-												"displayType": "textBox",
+												"options": {
+													"displayType": "textArea"
+												},
 												"value": {
 													"eq": "dresses"
 												}
@@ -444,7 +636,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_pebble-actions_uiConfig",
+			"id": "app-entity-discovery_pebble-actions_vendor_uiConfig",
 			"name": "app-entity-discovery_pebble-actions",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -460,11 +652,7 @@
 							"service": "_ALL",
 							"component": "pebble-actions",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -492,7 +680,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-search-filter_uiConfig",
+			"id": "app-entity-discovery_rock-search-filter_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-search-filter",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -508,17 +696,19 @@
 							"service": "_ALL",
 							"component": "rock-search-filter",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": [
 								{
-									"name": "displayname",
+									"name": "displayName",
 									"longName": "Display Name",
+									"displayType": "textBox"
+								},
+								{
+									"name": "skuNumber",
+									"longName": "Sku Number",
+									"value": "",
 									"displayType": "textBox"
 								},
 								{
@@ -528,30 +718,25 @@
 									"displayType": "textArea"
 								},
 								{
-									"name": "creationdate",
+									"name": "creationDate",
 									"longName": "Creation Date",
 									"value": "",
 									"displayType": "dateTime"
 								},
 								{
-									"name": "startdate",
+									"name": "startDate",
 									"longName": "Start Date",
 									"value": "",
 									"displayType": "dateTime"
 								},
 								{
-									"name": "enddate",
+									"name": "endDate",
 									"longName": "End Date",
 									"value": "",
 									"displayType": "dateTime"
 								},
 								{
-									"name": "color",
-									"longName": "Color",
-									"displayType": "dropDown"
-								},
-								{
-									"name": "Size",
+									"name": "size",
 									"longName": "Size",
 									"displayType": "dropDown"
 								},
@@ -566,13 +751,13 @@
 									"displayType": "dropDown"
 								},
 								{
-									"name": "skuqy",
-									"longName": "SKU Quantity",
+									"name": "skuQuantity",
+									"longName": "Quantity",
 									"displayType": "numeric"
 								},
 								{
-									"name": "stuscd",
-									"longName": "Status Code",
+									"name": "status",
+									"longName": "Status",
 									"displayType": "textBox"
 								}
 							]
@@ -582,7 +767,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-saved-searches-tags_uiConfig",
+			"id": "app-entity-discovery_rock-saved-searches-tags_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-saved-searches-tags",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -598,11 +783,7 @@
 							"service": "_ALL",
 							"component": "rock-saved-searches-tags",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -661,7 +842,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-entity-quick-manage_uiConfig",
+			"id": "app-entity-discovery_rock-entity-quick-manage_vendor_uiConfig",
 			"name": "app-entity-discovery_rock-entity-quick-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -677,11 +858,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-quick-manage",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -698,58 +875,79 @@
 												"name": "rock-attribute-manage",
 												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
 												"properties": {
-													"attributeGroups": [
-														"coreAttributes"
-													],
 													"config-context": {
 														"attributeNames": [
-															"displayname",
+															"alsoInStore",
+															"brand",
+															"brandLogo",
+															"channel",
+															"channelAvailability",
 															"description",
-															"enddate",
-															"startdate",
-															"stuscd",
+															"displayAskAndAnswerSection",
+															"displayName",
+															"factSheet",
+															"featureColor",
+															"hideDisplayIndicator",
+															"id",
+															"isCustomerFavoriteOption",
+															"isHidden",
+															"isPreOrderOption",
+															"longDescription",
+															"lotSelectionType",
+															"lotType",
+															"onlineOnly",
 															"orin",
-															"productid",
-															"onlineonly",
-															"shortnm",
-															"chnlcd",
-															"trukitmin",
-															"whseclasscd",
-															"drctshprstrid",
-															"disposalfeeid",
-															"willcallrstrid",
-															"questionalordqy"
+															"programType",
+															"ratingReviewId",
+															"retailSkuNumber",
+															"shortName",
+															"skuGrouping",
+															"skuItemType",
+															"skuNumber",
+															"skuQuantity",
+															"skuType",
+															"source",
+															"status",
+															"stone",
+															"styleText",
+															"upcBarcode",
+															"warranty"
 														]
 													}
 												}
 											},
 											"menuItems": [
 												{
-													"name": "core-attributes",
+													"name": "advanced",
 													"icon": "icons:add-box",
-													"title": "Core Attributes",
+													"title": "Advanced",
 													"component": {
 														"name": "rock-attribute-manage",
 														"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
 														"properties": {
-															"locales": [
-																{
-																	"locale": "en-US",
-																	"language": "English"
-																}
-															],
-															"source": "SAP",
-															"list": "productMaster",
 															"mode": "view",
-															"no-of-columns": 1,
-															"context": {
-																"groupName": "Core Attributes",
+															"no-of-columns": 2,
+															"config-context": {
+																"groupName": "Advanced",
 																"attributeNames": [
-																	"displayname",
-																	"description",
-																	"enddate",
-																	"startdate",
-																	"stuscd"
+																	"featureHeaderText",
+																	"featureQuoteText",
+																	"isBopisEligible",
+																	"isNewClearanceTimestamp",
+																	"isNewToClearance",
+																	"isSampleEnsemble",
+																	"ppSkuSwatchesRolledUpCount",
+																	"productReviewQuoteText",
+																	"sourceFeedId",
+																	"isFurniture",
+																	"isSephora",
+																	"mailableIndicator",
+																	"questionableOrderQuantity",
+																	"recycleFeeIndicator",
+																	"sabrixCommodityCode",
+																	"specialIndicator",
+																	"unusualDemandQuantity",
+																	"vData"
 																]
 															}
 														}

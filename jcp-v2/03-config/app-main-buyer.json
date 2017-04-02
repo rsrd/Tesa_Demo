@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "main-app_components-list_uiConfig",
-			"name": "main-app_components-list",
+			"id": "app-main_components-list_vendor_uiConfig",
+			"name": "app-main_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,11 +22,7 @@
 							"service": "_ALL",
 							"component": "_ALL",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -43,8 +39,8 @@
 			}
 		},
 		{
-			"id": "main-app_app-repository_uiConfig",
-			"name": "main-app_app-repository_uiConfig",
+			"id": "app-main_app-repository_vendor_uiConfig",
+			"name": "app-main_app-repository",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -59,11 +55,7 @@
 							"service": "_ALL",
 							"component": "app-repository",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -158,8 +150,8 @@
 			}
 		},
 		{
-			"id": "main-app_pebble-actions_uiConfig",
-			"name": "main-app_pebble-actions_uiConfig",
+			"id": "app-main_pebble-actions_vendor_uiConfig",
+			"name": "app-main_pebble-actions",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -174,11 +166,7 @@
 							"service": "_ALL",
 							"component": "pebble-actions",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
@@ -252,8 +240,8 @@
 			}
 		},
 		{
-			"id": "main-app_rock-navmenu_uiConfig",
-			"name": "main-app_rock-navmenu_uiConfig",
+			"id": "app-main_rock-navmenu_vendor_uiConfig",
+			"name": "app-main_rock-navmenu",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -268,11 +256,7 @@
 							"service": "_ALL",
 							"component": "rock-navmenu",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": [
@@ -320,8 +304,8 @@
 			}
 		},
 		{
-			"id": "main-app_tenant-config_uiConfig",
-			"name": "main-app_tenant-config_uiConfig",
+			"id": "app-main_tenant-config_vendor_uiConfig",
+			"name": "app-main_tenant-config",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -336,11 +320,7 @@
 							"service": "_ALL",
 							"component": "tenant-config",
 							"subComponent": "_ALL",
-							"entityType": "_ALL",
-							"list": "_ALL",
-							"relationshipType": "_ALL",
-							"role": "_ALL",
-							"user": "_ALL"
+							"role": "vendor"
 						},
 						"jsonData": {
 							"config": {
