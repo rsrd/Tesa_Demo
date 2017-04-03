@@ -41,13 +41,13 @@
       "excludeFilter": []
     },
     "mapping": {
-      "fieldMap": {
-        "id": "id",
+      "fieldMap": {        
         "@value(Sku)": "type",
         "@value(internal-source)": "properties.source",
         "@value(UserinterfaceSvc)": "properties.modifiedByService",
         "@value(ghostUser_v2)": "properties.modifiedBy",
         "@value(4/3/2017)": "properties.modifiedDate",
+        "Id" : "data.attributes.id.values[0].value",
         "Creation Date" : "data.attributes.creationDate.values[0].value",
         "On-Site Date" : "data.attributes.startDate.values[0].value",
         "Off-Site Date" : "data.attributes.endDate.values[0].value",
