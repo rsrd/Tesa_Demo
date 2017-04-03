@@ -6,6 +6,71 @@
    },
    "entityModels": [
     {
+        "id": "invokeNewProductSetupWFRule_businessRule",
+        "name": "invokeNewProductSetupWFRule",
+        "type": "businessRule",
+        "data": {
+            "attributes": {
+                "name": {
+                    "values": [
+                        {
+                            "value": "Invoke Workflow"
+                        }
+                    ]
+                },
+                "description": {
+                    "values": [
+                        {
+                            "value": "Invokes the change assignment workflow when the data object is not in change assignment workflow"
+                        }
+                    ]
+                },
+                "ruleType": {
+                    "values": [
+                        {
+                            "value": "computation"
+                        }
+                    ]
+                },
+                "executionMode": {
+                    "values": [
+                        {
+                            "value": "any"
+                        }
+                    ]
+                },
+                "definition": {
+                    "values": [
+                        {
+                            "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,InvokeWorkflow[\"newProductSetup\"]]"
+                        }
+                    ]
+                },
+                "enabled": {
+                    "values": [
+                        {
+                            "value": "true"
+                        }
+                    ]
+                },
+                "isDraft": {
+                    "values": [
+                        {
+                            "value": "false"
+                        }
+                    ]
+                },
+                "isDeleted": {
+                    "values": [
+                        {
+                            "value": "false"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
         "id": "businessReview_BusinessRule",
         "type": "businessRule",
         "data": {
