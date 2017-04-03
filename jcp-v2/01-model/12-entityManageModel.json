@@ -1644,14 +1644,23 @@
 								"relationshipType": "aggregation",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "sku",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
+										"relEntityType": "sku"
 									}
 								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -1662,14 +1671,39 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					]
@@ -3133,14 +3167,33 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "kit",
-										"relContexts": [
+										"relEntityType": "kit"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								}
 							}
 						}
 					],
@@ -3151,14 +3204,39 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -3169,14 +3247,23 @@
 								"relationshipType": "aggregation",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "lot",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
+										"relEntityType": "lot"
 									}
 								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					]
@@ -3199,6 +3286,51 @@
 									"dataType": "decimal"
 								}
 							}
+						},
+						"relationships": {
+							"skuToImage": [
+								{
+									"properties": {
+										"externalName": "Images",
+										"relationshipType": "association",
+										"relatedEntityInfo": [
+											{
+												"relEntityType": "image"
+											}
+										]
+									},
+									"attributes": {
+										"linkDescription": {
+											"properties": {
+												"externalName": "Link Description",
+												"dataType": "string"
+											}
+										},
+										"status": {
+											"properties": {
+												"externalName": "Status",
+												"dataType": "string",
+												"referenceEntityInfo": [
+													{
+														"refRelationshipName": "hasReferenceTo",
+														"entityInfo": [
+															{
+																"entityType": "status"
+															}
+														]
+													}
+												]
+											}
+										},
+										"enabled": {
+											"properties": {
+												"externalName": "Enabled",
+												"dataType": "boolean"
+											}
+										}
+									}
+								}
+							]
 						}
 					}
 				]
@@ -3564,6 +3696,18 @@
 				"relationships": {
 					"productPresentationToLot": [
 						{
+							"properties": {
+								"externalName": "Lots",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "lot"
+									},
+									{
+										"relEntityType": "sku"
+									}
+								]
+							},
 							"attributes": {
 								"linkDescription": {
 									"properties": {
@@ -3589,33 +3733,20 @@
 										"dataType": "boolean"
 									}
 								}
-							},
-							"properties": {
-								"externalName": "Lots",
-								"relationshipType": "association",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "lot",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									},
-									{
-										"relEntityType": "sku",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									}
-								]
 							}
 						}
 					],
 					"productPresentationToImage": [
 						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
 							"attributes": {
 								"status": {
 									"properties": {
@@ -3633,20 +3764,6 @@
 										]
 									}
 								}
-							},
-							"properties": {
-								"externalName": "Images",
-								"relationshipType": "association",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "image",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									}
-								]
 							}
 						}
 					]
@@ -3982,14 +4099,35 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "productPresentation",
-										"relContexts": [
+										"relEntityType": "productPresentation"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "status"
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -4000,17 +4138,323 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								}
 							}
 						}
 					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "image_entityManageModel",
+			"name": "image",
+			"type": "entityManageModel",
+			"data": {
+				"attributes": {
+					"creationdate": {
+						"properties": {
+							"externalName": "CREATION_DATE",
+							"dataType": "string"
+						}
+					},
+					"startdate": {
+						"properties": {
+							"externalName": "START_DATE",
+							"dataType": "string"
+						}
+					},
+					"enddate": {
+						"properties": {
+							"externalName": "END_DATE",
+							"dataType": "string"
+						}
+					},
+					"displayname": {
+						"properties": {
+							"externalName": "DISPLAY_NAME",
+							"dataType": "string"
+						}
+					},
+					"description": {
+						"properties": {
+							"externalName": "DESCRIPTION",
+							"dataType": "string"
+						}
+					},
+					"stuscd": {
+						"properties": {
+							"externalName": "STUS_CD",
+							"dataType": "string"
+						}
+					},
+					"orin": {
+						"properties": {
+							"externalName": "ORIN",
+							"dataType": "string"
+						}
+					},
+					"productid": {
+						"properties": {
+							"isEntityIdentifier": true,
+							"externalName": "PRODUCT_ID",
+							"dataType": "string"
+						}
+					},
+					"onlineonly": {
+						"properties": {
+							"externalName": "ONLINE_ONLY",
+							"dataType": "string"
+						}
+					},
+					"shortnm": {
+						"properties": {
+							"externalName": "SHORT_NM",
+							"dataType": "string"
+						}
+					},
+					"chnlcd": {
+						"properties": {
+							"externalName": "CHNL_CD",
+							"dataType": "string"
+						}
+					},
+					"trukitmin": {
+						"properties": {
+							"externalName": "TRUK_ITM_IN",
+							"dataType": "string"
+						}
+					},
+					"whseclasscd": {
+						"properties": {
+							"externalName": "WHSE_CLASS_CD",
+							"dataType": "string"
+						}
+					},
+					"drctshprstrid": {
+						"properties": {
+							"externalName": "DRCT_SHP_RSTR_ID",
+							"dataType": "string"
+						}
+					},
+					"disposalfeeid": {
+						"properties": {
+							"externalName": "DISPOSAL_FEE_ID",
+							"dataType": "string"
+						}
+					},
+					"willcallrstrid": {
+						"properties": {
+							"externalName": "WILL_CALL_RSTR_ID",
+							"dataType": "string"
+						}
+					},
+					"questionalordqy": {
+						"properties": {
+							"externalName": "QUESTIONAL_ORD_QY",
+							"dataType": "string"
+						}
+					},
+					"lottypcd": {
+						"properties": {
+							"externalName": "LOT_TYP_CD",
+							"dataType": "string"
+						}
+					},
+					"whitegloveddlvryin": {
+						"properties": {
+							"externalName": "WHITE_GLOVED_DLVRY_IN",
+							"dataType": "string"
+						}
+					},
+					"styletx": {
+						"properties": {
+							"externalName": "STYLE_TX",
+							"dataType": "string"
+						}
+					},
+					"lotselntypcd": {
+						"properties": {
+							"externalName": "LOT_SELN_TYP_CD",
+							"dataType": "string"
+						}
+					},
+					"noncontntlprepaidcd": {
+						"properties": {
+							"externalName": "NON_CONTNTL_PREPAID_CD",
+							"dataType": "string"
+						}
+					},
+					"contntlprepaidcd": {
+						"properties": {
+							"externalName": "CONTNTL_PREPAID_CD",
+							"dataType": "string"
+						}
+					},
+					"unusualdmdqy": {
+						"properties": {
+							"externalName": "UNUSUAL_DMD_QY",
+							"dataType": "string"
+						}
+					},
+					"mlblitmin": {
+						"properties": {
+							"externalName": "MLBL_ITM_IN",
+							"dataType": "string"
+						}
+					},
+					"prodlengthnb": {
+						"properties": {
+							"externalName": "PROD_LENGTH_NB",
+							"dataType": "string"
+						}
+					},
+					"prodheightnb": {
+						"properties": {
+							"externalName": "PROD_HEIGHT_NB",
+							"dataType": "string"
+						}
+					},
+					"prodwtnb": {
+						"properties": {
+							"externalName": "PROD_WT_NB",
+							"dataType": "string"
+						}
+					},
+					"prodwidthnb": {
+						"properties": {
+							"externalName": "PROD_WIDTH_NB",
+							"dataType": "string"
+						}
+					},
+					"cmrclcarrcd": {
+						"properties": {
+							"externalName": "CMRCL_CARR_CD",
+							"dataType": "string"
+						}
+					},
+					"noncmrclcarrcd": {
+						"properties": {
+							"externalName": "NON_CMRCL_CARR_CD",
+							"dataType": "string"
+						}
+					},
+					"sabrixcommoditycd": {
+						"properties": {
+							"externalName": "SABRIX_COMMODITY_CD",
+							"dataType": "string"
+						}
+					},
+					"pgmtypcd": {
+						"properties": {
+							"externalName": "PGM_TYP_CD",
+							"dataType": "string"
+						}
+					},
+					"spclin": {
+						"properties": {
+							"externalName": "SPCL_IN",
+							"dataType": "string"
+						}
+					},
+					"parantheticam": {
+						"properties": {
+							"externalName": "PARANTHETIC_AM",
+							"dataType": "string"
+						}
+					},
+					"willcallfsin": {
+						"properties": {
+							"externalName": "WILL_CALL_FS_IN",
+							"dataType": "string"
+						}
+					},
+					"intlshippablein": {
+						"properties": {
+							"externalName": "INTL_SHIPPABLE_IN",
+							"dataType": "string"
+						}
+					},
+					"mfrnm": {
+						"properties": {
+							"externalName": "MFR_NM",
+							"dataType": "string"
+						}
+					},
+					"origcntrycd": {
+						"properties": {
+							"externalName": "ORIG_CNTRY_CD",
+							"dataType": "string"
+						}
+					},
+					"szunittx": {
+						"properties": {
+							"externalName": "SZ_UNIT_TX",
+							"dataType": "string"
+						}
+					},
+					"wtunittx": {
+						"properties": {
+							"externalName": "WT_UNIT_TX",
+							"dataType": "string"
+						}
+					},
+					"sephorain": {
+						"properties": {
+							"externalName": "SEPHORA_IN",
+							"dataType": "string"
+						}
+					},
+					"isrecyclablein": {
+						"properties": {
+							"externalName": "IS_RECYCLABLE_IN",
+							"dataType": "string"
+						}
+					},
+					"modelnb": {
+						"properties": {
+							"externalName": "MODEL_NB",
+							"dataType": "string"
+						}
+					},
+					"frnin": {
+						"properties": {
+							"externalName": "FRN_IN",
+							"dataType": "string"
+						}
+					}
 				},
 				"contexts": [
 					{
