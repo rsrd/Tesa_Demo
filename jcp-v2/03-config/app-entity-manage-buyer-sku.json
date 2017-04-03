@@ -7,7 +7,7 @@
 	"configObjects": [
 		{
 			"id": "app-entity-manage_components-list_sku_buyer_uiConfig",
-			"name": "app-entity-manage_components-list",
+			"name": "app-entity-manage_components-list_sku_buyer",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -20,7 +20,7 @@
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
-							"component": "_ALL",
+							"component": "components-list",
 							"subComponent": "_ALL",
 							"entityType": "sku",
 							"role": "buyer"
