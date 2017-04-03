@@ -6,6 +6,71 @@
    },
    "entityModels": [
     {
+        "id": "invokeNewProductSetupWFRule_businessRule",
+        "name": "invokeNewProductSetupWFRule",
+        "type": "businessRule",
+        "data": {
+            "attributes": {
+                "name": {
+                    "values": [
+                        {
+                            "value": "Invoke Workflow"
+                        }
+                    ]
+                },
+                "description": {
+                    "values": [
+                        {
+                            "value": "Invokes the change assignment workflow when the data object is not in change assignment workflow"
+                        }
+                    ]
+                },
+                "ruleType": {
+                    "values": [
+                        {
+                            "value": "computation"
+                        }
+                    ]
+                },
+                "executionMode": {
+                    "values": [
+                        {
+                            "value": "any"
+                        }
+                    ]
+                },
+                "definition": {
+                    "values": [
+                        {
+                            "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,InvokeWorkflow[\"newProductSetup\"]]"
+                        }
+                    ]
+                },
+                "enabled": {
+                    "values": [
+                        {
+                            "value": "true"
+                        }
+                    ]
+                },
+                "isDraft": {
+                    "values": [
+                        {
+                            "value": "false"
+                        }
+                    ]
+                },
+                "isDeleted": {
+                    "values": [
+                        {
+                            "value": "false"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    {
         "id": "businessReview_BusinessRule",
         "type": "businessRule",
         "data": {
@@ -48,7 +113,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"supplierSiteNumber\"], AddAttributeError[\"133341\", \"\",\"supplierSiteNumber\"], false] AND IIF[ValidateEmptyAttributes[\"supplierMfrShipPoint\"], AddAttributeError[\"133342\", \"\",\"supplierMfrShipPoint\"], false] AND IIF[ValidateEmptyAttributes[\"ecommSupplierShipPoint\"], AddAttributeError[\"133343\", \"\",\"ecommSupplierShipPoint\"], false] AND IIF[ValidateEmptyAttributes[\"supplierChannel\"], AddAttributeError[\"13334\", \"\",\"supplierChannel\"], false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"supplierSiteNumber\"], AddAttributeError[\"Req001\", \"\",\"supplierSiteNumber\"], false] AND IIF[ValidateEmptyAttributes[\"supplierMfrShipPoint\"], AddAttributeError[\"Req001\", \"\",\"supplierMfrShipPoint\"], false] AND IIF[ValidateEmptyAttributes[\"ecommSupplierShipPoint\"], AddAttributeError[\"Req001\", \"\",\"ecommSupplierShipPoint\"], false] AND IIF[ValidateEmptyAttributes[\"supplierChannel\"], AddAttributeError[\"Req001\", \"\",\"supplierChannel\"], false]"
                         }
                     ]
                 },
@@ -130,7 +195,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"entity\"], AddAttributeError[\"133331\", \"\",\"entity\"], false] AND IIF[ValidateEmptyAttributes[\"subDivision\"], AddAttributeError[\"133332\", \"\",\"subDivision\"], false] AND IIF[ValidateEmptyAttributes[\"class\"], AddAttributeError[\"133333\", \"\",\"class\"], false]AND IIF[ValidateEmptyAttributes[\"retail\"], AddAttributeError[\"133334\", \"\",\"retail\"], false]"
+                            "value": "IF[ValidateEmptyAttributes[\"entity\"], AddAttributeError[\"Req001\", \"\",\"entity\"], false] AND IIF[ValidateEmptyAttributes[\"subDivision\"], AddAttributeError[\"Req001\", \"\",\"subDivision\"], false] AND IIF[ValidateEmptyAttributes[\"class\"], AddAttributeError[\"Req001\", \"\",\"class\"], false]AND IIF[ValidateEmptyAttributes[\"retail\"], AddAttributeError[\"Req001\", \"\",\"retail\"], false]"
                         }
                     ]
                 },
@@ -212,7 +277,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"entity\"], AddAttributeError[\"133331\", \"\",\"entity\"], false] AND IIF[ValidateEmptyAttributes[\"subDivision\"], AddAttributeError[\"133332\", \"\",\"subDivision\"], false] AND IIF[ValidateEmptyAttributes[\"class\"], AddAttributeError[\"133333\", \"\",\"class\"], false]AND IIF[ValidateEmptyAttributes[\"retail\"], AddAttributeError[\"133334\", \"\",\"retail\"], false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"entity\"], AddAttributeError[\"Req001\", \"\",\"entity\"], false] AND IIF[ValidateEmptyAttributes[\"subDivision\"], AddAttributeError[\"Req001\", \"\",\"subDivision\"], false] AND IIF[ValidateEmptyAttributes[\"class\"], AddAttributeError[\"Req001\", \"\",\"class\"], false]AND IIF[ValidateEmptyAttributes[\"retail\"], AddAttributeError[\"Req001\", \"\",\"retail\"], false]"
                         }
                     ]
                 },
@@ -622,7 +687,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"productType\"], AddAttributeError[\"133351\", \"\",\"productType\"], false] AND IIF[ValidateEmptyAttributes[\"subProductType\"], AddAttributeError[\"133352\", \"\",\"subProductType\"], false] AND IIF[ValidateEmptyAttributes[\"vpn\"], AddAttributeError[\"133353\", \"\",\"vpn\"], false]ANDIIF[ValidateEmptyAttributes[\"colorDesc\"], AdAttributeError[\"133354\", \"\",\"colorDesc\"], false] AND IIF[ValidateEmptyAttributes[\"size\"], AddAttributeError[\"133355\", \"\",\"size\"], false] AND IIF[ValidateEmptyAttributes[\"cost\"], AddAttributeError[\"133356\", \"\",\"cost\"], false] AND IIF[ValidateEmptyAttributes[\"productTitle\"], AddAttributeError[\"133357\", \"\",\"productTitle\"], false] AND IIF[ValidateEmptyAttributes[\"supplierNumberName\"], AddAttributeError[\"133358\", \"\",\"supplierNumberName\"], false] AND IIF[ValidateEmptyAttributes[\"length\"], AddAttributeError[\"133359\", \"\",\"length\"], false]ANDIIF[ValidateEmptyAttributes[\"width\"], AddAttributeError[\"133360\", \"\",\"width\"], false] AND IIF[ValidateEmptyAttributes[\"height\"], AddAttributeError[\"133361\", \"\",\"height\"], false]ANDIIF[ValidateEmptyAttributes[\"grossWeight\"], AddAttributeError[\"133362\", \"\",\"grossWeight\"], false] AND IIF[ValidateEmptyAttributes[\"prop65Indicator\"], AddAttributeError[\"133363\", \"\",\"prop65Indicator\"], false] AND IIF[ValidateEmptyAttributes[\"hazMatFlag\"], AddAttributeError[\"133364\", \"\",\"hazMatFlag\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"133365\", \"\",\"shipPointCity\"], false]  AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"133366\", \"\",\"shipPointState\"], false] AND IIF[ValidateEmptyAttributes[\"msrp\"], AddAttributeError[\"133367\", \"\",\"msrp\"], false] AND IIF[ValidateEmptyAttributes[\"image\"], AddAttributeError[\"133368\", \"\",\"image\"], false] AND IIF[ValidateEmptyAttributes[\"imageName\"], AddAttributeError[\"133369\", \"\",\"imageName\"], false] AND IIF[ValidateEmptyAttributes[\"productDescription\"], AddAttributeError[\"133370\", \"\",\"productDescription\"], false] AND IIF[ValidateEmptyAttributes[\"searchKeywordsNavigation\"], AddAttributeError[\"133371\", \"\",\"searchKeywordsNavigation\"], false] AND IIF[ValidateEmptyAttributes[\"warranty\"], AddAttributeError[\"133372\", \"\",\"warranty\"], false] AND IIF[ValidateEmptyAttributes[\"warrantyData\"], AddAttributeError[\"133373\", \"\",\"warrantyData\"], false]  AND IIF[ValidateEmptyAttributes[\"itemType\"], AddAttributeError[\"133374\", \"\",\"itemType\"], false] AND IIF[ValidateEmptyAttributes[\"colorFamily\"], AddAttributeError[\"133375\", \"\",\"colorFamily\"], false] AND IIF[ValidateEmptyAttributes[\"printPattern\"], AddAttributeError[\"133376\", \"\",\"printPattern\"], false] AND IIF[ValidateEmptyAttributes[\"countryOfManufacture\"], AddAttributeError[\"133377\", \"\",\"countryOfManufacture\"], false] AND IIF[ValidateEmptyAttributes[\"assembledLength\"], AddAttributeError[\"133378\", \"\",\"assembledLength\"], false]AND IIF[ValidateEmptyAttributes[\"assembledWidth\"], AddAttributeError[\"133379\", \"\",\"assembledWidth\"], false] AND IIF[ValidateEmptyAttributes[\"assembledHeight\"], AddAttributeError[\"133380\", \"\",\"assembledHeight\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWeight\"], AddAttributeError[\"133381\", \"\",\"assembledWeight\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"133382\", \"\",\"shipPointCity\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"133383\", \"\",\"shipPointState\"], false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"productType\"], AddAttributeError[\"Req001\", \"\",\"productType\"], false] AND IIF[ValidateEmptyAttributes[\"subProductType\"], AddAttributeError[\"Req001\", \"\",\"subProductType\"], false] AND IIF[ValidateEmptyAttributes[\"vpn\"], AddAttributeError[\"Req001\", \"\",\"vpn\"], false]ANDIIF[ValidateEmptyAttributes[\"colorDesc\"], AdAttributeError[\"Req001\", \"\",\"colorDesc\"], false] AND IIF[ValidateEmptyAttributes[\"size\"], AddAttributeError[\"Req001\", \"\",\"size\"], false] AND IIF[ValidateEmptyAttributes[\"cost\"], AddAttributeError[\"Req001\", \"\",\"cost\"], false] AND IIF[ValidateEmptyAttributes[\"productTitle\"], AddAttributeError[\"Req001\", \"\",\"productTitle\"], false] AND IIF[ValidateEmptyAttributes[\"supplierNumberName\"], AddAttributeError[\"Req001\", \"\",\"supplierNumberName\"], false] AND IIF[ValidateEmptyAttributes[\"length\"], AddAttributeError[\"Req001\", \"\",\"length\"], false]ANDIIF[ValidateEmptyAttributes[\"width\"], AddAttributeError[\"Req001\", \"\",\"width\"], false] AND IIF[ValidateEmptyAttributes[\"height\"], AddAttributeError[\"Req001\", \"\",\"height\"], false]ANDIIF[ValidateEmptyAttributes[\"grossWeight\"], AddAttributeError[\"Req001\", \"\",\"grossWeight\"], false] AND IIF[ValidateEmptyAttributes[\"prop65Indicator\"], AddAttributeError[\"Req001\", \"\",\"prop65Indicator\"], false] AND IIF[ValidateEmptyAttributes[\"hazMatFlag\"], AddAttributeError[\"Req001\", \"\",\"hazMatFlag\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"Req001\", \"\",\"shipPointCity\"], false]  AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"Req001\", \"\",\"shipPointState\"], false] AND IIF[ValidateEmptyAttributes[\"msrp\"], AddAttributeError[\"Req001\", \"\",\"msrp\"], false] AND IIF[ValidateEmptyAttributes[\"image\"], AddAttributeError[\"Req001\", \"\",\"image\"], false] AND IIF[ValidateEmptyAttributes[\"imageName\"], AddAttributeError[\"Req001\", \"\",\"imageName\"], false] AND IIF[ValidateEmptyAttributes[\"productDescription\"], AddAttributeError[\"Req001\", \"\",\"productDescription\"], false] AND IIF[ValidateEmptyAttributes[\"searchKeywordsNavigation\"], AddAttributeError[\"Req001\", \"\",\"searchKeywordsNavigation\"], false] AND IIF[ValidateEmptyAttributes[\"warranty\"], AddAttributeError[\"Req001\", \"\",\"warranty\"], false] AND IIF[ValidateEmptyAttributes[\"warrantyData\"], AddAttributeError[\"Req001\", \"\",\"warrantyData\"], false]  AND IIF[ValidateEmptyAttributes[\"itemType\"], AddAttributeError[\"Req001\", \"\",\"itemType\"], false] AND IIF[ValidateEmptyAttributes[\"colorFamily\"], AddAttributeError[\"Req001\", \"\",\"colorFamily\"], false] AND IIF[ValidateEmptyAttributes[\"printPattern\"], AddAttributeError[\"Req001\", \"\",\"printPattern\"], false] AND IIF[ValidateEmptyAttributes[\"countryOfManufacture\"], AddAttributeError[\"Req001\", \"\",\"countryOfManufacture\"], false] AND IIF[ValidateEmptyAttributes[\"assembledLength\"], AddAttributeError[\"Req001\", \"\",\"assembledLength\"], false]AND IIF[ValidateEmptyAttributes[\"assembledWidth\"], AddAttributeError[\"Req001\", \"\",\"assembledWidth\"], false] AND IIF[ValidateEmptyAttributes[\"assembledHeight\"], AddAttributeError[\"Req001\", \"\",\"assembledHeight\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWeight\"], AddAttributeError[\"Req001\", \"\",\"assembledWeight\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"Req001\", \"\",\"shipPointCity\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"Req001\", \"\",\"shipPointState\"], false]"
                         }
                     ]
                 },
@@ -704,7 +769,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"image\"], AddAttributeError[\"133312\", \"\",\"image\"], false] AND IIF[ValidateEmptyAttributes[\"imageName\"], AddAttributeError[\"133313\", \"\",\"imageName\"], false] AND IIF[ValidatEmptyAttributes[\"productDescription\"], AddAttributeError[\"133314\", \"\",\"productDescription\"], false] AND IIF[ValidateEmptyAttributes[\"searchKeywordsNavigation\"], AddAttributeError[\"133315\", \"\",\"searchKeywordsNavigation\"], false AND IIF[ValidateEmptyAttributes[\"warranty\"], AddAttributeError[\"133316\", \"\",\"warranty\"], false] AND IIF[ValidateEmptyAttributes[\"warrantyData\"], AddAttributeError[\"133317\", \"\",\"warrantyData\"], false AND IIF[ValidateEmptyAttributes[\"itemType\"], AddAttributeError[\"133318\", \"\",\"itemType\"], false] AND IIF[ValidateEmptyAttributes[\"colorFamily\"], AddAttributeError[\"133319\", \"\",\"colorFamily\"], false] AND IIF[ValidateEmptyAttributes[\"printPattern\"], AddAttributeError[\"133310\", \"\",\"printPattern\"], false] AND IIF[ValidateEmptyAttributes[\"countryOfManufacture\"], AddAttributeError[\"133322\", \"\",\"countryOfManufacture\"], false] AND IIF[ValidateEmptyAttributes[\"assembledLength\"], AddAttributeError[\"133323\", \"\",\"assembledLength\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWidth\"], AddAttributeError[\"133324\", \"\",\"assembledWidth\"], false] AND IIF[ValidateEmptyAttributes[\"assembledHeight\"], AddAttributeError[\"133325\", \"\",\"assembledHeight\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWeight\"], AddAttributeError[\"133326\", \"\",\"assembledWeight\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"133327\", \"\",\"shipPointCity\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"133328\", \"\",\"shipPointState\"], false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"image\"], AddAttributeError[\"Req001\", \"\",\"image\"], false] AND IIF[ValidateEmptyAttributes[\"imageName\"], AddAttributeError[\"Req001\", \"\",\"imageName\"], false] AND IIF[ValidatEmptyAttributes[\"productDescription\"], AddAttributeError[\"Req001\", \"\",\"productDescription\"], false] AND IIF[ValidateEmptyAttributes[\"searchKeywordsNavigation\"], AddAttributeError[\"Req001\", \"\",\"searchKeywordsNavigation\"], false AND IIF[ValidateEmptyAttributes[\"warranty\"], AddAttributeError[\"Req001\", \"\",\"warranty\"], false] AND IIF[ValidateEmptyAttributes[\"warrantyData\"], AddAttributeError[\"Req001\", \"\",\"warrantyData\"], false AND IIF[ValidateEmptyAttributes[\"itemType\"], AddAttributeError[\"Req001\", \"\",\"itemType\"], false] AND IIF[ValidateEmptyAttributes[\"colorFamily\"], AddAttributeError[\"Req001\", \"\",\"colorFamily\"], false] AND IIF[ValidateEmptyAttributes[\"printPattern\"], AddAttributeError[\"Req001\", \"\",\"printPattern\"], false] AND IIF[ValidateEmptyAttributes[\"countryOfManufacture\"], AddAttributeError[\"Req001\", \"\",\"countryOfManufacture\"], false] AND IIF[ValidateEmptyAttributes[\"assembledLength\"], AddAttributeError[\"Req001\", \"\",\"assembledLength\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWidth\"], AddAttributeError[\"Req001\", \"\",\"assembledWidth\"], false] AND IIF[ValidateEmptyAttributes[\"assembledHeight\"], AddAttributeError[\"Req001\", \"\",\"assembledHeight\"], false] AND IIF[ValidateEmptyAttributes[\"assembledWeight\"], AddAttributeError[\"Req001\", \"\",\"assembledWeight\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"], AddAttributeError[\"Req001\", \"\",\"shipPointCity\"], false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"], AddAttributeError[\"Req001\", \"\",\"shipPointState\"], false]"
                         }
                     ]
                 },
@@ -786,7 +851,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"productType\"],AddAttributeError[\"133312\", \"\", \"productType\"],false] AND IIF[ValidateEmptyAttributes[\"subProductType\"],AddAttributeError[\"133312\", \"\", \"subProductType\"] ,false] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"133312\", \"\", \"vpn\"],false] AND IIF[ValidateEmptyAttributes[\"colorDesc\"],AddAttributeError[\"133312\", \"\", \"colorDesc\"],false] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"133312\", \"\", \"size\"],false] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"133312\", \"\", \"cost\"],false] AND IIF[ValidateEmptyAttributes[\"productTitle\"],AddAttributeError[\"133312\", \"\", \"productTitle\"],false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"productType\"],AddAttributeError[\"Req001\", \"\", \"productType\"],false] AND IIF[ValidateEmptyAttributes[\"subProductType\"],AddAttributeError[\"Req001\", \"\", \"subProductType\"] ,false] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],false] AND IIF[ValidateEmptyAttributes[\"colorDesc\"],AddAttributeError[\"Req001\", \"\", \"colorDesc\"],false] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"Req001\", \"\", \"size\"],false] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],false] AND IIF[ValidateEmptyAttributes[\"productTitle\"],AddAttributeError[\"Req001\", \"\", \"productTitle\"],false]"
                         }
                     ]
                 },
@@ -868,7 +933,7 @@
                     "values": [
                         {
                             "user": "users/system",
-                            "value": "IIF[ValidateEmptyAttributes[\"supplierNumberName\"],AddAttributeError[\"133312\", \"\",\"supplierNumberName\"],false] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"133312\", \"\",\"length\"],false] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"133312\", \"\",\"width\"],false] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"133312\", \"\",\"height\"],false] AND IIF[ValidateEmptyAttributes[\"grossWeight\"],AddAttributeError[\"133312\", \"\",\"grossWeight\"],false] AND IIF[ValidateEmptyAttributes[\"prop65Indicator\"],AddAttributeError[\"133312\", \"\",\"prop65Indicator\"],false] AND IIF[ValidateEmptyAttributes[\"hazMatFlag\"],AddAttributeError[\"133312\", \"\",\"hazMatFlag\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"],AddAttributeError[\"133312\", \"\",\"shipPointCity\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"],AddAttributeError[\"133312\", \"\",\"shipPointState\"],false] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"133312\", \"\",\"msrp\"],false]"
+                            "value": "IIF[ValidateEmptyAttributes[\"supplierNumberName\"],AddAttributeError[\"Req001\", \"\",\"supplierNumberName\"],false] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],false] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"Req001\", \"\",\"width\"],false] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],false] AND IIF[ValidateEmptyAttributes[\"grossWeight\"],AddAttributeError[\"Req001\", \"\",\"grossWeight\"],false] AND IIF[ValidateEmptyAttributes[\"prop65Indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65Indicator\"],false] AND IIF[ValidateEmptyAttributes[\"hazMatFlag\"],AddAttributeError[\"Req001\", \"\",\"hazMatFlag\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"],AddAttributeError[\"Req001\", \"\",\"shipPointCity\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"],AddAttributeError[\"Req001\", \"\",\"shipPointState\"],false] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],false]"
                         }
                     ]
                 },

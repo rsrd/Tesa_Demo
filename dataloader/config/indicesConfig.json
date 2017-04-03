@@ -277,6 +277,15 @@
             "configObject": {
                 "dynamic_templates": [
                     {
+                        "jsonData": {
+                            "path_match": "data.*jsonData",
+                            "mapping": {
+                                "type": "object",
+                                "enabled": false
+                            }
+                        }
+                    },
+                    {
                         "nested_value_feature": {
                             "path_match": "data.contexts.*values",
                             "mapping": {
@@ -400,15 +409,6 @@
                             "path_match": "data.contexts.*properties",
                             "mapping": {
                                 "type": "nested"
-                            }
-                        }
-                    },
-                    {
-                        "jsonData": {
-                            "path_match": "data.*jsonData",
-                            "mapping": {
-                                "type": "object",
-                                "enabled": false
                             }
                         }
                     }

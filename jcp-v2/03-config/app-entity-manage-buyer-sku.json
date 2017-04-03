@@ -1195,16 +1195,6 @@
 											"path": "/src/elements/app-entity-discovery/app-entity-discovery.html",
 											"properties": {}
 										}
-									},
-									{
-										"name": "entity-family",
-										"title": "Entity Family",
-										"enableDropdownMenu": false,
-										"component": {
-											"name": "rock-entity-variant",
-											"path": "/src/elements/rock-entity-variant/rock-entity-variant.html",
-											"properties": {}
-										}
 									}
 								]
 							}
@@ -1554,6 +1544,14 @@
 												"linkTemplate": "entity-manage?id={id}&type={type}"
 											},
 											{
+												"header": "Link Description",
+												"name": "linkDescription",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
 												"header": "Status",
 												"name": "status",
 												"sortable": true,
@@ -1562,8 +1560,24 @@
 												"isRelatedEntityAttribute": false
 											},
 											{
+												"header": "Enabled",
+												"name": "enabled",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
 												"header": "Display Name",
 												"name": "displayName",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": true
+											},
+											{
+												"header": "Description",
+												"name": "description",
 												"sortable": true,
 												"filterable": false,
 												"editType": "",
@@ -1600,8 +1614,24 @@
 												"linkTemplate": "entity-manage?id={id}&type={type}"
 											},
 											{
-												"header": "skuNumber",
-												"name": "SKU Number",
+												"header": "Link Description",
+												"name": "linkDescription",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
+												"header": "Enabled",
+												"name": "enabled",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
+												"header": "SKU Number",
+												"name": "skuNumber",
 												"sortable": true,
 												"filterable": false,
 												"editType": "",
@@ -1609,7 +1639,7 @@
 											},
 											{
 												"header": "Display Name",
-												"name": "displayname",
+												"name": "displayName",
 												"sortable": true,
 												"filterable": false,
 												"editType": "",
@@ -1646,8 +1676,24 @@
 												"linkTemplate": "entity-manage?id={id}&type={type}"
 											},
 											{
-												"header": "Short Name",
-												"name": "shortnm",
+												"header": "Link Description",
+												"name": "linkDescription",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
+												"header": "Status",
+												"name": "status",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
+											},
+											{
+												"header": "Enabled",
+												"name": "enabled",
 												"sortable": true,
 												"filterable": false,
 												"editType": "",
@@ -1690,6 +1736,14 @@
 												"editType": "",
 												"isRelatedEntityAttribute": false,
 												"linkTemplate": "entity-manage?id={id}&type={type}"
+											},
+											{
+												"header": "Status",
+												"name": "status",
+												"sortable": true,
+												"filterable": false,
+												"editType": "",
+												"isRelatedEntityAttribute": false
 											},
 											{
 												"header": "Descriptioin",
