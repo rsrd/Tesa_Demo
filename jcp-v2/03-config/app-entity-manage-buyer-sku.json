@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-manage_components-list_sku_vendor_uiConfig",
-			"name": "app-entity-manage_components-list",
+			"id": "app-entity-manage_components-list_sku_buyer_uiConfig",
+			"name": "app-entity-manage_components-list_sku_buyer",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -20,10 +20,10 @@
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
-							"component": "_ALL",
+							"component": "components-list",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-selector_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-dimension-selector_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -64,7 +64,7 @@
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": [
@@ -171,7 +171,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-grid_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-dimension-grid_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-dimension-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -188,7 +188,7 @@
 							"component": "rock-dimension-grid",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -282,7 +282,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-header_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-entity-header_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-entity-header",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -299,7 +299,7 @@
 							"component": "rock-entity-header",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -451,7 +451,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-summary_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-entity-summary_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-entity-summary",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -468,7 +468,7 @@
 							"component": "rock-entity-summary",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -544,7 +544,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-tabs_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-tabs_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-tabs",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -561,7 +561,7 @@
 							"component": "rock-tabs",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1101,8 +1101,8 @@
 												}
 											},
 											{
-												"name": "Vendor",
-												"title": "Vendor",
+												"name": "buyer",
+												"title": "buyer",
 												"component": {
 													"name": "rock-attribute-split-screen",
 													"path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
@@ -1110,7 +1110,7 @@
 														"mode": "view",
 														"no-of-columns": 1,
 														"config-context": {
-															"groupName": "Vendor",
+															"groupName": "buyer",
 															"attributeNames": [
 																"countryOfOrigin",
 																"manufacturer",
@@ -1214,7 +1214,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-attribute-manage_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-attribute-manage_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-attribute-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1231,7 +1231,7 @@
 							"component": "rock-attribute-manage",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1259,7 +1259,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-variant_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-entity-variant_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-entity-variant",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1276,7 +1276,7 @@
 							"component": "rock-entity-variant",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1505,7 +1505,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-relationship-manage_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-relationship-manage_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-relationship-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1522,7 +1522,7 @@
 							"component": "rock-relationship-manage",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1709,7 +1709,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-todo_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-entity-todo_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-entity-todo",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1726,7 +1726,7 @@
 							"component": "rock-entity-todo",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1769,7 +1769,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-tofix_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-entity-tofix_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-entity-tofix",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1786,7 +1786,7 @@
 							"component": "rock-entity-tofix",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -1832,7 +1832,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-titlebar_sku_vendor_uiConfig",
+			"id": "app-entity-manage_rock-titlebar_sku_buyer_uiConfig",
 			"name": "app-entity-manage_rock-titlebar",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1849,7 +1849,7 @@
 							"component": "rock-titlebar",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {

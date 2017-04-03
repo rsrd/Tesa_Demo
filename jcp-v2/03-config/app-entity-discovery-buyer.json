@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-discovery_components-list_vendor_uiConfig",
+			"id": "app-entity-discovery_components-list_buyer_uiConfig",
 			"name": "app-entity-discovery_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -20,9 +20,9 @@
 						"context": {
 							"app": "app-entity-discovery",
 							"service": "_ALL",
-							"component": "_ALL",
+							"component": "components-list",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -42,7 +42,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-entity-search-grid_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-entity-search-grid_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-entity-search-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -58,7 +58,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-search-grid",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -205,7 +205,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-dimension-selector_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-dimension-selector_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -221,7 +221,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": [
@@ -328,7 +328,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-saved-searches_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-saved-searches_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-saved-searches",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -344,7 +344,7 @@
 							"service": "_ALL",
 							"component": "rock-saved-searches",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -636,7 +636,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_pebble-actions_vendor_uiConfig",
+			"id": "app-entity-discovery_pebble-actions_buyer_uiConfig",
 			"name": "app-entity-discovery_pebble-actions",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -652,7 +652,7 @@
 							"service": "_ALL",
 							"component": "pebble-actions",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -680,7 +680,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-search-filter_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-search-filter_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-search-filter",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -696,7 +696,7 @@
 							"service": "_ALL",
 							"component": "rock-search-filter",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": [
@@ -767,7 +767,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-saved-searches-tags_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-saved-searches-tags_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-saved-searches-tags",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -783,7 +783,7 @@
 							"service": "_ALL",
 							"component": "rock-saved-searches-tags",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -842,7 +842,7 @@
 			}
 		},
 		{
-			"id": "app-entity-discovery_rock-entity-quick-manage_vendor_uiConfig",
+			"id": "app-entity-discovery_rock-entity-quick-manage_buyer_uiConfig",
 			"name": "app-entity-discovery_rock-entity-quick-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -858,7 +858,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-quick-manage",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {

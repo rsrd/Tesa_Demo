@@ -7,7 +7,7 @@
 	"configObjects": [
 		{
 			"id": "main-app_components-list_vendor_uiConfig",
-			"name": "main-app_components-list",
+			"name": "main-app_components-list_vendor",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -20,7 +20,7 @@
 						"context": {
 							"app": "main-app",
 							"service": "_ALL",
-							"component": "_ALL",
+							"component": "components-list",
 							"subComponent": "_ALL",
 							"role": "vendor"
 						},

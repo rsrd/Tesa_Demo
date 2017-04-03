@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_sku_vendor_uiConfig",
+			"id": "app-business-function_components-list_lot_buyer_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -20,10 +20,10 @@
 						"context": {
 							"app": "app-business-function",
 							"service": "_ALL",
-							"component": "_ALL",
+							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "sku",
-							"role": "vendor"
+							"entityType": "lot",
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -38,8 +38,8 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-wizard_sku_vendor_uiConfig",
-			"name": "app-business-function_rock-wizard",
+			"id": "app-business-function_rock-wizard_lot_buyer_uiConfig",
+			"name": "app-business-function_rock-wizard_lot_buyer",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -54,8 +54,8 @@
 							"service": "_ALL",
 							"component": "rock-wizard",
 							"subComponent": "_ALL",
-							"entityType": "sku",
-							"role": "vendor"
+							"entityType": "lot",
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -93,7 +93,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_sku_vendor_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_lot_buyer_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -109,8 +109,8 @@
 							"service": "_ALL",
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
-							"entityType": "sku",
-							"role": "vendor"
+							"entityType": "lot",
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
