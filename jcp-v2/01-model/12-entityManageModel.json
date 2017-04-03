@@ -4184,275 +4184,375 @@
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
-					"creationdate": {
+					"creationDate": {
 						"properties": {
-							"externalName": "CREATION_DATE",
-							"dataType": "string"
+							"externalName": "Creation Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
 						}
 					},
-					"startdate": {
+					"startDate": {
 						"properties": {
-							"externalName": "START_DATE",
-							"dataType": "string"
+							"externalName": "On-Site Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
 						}
 					},
-					"enddate": {
+					"endDate": {
 						"properties": {
-							"externalName": "END_DATE",
-							"dataType": "string"
+							"externalName": "Off-Site Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
 						}
 					},
-					"displayname": {
+					"displayName": {
 						"properties": {
-							"externalName": "DISPLAY_NAME",
-							"dataType": "string"
+							"externalName": "Display Name",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
 					"description": {
 						"properties": {
-							"externalName": "DESCRIPTION",
-							"dataType": "string"
+							"externalName": "Description",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"stuscd": {
+					"status": {
 						"properties": {
-							"externalName": "STUS_CD",
-							"dataType": "string"
+							"externalName": "Status",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "statusValues"
+								}
+							]
 						}
 					},
 					"orin": {
 						"properties": {
 							"externalName": "ORIN",
-							"dataType": "string"
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"productid": {
+					"id": {
 						"properties": {
-							"isEntityIdentifier": true,
-							"externalName": "PRODUCT_ID",
-							"dataType": "string"
+							"externalName": "Id",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"onlineonly": {
+					"onlineOnly": {
 						"properties": {
-							"externalName": "ONLINE_ONLY",
-							"dataType": "string"
+							"externalName": "Online Only",
+							"groupName": "Basic",
+							"dataType": "Boolean"
 						}
 					},
-					"shortnm": {
+					"shortName": {
 						"properties": {
-							"externalName": "SHORT_NM",
-							"dataType": "string"
+							"externalName": "Short Name",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"chnlcd": {
+					"channelAvailability": {
 						"properties": {
-							"externalName": "CHNL_CD",
-							"dataType": "string"
+							"externalName": "Channel Availability",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "channelAvailabilityValues"
+								}
+							]
 						}
 					},
-					"trukitmin": {
+					"isTruckItem": {
 						"properties": {
-							"externalName": "TRUK_ITM_IN",
-							"dataType": "string"
+							"externalName": "Truck Item",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
 						}
 					},
-					"whseclasscd": {
+					"warehouseClass": {
 						"properties": {
-							"externalName": "WHSE_CLASS_CD",
-							"dataType": "string"
+							"externalName": "Warehouse Class",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"drctshprstrid": {
+					"directShipRestrict": {
 						"properties": {
-							"externalName": "DRCT_SHP_RSTR_ID",
-							"dataType": "string"
+							"externalName": "Direct Ship Restrict Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"disposalfeeid": {
+					"disposalFee": {
 						"properties": {
-							"externalName": "DISPOSAL_FEE_ID",
-							"dataType": "string"
+							"externalName": "Disposal Fee Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"willcallrstrid": {
+					"willCallRestrict": {
 						"properties": {
-							"externalName": "WILL_CALL_RSTR_ID",
-							"dataType": "string"
+							"externalName": "Will Call Restrict Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"questionalordqy": {
+					"questionableOrderQuantity": {
 						"properties": {
-							"externalName": "QUESTIONAL_ORD_QY",
-							"dataType": "string"
+							"externalName": "Questionable Order Quantity",
+							"groupName": "Advanced",
+							"dataType": "Numeric"
 						}
 					},
-					"lottypcd": {
+					"lotType": {
 						"properties": {
-							"externalName": "LOT_TYP_CD",
-							"dataType": "string"
+							"externalName": "Lot Type",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lotTypeValues"
+								}
+							]
 						}
 					},
-					"whitegloveddlvryin": {
+					"whiteGlovedDelivery": {
 						"properties": {
-							"externalName": "WHITE_GLOVED_DLVRY_IN",
-							"dataType": "string"
+							"externalName": "White Gloved Delivery",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
 						}
 					},
-					"styletx": {
+					"styleText": {
 						"properties": {
-							"externalName": "STYLE_TX",
-							"dataType": "string"
+							"externalName": "Style Text",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"lotselntypcd": {
+					"lotSelectionType": {
 						"properties": {
-							"externalName": "LOT_SELN_TYP_CD",
-							"dataType": "string"
+							"externalName": "Lot Selection Type",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lotSelectionTypeValues"
+								}
+							]
 						}
 					},
-					"noncontntlprepaidcd": {
+					"nonContinentalPrepaid": {
 						"properties": {
-							"externalName": "NON_CONTNTL_PREPAID_CD",
-							"dataType": "string"
+							"externalName": "Non Continental Transportation Prepaid",
+							"groupName": "Shipping Attributes",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "nonContinentalPrepaidValues"
+								}
+							]
 						}
 					},
-					"contntlprepaidcd": {
+					"continentalPrepaid": {
 						"properties": {
-							"externalName": "CONTNTL_PREPAID_CD",
-							"dataType": "string"
+							"externalName": "Continental Tranportation Prepaid",
+							"groupName": "Shipping Attributes",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "continentalPrepaidValues"
+								}
+							]
 						}
 					},
-					"unusualdmdqy": {
+					"unusualDemandQuantity": {
 						"properties": {
-							"externalName": "UNUSUAL_DMD_QY",
-							"dataType": "string"
+							"externalName": "Unusual Demand Quantity",
+							"groupName": "Advanced",
+							"dataType": "Numeric"
 						}
 					},
-					"mlblitmin": {
+					"mailableIndicator": {
 						"properties": {
-							"externalName": "MLBL_ITM_IN",
-							"dataType": "string"
+							"externalName": "Mailable Indicator",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
 						}
 					},
-					"prodlengthnb": {
+					"productLength": {
 						"properties": {
-							"externalName": "PROD_LENGTH_NB",
-							"dataType": "string"
+							"externalName": "Product Length",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
 						}
 					},
-					"prodheightnb": {
+					"productHeight": {
 						"properties": {
-							"externalName": "PROD_HEIGHT_NB",
-							"dataType": "string"
+							"externalName": "Product Height",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
 						}
 					},
-					"prodwtnb": {
+					"productWeight": {
 						"properties": {
-							"externalName": "PROD_WT_NB",
-							"dataType": "string"
+							"externalName": "Product Weight",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
 						}
 					},
-					"prodwidthnb": {
+					"productWidth": {
 						"properties": {
-							"externalName": "PROD_WIDTH_NB",
-							"dataType": "string"
+							"externalName": "Product Width",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
 						}
 					},
-					"cmrclcarrcd": {
+					"commercialCarrierCode": {
 						"properties": {
-							"externalName": "CMRCL_CARR_CD",
-							"dataType": "string"
+							"externalName": "UPS Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"noncmrclcarrcd": {
+					"nonCommercialCarrierCode": {
 						"properties": {
-							"externalName": "NON_CMRCL_CARR_CD",
-							"dataType": "string"
+							"externalName": "Mail Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
 						}
 					},
-					"sabrixcommoditycd": {
+					"sabrixCommodityCode": {
 						"properties": {
-							"externalName": "SABRIX_COMMODITY_CD",
-							"dataType": "string"
+							"externalName": "Sabrix Commodity Code",
+							"groupName": "Advanced",
+							"dataType": "String"
 						}
 					},
-					"pgmtypcd": {
+					"programType": {
 						"properties": {
-							"externalName": "PGM_TYP_CD",
-							"dataType": "string"
+							"externalName": "Program Type",
+							"groupName": "Basic",
+							"dataType": "String"
 						}
 					},
-					"spclin": {
+					"specialIndicator": {
 						"properties": {
-							"externalName": "SPCL_IN",
-							"dataType": "string"
+							"externalName": "Special Indicator",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
 						}
 					},
-					"parantheticam": {
+					"parantheticAmount": {
 						"properties": {
-							"externalName": "PARANTHETIC_AM",
-							"dataType": "string"
+							"externalName": "Paranthetic Amount",
+							"groupName": "Shipping Attributes",
+							"dataType": "Numeric"
 						}
 					},
-					"willcallfsin": {
+					"willCallFactoryShipInd": {
 						"properties": {
-							"externalName": "WILL_CALL_FS_IN",
-							"dataType": "string"
+							"externalName": "Will Call Factory Ship",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
 						}
 					},
-					"intlshippablein": {
+					"internationalShippable": {
 						"properties": {
-							"externalName": "INTL_SHIPPABLE_IN",
-							"dataType": "string"
+							"externalName": "International Shippable",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
 						}
 					},
-					"mfrnm": {
+					"manufacturer": {
 						"properties": {
-							"externalName": "MFR_NM",
-							"dataType": "string"
+							"externalName": "Manufacturer",
+							"groupName": "Vendor",
+							"dataType": "String"
 						}
 					},
-					"origcntrycd": {
+					"countryOfOrigin": {
 						"properties": {
-							"externalName": "ORIG_CNTRY_CD",
-							"dataType": "string"
+							"externalName": "Country Of Origin",
+							"groupName": "Vendor",
+							"dataType": "String"
 						}
 					},
-					"szunittx": {
+					"sizeUnit": {
 						"properties": {
-							"externalName": "SZ_UNIT_TX",
-							"dataType": "string"
+							"externalName": "Unit of Size",
+							"groupName": "Dimensions",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "temp"
+								}
+							]
 						}
 					},
-					"wtunittx": {
+					"weightUnit": {
 						"properties": {
-							"externalName": "WT_UNIT_TX",
-							"dataType": "string"
+							"externalName": "Unit of Weight",
+							"groupName": "Dimensions",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "temp"
+								}
+							]
 						}
 					},
-					"sephorain": {
+					"isSephora": {
 						"properties": {
-							"externalName": "SEPHORA_IN",
-							"dataType": "string"
+							"externalName": "Sephora",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
 						}
 					},
-					"isrecyclablein": {
+					"recycleFeeIndicator": {
 						"properties": {
-							"externalName": "IS_RECYCLABLE_IN",
-							"dataType": "string"
+							"externalName": "Recycle Fee",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
 						}
 					},
-					"modelnb": {
+					"modelNumber": {
 						"properties": {
-							"externalName": "MODEL_NB",
-							"dataType": "string"
+							"externalName": "Model Number",
+							"groupName": "Vendor",
+							"dataType": "String"
 						}
 					},
-					"frnin": {
+					"isFurniture": {
 						"properties": {
-							"externalName": "FRN_IN",
-							"dataType": "string"
+							"externalName": "Furniture",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
 						}
 					}
 				},
