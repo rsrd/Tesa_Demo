@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_sku_vendor_uiConfig",
+			"id": "app-business-function_components-list_sku_buyer_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -23,7 +23,7 @@
 							"component": "_ALL",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -38,7 +38,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-wizard_sku_vendor_uiConfig",
+			"id": "app-business-function_rock-wizard_sku_buyer_uiConfig",
 			"name": "app-business-function_rock-wizard",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -55,7 +55,7 @@
 							"component": "rock-wizard",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
@@ -93,7 +93,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_sku_vendor_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_sku_buyer_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -110,7 +110,7 @@
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
 							"entityType": "sku",
-							"role": "vendor"
+							"role": "buyer"
 						},
 						"jsonData": {
 							"config": {
