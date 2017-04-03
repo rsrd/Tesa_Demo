@@ -1644,14 +1644,23 @@
 								"relationshipType": "aggregation",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "sku",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
+										"relEntityType": "sku"
 									}
 								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -1662,14 +1671,39 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					]
@@ -3133,14 +3167,33 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "kit",
-										"relContexts": [
+										"relEntityType": "kit"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								}
 							}
 						}
 					],
@@ -3151,14 +3204,39 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -3169,14 +3247,23 @@
 								"relationshipType": "aggregation",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "lot",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
+										"relEntityType": "lot"
 									}
 								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					]
@@ -3199,6 +3286,51 @@
 									"dataType": "decimal"
 								}
 							}
+						},
+						"relationships": {
+							"skuToImage": [
+								{
+									"properties": {
+										"externalName": "Images",
+										"relationshipType": "association",
+										"relatedEntityInfo": [
+											{
+												"relEntityType": "image"
+											}
+										]
+									},
+									"attributes": {
+										"linkDescription": {
+											"properties": {
+												"externalName": "Link Description",
+												"dataType": "string"
+											}
+										},
+										"status": {
+											"properties": {
+												"externalName": "Status",
+												"dataType": "string",
+												"referenceEntityInfo": [
+													{
+														"refRelationshipName": "hasReferenceTo",
+														"entityInfo": [
+															{
+																"entityType": "status"
+															}
+														]
+													}
+												]
+											}
+										},
+										"enabled": {
+											"properties": {
+												"externalName": "Enabled",
+												"dataType": "boolean"
+											}
+										}
+									}
+								}
+							]
 						}
 					}
 				]
@@ -3564,6 +3696,18 @@
 				"relationships": {
 					"productPresentationToLot": [
 						{
+							"properties": {
+								"externalName": "Lots",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "lot"
+									},
+									{
+										"relEntityType": "sku"
+									}
+								]
+							},
 							"attributes": {
 								"linkDescription": {
 									"properties": {
@@ -3589,33 +3733,20 @@
 										"dataType": "boolean"
 									}
 								}
-							},
-							"properties": {
-								"externalName": "Lots",
-								"relationshipType": "association",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "lot",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									},
-									{
-										"relEntityType": "sku",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									}
-								]
 							}
 						}
 					],
 					"productPresentationToImage": [
 						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
 							"attributes": {
 								"status": {
 									"properties": {
@@ -3633,20 +3764,6 @@
 										]
 									}
 								}
-							},
-							"properties": {
-								"externalName": "Images",
-								"relationshipType": "association",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "image",
-										"relContexts": [
-											{
-												"classification": "_ALL"
-											}
-										]
-									}
-								]
 							}
 						}
 					]
@@ -3982,14 +4099,35 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "productPresentation",
-										"relContexts": [
+										"relEntityType": "productPresentation"
+									}
+								]
+							},
+							"attributes": {
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"dataType": "string"
+									}
+								},
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "status"
 											}
 										]
 									}
-								]
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Enabled",
+										"dataType": "boolean"
+									}
+								}
 							}
 						}
 					],
@@ -4000,17 +4138,423 @@
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
-										"relEntityType": "image",
-										"relContexts": [
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
 											{
-												"classification": "_ALL"
+												"refRelationshipName": "hasReferenceTo",
+												"entityInfo": [
+													{
+														"entityType": "status"
+													}
+												]
 											}
 										]
 									}
-								]
+								}
 							}
 						}
 					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "image_entityManageModel",
+			"name": "image",
+			"type": "entityManageModel",
+			"data": {
+				"attributes": {
+					"creationDate": {
+						"properties": {
+							"externalName": "Creation Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
+						}
+					},
+					"startDate": {
+						"properties": {
+							"externalName": "On-Site Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
+						}
+					},
+					"endDate": {
+						"properties": {
+							"externalName": "Off-Site Date",
+							"groupName": "Dates",
+							"dataType": "DateTime"
+						}
+					},
+					"displayName": {
+						"properties": {
+							"externalName": "Display Name",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"description": {
+						"properties": {
+							"externalName": "Description",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"status": {
+						"properties": {
+							"externalName": "Status",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "statusValues"
+								}
+							]
+						}
+					},
+					"orin": {
+						"properties": {
+							"externalName": "ORIN",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"id": {
+						"properties": {
+							"externalName": "Id",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"onlineOnly": {
+						"properties": {
+							"externalName": "Online Only",
+							"groupName": "Basic",
+							"dataType": "Boolean"
+						}
+					},
+					"shortName": {
+						"properties": {
+							"externalName": "Short Name",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"channelAvailability": {
+						"properties": {
+							"externalName": "Channel Availability",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "channelAvailabilityValues"
+								}
+							]
+						}
+					},
+					"isTruckItem": {
+						"properties": {
+							"externalName": "Truck Item",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
+						}
+					},
+					"warehouseClass": {
+						"properties": {
+							"externalName": "Warehouse Class",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"directShipRestrict": {
+						"properties": {
+							"externalName": "Direct Ship Restrict Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"disposalFee": {
+						"properties": {
+							"externalName": "Disposal Fee Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"willCallRestrict": {
+						"properties": {
+							"externalName": "Will Call Restrict Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"questionableOrderQuantity": {
+						"properties": {
+							"externalName": "Questionable Order Quantity",
+							"groupName": "Advanced",
+							"dataType": "Numeric"
+						}
+					},
+					"lotType": {
+						"properties": {
+							"externalName": "Lot Type",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lotTypeValues"
+								}
+							]
+						}
+					},
+					"whiteGlovedDelivery": {
+						"properties": {
+							"externalName": "White Gloved Delivery",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
+						}
+					},
+					"styleText": {
+						"properties": {
+							"externalName": "Style Text",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"lotSelectionType": {
+						"properties": {
+							"externalName": "Lot Selection Type",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lotSelectionTypeValues"
+								}
+							]
+						}
+					},
+					"nonContinentalPrepaid": {
+						"properties": {
+							"externalName": "Non Continental Transportation Prepaid",
+							"groupName": "Shipping Attributes",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "nonContinentalPrepaidValues"
+								}
+							]
+						}
+					},
+					"continentalPrepaid": {
+						"properties": {
+							"externalName": "Continental Tranportation Prepaid",
+							"groupName": "Shipping Attributes",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "continentalPrepaidValues"
+								}
+							]
+						}
+					},
+					"unusualDemandQuantity": {
+						"properties": {
+							"externalName": "Unusual Demand Quantity",
+							"groupName": "Advanced",
+							"dataType": "Numeric"
+						}
+					},
+					"mailableIndicator": {
+						"properties": {
+							"externalName": "Mailable Indicator",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
+						}
+					},
+					"productLength": {
+						"properties": {
+							"externalName": "Product Length",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
+						}
+					},
+					"productHeight": {
+						"properties": {
+							"externalName": "Product Height",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
+						}
+					},
+					"productWeight": {
+						"properties": {
+							"externalName": "Product Weight",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
+						}
+					},
+					"productWidth": {
+						"properties": {
+							"externalName": "Product Width",
+							"groupName": "Dimensions",
+							"dataType": "Numeric"
+						}
+					},
+					"commercialCarrierCode": {
+						"properties": {
+							"externalName": "UPS Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"nonCommercialCarrierCode": {
+						"properties": {
+							"externalName": "Mail Code",
+							"groupName": "Shipping Attributes",
+							"dataType": "String"
+						}
+					},
+					"sabrixCommodityCode": {
+						"properties": {
+							"externalName": "Sabrix Commodity Code",
+							"groupName": "Advanced",
+							"dataType": "String"
+						}
+					},
+					"programType": {
+						"properties": {
+							"externalName": "Program Type",
+							"groupName": "Basic",
+							"dataType": "String"
+						}
+					},
+					"specialIndicator": {
+						"properties": {
+							"externalName": "Special Indicator",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
+						}
+					},
+					"parantheticAmount": {
+						"properties": {
+							"externalName": "Paranthetic Amount",
+							"groupName": "Shipping Attributes",
+							"dataType": "Numeric"
+						}
+					},
+					"willCallFactoryShipInd": {
+						"properties": {
+							"externalName": "Will Call Factory Ship",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
+						}
+					},
+					"internationalShippable": {
+						"properties": {
+							"externalName": "International Shippable",
+							"groupName": "Shipping Attributes",
+							"dataType": "Boolean"
+						}
+					},
+					"manufacturer": {
+						"properties": {
+							"externalName": "Manufacturer",
+							"groupName": "Vendor",
+							"dataType": "String"
+						}
+					},
+					"countryOfOrigin": {
+						"properties": {
+							"externalName": "Country Of Origin",
+							"groupName": "Vendor",
+							"dataType": "String"
+						}
+					},
+					"sizeUnit": {
+						"properties": {
+							"externalName": "Unit of Size",
+							"groupName": "Dimensions",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "temp"
+								}
+							]
+						}
+					},
+					"weightUnit": {
+						"properties": {
+							"externalName": "Unit of Weight",
+							"groupName": "Dimensions",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "temp"
+								}
+							]
+						}
+					},
+					"isSephora": {
+						"properties": {
+							"externalName": "Sephora",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
+						}
+					},
+					"recycleFeeIndicator": {
+						"properties": {
+							"externalName": "Recycle Fee",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
+						}
+					},
+					"modelNumber": {
+						"properties": {
+							"externalName": "Model Number",
+							"groupName": "Vendor",
+							"dataType": "String"
+						}
+					},
+					"isFurniture": {
+						"properties": {
+							"externalName": "Furniture",
+							"groupName": "Advanced",
+							"dataType": "Boolean"
+						}
+					}
 				},
 				"contexts": [
 					{
