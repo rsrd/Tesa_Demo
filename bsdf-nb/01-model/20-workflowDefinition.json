@@ -1,819 +1,347 @@
 {
-   "metaInfo": {
-      "dataIndex": "entityModel",
-      "collectionName": "entityModels",
-      "responseObjectName": "response"
-   },
-   "entityModels": [
-      {
-         "id": "newProductSetup_workflowDefinition",
-         "name": "newProductSetup",
-         "type": "workflowDefinition",
-         "data": {
-            "attributes": {
-               "workflows": {
-                  "group": [
-                     {
-                        "workflowName": {
-                           "values": [
-                              {
-                                 "value": "New Product Setup"
-                              }
-                           ]
-                        },
-                        "workflowVersion": {
-                           "values": [
-                              {
-                                 "value": "V1.2"
-                              }
-                           ]
-                        },
-                        "published": {
-                           "values": [
-                              {
-                                 "value": true
-                              }
-                           ]
-                        },
-                        "activities": {
-                           "group": [
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
-                                       }
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [{
+            "id": "bdfWorkflow_workflowDefinition",
+            "name": "bdfWorkflow",
+            "entityModelInfo": {
+                "entityModelType": "workflowDefinition"
+            },
+            "data": {
+                "ctxInfo": [{
+                    "ctxGroup": {
+                        "self": "self/bdfWorkflow_workflowDefinition"
+                    },
+                    "attributes": {
+                        "workflows": {
+                            "group": [{
+                                "workflowName": {
+                                    "values": [{
+                                        "value": "BDF Workflow"
+                                    }]
+                                },
+                                "workflowVersion": {
+                                    "values": [{
+                                        "value": "V1.0"
+                                    }]
+                                },
+                                "published": {
+                                    "values": [{
+                                        "value": true
+                                    }]
+                                },
+                                "activities": {
+                                    "group": [{
+                                            "activityGuid": {
+                                                "values": [
+                                                    "adf91c0b-4f67-47a5-8fd7-a701f0de9e4b"
+                                                ]
+                                            },
+                                            "activityName": {
+                                                "values": [{
+                                                    "value": "Start GBU Data Maintenance"
+                                                }]
+                                            },
+                                            "assignmentType": {
+                                                "values": [{
+                                                    "value": "RoundRobin"
+                                                }]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [{
+                                                    "value": "globalBM"
+                                                }]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [{
+                                                    "value": "cfadmin"
+                                                }]
+                                            },
+                                            "actions": {
+                                                "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Done.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "None"
+                                                        }]
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [{
+                                                    "value": "e2f34361-ee02-4d47-bfc2-4d21fbed1aa6"
+                                                }]
+                                            },
+                                            "activityName": {
+                                                "values": [{
+                                                    "value": "Assign GBU Media Assets"
+                                                }]
+                                            },
+                                            "assignmentType": {
+                                                "values": [{
+                                                    "value": "RoundRobin"
+                                                }]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [{
+                                                    "value": "globalMedia"
+                                                }]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [{
+                                                    "value": "cfadmin"
+                                                }]
+                                            },
+                                            "actions": {
+                                                "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Done.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "None"
+                                                        }]
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [{
+                                                    "value": "9994c817-e04d-40e8-a464-0927b2e258cf"
+                                                }]
+                                            },
+                                            "activityName": {
+                                                "values": [{
+                                                    "value": "Start MLU Data Maintenance"
+                                                }]
+                                            },
+                                            "assignmentType": {
+                                                "values": [{
+                                                    "value": "RoundRobin"
+                                                }]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [{
+                                                    "value": "localBM"
+                                                }]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [{
+                                                    "value": "cfadmin"
+                                                }]
+                                            },
+                                            "actions": {
+                                                "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Done.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "None"
+                                                        }]
+                                                    }
+                                                }]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [{
+                                                    "value": "b7b6e30c-9368-49eb-9a2b-24998cf2e9c1"
+                                                }]
+                                            },
+                                            "activityName": {
+                                                "values": [{
+                                                    "value": "Assign Local Media Assets"
+                                                }]
+                                            },
+                                            "assignmentType": {
+                                                "values": [{
+                                                    "value": "RoundRobin"
+                                                }]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [{
+                                                    "value": "localMedia"
+                                                }]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [{
+                                                    "value": "cfadmin"
+                                                }]
+                                            },
+                                            "actions": {
+                                                "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Done"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Done.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "None"
+                                                        }]
+                                                    }
+                                                }]
+                                            }
+                                        }
                                     ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "New SKUs to Submit"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "1"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Submit"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Submit"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Submit.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       },
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Save for Later"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Save for Later"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "SaveforLater.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Review Assortment"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "2"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Approve Assortment"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Approve Assortment"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "ApproveAssortment.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       },
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Request Info"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Request Info"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "RequestInfo.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Mandatory"
-                                                }
-                                             ]
-                                          }
-                                       },
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Reject"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Reject"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Reject.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Mandatory"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Provide Additional Info"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "3"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Resubmit"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Resubmit"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Resubmit.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "aa582e37-90f1-45b6-ac95-725cea087981"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Assign Internal Information"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "4"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Approve"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Approve"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Approve.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       },
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Request Info"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Request Info"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "RequestInfo.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Mandatory"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Rejected SKUs"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "5"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Done"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Done"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Done.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "None"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Enrich Copy"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "6"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "activityGuid": {
-                                    "values": [
-                                       {
-                                          "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
-                                       }
-                                    ]
-                                 },
-                                 "activityName": {
-                                    "values": [
-                                       {
-                                          "value": "Enrich with Digital Assets"
-                                       }
-                                    ]
-                                 },
-                                 "sequence": {
-                                    "values": [
-                                       {
-                                          "value": "7"
-                                       }
-                                    ]
-                                 },
-                                 "assignmentType": {
-                                    "values": [
-                                       {
-                                          "value": "RoundRobin"
-                                       }
-                                    ]
-                                 },
-                                 "allowedRoles": {
-                                    "values": []
-                                 },
-                                 "allowedUsers": {
-                                    "values": [
-                                       {
-                                          "value": "cfadmin"
-                                       }
-                                    ]
-                                 },
-                                 "actions": {
-                                    "group": [
-                                       {
-                                          "actionName": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete"
-                                                }
-                                             ]
-                                          },
-                                          "actionText": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete"
-                                                }
-                                             ]
-                                          },
-                                          "actionIcon": {
-                                             "values": [
-                                                {
-                                                   "value": "Complete.png"
-                                                }
-                                             ]
-                                          },
-                                          "commentsMode": {
-                                             "values": [
-                                                {
-                                                   "value": "Optional"
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              }
-                           ]
+                                }
+                            }]
                         }
-                     }
-                  ]
-               }
+                    }
+                }]
             }
-         }
-      },
-      {
-        "id": "webContentApproval_workflowDefinition",
-        "name": "webContentApproval",
-        "type": "workflowDefinition",
-        "data": {
-            "attributes": {
-                "workflows": {
-                    "group": [
-                        {
+        },
+        {
+            "id": "newProductSetup_workflowDefinition",
+            "name": "newProductSetup",
+            "type": "workflowDefinition",
+            "data": {
+                "attributes": {
+                    "workflows": {
+                        "group": [{
                             "workflowName": {
-                                "values": [
-                                    {
-                                        "value": "Web Content Approval"
-                                    }
-                                ]
+                                "values": [{
+                                    "value": "New Product Setup"
+                                }]
                             },
                             "workflowVersion": {
-                                "values": [
-                                    {
-                                        "value": "V1.2"
-                                    }
-                                ]
+                                "values": [{
+                                    "value": "V1.2"
+                                }]
                             },
                             "published": {
-                                "values": [
-                                    {
-                                        "value": true
-                                    }
-                                ]
+                                "values": [{
+                                    "value": true
+                                }]
                             },
                             "activities": {
-                                "group": [
-                                    {
+                                "group": [{
                                         "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
+                                            }]
                                         },
                                         "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Web Content Change Submit"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "New SKUs to Submit"
+                                            }]
                                         },
                                         "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": "1"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "1"
+                                            }]
                                         },
                                         "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
                                         },
                                         "allowedRoles": {
                                             "values": []
                                         },
                                         "allowedUsers": {
-                                            "values": [
-                                                {
-                                                    "value": "cfadmin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
                                         },
                                         "actions": {
-                                            "group": [
-                                                {
+                                            "group": [{
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Submit"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Submit"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Submit"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Submit"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Submit.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Submit.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Optional"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
                                                     }
                                                 },
                                                 {
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Save for Later"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Save for Later"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Save for Later"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Save for Later"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "SaveforLater.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "SaveforLater.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Optional"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
                                                     }
                                                 }
                                             ]
@@ -821,133 +349,98 @@
                                     },
                                     {
                                         "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
+                                            }]
                                         },
                                         "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Review Media Attributes"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "Review Assortment"
+                                            }]
                                         },
                                         "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": "2"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "2"
+                                            }]
                                         },
                                         "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
                                         },
                                         "allowedRoles": {
                                             "values": []
                                         },
                                         "allowedUsers": {
-                                            "values": [
-                                                {
-                                                    "value": "cfadmin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
                                         },
                                         "actions": {
-                                            "group": [
-                                                {
+                                            "group": [{
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Approve Assortment"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Approve Assortment"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Approve Assortment"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Approve Assortment"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "ApproveAssortment.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "ApproveAssortment.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Optional"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
                                                     }
                                                 },
                                                 {
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Request Info"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Request Info"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "RequestInfo.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "RequestInfo.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Mandatory"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Mandatory"
+                                                        }]
                                                     }
                                                 },
                                                 {
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Reject"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Reject"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Reject"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Reject"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Reject.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Reject.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Mandatory"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Mandatory"
+                                                        }]
                                                     }
                                                 }
                                             ]
@@ -955,73 +448,130 @@
                                     },
                                     {
                                         "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
+                                            }]
                                         },
                                         "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Provide Additional Info"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "Provide Additional Info"
+                                            }]
                                         },
                                         "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": "3"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "3"
+                                            }]
                                         },
                                         "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
                                         },
                                         "allowedRoles": {
                                             "values": []
                                         },
                                         "allowedUsers": {
-                                            "values": [
-                                                {
-                                                    "value": "cfadmin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
                                         },
                                         "actions": {
-                                            "group": [
-                                                {
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Resubmit"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Resubmit"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Resubmit.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "Optional"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "aa582e37-90f1-45b6-ac95-725cea087981"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Assign Internal Information"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "4"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
                                                     "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Resubmit"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Approve"
+                                                        }]
                                                     },
                                                     "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Resubmit"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Approve"
+                                                        }]
                                                     },
                                                     "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Resubmit.png"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Approve.png"
+                                                        }]
                                                     },
                                                     "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Optional"
-                                                            }
-                                                        ]
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
+                                                    }
+                                                },
+                                                {
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "RequestInfo.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Mandatory"
+                                                        }]
                                                     }
                                                 }
                                             ]
@@ -1029,159 +579,541 @@
                                     },
                                     {
                                         "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
+                                            }]
                                         },
                                         "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Rejected Attributes"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "Rejected SKUs"
+                                            }]
                                         },
                                         "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": "5"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "5"
+                                            }]
                                         },
                                         "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
                                         },
                                         "allowedRoles": {
                                             "values": []
                                         },
                                         "allowedUsers": {
-                                            "values": [
-                                                {
-                                                    "value": "cfadmin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
                                         },
                                         "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Done"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Done"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Done.png"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "None"
-                                                            }
-                                                        ]
-                                                    }
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Done"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Done"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Done.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "None"
+                                                    }]
                                                 }
-                                            ]
+                                            }]
                                         }
                                     },
                                     {
                                         "activityGuid": {
-                                            "values": [
-                                                {
-                                                    "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                                            }]
                                         },
                                         "activityName": {
-                                            "values": [
-                                                {
-                                                    "value": "Publish to website"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "Enrich Copy"
+                                            }]
                                         },
                                         "sequence": {
-                                            "values": [
-                                                {
-                                                    "value": "6"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "6"
+                                            }]
                                         },
                                         "assignmentType": {
-                                            "values": [
-                                                {
-                                                    "value": "RoundRobin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
                                         },
                                         "allowedRoles": {
                                             "values": []
                                         },
                                         "allowedUsers": {
-                                            "values": [
-                                                {
-                                                    "value": "cfadmin"
-                                                }
-                                            ]
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
                                         },
                                         "actions": {
-                                            "group": [
-                                                {
-                                                    "actionName": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Complete"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionText": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Complete"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "actionIcon": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Complete.png"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "commentsMode": {
-                                                        "values": [
-                                                            {
-                                                                "value": "Optional"
-                                                            }
-                                                        ]
-                                                    }
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Complete.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "Optional"
+                                                    }]
                                                 }
-                                            ]
+                                            }]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Enrich with Digital Assets"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "7"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Complete.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "Optional"
+                                                    }]
+                                                }
+                                            }]
                                         }
                                     }
                                 ]
                             }
-                        }
-                    ]
+                        }]
+                    }
+                }
+            }
+        },
+        {
+            "id": "webContentApproval_workflowDefinition",
+            "name": "webContentApproval",
+            "type": "workflowDefinition",
+            "data": {
+                "attributes": {
+                    "workflows": {
+                        "group": [{
+                            "workflowName": {
+                                "values": [{
+                                    "value": "Web Content Approval"
+                                }]
+                            },
+                            "workflowVersion": {
+                                "values": [{
+                                    "value": "V1.2"
+                                }]
+                            },
+                            "published": {
+                                "values": [{
+                                    "value": true
+                                }]
+                            },
+                            "activities": {
+                                "group": [{
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Web Content Change Submit"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "1"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Submit"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Submit"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Submit.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
+                                                    }
+                                                },
+                                                {
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Save for Later"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Save for Later"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "SaveforLater.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Review Media Attributes"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "2"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Approve Assortment"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Approve Assortment"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "ApproveAssortment.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Optional"
+                                                        }]
+                                                    }
+                                                },
+                                                {
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Request Info"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "RequestInfo.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Mandatory"
+                                                        }]
+                                                    }
+                                                },
+                                                {
+                                                    "actionName": {
+                                                        "values": [{
+                                                            "value": "Reject"
+                                                        }]
+                                                    },
+                                                    "actionText": {
+                                                        "values": [{
+                                                            "value": "Reject"
+                                                        }]
+                                                    },
+                                                    "actionIcon": {
+                                                        "values": [{
+                                                            "value": "Reject.png"
+                                                        }]
+                                                    },
+                                                    "commentsMode": {
+                                                        "values": [{
+                                                            "value": "Mandatory"
+                                                        }]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Provide Additional Info"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "3"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Resubmit"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Resubmit"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Resubmit.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "Optional"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Rejected Attributes"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "5"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Done"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Done"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Done.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "None"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    },
+                                    {
+                                        "activityGuid": {
+                                            "values": [{
+                                                "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                                            }]
+                                        },
+                                        "activityName": {
+                                            "values": [{
+                                                "value": "Publish to website"
+                                            }]
+                                        },
+                                        "sequence": {
+                                            "values": [{
+                                                "value": "6"
+                                            }]
+                                        },
+                                        "assignmentType": {
+                                            "values": [{
+                                                "value": "RoundRobin"
+                                            }]
+                                        },
+                                        "allowedRoles": {
+                                            "values": []
+                                        },
+                                        "allowedUsers": {
+                                            "values": [{
+                                                "value": "cfadmin"
+                                            }]
+                                        },
+                                        "actions": {
+                                            "group": [{
+                                                "actionName": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionText": {
+                                                    "values": [{
+                                                        "value": "Complete"
+                                                    }]
+                                                },
+                                                "actionIcon": {
+                                                    "values": [{
+                                                        "value": "Complete.png"
+                                                    }]
+                                                },
+                                                "commentsMode": {
+                                                    "values": [{
+                                                        "value": "Optional"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    }
+                                ]
+                            }
+                        }]
+                    }
                 }
             }
         }
-    }
-   ]
+    ]
 }

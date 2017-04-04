@@ -5,5 +5,5 @@ var toolConfig = {
 }
 
 module.exports = {
-    toolConfig : toolConfig
+    toolConfig: toolConfig
 }

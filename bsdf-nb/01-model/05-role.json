@@ -1,105 +1,136 @@
 {
-	"metaInfo": {
-		"dataIndex": "entityModel",
-		"collectionName": "entityModels",
-		"responseObjectName": "response"
-	},
-	"entityModels": [
-		{
-			"id": "rdpAllDataAccess_role",
-			"name": "rdpAllDataAccess",
-			"type": "role",
-			"properties": {
-				"description": "A system role to bypass data ownership (AVS) check"
-			}
-		},
-		{
-			"id": "admin_role",
-			"name": "admin",
-			"type": "role",
-			"properties": {
-				"description": "the system administrator with complete authorization of the system"
-			}
-		},
-		{
-			"id": "dataReader_role",
-			"name": "dataReader",
-			"type": "role",
-			"properties": {
-				"description": "user role with read only permissions on data"
-			}
-		},
-		{
-			"id": "translationAdmin_role",
-			"name": "translationAdmin",
-			"type": "role",
-			"properties": {
-				"description": "user role with admin permissions to manage data translations"
-			}
-		},
-		{
-			"id": "vendor_role",
-			"name": "vendor",
-			"type": "role",
-			"properties": {
-				"description": "Vendor"
-			}
-		},
-		{
-			"id": "buyer_role",
-			"name": "buyer",
-			"type": "role",
-			"properties": {
-				"description": "Buyer"
-			}
-		},
-		{
-			"id": "assetEnrichment_role",
-			"name": "assetEnrichment",
-			"type": "role",
-			"properties": {
-				"description": "Asset Enrichment"
-			}
-		},
-		{
-			"id": "business_role",
-			"name": "business",
-			"type": "role",
-			"properties": {
-				"description": "Business"
-			}
-		},
-		{
-			"id": "copywriter_role",
-			"name": "copywriter",
-			"type": "role",
-			"properties": {
-				"description": "CopyWriter"
-			}
-		},
-		{
-			"id": "siteOps_role",
-			"name": "siteOps",
-			"type": "role",
-			"properties": {
-				"description": "Site Ops"
-			}
-		},
-		{
-			"id": "taxonomyTeam_role",
-			"name": "taxonomyTeam",
-			"type": "role",
-			"properties": {
-				"description": "Taxonomy Team"
-			}
-		},
-		{
-			"id": "siteMerchandiser_role",
-			"name": "siteMerchandiser",
-			"type": "role",
-			"properties": {
-				"description": "Site Merchandiser"
-			}
-		}
-	]
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [{
+            "id": "rdpAllDataAccess_role",
+            "name": "rdpAllDataAccess",
+            "type": "role",
+            "properties": {
+                "description": "A system role to bypass data ownership (AVS) check"
+            }
+        },
+        {
+            "id": "globalBM_role",
+            "name": "globalBM",
+            "type": "role",
+            "properties": {
+                "description": "Global Brand Manager"
+            }
+        },
+        {
+            "id": "localBM_role",
+            "name": "localBM",
+            "type": "role",
+            "properties": {
+                "description": "local Brand Manager"
+            }
+        },
+        {
+            "id": "globalMedia_role",
+            "name": "globalMedia",
+            "type": "role",
+            "properties": {
+                "description": "Global Media Manager"
+            }
+        },
+        {
+            "id": "localMedia_role",
+            "name": "localMedia",
+            "type": "role",
+            "properties": {
+                "description": "Local Media Manager"
+            }
+        },
+        {
+            "id": "admin_role",
+            "name": "admin",
+            "type": "role",
+            "properties": {
+                "description": "the system administrator with complete authorization of the system"
+            }
+        },
+        {
+            "id": "dataReader_role",
+            "name": "dataReader",
+            "type": "role",
+            "properties": {
+                "description": "user role with read only permissions on data"
+            }
+        },
+        {
+            "id": "translationAdmin_role",
+            "name": "translationAdmin",
+            "type": "role",
+            "properties": {
+                "description": "user role with admin permissions to manage data translations"
+            }
+        },
+        {
+            "id": "vendor_role",
+            "name": "vendor",
+            "type": "role",
+            "properties": {
+                "description": "Vendor"
+            }
+        },
+        {
+            "id": "buyer_role",
+            "name": "buyer",
+            "type": "role",
+            "properties": {
+                "description": "Buyer"
+            }
+        },
+        {
+            "id": "assetEnrichment_role",
+            "name": "assetEnrichment",
+            "type": "role",
+            "properties": {
+                "description": "Asset Enrichment"
+            }
+        },
+        {
+            "id": "business_role",
+            "name": "business",
+            "type": "role",
+            "properties": {
+                "description": "Business"
+            }
+        },
+        {
+            "id": "copywriter_role",
+            "name": "copywriter",
+            "type": "role",
+            "properties": {
+                "description": "CopyWriter"
+            }
+        },
+        {
+            "id": "siteOps_role",
+            "name": "siteOps",
+            "type": "role",
+            "properties": {
+                "description": "Site Ops"
+            }
+        },
+        {
+            "id": "taxonomyTeam_role",
+            "name": "taxonomyTeam",
+            "type": "role",
+            "properties": {
+                "description": "Taxonomy Team"
+            }
+        },
+        {
+            "id": "siteMerchandiser_role",
+            "name": "siteMerchandiser",
+            "type": "role",
+            "properties": {
+                "description": "Site Merchandiser"
+            }
+        }
+    ]
 }
