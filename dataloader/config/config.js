@@ -1,6 +1,6 @@
 var toolConfig = {
-    "webUrl": "http://35.157.12.187:8085",
-    "elasticUrl": "http://35.156.128.250:9200",
+    "webUrl" : "http://192.168.0.48:8085",
+    "elasticUrl" : "http://192.168.0.35:9200",
     "delay": 100
 }
 

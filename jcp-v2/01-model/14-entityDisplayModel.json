@@ -11,6 +11,30 @@
 			"type": "entityDisplayModel",
 			"data": {
 				"attributes": {
+					"color": {
+						"properties": {
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
+						}
+					},
+					"size": {
+						"properties": {
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
+						}
+					},
 					"productLine": {
 						"properties": {
 							"displayType": "Dropdown"
@@ -197,11 +221,6 @@
 						}
 					},
 					"colorDesc": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"size": {
 						"properties": {
 							"displayType": "TextBox"
 						}
@@ -897,6 +916,30 @@
 			"type": "entityDisplayModel",
 			"data": {
 				"attributes": {
+					"color": {
+						"properties": {
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
+						}
+					},
+					"size": {
+						"properties": {
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
+						}
+					},
 					"id": {
 						"properties": {
 							"displayType": "TextBox"
@@ -1228,11 +1271,6 @@
 						}
 					},
 					"colorDesc": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"size": {
 						"properties": {
 							"displayType": "TextBox"
 						}

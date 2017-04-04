@@ -11,6 +11,32 @@
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
+					"color": {
+						"properties": {
+							"externalName": "COLOR",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "color"
+								}
+							]
+						}
+					},
+					"size": {
+						"properties": {
+							"externalName": "SIZE",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "size"
+								}
+							]
+						}
+					},
 					"productLine": {
 						"properties": {
 							"externalName": "Product Line",
@@ -1737,6 +1763,32 @@
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
+					"color": {
+						"properties": {
+							"externalName": "COLOR",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "color"
+								}
+							]
+						}
+					},
+					"size": {
+						"properties": {
+							"externalName": "SIZE",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "size"
+								}
+							]
+						}
+					},
 					"id": {
 						"properties": {
 							"externalName": "Id",
