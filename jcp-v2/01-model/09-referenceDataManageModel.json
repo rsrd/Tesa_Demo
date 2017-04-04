@@ -6,6 +6,50 @@
 	},
 	"entityModels": [
 		{
+			"id": "color_entityManageModel",
+			"name": "color",
+			"type": "entityManageModel",
+			"data": {
+				"attributes": {
+					"code": {
+						"properties": {
+							"isEntityIdentifier": true,
+							"dataType": "string",
+							"externalName": "Code"
+						}
+					},
+					"value": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Value"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "size_entityManageModel",
+			"name": "size",
+			"type": "entityManageModel",
+			"data": {
+				"attributes": {
+					"code": {
+						"properties": {
+							"isEntityIdentifier": true,
+							"dataType": "string",
+							"externalName": "Code"
+						}
+					},
+					"value": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Value"
+						}
+					}
+				}
+			}
+		},
+		{
 			"id": "brand_entityManageModel",
 			"name": "brand",
 			"type": "entityManageModel",
