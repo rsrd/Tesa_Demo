@@ -53,7 +53,7 @@
 					}
 				},
 				"relationships": {
-					"kitLotToLot": {
+					"kitLotToLot": [{
 						"properties": {
 							"cardinality": [
 								{
@@ -61,7 +61,7 @@
 								}
 							]
 						}
-					}
+					}]
 				},
 				"contexts": [
 					{
@@ -106,7 +106,7 @@
 					}
 				},
 				"relationships": {
-					"kitSkuToSku": {
+					"kitSkuToSku": [{
 						"properties": {
 							"cardinality": [
 								{
@@ -114,7 +114,7 @@
 								}
 							]
 						}
-					}
+					}]
 				},
 				"contexts": [
 					{
@@ -146,7 +146,7 @@
 					}
 				},
 				"relationships": {
-					"productPresentationToLot": {
+					"productPresentationToLot": [{
 						"properties": {
 							"cardinality": [
 								{
@@ -154,7 +154,7 @@
 								}
 							]
 						}
-					}
+					}]
 				},
 				"contexts": [
 					{
@@ -192,7 +192,7 @@
 			"type": "entityValidationModel",
 			"data": {
 				"relationships": {
-					"ensembleToProductPresentation": {
+					"ensembleToProductPresentation": [{
 						"properties": {
 							"cardinality": [
 								{
@@ -200,7 +200,7 @@
 								}
 							]
 						}
-					}
+					}]
 				},
 				"contexts": [
 					{
