@@ -1,0 +1,469 @@
+{
+    "metaInfo": {
+        "dataIndex": "config",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
+    },
+    "configObjects": [{
+            "id": "app-dashboard_components-list_globalPM_uiConfig",
+            "name": "app-dashboard_components-list",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "components-list",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": {
+                            "components": [
+                                "rock-saved-searches",
+                                "rock-widget-panel",
+                                "my-todo-summary-list",
+                                "my-todo-detail-view-list",
+                                "rock-saved-searches-tags"
+                            ]
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "id": "app-dashboard_rock-saved-searches_globalPM_uiConfig",
+            "name": "app-dashboard_rock-saved-searches",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "rock-saved-searches",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": {
+                            "favourites": [{
+                                "id": 8,
+                                "accesstype": "self",
+                                "name": "Nivea Products",
+                                "icon": "pebble-icons:SavedSearch",
+                                "dimensions": {
+                                    "catalog": "productMaster",
+                                    "Source": "internal",
+                                    "Locale": "en-US",
+                                    "TimeSlice": "Now"
+                                },
+                                "searchQuery": "",
+                                "searchTags": [{
+                                    "name": "description",
+                                    "longName": "Description",
+                                    "options": {
+                                        "displayType": "textArea"
+                                    },
+                                    "value": {
+                                        "eq": "Nivea"
+                                    }
+                                }]
+                            }],
+                            "my-searches": [{
+                                "id": 9,
+                                "accesstype": "self",
+                                "name": "Skin Care NARTs",
+                                "icon": "pebble-icons:SavedSearch",
+                                "shared": false,
+                                "dimensions": {
+                                    "catalog": "productMaster",
+                                    "Source": "internal",
+                                    "Locale": "en-US",
+                                    "TimeSlice": "Now"
+                                },
+                                "searchQuery": "",
+                                "searchTags": [{
+                                    "name": "description",
+                                    "longName": "Description",
+                                    "options": {
+                                        "displayType": "textArea"
+                                    },
+                                    "value": {
+                                        "eq": "Skin Care"
+                                    }
+                                }]
+                            }],
+                            "shared-searches": [{
+                                "id": 10,
+                                "accesstype": "self",
+                                "name": "Nivea Men's",
+                                "icon": "pebble-icons:SavedSearch",
+                                "shared": true,
+                                "dimensions": {
+                                    "catalog": "productMaster",
+                                    "Source": "internal",
+                                    "Locale": "en-US",
+                                    "TimeSlice": "Now"
+                                },
+                                "searchQuery": "Nivea",
+                                "searchTags": [{
+                                    "name": "description",
+                                    "longName": "Description",
+                                    "options": {
+                                        "displayType": "textArea"
+                                    },
+                                    "value": {
+                                        "eq": "Men's"
+                                    }
+                                }]
+                            }]
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "id": "app-dashboard_rock-widget-panel_globalPM_uiConfig",
+            "name": "app-dashboard_rock-widget-panel",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "rock-widget-panel",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": {
+                            "widgets": [{
+                                    "name": "rock-my-todos",
+                                    "nonClosable": true,
+                                    "nonMaximizable": false,
+                                    "nonDraggable": false,
+                                    "iconButtons": "",
+                                    "config": {
+                                        "heading": "My To Do's",
+                                        "headerIcon": "pebble-lg-icons:MyToDoIcon",
+                                        "component": {
+                                            "name": "rock-my-todos",
+                                            "path": "/src/elements/rock-my-todos/rock-my-todos.html"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "rock-saved-searches",
+                                    "nonClosable": true,
+                                    "nonMaximizable": false,
+                                    "nonDraggable": false,
+                                    "iconButtons": "",
+                                    "config": {
+                                        "heading": "Saved Searches",
+                                        "headerIcon": "pebble-lg-icons:SavedSearchmain",
+                                        "component": {
+                                            "name": "rock-saved-searches",
+                                            "path": "/src/elements/rock-saved-searches/rock-saved-searches.html",
+                                            "properties": {
+                                                "view-mode": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }]
+            }
+        },
+        {
+            "id": "app-dashboard_my-todo-summary-list_globalPM_uiConfig",
+            "name": "app-dashboard_my-todo-summary-list",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "my-todo-summary-list",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": [{
+                                "id": 1,
+                                "savedSearchId": 1,
+                                "name": "Start GBU Data Maintenance",
+                                "numberOfTasks": "TBD",
+                                "workflow": "BDF Workflow",
+                                "unAssigned": "TBD",
+                                "assignedToMe": "TBD",
+                                "status": "red",
+                                "products": [{
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "savedSearchId": 2,
+                                "name": "Assign GBU Media Asset",
+                                "numberOfTasks": "TBD",
+                                "workflow": "BDF Workflow",
+                                "unAssigned": "TBD",
+                                "assignedToMe": "TBD",
+                                "status": "red",
+                                "products": [{
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "savedSearchId": 3,
+                                "name": "Start MLU Data Maintenance",
+                                "numberOfTasks": "TBD",
+                                "workflow": "BDF Workflow",
+                                "unAssigned": "TBD",
+                                "assignedToMe": "TBD",
+                                "status": "orange",
+                                "products": [{
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "savedSearchId": 4,
+                                "name": "Assign Local Media Assets",
+                                "numberOfTasks": "TBD",
+                                "workflow": "BDF Workflow",
+                                "unAssigned": "TBD",
+                                "assignedToMe": "TBD",
+                                "status": "orange",
+                                "products": [{
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    },
+                                    {
+                                        "name": "Complexion Rescue Tinted Hydrating Gel Cream Broad Spectrum SPF 30",
+                                        "id": 2283289,
+                                        "globalPMName": "Aquaphor",
+                                        "categoryPath": "/Skin Care/Moisturizers",
+                                        "imageUrl": "../../../../bower_components/iron-image/demo/polymer.svg"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }]
+            }
+        },
+        {
+            "id": "app-dashboard_my-todo-detail-view-list_globalPM_uiConfig",
+            "name": "app-dashboard_my-todo-detail-view-list",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "my-todo-detail-view-list",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": []
+                    }
+                }]
+            }
+        },
+        {
+            "id": "app-dashboard_rock-saved-searches-tags_globalPM_uiConfig",
+            "name": "app-dashboard_rock-saved-searches-tags",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [{
+                    "context": {
+                        "app": "app-dashboard",
+                        "service": "_ALL",
+                        "component": "rock-saved-searches-tags",
+                        "subComponent": "_ALL",
+                        "role": "globalPM"
+                    },
+                    "jsonData": {
+                        "config": {
+                            "favourites": [{
+                                    "name": "favourites",
+                                    "icon": "pebble-icons:Star",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "favourite-saved-search"
+                                },
+                                {
+                                    "name": "delete",
+                                    "icon": "pebble-icons:Delete",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "delete-saved-search"
+                                }
+                            ],
+                            "my-searches": [{
+                                    "name": "favourites",
+                                    "icon": "star-border",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "favourite-saved-search"
+                                },
+                                {
+                                    "name": "delete",
+                                    "icon": "pebble-icons:Delete",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "delete-saved-search"
+                                }
+                            ],
+                            "shared-searches": [{
+                                    "name": "favourites",
+                                    "icon": "pebble-icons:Star",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "favourite-saved-search"
+                                },
+                                {
+                                    "name": "delete",
+                                    "icon": "pebble-icons:Delete",
+                                    "text": "",
+                                    "visible": true,
+                                    "eventName": "delete-saved-search"
+                                }
+                            ]
+                        }
+                    }
+                }]
+            }
+        }
+    ]
+}
