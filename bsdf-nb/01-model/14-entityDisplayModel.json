@@ -1,2145 +1,2132 @@
 {
-	"metaInfo": {
-		"dataIndex": "entityModel",
-		"collectionName": "entityModels",
-		"responseObjectName": "response"
-	},
-	"entityModels": [
-		{
-			"id": "lot_entityDisplayModel",
-			"name": "lot",
-			"type": "entityDisplayModel",
-			"data": {
-				"attributes": {
-					"productLine": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"productType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subProductType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"itemType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"sizeRange": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"class": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subClass": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"source": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"channel": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"hazMatFlag": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"prop65Indicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"supplierNumberName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierSiteNumber": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePrimarySupplierId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecomPrimarySupplierId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierChannel": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"alternateSupplierID": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"msrp": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeUnitCost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommUnitCost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"retail": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"length": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"width": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"height": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"grossWeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"liquidVolume": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"liquidUnitofMeasure": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"countryOfManufacture": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"originIndicator": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"plannedOnSiteDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"warrantyFlag": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"monogramCharge": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"diff1Type": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff1Group": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff2Type": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff2Group": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"colorFamily": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"colorDesc": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"size": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommColorAbbr": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeColorAbbr": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"printPattern": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"artworkId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"vpn": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeUnitCostColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommUnitCostColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommActiveSizes": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePrimarySupplierIdColor": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"ecomPrimarySupplierIdColor": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"innerPackIncrementColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"cost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommInnerPack": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommOOSDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"specialProgramType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeSubSet": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeJCPStatus": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"factoryShipLeadTime": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sizeCase": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeCollectionNumberName": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"lifestyle": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"supplierMfrShipPoint": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sizeInner": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"packageType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"weightUnitofMeasure": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"whseSupplier1": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"whseSupplierShipPoint1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierLeadTime": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"eComHangingIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"effIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"storeSet": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"floorSetDate": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"christmasIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"protectionPlan": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"ecommSupplierShipPoint": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"maxBackorderDays": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeActiveSizes": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePurchaseType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ecommPurchaseType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"sourcingPartner": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"factoryShipUOM": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ticketStockNo": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ticketAttribute": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"season": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ppkNo": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommJcpStatus": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"innerQuantityColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"caseQuantityColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"conceptual": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"whseProcessingFee1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"complianceLikeItem": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"enterpriseInventoryIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"fashionPyramid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"deliveryInstructions": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"packingMethod": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"priceTier": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"specialItemCode": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeOOSDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"factoryShipLimitedInvInd": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"minOrderQtyColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommMinOrderQty": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shippingInfoRequired": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"productTitle": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledLength": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledWidth": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledHeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledWeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"productDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"features1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features2": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features3": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features4": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features5": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"searchKeywordsNavigation": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"competitorPrice": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shipPointState": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shipPointCity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"stone": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"programName": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"initialMarkup": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"estimatedShippingExpense": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"id": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"creationDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"endDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"displayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"description": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"status": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"orin": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"division": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subDivision": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"entity": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"onlineOnly": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"shortName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"channelAvailability": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"isTruckItem": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"warehouseClass": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"directShipRestrict": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"disposalFee": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"willCallRestrict": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"questionableOrderQuantity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"lotType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"whiteGlovedDelivery": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"styleText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"lotSelectionType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"nonContinentalPrepaid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"continentalPrepaid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"unusualDemandQuantity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"mailableIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"productLength": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"productHeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"productWeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"productWidth": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"commercialCarrierCode": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"nonCommercialCarrierCode": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sabrixCommodityCode": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"programType": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"specialIndicator": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"parantheticAmount": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"willCallFactoryShipInd": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"internationalShippable": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"manufacturer": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"countryOfOrigin": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sizeUnit": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"weightUnit": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isSephora": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"recycleFeeIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"modelNumber": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isFurniture": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"brand": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"vData": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"factSheet": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"warranty": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"serviceDescription": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					}
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "sku_entityDisplayModel",
-			"name": "sku",
-			"type": "entityDisplayModel",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"skuType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"skuNumber": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"retailSkuNumber": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"hideDisplayIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"skuQuantity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"upcBarcode": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"creationDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"endDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"displayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"description": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"status": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"orin": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"division": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subDivision": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"entity": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"brand": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"warranty": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"productLine": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"productType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subProductType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"itemType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"sizeRange": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"class": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subClass": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"source": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"skuItemType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"skuGrouping": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"channel": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"directShipRestrict": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"disposalFee": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"willCallRestrict": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"parantheticAmount": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"willCallFactoryShipInd": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"nonContinentalPrepaid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"continentalPrepaid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"unusualDemandQuantity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"hazMatFlag": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"prop65Indicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"supplierNumberName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierSiteNumber": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePrimarySupplierId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecomPrimarySupplierId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierChannel": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"alternateSupplierID": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"msrp": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeUnitCost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommUnitCost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"retail": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"length": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"width": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"height": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"grossWeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"liquidVolume": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"liquidUnitofMeasure": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"countryOfManufacture": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"originIndicator": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"plannedOnSiteDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"warrantyFlag": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"monogramCharge": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"diff1Type": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff1Group": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff2Type": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"diff2Group": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"colorFamily": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"colorDesc": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"size": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommColorAbbr": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeColorAbbr": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"printPattern": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"artworkId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"vpn": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeUnitCostColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommUnitCostColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommActiveSizes": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePrimarySupplierIdColor": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"ecomPrimarySupplierIdColor": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"innerPackIncrementColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"cost": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommInnerPack": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommOOSDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"specialProgramType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeSubSet": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeJCPStatus": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"factoryShipLeadTime": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sizeCase": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeCollectionNumberName": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"lifestyle": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"supplierMfrShipPoint": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"sizeInner": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"packageType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"weightUnitofMeasure": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"whseSupplier1": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"whseSupplierShipPoint1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"supplierLeadTime": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"eComHangingIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"effIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"storeSet": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"floorSetDate": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"christmasIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"protectionPlan": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"ecommSupplierShipPoint": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"maxBackorderDays": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storeActiveSizes": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"storePurchaseType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ecommPurchaseType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"sourcingPartner": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"factoryShipUOM": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ticketStockNo": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ticketAttribute": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"season": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"ppkNo": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommJcpStatus": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"innerQuantityColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"caseQuantityColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"conceptual": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"whseProcessingFee1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"complianceLikeItem": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"enterpriseInventoryIndicator": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"fashionPyramid": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"deliveryInstructions": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"packingMethod": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"priceTier": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"specialItemCode": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"storeOOSDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"factoryShipLimitedInvInd": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"minOrderQtyColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ecommMinOrderQty": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shippingInfoRequired": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"productTitle": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledLength": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledWidth": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledHeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"assembledWeight": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"productDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"features1": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features2": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features3": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features4": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"features5": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"searchKeywordsNavigation": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"competitorPrice": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shipPointState": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"shipPointCity": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"stone": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"programName": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"initialMarkup": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"estimatedShippingExpense": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					}
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "productPresentation_entityDisplayModel",
-			"name": "productPresentation",
-			"type": "entityDisplayModel",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"creationDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"endDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"displayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"description": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"longDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"seoTags": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"seoDisplayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"canonicalURL": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"disableAds": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"disableGoogleAds": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"seoTagInclude": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"shortName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"mediaLetter": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"mediaYear": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isHidden": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"productReviewQuoteText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"featureHeaderText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"featureQuoteText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"longCopy": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"secondaryCopy": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"inspirationalCopy": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"alsoInStore": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"promotionalImageContent": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ratingReviewId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ppSkuSwatchesRolledUpCount": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ensembleDHTML": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"displayAskAndAnswerSection": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"sourceFeedId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isSampleEnsemble": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isNewToClearance": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isNewClearanceTimestamp": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"productPresentationType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"isPreOrderOption": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isSephora": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"galleryVideo": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isCustomerFavoriteOption": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"featureColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isBopisEligible": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"division": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subDivision": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"brand": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"seoTitle": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"seoDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"brandLogo": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					}
-				},
-				"relationships": {
-					"productPresentationToLot": [
-						{
-							"attributes": {
-								"status": {
-									"properties": {
-										"externalName": "Status",
-										"dataType": "string",
-										"referenceEntityInfo": [
-											{
-												"thumbnail": "/images/favicon.ico",
-												"listTitle": "{entity.attributes.code}",
-												"listSubTitle": "{entity.name} - {entity.attributes.value}"
-											}
-										]
-									}
-								},
-								"enabled": {
-									"properties": {
-										"externalName": "Is Active?",
-										"displayType": "boolean"
-									}
-								}
-							}
-						}
-					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "ensemble_entityDisplayModel",
-			"name": "ensemble",
-			"type": "entityDisplayModel",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"creationDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"endDate": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"displayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"description": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"longDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"seoTags": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"seoDisplayName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"canonicalURL": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"disableAds": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"disableGoogleAds": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"seoTagInclude": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"shortName": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isHidden": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"productReviewQuoteText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"featureHeaderText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"featureQuoteText": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"longCopy": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					},
-					"alsoInStore": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"promotionalImageContent": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ratingReviewId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"ensembleDHTML": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"displayAskAndAnswerSection": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"sourceFeedId": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isSampleEnsemble": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isNewToClearance": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isNewClearanceTimestamp": {
-						"properties": {
-							"displayType": "DateTime"
-						}
-					},
-					"productPresentationType": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"isPreOrderOption": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"isSephora": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"galleryVideo": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"isCustomerFavoriteOption": {
-						"properties": {
-							"displayType": "Boolean"
-						}
-					},
-					"featureColor": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"division": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"subDivision": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"brand": {
-						"properties": {
-							"displayType": "Dropdown"
-						}
-					},
-					"seoTitle": {
-						"properties": {
-							"displayType": "TextBox"
-						}
-					},
-					"seoDescription": {
-						"properties": {
-							"displayType": "TextArea"
-						}
-					}
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						}
-					}
-				]
-			}
-		}
-	]
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [{
+            "id": "lot_entityDisplayModel",
+            "name": "lot",
+            "type": "entityDisplayModel",
+            "data": {
+                "attributes": {
+                    "productLine": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "productType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subProductType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "itemType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "sizeRange": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "class": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subClass": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "source": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "channel": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "hazMatFlag": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "prop65Indicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "supplierNumberName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierSiteNumber": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePrimarySupplierId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecomPrimarySupplierId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierChannel": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "alternateSupplierID": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "msrp": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeUnitCost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommUnitCost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "retail": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "length": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "width": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "height": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "grossWeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "liquidVolume": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "liquidUnitofMeasure": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "countryOfManufacture": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "originIndicator": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "plannedOnSiteDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "warrantyFlag": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "monogramCharge": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "diff1Type": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff1Group": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff2Type": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff2Group": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "colorFamily": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "colorDesc": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "size": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommColorAbbr": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeColorAbbr": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "printPattern": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "artworkId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "vpn": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeUnitCostColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommUnitCostColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommActiveSizes": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePrimarySupplierIdColor": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "ecomPrimarySupplierIdColor": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "innerPackIncrementColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "cost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommInnerPack": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommOOSDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "specialProgramType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeSubSet": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeJCPStatus": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "factoryShipLeadTime": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sizeCase": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeCollectionNumberName": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "lifestyle": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "supplierMfrShipPoint": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sizeInner": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "packageType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "weightUnitofMeasure": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "whseSupplier1": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "whseSupplierShipPoint1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierLeadTime": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "eComHangingIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "effIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "storeSet": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "floorSetDate": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "christmasIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "protectionPlan": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "ecommSupplierShipPoint": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "maxBackorderDays": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeActiveSizes": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePurchaseType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ecommPurchaseType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "sourcingPartner": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "factoryShipUOM": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ticketStockNo": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ticketAttribute": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "season": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ppkNo": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommJcpStatus": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "innerQuantityColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "caseQuantityColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "conceptual": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "whseProcessingFee1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "complianceLikeItem": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "enterpriseInventoryIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "fashionPyramid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "deliveryInstructions": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "packingMethod": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "priceTier": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "specialItemCode": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeOOSDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "factoryShipLimitedInvInd": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "minOrderQtyColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommMinOrderQty": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shippingInfoRequired": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "productTitle": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledLength": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledWidth": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledHeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledWeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "productDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "features1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features2": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features3": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features4": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features5": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "searchKeywordsNavigation": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "competitorPrice": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shipPointState": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shipPointCity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "stone": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "programName": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "initialMarkup": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "estimatedShippingExpense": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "id": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "creationDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "startDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "endDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "displayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "description": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "status": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "orin": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "division": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subDivision": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "entity": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "onlineOnly": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "shortName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "channelAvailability": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "isTruckItem": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "warehouseClass": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "directShipRestrict": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "disposalFee": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "willCallRestrict": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "questionableOrderQuantity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "lotType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "whiteGlovedDelivery": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "styleText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "lotSelectionType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "nonContinentalPrepaid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "continentalPrepaid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "unusualDemandQuantity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "mailableIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "productLength": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "productHeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "productWeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "productWidth": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "commercialCarrierCode": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "nonCommercialCarrierCode": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sabrixCommodityCode": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "programType": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "specialIndicator": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "parantheticAmount": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "willCallFactoryShipInd": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "internationalShippable": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "manufacturer": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "countryOfOrigin": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sizeUnit": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "weightUnit": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isSephora": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "recycleFeeIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "modelNumber": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isFurniture": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "brand": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "vData": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "factSheet": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "warranty": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "serviceDescription": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    }
+                },
+                "contexts": [{
+                    "context": {
+                        "classification": "_ALL"
+                    }
+                }]
+            }
+        },
+        {
+            "id": "sku_entityDisplayModel",
+            "name": "sku",
+            "type": "entityDisplayModel",
+            "data": {
+                "attributes": {
+                    "id": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "skuType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "skuNumber": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "retailSkuNumber": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "hideDisplayIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "skuQuantity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "upcBarcode": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "creationDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "startDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "endDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "displayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "description": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "status": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "orin": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "division": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subDivision": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "entity": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "brand": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "warranty": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "productLine": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "productType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subProductType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "itemType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "sizeRange": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "class": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subClass": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "source": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "skuItemType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "skuGrouping": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "channel": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "directShipRestrict": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "disposalFee": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "willCallRestrict": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "parantheticAmount": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "willCallFactoryShipInd": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "nonContinentalPrepaid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "continentalPrepaid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "unusualDemandQuantity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "hazMatFlag": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "prop65Indicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "supplierNumberName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierSiteNumber": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePrimarySupplierId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecomPrimarySupplierId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierChannel": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "alternateSupplierID": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "msrp": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeUnitCost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommUnitCost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "retail": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "length": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "width": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "height": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "grossWeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "liquidVolume": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "liquidUnitofMeasure": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "countryOfManufacture": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "originIndicator": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "plannedOnSiteDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "warrantyFlag": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "monogramCharge": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "diff1Type": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff1Group": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff2Type": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "diff2Group": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "colorFamily": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "colorDesc": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "size": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommColorAbbr": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeColorAbbr": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "printPattern": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "artworkId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "vpn": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeUnitCostColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommUnitCostColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommActiveSizes": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePrimarySupplierIdColor": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "ecomPrimarySupplierIdColor": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "innerPackIncrementColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "cost": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommInnerPack": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommOOSDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "specialProgramType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeSubSet": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeJCPStatus": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "factoryShipLeadTime": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sizeCase": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeCollectionNumberName": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "lifestyle": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "supplierMfrShipPoint": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "sizeInner": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "packageType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "weightUnitofMeasure": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "whseSupplier1": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "whseSupplierShipPoint1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "supplierLeadTime": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "eComHangingIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "effIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "storeSet": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "floorSetDate": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "christmasIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "protectionPlan": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "ecommSupplierShipPoint": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "maxBackorderDays": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storeActiveSizes": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "storePurchaseType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ecommPurchaseType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "sourcingPartner": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "factoryShipUOM": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ticketStockNo": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ticketAttribute": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "season": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "ppkNo": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommJcpStatus": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "innerQuantityColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "caseQuantityColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "conceptual": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "whseProcessingFee1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "complianceLikeItem": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "enterpriseInventoryIndicator": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "fashionPyramid": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "deliveryInstructions": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "packingMethod": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "priceTier": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "specialItemCode": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "storeOOSDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "factoryShipLimitedInvInd": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "minOrderQtyColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ecommMinOrderQty": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shippingInfoRequired": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "productTitle": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledLength": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledWidth": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledHeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "assembledWeight": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "productDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "features1": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features2": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features3": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features4": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "features5": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "searchKeywordsNavigation": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "competitorPrice": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shipPointState": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "shipPointCity": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "stone": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "programName": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "initialMarkup": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "estimatedShippingExpense": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    }
+                },
+                "contexts": [{
+                    "context": {
+                        "classification": "_ALL"
+                    }
+                }]
+            }
+        },
+        {
+            "id": "productPresentation_entityDisplayModel",
+            "name": "productPresentation",
+            "type": "entityDisplayModel",
+            "data": {
+                "attributes": {
+                    "id": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "creationDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "startDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "endDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "displayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "description": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "longDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "seoTags": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "seoDisplayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "canonicalURL": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "disableAds": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "disableGoogleAds": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "seoTagInclude": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "shortName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "mediaLetter": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "mediaYear": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isHidden": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "productReviewQuoteText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "featureHeaderText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "featureQuoteText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "longCopy": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "secondaryCopy": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "inspirationalCopy": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "alsoInStore": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "promotionalImageContent": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ratingReviewId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ppSkuSwatchesRolledUpCount": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ensembleDHTML": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "displayAskAndAnswerSection": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "sourceFeedId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isSampleEnsemble": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isNewToClearance": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isNewClearanceTimestamp": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "productPresentationType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "isPreOrderOption": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isSephora": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "galleryVideo": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isCustomerFavoriteOption": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "featureColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isBopisEligible": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "division": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subDivision": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "brand": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "seoTitle": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "seoDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "brandLogo": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    }
+                },
+                "relationships": {
+                    "productPresentationToLot": [{
+                        "attributes": {
+                            "status": {
+                                "properties": {
+                                    "externalName": "Status",
+                                    "dataType": "string",
+                                    "referenceEntityInfo": [{
+                                        "thumbnail": "/images/favicon.ico",
+                                        "listTitle": "{entity.attributes.code}",
+                                        "listSubTitle": "{entity.name} - {entity.attributes.value}"
+                                    }]
+                                }
+                            },
+                            "enabled": {
+                                "properties": {
+                                    "externalName": "Is Active?",
+                                    "displayType": "boolean"
+                                }
+                            }
+                        }
+                    }]
+                },
+                "contexts": [{
+                    "context": {
+                        "classification": "_ALL"
+                    }
+                }]
+            }
+        },
+        {
+            "id": "ensemble_entityDisplayModel",
+            "name": "ensemble",
+            "type": "entityDisplayModel",
+            "data": {
+                "attributes": {
+                    "id": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "creationDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "startDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "endDate": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "displayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "description": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "longDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "seoTags": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "seoDisplayName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "canonicalURL": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "disableAds": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "disableGoogleAds": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "seoTagInclude": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "shortName": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isHidden": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "productReviewQuoteText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "featureHeaderText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "featureQuoteText": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "longCopy": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    },
+                    "alsoInStore": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "promotionalImageContent": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ratingReviewId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "ensembleDHTML": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "displayAskAndAnswerSection": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "sourceFeedId": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isSampleEnsemble": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isNewToClearance": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isNewClearanceTimestamp": {
+                        "properties": {
+                            "displayType": "DateTime"
+                        }
+                    },
+                    "productPresentationType": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "isPreOrderOption": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "isSephora": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "galleryVideo": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "isCustomerFavoriteOption": {
+                        "properties": {
+                            "displayType": "Boolean"
+                        }
+                    },
+                    "featureColor": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "division": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "subDivision": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "brand": {
+                        "properties": {
+                            "displayType": "Dropdown"
+                        }
+                    },
+                    "seoTitle": {
+                        "properties": {
+                            "displayType": "TextBox"
+                        }
+                    },
+                    "seoDescription": {
+                        "properties": {
+                            "displayType": "TextArea"
+                        }
+                    }
+                },
+                "contexts": [{
+                    "context": {
+                        "classification": "_ALL"
+                    }
+                }]
+            }
+        }
+    ]
 }
