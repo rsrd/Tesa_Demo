@@ -337,18 +337,18 @@
                             "workflowSavedSearch": [{
                                     "id": 1,
                                     "accesstype": "self",
-                                    "name": "New SKUs to Submit",
+                                    "name": "Start GBU Data Maintenance",
                                     "workflowSearchCriterion": {
                                         "dataRequest": {
                                             "params": {
                                                 "query": {
                                                     "contexts": [{
-                                                        "workflow": "newProductSetup"
+                                                        "workflow": "bdfWorkflow"
                                                     }],
                                                     "filters": {
                                                         "attributesCriterion": [{
                                                             "activities/activityName": {
-                                                                "eq": "New SKUs to Submit"
+                                                                "eq": "Start GBU Data Maintenance"
                                                             }
                                                         }],
                                                         "typesCriterion": []
@@ -361,18 +361,18 @@
                                 {
                                     "id": 2,
                                     "accesstype": "self",
-                                    "name": "Provide Additional Info",
+                                    "name": "Assign GBU Media Assets",
                                     "workflowSearchCriterion": {
                                         "dataRequest": {
                                             "params": {
                                                 "query": {
                                                     "contexts": [{
-                                                        "workflow": "newProductSetup"
+                                                        "workflow": "bdfWorkflow"
                                                     }],
                                                     "filters": {
                                                         "attributesCriterion": [{
                                                             "activities/activityName": {
-                                                                "eq": "Provide Additional Info"
+                                                                "eq": "Assign GBU Media Assets"
                                                             }
                                                         }],
                                                         "typesCriterion": []
@@ -385,18 +385,18 @@
                                 {
                                     "id": 3,
                                     "accesstype": "self",
-                                    "name": "Rejected SKUs",
+                                    "name": "Start MLU Data Maintenance",
                                     "workflowSearchCriterion": {
                                         "dataRequest": {
                                             "params": {
                                                 "query": {
                                                     "contexts": [{
-                                                        "workflow": "newProductSetup"
+                                                        "workflow": "bdfWorkflow"
                                                     }],
                                                     "filters": {
                                                         "attributesCriterion": [{
                                                             "activities/activityName": {
-                                                                "eq": "Rejected SKUs"
+                                                                "eq": "Start MLU Data Maintenance"
                                                             }
                                                         }],
                                                         "typesCriterion": []
@@ -409,90 +409,18 @@
                                 {
                                     "id": 4,
                                     "accesstype": "self",
-                                    "name": "Review Assortment",
+                                    "name": "Assign Local Media Assets",
                                     "workflowSearchCriterion": {
                                         "dataRequest": {
                                             "params": {
                                                 "query": {
                                                     "contexts": [{
-                                                        "workflow": "newProductSetup"
+                                                        "workflow": "bdfWorkflow"
                                                     }],
                                                     "filters": {
                                                         "attributesCriterion": [{
                                                             "activities/activityName": {
-                                                                "eq": "Review Assortment"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 5,
-                                    "accesstype": "self",
-                                    "name": "Assign Internal Information",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Assign Internal Information"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 6,
-                                    "accesstype": "self",
-                                    "name": "Enrich Copy",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Enrich Copy"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 7,
-                                    "accesstype": "self",
-                                    "name": "Enrich with Digital Assets",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Enrich with Digital Assets"
+                                                                "eq": "Assign Local Media Assets"
                                                             }
                                                         }],
                                                         "typesCriterion": []

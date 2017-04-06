@@ -4,65 +4,25 @@
         "collectionName": "entityModels",
         "responseObjectName": "response"
     },
-    "entityModels": [{
-            "id": "sku_workflowMapping",
-            "name": "sku_workflowMapping",
-            "type": "workflowDefinitionMapping",
-            "data": {
-                "ctxInfo": [{
-                    "ctxGroup": {
-                        "list": "productMaster"
-                    },
-                    "attributes": {},
-                    "relationships": {
-                        "hasWorkflowsDefined": [{
-                            "id": "rel101",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "bdfWorkflow_workflowDefinition",
-                                "entityInfo": {
-                                    "entityType": "workflowDefinition"
-                                }
-                            }
-                        }]
-                    }
-                }]
-            }
-        },
+    "entityModels": [
         {
             "id": "sku_workflowDefinitionMapping",
             "name": "sku",
             "type": "workflowDefinitionMapping",
             "data": {
                 "relationships": {
-                    "hasWorkflowsDefined": [{
-                        "id": "rel101",
-                        "direction": "both",
-                        "relationshipType": "association",
-                        "relTo": {
-                            "id": "newProductSetup_workflowDefinition",
-                            "type": "workflowDefinition"
-                        }
-                    }]
-                },
-                "contexts": [{
-                    "context": {
-                        "channel": "webCatalog",
-                        "classification": "_ALL"
-                    },
-                    "relationships": {
-                        "hasWorkflowsDefined": [{
-                            "id": "rel102",
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
                             "direction": "both",
                             "relationshipType": "association",
                             "relTo": {
-                                "id": "webContentApproval_workflowDefinition",
+                                "id": "bdfWorkflow_workflowDefinition",
                                 "type": "workflowDefinition"
                             }
-                        }]
-                    }
-                }]
+                        }
+                    ]
+                }
             }
         }
     ]
