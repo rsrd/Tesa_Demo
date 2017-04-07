@@ -36,7 +36,9 @@ function _prepareOptions(url, method, req) {
         method: method,
         headers: {
             "Cache-Control": "no-cache",
-            "version": 8.1
+            "version": 8.1,
+            "content-type": "application/json",
+            "x-rdp-userRoles": '["buyer"]'
         },
         body: req,
         json: true,
