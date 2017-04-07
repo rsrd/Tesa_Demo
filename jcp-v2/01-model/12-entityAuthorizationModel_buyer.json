@@ -11,25 +11,7 @@
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true,
-				"contextsPermission": [
-					{
-						"readPermission": true,
-						"writePermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"readPermission": true,
-						"writePermission": true
-					}
-				],
-				"attributesPermission": [
-					{
-						"readPermission": true,
-						"writePermission": true
-					}
-				]
+				"writePermission": true
 			},
 			"data": {
 				"attributes": {
