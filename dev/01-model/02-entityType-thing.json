@@ -1,0 +1,82 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "ensemble_entityType",
+			"name": "ensemble",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Ensemble",
+				"description": ""
+			}
+		},
+		{
+			"id": "lot_entityType",
+			"name": "lot",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Lot",
+				"description": ""
+			}
+		},
+		{
+			"id": "productPresentation_entityType",
+			"name": "productPresentation",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Product Presentation",
+				"description": ""
+			}
+		},
+		{
+			"id": "sku_entityType",
+			"name": "sku",
+			"type": "entityType",
+			"properties": {
+				"externalName": "SKU",
+				"description": ""
+			}
+		},
+		{
+			"id": "lotType_entityType",
+			"name": "lotType",
+			"type": "entityType"
+		},
+		{
+			"id": "skuType_entityType",
+			"name": "skuType",
+			"type": "entityType"
+		},
+		{
+			"id": "classification_entityType",
+			"name": "classification",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Classification",
+				"description": "Classification"
+			}
+		},
+		{
+			"id": "channel_entityType",
+			"name": "channel",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Channel",
+				"description": "Channel"
+			}
+		},
+		{
+			"id": "taxonomy_entityType",
+			"name": "taxonomy",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Taxonomy",
+				"description": "Taxonomy"
+			}
+		}
+	]
+}

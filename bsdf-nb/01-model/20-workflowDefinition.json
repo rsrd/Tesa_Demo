@@ -1,0 +1,333 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "bdfWorkflow_workflowDefinition",
+            "name": "bdfWorkflow",
+            "type": "workflowDefinition",
+            "data": {
+                "attributes": {
+                    "workflows": {
+                        "group": [
+                            {
+                                "workflowName": {
+                                    "values": [
+                                        {
+                                            "value": "BDF Workflow"
+                                        }
+                                    ]
+                                },
+                                "workflowVersion": {
+                                    "values": [
+                                        {
+                                            "value": "V1.0"
+                                        }
+                                    ]
+                                },
+                                "published": {
+                                    "values": [
+                                        {
+                                            "value": true
+                                        }
+                                    ]
+                                },
+                                "activities": {
+                                    "group": [
+                                        {
+                                            "activityGuid": {
+                                                "values": [
+                                                    {
+                                                        "value": "adf91c0b-4f67-47a5-8fd7-a701f0de9e4b"
+                                                    }
+                                                ]
+                                            },
+                                            "activityName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Start GBU Data Maintenance"
+                                                    }
+                                                ]
+                                            },
+                                            "assignmentType": {
+                                                "values": [
+                                                    {
+                                                        "value": "RoundRobin"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [
+                                                    {
+                                                        "value": "globalBM"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [
+                                                    {
+                                                        "value": "cfadmin"
+                                                    }
+                                                ]
+                                            },
+                                            "actions": {
+                                                "group": [
+                                                    {
+                                                        "actionName": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionText": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionIcon": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done.png"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "commentsMode": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "None"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [
+                                                    {
+                                                        "value": "e2f34361-ee02-4d47-bfc2-4d21fbed1aa6"
+                                                    }
+                                                ]
+                                            },
+                                            "activityName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Assign GBU Media Assets"
+                                                    }
+                                                ]
+                                            },
+                                            "assignmentType": {
+                                                "values": [
+                                                    {
+                                                        "value": "RoundRobin"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [
+                                                    {
+                                                        "value": "globalMedia"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [
+                                                    {
+                                                        "value": "cfadmin"
+                                                    }
+                                                ]
+                                            },
+                                            "actions": {
+                                                "group": [
+                                                    {
+                                                        "actionName": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionText": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionIcon": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done.png"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "commentsMode": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "None"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [
+                                                    {
+                                                        "value": "9994c817-e04d-40e8-a464-0927b2e258cf"
+                                                    }
+                                                ]
+                                            },
+                                            "activityName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Start MLU Data Maintenance"
+                                                    }
+                                                ]
+                                            },
+                                            "assignmentType": {
+                                                "values": [
+                                                    {
+                                                        "value": "RoundRobin"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [
+                                                    {
+                                                        "value": "localBM"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [
+                                                    {
+                                                        "value": "cfadmin"
+                                                    }
+                                                ]
+                                            },
+                                            "actions": {
+                                                "group": [
+                                                    {
+                                                        "actionName": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionText": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionIcon": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done.png"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "commentsMode": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "None"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "activityGuid": {
+                                                "values": [
+                                                    {
+                                                        "value": "b7b6e30c-9368-49eb-9a2b-24998cf2e9c1"
+                                                    }
+                                                ]
+                                            },
+                                            "activityName": {
+                                                "values": [
+                                                    {
+                                                        "value": "Assign Local Media Assets"
+                                                    }
+                                                ]
+                                            },
+                                            "assignmentType": {
+                                                "values": [
+                                                    {
+                                                        "value": "RoundRobin"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedRoles": {
+                                                "values": [
+                                                    {
+                                                        "value": "localMedia"
+                                                    }
+                                                ]
+                                            },
+                                            "allowedUsers": {
+                                                "values": [
+                                                    {
+                                                        "value": "cfadmin"
+                                                    }
+                                                ]
+                                            },
+                                            "actions": {
+                                                "group": [
+                                                    {
+                                                        "actionName": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionText": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "actionIcon": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "Done.png"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "commentsMode": {
+                                                            "values": [
+                                                                {
+                                                                    "value": "None"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityManageModel",
+            "name": "lot",
+            "entityModelInfo": {
+                "entityModelType": "entityManageModel"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "apparel"
+                        },
+                        "attributes": {
+                            "threadCount": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "THREAD COUNT"
+                                }
+                            },
+                            "secondCompLiningMaterial": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "2ND COMP LINING MATERIAL"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "context": {
+                            "taxonomy": "merchandisingTaxonomy",
+                            "classification": "apparel/shirts"
+                        },
+                        "attributes": {
+                            "sleeve": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE"
+                                }
+                            },
+                            "sleeveStyle": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE STYLE"
+                                }
+                            },
+                            "sleeveLength": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE LENGTH"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

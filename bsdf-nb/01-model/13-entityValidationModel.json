@@ -1,0 +1,236 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "lot_entityValidationModel",
+			"name": "lot",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"channelAvailability": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"mailableIndicator": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productLength": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productHeight": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productWeight": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"specialIndicator": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"factSheet": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"warranty": {
+						"properties": {
+							"isCollection": true
+						}
+					}
+				},
+				"relationships": {
+					"kitLotToLot": [{
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "sku_entityValidationModel",
+			"name": "sku",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"id": {
+						"properties": {
+							"required": true
+						}
+					}
+				},
+				"relationships": {
+					"kitSkuToSku": [{
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "productPresentation_entityValidationModel",
+			"name": "productPresentation",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"subDivision": {
+						"properties": {
+							"isCollection": true
+						}
+					}
+				},
+				"relationships": {
+					"productPresentationToLot": [{
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "ensemble_entityValidationModel",
+			"name": "ensemble",
+			"type": "entityValidationModel",
+			"data": {
+				"relationships": {
+					"ensembleToProductPresentation": [{
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

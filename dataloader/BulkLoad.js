@@ -3,6 +3,7 @@ var sleep = require('system-sleep');
 
 var serviceConfig = require('./config/serviceConfig.json');
 var dataIndexConfig = require('./config/dataIndexConfig.json');
+var indicesConfig = require('./config/indicesConfig.json');
 var config = require('./config/config');
 
 var dataService = require('./DataService');
@@ -18,38 +19,62 @@ function getListOfDir(path) {
     return fs.readdirSync(path);
 }
 
-function startLoadingData(tenant) {
-    if (this.path) {
+function startLoadingData(folder, option, tenant, flush) {
+
+    var selectedFolders = getSelectedFolderNames(option);
+    if (this.path && selectedFolders && selectedFolders.length) {
+
+        var path = this.path + "" + folder + "/";
         var timestamp = Date.now();
 
-        var tenantLogDir = logPath + '/' + tenant;
+        if (!fs.existsSync(logPath)) {
+            fs.mkdirSync(logPath);
+        }
 
+        var tenantLogDir = logPath + '/' + tenant;
         if (!fs.existsSync(tenantLogDir)) {
             fs.mkdirSync(tenantLogDir);
         }
-        
-        logPath = tenantLogDir + '/' + timestamp;
-        fs.mkdirSync(logPath);
 
-        var dir = this.path + tenant + "/";
-        console.log("Started loading data from : " + tenant);
+        deleteAndCreateIndices(tenant, option, flush).then(function (results) {
+            
+            console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
+            
 
-        var files = getListOfDir(dir);
+            if (checkIndicesStatus(results)) {
+                selectedFolders.forEach(function (selectedFolder) {
+                    if (selectedFolder) {
+                        var tenantDataLogDir = tenantLogDir + '/' + timestamp ;
 
-        console.log("\n-----------------------------Logs-----------------------------------\n");
-        if (files && files.length > 0) {
-            files.forEach(function (file) {
-                if (file != ".DS_Store") {
-                    console.log("reading file: " + file);
-                    var fileData = fs.readFileSync(dir + file);
-                    var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
-                }
-            }, this);
-        } else {}
+                        if (!fs.existsSync(tenantDataLogDir)) {
+                            fs.mkdirSync(tenantDataLogDir);
+                        }
 
-        if(counters) {
-            console.log('Total RDF requests generated: ', JSON.stringify(counters, null, 3));
-        }
+                        logPath = tenantDataLogDir + '/' + selectedFolder;
+                        fs.mkdirSync(logPath);
+                        var dir = path + selectedFolder + "/";       
+                        var files = getListOfDir(dir);
+
+                        console.log("\n----------------------------- Logs for " + selectedFolder + " -----------------------------------\n");
+                        if (files && files.length > 0) {
+                            files.forEach(function (file) {
+                                if (file != ".DS_Store") {
+                                    console.log("reading file: " + file);
+                                    var fileData = fs.readFileSync(dir + file);
+                                    var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
+                                }
+                            }, this);
+                        } else { }
+
+                        if (counters) {
+                            console.log('Total RDF requests generated: ', JSON.stringify(counters, null, 3));
+                        }
+                    }
+                }, this);
+            } else {
+                console.log("Error in deleting and creating indices. logs:" + JSON.stringify(indicesResults));
+            }
+        }, this);
     }
 }
 
@@ -80,12 +105,12 @@ async function loadData(tenant, fileName, fileData) {
         }
 
         if (serviceName && data) {
-            
+
             loaded = await sendDataToService(fileName, dataIndex, serviceName, tenant, data);
-            if(loaded) {
+            if (loaded) {
                 console.log(fileName + " loaded successfully.\n");
             } else {
-                console.log(fileName + " has issues. Please check logs.\n");                
+                console.log(fileName + " has issues. Please check logs.\n");
             }
         }
     }
@@ -96,12 +121,12 @@ async function loadData(tenant, fileName, fileData) {
 async function sendDataToService(fileName, dataIndex, serviceName, tenant, data) {
     var serviceUrl;
     var dataIndexInfo;
-    
+
     var logFileName = logPath + '/' + fileName + '.log';
 
     //console.log(logFileName);
 
-    if(counters[dataIndex] === undefined) {
+    if (counters[dataIndex] === undefined) {
         //console.log('counters are undefined for data index', dataIndex);
         counters[dataIndex] = 0;
     }
@@ -119,7 +144,7 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
 
     if (dataIndexConfig) {
         dataIndexInfo = dataIndexConfig[dataIndex];
-    } 
+    }
     else {
     }
 
@@ -135,21 +160,21 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
             };
 
             requestObj[dataIndexInfo.name] = dataObj;
-        
+
             sleep(delay); // sleep for 100 ms
 
-            if(counters[dataIndex] !== undefined) {
+            if (counters[dataIndex] !== undefined) {
                 counters[dataIndex] = counters[dataIndex] + 1;
             }
 
             //console.log('req ', JSON.stringify(requestObj, null, 2));
 
-            res = await dataService.sendRequest(tenant, serviceUrl, requestObj);
+            res = await dataService.sendDataRequest(tenant, serviceUrl, requestObj);
 
-            if(res) {
+            if (res) {
                 var response = res[dataIndexInfo.responseObjectName];
 
-                if(response) {
+                if (response) {
                     writeLog(logFileName, response.status, res);
                 }
                 else {
@@ -165,6 +190,159 @@ async function sendDataToService(fileName, dataIndex, serviceName, tenant, data)
     }
 }
 
+async function deleteAndCreateIndices(tenantId, selectedFolder, flush) {
+
+    var results = [];
+    var promise;
+    
+    if(flush == "y" || flush == "Y") {
+        console.log("deleting indices...");
+
+        promise = deleteIndices(tenantId, selectedFolder).then(function (result) {
+            results = result;
+            
+            if (checkIndicesStatus(result)) {
+                sleep(3000);
+                results = createIndices(tenantId, selectedFolder);
+            } else {
+                console.log("error while deleting indices" + JSON.stringify(results));
+            }
+        });
+
+        await Promise.resolve(promise);
+    }
+
+    return results;
+}
+
+async function deleteIndices(tenantId, selectedFolder) {
+
+    var results = [];
+    var promises = [];
+    if (tenantId && selectedFolder) {
+        var indices = getIndices(selectedFolder);
+        if (indices && indices.length) {
+            indices.forEach(function (index) {
+                var req = dataService.deleteIndicesRequest(tenantId, index).then(function (result) {
+                    console.log(result);
+                    results.push(result);
+                });
+                promises.push(req);
+            }, this);
+        }
+    }
+
+    await Promise.all(promises);
+    return results;
+}
+
+async function createIndices(tenantId, selectedFolder) {
+
+    var results = [];
+    var promises = [];
+    if (tenantId && selectedFolder && indicesConfig) {
+        var indices = getIndices(selectedFolder);
+        if (indices && indices.length) {
+            indices.forEach(function (index) {
+                var indexConfig = indicesConfig[index];
+                var req = dataService.createIndicesRequest(tenantId, index, indexConfig).then(function (result) {
+                    console.log(result);
+                    results.push(result);
+                });
+                promises.push(req);
+            }, this);
+        }
+    }
+
+    await Promise.all(promises);
+    return results;
+}
+
+function getServiceName(dataIndex) {
+    if (!dataIndex) {
+        return "NA";
+    };
+
+    if (dataIndex == "entityData") {
+        return "entityservice";
+    } else if (dataIndex == "entityGovernData") {
+        return "entitygovernservice";
+    } else if (dataIndex == "entityModel") {
+        return "entitymodelservice";
+    } else if (dataIndex == "config") {
+        return "configurationservice";
+    } else {
+        return "entityservice";
+    }
+}
+
+function getSelectedFolderNames(option) {
+
+    var selectedFolders = [];
+    switch (option.toLowerCase()) {
+        case "all":
+            selectedFolders.push("01-model", "02-data", "03-config");
+            break;
+        case "model":
+            selectedFolders.push("01-model");
+            break;
+        case "data":
+            selectedFolders.push("02-data");
+            break;
+        case "config":
+            selectedFolders.push("03-config");
+            break;
+    }
+
+    return selectedFolders;
+}
+
+function getIndices(selectedFolder) {
+
+    var indices = [];
+    switch (selectedFolder.toLowerCase()) {
+        case "all":
+            indices.push("entitywriteindex", "entitymanagemodelwriteindex", "configurationwriteindex");
+            break;
+        case "model":
+            indices.push("entitymanagemodelwriteindex");
+            break;
+        case "data":
+            indices.push("entitywriteindex");
+            break;
+        case "config":
+            indices.push("configurationwriteindex");
+            break;
+    }
+
+    return indices;
+}
+
+function checkIndicesStatus(results, flush) {
+
+    if(!flush) {
+        return true;
+    }
+
+    var status = false;
+
+    if (results && results.length) {
+        results.forEach(function (result) {
+            if (result && result.acknowledged) {
+                if (!result.acknowledged) {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }, this);
+
+        return true;
+    }
+
+    return false;
+}
+
 function writeLog(logFile, status, res) {
     var timestamp = Date().toLocaleString();
     var message = timestamp + ":" + status.toUpperCase() + ":" + JSON.stringify(res) + "\r\n";
@@ -178,21 +356,6 @@ function truncateFile(fileName) {
     }
 }
 
-function getServiceName(dataIndex) {
-    if (!dataIndex) {
-        return "NA";
-    };
-
-    if (dataIndex == "entityData") {
-        return "entitymanageservice";
-    } else if (dataIndex == "entityGovernData") {
-        return "entitygovernservice";
-    } else if (dataIndex == "entityModel") {
-        return "entitymodelservice";
-    } else {
-        return "entitymanageservice";
-    }
-}
 
 module.exports = {
     getListOfDir: getListOfDir,

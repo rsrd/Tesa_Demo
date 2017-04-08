@@ -1,0 +1,681 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "businessReview_BusinessCondition",
+            "name": "Business Review Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Business Review Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Business Review Business Condition"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "businessReview_BusinessCondition",
+                            "relTo": {
+                                "id": "businessReview_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "buyerReview_BusinessCondition",
+            "name": "Buyer Review Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Buyer Review Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Buyer Review Business Condition"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "buyerReview_BusinessCondition",
+                            "relTo": {
+                                "id": "buyerReview_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "buyerReviewUpdate_BusinessCondition",
+            "name": "Buyer ReviewUpdate Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Buyer ReviewUpdate Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Buyer ReviewUpdate Business Condition"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "buyerReviewUpdate_BusinessCondition",
+                            "relTo": {
+                                "id": "buyerReviewUpdate_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "validationsonentityupdatesinPIM_BusinessCondition",
+            "name": "Validationson entity updates in PIM businessCondition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Validationson entity updates in PIM businessCondition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Validationson entity updates in PIM businessCondition"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "validationsonentityupdatesinPIM_BusinessCondition",
+                            "relTo": {
+                                "id": "validationsonentityupdatesinPIM_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "vendorSKUaddninfosubmission_BusinessCondition",
+            "name": "VendorSKUaddninfosubmission Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "VendorSKUaddn.infosubmission Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Vendor SKU addn. info submission with exit criteria"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "vendorSKUaddninfosubmission_BusinessCondition",
+                            "relTo": {
+                                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "vendorSKUCreate_BusinessCondition",
+            "name": "vendor SKU Create Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "vendor SKU Create Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "vendor SKU Create with entry criteria"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "vendorSKUCreate_BusinessCondition",
+                            "relTo": {
+                                "id": "vendorSKUCreate_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "vendorSKUSubmission_BusinessCondition",
+            "name": "vendor SKU Submission Business Condition",
+            "type": "businessCondition",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "vendor SKU Submission Business Condition"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "vendor SKU Submission with exit criteria"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "businessCondition"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "FALSE"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "hasBusinessRules": [
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "vendorSKUSubmission_BusinessCondition",
+                            "relTo": {
+                                "id": "vendorSKUSubmission_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "id": "1",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

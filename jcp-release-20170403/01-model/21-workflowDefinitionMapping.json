@@ -1,0 +1,50 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "sku_workflowDefinitionMapping",
+            "name": "sku",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newProductSetup_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "channel": "webCatalog",
+                            "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "hasWorkflowsDefined": [
+                                {
+                                    "id": "rel102",
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "relTo": {
+                                        "id": "webContentApproval_workflowDefinition",
+                                        "type": "workflowDefinition"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

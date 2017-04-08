@@ -1,0 +1,150 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entities": [
+        {
+            "id": "webCatalog_channel",
+            "name": "webCatalog",
+            "type": "channel",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Catalog"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "printCatalog_channel",
+            "name": "printCatalog",
+            "type": "channel",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Print Catalog"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "summer2017_channel",
+            "name": "summer2017",
+            "type": "channel",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Summer 2017"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "fall2017_channel",
+            "name": "fall2017",
+            "type": "channel",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Fall 2017"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "merchandisingTaxonomy_taxonomy",
+            "name": "merchandisingTaxonomy",
+            "type": "taxonomy",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Merchandising Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "webTaxonomy_taxonomy",
+            "name": "webTaxonomy",
+            "type": "taxonomy",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Web Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "apparel_classification",
+            "name": "apparel",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Apparel"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "shoes_classification",
+            "name": "shoes",
+            "ype": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Shoes"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "isChildOf": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "apparel",
+                                "type": "classification"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

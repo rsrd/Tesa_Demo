@@ -4,20 +4,27 @@
         "typeInfo": "entityInfo",
         "typeName": "entityType",
         "collectionName": "entities",
-        "responseObjectName": "entityOperationResponse"
+        "responseObjectName": "response"
     },
     "entityGovernData": {
-        "name": "entityGovernData",
+        "name": "entity",
         "typeInfo": "entityGovernInfo",
         "typeName": "entityGovernType",
         "collectionName": "entities",
-        "responseObjectName": "entityGovernOperationResponse"
+        "responseObjectName": "response"
     },
     "entityModel": {
         "name": "entityModel",
         "typeInfo": "entityModelInfo",
         "typeName": "entityModelType",
         "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
+        "responseObjectName": "response"
+    },
+    "config": {
+        "name": "configObject",
+        "typeInfo": "configObjectInfo",
+        "typeName": "configObjectType",
+        "collectionName": "configObjects",
+        "responseObjectName": "response"
     }
 }

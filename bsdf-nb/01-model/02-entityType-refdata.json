@@ -1,0 +1,513 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "brand_entityType",
+			"name": "brand",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Brand",
+				"description": ""
+			}
+		},
+		{
+			"id": "vdata_entityType",
+			"name": "vdata",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Vdata",
+				"description": ""
+			}
+		},
+		{
+			"id": "vdataComponent_entityType",
+			"name": "vdataComponent",
+			"type": "entityType",
+			"properties": {
+				"externalName": "VdataComponent",
+				"description": ""
+			}
+		},
+		{
+			"id": "vdataComponentRule_entityType",
+			"name": "vdataComponentRule",
+			"type": "entityType",
+			"properties": {
+				"externalName": "VdataComponentRule",
+				"description": ""
+			}
+		},
+		{
+			"id": "division_entityType",
+			"name": "division",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Division",
+				"description": ""
+			}
+		},
+		{
+			"id": "subDivision_entityType",
+			"name": "subDivision",
+			"type": "entityType",
+			"properties": {
+				"externalName": "SubDivision",
+				"description": ""
+			}
+		},
+		{
+			"id": "entity_entityType",
+			"name": "entity",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Entity",
+				"description": ""
+			}
+		},
+		{
+			"id": "class_entityType",
+			"name": "class",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Class",
+				"description": ""
+			}
+		},
+		{
+			"id": "subClass_entityType",
+			"name": "subClass",
+			"type": "entityType",
+			"properties": {
+				"externalName": "SubClass",
+				"description": ""
+			}
+		},
+		{
+			"id": "factSheet_entityType",
+			"name": "factSheet",
+			"type": "entityType",
+			"properties": {
+				"externalName": "FactSheet",
+				"description": ""
+			}
+		},
+		{
+			"id": "warranty_entityType",
+			"name": "warranty",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Warranty",
+				"description": ""
+			}
+		},
+		{
+			"id": "copy_entityType",
+			"name": "copy",
+			"type": "entityType",
+			"properties": {
+				"externalName": "Copy",
+				"description": ""
+			}
+		},
+		{
+			"id": "productLine_entityType",
+			"name": "productLine",
+			"type": "entityType",
+			"properties": {
+				"externalName": "ProductLine",
+				"description": ""
+			}
+		},
+		{
+			"id": "productType_entityType",
+			"name": "productType",
+			"type": "entityType",
+			"properties": {
+				"externalName": "ProductType",
+				"description": ""
+			}
+		},
+		{
+			"id": "subProductType_entityType",
+			"name": "subProductType",
+			"type": "entityType",
+			"properties": {
+				"externalName": "SubProductType",
+				"description": ""
+			}
+		},
+		{
+			"id": "itemType_entityType",
+			"name": "itemType",
+			"type": "entityType",
+			"properties": {
+				"externalName": "ItemType",
+				"description": ""
+			}
+		},
+		{
+			"id": "sizeRange_entityType",
+			"name": "sizeRange",
+			"type": "entityType",
+			"properties": {
+				"externalName": "SizeRange",
+				"description": ""
+			}
+		},
+		{
+			"id": "statusValues_entityType",
+			"name": "statusValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "statusValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "nonContinentalPrepaidValues_entityType",
+			"name": "nonContinentalPrepaidValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "nonContinentalPrepaidValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "continentalPrepaidValues_entityType",
+			"name": "continentalPrepaidValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "continentalPrepaidValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "channelValues_entityType",
+			"name": "channelValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "channelValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "lotTypeValues_entityType",
+			"name": "lotTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "lotTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "liquidUnitofMeasureValues_entityType",
+			"name": "liquidUnitofMeasureValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "liquidUnitofMeasureValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "originIndicatorValues_entityType",
+			"name": "originIndicatorValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "originIndicatorValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "storePurchaseTypeValues_entityType",
+			"name": "storePurchaseTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "storePurchaseTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "skuItemTypeValues_entityType",
+			"name": "skuItemTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "skuItemTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "diff1TypeValues_entityType",
+			"name": "diff1TypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "diff1TypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "diff1GroupValues_entityType",
+			"name": "diff1GroupValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "diff1GroupValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "storeJCPStatusValues_entityType",
+			"name": "storeJCPStatusValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "storeJCPStatusValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "colorFamilyValues_entityType",
+			"name": "colorFamilyValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "colorFamilyValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "printPatternValues_entityType",
+			"name": "printPatternValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "printPatternValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "specialProgramTypeValues_entityType",
+			"name": "specialProgramTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "specialProgramTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "storeSubSetValues_entityType",
+			"name": "storeSubSetValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "storeSubSetValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "seasonValues_entityType",
+			"name": "seasonValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "seasonValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "floorSetDateValues_entityType",
+			"name": "floorSetDateValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "floorSetDateValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "eCommJcpStatusValues_entityType",
+			"name": "eCommJcpStatusValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "eCommJcpStatusValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "storeCollectionNumberValues_entityType",
+			"name": "storeCollectionNumberValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "storeCollectionNumberValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "lifestyleValues_entityType",
+			"name": "lifestyleValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "lifestyleValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "packageTypeValues_entityType",
+			"name": "packageTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "packageTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "weightUOMValues_entityType",
+			"name": "weightUOMValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "weightUOMValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "whseSupplierValues_entityType",
+			"name": "whseSupplierValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "whseSupplierValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "eCommPurchaseTypeValues_entityType",
+			"name": "eCommPurchaseTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "eCommPurchaseTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "factoryShipUOMValues_entityType",
+			"name": "factoryShipUOMValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "factoryShipUOMValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "ticketStockNoValues_entityType",
+			"name": "ticketStockNoValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "ticketStockNoValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "ticketAttributesValues_entityType",
+			"name": "ticketAttributesValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "ticketAttributesValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "specialItemCodeValues_entityType",
+			"name": "specialItemCodeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "specialItemCodeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "fashionPyramidValues_entityType",
+			"name": "fashionPyramidValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "fashionPyramidValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "deliveryInstructionValues_entityType",
+			"name": "deliveryInstructionValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "deliveryInstructionValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "packingMethodValues_entityType",
+			"name": "packingMethodValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "packingMethodValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "priceTierValues_entityType",
+			"name": "priceTierValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "priceTierValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "channelAvailabilityValues_entityType",
+			"name": "channelAvailabilityValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "channelAvailabilityValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "lotTypeValues_entityType",
+			"name": "lotTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "lotTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "lotSelectionTypeValues_entityType",
+			"name": "lotSelectionTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "lotSelectionTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "productPresentationTypeValues_entityType",
+			"name": "productPresentationTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "productPresentationTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "kaTypeValues_entityType",
+			"name": "kaTypeValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "kaTypeValues",
+				"description": ""
+			}
+		},
+		{
+			"id": "countryOfManufactureValues_entityType",
+			"name": "countryOfManufactureValues",
+			"type": "entityType",
+			"properties": {
+				"externalName": "countryOfManufactureValues",
+				"description": ""
+			}
+		}
+	]
+}
