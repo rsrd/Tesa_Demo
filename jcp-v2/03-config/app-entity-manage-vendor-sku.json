@@ -320,18 +320,28 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "status",
-										"label": "Status",
+										"attributeName": "brand",
+										"label": "Brand",
 										"noTrim": false
 									},
 									{
-										"attributeName": "startDate",
-										"label": "Start Date",
+										"attributeName": "productType",
+										"label": "Product Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "webDiscount",
-										"label": "Web Discount",
+										"attributeName": "subProductType",
+										"label": "Sub Product Type",
+										"noTrim": false
+									},
+									{
+										"attributeName": "itemType",
+										"label": "Item Type",
+										"noTrim": false
+									},
+									{
+										"attributeName": "creationDate",
+										"label": "Creation Date",
 										"noTrim": false
 									}
 								],
@@ -592,38 +602,19 @@
 												"config-context": {
 													"attributeNames": [
 														"id",
-														"brand",
-														"cost",
-														"channel",
+														"skuNumber",
 														"description",
 														"displayName",
-														"creationDate",
-														"skuNumber",
-														"skuType"
+														"brand",
+														"productType",
+														"subProductType",
+														"itemType",
+														"creationDate"
 													]
 												}
 											}
 										},
 										"menuItems": [
-											{
-												"name": "Advanced",
-												"title": "Advanced",
-												"component": {
-													"name": "rock-attribute-split-screen",
-													"path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
-													"properties": {
-														"mode": "view",
-														"no-of-columns": 1,
-														"config-context": {
-															"groupName": "Advanced",
-															"attributeNames": [
-																"unusualDemandQuantity",
-																"source"
-															]
-														}
-													}
-												}
-											},
 											{
 												"name": "Basic",
 												"title": "Basic",
