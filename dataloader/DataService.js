@@ -2,7 +2,15 @@ var dataServiceBase = require('./DataServiceBase');
 var config = require('./config/config');
 
 async function sendDataRequest(tenantId, serviceUrl, req) {
+
     var url = config.toolConfig.webUrl + '/' + tenantId + '/api' + serviceUrl;
+
+    //console.log('req ', JSON.stringify(req));
+
+    if(req && req.configObject && req.configObject.type == "tenantserviceconfig") {
+        //console.log('tenant config');
+        url = config.toolConfig.webUrl + '/dataplatform/api/configurationservice/create';
+    }
 
     var options = _prepareOptions(url, "POST", req);
     var result = await dataServiceBase.sendRequest(options);
@@ -28,7 +36,6 @@ async function deleteIndicesRequest(tenantId, index) {
     console.log(JSON.stringify(result));    
     return result;
 }
-
 
 function _prepareOptions(url, method, req) {
     var options = {
