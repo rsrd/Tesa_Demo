@@ -120,6 +120,7 @@
                         <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">210,439</av:Point>
                           <av:Size x:Key="ShapeSize">200,22</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">310,461 310,509</av:PointCollection>
                         </scg3:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Complete,Optional," AllowedUsers="cfadmin" AssignToPreviousActorOnRerun="True" AssignmentType="RoundRobin" Assignment_Type="RoundRobin" DelegationAllowed="True" Description="Assign and verify digital assets" DisplayName="Enrich with Digital Assets" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="412bf4f3-cd79-4057-9c19-6e48cc0c711e" NotifyAllAssignedUsers="False" NotifyUser="False">
@@ -129,6 +130,23 @@
                           </scg3:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </mwac:HumanWork>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">210,509</av:Point>
+                              <av:Size x:Key="ShapeSize">200,22</av:Size>
+                            </scg3:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <mwac:InitiateExport Description="{x:Null}" DisplayName="Publish" ExportProfileNames="ProfileJSON_Lot1_Excel_Publish.json" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="48adc483-564a-4f71-93c5-1a1b60822c4f">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg3:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </mwac:InitiateExport>
+                        </FlowStep>
+                      </FlowStep.Next>
                     </FlowStep>
                   </FlowStep.Next>
                 </FlowStep>
@@ -165,5 +183,6 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
+    <x:Reference>__ReferenceID8</x:Reference>
   </Flowchart>
 </Activity>
