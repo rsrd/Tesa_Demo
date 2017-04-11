@@ -38,7 +38,9 @@
 									"rock-relationship-manage",
 									"rock-entity-todo",
 									"rock-entity-tofix",
-									"rock-titlebar"
+									"rock-titlebar",
+									"variant-create",
+									"rock-variants-create-grid"
 								]
 							}
 						}
@@ -1427,8 +1429,35 @@
 											]
 										}
 									]
+								}
+							}
+						}
+					}
+				]
+			}
 								},
-								"businessFunctionVariantsCreate": {
+		{
+			"id": "app-entity-manage_variant-create_lot_vendor_uiConfig",
+			"name": "app-entity-manage_variant-create",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "variant-create",
+							"subComponent": "_ALL",
+							"entityType": "lot",
+							"role": "vendor"
+						},
+						"jsonData": {
+							"config": {
 									"stepperConfig": [
 										{
 											"index": "1",
@@ -1467,8 +1496,34 @@
 											"skipEvent": "onCancel"
 										}
 									]
+
+							}
+						}
+					}
+				]
+			}
 								},
-								"rock-variants-create-grid": {
+		{
+			"id": "app-entity-manage_rock-variants-create-grid_lot_vendor_uiConfig",
+			"name": "app-entity-manage_rock-variants-create-grid",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-variants-create-grid",
+							"subComponent": "_ALL",
+							"entityType": "lot",
+							"role": "vendor"
+						},
+						"jsonData": {
 									"config": {
 										"createVariantsGridConfig": {
 											"viewMode": "Tabular",
