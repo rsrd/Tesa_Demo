@@ -231,7 +231,7 @@
 						},
 						"entityService": {
 							"serviceSpecific": {
-								"isAuthEnabled": "false"
+								"isAuthEnabled": "true"
 							}
 						},
 						"entityGovernService": {
@@ -250,7 +250,7 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://odvimdm/RS_WS_Int01_jcp",
+									"resturi": "http://sabineweb/RS_WCF_Int02_jcp",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -1319,18 +1319,72 @@
 						},
 						"notificationManageService": {
 							"serviceSpecific": {
+								"defaultDataTypes": {
+									"notificationDataObject": "notificationObject",
+									"eventDataObject": "event"
+								},
 								"notificationManage": {
+									"persistNotification": false,
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "http://192.168.0.18:5005/api/",
+											"restUri": "http://mdmuicluster:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
 									]
 								}
 							},
-							"platformSpecific": {}
+							"platformSpecific": {
+								"searchStore": {
+									"domains": {
+										"notificationDataObject": {
+											"objectTypes": {
+												"notificationObject": {
+													"indices": {
+														"readIndex": "jcpnotificationreadindex",
+														"writeIndex": "jcpnotificationwriteindex"
+													}
+												}
+											}
+										},
+										"eventDataObject": {
+											"objectTypes": {
+												"event": {
+													"indices": {
+														"readIndex": "jcpeventreadindex",
+														"writeIndex": "jcpeventwriteindex"
+													}
+												}
+											}
+										}
+									}
+								},
+								"objectStore": {
+									"domains": {
+										"notificationDataObject": {
+											"objectTypes": {
+												"notificationObject": {
+													"tables": {
+														"readTable": "jcpnotificationwritetable",
+														"writeTable": "jcpnotificationwritetable"
+													}
+												}
+											}
+										},
+										"eventDataObject": {
+											"objectTypes": {
+												"event": {
+													"tables": {
+														"readTable": "jcpeventwritetable",
+														"writeTable": "jcpeventwritetable"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						},
 						"configurationManageService": {
 							"serviceSpecific": {
@@ -1540,24 +1594,27 @@
 						},
 						"authenticationService": {
 							"serviceSpecific": {
-								"isSamlEnabled": true,
-								"isApiAuthEnabled": true,
+								"isApiAuthEnabled": false,
 								"isOAuthEnabled": false,
 								"saml": {
 									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
 									"issuer": "urn:riversand.auth0.com",
 									"IdPCert": "../keys/riversand-auth0.crt",
 									"assertionLookup": {
+										"vendorName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
 										"userId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn",
-										"userRoles": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/roles",
-										"vendorName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor"
+										"userName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userName",
+										"firstName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstName",
+										"lastName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastName",
+										"userEmail": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userEmail",
+										"userRoles": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/roles"
 									}
 								},
 								"api": {
 									"clients": [
 										{
 											"clientId": "externalClient",
-											"clientAuthKey": "3218fa37-f809-4be4-b88e-653419b20e28"
+											"clientAuthKey": "de8294ab-9c1c-4891-ae52-9e0458f01365"
 										},
 										{
 											"clientId": "rufClient",
@@ -1566,6 +1623,10 @@
 										{
 											"clientId": "copClient",
 											"clientAuthKey": "cf117706-6222-4ef2-b145-4ab761e617ce"
+										},
+										{
+											"clientId:": "governanceClient",
+											"clientAuthKey": "a6415bff-7a04-4f2e-a557-ddf8a830d498"
 										}
 									]
 								},
