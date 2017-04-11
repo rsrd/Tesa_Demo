@@ -1252,6 +1252,190 @@
           }
         }
       }
+    },
+    {
+      "id": "updateProductWorkflow_workflowDefinition",
+      "name": "updateProductWorkflow",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflows": {
+            "group": [
+              {
+                "workflowName": {
+                  "values": [
+                    {
+                      "value": "Update Product Workflow"
+                    }
+                  ]
+                },
+                "workflowVersion": {
+                  "values": [
+                    {
+                      "value": "V1.0"
+                    }
+                  ]
+                },
+                "published": {
+                  "values": [
+                    {
+                      "value": true
+                    }
+                  ]
+                },
+                "activities": {
+                  "group": [
+                    {
+                      "activityGuid": {
+                        "values": [
+                          {
+                            "value": "4feccba9-977c-44a3-9dc1-d2d13ab44bbf"
+                          }
+                        ]
+                      },
+                      "activityName": {
+                        "values": [
+                          {
+                            "value": "Buyer: Review SKU"
+                          }
+                        ]
+                      },
+                      "sequence": {
+                        "values": [
+                          {
+                            "value": "1"
+                          }
+                        ]
+                      },
+                      "assignmentType": {
+                        "values": [
+                          {
+                            "value": "RoundRobin"
+                          }
+                        ]
+                      },
+                      "allowedRoles": {
+                        "values": [
+                          {
+                            "value": "JCP User"
+                          }
+                        ]
+                      },
+                      "allowedUsers": {
+                        "values": []
+                      },
+                      "actions": {
+                        "group": [
+                          {
+                            "actionName": {
+                              "values": [
+                                {
+                                  "value": "Approve"
+                                }
+                              ]
+                            },
+                            "actionText": {
+                              "values": [
+                                {
+                                  "value": "Approve"
+                                }
+                              ]
+                            },
+                            "actionIcon": {
+                              "values": [
+                                {
+                                  "value": "Approve.png"
+                                }
+                              ]
+                            },
+                            "commentsMode": {
+                              "values": [
+                                {
+                                  "value": "Optional"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "activityGuid": {
+                        "values": [
+                          {
+                            "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                          }
+                        ]
+                      },
+                      "activityName": {
+                        "values": [
+                          {
+                            "value": "Publish"
+                          }
+                        ]
+                      },
+                      "sequence": {
+                        "values": [
+                          {
+                            "value": "2"
+                          }
+                        ]
+                      },
+                      "assignmentType": {
+                        "values": []
+                      },
+                      "allowedRoles": {
+                        "values": [
+                          {
+                            "value": "Administrator"
+                          }
+                        ]
+                      },
+                      "allowedUsers": {
+                        "values":[]
+                      },
+                      "actions": {
+                        "group": [
+                          {
+                            "actionName": {
+                              "values": [
+                                {
+                                  "value": "Done"
+                                }
+                              ]
+                            },
+                            "actionText": {
+                              "values": [
+                                {
+                                  "value": "Done"
+                                }
+                              ]
+                            },
+                            "actionIcon": {
+                              "values": [
+                                {
+                                  "value": "Done.png"
+                                }
+                              ]
+                            },
+                            "commentsMode": {
+                              "values": [
+                                {
+                                  "value": "Optional"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
