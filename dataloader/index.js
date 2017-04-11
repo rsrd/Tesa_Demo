@@ -47,11 +47,11 @@ else {
         console.log("\n");
         rl.question("2. Good, next question, whats' the tenant Id:", (tenantId) => {
             console.log("\nYou have below options to choose from---------------------------------------\n");
-            console.log("all");
             console.log("tenant-config");
             console.log("model");
             console.log("data");
             console.log("config");
+            console.log("all - model, data and config");
             console.log("\n----------------------------------------------------------------------------\n");
             rl.question('3. What option you like:', (option) => {
                 rl.question('4. Ok, last question, do you want to flush the data before starting load? (Y/ N):', (flush) => {

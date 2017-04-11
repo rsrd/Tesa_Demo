@@ -250,7 +250,7 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://172.30.6.53/MDMCenterLite_WCFservices",
+									"resturi": "http://odvimdm/RS_WS_Int01_jcp",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -1323,7 +1323,7 @@
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "http://192.168.0.130:5005/api/",
+											"restUri": "http://192.168.0.18:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
