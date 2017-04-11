@@ -20,6 +20,15 @@
                                 "id": "newProductSetup_workflowDefinition",
                                 "type": "workflowDefinition"
                             }
+                        },
+                        {
+                            "id": "rel102",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "updateProductWorkflow_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
                         }
                     ]
                 },
