@@ -1790,7 +1790,7 @@
 						"properties": {
 							"externalName": "Id",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"skuType": {
@@ -1811,70 +1811,70 @@
 						"properties": {
 							"externalName": "Sku Number",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"retailSkuNumber": {
 						"properties": {
 							"externalName": "Retail Sku Number",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"hideDisplayIndicator": {
 						"properties": {
 							"externalName": "Hide Display",
 							"groupName": "Basic",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"skuQuantity": {
 						"properties": {
 							"externalName": "Quantity",
 							"groupName": "Basic",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"upcBarcode": {
 						"properties": {
 							"externalName": "UPC",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"creationDate": {
 						"properties": {
 							"externalName": "Creation Date",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "date"
 						}
 					},
 					"startDate": {
 						"properties": {
 							"externalName": "On-Site Date",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "date"
 						}
 					},
 					"endDate": {
 						"properties": {
 							"externalName": "Off-Site Date",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "date"
 						}
 					},
 					"displayName": {
 						"properties": {
 							"externalName": "Display Name",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"description": {
 						"properties": {
 							"externalName": "Description",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"status": {
@@ -1895,7 +1895,7 @@
 						"properties": {
 							"externalName": "ORIN",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"division": {
@@ -2098,7 +2098,7 @@
 						"properties": {
 							"externalName": "SKU Grouping",
 							"groupName": "Basic",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"channel": {
@@ -2119,35 +2119,35 @@
 						"properties": {
 							"externalName": "Direct Ship Restrict Code",
 							"groupName": "Shipping Attributes",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"disposalFee": {
 						"properties": {
 							"externalName": "Disposal Fee Code",
 							"groupName": "Shipping Attributes",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"willCallRestrict": {
 						"properties": {
 							"externalName": "Will Call Restrict Code",
 							"groupName": "Shipping Attributes",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"parantheticAmount": {
 						"properties": {
 							"externalName": "Paranthetic Amount",
 							"groupName": "Shipping Attributes",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"willCallFactoryShipInd": {
 						"properties": {
 							"externalName": "Will Call Factory Ship",
 							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"nonContinentalPrepaid": {
@@ -2182,21 +2182,21 @@
 						"properties": {
 							"externalName": "Unusual Demand Quantity",
 							"groupName": "Advanced",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"hazMatFlag": {
 						"properties": {
 							"externalName": "Haz Mat Flag",
 							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"prop65Indicator": {
 						"properties": {
 							"externalName": "Prop 65 Indicator",
 							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"supplierNumberName": {
@@ -2210,98 +2210,98 @@
 						"properties": {
 							"externalName": "Supplier Site Number",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storePrimarySupplierId": {
 						"properties": {
 							"externalName": "Store Primary Supplier ID",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecomPrimarySupplierId": {
 						"properties": {
 							"externalName": "Ecom Primary Supplier ID",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"supplierChannel": {
 						"properties": {
 							"externalName": "Supplier Channel",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"alternateSupplierID": {
 						"properties": {
 							"externalName": "Alternate Supplier ID",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"msrp": {
 						"properties": {
 							"externalName": "MSRP",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"storeUnitCost": {
 						"properties": {
 							"externalName": "Store Unit Cost",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"ecommUnitCost": {
 						"properties": {
 							"externalName": "eComm Unit Cost",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"retail": {
 						"properties": {
 							"externalName": "Retail",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"length": {
 						"properties": {
 							"externalName": "Length",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"width": {
 						"properties": {
 							"externalName": "Width",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"height": {
 						"properties": {
 							"externalName": "Height",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"grossWeight": {
 						"properties": {
 							"externalName": "Gross Weight",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"liquidVolume": {
 						"properties": {
 							"externalName": "Liquid Volume",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"liquidUnitofMeasure": {
@@ -2350,21 +2350,21 @@
 						"properties": {
 							"externalName": "Planned OnSite Date (mm/dd/yyyy)",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "dateTime"
 						}
 					},
 					"warrantyFlag": {
 						"properties": {
 							"externalName": "Warranty Flag",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"monogramCharge": {
 						"properties": {
 							"externalName": "Monogram Charge",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"diff1Type": {
@@ -2441,28 +2441,28 @@
 						"properties": {
 							"externalName": "COLOR DESC",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommColor": {
 						"properties": {
 							"externalName": "eComm Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommColorAbbr": {
 						"properties": {
 							"externalName": "eComm Color Abbr",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storeColorAbbr": {
 						"properties": {
 							"externalName": "Store Color Abbr",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"printPattern": {
@@ -2483,77 +2483,77 @@
 						"properties": {
 							"externalName": "Artwork ID",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"vpn": {
 						"properties": {
 							"externalName": "VPN",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storeUnitCostColor": {
 						"properties": {
 							"externalName": "Store Unit Cost @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommUnitCostColor": {
 						"properties": {
 							"externalName": "eComm Unit Cost @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommActiveSizes": {
 						"properties": {
 							"externalName": "eComm Active Sizes",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storePrimarySupplierIdColor": {
 						"properties": {
 							"externalName": "Store Primary Supplier ID @ Color",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"ecomPrimarySupplierIdColor": {
 						"properties": {
 							"externalName": "Ecom Primary Supplier ID @ Color",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"innerPackIncrementColor": {
 						"properties": {
 							"externalName": "Inner Pack (Increment) @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"cost": {
 						"properties": {
 							"externalName": "Cost",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"ecommInnerPack": {
 						"properties": {
 							"externalName": "eComm Inner Pack",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"ecommOOSDate": {
 						"properties": {
 							"externalName": "eComm OOS Date",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "dateTime"
 						}
 					},
 					"specialProgramType": {
@@ -2602,14 +2602,14 @@
 						"properties": {
 							"externalName": "Factory Ship Lead Time",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"sizeCase": {
 						"properties": {
 							"externalName": "Size: Case",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storeCollectionNumberName": {
@@ -2644,14 +2644,14 @@
 						"properties": {
 							"externalName": "Supplier/Mfr Ship Point",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"sizeInner": {
 						"properties": {
 							"externalName": "Size: Inner",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"packageType": {
@@ -2700,28 +2700,28 @@
 						"properties": {
 							"externalName": "Whse Supplier Ship Point 1",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"supplierLeadTime": {
 						"properties": {
 							"externalName": "Supplier Lead Time",
 							"groupName": "Supplier",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"eComHangingIndicator": {
 						"properties": {
 							"externalName": "e-Com Hanging Indicator",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"effIndicator": {
 						"properties": {
 							"externalName": "EFF Indicator",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"storeSet": {
@@ -2756,35 +2756,35 @@
 						"properties": {
 							"externalName": "Christmas Indicator",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"protectionPlan": {
 						"properties": {
 							"externalName": "Protection Plan",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"ecommSupplierShipPoint": {
 						"properties": {
 							"externalName": "eComm Supplier Ship Point",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"maxBackorderDays": {
 						"properties": {
 							"externalName": "Max Backorder Days",
 							"groupName": "Shipping",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"storeActiveSizes": {
 						"properties": {
 							"externalName": "Store Active Sizes",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"storePurchaseType": {
@@ -2889,7 +2889,7 @@
 						"properties": {
 							"externalName": "PPK #",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommJcpStatus": {
@@ -2910,42 +2910,42 @@
 						"properties": {
 							"externalName": "Inner Quantity @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"caseQuantityColor": {
 						"properties": {
 							"externalName": "Case Quantity @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"conceptual": {
 						"properties": {
 							"externalName": "Conceptual",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"whseProcessingFee1": {
 						"properties": {
 							"externalName": "Whse Processing Fee 1",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"complianceLikeItem": {
 						"properties": {
 							"externalName": "Compliance Like Item",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"enterpriseInventoryIndicator": {
 						"properties": {
 							"externalName": "Enterprise Inventory Indicator",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"fashionPyramid": {
@@ -3022,140 +3022,140 @@
 						"properties": {
 							"externalName": "Store OOS Date",
 							"groupName": "Dates",
-							"dataType": "DateTime"
+							"dataType": "dateTime"
 						}
 					},
 					"factoryShipLimitedInvInd": {
 						"properties": {
 							"externalName": "Factory Ship Limited Inv Ind",
 							"groupName": "Item Details",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"minOrderQtyColor": {
 						"properties": {
 							"externalName": "Min Order Qty @ Color",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"ecommMinOrderQty": {
 						"properties": {
 							"externalName": "eComm Min Order Qty",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"shippingInfoRequired": {
 						"properties": {
 							"externalName": "Shipping Info Required",
 							"groupName": "Shipping",
-							"dataType": "Boolean"
+							"dataType": "boolean"
 						}
 					},
 					"productTitle": {
 						"properties": {
 							"externalName": "Product Title",
 							"groupName": "Item Details",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"assembledLength": {
 						"properties": {
 							"externalName": "Assembled Length(in inches)",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"assembledWidth": {
 						"properties": {
 							"externalName": "Assembled Width(in inches)",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"assembledHeight": {
 						"properties": {
 							"externalName": "Assembled Height(in inches)",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"assembledWeight": {
 						"properties": {
 							"externalName": "Assembled Weight(in pounds)",
 							"groupName": "Item Details",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"productDescription": {
 						"properties": {
 							"externalName": "Product Description",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"features1": {
 						"properties": {
 							"externalName": "Features 1",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"features2": {
 						"properties": {
 							"externalName": "Features 2",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"features3": {
 						"properties": {
 							"externalName": "Features 3",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"features4": {
 						"properties": {
 							"externalName": "Features 4",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"features5": {
 						"properties": {
 							"externalName": "Features 5",
 							"groupName": "Copy",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"searchKeywordsNavigation": {
 						"properties": {
 							"externalName": "Search keywords & Navigation",
 							"groupName": "SEO",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"competitorPrice": {
 						"properties": {
 							"externalName": "Competitor Price",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "integer"
 						}
 					},
 					"shipPointState": {
 						"properties": {
 							"externalName": "Ship point city",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"shipPointCity": {
 						"properties": {
 							"externalName": "Ship point state",
 							"groupName": "Supplier",
-							"dataType": "String"
+							"dataType": "string"
 						}
 					},
 					"stone": {
@@ -3190,14 +3190,49 @@
 						"properties": {
 							"externalName": "Initial Markup (%)",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "decimal"
 						}
 					},
 					"estimatedShippingExpense": {
 						"properties": {
 							"externalName": "Estimated Shipping Expense",
 							"groupName": "Pricing (USD)",
-							"dataType": "Numeric"
+							"dataType": "integer"
+						}
+					},
+					"grossProfit": {
+						"properties": {
+							"dataType": "integer",
+							"externalName": "Gross Profit",
+							"groupName": "Pricing (USD)"
+						}
+					},
+					"estimatedupsshippingcharge": {
+						"properties": {
+							"dataType": "integer",
+							"externalName": "Estimated UPS Shipping Charge",
+							"groupName": "Pricing (USD)"
+						}
+					},
+					"image": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Image",
+							"groupName": "Pricing (USD)"
+						}
+					},
+					"imageName": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Image Name",
+							"groupName": "Pricing (USD)"
+						}
+					},
+					"warrantydata": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Warranty Data",
+							"groupName": "Pricing (USD)"
 						}
 					}
 				},

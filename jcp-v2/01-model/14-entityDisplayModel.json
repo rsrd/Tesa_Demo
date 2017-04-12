@@ -947,9 +947,16 @@
 					},
 					"skuType": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
-					},
+						},
 					"skuNumber": {
 						"properties": {
 							"displayType": "TextBox"
@@ -962,7 +969,7 @@
 					},
 					"hideDisplayIndicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"skuQuantity": {
@@ -1002,7 +1009,14 @@
 					},
 					"status": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"orin": {
@@ -1012,72 +1026,170 @@
 					},
 					"division": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"subDivision": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"entity": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"brand": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"warranty": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"productLine": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"productType": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"sizeRange": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"class": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"subClass": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"source": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"skuItemType": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"skuGrouping": {
@@ -1087,7 +1199,14 @@
 					},
 					"channel": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"directShipRestrict": {
@@ -1112,17 +1231,31 @@
 					},
 					"willCallFactoryShipInd": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"nonContinentalPrepaid": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"continentalPrepaid": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"unusualDemandQuantity": {
@@ -1132,12 +1265,12 @@
 					},
 					"hazMatFlag": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"prop65Indicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"supplierNumberName": {
@@ -1217,17 +1350,38 @@
 					},
 					"liquidUnitofMeasure": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"countryOfManufacture": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"originIndicator": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"plannedOnSiteDate": {
@@ -1237,7 +1391,7 @@
 					},
 					"warrantyFlag": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"monogramCharge": {
@@ -1247,17 +1401,38 @@
 					},
 					"diff1Type": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"diff1Group": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"diff2Type": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"diff2Group": {
@@ -1322,12 +1497,12 @@
 					},
 					"storePrimarySupplierIdColor": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"ecomPrimarySupplierIdColor": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"innerPackIncrementColor": {
@@ -1422,12 +1597,12 @@
 					},
 					"eComHangingIndicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"effIndicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"storeSet": {
@@ -1442,12 +1617,12 @@
 					},
 					"christmasIndicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"protectionPlan": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"ecommSupplierShipPoint": {
@@ -1522,7 +1697,7 @@
 					},
 					"conceptual": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"whseProcessingFee1": {
@@ -1537,7 +1712,7 @@
 					},
 					"enterpriseInventoryIndicator": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"fashionPyramid": {
@@ -1572,7 +1747,7 @@
 					},
 					"factoryShipLimitedInvInd": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"minOrderQtyColor": {
@@ -1587,7 +1762,7 @@
 					},
 					"shippingInfoRequired": {
 						"properties": {
-							"displayType": "Boolean"
+							"displayType": "boolean"
 						}
 					},
 					"productTitle": {
