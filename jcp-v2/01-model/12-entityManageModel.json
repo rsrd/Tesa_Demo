@@ -3328,51 +3328,6 @@
 									"dataType": "decimal"
 								}
 							}
-						},
-						"relationships": {
-							"skuToImage": [
-								{
-									"properties": {
-										"externalName": "Images",
-										"relationshipType": "association",
-										"relatedEntityInfo": [
-											{
-												"relEntityType": "image"
-											}
-										]
-									},
-									"attributes": {
-										"linkDescription": {
-											"properties": {
-												"externalName": "Link Description",
-												"dataType": "string"
-											}
-										},
-										"status": {
-											"properties": {
-												"externalName": "Status",
-												"dataType": "string",
-												"referenceEntityInfo": [
-													{
-														"refRelationshipName": "hasReferenceTo",
-														"entityInfo": [
-															{
-																"entityType": "status"
-															}
-														]
-													}
-												]
-											}
-										},
-										"enabled": {
-											"properties": {
-												"externalName": "Enabled",
-												"dataType": "boolean"
-											}
-										}
-									}
-								}
-							]
 						}
 					}
 				]
@@ -4611,6 +4566,28 @@
 						}
 					}
 				]
+			}
+		},
+		{
+			"id": "classification_entityManageModel",
+			"name": "classification",
+			"type": "entityManageModel",
+			"data": {
+				"relationships": {
+					"belongsTo": [
+						{
+							"properties": {
+								"externalName": "Belongs To",
+								"relationshipType": "aggregation",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "classification"
+									}
+								]
+							}
+						}
+					]
+				}
 			}
 		}
 	]
