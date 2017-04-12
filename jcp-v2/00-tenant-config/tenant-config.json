@@ -250,7 +250,7 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://sabineweb/RS_WCF_Int02_jcp",
+									"resturi": "http://sabineweb/RS_WS_Int02_jcp",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -1601,7 +1601,7 @@
 									"issuer": "urn:riversand.auth0.com",
 									"IdPCert": "../keys/riversand-auth0.crt",
 									"assertionLookup": {
-										"vendorName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
+										"ownershipData": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
 										"userId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn",
 										"userName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userName",
 										"firstName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstName",
