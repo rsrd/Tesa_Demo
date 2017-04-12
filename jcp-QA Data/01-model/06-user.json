@@ -1,0 +1,144 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "admin1_user",
+			"name": "admin1",
+			"type": "user",
+			"properties": {
+				"firstName": "Admin",
+				"lastName": "Admin",
+				"login": "admin1",
+				"password": "admin1",
+				"email": "admin1@jcp.com",
+				"roles": [
+					"admin"
+				]
+			}
+		},
+		{
+			"id": "vendor1_user",
+			"name": "vendor1",
+			"type": "user",
+			"properties": {
+				"firstName": "Vendor",
+				"lastName": "Vendor",
+				"login": "vendor1",
+				"password": "vendor1",
+				"email": "vendor1@jcp.com",
+				"roles": [
+					"vendor"
+				]
+			}
+		},
+		{
+			"id": "buyer1_user",
+			"name": "buyer1",
+			"type": "user",
+			"properties": {
+				"firstName": "Buyer",
+				"lastName": "Buyer",
+				"login": "buyer1",
+				"password": "buyer1",
+				"email": "buyer1@jcp.com",
+				"roles": [
+					"buyer"
+				]
+			}
+		},
+		{
+			"id": "assetEnrichment1_user",
+			"name": "assetEnrichment1",
+			"type": "user",
+			"properties": {
+				"firstName": "Asset Enrichment",
+				"lastName": "Asset Enrichment",
+				"login": "assetEnrichment1",
+				"password": "assetEnrichment1",
+				"email": "assetEnrichment1@jcp.com",
+				"roles": [
+					"assetEnrichment"
+				]
+			}
+		},
+		{
+			"id": "business1_user",
+			"name": "business1",
+			"type": "user",
+			"properties": {
+				"firstName": "Business",
+				"lastName": "Business",
+				"login": "business1",
+				"password": "business1",
+				"email": "business1@jcp.com",
+				"roles": [
+					"business"
+				]
+			}
+		},
+		{
+			"id": "copywriter1_user",
+			"name": "copywriter1",
+			"type": "user",
+			"properties": {
+				"firstName": "CopyWriter",
+				"lastName": "CopyWriter",
+				"login": "copywriter1",
+				"password": "copywriter1",
+				"email": "copywriter1@jcp.com",
+				"roles": [
+					"copywriter"
+				]
+			}
+		},
+		{
+			"id": "siteOps1_user",
+			"name": "siteOps1",
+			"type": "user",
+			"properties": {
+				"firstName": "Site Ops",
+				"lastName": "Site Ops",
+				"login": "siteOps1",
+				"password": "siteOps1",
+				"email": "siteOps1@jcp.com",
+				"roles": [
+					"siteOps"
+				]
+			}
+		},
+		{
+			"id": "taxonomyTeam1_user",
+			"name": "taxonomyTeam1",
+			"type": "user",
+			"properties": {
+				"firstName": "Taxonomy Team",
+				"lastName": "Taxonomy Team",
+				"login": "taxonomyTeam1",
+				"password": "taxonomyTeam1",
+				"email": "taxonomyTeam1@jcp.com",
+				"roles": [
+					"taxonomyTeam"
+				]
+			}
+		},
+		{
+			"id": "siteMerchandiser1_user",
+			"name": "siteMerchandiser1",
+			"type": "user",
+			"properties": {
+				"firstName": "Site Merchandiser",
+				"lastName": "Site Merchandiser",
+				"login": "siteMerchandiser1",
+				"password": "siteMerchandiser1",
+				"email": "siteMerchandiser1@jcp.com",
+				"roles": [
+					"siteMerchandiser"
+				]
+			}
+		}
+	]
+}
