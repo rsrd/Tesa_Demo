@@ -1,0 +1,207 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entities": [
+        {
+            "id": "sku5006710147-01-02",
+            "type": "sku",
+            "properties": {
+                "source": "internal",
+                "modifiedByService": "entityservice",
+                "modifiedBy": "Vendor User",
+                "modifiedDate": "3/17/2017  6:33:52 PM"
+            },
+            "data": {
+                "attributes": {
+                    "creationDate": {
+                        "alias": "CREATION_DATE",
+                        "values": [
+                            {
+                                "value": "3/17/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "startDate": {
+                        "alias": "START_DATE",
+                        "values": [
+                            {
+                                "value": "3/17/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "endDate": {
+                        "alias": "END_DATE",
+                        "values": [
+                            {
+                                "value": "13/18/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "displayName": {
+                        "alias": "DISPLAY_NAME",
+                        "values": [
+                            {
+                                "value": "Earth Origins Sophie Strap Sandals Medium:Black:6",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "alias": "DESCRIPTION",
+                        "values": [
+                            {
+                                "value": "Get ready to slip into the ultimate comfort sandal",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "orin": {
+                        "alias": "ORIN",
+                        "values": [
+                            {
+                                "value": "5006710147",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "id": {
+                        "alias": "SKU_ID",
+                        "values": [
+                            {
+                                "value": "sku5006710147-01-02",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "shortName": {
+                        "alias": "SHORT_NM",
+                        "values": [
+                            {
+                                "value": "EarthOriginsSophieStrapSandalsMedium:Black:6",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "skuType": {
+                        "alias": "SKU_TYPE",
+                        "values": [
+                            {
+                                "value": "Black:6",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "skuQuantity": {
+                        "alias": "SKU_QY",
+                        "values": [
+                            {
+                                "value": "2",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "color": {
+                        "alias": "COLOR",
+                        "values": [
+                            {
+                                "value": "Black",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "size": {
+                        "alias": "SIZE",
+                        "values": [
+                            {
+                                "value": "M",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "width": {
+                        "alias": "WIDTH",
+                        "values": [
+                            {
+                                "value": "MEDIUM",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "status": {
+                        "alias": "STUS_CD",
+                        "values": [
+                            {
+                                "value": "Active",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "onlineOnly": {
+                        "alias": "ONLINE_ONLY",
+                        "values": [
+                            {
+                                "value": "True",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "isChildOf": [
+                        {
+                            "id": "Rel1",
+                            "direction": "both",
+                            "source": "internal",
+                            "operation": "composition",
+                            "alias": "lot",
+                            "attributes": {
+                                "shortName": {
+                                    "alias": "SHORT_NM",
+                                    "values": [
+                                        {
+                                            "value": "EarthOriginsSophieStrapSandalsMedium",
+                                            "source": "internal",
+                                            "locale": "en-US"
+                                        }
+                                    ]
+                                }
+                            },
+                            "relTo": {
+                                "id": "lt5006710147-01",
+                                "type": "lot"
+                            }
+                        }
+                    ]
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "classification": "_ALL"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
