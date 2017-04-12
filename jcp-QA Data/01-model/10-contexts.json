@@ -1,0 +1,163 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "kitLot_lottype",
+			"name": "kitLot",
+			"type": "lottype",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Kit Lot"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "serviceLot_lottype",
+			"name": "serviceLot",
+			"type": "lottype",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Service Lot"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "kitSKU_skutype",
+			"name": "kitSKU",
+			"type": "skutype",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Kit SKU"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "_root_classification",
+			"name": "_root",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "RDP Root Class node. This is a ficticious node to represent the root where all classification trees "
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "apparel_classification",
+			"name": "apparel",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Apparel"
+							}
+						]
+					}
+				},
+				"relationships": {
+					"belongsTo": [
+						{
+							"id": "",
+							"direction": "both",
+							"source": "internal",
+							"operation": "aggregation",
+							"relTo": {
+								"id": "_root_classification",
+								"type": "classification"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shirts_classification",
+			"name": "shirts",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Shirts"
+							}
+						]
+					}
+				},
+				"relationships": {
+					"belongsTo": [
+						{
+							"id": "",
+							"direction": "both",
+							"source": "internal",
+							"operation": "aggregation",
+							"relTo": {
+								"id": "apparel_classification",
+								"type": "classification"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "mens_classification",
+			"name": "mens",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Mens"
+							}
+						]
+					}
+				},
+				"relationships": {
+					"belongsTo": [
+						{
+							"id": "",
+							"direction": "both",
+							"source": "internal",
+							"operation": "aggregation",
+							"relTo": {
+								"id": "shirts_classification",
+								"type": "classification"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

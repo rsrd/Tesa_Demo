@@ -1,0 +1,221 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "sku_entityAuthorizationModel_vendor",
+			"name": "sku_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true
+			},
+			"data": {
+				"attributes": {
+					"color": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"size": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"id": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"skuType": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"skuNumber": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"retailSkuNumber": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"hideDisplayIndicator": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"skuQuantity": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"upcBarcode": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"displayName": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"description": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"status": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"skuItemType": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"skuGrouping": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"channel": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"directShipRestrict": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"disposalFee": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"willCallRestrict": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"parantheticAmount": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"willCallFactoryShipInd": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"nonContinentalPrepaid": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"continentalPrepaid": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"unusualDemandQuantity": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"hazMatFlag": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"prop65Indicator": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"supplierNumberName": {
+						"properties": {
+							"readPermission": true,
+							"ownerPermission": true
+						}
+					},
+					"supplierSiteNumber": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					}
+				},
+				"relationships": {
+					"kitSkuToSku": [
+						{
+							"properties": {
+								"writePermission": true,
+								"readPermission": true
+							}
+						}
+					],
+					"skuToImage": [
+						{
+							"properties": {
+								"writePermission": true,
+								"readPermission": true
+							}
+						}
+					],
+					"isChildOf": [
+						{
+							"properties": {
+								"writePermission": true,
+								"readPermission": true
+							}
+						}
+					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,207 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entities": [
+        {
+            "id": "sku5007213206-01-06",
+            "type": "sku",
+            "properties": {
+                "source": "internal",
+                "modifiedByService": "entityservice",
+                "modifiedBy": "Vendor User",
+                "modifiedDate": "3/17/2017  6:33:52 PM"
+            },
+            "data": {
+                "attributes": {
+                    "creationDate": {
+                        "alias": "CREATION_DATE",
+                        "values": [
+                            {
+                                "value": "3/17/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "startDate": {
+                        "alias": "START_DATE",
+                        "values": [
+                            {
+                                "value": "3/17/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "endDate": {
+                        "alias": "END_DATE",
+                        "values": [
+                            {
+                                "value": "13/18/2017",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "displayName": {
+                        "alias": "DISPLAY_NAME",
+                        "values": [
+                            {
+                                "value": "Clarks Delana Macrae Womens Sandal Medium:Black:7",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "alias": "DESCRIPTION",
+                        "values": [
+                            {
+                                "value": "Shoe Strap Type: T-Strap, Features: Comfort, Shoe Heel Height: 2 Inches",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "orin": {
+                        "alias": "ORIN",
+                        "values": [
+                            {
+                                "value": "5007213206",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "id": {
+                        "alias": "SKU_ID",
+                        "values": [
+                            {
+                                "value": "sku5007213206-01-06",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "shortName": {
+                        "alias": "SHORT_NM",
+                        "values": [
+                            {
+                                "value": "ClarksDelanaMacraeWomensSandalMedium:Black:7",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "skuType": {
+                        "alias": "SKU_TYPE",
+                        "values": [
+                            {
+                                "value": "Black:7",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "skuQuantity": {
+                        "alias": "SKU_QY",
+                        "values": [
+                            {
+                                "value": "2",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "color": {
+                        "alias": "COLOR",
+                        "values": [
+                            {
+                                "value": "Black",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "size": {
+                        "alias": "SIZE",
+                        "values": [
+                            {
+                                "value": "L",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "width": {
+                        "alias": "WIDTH",
+                        "values": [
+                            {
+                                "value": "MEDIUM",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "status": {
+                        "alias": "STUS_CD",
+                        "values": [
+                            {
+                                "value": "Active",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    },
+                    "onlineOnly": {
+                        "alias": "ONLINE_ONLY",
+                        "values": [
+                            {
+                                "value": "True",
+                                "source": "internal",
+                                "locale": "en-US"
+                            }
+                        ]
+                    }
+                },
+                "relationships": {
+                    "isChildOf": [
+                        {
+                            "id": "Rel1",
+                            "direction": "both",
+                            "source": "internal",
+                            "operation": "composition",
+                            "alias": "lot",
+                            "attributes": {
+                                "shortName": {
+                                    "alias": "SHORT_NM",
+                                    "values": [
+                                        {
+                                            "value": "ClarksDelanaMacraeWomensSandalMedium",
+                                            "source": "internal",
+                                            "locale": "en-US"
+                                        }
+                                    ]
+                                }
+                            },
+                            "relTo": {
+                                "id": "lt5007213206-01",
+                                "type": "lot"
+                            }
+                        }
+                    ]
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "classification": "_ALL"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
