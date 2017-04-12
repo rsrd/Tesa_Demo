@@ -1,0 +1,90 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityData",
+      "collectionName": "entities",
+      "responseObjectName": "response"
+   },
+   "entities": [
+      {
+         "id": "staus_active",
+         "name": "active",
+         "type": "status",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "active",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "Active",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      {
+         "id": "staus_new",
+         "name": "new",
+         "type": "status",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "new",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "New",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      {
+         "id": "staus_discontinued",
+         "name": "discontinued",
+         "type": "status",
+         "data": {
+            "attributes": {
+               "code": {
+                  "values": [
+                     {
+                        "value": "discontinued",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               },
+               "value": {
+                  "values": [
+                     {
+                        "value": "Discontinued",
+                        "source": "internal",
+                        "locale": "en-US"
+                     }
+                  ]
+               }
+            }
+         }
+      }
+   ]
+}

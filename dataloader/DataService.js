@@ -2,7 +2,15 @@ var dataServiceBase = require('./DataServiceBase');
 var config = require('./config/config');
 
 async function sendDataRequest(tenantId, serviceUrl, req) {
+
     var url = config.toolConfig.webUrl + '/' + tenantId + '/api' + serviceUrl;
+
+    //console.log('req ', JSON.stringify(req));
+
+    if(req && req.configObject && req.configObject.type == "tenantserviceconfig") {
+        //console.log('tenant config');
+        url = config.toolConfig.webUrl + '/dataplatform/api/configurationservice/create';
+    }
 
     var options = _prepareOptions(url, "POST", req);
     var result = await dataServiceBase.sendRequest(options);
@@ -29,14 +37,15 @@ async function deleteIndicesRequest(tenantId, index) {
     return result;
 }
 
-
 function _prepareOptions(url, method, req) {
     var options = {
         url: url,
         method: method,
         headers: {
             "Cache-Control": "no-cache",
-            "version": 8.1
+            "version": 8.1,
+            "content-type": "application/json",
+            "x-rdp-userRoles": '["buyer"]'
         },
         body: req,
         json: true,

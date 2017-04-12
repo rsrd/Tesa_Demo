@@ -40,7 +40,6 @@ function startLoadingData(folder, option, tenant, flush) {
             
             console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
             
-
             if (checkIndicesStatus(results)) {
                 selectedFolders.forEach(function (selectedFolder) {
                     if (selectedFolder) {
@@ -281,7 +280,11 @@ function getSelectedFolderNames(option) {
     var selectedFolders = [];
     switch (option.toLowerCase()) {
         case "all":
+            //selectedFolders.push("00-tenant-config", "01-model", "02-data", "03-config");
             selectedFolders.push("01-model", "02-data", "03-config");
+            break;
+        case "tenant-config":
+            selectedFolders.push("00-tenant-config");
             break;
         case "model":
             selectedFolders.push("01-model");

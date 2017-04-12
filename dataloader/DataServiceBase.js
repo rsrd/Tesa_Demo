@@ -2,7 +2,7 @@ var request = require('request-promise-native');
 
 async function sendRequest(options) {
 
-    //console.log('RDF req ', options);
+    //console.log('RDF req ', JSON.stringify(options));
 
     //var reqPromise = "request sent";
 
