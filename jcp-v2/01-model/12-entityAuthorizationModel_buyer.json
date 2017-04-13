@@ -78,6 +78,45 @@
 			}
 		},
 		{
+			"id": "thing_entityAuthorizationModel_buyer",
+			"name": "thing_entityAuthorizationModel_buyer",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
 			"id": "classification_entityAuthorizationModel_buyer",
 			"name": "classification_entityAuthorizationModel_buyer",
 			"type": "entityAuthorizationModel",

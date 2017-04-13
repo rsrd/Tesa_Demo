@@ -160,6 +160,45 @@
 					}
 				]
 			}
+		},
+		{
+			"id": "thing_entityAuthorizationModel_admin",
+			"name": "thing_entityAuthorizationModel_admin",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		}
 	]
 }
