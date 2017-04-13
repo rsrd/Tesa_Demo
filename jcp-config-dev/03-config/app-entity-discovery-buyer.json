@@ -936,16 +936,17 @@
 												"name": "rock-attribute-manage",
 												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
 												"properties": {
+													"allow-save-on-error": false,
 													"config-context": {
 														"attributeNames": [
+															"displayName",
 															"alsoInStore",
 															"brand",
 															"brandLogo",
 															"channel",
 															"channelAvailability",
 															"description",
-															"displayAskAndAnswerSection",
-															"displayName",
+															"displayAskAndAnswerSection",															
 															"factSheet",
 															"featureColor",
 															"hideDisplayIndicator",
