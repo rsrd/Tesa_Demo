@@ -90,51 +90,51 @@
     "overrides": [
       {
         "source": "@excelColumn(Sheet1.A)",
-        "target": "id",
+        "destination": "id",
         "default": "default value",
         "type": "int/bool/nested/collection/Unknown",
         "isRequired": "false"
       },
       {
         "source": "PRD TYP",
-        "target": "type",
+        "destination": "type",
         "default": "default value",
         "type": "int/bool/nested/collection/Unknown",
         "isRequired": "false"
       },
       {
         "source": "@value(rms)",
-        "target": "source"
+        "destination": "source"
       },
       {
         "source": "@date(4/3/2017)",
-        "target": "createdDate"
+        "destination": "createdDate"
       },
       {
         "source": "@value(ghostUser)",
-        "target": "createdBy"
+        "destination": "createdBy"
       },
       {
         "source": "@date(now)",
-        "target": "modifiedDate"
+        "destination": "modifiedDate"
       },
       {
         "source": "@value(another ghostUser)",
-        "target": "modifiedBy"
+        "destination": "modifiedBy"
       },
       {
         "source": "Column XYZ",
-        "target": "csapDescriptionOfNart",
+        "destination": "csapDescriptionOfNart",
         "context": "list:poductMaster"
       },
       {
         "source": "Column ABC",
-        "target": "description",
+        "destination": "description",
         "context": "self"
       },
       {
         "source": "Column DEF",
-        "target": "description",
+        "destination": "description",
         "context": "channel:Web"
       }
     ]
