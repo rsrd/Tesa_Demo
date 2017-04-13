@@ -250,11 +250,16 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://sabineweb/RS_WS_Int02_jcp",
+									"resturi": "http://sabineweb/RS_WCF_Int02_jcp",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
 									"changeassignment": "/WorkflowRestService.svc/ChangeAssignment"
+								},
+								"export": {
+									"isExportEnabled": "true",
+									"resturi": "http://impexpapicluster:9095/",
+									"publish": "publish"
 								}
 							},
 							"platformSpecific": {
@@ -298,8 +303,8 @@
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "jcpgoverneventreadindex",
+														"writeIndex": "jcpgoverneventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -376,6 +381,12 @@
 													"tables": {
 														"readTable": "jcpeventwritetable",
 														"writeTable": "jcpeventwritetable"
+													}
+												},
+												"entitygovernevent": {
+													"tables": {
+														"readTable": "jcpgoverneventwritetable",
+														"writeTable": "jcpgoverneventwritetable"
 													}
 												},
 												"entitygovernrequestsuccessevent": {
@@ -1173,6 +1184,10 @@
 									"eventDataObject": "event",
 									"requestDataObject": "request"
 								},
+								"eventToServiceMapping": {
+									"entitygovernevent": "entityGovernService",
+									"entitymanageevent": "entityManageService"
+								},
 								"eventManage": {
 									"isEventsEnabled": false
 								}
@@ -1625,7 +1640,7 @@
 											"clientAuthKey": "cf117706-6222-4ef2-b145-4ab761e617ce"
 										},
 										{
-											"clientId:": "governanceClient",
+											"clientId": "governanceClient",
 											"clientAuthKey": "a6415bff-7a04-4f2e-a557-ddf8a830d498"
 										}
 									]
