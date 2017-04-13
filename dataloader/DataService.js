@@ -49,7 +49,7 @@ function _prepareOptions(url, method, req) {
             "x-rdp-username": 'system',
             "x-rdp-useremail": 'admin@jcp.com',
             "x-rdp-userroles": '["admin"]',
-            "x-rdp-ownershipdata": '["admin"]'
+            "x-rdp-ownershipdata": ''
         },
         body: req,
         json: true,
