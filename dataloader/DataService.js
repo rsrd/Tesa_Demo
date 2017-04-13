@@ -45,7 +45,11 @@ function _prepareOptions(url, method, req) {
             "Cache-Control": "no-cache",
             "version": 8.1,
             "content-type": "application/json",
-            "x-rdp-userRoles": '["buyer"]'
+            "x-rdp-userid": 'admin1',
+            "x-rdp-username": 'admin1',
+            "x-rdp-useremail": 'admin@jcp.com',
+            "x-rdp-userroles": '["admin"]',
+            "x-rdp-ownershipdata": '["admin"]'
         },
         body: req,
         json: true,
