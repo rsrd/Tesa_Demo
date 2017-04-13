@@ -6,6 +6,78 @@
 	},
 	"entityModels": [
 		{
+			"id": "party_entityAuthorizationModel_vendor",
+			"name": "party_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "referenceData_entityAuthorizationModel_vendor",
+			"name": "referenceData_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "digitalAsset_entityAuthorizationModel_vendor",
+			"name": "digitalAsset_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "generic_entityAuthorizationModel_vendor",
+			"name": "generic_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
 			"id": "classification_entityAuthorizationModel_vendor",
 			"name": "classification_entityAuthorizationModel_vendor",
 			"type": "entityAuthorizationModel",
@@ -229,6 +301,16 @@
 				"contexts": [
 					{
 						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					{
+						"context": {
+							"taxonomy": "webHierarchy",
 							"classification": "_ALL"
 						},
 						"properties": {
