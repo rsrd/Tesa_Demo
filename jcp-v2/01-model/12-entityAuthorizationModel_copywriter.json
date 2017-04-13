@@ -10,108 +10,147 @@
 			"name": "party_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "referenceData_entityAuthorizationModel_copywriter",
 			"name": "referenceData_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "digitalAsset_entityAuthorizationModel_copywriter",
 			"name": "digitalAsset_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "generic_entityAuthorizationModel_copywriter",
 			"name": "generic_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "thing_entityAuthorizationModel_copywriter",
+			"name": "thing_entityAuthorizationModel_copywriter",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "classification_entityAuthorizationModel_copywriter",
 			"name": "classification_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "channel_entityAuthorizationModel_copywriter",
 			"name": "channel_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
-				"readPermission": true
-			},
-			"attributesPermission": [
-				{
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"readPermission": true
-				}
-			]
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "sku_entityAuthorizationModel_copywriter",
@@ -119,38 +158,38 @@
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true
-			},
-			"attributesPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextAttributePermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextRelationshipPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			]
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "lot_entityAuthorizationModel_copywriter",
@@ -158,38 +197,38 @@
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true
-			},
-			"attributesPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextAttributePermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextRelationshipPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			]
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
 			"id": "ensemble_entityAuthorizationModel_copywriter",
@@ -197,77 +236,77 @@
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true
-			},
-			"attributesPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextAttributePermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextRelationshipPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			]
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		},
 		{
-			"id": "ensemble_entityAuthorizationModel_copywriter",
-			"name": "ensemble_entityAuthorizationModel_copywriter",
+			"id": "productPresentation_entityAuthorizationModel_copywriter",
+			"name": "productPresentation_entityAuthorizationModel_copywriter",
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true
-			},
-			"attributesPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"relationshipsPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextAttributePermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			],
-			"contextRelationshipPermission": [
-				{
-					"writePermission": true,
-					"readPermission": true
-				}
-			]
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextAttributePermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextRelationshipPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
 		}
 	]
 }

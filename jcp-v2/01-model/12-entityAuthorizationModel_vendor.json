@@ -6,6 +6,27 @@
 	},
 	"entityModels": [
 		{
+			"id": "classification_entityAuthorizationModel_vendor",
+			"name": "classification_entityAuthorizationModel_vendor",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
 			"id": "sku_entityAuthorizationModel_vendor",
 			"name": "sku_entityAuthorizationModel_vendor",
 			"type": "entityAuthorizationModel",
