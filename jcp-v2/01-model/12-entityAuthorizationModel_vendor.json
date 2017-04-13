@@ -6,6 +6,78 @@
 	},
 	"entityModels": [
 		{
+			"id": "party_entityAuthorizationModel_buyer",
+			"name": "party_entityAuthorizationModel_buyer",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "referenceData_entityAuthorizationModel_buyer",
+			"name": "referenceData_entityAuthorizationModel_buyer",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "digitalAsset_entityAuthorizationModel_buyer",
+			"name": "digitalAsset_entityAuthorizationModel_buyer",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "generic_entityAuthorizationModel_buyer",
+			"name": "generic_entityAuthorizationModel_buyer",
+			"type": "entityAuthorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
 			"id": "classification_entityAuthorizationModel_vendor",
 			"name": "classification_entityAuthorizationModel_vendor",
 			"type": "entityAuthorizationModel",
