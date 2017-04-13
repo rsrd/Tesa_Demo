@@ -914,7 +914,7 @@
 					}
 				]
 			}
-								},
+		},
 		{
 			"id": "app-entity-manage_variant-create_lot_buyer_uiConfig",
 			"name": "app-entity-manage_variant-create",
@@ -937,51 +937,51 @@
 						},
 						"jsonData": {
 							"config": {
-									"stepperConfig": [
-										{
-											"index": "1",
-											"title": "Option Selection",
-											"status": "inprogress"
+								"stepperConfig": [
+									{
+										"index": "1",
+										"title": "Option Selection",
+										"status": "inprogress"
+									},
+									{
+										"index": "2",
+										"title": "Create Variants",
+										"status": ""
+									}
+								],
+								"name": "create-variants",
+								"label": "Create Variants",
+								"steps": [
+									{
+										"name": "step-1-selection-option",
+										"label": "Select Options to create Skus",
+										"component": {
+											"name": "rock-variants-option-select",
+											"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
+											"properties": {}
 										},
-										{
-											"index": "2",
-											"title": "Create Variants",
-											"status": ""
-										}
-									],
-									"name": "create-variants",
-									"label": "Create Variants",
-									"steps": [
-										{
-											"name": "step-1-selection-option",
-											"label": "Select Options to create Skus",
-											"component": {
-												"name": "rock-variants-option-select",
-												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
-												"properties": {}
-											},
-											"nextEvent": "onSave",
-											"skipEvent": "onCancel"
+										"nextEvent": "onSave",
+										"skipEvent": "onCancel"
+									},
+									{
+										"name": "step-2-create-variants",
+										"label": "Create variants for a given entity",
+										"component": {
+											"name": "rock-variants-create-grid",
+											"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
+											"properties": {}
 										},
-										{
-											"name": "step-2-create-variants",
-											"label": "Create variants for a given entity",
-											"component": {
-												"name": "rock-variants-create-grid",
-												"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
-												"properties": {}
-											},
-											"nextEvent": "onComplete",
-											"skipEvent": "onCancel"
-										}
-									]
+										"nextEvent": "onComplete",
+										"skipEvent": "onCancel"
+									}
+								]
 
 							}
 						}
 					}
 				]
 			}
-								},
+		},
 		{
 			"id": "app-entity-manage_rock-variants-create-grid_lot_buyer_uiConfig",
 			"name": "app-entity-manage_rock-variants-create-grid",
@@ -1003,32 +1003,32 @@
 							"role": "buyer"
 						},
 						"jsonData": {
-									"config": {
-										"createVariantsGridConfig": {
-											"viewMode": "Tabular",
-											"title": "Variant Data Table",
-											"mode": "Read",
-											"schemaType": "simple",
-											"tabular": {
-												"settings": {
-													"isMultiSelect": false,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Existing",
-														"name": "existing",
-														"sortable": false,
-														"filterable": false
-													}
-												]
+							"config":  {
+								"createVariantsGridConfig": {
+									"viewMode": "Tabular",
+									"title": "Variant Data Table",
+									"mode": "Read",
+									"schemaType": "simple",
+									"tabular": {
+										"settings": {
+											"isMultiSelect": false,
+											"actions": [
+												{
+													"name": "delete",
+													"icon": "pebble-icons:Delete",
+													"eventName": "delete-item"
+												}
+											]
+										},
+										"columns": [
+											{
+												"header": "Existing",
+												"name": "existing",
+												"sortable": false,
+												"filterable": false
 											}
+										]
+									}
 								},
 								"variantDefinitionUI": {
 									"name": "ehd1",
@@ -1047,9 +1047,9 @@
 													"sourceAttribute": "size",
 													"targetAttribute": "size",
 													"optional": true
-										}
+												}
 											]
-									}
+										}
 									]
 								}
 							}

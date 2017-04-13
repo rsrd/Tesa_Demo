@@ -79,7 +79,19 @@
 													"retailSkuNumber",
 													"shortName",
 													"skuNumber",
-													"skuType"
+													"skuType",
+													"productType",
+													"subProductType",
+													"vpn",
+													"colorDesc",
+													"size",
+													"cost",
+													"productTitle",
+													"creationDate",
+													"plannedOnSiteDate",
+													"warrantyFlag",
+													"ecommMinOrderQty",
+													"assembledHeight"
 												]
 											}
 										},
@@ -288,13 +300,14 @@
 										},
 										"nextEvent": "onSave",
 										"skipEvent": "onCancel"
-		}
-	]
-}
+									}
+								]
+							}
 						}
 					}
 				]
 			}
 		}
+
 	]
 }
