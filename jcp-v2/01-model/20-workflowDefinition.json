@@ -24,7 +24,7 @@
                 "workflowVersion": {
                   "values": [
                     {
-                      "value": "V1.2"
+                      "value": "V1.3"
                     }
                   ]
                 },
@@ -62,19 +62,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
                       "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "vendor"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -166,19 +166,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
                       "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "buyer"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -300,19 +300,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
-                      "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
+                       "allowedRoles": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "vendor"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -374,19 +374,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
-                      "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
+                       "allowedRoles": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "business"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -478,19 +478,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
-                      "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
+                     "allowedRoles": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "vendor"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -552,19 +552,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
-                      "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
+                       "allowedRoles": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "copywriter"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -626,19 +626,19 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
-                      "allowedRoles": {
-                        "values": []
-                      },
-                      "allowedUsers": {
+                       "allowedRoles": {
                         "values": [
                           {
-                            "value": "cfadmin"
+                            "value": "assetEnrichment"
                           }
                         ]
+                      },
+                      "allowedUsers": {
+                        "values": []
                       },
                       "actions": {
                         "group": [
@@ -1272,7 +1272,7 @@
                 "workflowVersion": {
                   "values": [
                     {
-                      "value": "V1.0"
+                      "value": "V1.1"
                     }
                   ]
                 },
@@ -1296,7 +1296,7 @@
                       "activityName": {
                         "values": [
                           {
-                            "value": "Buyer: Review SKU"
+                            "value": "Review SKU"
                           }
                         ]
                       },
@@ -1310,14 +1310,14 @@
                       "assignmentType": {
                         "values": [
                           {
-                            "value": "RoundRobin"
+                            "value": "Queue"
                           }
                         ]
                       },
                       "allowedRoles": {
                         "values": [
                           {
-                            "value": "JCP User"
+                            "value": "buyer"
                           }
                         ]
                       },

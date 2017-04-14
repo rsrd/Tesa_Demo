@@ -104,7 +104,19 @@
 			"type": "entityAuthorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true
+				"writePermission": true,
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
 			},
 			"data": {
 				"attributes": {

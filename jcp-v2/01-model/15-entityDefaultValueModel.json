@@ -1,9 +1,238 @@
 {
     "metaInfo": {
-        "dataIndex": "entityModel",
-        "collectionName": "entityModels",
-        "responseObjectName": "response"
+      "dataIndex": "entityModel",  
+        "collectionName": "entityModels",  
+        "responseObjectName": "response"  
     },
     "entityModels": [
+        {
+            "id": "sku_entityDefaultValuesModel",
+            "name": "sku",
+            "version": "4",
+            "type": "entityDefaultValuesModel",
+            "properties": {
+                "modifiedByService": "entityModelService",
+                "modifiedBy": "user",
+                "modifiedDate": "2016-07-16T18:33:52.412-07:00"
+            },
+            "data": {
+                "attributes": {
+                    "channel": {
+                        "properties": {
+                            "defaultValues": "eComm"
+                        }
+                    },
+                    "christmasIndicator": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "continentalPrepaid": {
+                        "properties": {
+                            "defaultValues": "0 - Not Prepaid"
+                        }
+                    },
+                    "deliveryInstructions": {
+                        "properties": {
+                            "defaultValues": "S - SHIP TO/MARK FOR"
+                        }
+                    },
+                    "eComHangingIndicator": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "ecommInnerPack": {
+                        "properties": {
+                            "defaultValues": "1"
+                        }
+                    },
+                    "ecommJcpStatus": {
+                        "properties": {
+                            "defaultValues": "Active"
+                        }
+                    },
+                    "ecommMinOrderQty": {
+                        "properties": {
+                            "defaultValues": "1"
+                        }
+                    },
+                    "ecommOOSDate": {
+                        "properties": {
+                            "defaultValues": "01/01/9999"
+                        }
+                    },
+                    "ecommPurchaseType": {
+                        "properties": {
+                            "defaultValues": "SB - FS Basic"
+                        }
+                    },
+                    "ecommSupplierShipPoint": {
+                        "properties": {
+                            "defaultValues": "0"
+                        }
+                    },
+                    "effIndicator": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "enterpriseInventoryIndicator": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "factoryShipLeadTime": {
+                        "properties": {
+                            "defaultValues": "2"
+                        }
+                    },
+                    "factoryShipLimitedInvInd": {
+                        "properties": {
+                            "defaultValues": "true"
+                        }
+                    },
+                    "factoryShipUOM": {
+                        "properties": {
+                            "defaultValues": "D - Days"
+                        }
+                    },
+                    "fashionPyramid": {
+                        "properties": {
+                            "defaultValues": "C - CORE"
+                        }
+                    },
+                    "lifestyle": {
+                        "properties": {
+                            "defaultValues": "M - MODERN"
+                        }
+                    },
+                    "maxBackorderDays": {
+                        "properties": {
+                            "defaultValues": "7"
+                        }
+                    },
+                    "nonContinentalPrepaid": {
+                        "properties": {
+                            "defaultValues": "0 - Not Prepaid"
+                        }
+                    },
+                    "packageType": {
+                        "properties": {
+                            "defaultValues": "Each"
+                        }
+                    },
+                    "priceTier": {
+                        "properties": {
+                            "defaultValues": "B - BETTER"
+                        }
+                    },
+                    "protectionPlan": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "skuItemType": {
+                        "properties": {
+                            "defaultValues": "Factory Ship"
+                        }
+                    },
+                    "season": {
+                        "properties": {
+                            "defaultValues": "Annual"
+                        }
+                    },
+                    "shippingInfoRequired": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "sizeCase": {
+                        "properties": {
+                            "defaultValues": "1"
+                        }
+                    },
+                    "sizeInner": {
+                        "properties": {
+                            "defaultValues": "1"
+                        }
+                    },
+                    "specialItemCode": {
+                        "properties": {
+                            "defaultValues": "0 - Not a special Item"
+                        }
+                    },
+                    "specialProgramType": {
+                        "properties": {
+                            "defaultValues": "0 - NORMAL MERCHANDISE"
+                        }
+                    },
+                    "storeJCPStatus": {
+                        "properties": {
+                            "defaultValues": "Inactive"
+                        }
+                    },
+                    "storeOOSDate": {
+                        "properties": {
+                            "defaultValues": "01/01/9999"
+                        }
+                    },
+                    "storePurchaseType": {
+                        "properties": {
+                            "defaultValues": "B - BASIC"
+                        }
+                    },
+                    "storeSet": {
+                        "properties": {
+                            "defaultValues": "ALL"
+                        }
+                    },
+                    "storeSubSet": {
+                        "properties": {
+                            "defaultValues": "ALL"
+                        }
+                    },
+                    "supplierMfrShipPoint": {
+                        "properties": {
+                            "defaultValues": "00"
+                        }
+                    },
+                    "ticketStockNo": {
+                        "properties": {
+                            "defaultValues": "NONE - THERE IS NO DESCRIPTION"
+                        }
+                    },
+                    "unusualDemandQuantity": {
+                        "properties": {
+                            "defaultValues": "11"
+                        }
+                    },
+                    "weightUnitofMeasure": {
+                        "properties": {
+                            "defaultValues": "Pounds"
+                        }
+                    },
+                    "willCallFactoryShipInd": {
+                        "properties": {
+                            "defaultValues": "false"
+                        }
+                    },
+                    "Channels": {
+                        "properties": {
+                            "defaultValues": [
+                                "Dotcom",
+                                "Mobile",
+                                "Tablet"
+                            ]
+                        }
+                    },
+                    "productPresentationType:": {
+                        "properties": {
+                            "defaultValues": "Core"
+                        }
+                    }
+                }
+            }
+        }
     ]
 }
