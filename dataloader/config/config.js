@@ -7,6 +7,7 @@ var toolConfig = {
 //we have two options to select. 1. all 2. tenant-config
 // 1. option = all - to load model, data and configs
 // 2. option = tenant-config - to load tenant-config only
+
 var quiteLoadConfig = {
     "enabled": false,
     "folderName": "jcp-v2",
