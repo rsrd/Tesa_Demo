@@ -6,15 +6,14 @@
 	},
 	"entities": [
 		{
-			"id": "kitLot_lottype",
-			"name": "kitLot",
-			"type": "lottype",
+			"id": "productSetupTaxonomy",
+			"type": "taxonomy",
 			"data": {
 				"attributes": {
 					"externalName": {
 						"values": [
 							{
-								"value": "Kit Lot"
+								"value": "Product Setup Taxonomy"
 							}
 						]
 					}
@@ -22,31 +21,14 @@
 			}
 		},
 		{
-			"id": "serviceLot_lottype",
-			"name": "serviceLot",
-			"type": "lottype",
+			"id": "merchandisingTaxonomy",
+			"type": "taxonomy",
 			"data": {
 				"attributes": {
 					"externalName": {
 						"values": [
 							{
-								"value": "Service Lot"
-							}
-						]
-					}
-				}
-			}
-		},
-		{
-			"id": "kitSKU_skutype",
-			"name": "kitSKU",
-			"type": "skutype",
-			"data": {
-				"attributes": {
-					"externalName": {
-						"values": [
-							{
-								"value": "Kit SKU"
+								"value": "Merchandising Taxonomy"
 							}
 						]
 					}
@@ -62,7 +44,7 @@
 					"externalName": {
 						"values": [
 							{
-								"value": "RDP Root Class node. This is a ficticious node to represent the root where all classification trees "
+								"value": "RDP Root Class node. This is a ficticious node to represent the root node for all classification trees"
 							}
 						]
 					}
@@ -83,20 +65,27 @@
 						]
 					}
 				},
-				"relationships": {
-					"belongsTo": [
-						{
-							"id": "",
-							"direction": "both",
-							"source": "internal",
-							"operation": "aggregation",
-							"relTo": {
-								"id": "_root_classification",
-								"type": "classification"
-							}
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "_root_classification",
+										"type": "classification"
+									}
+								}
+							]
 						}
-					]
-				}
+					}
+				]
 			}
 		},
 		{
@@ -113,20 +102,27 @@
 						]
 					}
 				},
-				"relationships": {
-					"belongsTo": [
-						{
-							"id": "",
-							"direction": "both",
-							"source": "internal",
-							"operation": "aggregation",
-							"relTo": {
-								"id": "apparel_classification",
-								"type": "classification"
-							}
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "apparel_classification",
+										"type": "classification"
+									}
+								}
+							]
 						}
-					]
-				}
+					}
+				]
 			}
 		},
 		{
@@ -143,20 +139,27 @@
 						]
 					}
 				},
-				"relationships": {
-					"belongsTo": [
-						{
-							"id": "",
-							"direction": "both",
-							"source": "internal",
-							"operation": "aggregation",
-							"relTo": {
-								"id": "shirts_classification",
-								"type": "classification"
-							}
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "shirts_classification",
+										"type": "classification"
+									}
+								}
+							]
 						}
-					]
-				}
+					}
+				]
 			}
 		}
 	]
