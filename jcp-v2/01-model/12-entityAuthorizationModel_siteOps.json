@@ -6,9 +6,9 @@
 	},
 	"entityModels": [
 		{
-			"id": "party_entityAuthorizationModel_siteOps",
-			"name": "party_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "party_authorizationModel_siteOps",
+			"name": "party_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -24,9 +24,9 @@
 			}
 		},
 		{
-			"id": "referenceData_entityAuthorizationModel_siteOps",
-			"name": "referenceData_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "referenceData_authorizationModel_siteOps",
+			"name": "referenceData_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -42,9 +42,9 @@
 			}
 		},
 		{
-			"id": "digitalAsset_entityAuthorizationModel_siteOps",
-			"name": "digitalAsset_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "digitalAsset_authorizationModel_siteOps",
+			"name": "digitalAsset_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -60,9 +60,9 @@
 			}
 		},
 		{
-			"id": "generic_entityAuthorizationModel_siteOps",
-			"name": "generic_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "generic_authorizationModel_siteOps",
+			"name": "generic_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -78,84 +78,9 @@
 			}
 		},
 		{
-			"id": "thing_entityAuthorizationModel_siteOps",
-			"name": "thing_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"writePermission": true,
-				"attributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "classification_entityAuthorizationModel_siteOps",
-			"name": "classification_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"attributesPermission": [
-					{
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "channel_entityAuthorizationModel_siteOps",
-			"name": "channel_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"attributesPermission": [
-					{
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "sku_entityAuthorizationModel_siteOps",
-			"name": "sku_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "thing_authorizationModel_siteOps",
+			"name": "thing_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -192,9 +117,45 @@
 			}
 		},
 		{
-			"id": "lot_entityAuthorizationModel_siteOps",
-			"name": "lot_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "classification_authorizationModel_siteOps",
+			"name": "classification_authorizationModel_siteOps",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "channel_authorizationModel_siteOps",
+			"name": "channel_authorizationModel_siteOps",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "sku_authorizationModel_siteOps",
+			"name": "sku_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -231,9 +192,9 @@
 			}
 		},
 		{
-			"id": "ensemble_entityAuthorizationModel_siteOps",
-			"name": "ensemble_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "lot_authorizationModel_siteOps",
+			"name": "lot_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -270,9 +231,48 @@
 			}
 		},
 		{
-			"id": "productPresentation_entityAuthorizationModel_siteOps",
-			"name": "productPresentation_entityAuthorizationModel_siteOps",
-			"type": "entityAuthorizationModel",
+			"id": "ensemble_authorizationModel_siteOps",
+			"name": "ensemble_authorizationModel_siteOps",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "productPresentation_authorizationModel_siteOps",
+			"name": "productPresentation_authorizationModel_siteOps",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
