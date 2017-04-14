@@ -901,6 +901,94 @@
 						}
 					}
 				},
+				"relationships": {
+					"isChildOf": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
+								}
+							}
+						}
+					],
+					"lotToImage": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
+								}
+							}
+						}
+					]
+				},
 				"contexts": [
 					{
 						"context": {
@@ -956,7 +1044,7 @@
 								}
 							]
 						}
-						},
+					},
 					"skuNumber": {
 						"properties": {
 							"displayType": "TextBox"
@@ -1861,6 +1949,94 @@
 						}
 					}
 				},
+				"relationships": {
+					"kitSkuToSku": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}
+								}
+							}
+						}
+					],
+					"skuToImage": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}
+								}
+							}
+						}
+					]
+				},
 				"contexts": [
 					{
 						"context": {
@@ -2129,6 +2305,67 @@
 										"externalName": "Is Active?",
 										"displayType": "boolean"
 									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
+								}
+							}
+						}
+					],
+					"productPresentationToImage": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
 								}
 							}
 						}
@@ -2344,6 +2581,94 @@
 							"displayType": "TextArea"
 						}
 					}
+				},
+				"relationships": {
+					"ensembleToProductPresentation": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
+								}
+							}
+						}
+					],
+					"ensembleToImage": [
+						{
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"dataType": "string",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "/images/favicon.ico",
+												"listTitle": "{entity.attributes.code}",
+												"listSubTitle": "{entity.name} - {entity.attributes.value}"
+											}
+										]
+									}
+								},
+								"enabled": {
+									"properties": {
+										"externalName": "Is Active?",
+										"displayType": "boolean"
+									}
+								},
+								"linkDescription": {
+									"properties": {
+										"externalName": "Link Description",
+										"displayType": "boolean"
+									}									
+								},
+								"skuNumber": {
+									"properties": {
+										"externalName": "SKU Number",
+										"displayType": "boolean"
+									}									
+								},
+								"displayName": {
+									"properties": {
+										"externalName": "Display Name",
+										"displayType": "boolean"
+									}									
+								}
+							}
+						}
+					]
 				},
 				"contexts": [
 					{
