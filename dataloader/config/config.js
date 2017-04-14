@@ -9,15 +9,7 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 
 var quiteLoadConfig = {
-    "enabled": true,
-    "folderName": "jcp-v2",
-    "tenantId": "jcp",
-    "option": "tenant-config",
-    "flush": "N"
-}
-
-var quiteLoadConfig = {
-    "enabled": true,
+    "enabled": false,
     "folderName": "jcp-v2",
     "tenantId": "jcp",
     "option": "all",
