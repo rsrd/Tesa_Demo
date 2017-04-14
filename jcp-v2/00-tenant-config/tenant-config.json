@@ -8,11 +8,11 @@
 		{
 			"id": "jcp",
 			"name": "jcp-tenant-config",
-			"version": "1",
 			"type": "tenantserviceconfig",
 			"properties": {
 				"createdByService": "configservice",
-				"createdBy": "rdp"
+				"createdService": "configurationManageService",
+				"createdDate": "2017-04-14T13:01:21.746Z"
 			},
 			"data": {
 				"jsonData": {
@@ -231,7 +231,7 @@
 						},
 						"entityService": {
 							"serviceSpecific": {
-								"isAuthEnabled": "true"
+								"isAuthEnabled": false
 							}
 						},
 						"entityGovernService": {
@@ -258,7 +258,7 @@
 								},
 								"export": {
 									"isExportEnabled": "true",
-									"resturi": "http://impexpapicluster:9095/",
+									"resturi": "http://192.168.0.85:9095/jcp/api/entityExportService",
 									"publish": "publish"
 								}
 							},
@@ -1026,6 +1026,27 @@
 								}
 							}
 						},
+						"entityModelService": {
+							"serviceSpecific": {
+								"isAuthEnabled": false,
+								"exclusionTypeList": [
+									"entityType",
+									"ruleContextMappings",
+									"businessRule",
+									"authorizationModel",
+									"businessCondition",
+									"entityValidationModel",
+									"workflowDefinition",
+									"workflowDefinitionMapping",
+									"entityDefaultValuesModel"
+								],
+								"exclusionDomainList": [
+									"thing",
+									"referenceData",
+									"party"
+								]
+							}
+						},
 						"entityGovernModelService": {
 							"serviceSpecific": {
 								"defaultDataTypes": {
@@ -1343,7 +1364,7 @@
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "http://mdmuicluster:5005/api/",
+											"restUri": "http://shree.riversand.com:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
