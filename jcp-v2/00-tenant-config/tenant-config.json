@@ -258,8 +258,8 @@
 								},
 								"export": {
 									"isExportEnabled": "true",
-									"resturi": "http://impexpapicluster:9095/",
-									"publish": "publish"
+									"resturi": "http://impexpapicluster:9095/jcp/api/entityExportService",
+									"publish": "/publish"
 								}
 							},
 							"platformSpecific": {
@@ -1024,6 +1024,28 @@
 									"graphDatabase": "jcpgraph",
 									"traversalSource": "jcpsource"
 								}
+							}
+						},
+						"entityModelService": {
+							"serviceSpecific": {
+								"isAuthEnabled": false,
+								"exclusionTypeList": [
+									"entityType",
+									"domain",
+									"ruleContextMappings",
+									"businessRule",
+									"authorizationModel",
+									"businessCondition",
+									"entityValidationModel",
+									"workflowDefinition",
+									"workflowDefinitionMapping",
+									"entityDefaultValuesModel"
+								],
+								"exclusionDomainList": [
+									"thing",
+									"referenceData",
+									"party"
+								]
 							}
 						},
 						"entityGovernModelService": {

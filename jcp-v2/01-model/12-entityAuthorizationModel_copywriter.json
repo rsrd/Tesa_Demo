@@ -6,9 +6,9 @@
 	},
 	"entityModels": [
 		{
-			"id": "party_entityAuthorizationModel_copywriter",
-			"name": "party_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "party_authorizationModel_copywriter",
+			"name": "party_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -24,9 +24,9 @@
 			}
 		},
 		{
-			"id": "referenceData_entityAuthorizationModel_copywriter",
-			"name": "referenceData_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "referenceData_authorizationModel_copywriter",
+			"name": "referenceData_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -42,9 +42,9 @@
 			}
 		},
 		{
-			"id": "digitalAsset_entityAuthorizationModel_copywriter",
-			"name": "digitalAsset_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "digitalAsset_authorizationModel_copywriter",
+			"name": "digitalAsset_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -60,9 +60,9 @@
 			}
 		},
 		{
-			"id": "generic_entityAuthorizationModel_copywriter",
-			"name": "generic_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "generic_authorizationModel_copywriter",
+			"name": "generic_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"attributesPermission": [
@@ -78,84 +78,9 @@
 			}
 		},
 		{
-			"id": "thing_entityAuthorizationModel_copywriter",
-			"name": "thing_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"writePermission": true,
-				"attributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "classification_entityAuthorizationModel_copywriter",
-			"name": "classification_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"attributesPermission": [
-					{
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "channel_entityAuthorizationModel_copywriter",
-			"name": "channel_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
-			"properties": {
-				"readPermission": true,
-				"attributesPermission": [
-					{
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "sku_entityAuthorizationModel_copywriter",
-			"name": "sku_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "thing_authorizationModel_copywriter",
+			"name": "thing_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -192,9 +117,45 @@
 			}
 		},
 		{
-			"id": "lot_entityAuthorizationModel_copywriter",
-			"name": "lot_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "classification_authorizationModel_copywriter",
+			"name": "classification_authorizationModel_copywriter",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "channel_authorizationModel_copywriter",
+			"name": "channel_authorizationModel_copywriter",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "sku_authorizationModel_copywriter",
+			"name": "sku_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -231,9 +192,9 @@
 			}
 		},
 		{
-			"id": "ensemble_entityAuthorizationModel_copywriter",
-			"name": "ensemble_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "lot_authorizationModel_copywriter",
+			"name": "lot_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
@@ -270,9 +231,48 @@
 			}
 		},
 		{
-			"id": "productPresentation_entityAuthorizationModel_copywriter",
-			"name": "productPresentation_entityAuthorizationModel_copywriter",
-			"type": "entityAuthorizationModel",
+			"id": "ensemble_authorizationModel_copywriter",
+			"name": "ensemble_authorizationModel_copywriter",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "productPresentation_authorizationModel_copywriter",
+			"name": "productPresentation_authorizationModel_copywriter",
+			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,

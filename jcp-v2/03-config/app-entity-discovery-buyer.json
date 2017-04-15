@@ -83,7 +83,11 @@
 										"status",
 										"startDate",
 										"endDate",
-										"webDiscount"
+										"creationDate",
+										"plannedOnSiteDate",
+										"warrantyFlag",
+										"ecommMinOrderQty",
+										"assembledHeight"
 									]
 								},
 								"tabular": {
@@ -123,12 +127,6 @@
 											"sortable": false,
 											"filterable": false,
 											"isContextDataColumn": true
-										},
-										{
-											"header": "Web Discount",
-											"name": "webDiscount",
-											"sortable": false,
-											"filterable": false
 										},
 										{
 											"header": "Start Date",
