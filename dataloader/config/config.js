@@ -20,7 +20,7 @@ var quiteLoadConfig = {
 //     "enabled": true,
 //     "folderName": "jcp-v2",
 //     "tenantId": "jcp",
-//     "option": "all",
+//     "option": "data",
 //     "flush": "N"
 // }
 

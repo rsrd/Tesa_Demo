@@ -1,0 +1,314 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "productSetupTaxonomy",
+			"type": "taxonomy",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Product Setup Taxonomy"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "merchandisingTaxonomy",
+			"type": "taxonomy",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Merchandising Taxonomy"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "_root_classification",
+			"name": "_root",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "RDP Root Class node. This is a ficticious node to represent the root node for all classification trees"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "apparel_classification",
+			"name": "apparel",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Apparel"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "_root_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "shirts_classification",
+			"name": "shirts",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Shirts"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "apparel_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "mens_classification",
+			"name": "mens",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Mens"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "shirts_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "womens_classification",
+			"name": "womens",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Womens"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "shirts_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "footwear_classification",
+			"name": "footwear",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Footwear"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "_root_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "shoes_classification",
+			"name": "shoes",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Shoes"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "footwear_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "boots_classification",
+			"name": "boots",
+			"type": "classification",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Boots"
+							}
+						]
+					}
+				},
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"relationships": {
+							"belongsTo": [
+								{
+									"id": "",
+									"direction": "both",
+									"source": "internal",
+									"operation": "aggregation",
+									"relTo": {
+										"id": "shoes_classification",
+										"type": "classification"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}
