@@ -40,8 +40,11 @@ function startLoadingData(folder, option, tenant, flush) {
             
             console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
             
+            var delayBetweenModelObjects = config.toolConfig.delayBetweenModelObjects;
+
             if (checkIndicesStatus(results)) {
                 selectedFolders.forEach(function (selectedFolder) {
+                    sleep(delayBetweenModelObjects);
                     if (selectedFolder) {
                         var tenantDataLogDir = tenantLogDir + '/' + timestamp ;
 
@@ -57,7 +60,7 @@ function startLoadingData(folder, option, tenant, flush) {
                         console.log("\n----------------------------- Logs for " + selectedFolder + " -----------------------------------\n");
                         if (files && files.length > 0) {
                             files.forEach(function (file) {
-                                if (file != ".DS_Store") {
+                                if (file != ".DS_Store" && file != "tenantserviceconfig_template.json") {
                                     console.log("reading file: " + file);
                                     var fileData = fs.readFileSync(dir + file);
                                     var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
@@ -281,7 +284,8 @@ function getSelectedFolderNames(option) {
     switch (option.toLowerCase()) {
         case "all":
             //selectedFolders.push("00-tenant-config", "01-model", "02-data", "03-config");
-            selectedFolders.push("01-model", "02-data", "03-config");
+            //selectedFolders.push("01-model", "02-data", "03-config");
+            selectedFolders.push("10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", "30-referencemodel", "31-referencedata", "40-data", "50-config");
             break;
         case "tenant-config":
             selectedFolders.push("00-tenant-config");

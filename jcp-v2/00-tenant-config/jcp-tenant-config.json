@@ -1638,11 +1638,12 @@
 						},
 						"authenticationService": {
 							"serviceSpecific": {
-								"isApiAuthEnabled": true,
+								"isApiAuthEnabled": false,
 								"isOAuthEnabled": false,
 								"saml": {
 									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
 									"issuer": "urn:riversand.auth0.com",
+									"allowedClockSkewMs": 300000,
 									"IdPCert": "../keys/riversand-auth0.crt",
 									"assertionLookup": {
 										"ownershipData": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
