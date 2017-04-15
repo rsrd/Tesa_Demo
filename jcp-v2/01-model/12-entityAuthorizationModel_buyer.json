@@ -28,14 +28,17 @@
 			"name": "referenceData_authorizationModel_buyer",
 			"type": "authorizationModel",
 			"properties": {
+				"writePermission": true,
 				"readPermission": true,
 				"attributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				]
@@ -64,14 +67,17 @@
 			"name": "generic_authorizationModel_buyer",
 			"type": "authorizationModel",
 			"properties": {
+				"writePermission": true,
 				"readPermission": true,
 				"attributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				]

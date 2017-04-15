@@ -8,11 +8,12 @@
 		{
 			"id": "jcp",
 			"name": "jcp-tenant-config",
-			"version": "1",
 			"type": "tenantserviceconfig",
 			"properties": {
 				"createdByService": "configservice",
-				"createdBy": "rdp"
+				"createdBy": "system",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-04-15T06:52:08.068Z"
 			},
 			"data": {
 				"jsonData": {
@@ -231,7 +232,7 @@
 						},
 						"entityService": {
 							"serviceSpecific": {
-								"isAuthEnabled": "false"
+								"isAuthEnabled": "true"
 							}
 						},
 						"entityGovernService": {
@@ -1028,7 +1029,7 @@
 						},
 						"entityModelService": {
 							"serviceSpecific": {
-								"isAuthEnabled": false,
+								"isAuthEnabled": true,
 								"exclusionTypeList": [
 									"entityType",
 									"domain",
@@ -1037,9 +1038,15 @@
 									"authorizationModel",
 									"businessCondition",
 									"entityValidationModel",
+									"entityDisplayModel",
+									"entityDefaultValuesModel",
 									"workflowDefinition",
 									"workflowDefinitionMapping",
-									"entityDefaultValuesModel"
+									"source",
+									"locale",
+									"role",
+									"user",
+									"list"
 								],
 								"exclusionDomainList": [
 									"thing",
@@ -1365,7 +1372,7 @@
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "https://shree.riversand.com/api/",
+											"restUri": "http://mdmuicluster:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
@@ -1631,7 +1638,7 @@
 						},
 						"authenticationService": {
 							"serviceSpecific": {
-								"isApiAuthEnabled": false,
+								"isApiAuthEnabled": true,
 								"isOAuthEnabled": false,
 								"saml": {
 									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
