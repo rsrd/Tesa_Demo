@@ -1692,6 +1692,81 @@
                                             ]
                                         }
                                     }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "sku_businessConditionUpdate1",
+                                    "relTo": {
+                                        "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        },
+                                        "activityCriteria": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "skipCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Publish"
+                                                }
+                                            ]
+                                        },
+                                        "defaultAction": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "Submit"
+                                                }
+                                            ]
+                                        }
+                                    }
                                 }
                             ]
                         }
