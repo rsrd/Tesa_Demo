@@ -1,15 +1,15 @@
 {
   "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKU_v15",
-  "name": "Sku_S3Bucket_Excel_Import_Process",
+  "name": "Sku_Folder_Excel_Import_Process",
+  "tenantId" : "jcp",
   "profileType": "contentOnboarding",
   "dataInfo": "Entity",
   "enabled": "true",
   "inboundChannel": {
     "isDataPersistent": "true",
-    "s3BucketConnector": {
-      "fileType": "xlsx",
-      "bucketName": "rs-apps-rcoa-imports",
-      "regionName": "us-east-1"
+    "folderConnector": {
+      "sourceFolder": "/apps/import/sku",
+      "pattern": "*.xlsx"
     }
   },
   "outboundChannel": {
