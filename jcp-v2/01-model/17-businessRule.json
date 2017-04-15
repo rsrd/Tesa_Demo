@@ -130,7 +130,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "varItemType:=GetContextPath[\"classification\"];varFirstIndex:=indexof[varItemType, \"/\"];varProductType:=IIF[varFirstIndex > 0, substring[varItemType, 0, varFirstIndex], \"\"];varRemainingString:=IIF[varFirstIndex > 0,  substring[varItemType, varFirstIndex + 1, len[varItemType] - varFirstIndex - 1], \"\"];varSecondIndex:=IIF[varFirstIndex > 0, indexof[varRemainingString, \"/\"], len[varRemainingString]-1];varSubProductType:=IIF[varFirstIndex > 0 AND varSecondIndex > 0, substring[varRemainingString, 0, varSecondIndex], \"\"];IIF[varFirstIndex > 0 AND varSecondIndex > 0, SetAttributeValueInContext[\"self:self\",\"productType\",varProductType] AND SetAttributeValueInContext[\"self:self\",\"subProductType\",varSubProductType] AND SetAttributeValueInContext[\"self:self\",\"itemType\",varItemType], true]"
+                "value": "varItemType:=GetContextPath[\"classification\"];varFirstIndex:=indexof[varItemType, \"/\"];varProductType:=IIF[varFirstIndex > 0, substring[varItemType, 0, varFirstIndex], \"\"];varRemainingString:=IIF[varFirstIndex > 0,  substring[varItemType, varFirstIndex + 1, len[varItemType] - varFirstIndex - 1], \"\"];varIndexInRemaining:=indexof[varRemainingString, \"/\"];varSecondIndex:=IIF[varFirstIndex > 0 AND varIndexInRemaining > 0, indexof[varRemainingString, \"/\"], len[varRemainingString]];varSubProductType:=IIF[varFirstIndex > 0 AND varSecondIndex > 0, substring[varRemainingString, 0, varSecondIndex], \"\"];IIF[varFirstIndex > 0 AND varSecondIndex > 0, SetAttributeValueInContext[\"self:self\",\"productType\",varProductType] AND SetAttributeValueInContext[\"self:self\",\"subProductType\",varSubProductType] AND SetAttributeValueInContext[\"self:self\",\"itemType\",varItemType], true]"
               }
             ]
           },
@@ -1442,7 +1442,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"class\"],true,SetAttributeValue[\"class\",GetAttributeValue[\"subclass\"]]]"
+                "value": "IIF[ValidateEmptyAttributes[\"class\"],true,SetAttributeValue[\"subClass\",GetAttributeValue[\"class\"]]]"
               }
             ]
           },
