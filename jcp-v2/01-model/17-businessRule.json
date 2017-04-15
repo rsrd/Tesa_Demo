@@ -376,7 +376,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "IIF[HasAttributesChanged[\"cost\"],InvokeWorkflow[\"updateProductWorkflow\"],false]"
+                "value": "var1:=IsEntityInWorkflow[\"updateProductWorkflow\"];var2:=HasAttributesChanged[\"cost\"];IIF[var1, true, IIF[var2, InvokeWorkflow[\"updateProductWorkflow\"], true]] AND IIF[var1, true, IIF[IsEntityInWorkflow[\"newProductSetup\"] or var2, true, InitiateExport[\"temp\"]]]"
               }
             ]
           },
