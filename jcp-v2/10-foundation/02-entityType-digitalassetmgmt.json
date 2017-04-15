@@ -6,6 +6,15 @@
 	},
 	"entityModels": [
 		{
+			"id": "image_entityType",
+			"name": "image",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Image"
+			}
+		},
+		{
 			"id": "originalImage_entityType",
 			"name": "originalImage",
 			"type": "entityType",

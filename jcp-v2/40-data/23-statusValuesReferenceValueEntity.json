@@ -6,12 +6,12 @@
    },
    "entities": [
       {
-         "id": "staus_active",
+         "id": "active_statusValues",
          "name": "active",
-         "type": "status",
+         "type": "statusValues",
          "data": {
             "attributes": {
-               "code": {
+               "referenceDataCode": {
                   "values": [
                      {
                         "value": "active",
@@ -20,7 +20,7 @@
                      }
                   ]
                },
-               "value": {
+               "referenceDataValue": {
                   "values": [
                      {
                         "value": "Active",
@@ -33,12 +33,12 @@
          }
       },
       {
-         "id": "staus_new",
+         "id": "new_statusValues",
          "name": "new",
-         "type": "status",
+         "type": "statusValues",
          "data": {
             "attributes": {
-               "code": {
+               "referenceDataCode": {
                   "values": [
                      {
                         "value": "new",
@@ -47,7 +47,7 @@
                      }
                   ]
                },
-               "value": {
+               "referenceDataValue": {
                   "values": [
                      {
                         "value": "New",
@@ -60,12 +60,12 @@
          }
       },
       {
-         "id": "staus_discontinued",
+         "id": "statusValues_discontinued",
          "name": "discontinued",
-         "type": "status",
+         "type": "statusValues",
          "data": {
             "attributes": {
-               "code": {
+               "referenceDataCode": {
                   "values": [
                      {
                         "value": "discontinued",
@@ -74,7 +74,7 @@
                      }
                   ]
                },
-               "value": {
+               "referenceDataValue": {
                   "values": [
                      {
                         "value": "Discontinued",
