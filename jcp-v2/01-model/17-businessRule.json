@@ -1442,7 +1442,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"subclass\"],true,SetAttributeValue[\"subclass\",GetAttributeValue[\"class\"]]]"
+                "value": "IIF[ValidateEmptyAttributes[\"class\"],true,SetAttributeValue[\"subclass\",GetAttributeValue[\"class\"]]]"
               }
             ]
           },
