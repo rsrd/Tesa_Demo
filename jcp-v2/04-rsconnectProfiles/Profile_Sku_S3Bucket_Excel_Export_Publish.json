@@ -1,0 +1,973 @@
+{
+  "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKU_v15",
+  "name": "Sku_S3Bucket_Excel_Export_Publish",
+  "profileType": "contentOnboarding",
+  "dataInfo": "Entity",
+  "enabled": "true",
+  "inboundChannel": {
+    "isDataPersistent": "true",
+    "s3BucketConnector": {
+      "fileType": "xlsx",
+      "bucketName": "rs-apps-rcoa-imports",
+      "regionName": "us-east-1"
+    }
+  },
+  "outboundChannel": {
+    "isDataPersistent": "false",
+    "rdpConnector": {
+      "type": "RSJSON",
+      "version": "1.1",
+      "url": "http://192.168.0.130:8085/jcp/api/entityManageService/",
+      "operation": "create"
+    }
+  },
+  "transform": {
+    "inboundFormat": {
+      "type": "EXCEL",
+      "version": "1.1",
+      "settings": {
+        "encoding": "utf8"
+      },
+      "includeFilter": [],
+      "excludeFilter": []
+    },
+    "outboundFormat": {
+      "type": "RSJSON",
+      "version": "1.1",
+      "batchSize": 1,
+      "settings": {
+        "encoding": "utf8"
+      },
+      "includeFilter": [],
+      "excludeFilter": []
+    },
+    "mapping": {
+      "destination": "SAP",
+      "allowNullValues": "true",
+      "clearMissingAttributes": "false",
+      "strategies": [
+        {
+          "caseFormat": "NONE",
+          "removeSpecialCharacters": "false",
+          "trimLeadingNumbers": "false",
+          "trimTrailingNumbers": "false",
+          "isDefault": "false"
+        }
+      ],
+      "fieldOverrides": [
+        {
+          "destination": "Id",
+          "source": "entity.id"
+        },
+        {
+          "destination": "@value(Sku)",
+          "source": "entity.type"
+        },
+        {
+          "destination": "@value(internal-destination)",
+          "source": "entity.properties.destination"
+        },
+        {
+          "destination": "@value(UserinterfaceSvc)",
+          "source": "entity.properties.modifiedByService"
+        },
+        {
+          "destination": "@value(ghostUser_v2)",
+          "source": "entity.properties.modifiedBy"
+        },
+        {
+          "destination": "@value(4/3/2017)",
+          "source": "entity.properties.modifiedDate"
+        },
+        {
+          "destination": "Creation Date",
+          "source": "entity.entity.data.attributes.creationDate.values[0].value"
+        },
+        {
+          "destination": "On-Site Date",
+          "source": "entity.entity.data.attributes.startDate.values[0].value"
+        },
+        {
+          "destination": "Off-Site Date",
+          "source": "entity.entity.data.attributes.endDate.values[0].value"
+        },
+        {
+          "destination": "Display Name",
+          "source": "entity.data.attributes.displayName.values[0].value"
+        },
+        {
+          "destination": "Description",
+          "source": "entity.data.attributes.description.values[0].value"
+        },
+        {
+          "destination": "Short Description",
+          "source": "entity.data.attributes.shortDescription.values[0].value"
+        },
+        {
+          "destination": "Product Type",
+          "source": "entity.data.attributes.productType.values[0].value"
+        },
+        {
+          "destination": "Sub Product Type",
+          "source": "entity.data.attributes.subProductType.values[0].value"
+        },
+        {
+          "destination": "Item Type",
+          "source": "entity.data.attributes.itemType.values[0].value"
+        },
+        {
+          "destination": "Size Range",
+          "source": "entity.data.attributes.sizeRange.values[0].value"
+        },
+        {
+          "destination": "Class",
+          "source": "entity.data.attributes.class.values[0].value"
+        },
+        {
+          "destination": "Sub Class",
+          "source": "entity.data.attributes.subClass.values[0].value"
+        },
+        {
+          "destination": "destination",
+          "source": "entity.data.attributes.destination.values[0].value"
+        },
+        {
+          "destination": "Item Type",
+          "source": "entity.data.attributes.skuItemType.values[0].value"
+        },
+        {
+          "destination": "SKU Grouping",
+          "source": "entity.data.attributes.skuGrouping.values[0].value"
+        },
+        {
+          "destination": "Channel",
+          "source": "entity.data.attributes.channel.values[0].value"
+        },
+        {
+          "destination": "Direct Ship Restrict Code",
+          "source": "entity.data.attributes.directShipRestrict.values[0].value"
+        },
+        {
+          "destination": "Disposal Fee Code",
+          "source": "entity.data.attributes.disposalFee.values[0].value"
+        },
+        {
+          "destination": "Will Call Restrict Code",
+          "source": "entity.data.attributes.willCallRestrict.values[0].value"
+        },
+        {
+          "destination": "Paranthetic Amount",
+          "source": "entity.data.attributes.parantheticAmount.values[0].value"
+        },
+        {
+          "destination": "Will Call Factory Ship",
+          "source": "entity.data.attributes.willCallFactoryShipInd.values[0].value"
+        },
+        {
+          "destination": "Non Continental Transportation Prepaid",
+          "source": "entity.data.attributes.nonContinentalPrepaid.values[0].value"
+        },
+        {
+          "destination": "Continental Tranportation Prepaid",
+          "source": "entity.data.attributes.continentalPrepaid.values[0].value"
+        },
+        {
+          "destination": "Unusual Demand Quantity",
+          "source": "entity.data.attributes.unusualDemandQuantity.values[0].value"
+        },
+        {
+          "destination": "Haz Mat Flag",
+          "source": "entity.data.attributes.hazMatFlag.values[0].value"
+        },
+        {
+          "destination": "Prop 65 Indicator",
+          "source": "entity.data.attributes.prop65Indicator.values[0].value"
+        },
+        {
+          "destination": "Supplier Number/Name",
+          "source": "entity.data.attributes.supplierNumberName.values[0].value"
+        },
+        {
+          "destination": "Supplier Site Number",
+          "source": "entity.data.attributes.supplierSiteNumber.values[0].value"
+        },
+        {
+          "destination": "Store Primary Supplier ID",
+          "source": "entity.data.attributes.storePrimarySupplierId.values[0].value"
+        },
+        {
+          "destination": "Ecom Primary Supplier ID",
+          "source": "entity.data.attributes.ecomPrimarySupplierId.values[0].value"
+        },
+        {
+          "destination": "Supplier Channel",
+          "source": "entity.data.attributes.supplierChannel.values[0].value"
+        },
+        {
+          "destination": "Alternate Supplier ID",
+          "source": "entity.data.attributes.alternateSupplierID.values[0].value"
+        },
+        {
+          "destination": "MSRP",
+          "source": "entity.data.attributes.msrp.values[0].value"
+        },
+        {
+          "destination": "Store Unit Cost",
+          "source": "entity.data.attributes.storeUnitCost.values[0].value"
+        },
+        {
+          "destination": "eComm Unit Cost",
+          "source": "entity.data.attributes.ecommUnitCost.values[0].value"
+        },
+        {
+          "destination": "Retail",
+          "source": "entity.data.attributes.retail.values[0].value"
+        },
+        {
+          "destination": "Length",
+          "source": "entity.data.attributes.length.values[0].value"
+        },
+        {
+          "destination": "Width",
+          "source": "entity.data.attributes.width.values[0].value"
+        },
+        {
+          "destination": "Height",
+          "source": "entity.data.attributes.height.values[0].value"
+        },
+        {
+          "destination": "Gross Weight",
+          "source": "entity.data.attributes.grossWeight.values[0].value"
+        },
+        {
+          "destination": "Liquid Volume",
+          "source": "entity.data.attributes.liquidVolume.values[0].value"
+        },
+        {
+          "destination": "Liquid Unit of Measure",
+          "source": "entity.data.attributes.liquidUnitofMeasure.values[0].value"
+        },
+        {
+          "destination": "Country Of Manufacture",
+          "source": "entity.data.attributes.countryOfManufacture.values[0].value"
+        },
+        {
+          "destination": "Origin Indicator",
+          "source": "entity.data.attributes.originIndicator.values[0].value"
+        },
+        {
+          "destination": "Planned OnSite Date (mm/dd/yyyy)",
+          "source": "entity.data.attributes.plannedOnSiteDate.values[0].value"
+        },
+        {
+          "destination": "Warranty Flag",
+          "source": "entity.data.attributes.warrantyFlag.values[0].value"
+        },
+        {
+          "destination": "Monogram Charge",
+          "source": "entity.data.attributes.monogramCharge.values[0].value"
+        },
+        {
+          "destination": "Diff 1 Type",
+          "source": "entity.data.attributes.diff1Type.values[0].value"
+        },
+        {
+          "destination": "Diff 1 Group",
+          "source": "entity.data.attributes.diff1Group.values[0].value"
+        },
+        {
+          "destination": "Diff 2 Type",
+          "source": "entity.data.attributes.diff2Type.values[0].value"
+        },
+        {
+          "destination": "Diff 2 Group",
+          "source": "entity.data.attributes.diff2Group.values[0].value"
+        },
+        {
+          "destination": "COLOR FAMILY",
+          "source": "entity.data.attributes.colorFamily.values[0].value"
+        },
+        {
+          "destination": "COLOR DESC",
+          "source": "entity.data.attributes.colorDesc.values[0].value"
+        },
+        {
+          "destination": "Size",
+          "source": "entity.data.attributes.size.values[0].value"
+        },
+        {
+          "destination": "eComm Color",
+          "source": "entity.data.attributes.ecommColor.values[0].value"
+        },
+        {
+          "destination": "eComm Color Abbr",
+          "source": "entity.data.attributes.ecommColorAbbr.values[0].value"
+        },
+        {
+          "destination": "Store Color Abbr",
+          "source": "entity.data.attributes.storeColorAbbr.values[0].value"
+        },
+        {
+          "destination": "Print/Pattern",
+          "source": "entity.data.attributes.printPattern.values[0].value"
+        },
+        {
+          "destination": "Artwork ID",
+          "source": "entity.data.attributes.artworkId.values[0].value"
+        },
+        {
+          "destination": "VPN",
+          "source": "entity.data.attributes.vpn.values[0].value"
+        },
+        {
+          "destination": "Store Unit Cost @ Color",
+          "source": "entity.data.attributes.storeUnitCostColor.values[0].value"
+        },
+        {
+          "destination": "eComm Unit Cost @ Color",
+          "source": "entity.data.attributes.ecommUnitCostColor.values[0].value"
+        },
+        {
+          "destination": "eComm Active Sizes",
+          "source": "entity.data.attributes.ecommActiveSizes.values[0].value"
+        },
+        {
+          "destination": "Store Primary Supplier ID @ Color",
+          "source": "entity.data.attributes.storePrimarySupplierIdColor.values[0].value"
+        },
+        {
+          "destination": "Ecom Primary Supplier ID @ Color",
+          "source": "entity.data.attributes.ecomPrimarySupplierIdColor.values[0].value"
+        },
+        {
+          "destination": "Inner Pack (Increment) @ Color",
+          "source": "entity.data.attributes.innerPackIncrementColor.values[0].value"
+        },
+        {
+          "destination": "Cost",
+          "source": "entity.data.attributes.cost.values[0].value"
+        },
+        {
+          "destination": "eComm Inner Pack",
+          "source": "entity.data.attributes.ecommInnerPack.values[0].value"
+        },
+        {
+          "destination": "eComm OOS Date",
+          "source": "entity.data.attributes.ecommOOSDate.values[0].value"
+        },
+        {
+          "destination": "Special Program Type",
+          "source": "entity.data.attributes.specialProgramType.values[0].value"
+        },
+        {
+          "destination": "Store Sub Set",
+          "source": "entity.data.attributes.storeSubSet.values[0].value"
+        },
+        {
+          "destination": "Store JCP Status",
+          "source": "entity.data.attributes.storeJCPStatus.values[0].value"
+        },
+        {
+          "destination": "Factory Ship Lead Time",
+          "source": "entity.data.attributes.factoryShipLeadTime.values[0].value"
+        },
+        {
+          "destination": "Size: Case",
+          "source": "entity.data.attributes.sizeCase.values[0].value"
+        },
+        {
+          "destination": "Store Collection Number/Name",
+          "source": "entity.data.attributes.storeCollectionNumberName.values[0].value"
+        },
+        {
+          "destination": "Lifestyle",
+          "source": "entity.data.attributes.lifestyle.values[0].value"
+        },
+        {
+          "destination": "Supplier/Mfr Ship Point",
+          "source": "entity.data.attributes.supplierMfrShipPoint.values[0].value"
+        },
+        {
+          "destination": "Size: Inner",
+          "source": "entity.data.attributes.sizeInner.values[0].value"
+        },
+        {
+          "destination": "Package Type",
+          "source": "entity.data.attributes.packageType.values[0].value"
+        },
+        {
+          "destination": "Weight Unit of Measure",
+          "source": "entity.data.attributes.weightUnitofMeasure.values[0].value"
+        },
+        {
+          "destination": "Whse Supplier 1",
+          "source": "entity.data.attributes.whseSupplier1.values[0].value"
+        },
+        {
+          "destination": "Whse Supplier Ship Point 1",
+          "source": "entity.data.attributes.whseSupplierShipPoint1.values[0].value"
+        },
+        {
+          "destination": "Supplier Lead Time",
+          "source": "entity.data.attributes.supplierLeadTime.values[0].value"
+        },
+        {
+          "destination": "e-Com Hanging Indicator",
+          "source": "entity.data.attributes.eComHangingIndicator.values[0].value"
+        },
+        {
+          "destination": "EFF Indicator",
+          "source": "entity.data.attributes.effIndicator.values[0].value"
+        },
+        {
+          "destination": "Store Set",
+          "source": "entity.data.attributes.storeSet.values[0].value"
+        },
+        {
+          "destination": "Floor Set Date",
+          "source": "entity.data.attributes.floorSetDate.values[0].value"
+        },
+        {
+          "destination": "Christmas Indicator",
+          "source": "entity.data.attributes.christmasIndicator.values[0].value"
+        },
+        {
+          "destination": "Protection Plan",
+          "source": "entity.data.attributes.protectionPlan.values[0].value"
+        },
+        {
+          "destination": "eComm Supplier Ship Point",
+          "source": "entity.data.attributes.ecommSupplierShipPoint.values[0].value"
+        },
+        {
+          "destination": "Max Backorder Days",
+          "source": "entity.data.attributes.maxBackorderDays.values[0].value"
+        },
+        {
+          "destination": "Store Active Sizes",
+          "source": "entity.data.attributes.storeActiveSizes.values[0].value"
+        },
+        {
+          "destination": "Store Purchase Type",
+          "source": "entity.data.attributes.storePurchaseType.values[0].value"
+        },
+        {
+          "destination": "eComm Purchase Type",
+          "source": "entity.data.attributes.ecommPurchaseType.values[0].value"
+        },
+        {
+          "destination": "Sourcing Partner",
+          "source": "entity.data.attributes.sourcingPartner.values[0].value"
+        },
+        {
+          "destination": "Factory Ship UOM",
+          "source": "entity.data.attributes.factoryShipUOM.values[0].value"
+        },
+        {
+          "destination": "Ticket Stock #",
+          "source": "entity.data.attributes.ticketStockNo.values[0].value"
+        },
+        {
+          "destination": "Ticket Attribute",
+          "source": "entity.data.attributes.ticketAttribute.values[0].value"
+        },
+        {
+          "destination": "Season",
+          "source": "entity.data.attributes.season.values[0].value"
+        },
+        {
+          "destination": "PPK #",
+          "source": "entity.data.attributes.ppkNo.values[0].value"
+        },
+        {
+          "destination": "eComm JCP Status",
+          "source": "entity.data.attributes.ecommJcpStatus.values[0].value"
+        },
+        {
+          "destination": "Inner Quantity @ Color",
+          "source": "entity.data.attributes.innerQuantityColor.values[0].value"
+        },
+        {
+          "destination": "Case Quantity @ Color",
+          "source": "entity.data.attributes.caseQuantityColor.values[0].value"
+        },
+        {
+          "destination": "Conceptual",
+          "source": "entity.data.attributes.conceptual.values[0].value"
+        },
+        {
+          "destination": "Whse Processing Fee 1",
+          "source": "entity.data.attributes.whseProcessingFee1.values[0].value"
+        },
+        {
+          "destination": "Compliance Like Item",
+          "source": "entity.data.attributes.complianceLikeItem.values[0].value"
+        },
+        {
+          "destination": "Enterprise Inventory Indicator",
+          "source": "entity.data.attributes.enterpriseInventoryIndicator.values[0].value"
+        },
+        {
+          "destination": "Fashion Pyramid",
+          "source": "entity.data.attributes.fashionPyramid.values[0].value"
+        },
+        {
+          "destination": "Delivery Instructions",
+          "source": "entity.data.attributes.deliveryInstructions.values[0].value"
+        },
+        {
+          "destination": "Packing Method",
+          "source": "entity.data.attributes.packingMethod.values[0].value"
+        },
+        {
+          "destination": "Price Tier",
+          "source": "entity.data.attributes.priceTier.values[0].value"
+        },
+        {
+          "destination": "Special Item Code",
+          "source": "entity.data.attributes.specialItemCode.values[0].value"
+        },
+        {
+          "destination": "Store OOS Date",
+          "source": "entity.data.attributes.storeOOSDate.values[0].value"
+        },
+        {
+          "destination": "Factory Ship Limited Inv Ind",
+          "source": "entity.data.attributes.factoryShipLimitedInvInd.values[0].value"
+        },
+        {
+          "destination": "Min Order Qty @ Color",
+          "source": "entity.data.attributes.minOrderQtyColor.values[0].value"
+        },
+        {
+          "destination": "eComm Min Order Qty",
+          "source": "entity.data.attributes.ecommMinOrderQty.values[0].value"
+        },
+        {
+          "destination": "Shipping Info Required",
+          "source": "entity.data.attributes.shippingInfoRequired.values[0].value"
+        },
+        {
+          "destination": "Product Title",
+          "source": "entity.data.attributes.productTitle.values[0].value"
+        },
+        {
+          "destination": "Assembled Length(in inches)",
+          "source": "entity.data.attributes.assembledLength.values[0].value"
+        },
+        {
+          "destination": "Assembled Width(in inches)",
+          "source": "entity.data.attributes.assembledWidth.values[0].value"
+        },
+        {
+          "destination": "Assembled Height(in inches)",
+          "source": "entity.data.attributes.assembledHeight.values[0].value"
+        },
+        {
+          "destination": "Assembled Weight(in pounds)",
+          "source": "entity.data.attributes.assembledWeight.values[0].value"
+        },
+        {
+          "destination": "Product Description",
+          "source": "entity.data.attributes.productDescription.values[0].value"
+        },
+        {
+          "destination": "Features 1",
+          "source": "entity.data.attributes.features1.values[0].value"
+        },
+        {
+          "destination": "Features 2",
+          "source": "entity.data.attributes.features2.values[0].value"
+        },
+        {
+          "destination": "Features 3",
+          "source": "entity.data.attributes.features3.values[0].value"
+        },
+        {
+          "destination": "Features 4",
+          "source": "entity.data.attributes.features4.values[0].value"
+        },
+        {
+          "destination": "Features 5",
+          "source": "entity.data.attributes.features5.values[0].value"
+        },
+        {
+          "destination": "Search keywords & Navigation",
+          "source": "entity.data.attributes.searchKeywordsNavigation.values[0].value"
+        },
+        {
+          "destination": "Competitor Price",
+          "source": "entity.data.attributes.competitorPrice.values[0].value"
+        },
+        {
+          "destination": "Ship point city",
+          "source": "entity.data.attributes.shipPointState.values[0].value"
+        },
+        {
+          "destination": "Ship point state",
+          "source": "entity.data.attributes.shipPointCity.values[0].value"
+        },
+        {
+          "destination": "Program Name",
+          "source": "entity.data.attributes.programName.values[0].value"
+        },
+        {
+          "destination": "Stone",
+          "source": "entity.data.attributes.stone.values[0].value"
+        },
+        {
+          "destination": "Initial Markup (%)",
+          "source": "entity.data.attributes.initialMarkup.values[0].value"
+        },
+        {
+          "destination": "Estimated Shipping Expense",
+          "source": "entity.data.attributes.estimatedShippingExpense.values[0].value"
+        },
+        {
+          "destination": "Long Description",
+          "source": "entity.data.attributes.longDescription.values[0].value"
+        },
+        {
+          "destination": "SEO Tags",
+          "source": "entity.data.attributes.seoTags.values[0].value"
+        },
+        {
+          "destination": "SEO Display Name",
+          "source": "entity.data.attributes.seoDisplayName.values[0].value"
+        },
+        {
+          "destination": "Canonical URL",
+          "source": "entity.data.attributes.canonicalURL.values[0].value"
+        },
+        {
+          "destination": "Disable Ads",
+          "source": "entity.data.attributes.disableAds.values[0].value"
+        },
+        {
+          "destination": "Disable Google Ads",
+          "source": "entity.data.attributes.disableGoogleAds.values[0].value"
+        },
+        {
+          "destination": "Include SEO Tags",
+          "source": "entity.data.attributes.seoTagInclude.values[0].value"
+        },
+        {
+          "destination": "Media Letter",
+          "source": "entity.data.attributes.mediaLetter.values[0].value"
+        },
+        {
+          "destination": "Media Year",
+          "source": "entity.data.attributes.mediaYear.values[0].value"
+        },
+        {
+          "destination": "Hide Display",
+          "source": "entity.data.attributes.isHidden.values[0].value"
+        },
+        {
+          "destination": "Product Review Quote Text",
+          "source": "entity.data.attributes.productReviewQuoteText.values[0].value"
+        },
+        {
+          "destination": "Feature Header",
+          "source": "entity.data.attributes.featureHeaderText.values[0].value"
+        },
+        {
+          "destination": "Feature Quote",
+          "source": "entity.data.attributes.featureQuoteText.values[0].value"
+        },
+        {
+          "destination": "Long Copy",
+          "source": "entity.data.attributes.longCopy.values[0].value"
+        },
+        {
+          "destination": "Secondary Copy",
+          "source": "entity.data.attributes.secondaryCopy.values[0].value"
+        },
+        {
+          "destination": "Inpirational Copy",
+          "source": "entity.data.attributes.inspirationalCopy.values[0].value"
+        },
+        {
+          "destination": "Also In Store",
+          "source": "entity.data.attributes.alsoInStore.values[0].value"
+        },
+        {
+          "destination": "Promotional Image",
+          "source": "entity.data.attributes.promotionalImageContent.values[0].value"
+        },
+        {
+          "destination": "Rating Review Id",
+          "source": "entity.data.attributes.ratingReviewId.values[0].value"
+        },
+        {
+          "destination": "Ensemble DHTML",
+          "source": "entity.data.attributes.ensembleDHTML.values[0].value"
+        },
+        {
+          "destination": "Display Ask and Answer Section",
+          "source": "entity.data.attributes.displayAskAndAnswerSection.values[0].value"
+        },
+        {
+          "destination": "destination Feed",
+          "source": "entity.data.attributes.destinationFeedId.values[0].value"
+        },
+        {
+          "destination": "Sample Ensemble",
+          "source": "entity.data.attributes.isSampleEnsemble.values[0].value"
+        },
+        {
+          "destination": "New To Clearance",
+          "source": "entity.data.attributes.isNewToClearance.values[0].value"
+        },
+        {
+          "destination": "New To Clearance Timestamp",
+          "source": "entity.data.attributes.isNewClearanceTimestamp.values[0].value"
+        },
+        {
+          "destination": "Product Presentation Type",
+          "source": "entity.data.attributes.productPresentationType.values[0].value"
+        },
+        {
+          "destination": "PreOrder Option",
+          "source": "entity.data.attributes.isPreOrderOption.values[0].value"
+        },
+        {
+          "destination": "Gallery Video",
+          "source": "entity.data.attributes.galleryVideo.values[0].value"
+        },
+        {
+          "destination": "Customer Favorite",
+          "source": "entity.data.attributes.isCustomerFavoriteOption.values[0].value"
+        },
+        {
+          "destination": "Feature Color",
+          "source": "entity.data.attributes.featureColor.values[0].value"
+        },
+        {
+          "destination": "Bopis Eligible",
+          "source": "entity.data.attributes.isBopisEligible.values[0].value"
+        },
+        {
+          "destination": "Brand LOGO Image",
+          "source": "entity.data.attributes.brandLogo.values[0].value"
+        },
+        {
+          "destination": "SEO Title",
+          "source": "entity.data.attributes.seoTitle.values[0].value"
+        },
+        {
+          "destination": "SEO Description",
+          "source": "entity.data.attributes.seoDescription.values[0].value"
+        },
+        {
+          "destination": "Brand LOGO Image",
+          "source": "entity.data.attributes.brandLogo.values[0].value"
+        },
+        {
+          "destination": "Disclaimers",
+          "source": "entity.data.attributes.disclaimerCopy.values[0].value"
+        },
+        {
+          "destination": "Online Only",
+          "source": "entity.data.attributes.onlineOnly.values[0].value"
+        },
+        {
+          "destination": "Short Name",
+          "source": "entity.data.attributes.shortName.values[0].value"
+        },
+        {
+          "destination": "Channel Availability",
+          "source": "entity.data.attributes.channelAvailability.values[0].value"
+        },
+        {
+          "destination": "Truck Item",
+          "source": "entity.data.attributes.isTruckItem.values[0].value"
+        },
+        {
+          "destination": "Warehouse Class",
+          "source": "entity.data.attributes.warehouseClass.values[0].value"
+        },
+        {
+          "destination": "Questionable Order Quantity",
+          "source": "entity.data.attributes.questionableOrderQuantity.values[0].value"
+        },
+        {
+          "destination": "Lot Type",
+          "source": "entity.data.attributes.lotType.values[0].value"
+        },
+        {
+          "destination": "White Gloved Delivery",
+          "source": "entity.data.attributes.whiteGlovedDelivery.values[0].value"
+        },
+        {
+          "destination": "Style Text",
+          "source": "entity.data.attributes.styleText.values[0].value"
+        },
+        {
+          "destination": "Lot Selection Type",
+          "source": "entity.data.attributes.lotSelectionType.values[0].value"
+        },
+        {
+          "destination": "Mailable Indicator",
+          "source": "entity.data.attributes.mailableIndicator.values[0].value"
+        },
+        {
+          "destination": "Product Length",
+          "source": "entity.data.attributes.productLength.values[0].value"
+        },
+        {
+          "destination": "Product Height",
+          "source": "entity.data.attributes.productHeight.values[0].value"
+        },
+        {
+          "destination": "Product Weight",
+          "source": "entity.data.attributes.productWeight.values[0].value"
+        },
+        {
+          "destination": "Product Width",
+          "source": "entity.data.attributes.productWidth.values[0].value"
+        },
+        {
+          "destination": "UPS Code",
+          "source": "entity.data.attributes.commercialCarrierCode.values[0].value"
+        },
+        {
+          "destination": "Mail Code",
+          "source": "entity.data.attributes.nonCommercialCarrierCode.values[0].value"
+        },
+        {
+          "destination": "Sabrix Commodity Code",
+          "source": "entity.data.attributes.sabrixCommodityCode.values[0].value"
+        },
+        {
+          "destination": "Program Type",
+          "source": "entity.data.attributes.programType.values[0].value"
+        },
+        {
+          "destination": "Special Indicator",
+          "source": "entity.data.attributes.specialIndicator.values[0].value"
+        },
+        {
+          "destination": "International Shippable",
+          "source": "entity.data.attributes.internationalShippable.values[0].value"
+        },
+        {
+          "destination": "Manufacturer",
+          "source": "entity.data.attributes.manufacturer.values[0].value"
+        },
+        {
+          "destination": "Country Of Origin",
+          "source": "entity.data.attributes.countryOfOrigin.values[0].value"
+        },
+        {
+          "destination": "Unit of Size",
+          "source": "entity.data.attributes.sizeUnit.values[0].value"
+        },
+        {
+          "destination": "Unit of Weight",
+          "source": "entity.data.attributes.weightUnit.values[0].value"
+        },
+        {
+          "destination": "Sephora",
+          "source": "entity.data.attributes.isSephora.values[0].value"
+        },
+        {
+          "destination": "Recycle Fee",
+          "source": "entity.data.attributes.recycleFeeIndicator.values[0].value"
+        },
+        {
+          "destination": "Model Number",
+          "source": "entity.data.attributes.modelNumber.values[0].value"
+        },
+        {
+          "destination": "Furniture",
+          "source": "entity.data.attributes.isFurniture.values[0].value"
+        },
+        {
+          "destination": "Sku Type",
+          "source": "entity.data.attributes.skuType.values[0].value"
+        },
+        {
+          "destination": "Sku Number",
+          "source": "entity.data.attributes.skuNumber.values[0].value"
+        },
+        {
+          "destination": "Retail Sku Number",
+          "source": "entity.data.attributes.retailSkuNumber.values[0].value"
+        },
+        {
+          "destination": "Hide Display",
+          "source": "entity.data.attributes.hideDisplayIndicator.values[0].value"
+        },
+        {
+          "destination": "Quantity",
+          "source": "entity.data.attributes.skuQuantity.values[0].value"
+        },
+        {
+          "destination": "UPC",
+          "source": "entity.data.attributes.upcBarcode.values[0].value"
+        },
+        {
+          "destination": "Component Sku Quantity",
+          "source": "entity.data.attributes.componentSkuQuantity.values[0].value"
+        },
+        {
+          "destination": "Brand",
+          "source": "entity.data.attributes.brand.values[0].value"
+        },
+        {
+          "destination": "Warranty",
+          "source": "entity.data.attributes.warranty.values[0].value"
+        },
+        {
+          "destination": "Variable Data",
+          "source": "entity.data.attributes.ventity.data.values[0].value"
+        },
+        {
+          "destination": "Factsheet",
+          "source": "entity.data.attributes.factSheet.values[0].value"
+        }
+      ],
+      "contexts": [
+        {
+          "context": [
+            {
+              "name": "classification",
+              "fields": [
+                "Sheet1.AA",
+                "Sheet1.AB"
+              ]
+            }
+          ]
+        },
+        {
+          "context": [
+            {
+              "name": "channel",
+              "fields": [
+                "@value(Web)"
+              ]
+            },
+            {
+              "name": "classification",
+              "fields": [
+                "Sheet1.AC"
+              ]
+            }
+          ]
+        },
+        {
+          "context": [
+            {
+              "name": "channel",
+              "fields": [
+                "Sheet1.AA",
+                "Sheet1.AB"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
