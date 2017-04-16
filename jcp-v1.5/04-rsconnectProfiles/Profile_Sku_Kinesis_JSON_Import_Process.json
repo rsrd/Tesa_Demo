@@ -6,7 +6,7 @@
   "dataInfo": "Entity",
   "enabled": "true",
   "inboundChannel": {
-    "isDataPersistent": "true",
+    "isDataPersistent": "false",
    "kinesisStreamConnector": {
       "streamName": "rsjcpStream3",
       "regionName": "us-west-2"
@@ -42,7 +42,7 @@
     },
     "mapping": {
       "source": "SAP",
-      "allowNullValues": "true",
+      "allowNullValues": "false",
       "clearMissingAttributes": "false",
       "strategies": [
         {

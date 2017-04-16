@@ -8,7 +8,7 @@
   "inboundChannel": {
     "isDataPersistent": "true",
     "folderConnector": {
-      "sourceFolder": "/apps/import/sku",
+      "sourceFolder": "/apps/imports/sku",
       "pattern": "*.xlsx"
     }
   },
@@ -44,7 +44,7 @@
     },
     "mapping": {
       "source": "SAP",
-      "allowNullValues": "true",
+      "allowNullValues": "false",
       "clearMissingAttributes": "false",
       "strategies": [
         {
