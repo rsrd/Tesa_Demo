@@ -294,7 +294,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"productDescription\"],true,SetAttributeValue[\"inspirationalCopy\",concat[GetAttributeValue[\"productDescription\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"feature2\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
+                "value": "IIF[ValidateEmptyAttributes[\"productDescription\"],true,SetAttributeValue[\"inspirationalCopy\",concat[GetAttributeValue[\"productDescription\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
               }
             ]
           },
@@ -622,7 +622,7 @@
             "values": [
               {
                 "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\",\"estimatedShippingExpense\",\"parantheticAmount\"],true,SetAttributeValue[\"grossProfit\",((GetAttributeValue[\"retail\"]-(GetAttributeValue[\"cost\"] + GetAttributeValue[\"estimatedShippingExpense\"] - GetAttributeValue[\"parantheticAmount\"]))/GetAttributeValue[\"retail\"])*100]]]"
+                "value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\",\"estimatedShippingExpense\",\"parantheticAmount\"],true,SetAttributeValue[\"grossProfit\",((GetAttributeValue[\"retail\"]-(GetAttributeValue[\"cost\"] + GetAttributeValue[\"estimatedShippingExpense\"] - GetAttributeValue[\"parantheticAmount\"]))/GetAttributeValue[\"retail\"])*100]]"
               }
             ]
           },

@@ -130,6 +130,64 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
+                            "id": "sku_classtosubclass_BusinessRule_Rel_Id",
+                            "relTo": {
+                                "id": "classtosubclass_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "user": "users/system",
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "user": "users/system",
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "user": "users/system",
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "user": "users/system",
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "user": "users/system",
+                                            "value": "2"
+                                        }
+                                    ]
+                                },
+                                "triggerActions": {
+                                    "values": [
+                                        {
+                                            "value": "update"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
                             "id": "sku_businesRule3",
                             "relTo": {
                                 "id": "imucalculations_BusinessRule",
