@@ -95,6 +95,49 @@
 						"writePermission": true,
 						"readPermission": true
 					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"taxonomy": "productSetupTaxonomy"
+						},
+						"properties": {
+							"readPermission": true,
+							"writePermission": true,
+							"attributesPermission": [
+								{
+									"writePermission": true,
+									"readPermission": true
+								}
+							],
+							"relationshipsPermission": [
+								{
+									"writePermission": true,
+									"readPermission": true
+								}
+							]
+						}
+					}
 				]
 			}
 		},
@@ -512,6 +555,18 @@
 						}
 					},
 					"supplierSiteNumber": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"imageName": {
+						"properties": {
+							"writePermission": true,
+							"readPermission": true
+						}
+					},
+					"orin": {
 						"properties": {
 							"writePermission": true,
 							"readPermission": true
