@@ -290,14 +290,35 @@ function getSelectedFolderNames(option) {
         case "tenant-config":
             selectedFolders.push("00-tenant-config");
             break;
-        case "model":
-            selectedFolders.push("01-model");
+        case "foundation":
+            selectedFolders.push("10-foundation");
             break;
+        case "authorizationmodel":
+            selectedFolders.push("11-authorizationmodel");
+            break;
+        case "governancemodel":
+            selectedFolders.push("12-governancemodel");
+            break; 
+        case "entitymodels":
+            selectedFolders.push("13-entitymodels");
+            break; 
+        case "contexts":
+            selectedFolders.push("20-contexts");
+            break; 
+        case "contextualmodel":
+            selectedFolders.push("21-contextualmodel");
+            break; 
+        case "referencemodel":
+            selectedFolders.push("30-referencemodel");
+            break; 
+        case "referencedata":
+            selectedFolders.push("31-referencedata");
+            break; 
         case "data":
-            selectedFolders.push("02-data");
+            selectedFolders.push("40-data");
             break;
         case "config":
-            selectedFolders.push("03-config");
+            selectedFolders.push("41-config");
             break;
     }
 
