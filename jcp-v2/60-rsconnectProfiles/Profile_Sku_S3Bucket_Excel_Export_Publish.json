@@ -1,24 +1,25 @@
 {
   "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKU_v15",
   "name": "Sku_S3Bucket_Excel_Export_Publish",
+  "tenantId": "jcp",
   "profileType": "contentOnboarding",
   "dataInfo": "Entity",
   "enabled": "true",
   "inboundChannel": {
-    "isDataPersistent": "true",
-    "s3BucketConnector": {
-      "fileType": "xlsx",
-      "bucketName": "rs-apps-rcoa-imports",
-      "regionName": "us-east-1"
-    }
-  },
-  "outboundChannel": {
     "isDataPersistent": "false",
     "rdpConnector": {
       "type": "RSJSON",
       "version": "1.1",
       "url": "http://192.168.0.130:8085/jcp/api/entityManageService/",
       "operation": "create"
+    }
+  },
+  "outboundChannel": {
+    "isDataPersistent": "true",
+    "s3ObjectConnector": {
+      "regionName": "us-east-1",
+      "bucketName": "rs-apps-rcoa-exports",
+      "key": "Export_Data.xlsx"
     }
   },
   "transform": {
