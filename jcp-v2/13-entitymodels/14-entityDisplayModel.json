@@ -1033,6 +1033,11 @@
 							"displayType": "TextBox"
 						}
 					},
+					"imageDescription": {
+						"properties": {
+							"displayType": "TextBox"
+						}
+					},
 					"skuType": {
 						"properties": {
 							"displayType": "referenceList",
@@ -1186,38 +1191,17 @@
 					},
 					"productType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
-								}
-							]
+							"displayType": "TextBox"
 						}
 					},
 					"subProductType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
-								}
-							]
+							"displayType": "TextBox"
 						}
 					},
 					"itemType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
-								}
-							]
+							"displayType": "TextBox"
 						}
 					},
 					"sizeRange": {
@@ -1530,7 +1514,14 @@
 					},
 					"colorFamily": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"colorDesc": {
@@ -1555,7 +1546,14 @@
 					},
 					"printPattern": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"artworkId": {

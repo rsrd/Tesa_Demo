@@ -318,7 +318,7 @@ function getSelectedFolderNames(option) {
             selectedFolders.push("40-data");
             break;
         case "config":
-            selectedFolders.push("41-config");
+            selectedFolders.push("50-config");
             break;
     }
 

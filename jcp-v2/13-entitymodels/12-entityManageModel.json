@@ -1986,42 +1986,21 @@
 						"properties": {
 							"externalName": "Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "ProductType"
-								}
-							]
+							"dataType": "string"
 						}
 					},
 					"subProductType": {
 						"properties": {
 							"externalName": "Sub Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "SubProductType"
-								}
-							]
+							"dataType": "string"
 						}
 					},
 					"itemType": {
 						"properties": {
 							"externalName": "Item Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "ItemType"
-								}
-							]
+							"dataType": "string"
 						}
 					},
 					"sizeRange": {
@@ -3091,42 +3070,42 @@
 					"productDescription": {
 						"properties": {
 							"externalName": "Product Description",
-							"groupName": "Copy",
+							"groupName": "Pricing (USD)",
 							"dataType": "string"
 						}
 					},
 					"features1": {
 						"properties": {
 							"externalName": "Features 1",
-							"groupName": "Copy",
+							"groupName": "SEO",
 							"dataType": "string"
 						}
 					},
 					"features2": {
 						"properties": {
 							"externalName": "Features 2",
-							"groupName": "Copy",
+							"groupName": "SEO",
 							"dataType": "string"
 						}
 					},
 					"features3": {
 						"properties": {
 							"externalName": "Features 3",
-							"groupName": "Copy",
+							"groupName": "SEO",
 							"dataType": "string"
 						}
 					},
 					"features4": {
 						"properties": {
 							"externalName": "Features 4",
-							"groupName": "Copy",
+							"groupName": "SEO",
 							"dataType": "string"
 						}
 					},
 					"features5": {
 						"properties": {
 							"externalName": "Features 5",
-							"groupName": "Copy",
+							"groupName": "SEO",
 							"dataType": "string"
 						}
 					},
@@ -3137,11 +3116,25 @@
 							"dataType": "string"
 						}
 					},
+					"seoDescription": {
+						"properties": {
+							"externalName": "SEO Description",
+							"groupName": "SEO",
+							"dataType": "string"
+						}
+					},
 					"competitorPrice": {
 						"properties": {
 							"externalName": "Competitor Price",
 							"groupName": "Pricing (USD)",
 							"dataType": "integer"
+						}
+					},
+					"purchaseDate": {
+						"properties": {
+							"externalName": "Purchase Date",
+							"groupName": "SEO",
+							"dataType": "date"
 						}
 					},
 					"shipPointState": {
@@ -3228,11 +3221,18 @@
 							"groupName": "Pricing (USD)"
 						}
 					},
-					"warrantydata": {
+					"imageDescription": {
+						"properties": {
+							"dataType": "string",
+							"externalName": "Image Description",
+							"groupName": "Pricing (USD)"
+						}
+					},
+					"warrantyData": {
 						"properties": {
 							"dataType": "string",
 							"externalName": "Warranty Data",
-							"groupName": "Pricing (USD)"
+							"groupName": "Warranty Group"
 						}
 					}
 				},
