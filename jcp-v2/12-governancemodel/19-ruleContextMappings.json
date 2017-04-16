@@ -1770,6 +1770,74 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "context": {
+                            "taxonomy": "_ALL",
+                            "classification": "_ALL"
+                        },
+                        "relationships": {
+                            "hasBusinessRules": [
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "autopopulateitemtype_BusinessRule_RelId",
+                                    "relTo": {
+                                        "id": "autopopulateitemtype_BusinessRule",
+                                        "type": "businessRule"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "user": "users/system",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        },
+                                        "triggerActions": {
+                                            "values": [
+                                                {
+                                                    "value": "create"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
                     }
                 ]
             }
