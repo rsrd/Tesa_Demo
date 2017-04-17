@@ -128,7 +128,8 @@
 					},
 					"size": {
 						"properties": {
-							"isCollection": false
+							"isCollection": false,
+							"required": false
 						}
 					},
 					"id": {
@@ -136,20 +137,174 @@
 							"required": true
 						}
 					},
-					"skuType": {
+					"vpn": {
 						"properties": {
-							"minLength": "2",
-							"maxLength": "20"
-						}
-					},
-					"skuNumber": {
-						"properties": {
-							"maxLength": "100"
+							"required":false
 						}
 					},
 					"colorDesc": {
 						"properties": {
-							"minLength": "3"
+							"required": false
+						}
+					},
+					"cost": {
+						"properties": {
+							"required": false
+						}
+					},
+					"productTitle": {
+						"properties": {
+							"required":false
+						}
+					},
+					"length": {
+						"properties": {
+							"required": false
+						}
+					},
+					"width": {
+						"properties": {
+							"required": false
+						}
+					},
+					"height": {
+						"properties": {
+							"required": false
+						}
+					},
+					"grossWeight": {
+						"properties": {
+							"required":false
+						}
+					},
+					"prop65Indicator": {
+						"properties": {
+							"required": false
+						}
+					},
+					"hazMatFlag": {
+						"properties": {
+							"required": false
+						}
+					},
+					"shipPointCity": {
+						"properties": {
+							"required": false
+						}
+					},
+					"shipPointState": {
+						"properties": {
+							"required":false
+						}
+					},
+					"msrp": {
+						"properties": {
+							"required": false
+						}
+					},
+					"image": {
+						"properties": {
+							"required": false
+						}
+					},
+					"imageName": {
+						"properties": {
+							"required": false
+						}
+					},
+					"productDescription": {
+						"properties": {
+							"required":false
+						}
+					},
+					"searchKeywordsNavigation": {
+						"properties": {
+							"required": false
+						}
+					},
+					"itemType": {
+						"properties": {
+							"required": false
+						}
+					},
+					"colorFamily": {
+						"properties": {
+							"required": false
+						}
+					},
+					"printPattern": {
+						"properties": {
+							"required":false
+						}
+					},
+					"countryOfManufacture": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledLength": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledWidth": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledHeight": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledWeight": {
+						"properties": {
+							"required":false
+						}
+					},
+					"entity": {
+						"properties": {
+							"required": false
+						}
+					},
+					"subDivision": {
+						"properties": {
+							"required": false
+						}
+					},
+					"class": {
+						"properties": {
+							"required": false
+						}
+					},
+					"retail": {
+						"properties": {
+							"required":false
+						}
+					},
+					"supplierSiteNumber": {
+						"properties": {
+							"required": false
+						}
+					},
+					"supplierMfrShipPoint": {
+						"properties": {
+							"required": false
+						}
+					},
+					"ecommSupplierShipPoint": {
+						"properties": {
+							"required": false
+						}
+					},
+					"supplierChannel": {
+						"properties": {
+							"required":false
+						}
+					},
+					"plannedOnSiteDate": {
+						"properties": {
+							"required": false
 						}
 					}
 				},
