@@ -258,7 +258,7 @@
                                 },
                                 "export": {
                                     "isExportEnabled": "true",
-                                    "resturi": "@@EXPORT_SVC_URL@@",
+                                    "resturi": "http://@@EXPORT_SVC_URL@@:9095/jcp/api/entityExportService",
                                     "publish": "/publish"
                                 }
                             },
@@ -1364,7 +1364,7 @@
                                     "notificationClients": [
                                         {
                                             "client": "uiclient",
-                                            "restUri": "http://@@MDM_UI_SVC_NAME@@:5005/api/",
+                                            "restUri": "http://mdmuicluster:5005/api/",
                                             "service": "notify",
                                             "action": "send"
                                         }
@@ -1639,6 +1639,7 @@
                                     "IdPCert": "../keys/riversand-auth0.crt",
                                     "assertionLookup": {
                                         "ownershipData": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
+                                        "tenantId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/tenantId",
                                         "userId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn",
                                         "userName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userName",
                                         "firstName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstName",
