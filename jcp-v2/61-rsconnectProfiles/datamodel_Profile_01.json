@@ -1,91 +1,75 @@
 {
-	"metaInfo": {
-		"dataIndex": "config",
-		"collectionName": "configObjects",
-		"responseObjectName": "response"
-	},
-	"configObjects": [
-		{
-			"id": "datamodel_Profile_01_COPProfile",
-			"name": "datamodel_Profile_01",
-			"version": "1.0",
-			"type": "COPProfile",
-			"properties": {
-				"createdByService": "entityservice",
-				"createdService": "configurationManageService",
-				"createdDate": "2017-04-16T03:51:00.407Z"
-			},
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"app": "RSConnect",
-							"service": "datamodelLoadService",
-							"list": "self"
-						},
-						"jsonData": {
-							"id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpDatamodel_v15",
-							"name": "Datamodel_Profile_01",
-							"tenantId": "jcp",
-							"profileType": "contentOnboarding",
-							"dataInfo": "dataModel",
-							"enabled": "true",
-							"inboundChannel": {
-								"isDataPersistent": "true",
-								"folderConnector": {
-									"sourceFolder": "/apps/imports/model",
-									"pattern": "*.xlsx"
-								}
-							},
-							"outboundChannel": {
-								"isDataPersistent": "false",
-								"rdpConnector": {
-									"type": "RSJSON",
-									"version": "1.1"
-								}
-							},
-							"transform": {
-								"inboundFormat": {
-									"type": "EXCEL",
-									"version": "1.1",
-									"settings": {
-										"encoding": "utf8",
-										"isFirstRowHeader": "true"
-									},
-									"includeFilter": [],
-									"excludeFilter": []
-								},
-								"outboundFormat": {
-									"type": "RSJSON",
-									"version": "1.1",
-									"batchSize": 0,
-									"settings": {
-										"encoding": "utf8"
-									},
-									"includeFilter": [],
-									"excludeFilter": []
-								},
-								"mapping": {
-									"source": "SAP",
-									"allowNullValues": "true",
-									"clearMissingAttributes": "false",
-									"strategies": [
-										{
-											"caseFormat": "NONE",
-											"removeSpecialCharacters": "false",
-											"trimLeadingNumbers": "false",
-											"trimTrailingNumbers": "false",
-											"isDefault": "false"
-										}
-									],
-									"fieldOverrides": [],
-									"contexts": []
-								}
-							}
-						}
-					}
-				]
-			}
-		}
-	]
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "datamodel_Profile_01_COPProfile",
+      "name": "datamodel_Profile_01",
+      "version": "1.0",
+      "type": "COPProfile",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdService": "configurationManageService",
+        "createdDate": "2017-04-16T03:51:00.407Z"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "datamodelLoadService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "4d05ecf6-1a9b-4d66-a89e-e2474a023c3c_jcpDatamodel_v15",
+              "name": "datamodel_Profile_01",
+              "tenantId": "jcp",
+              "profileType": "contentOnboarding",
+              "dataInfo": "dataModel",
+              "enabled": "true",
+              "inboundChannel": {
+                "isDataPersistent": "true",
+                "folderConnector": {
+                  "sourceFolder": "/apps/imports/model",
+                  "pattern": "*.xlsx"
+                }
+              },
+              "outboundChannel": {
+                "isDataPersistent": "false",
+                "rdpConnector": {
+                  "type": "RSJSON",
+                  "version": "1.1"
+                }
+              },
+              "transform": {
+                "inboundFormat": {
+                  "type": "EXCEL",
+                  "version": "1.1",
+                  "settings": {
+                    "encoding": "utf8",
+                    "isFirstRowHeader": "true"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                },
+                "outboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 0,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

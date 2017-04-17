@@ -25,7 +25,7 @@
 						},
 						"jsonData": {
 							"id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKU_v15",
-							"name": "Sku_S3Bucket_Excel_Import_Process",
+							"name": "sku_S3Bucket_Excel_Import_Process",
 							"tenantId": "jcp",
 							"profileType": "contentOnboarding",
 							"dataInfo": "Entity",
@@ -86,7 +86,7 @@
 											"destination": "entity.id"
 										},
 										{
-											"source": "@value(Sku)",
+											"source": "@value(sku)",
 											"destination": "entity.type"
 										},
 										{
@@ -107,15 +107,15 @@
 										},
 										{
 											"source": "Creation Date",
-											"destination": "entity.entity.data.attributes.creationDate.values[0].value"
+											"destination": "entity.data.attributes.creationDate.values[0].value"
 										},
 										{
 											"source": "On-Site Date",
-											"destination": "entity.entity.data.attributes.startDate.values[0].value"
+											"destination": "entity.data.attributes.startDate.values[0].value"
 										},
 										{
 											"source": "Off-Site Date",
-											"destination": "entity.entity.data.attributes.endDate.values[0].value"
+											"destination": "entity.data.attributes.endDate.values[0].value"
 										},
 										{
 											"source": "Display Name",
@@ -320,6 +320,10 @@
 										{
 											"source": "Size",
 											"destination": "entity.data.attributes.size.values[0].value"
+										},
+										{
+											"source": "COLOR DESC",
+											"destination": "entity.data.attributes.colorDesc.values[0].value"
 										},
 										{
 											"source": "eComm Color",

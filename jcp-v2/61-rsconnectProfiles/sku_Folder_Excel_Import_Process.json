@@ -24,8 +24,8 @@
 							"list": "self"
 						},
 						"jsonData": {
-							"id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKU_v15",
-							"name": "Sku_Folder_Excel_Import_Process",
+							"id": "4d05ecf6-1a9b-4d66-a89e-d3474a023c3c_jcpSKU_v15",
+							"name": "sku_Folder_Excel_Import_Process",
 							"tenantId": "jcp",
 							"profileType": "contentOnboarding",
 							"dataInfo": "Entity",
@@ -315,10 +315,6 @@
 										{
 											"source": "COLOR FAMILY",
 											"destination": "entity.data.attributes.colorFamily.values[0].value"
-										},
-										{
-											"source": "COLOR DESC",
-											"destination": "entity.data.attributes.colorDesc.values[0].value"
 										},
 										{
 											"source": "COLOR DESC",

@@ -25,7 +25,7 @@
             },
             "jsonData": {
               "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKUPubv15",
-              "name": "Sku_S3Bucket_Excel_Export_Publish",
+              "name": "sku_S3Bucket_Excel_Export_Publish",
               "tenantId": "jcp",
               "profileType": "contentOnboarding",
               "dataInfo": "Entity",
@@ -86,7 +86,7 @@
                       "source": "entity.id"
                     },
                     {
-                      "destination": "@value(Sku)",
+                      "destination": "@value(sku)",
                       "source": "entity.type"
                     },
                     {
@@ -107,15 +107,15 @@
                     },
                     {
                       "destination": "Creation Date",
-                      "source": "entity.entity.data.attributes.creationDate.values[0].value"
+                      "source": "entity.data.attributes.creationDate.values[0].value"
                     },
                     {
                       "destination": "On-Site Date",
-                      "source": "entity.entity.data.attributes.startDate.values[0].value"
+                      "source": "entity.data.attributes.startDate.values[0].value"
                     },
                     {
                       "destination": "Off-Site Date",
-                      "source": "entity.entity.data.attributes.endDate.values[0].value"
+                      "source": "entity.data.attributes.endDate.values[0].value"
                     },
                     {
                       "destination": "Display Name",
@@ -321,6 +321,10 @@
                       "destination": "Size",
                       "source": "entity.data.attributes.size.values[0].value"
                     },
+										{
+											"source": "Orin",
+											"destination": "entity.data.attributes.orin.values[0].value"
+										},
                     {
                       "destination": "eComm Color",
                       "source": "entity.data.attributes.ecommColor.values[0].value"
