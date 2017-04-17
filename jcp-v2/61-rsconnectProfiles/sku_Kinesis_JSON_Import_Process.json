@@ -64,62 +64,7 @@
 									},
 									"includeFilter": [],
 									"excludeFilter": []
-								},
-								"mapping": {
-									"source": "SAP",
-									"allowNullValues": "false",
-									"clearMissingAttributes": "false",
-									"strategies": [
-										{
-											"caseFormat": "NONE",
-											"removeSpecialCharacters": "false",
-											"trimLeadingNumbers": "false",
-											"trimTrailingNumbers": "false",
-											"isDefault": "false"
-										}
-									],
-									"fieldOverrides": [],
-									"contexts": [
-										{
-											"context": [
-												{
-													"name": "classification",
-													"fields": [
-														"Sheet1.AA",
-														"Sheet1.AB"
-													]
-												}
-											]
-										},
-										{
-											"context": [
-												{
-													"name": "channel",
-													"fields": [
-														"@value(Web)"
-													]
-												},
-												{
-													"name": "classification",
-													"fields": [
-														"Sheet1.AC"
-													]
-												}
-											]
-										},
-										{
-											"context": [
-												{
-													"name": "channel",
-													"fields": [
-														"Sheet1.AA",
-														"Sheet1.AB"
-													]
-												}
-											]
-										}
-									]
-								}
+								}								
 							}
 						}
 					}
