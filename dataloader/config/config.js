@@ -18,7 +18,7 @@ var quiteLoadConfig = {
 }
 
 // quiteLoadConfig = {
-//     "enabled": false,
+//     "enabled": true,
 //     "folderName": "jcp-v2",
 //     "tenantId": "jcp",
 //     "option": "all",
