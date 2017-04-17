@@ -1,0 +1,464 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "lot_entityValidationModel",
+			"name": "lot",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"color": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"supplierNumberName": {
+						"properties": {
+							"required": true
+						}
+					},
+					"size": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"channelAvailability": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"mailableIndicator": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productLength": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productHeight": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"productWeight": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"specialIndicator": {
+						"properties": {
+							"precision": 2
+						}
+					},
+					"factSheet": {
+						"properties": {
+							"isCollection": true
+						}
+					},
+					"warranty": {
+						"properties": {
+							"isCollection": true
+						}
+					}
+				},
+				"relationships": {
+					"kitLotToLot": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 1
+									}
+								]
+							}
+						}
+					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "sku_entityValidationModel",
+			"name": "sku",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"color": {
+						"properties": {
+							"isCollection": false
+						}
+					},
+					"supplierNumberName": {
+						"properties": {
+							"required": true
+						}
+					},
+					"size": {
+						"properties": {
+							"isCollection": false
+						}
+					},
+					"id": {
+						"properties": {
+							"required": true
+						}
+					},
+					"monogramCharge": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "3",
+									"isRangeFromInclusive": "true"
+								}
+							]
+						}
+					},
+					"ecommInnerPack": {
+						"properties": {
+							"range": [
+								{
+									"rangeTo": "1000",
+									"isRangeToInclusive": "true"
+								}
+							]
+						}
+					},
+					"factoryShipLeadTime": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "100",
+									"isRangeFromInclusive": "false",
+									"rangeTo": "1000",
+									"isRangeToInclusive": "false"
+								}
+							]
+						}
+					},
+					"whseProcessingFee1": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "5",
+									"isRangeFromInclusive": "true",
+									"rangeTo": "100000",
+									"isRangeToInclusive": "false"
+								}
+							]
+						}
+					},
+					"ecommMinOrderQty": {
+						"properties": {
+							"required": "true",
+							"range": [
+								{
+									"rangeFrom": "1",
+									"isRangeFromInclusive": "true",
+									"rangeTo": "10",
+									"isRangeToInclusive": "true"
+								}
+							]
+						}
+					},
+					"assembledLength": {
+						"properties": {
+							"precision": "2",
+							"range": [
+								{
+									"rangeTo": "1000.01",
+									"isRangeToInclusive": "true"
+								}
+							]
+						}
+					},
+					"assembledWidth": {
+						"properties": {
+							"precision": "2",
+							"range": [
+								{
+									"rangeFrom": "100.55",
+									"isRangeFromInclusive": "true",
+									"rangeTo": "1000.09",
+									"isRangeToInclusive": "true"
+								}
+							]
+						}
+					},
+					"assembledHeight": {
+						"properties": {
+							"precision": "3",
+							"range": [
+								{
+									"rangeFrom": "5",
+									"isRangeFromInclusive": "true",
+									"rangeTo": "9999.99"
+								}
+							]
+						}
+					},
+					"assembledWeight": {
+						"properties": {
+							"required": true,
+							"precision": "3",
+							"range": [
+								{
+									"rangeFrom": "1.5",
+									"isRangeFromInclusive": "false",
+									"rangeTo": "100.00",
+									"isRangeToInclusive": "false"
+								}
+							],
+							"uomreference": [
+								{
+									"allowedUOMs": [
+										"kgs",
+										"gm"
+									]
+								}
+							]
+						}
+					},
+					"creationDate": {
+						"properties": {
+							"required": "true"
+						}
+					},
+					"startDate": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "2017-12-12",
+									"rangeTo": "2018-12-12"
+								}
+							]
+						}
+					},
+					"endDate": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "2012-12-12",
+									"isRangeFromInclusive": "true"
+								}
+							]
+						}
+					},
+					"plannedOnSiteDate": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "2017-03-08T06:52:27+00:00",
+									"isRangeFromInclusive": "true",
+									"rangeTo": "2018-03-08T06:52:27+00:00",
+									"isRangeToInclusive": "true"
+								}
+							]
+						}
+					},
+					"ecommOOSDate": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "2017-12-12T00:52:27+00:00",
+									"isRangeFromInclusive": "false",
+									"rangeTo": "2018-12-12T00:52:27+00:00",
+									"isRangeToInclusive": "false"
+								}
+							]
+						}
+					},
+					"storeOOSDate": {
+						"properties": {
+							"range": [
+								{
+									"rangeFrom": "2017-12-12T12:52:27+00:00",
+									"isRangeFromInclusive": "true"
+								}
+							]
+						}
+					},
+					"skuType": {
+						"properties": {
+							"minLength": "2",
+							"maxLength": "20"
+						}
+					},
+					"skuNumber": {
+						"properties": {
+							"maxLength": "100"
+						}
+					},
+					"colorDesc": {
+						"properties": {
+							"minLength": "3"
+						}
+					}
+				},
+				"relationships": {
+					"kitSkuToSku": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 1
+									}
+								]
+							}
+						}
+					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "productPresentation_entityValidationModel",
+			"name": "productPresentation",
+			"type": "entityValidationModel",
+			"data": {
+				"attributes": {
+					"subDivision": {
+						"properties": {
+							"isCollection": true
+						}
+					}
+				},
+				"relationships": {
+					"productPresentationToLot": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 1
+									}
+								]
+							}
+						}
+					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "ensemble_entityValidationModel",
+			"name": "ensemble",
+			"type": "entityValidationModel",
+			"data": {
+				"relationships": {
+					"ensembleToProductPresentation": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 1
+									}
+								]
+							}
+						}
+					]
+				},
+				"contexts": [
+					{
+						"context": {
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1,
+									"maximum": 1
+								}
+							]
+						}
+					},
+					{
+						"context": {
+							"channel": "webCatalog",
+							"classification": "_ALL"
+						},
+						"properties": {
+							"cardinality": [
+								{
+									"minimum": 1
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}
