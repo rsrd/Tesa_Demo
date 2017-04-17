@@ -10,22 +10,29 @@
             "name": "apparel",
             "type": "entityManageModel",
             "data": {
-                "attributes": {
-                    "threadCount": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "THREAD COUNT"
-                        }
-                    },
-                    "secondCompLiningMaterial": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "2ND COMP LINING MATERIAL"
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productSetupTaxonomy"
+                        },
+                        "attributes": {
+                            "threadCount": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "THREAD COUNT"
+                                }
+                            },
+                            "secondCompLiningMaterial": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "2ND COMP LINING MATERIAL"
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         {
@@ -33,29 +40,36 @@
             "name": "shirts",
             "type": "entityManageModel",
             "data": {
-                "attributes": {
-                    "sleeve": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE"
-                        }
-                    },
-                    "sleeveStyle": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE STYLE"
-                        }
-                    },
-                    "sleeveLength": {
-                        "properties": {
-                            "isEntityIdentifier": false,
-                            "dataType": "string",
-                            "externalName": "SLEEVE LENGTH"
+                "contexts": [
+                    {   
+                        "context": {
+                            "taxonomy": "productSetupTaxonomy"
+                        },
+                        "attributes": {
+                            "sleeve": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE"
+                                }
+                            },
+                            "sleeveStyle": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE STYLE"
+                                }
+                            },
+                            "sleeveLength": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "dataType": "string",
+                                    "externalName": "SLEEVE LENGTH"
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         }
     ]
