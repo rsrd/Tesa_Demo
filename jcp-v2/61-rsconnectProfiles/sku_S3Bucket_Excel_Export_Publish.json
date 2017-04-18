@@ -86,26 +86,6 @@
                       "source": "entity.id"
                     },
                     {
-                      "destination": "@value(sku)",
-                      "source": "entity.type"
-                    },
-                    {
-                      "destination": "@value(internal-destination)",
-                      "source": "entity.properties.destination"
-                    },
-                    {
-                      "destination": "@value(UserinterfaceSvc)",
-                      "source": "entity.properties.modifiedByService"
-                    },
-                    {
-                      "destination": "@value(ghostUser_v2)",
-                      "source": "entity.properties.modifiedBy"
-                    },
-                    {
-                      "destination": "@value(4/3/2017)",
-                      "source": "entity.properties.modifiedDate"
-                    },
-                    {
                       "destination": "Creation Date",
                       "source": "entity.data.attributes.creationDate.values[0].value"
                     },
