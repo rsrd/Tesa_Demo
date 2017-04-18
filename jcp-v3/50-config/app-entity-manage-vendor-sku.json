@@ -224,12 +224,6 @@
 												"editType": "textbox"
 											},
 											{
-												"header": "Channel",
-												"name": "Channel",
-												"sortable": false,
-												"filterable": false
-											},
-											{
 												"header": "Locale",
 												"name": "Locale",
 												"sortable": true,
@@ -239,12 +233,6 @@
 												"header": "Source",
 												"name": "Source",
 												"sortable": true,
-												"filterable": false
-											},
-											{
-												"header": "Time",
-												"name": "Time",
-												"sortable": false,
 												"filterable": false
 											}
 										]
@@ -357,40 +345,8 @@
 									]
 								},
 								"summaryToFix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								}
 							}
@@ -1501,40 +1457,8 @@
 						},
 						"jsonData": {
 							"config": {
-								"completionPercentage": 65,
+								"completionPercentage": "",
 								"tofixes": [
-									{
-										"data": {
-											"name": "brandext",
-											"type": "error",
-											"label": "Images not associated",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "priceissue",
-											"type": "error",
-											"label": "Required Attributes not provided",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "msrpissue",
-											"type": "error",
-											"label": "Incorrect MSRP",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "msrpissue",
-											"type": "warning",
-											"label": "Missing videos",
-											"eventName": "tofixtap"
-										}
-									}
 								]
 							}
 						}
@@ -1566,7 +1490,7 @@
 							"config": {
 								"image": "",
 								"titleAttribute": "displayName",
-								"subtitleAttribute": "description"
+								"subtitleAttribute": "type"
 							}
 						}
 					}
