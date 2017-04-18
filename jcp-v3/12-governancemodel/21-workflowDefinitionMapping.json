@@ -31,28 +31,7 @@
                             }
                         }
                     ]
-                },
-                "contexts": [
-                    {
-                        "context": {
-                            "channel": "webCatalog",
-                            "classification": "_ALL"
-                        },
-                        "relationships": {
-                            "hasWorkflowsDefined": [
-                                {
-                                    "id": "rel102",
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "relTo": {
-                                        "id": "webContentApproval_workflowDefinition",
-                                        "type": "workflowDefinition"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
+                } 
             }
         }
     ]
