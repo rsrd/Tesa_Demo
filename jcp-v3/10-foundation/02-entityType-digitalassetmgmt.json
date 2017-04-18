@@ -1,0 +1,90 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "image_entityType",
+			"name": "image",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Image"
+			}
+		},
+		{
+			"id": "originalImage_entityType",
+			"name": "originalImage",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Original Image"
+			}
+		},
+		{
+			"id": "originalVideo_entityType",
+			"name": "originalVideo",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Original Video"
+			}
+		},
+		{
+			"id": "originalAudio_entityType",
+			"name": "originalAudio",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Original Audio"
+			}
+		},
+		{
+			"id": "originalDocument_entityType",
+			"name": "originalDocument",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Original Document"
+			}
+		},
+		{
+			"id": "renditionImage_entityType",
+			"name": "renditionImage",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Rendition Image"
+			}
+		},
+		{
+			"id": "renditionVideo_entityType",
+			"name": "renditionVideo",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Rendition Video"
+			}
+		},
+		{
+			"id": "renditionAudio_entityType",
+			"name": "renditionAudio",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Rendition Audio"
+			}
+		},
+		{
+			"id": "thumbnailImage_entityType",
+			"name": "thumbnailImage",
+			"type": "entityType",
+			"domain": "digitalAsset",
+			"properties": {
+				"externalName": "Thumbnail Image"
+			}
+		}
+	]
+}
