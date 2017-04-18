@@ -1,0 +1,150 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sku_matchConfig",
+      "name": "sku",
+      "version": "1",
+      "type": "matchConfig",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdBy": "user"
+      },
+      "data": {
+        "jsonData": {
+          "type": "config",
+          "matchRules": [
+            {
+              "matchType": "deterministic",
+              "matchSequence": 1,
+              "searchQuery": {
+                "query": {
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ],
+                  "filters": {
+                    "typesCriterion": [
+                      "sku"
+                    ],
+                    "attributesCriterion": [
+                      {
+                        "colorDesc": {
+                          "eq": "{{colorDesc}}"
+                        }
+                      },
+                      {
+                        "size": {
+                          "eq": "{{size}}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "matchType": "deterministic",
+              "matchSequence": 2,
+              "searchQuery": {
+                "query": {
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ],
+                  "filters": {
+                    "typesCriterion": [
+                      "sku"
+                    ],
+                    "attributesCriterion": [
+                      {
+                        "ecommColor": {
+                          "eq": "{{ecommColor}}"
+                        }
+                      },
+                      {
+                        "size": {
+                          "eq": "{{size}}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "matchType": "deterministic",
+              "matchSequence": 3,
+              "searchQuery": {
+                "query": {
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ],
+                  "filters": {
+                    "typesCriterion": [
+                      "sku"
+                    ],
+                    "attributesCriterion": [
+                      {
+                        "ecommColorAbbr": {
+                          "eq": "{{ecommColorAbbr}}"
+                        }
+                      },
+                      {
+                        "size": {
+                          "eq": "{{size}}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "matchType": "deterministic",
+              "matchSequence": 4,
+              "searchQuery": {
+                "query": {
+                  "valueContexts": [
+                    {
+                      "source": "internal",
+                      "locale": "en-US"
+                    }
+                  ],
+                  "filters": {
+                    "typesCriterion": [
+                      "sku"
+                    ],
+                    "attributesCriterion": [
+                      {
+                        "storeColorAbbr": {
+                          "eq": "{{storeColorAbbr}}"
+                        }
+                      },
+                      {
+                        "size": {
+                          "eq": "{{size}}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
