@@ -192,7 +192,6 @@
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "classification": "_ALL"
                                         }
                                     }
                                 },
@@ -204,14 +203,13 @@
                                     "dataRoute": "entity-create",
                                     "contextData": {
                                         "itemContext": {
-                                            "type": "productPresentation"
+                                            "type": "productpresentation"
                                         },
                                         "valueContext": {
                                             "source": "internal",
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "classification": "_ALL"
                                         }
                                     }
                                 },
@@ -230,7 +228,6 @@
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "classification": "_ALL"
                                         }
                                     }
                                 },
@@ -242,14 +239,12 @@
                                     "dataRoute": "upload-model",
                                     "contextData": {
                                         "itemContext": {
-                                            "type": "sku"
                                         },
                                         "valueContext": {
                                             "source": "internal",
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "classification": "_ALL"
                                         }
                                     }
                                 }
@@ -290,7 +285,13 @@
                                 "title": "Entity Search & Refine",
                                 "data_route": "entity-discovery",
                                 "icon": "pebble-lg-icons:SearchDb"
-                            },
+                            },,
+                            {
+                                "name": "upload-model",
+                                "title": "Upload Data Model",
+                                "data_route": "upload-model",
+                                "icon": "pebble-lg-icons:uploaddatamodel"
+                            }
                             {
                                 "name": "divider"
                             },

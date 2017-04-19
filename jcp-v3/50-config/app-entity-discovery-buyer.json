@@ -78,16 +78,16 @@
 										"lot"
 									],
 									"attributes": [
-										"displayName",
+										"displayname",
 										"description",
 										"status",
-										"startDate",
-										"endDate",
-										"creationDate",
-										"plannedOnSiteDate",
-										"warrantyFlag",
-										"ecommMinOrderQty",
-										"assembledHeight"
+										"startdate",
+										"enddate",
+										"creationdate",
+										"plannedonsitedate",
+										"warrantyflag",
+										"ecommminorderqty",
+										"assembledheight"
 									]
 								},
 								"tabular": {
@@ -97,7 +97,7 @@
 									"columns": [
 										{
 											"header": "Display Name",
-											"name": "displayName",
+											"name": "displayname",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"
@@ -130,13 +130,13 @@
 										},
 										{
 											"header": "Start Date",
-											"name": "startDate",
+											"name": "startdate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
 											"header": "End Date",
-											"name": "endDate",
+											"name": "enddate",
 											"sortable": true,
 											"filterable": false
 										}
@@ -225,20 +225,6 @@
 												"text": "",
 												"visible": true,
 												"tooltip": "Refresh"
-											},
-											{
-												"name": "edit",
-												"icon": "pebble-md-icons:Edit",
-												"text": "",
-												"visible": true,
-												"tooltip": "Edit"
-											},
-											{
-												"name": "addrow",
-												"icon": "pebble-sm-icons:Add",
-												"text": "",
-												"visible": true,
-												"tooltip": "Add"
 											},
 											{
 												"name": "download",
@@ -604,89 +590,6 @@
 											}
 										}
 									}
-								],
-								"favourites": [
-									{
-										"id": 8,
-										"accesstype": "self",
-										"name": "Womens Shoes",
-										"icon": "pebble-icons:SavedSearch",
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "Womens"
-												}
-											}
-										]
-									}
-								],
-								"my-searches": [
-									{
-										"id": 9,
-										"accesstype": "self",
-										"name": "Mens Shoes",
-										"icon": "pebble-icons:SavedSearch",
-										"shared": false,
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "Mens"
-												}
-											}
-										]
-									}
-								],
-								"shared-searches": [
-									{
-										"id": 10,
-										"accesstype": "self",
-										"name": "Women's Sport Wear & Dresses",
-										"icon": "pebble-icons:SavedSearch",
-										"shared": true,
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "dresses",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "dresses"
-												}
-											}
-										]
-									}
 								]
 							}
 						}
@@ -715,22 +618,8 @@
 						},
 						"jsonData": {
 							"config": {
-								"title": "Create",
+								"title": "",
 								"actions": [
-									{
-										"name": "createProductPresentation",
-										"icon": "pebble-xl-icons:Brand",
-										"text": "Group in Product Presentation",
-										"visible": true,
-										"eventName": "action-createProductPresentation"
-									},
-									{
-										"name": "createEnsemble",
-										"icon": "pebble-xl-icons:Channel",
-										"text": "Group in Ensemble",
-										"visible": true,
-										"eventName": "action-createEnsemble"
-									}
 								]
 							}
 						}
@@ -759,66 +648,6 @@
 						},
 						"jsonData": {
 							"config": [
-								{
-									"name": "displayName",
-									"longName": "Display Name",
-									"displayType": "textBox"
-								},
-								{
-									"name": "skuNumber",
-									"longName": "Sku Number",
-									"value": "",
-									"displayType": "textBox"
-								},
-								{
-									"name": "description",
-									"longName": "Description",
-									"value": "",
-									"displayType": "textArea"
-								},
-								{
-									"name": "creationDate",
-									"longName": "Creation Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "startDate",
-									"longName": "Start Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "endDate",
-									"longName": "End Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "size",
-									"longName": "Size",
-									"displayType": "dropDown"
-								},
-								{
-									"name": "orin",
-									"longName": "ORIN",
-									"displayType": "numeric"
-								},
-								{
-									"name": "width",
-									"longName": "Width",
-									"displayType": "dropDown"
-								},
-								{
-									"name": "skuQuantity",
-									"longName": "Quantity",
-									"displayType": "numeric"
-								},
-								{
-									"name": "status",
-									"longName": "Status",
-									"displayType": "textBox"
-								}
 							]
 						}
 					}
@@ -955,40 +784,40 @@
 													},	
 													"config-context": {
 														"attributeNames": [
-															"displayName",
-															"alsoInStore",
+															"displayname",
+															"alsoinstore",
 															"brand",
-															"brandLogo",
+															"brandlogo",
 															"channel",
-															"channelAvailability",
+															"channelavailability",
 															"description",
-															"displayAskAndAnswerSection",															
-															"factSheet",
-															"featureColor",
-															"hideDisplayIndicator",
+															"displayaskandanswersection",															
+															"factsheet",
+															"featurecolor",
+															"hidedisplayindicator",
 															"id",
-															"isCustomerFavoriteOption",
-															"isHidden",
-															"isPreOrderOption",
-															"longDescription",
-															"lotSelectionType",
-															"lotType",
-															"onlineOnly",
+															"iscustomerfavoriteoption",
+															"ishidden",
+															"ispreorderoption",
+															"longdescription",
+															"lotselectiontype",
+															"lottype",
+															"onlineonly",
 															"orin",
-															"programType",
-															"ratingReviewId",
-															"retailSkuNumber",
-															"shortName",
-															"skuGrouping",
-															"skuItemType",
-															"skuNumber",
-															"skuQuantity",
-															"skuType",
+															"programtype",
+															"ratingreviewid",
+															"retailskunumber",
+															"shortname",
+															"skugrouping",
+															"skuitemtype",
+															"skunumber",
+															"skuquantity",
+															"skutype",
 															"source",
 															"status",
 															"stone",
-															"styleText",
-															"upcBarcode",
+															"styletext",
+															"upcbarcode",
 															"warranty"
 														]
 													}
@@ -1026,24 +855,24 @@
 															"config-context": {
 																"groupName": "Advanced",
 																"attributeNames": [
-																	"featureHeaderText",
-																	"featureQuoteText",
-																	"isBopisEligible",
-																	"isNewClearanceTimestamp",
-																	"isNewToClearance",
-																	"isSampleEnsemble",
-																	"ppSkuSwatchesRolledUpCount",
-																	"productReviewQuoteText",
-																	"sourceFeedId",
-																	"isFurniture",
-																	"isSephora",
-																	"mailableIndicator",
-																	"questionableOrderQuantity",
-																	"recycleFeeIndicator",
-																	"sabrixCommodityCode",
-																	"specialIndicator",
-																	"unusualDemandQuantity",
-																	"vData"
+																	"featureheadertext",
+																	"featurequotetext",
+																	"isbopiseligible",
+																	"isnewclearancetimestamp",
+																	"isnewtoclearance",
+																	"issampleensemble",
+																	"ppskuswatchesrolledupcount",
+																	"productreviewquotetext",
+																	"sourcefeedid",
+																	"isfurniture",
+																	"issephora",
+																	"mailableindicator",
+																	"questionableorderquantity",
+																	"recyclefeeindicator",
+																	"sabrixcommoditycode",
+																	"specialindicator",
+																	"unusualdemandquantity",
+																	"vdata"
 																]
 															}
 														}
@@ -1066,67 +895,29 @@
 												"name": "moreActions",
 												"icon": "pebble-md-icons:ToolbarMore",
 												"text": "",
-												"buttons": [{
-														"name": "add",
-														"icon": "pebble-sm-icons:Add",
-														"text": "",
-														"visible": true,
-														"tooltip": "Add"
-													},
-													{
-														"name": "delete",
-														"icon": "pebble-md-icons:Delete",
-														"text": "",
-														"visible": true,
-														"tooltip": "Delete"
-													},
-													{
-														"name": "cut",
-														"icon": "pebble-md-icons:Cut",
-														"text": "",
-														"visible": true,
-														"tooltip": "Cut"
-													}
+												"buttons": [
+														{
+															"name": "cut",
+															"icon": "pebble-md-icons:Cut",
+															"text": "",
+															"visible": true,
+															"tooltip": "Cut"
+														},
+														{
+															"name": "copy",
+															"icon": "pebble-md-icons:Copy",
+															"text": "",
+															"visible": true,
+															"tooltip": "Copy"
+														}
 												]
 											}
 										]
 									}]
                             	},
 								"rock-entity-tofix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "missingvideos",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								}
 							}

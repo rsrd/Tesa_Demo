@@ -76,16 +76,16 @@
 										"sku"
 									],
 									"attributes": [
-										"displayName",
+										"displayname",
 										"description",
 										"status",
-										"startDate",
-										"endDate",
-										"creationDate",
-										"plannedOnSiteDate",
-										"warrantyFlag",
-										"ecommMinOrderQty",
-										"assembledHeight"
+										"startdate",
+										"enddate",
+										"creationdate",
+										"plannedonsiteDate",
+										"warrantyflag",
+										"ecommminorderqty",
+										"assembledheight"
 									]
 								},
 								"tabular": {
@@ -95,7 +95,7 @@
 									"columns": [
 										{
 											"header": "Display Name",
-											"name": "displayName",
+											"name": "displayname",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"
@@ -128,43 +128,43 @@
 										},
 										{
 											"header": "Start Date",
-											"name": "startDate",
+											"name": "startdate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
 											"header": "End Date",
-											"name": "endDate",
+											"name": "enddate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
 											"header": "Creation Date",
-											"name": "creationDate",
+											"name": "creationdate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
-											"header": "Planned OnSite DateTime (mm/dd/yyyy)",
-											"name": "plannedOnSiteDate",
+											"header": "Planned OnSite Date",
+											"name": "plannedonsitedate",
 											"sortable": true,
 											"filterable": false
 										},
 										{
 											"header": "Warranty Flag",
-											"name": "warrantyFlag",
+											"name": "warrantyflag",
 											"sortable": true,
 											"filterable": false
 										},
 										{
-											"header": "eComm Min Order Qty",
-											"name": "ecommMinOrderQty",
+											"header": "eComm Min Qty",
+											"name": "ecommminorderqty",
 											"sortable": true,
 											"filterable": false
 										},
 										{
-											"header": "Assembled Height(in inches)",
-											"name": "assembledHeight",
+											"header": "Assembled Height(in)",
+											"name": "assembledheight",
 											"sortable": true,
 											"filterable": false
 										}
@@ -255,20 +255,6 @@
 													"text": "",
 													"visible": true,
 													"tooltip": "Refresh"
-												},
-												{
-													"name": "edit",
-													"icon": "pebble-md-icons:Edit",
-													"text": "",
-													"visible": true,
-													"tooltip": "Edit"
-												},
-												{
-													"name": "addrow",
-													"icon": "pebble-sm-icons:Add",
-													"text": "",
-													"visible": true,
-													"tooltip": "Add"
 												},
 												{
 													"name": "download",
@@ -633,20 +619,20 @@
 						},
 						"jsonData": {
 							"config": {
-								"title": "Create",
+								"title": "",
 								"actions": [
 									{
-										"name": "createProductPresentation",
+										"name": "addDigitalAssets",
 										"icon": "pebble-xl-icons:Brand",
-										"text": "Group in Product Presentation",
+										"text": "Add Digital Assets",
 										"visible": true,
-										"eventName": "action-createProductPresentation"
+										"eventName": "action-adddigitalassets"
 									},
 									{
 										"name": "createEnsemble",
 										"icon": "pebble-xl-icons:Channel",
 										"text": "Group in Ensemble",
-										"visible": true,
+										"visible": false,
 										"eventName": "action-createEnsemble"
 									}
 								]
@@ -813,40 +799,40 @@
 													},
 													"config-context": {
 														"attributeNames": [
-															"displayName",
-															"alsoInStore",
+															"displayname",
+															"alsoinstore",
 															"brand",
-															"brandLogo",
+															"brandlogo",
 															"channel",
-															"channelAvailability",
+															"channelavailability",
 															"description",
-															"displayAskAndAnswerSection",															
-															"factSheet",
-															"featureColor",
-															"hideDisplayIndicator",
-															"id",
-															"isCustomerFavoriteOption",
-															"isHidden",
-															"isPreOrderOption",
-															"longDescription",
-															"lotSelectionType",
-															"lotType",
-															"onlineOnly",
+															"displayaskandanswersection",															
+															"factsheet",
+															"featurecolor",
+															"hidedisplayindicator",
+															"identifier",
+															"iscustomerfavoriteoption",
+															"ishidden",
+															"ispreorderoption",
+															"longdescription",
+															"lotselectiontype",
+															"lottype",
+															"onlineonly",
 															"orin",
-															"programType",
-															"ratingReviewId",
-															"retailSkuNumber",
-															"shortName",
-															"skuGrouping",
-															"skuItemType",
-															"skuNumber",
-															"skuQuantity",
-															"skuType",
+															"programtype",
+															"ratingreviewid",
+															"retailskunumber",
+															"shortname",
+															"skugrouping",
+															"skuitemtype",
+															"skunumber",
+															"skuquantity",
+															"skutype",
 															"source",
 															"status",
 															"stone",
-															"styleText",
-															"upcBarcode",
+															"styletext",
+															"upcbarcode",
 															"warranty"
 														]
 													}
@@ -884,24 +870,24 @@
 															"config-context": {
 																"groupName": "Advanced",
 																"attributeNames": [
-																	"featureHeaderText",
-																	"featureQuoteText",
-																	"isBopisEligible",
-																	"isNewClearanceTimestamp",
-																	"isNewToClearance",
-																	"isSampleEnsemble",
-																	"ppSkuSwatchesRolledUpCount",
-																	"productReviewQuoteText",
-																	"sourceFeedId",
-																	"isFurniture",
-																	"isSephora",
-																	"mailableIndicator",
-																	"questionableOrderQuantity",
-																	"recycleFeeIndicator",
-																	"sabrixCommodityCode",
-																	"specialIndicator",
-																	"unusualDemandQuantity",
-																	"vData"
+																	"featureheadertext",
+																	"featurequotetext",
+																	"isbopiseligible",
+																	"isnewclearancetimestamp",
+																	"isnewtoclearance",
+																	"issampleensemble",
+																	"ppskuswatchesrolledupcount",
+																	"productreviewquotetext",
+																	"sourcefeedid",
+																	"isfurniture",
+																	"issephora",
+																	"mailableindicator",
+																	"questionableorderquantity",
+																	"recyclefeeindicator",
+																	"sabrixcommoditycode",
+																	"specialindicator",
+																	"unusualdemandquantity",
+																	"vdata"
 																]
 															}
 														}
@@ -928,25 +914,18 @@
 													"text": "",
 													"buttons": [
 														{
-															"name": "add",
-															"icon": "pebble-sm-icons:Add",
-															"text": "",
-															"visible": true,
-															"tooltip": "Add"
-														},
-														{
-															"name": "delete",
-															"icon": "pebble-md-icons:Delete",
-															"text": "",
-															"visible": true,
-															"tooltip": "Delete"
-														},
-														{
 															"name": "cut",
 															"icon": "pebble-md-icons:Cut",
 															"text": "",
 															"visible": true,
 															"tooltip": "Cut"
+														},
+														{
+															"name": "copy",
+															"icon": "pebble-md-icons:Copy",
+															"text": "",
+															"visible": true,
+															"tooltip": "Copy"
 														}
 													]
 												}
