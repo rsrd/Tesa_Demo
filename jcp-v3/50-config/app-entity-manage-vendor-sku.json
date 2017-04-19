@@ -476,6 +476,7 @@
 									{
 										"name": "summary",
 										"title": "Summary",
+										"selected": true,
 										"enableDropdownMenu": false,
 										"component": {
 											"name": "rock-entity-summary",
@@ -487,7 +488,6 @@
 										"name": "attributes",
 										"title": "Attributes",
 										"enableDropdownMenu": true,
-										"selected": true,
 										"menuProviderComponent": {
 											"name": "attribute-tab-menu-provider",
 											"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
