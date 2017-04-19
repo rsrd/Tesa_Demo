@@ -176,87 +176,8 @@
                     },
                     "jsonData": {
                         "config": {
-                            "title": "Create",
-                            "actions": [{
-                                    "name": "createSKU",
-                                    "icon": "pebble-xl-icons:Product",
-                                    "text": "SKU",
-                                    "visible": true,
-                                    "dataRoute": "entity-create",
-                                    "contextData": {
-                                        "itemContext": {
-                                            "type": "sku"
-                                        },
-                                        "valueContext": {
-                                            "source": "internal",
-                                            "locale": "en-US"
-                                        },
-                                        "context": {
-                                            "channel": "webCatalog",
-                                            "classification": "_ALL"
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "createKit",
-                                    "icon": "pebble-xl-icons:Kit",
-                                    "text": "PDP",
-                                    "visible": true,
-                                    "dataRoute": "entity-create",
-                                    "contextData": {
-                                        "itemContext": {
-                                            "type": "pdp"
-                                        },
-                                        "valueContext": {
-                                            "source": "internal",
-                                            "locale": "en-US"
-                                        },
-                                        "context": {
-                                            "channel": "productMaster",
-                                            "classification": "_ALL"
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "createSupplier",
-                                    "icon": "pebble-xl-icons:Customer",
-                                    "text": "Create Suplier",
-                                    "visible": true,
-                                    "dataRoute": "entity-create",
-                                    "contextData": {
-                                        "itemContext": {
-                                            "type": "supplier"
-                                        },
-                                        "valueContext": {
-                                            "source": "internal",
-                                            "locale": "en-US"
-                                        },
-                                        "context": {
-                                            "channel": "productMaster",
-                                            "classification": "_ALL"
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "dataModelImport",
-                                    "icon": "pebble-xl-icons:uploaddatamodel",
-									"text": "Upload Data Model",
-                                    "visible": true,
-                                    "dataRoute": "upload-model",
-                                    "contextData": {
-                                        "itemContext": {
-                                            "type": "sku"
-                                        },
-                                        "valueContext": {
-                                            "source": "internal",
-                                            "locale": "en-US"
-                                        },
-                                        "context": {
-                                            "channel": "productMaster",
-                                            "classification": "_ALL"
-                                        }
-                                    }
-                                }
+                            "title": "",
+                            "actions": [
                             ]
                         }
                     }
@@ -294,21 +215,6 @@
                                 "title": "Entity Search & Refine",
                                 "data_route": "entity-discovery",
                                 "icon": "pebble-lg-icons:SearchDb"
-                            },
-                            {
-                                "name": "divider"
-                            },
-                            {
-                                "name": "manageModel",
-                                "title": "Manage Data Model",
-                                "data_route": "manage-model",
-                                "icon": "pebble-icons:DatamodelDb"
-                            },
-                            {
-                                "name": "integrationManage",
-                                "title": "Manage Integrations",
-                                "data_route": "manage-integration",
-                                "icon": "pebble-lg-icons:InegrationDb"
                             },
                             {
                                 "name": "divider"
