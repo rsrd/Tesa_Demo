@@ -6,7 +6,7 @@
   },
   "entityModels": [
     {
-      "id": "businessRequiredAttributesArePopulated_BusinessCondition",
+      "id": "businessRequiredAttributesArePopulated_businessCondition",
       "name": "Business required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -63,7 +63,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -73,9 +73,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "businessRequiredAttributesArePopulated_BusinessConditionID",
+              "id": "hasBusinessRules_businessReviewValidationrule_businessRule",
               "relTo": {
-                "id": "businessReview_BusinessRule",
+                "id": "businessReviewValidationrule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
+      "id": "buyerRequiredAttributesArePopulated_businessCondition",
       "name": "Buyer required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -159,7 +159,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -169,9 +169,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "buyerRequiredAttributesArePopulated_BusinessConditionID",
+              "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
               "relTo": {
-                "id": "buyerReview_BusinessRule",
+                "id": "buyerReviewValidationrule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -198,7 +198,7 @@
       }
     },
     {
-      "id": "additionalVendorRequiredAttributesArePopulated_BusinessCondition",
+      "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
       "name": "Additional Vendor required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -255,7 +255,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -265,9 +265,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "additionalVendorRequiredAttributesArePopulatedID__BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
               "relTo": {
-                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -294,7 +294,7 @@
       }
     },
     {
-      "id": "requiredAttributesArePopulated_BusinessCondition",
+      "id": "requiredAttributesArePopulated_businessCondition",
       "name": "Required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -351,7 +351,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -359,11 +359,11 @@
         "relationships": {
           "hasBusinessRules": [
             {
-              "id": "requiredAttributesArePopulated_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -384,11 +384,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulated_BusinessCondition",
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmission_BusinessRule",
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -409,11 +409,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulated_BusinessCondition",
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -434,11 +434,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulated_BusinessCondition",
+              "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "buyerReview_BusinessRule",
+                "id": "buyerReviewValidationrule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -463,7 +463,7 @@
       }
     },
     {
-      "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+      "id": "vendorRequiredAttributesArePopulated_businessCondition",
       "name": "Vendor required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -520,7 +520,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -528,11 +528,11 @@
         "relationships": {
           "hasBusinessRules": [
             {
-              "id": "vendorRequiredAttributesArePopulated_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -553,11 +553,11 @@
               }
             },
             {
-              "id": "vendorRequiredAttributesArePopulated_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmission_BusinessRule",
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -577,7 +577,6 @@
                 }
               }
             }
-          
           ]
         }
       }
@@ -658,9 +657,9 @@
             {
               "direction": "both",
               "operation": "association",
-              "id": "skuvalidateEnityPresentInCreateWorkflowID",
+              "id": "hasBusinessRules_validateEnityPresentInCreateWorkflowValidationRule_businessRule",
               "relTo": {
-                "id": "validateEnityPresentInCreateWorkflow_BusinessRule",
+                "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -682,13 +681,12 @@
                 }
               }
             }
-           
           ]
         }
       }
     },
     {
-      "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessCondition",
+      "id": "requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
       "name": "Required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -745,7 +743,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -753,11 +751,11 @@
         "relationships": {
           "hasBusinessRules": [
             {
-              "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -778,11 +776,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmission_BusinessRule",
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -803,11 +801,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessConditionID",
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -828,11 +826,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessConditionID",
+              "id": "hasBusinessRules_buyerReviewValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "buyerReview_BusinessRule",
+                "id": "buyerReviewValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -853,11 +851,11 @@
               }
             },
             {
-              "id": "requiredAttributesArePopulatedUpdateEntityExit_BusinessConditionID",
+              "id": "hasBusinessRules_businessReviewValidationRule_businessRule",
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "businessReview_BusinessRule",
+                "id": "businessReviewValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -877,10 +875,9 @@
                 }
               }
             }
-            
           ]
         }
       }
     }
-    ]
+  ]
 }

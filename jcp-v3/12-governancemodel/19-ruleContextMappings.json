@@ -14,7 +14,7 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule1",
+              "id": "hasBusinessRules_invokeNewProductSetupWFRule_businessRule",
               "relTo": {
                 "id": "invokeNewProductSetupWFRule_businessRule",
                 "type": "businessRule"
@@ -23,7 +23,7 @@
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -31,7 +31,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -39,7 +39,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -47,7 +47,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -55,7 +55,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "1"
                     }
                   ]
@@ -72,16 +72,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule2",
+              "id": "hasBusinessRules_plannedOnSiteDate_businessRule",
               "relTo": {
-                "id": "plannedOnSiteDate_BusinessRule",
+                "id": "plannedOnSiteDate_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -89,7 +89,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -97,7 +97,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -105,7 +105,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -113,7 +113,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "2"
                     }
                   ]
@@ -130,16 +130,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_BusinessRule3",
+              "id": "hasBusinessRules_classtosubclass_businessRule",
               "relTo": {
-                "id": "classtosubclass_BusinessRule",
+                "id": "classtosubclass_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -147,7 +147,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -155,7 +155,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -163,7 +163,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -171,7 +171,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "3"
                     }
                   ]
@@ -188,16 +188,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule4",
+              "id": "hasBusinessRules_imucalculations_businessRule",
               "relTo": {
-                "id": "imucalculations_BusinessRule",
+                "id": "imucalculations_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -205,7 +205,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -213,7 +213,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -221,7 +221,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -229,7 +229,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "4"
                     }
                   ]
@@ -246,16 +246,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule5",
+              "id": "hasBusinessRules_grossProfitcalculations_businessRule",
               "relTo": {
-                "id": "grossProfitcalculations_BusinessRule",
+                "id": "grossProfitcalculations_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -263,7 +263,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -271,7 +271,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -279,7 +279,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -287,7 +287,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "5"
                     }
                   ]
@@ -304,16 +304,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule6",
+              "id": "hasBusinessRules_estimatedUPSShippingChargecalculation_businessRule",
               "relTo": {
-                "id": "estimatedUPSShippingChargecalculation_BusinessRule",
+                "id": "estimatedUPSShippingChargecalculation_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "true"
                     }
                   ]
@@ -321,7 +321,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -329,7 +329,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -337,7 +337,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -345,7 +345,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "6"
                     }
                   ]
@@ -362,16 +362,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule7",
+              "id": "hasBusinessRules_defaultvaluesforPP_businessRule",
               "relTo": {
-                "id": "defaultvaluesforPP_BusinessRule",
+                "id": "defaultvaluesforPP_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -379,7 +379,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -387,7 +387,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -395,7 +395,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -403,7 +403,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "7"
                     }
                   ]
@@ -420,16 +420,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule7",
+              "id": "hasBusinessRules_copyConcatenation_businessRule",
               "relTo": {
-                "id": "copyConcatenation_BusinessRule",
+                "id": "copyConcatenation_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -437,7 +437,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -445,7 +445,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -453,7 +453,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -461,7 +461,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "8"
                     }
                   ]
@@ -478,16 +478,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businesRule11",
+              "id": "hasBusinessRules_costChange_businessRule",
               "relTo": {
-                "id": "costChange_BusinessRule",
+                "id": "costChange_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -495,7 +495,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -503,7 +503,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -511,7 +511,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -519,7 +519,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "11"
                     }
                   ]
@@ -538,16 +538,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businessCondition1",
+              "id": "hasBusinessConditions_vendorRequiredAttributesArePopulated_businessCondition",
               "relTo": {
-                "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+                "id": "vendorRequiredAttributesArePopulated_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "true"
                     }
                   ]
@@ -555,7 +555,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -563,7 +563,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "true"
                     }
                   ]
@@ -571,7 +571,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -579,7 +579,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "1"
                     }
                   ]
@@ -589,16 +589,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businessCondition2",
+              "id": "hasBusinessConditions_buyerRequiredAttributesArePopulated_businessCondition",
               "relTo": {
-                "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
+                "id": "buyerRequiredAttributesArePopulated_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -606,7 +606,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -614,7 +614,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -622,7 +622,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -637,7 +637,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "2"
                     }
                   ]
@@ -647,16 +647,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businessCondition3",
+              "id": "hasBusinessConditions_businessRequiredAttributesArePopulated_businessCondition",
               "relTo": {
-                "id": "businessRequiredAttributesArePopulated_BusinessCondition",
+                "id": "businessRequiredAttributesArePopulated_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -664,7 +664,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -672,7 +672,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -680,7 +680,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "any"
                     }
                   ]
@@ -695,7 +695,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "3"
                     }
                   ]
@@ -705,16 +705,16 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businessCondition5",
+              "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
               "relTo": {
-                "id": "additionalVendorRequiredAttributesArePopulated_BusinessCondition",
+                "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
                 "ignoreChangeContext": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -722,7 +722,7 @@
                 "isDeleted": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "false"
                     }
                   ]
@@ -730,7 +730,7 @@
                 "enabled": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "true"
                     }
                   ]
@@ -738,7 +738,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "user": "users/system",
+                     
                       "value": "any"
                     }
                   ]
@@ -746,7 +746,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "user": "users/system",
+                      
                       "value": "4"
                     }
                   ]
@@ -756,9 +756,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "sku_businessCondition6",
+              "id": "hasBusinessConditions_requiredAttributesArePopulated_businessCondition",
               "relTo": {
-                "id": "requiredAttributesArePopulated_BusinessCondition",
+                "id": "requiredAttributesArePopulated_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
@@ -825,16 +825,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF1",
+                  "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedskipCriteria_businessCondition",
                   "relTo": {
-                    "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "vendorRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -842,7 +842,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -850,7 +850,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -858,7 +858,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "any"
                         }
                       ]
@@ -866,7 +866,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "1"
                         }
                       ]
@@ -874,7 +874,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "skipCriteria"
                         }
                       ]
@@ -882,7 +882,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "New SKUs to Submit"
                         }
                       ]
@@ -890,7 +890,7 @@
                     "defaultAction": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Submit"
                         }
                       ]
@@ -900,16 +900,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF2",
+                  "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteria_businessCondition",
                   "relTo": {
-                    "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "vendorRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "true"
                         }
                       ]
@@ -917,7 +917,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -925,7 +925,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -933,7 +933,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -941,7 +941,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "2"
                         }
                       ]
@@ -949,7 +949,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "exitCriteria"
                         }
                       ]
@@ -957,7 +957,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "New SKUs to Submit"
                         }
                       ]
@@ -965,7 +965,7 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Submit"
                         }
                       ]
@@ -975,16 +975,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF3",
+                  "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteriaexitCriteriaUpdateWf_businessCondition",
                   "relTo": {
-                    "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "vendorRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -992,7 +992,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -1000,7 +1000,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "true"
                         }
                       ]
@@ -1008,7 +1008,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1016,7 +1016,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "5"
                         }
                       ]
@@ -1024,7 +1024,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "exitCriteria"
                         }
                       ]
@@ -1032,7 +1032,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Rejected SKUs"
                         }
                       ]
@@ -1040,7 +1040,7 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Done"
                         }
                       ]
@@ -1050,16 +1050,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF4",
+                  "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
                   "relTo": {
-                    "id": "additionalVendorRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1067,7 +1067,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -1075,7 +1075,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1083,7 +1083,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1091,7 +1091,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "4"
                         }
                       ]
@@ -1099,7 +1099,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "exitCriteria"
                         }
                       ]
@@ -1107,7 +1107,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Provide Additional Info"
                         }
                       ]
@@ -1115,7 +1115,7 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Resubmit"
                         }
                       ]
@@ -1125,16 +1125,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF5",
+                  "id": "hasBusinessConditions_buyerRequiredAttributesArePopulated_businessCondition",
                   "relTo": {
-                    "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "buyerRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1142,7 +1142,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -1150,7 +1150,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1158,7 +1158,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1166,7 +1166,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "3"
                         }
                       ]
@@ -1181,7 +1181,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "exitCriteria"
                         }
                       ]
@@ -1189,7 +1189,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "Review Assortment"
                         }
                       ]
@@ -1197,15 +1197,15 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Approve Assortment"
                         },
                         {
-                          "user": "users/system",
+                          
                           "value": "Request Info"
                         },
                         {
-                          "user": "users/system",
+                          
                           "value": "Reject"
                         }
                       ]
@@ -1215,16 +1215,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionWF6",
+                  "id": "hasBusinessConditions_businessRequiredAttributesArePopulated_businessCondition",
                   "relTo": {
-                    "id": "businessRequiredAttributesArePopulated_BusinessCondition",
+                    "id": "businessRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1240,7 +1240,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1248,7 +1248,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1256,7 +1256,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "5"
                         }
                       ]
@@ -1271,7 +1271,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "exitCriteria"
                         }
                       ]
@@ -1279,7 +1279,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Assign Internal Information"
                         }
                       ]
@@ -1287,11 +1287,11 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Approve"
                         },
                         {
-                          "user": "users/system",
+                          
                           "value": "Request Info"
                         }
                       ]
@@ -1312,16 +1312,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionUpdateWF1",
+                  "id": "hasBusinessConditions_requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
                   "relTo": {
-                    "id": "requiredAttributesArePopulated_BusinessCondition",
+                    "id": "requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "true"
                         }
                       ]
@@ -1329,7 +1329,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "false"
                         }
                       ]
@@ -1337,7 +1337,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1345,7 +1345,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1360,7 +1360,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "1"
                         }
                       ]
@@ -1368,7 +1368,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "exitCriteria"
                         }
                       ]
@@ -1376,7 +1376,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Review SKU"
                         }
                       ]
@@ -1384,7 +1384,7 @@
                     "actions": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Approve"
                         }
                       ]
@@ -1394,7 +1394,7 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "sku_businessConditionUpdateWF3",
+                  "id": "hasBusinessConditions_validateEnityPresentInCreateWorkflow_businessCondition",
                   "relTo": {
                     "id": "validateEnityPresentInCreateWorkflow_businessCondition",
                     "type": "businessCondition"
@@ -1403,7 +1403,7 @@
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "true"
                         }
                       ]
@@ -1411,7 +1411,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -1419,7 +1419,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1427,7 +1427,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "any"
                         }
                       ]
@@ -1435,7 +1435,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "2"
                         }
                       ]
@@ -1443,7 +1443,7 @@
                     "activityCriteria": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "skipCriteria"
                         }
                       ]
@@ -1451,7 +1451,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "Publish"
                         }
                       ]
@@ -1459,7 +1459,7 @@
                     "defaultAction": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "Submit"
                         }
                       ]
@@ -1479,16 +1479,16 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "autopopulateitemtype_BusinessRule_RelId",
+                  "id": "hasBusinessRules_autopopulateitemtype_businessRule",
                   "relTo": {
-                    "id": "autopopulateitemtype_BusinessRule",
+                    "id": "autopopulateitemtype_businessRule",
                     "type": "businessRule"
                   },
                   "attributes": {
                     "ignoreChangeContext": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "true"
                         }
                       ]
@@ -1496,7 +1496,7 @@
                     "isDeleted": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "false"
                         }
                       ]
@@ -1504,7 +1504,7 @@
                     "enabled": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "true"
                         }
                       ]
@@ -1512,7 +1512,7 @@
                     "executionMode": {
                       "values": [
                         {
-                          "user": "users/system",
+                         
                           "value": "any"
                         }
                       ]
@@ -1520,7 +1520,7 @@
                     "executionOrder": {
                       "values": [
                         {
-                          "user": "users/system",
+                          
                           "value": "1"
                         }
                       ]
