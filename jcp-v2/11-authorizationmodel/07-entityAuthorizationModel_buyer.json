@@ -67,8 +67,8 @@
 			"name": "generic_authorizationModel_buyer",
 			"type": "authorizationModel",
 			"properties": {
-				"writePermission": true,
 				"readPermission": true,
+				"writePermission": true,
 				"attributesPermission": [
 					{
 						"writePermission": true,
@@ -76,6 +76,24 @@
 					}
 				],
 				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
 					{
 						"writePermission": true,
 						"readPermission": true
@@ -157,31 +175,6 @@
 					{
 						"writePermission": true,
 						"readPermission": true
-					}
-				]
-			},
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"taxonomy": "productSetupTaxonomy"
-						},
-						"properties": {
-							"readPermission": true,
-							"writePermission": true,
-							"attributesPermission": [
-								{
-									"writePermission": true,
-									"readPermission": true
-								}
-							],
-							"relationshipsPermission": [
-								{
-									"writePermission": true,
-									"readPermission": true
-								}
-							]
-						}
 					}
 				]
 			}

@@ -128,7 +128,8 @@
 					},
 					"size": {
 						"properties": {
-							"isCollection": false
+							"isCollection": false,
+							"required": false
 						}
 					},
 					"id": {
@@ -136,194 +137,174 @@
 							"required": true
 						}
 					},
-					"monogramCharge": {
+					"vpn": {
 						"properties": {
-							"range": [
-								{
-									"rangeFrom": "3",
-									"isRangeFromInclusive": "true"
-								}
-							]
-						}
-					},
-					"ecommInnerPack": {
-						"properties": {
-							"range": [
-								{
-									"rangeTo": "1000",
-									"isRangeToInclusive": "true"
-								}
-							]
-						}
-					},
-					"factoryShipLeadTime": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "100",
-									"isRangeFromInclusive": "false",
-									"rangeTo": "1000",
-									"isRangeToInclusive": "false"
-								}
-							]
-						}
-					},
-					"whseProcessingFee1": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "5",
-									"isRangeFromInclusive": "true",
-									"rangeTo": "100000",
-									"isRangeToInclusive": "false"
-								}
-							]
-						}
-					},
-					"ecommMinOrderQty": {
-						"properties": {
-							"required": "true",
-							"range": [
-								{
-									"rangeFrom": "1",
-									"isRangeFromInclusive": "true",
-									"rangeTo": "10",
-									"isRangeToInclusive": "true"
-								}
-							]
-						}
-					},
-					"assembledLength": {
-						"properties": {
-							"precision": "2",
-							"range": [
-								{
-									"rangeTo": "1000.01",
-									"isRangeToInclusive": "true"
-								}
-							]
-						}
-					},
-					"assembledWidth": {
-						"properties": {
-							"precision": "2",
-							"range": [
-								{
-									"rangeFrom": "100.55",
-									"isRangeFromInclusive": "true",
-									"rangeTo": "1000.09",
-									"isRangeToInclusive": "true"
-								}
-							]
-						}
-					},
-					"assembledHeight": {
-						"properties": {
-							"precision": "3",
-							"range": [
-								{
-									"rangeFrom": "5",
-									"isRangeFromInclusive": "true",
-									"rangeTo": "9999.99"
-								}
-							]
-						}
-					},
-					"assembledWeight": {
-						"properties": {
-							"required": true,
-							"precision": "3",
-							"range": [
-								{
-									"rangeFrom": "1.5",
-									"isRangeFromInclusive": "false",
-									"rangeTo": "100.00",
-									"isRangeToInclusive": "false"
-								}
-							],
-							"uomreference": [
-								{
-									"allowedUOMs": [
-										"kgs",
-										"gm"
-									]
-								}
-							]
-						}
-					},
-					"creationDate": {
-						"properties": {
-							"required": "true"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "2017-12-12",
-									"rangeTo": "2018-12-12"
-								}
-							]
-						}
-					},
-					"endDate": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "2012-12-12",
-									"isRangeFromInclusive": "true"
-								}
-							]
-						}
-					},
-					"plannedOnSiteDate": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "2017-03-08T06:52:27+00:00",
-									"isRangeFromInclusive": "true",
-									"rangeTo": "2018-03-08T06:52:27+00:00",
-									"isRangeToInclusive": "true"
-								}
-							]
-						}
-					},
-					"ecommOOSDate": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "2017-12-12T00:52:27+00:00",
-									"isRangeFromInclusive": "false",
-									"rangeTo": "2018-12-12T00:52:27+00:00",
-									"isRangeToInclusive": "false"
-								}
-							]
-						}
-					},
-					"storeOOSDate": {
-						"properties": {
-							"range": [
-								{
-									"rangeFrom": "2017-12-12T12:52:27+00:00",
-									"isRangeFromInclusive": "true"
-								}
-							]
-						}
-					},
-					"skuType": {
-						"properties": {
-							"minLength": "2",
-							"maxLength": "20"
-						}
-					},
-					"skuNumber": {
-						"properties": {
-							"maxLength": "100"
+							"required":false
 						}
 					},
 					"colorDesc": {
 						"properties": {
-							"minLength": "3"
+							"required": false
+						}
+					},
+					"cost": {
+						"properties": {
+							"required": false
+						}
+					},
+					"productTitle": {
+						"properties": {
+							"required":false
+						}
+					},
+					"length": {
+						"properties": {
+							"required": false
+						}
+					},
+					"width": {
+						"properties": {
+							"required": false
+						}
+					},
+					"height": {
+						"properties": {
+							"required": false
+						}
+					},
+					"grossWeight": {
+						"properties": {
+							"required":false
+						}
+					},
+					"prop65Indicator": {
+						"properties": {
+							"required": false
+						}
+					},
+					"hazMatFlag": {
+						"properties": {
+							"required": false
+						}
+					},
+					"shipPointCity": {
+						"properties": {
+							"required": false
+						}
+					},
+					"shipPointState": {
+						"properties": {
+							"required":false
+						}
+					},
+					"msrp": {
+						"properties": {
+							"required": false
+						}
+					},
+					"image": {
+						"properties": {
+							"required": false
+						}
+					},
+					"imageName": {
+						"properties": {
+							"required": false
+						}
+					},
+					"productDescription": {
+						"properties": {
+							"required":false
+						}
+					},
+					"searchKeywordsNavigation": {
+						"properties": {
+							"required": false
+						}
+					},
+					"itemType": {
+						"properties": {
+							"required": false
+						}
+					},
+					"colorFamily": {
+						"properties": {
+							"required": false
+						}
+					},
+					"printPattern": {
+						"properties": {
+							"required":false
+						}
+					},
+					"countryOfManufacture": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledLength": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledWidth": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledHeight": {
+						"properties": {
+							"required": false
+						}
+					},
+					"assembledWeight": {
+						"properties": {
+							"required":false
+						}
+					},
+					"entity": {
+						"properties": {
+							"required": false
+						}
+					},
+					"subDivision": {
+						"properties": {
+							"required": false
+						}
+					},
+					"class": {
+						"properties": {
+							"required": false
+						}
+					},
+					"retail": {
+						"properties": {
+							"required":false
+						}
+					},
+					"supplierSiteNumber": {
+						"properties": {
+							"required": false
+						}
+					},
+					"supplierMfrShipPoint": {
+						"properties": {
+							"required": false
+						}
+					},
+					"ecommSupplierShipPoint": {
+						"properties": {
+							"required": false
+						}
+					},
+					"supplierChannel": {
+						"properties": {
+							"required":false
+						}
+					},
+					"plannedOnSiteDate": {
+						"properties": {
+							"required": false
 						}
 					}
 				},

@@ -40,7 +40,9 @@
 									"rock-entity-tofix",
 									"rock-titlebar",
 									"variant-create",
-									"rock-variants-create-grid"
+									"rock-variants-create-grid",
+                                    "extension-manage-productSetupTaxonomy",
+                                    "extension-manage-merchandisingTaxonomy"
 								]
 							}
 						}
@@ -71,25 +73,6 @@
 						"jsonData": {
 							"config": [
 								{
-									"id": "classification",
-									"title": "Classification",
-									"icon": "pebble-lg-icons:Master",
-									"visible": true,
-									"dataRequestType": "entity-context",
-									"dataMappings": {
-										"id": "name",
-										"title": "name",
-										"subtitle": "",
-										"image": "",
-										"icon": "",
-										"type": [
-											"classification"
-										]
-									},
-									"selectedItem": {},
-									"default": ""
-								},
-								{
 									"id": "taxonomy",
 									"title": "Taxonomy",
 									"icon": "pebble-lg-icons:Master",
@@ -103,6 +86,25 @@
 										"icon": "",
 										"type": [
 											"taxonomy"
+										]
+									},
+									"selectedItem": {},
+									"default": ""
+								},
+								{
+									"id": "classification",
+									"title": "Classification",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity-context",
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"classification"
 										]
 									},
 									"selectedItem": {},
@@ -315,11 +317,25 @@
 										{
 											"buttons": [
 												{
-													"name": "search",
-													"icon": "pebble-md-icons:ToolbarSearch",
+                                                  "name": "addContext",
+                                                  "icon":"pebble-lg-icons:Master",
 													"text": "",
+                                                  "tooltip": "Add Context",
 													"visible": true,
-													"tooltip": "Search"
+                                                  "buttons": [
+                                                    {
+                                                      "name": "merchandisingTaxonomy",
+                                                      "text": "Merchandising Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Merchandising Taxonomy"
+                                                    },
+                                                    {
+                                                      "name": "productSetupTaxonomy",
+                                                      "text": "Product Setup Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Product Setup Taxonomy"
+                                                    }
+                                                  ]
 												},
 												{
 													"name": "refresh",
@@ -327,55 +343,6 @@
 													"text": "",
 													"visible": true,
 													"tooltip": "Refresh"
-												},
-												{
-													"name": "copy",
-													"icon": "pebble-md-icons:Copy",
-													"text": "",
-													"visible": true,
-													"tooltip": "Copy"
-												},
-												{
-													"name": "paste",
-													"icon": "pebble-md-icons:Paste",
-													"text": "",
-													"visible": true,
-													"tooltip": "Paste"
-												},
-												{
-													"name": "clone",
-													"icon": "pebble-md-icons:ToolbarShare",
-													"text": "",
-													"visible": true,
-													"tooltip": "Clone"
-												},
-												{
-													"name": "moreActions",
-													"icon": "pebble-md-icons:ToolbarMore",
-													"text": "",
-													"buttons": [
-														{
-															"name": "add",
-															"icon": "pebble-sm-icons:Add",
-															"text": "",
-															"visible": true,
-															"tooltip": "Add"
-														},
-														{
-															"name": "delete",
-															"icon": "pebble-md-icons:Delete",
-															"text": "",
-															"visible": true,
-															"tooltip": "Delete"
-														},
-														{
-															"name": "cut",
-															"icon": "pebble-md-icons:Cut",
-															"text": "",
-															"visible": true,
-															"tooltip": "Cut"
-														}
-													]
 												}
 											]
 										}
@@ -1705,6 +1672,97 @@
 					}
 				]
 			}
+		},
+      {
+        "id": "app-entity-manage_extension-manage-productSetupTaxonomy_lot_vendor_uiConfig",
+        "name": "app-entity-manage_extension-manage-productSetupTaxonomy",
+        "version": "1.0",
+        "type": "uiConfig",
+        "properties": {
+          "createdByService": "entityservice",
+          "createdBy": "user"
+        },
+        "data": {
+          "contexts": [
+            {
+              "context": {
+                "app": "app-entity-manage",
+                "service": "_ALL",
+                "component": "extension-manage-productSetupTaxonomy",
+                "subComponent": "_ALL",
+                "entityType": "lot",
+                "role": "vendor"
+              },
+              "jsonData": {
+                "config": {
+                  "name": "extension-manage-productSetupTaxonomy",
+                  "label": "Manage Extensions",
+                  "steps": [
+                    {
+                      "name": "step-1-rock-extension-manage",
+                      "label": "Manage extension for a New Entity",
+                      "component": {
+                        "name": "rock-extension-manage",
+                        "path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+                        "properties": {
+                          "taxonomy":"productSetupTaxonomy"
 		}
+                      },
+                      "nextEvent": "onSave",
+                      "skipEvent": "onSkip"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "app-entity-manage_extension-manage-merchandisingTaxonomy_lot_vendor_uiConfig",
+        "name": "app-entity-manage_extension-manage-merchandisingTaxonomy",
+        "version": "1.0",
+        "type": "uiConfig",
+        "properties": {
+          "createdByService": "entityservice",
+          "createdBy": "user"
+        },
+        "data": {
+          "contexts": [
+            {
+              "context": {
+                "app": "app-entity-manage",
+                "service": "_ALL",
+                "component": "extension-manage-merchandisingTaxonomy",
+                "subComponent": "_ALL",
+                "entityType": "lot",
+                "role": "vendor"
+              },
+              "jsonData": {
+                "config": {
+                  "name": "extension-manage-merchandisingTaxonomy",
+                  "label": "Manage Extensions",
+                  "steps": [
+                    {
+                      "name": "step-1-rock-extension-manage",
+                      "label": "Manage extension for a New Entity",
+                      "component": {
+                        "name": "rock-extension-manage",
+                        "path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
+                        "properties": {
+                          "taxonomy":"merchandisingTaxonomy"
+                        }
+                      },
+                      "nextEvent": "onSave",
+                      "skipEvent": "onSkip"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+
 	]
 }
