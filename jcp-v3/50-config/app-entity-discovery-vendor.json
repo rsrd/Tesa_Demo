@@ -316,36 +316,6 @@
 						"jsonData": {
 							"config": [
 								{
-									"id": "channel",
-									"title": "Channel",
-									"icon": "pebble-lg-icons:Master",
-									"visible": true,
-									"dataRequestType": "entity",
-									"dataRequest": {
-										"params": {
-											"query": {
-												"filters": {
-													"typesCriterion": [
-														"channel"
-													]
-												}
-											}
-										}
-									},
-									"dataMappings": {
-										"id": "name",
-										"title": "name",
-										"subtitle": "",
-										"image": "",
-										"icon": "",
-										"type": [
-											"channel"
-										]
-									},
-									"selectedItem": {},
-									"default": ""
-								},
-								{
 									"id": "source",
 									"title": "Source",
 									"icon": "pebble-lg-icons:Source",
@@ -635,89 +605,6 @@
 											}
 										}
 									}
-								],
-								"favourites": [
-									{
-										"id": 8,
-										"accesstype": "self",
-										"name": "Womens Shoes",
-										"icon": "pebble-icons:SavedSearch",
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "Womens"
-												}
-											}
-										]
-									}
-								],
-								"my-searches": [
-									{
-										"id": 9,
-										"accesstype": "self",
-										"name": "Mens Shoes",
-										"icon": "pebble-icons:SavedSearch",
-										"shared": false,
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "Mens"
-												}
-											}
-										]
-									}
-								],
-								"shared-searches": [
-									{
-										"id": 10,
-										"accesstype": "self",
-										"name": "Women's Sport Wear & Dresses",
-										"icon": "pebble-icons:SavedSearch",
-										"shared": true,
-										"dimensions": {
-											"catalog": "productMaster",
-											"Source": "internal",
-											"Locale": "en-US",
-											"TimeSlice": "Now"
-										},
-										"searchQuery": "dresses",
-										"searchTags": [
-											{
-												"name": "description",
-												"longName": "Description",
-												"options": {
-													"displayType": "textArea"
-												},
-												"value": {
-													"eq": "dresses"
-												}
-											}
-										]
-									}
 								]
 							}
 						}
@@ -789,93 +676,8 @@
 							"role": "vendor"
 						},
 						"jsonData": {
-							"config": [
-								{
-									"name": "displayName",
-									"longName": "Display Name",
-									"displayType": "textBox"
-								},
-								{
-									"name": "skuNumber",
-									"longName": "Sku Number",
-									"value": "",
-									"displayType": "textBox"
-								},
-								{
-									"name": "description",
-									"longName": "Description",
-									"value": "",
-									"displayType": "textArea"
-								},
-								{
-									"name": "creationDate",
-									"longName": "Creation Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "startDate",
-									"longName": "Start Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "endDate",
-									"longName": "End Date",
-									"value": "",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "size",
-									"longName": "Size",
-									"displayType": "dropDown"
-								},
-								{
-									"name": "orin",
-									"longName": "ORIN",
-									"displayType": "numeric"
-								},
-								{
-									"name": "width",
-									"longName": "Width",
-									"displayType": "dropDown"
-								},
-								{
-									"name": "skuQuantity",
-									"longName": "Quantity",
-									"displayType": "numeric"
-								},
-								{
-									"name": "status",
-									"longName": "Status",
-									"displayType": "textBox"
-								},
-								{
-									"name": "creationDate",
-									"longName": "Creation Date",
-									"displayType": "date"
-								},
-								{
-									"name": "plannedOnSiteDate",
-									"longName": "Planned OnSite Date (mm/dd/yyyy)",
-									"displayType": "dateTime"
-								},
-								{
-									"name": "ecommMinOrderQty",
-									"longName": "eComm Min Order Qty",
-									"displayType": "integer"
-								},
-								{
-									"name": "assembledHeight",
-									"longName": "Assembled Height(in inches)",
-									"displayType": "decimal"
-								},
-								{
-									"name": "warrantyFlag",
-									"longName": "Warranty Flag",
-									"displayType": "boolean"
-								}
-							]
+							"config": {
+							}
 						}
 					}
 				]
@@ -1153,40 +955,8 @@
 									]
 								},
 								"rock-entity-tofix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "missingvideos",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								}
 							}
