@@ -6,8 +6,8 @@
   },
   "configObjects": [
     {
-      "id": "sku_S3Bucket_Excel_Export_Publish",
-      "name": "sku_S3Bucket_Excel_Export_Publish",
+      "id": "sku_Kinesis_JSON_Export_Publish",
+      "name": "sku_Kinesis_JSON_Export_Publish",
       "version": "1.0",
       "type": "COPProfile",
       "properties": {
@@ -21,12 +21,12 @@
           {
             "context": {
               "app": "RSConnect",
-              "service": "excelExportPublishService",
+              "service": "entityExportPublishService",
               "list": "self"
             },
             "jsonData": {
               "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKUPubv3",
-              "name": "sku_S3Bucket_Excel_Export_Publish",
+              "name": "sku_Kinesis_JSON_Export_Publish",
               "tenantId": "jcp",
               "profileType": "contentOnboarding",
               "dataInfo": "Entity",
@@ -40,10 +40,9 @@
               },
               "outboundChannel": {
                 "isDataPersistent": "true",
-                "s3ObjectConnector": {
-                  "regionName": "us-east-1",
-                  "bucketName": "rs-apps-rcoa-exports",
-                  "key": "Export_Data.xlsx"
+                "kinesisStreamConnector": {
+                  "streamName": "rsjcpStream4",
+                  "regionName": "us-west-2"
                 }
               },
               "transform": {
@@ -58,9 +57,9 @@
                   "excludeFilter": []
                 },
                 "outboundFormat": {
-                  "type": "EXCEL",
+                  "type": "RSJSON",
                   "version": "1.1",
-                  "batchSize": 10000,
+                  "batchSize": 1,
                   "settings": {
                     "encoding": "utf8"
                   },
@@ -71,7 +70,6 @@
                   "destination": "rms",
                   "allowNullValues": "true",
                   "clearMissingAttributes": "false",
-                  "collectionSeparator": "||",
                   "strategies": [
                     {
                       "caseFormat": "lower",
