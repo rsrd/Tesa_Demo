@@ -31,7 +31,8 @@
                                 "rock-search-filter",
                                 "rock-entity-search-grid",
                                 "rock-entity-quick-manage",
-                                "rock-saved-searches-tags"
+                                "rock-saved-searches-tags",
+                                "assignment-actions"
                             ]
                         }
                     }
@@ -1060,6 +1061,50 @@
                     }
                 }]
             }
-        }
+        },
+        {
+			"id": "app-entity-discovery_assignment-actions_copywriter_uiConfig",
+			"name": "app-entity-discovery_assignment-actions",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "assignment-actions",
+							"subComponent": "_ALL",
+							"role": "copywriter"
+						},
+						"jsonData": {
+							"config": {
+								"title": "",
+								"actions": [
+									{
+										"name": "takeTask",
+										"icon": "pebble-xl-icons:taketask",
+										"text": "Take Task",
+										"visible": true,
+										"eventName": "action-takeTask"
+									},
+									{
+										"name": "releaseTask",
+										"icon": "pebble-xl-icons:releasetask",
+										"text": "Release Task",
+										"visible": true,
+										"eventName": "action-releaseTask"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
     ]
 }
