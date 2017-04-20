@@ -11,736 +11,730 @@
       "type": "workflowDefinition",
       "data": {
         "attributes": {
-          "workflows": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "New Product Setup"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.3"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
             "group": [
               {
-                "workflowName": {
+                "activityGuid": {
                   "values": [
                     {
-                      "value": "New Product Setup"
+                      "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
                     }
                   ]
                 },
-                "workflowVersion": {
+                "activityName": {
                   "values": [
                     {
-                      "value": "V1.3"
+                      "value": "New SKUs to Submit"
                     }
                   ]
                 },
-                "published": {
+                "sequence": {
                   "values": [
                     {
-                      "value": true
+                      "value": "1"
                     }
                   ]
                 },
-                "activities": {
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
                   "group": [
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
+                            "value": "Submit"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "New SKUs to Submit"
+                            "value": "Submit"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "1"
+                            "value": "Submit.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                      "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "vendor"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Submit"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Submit"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Submit.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Save for Later"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Save for Later"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "SaveforLater.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Optional"
                           }
                         ]
                       }
                     },
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
+                            "value": "Save for Later"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Review Assortment"
+                            "value": "Save for Later"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "2"
+                            "value": "SaveforLater.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Review Assortment"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "buyer"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Approve Assortment"
                           }
                         ]
                       },
-                      "allowedRoles": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "buyer"
+                            "value": "Approve Assortment"
                           }
                         ]
                       },
-                      "allowedUsers": {
-                        "values": []
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "ApproveAssortment.png"
+                          }
+                        ]
                       },
-                      "actions": {
-                        "group": [
+                      "commentsMode": {
+                        "values": [
                           {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Approve Assortment"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Approve Assortment"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "ApproveAssortment.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Request Info"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Request Info"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "RequestInfo.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Mandatory"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Reject"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Reject"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Reject.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Mandatory"
-                                }
-                              ]
-                            }
+                            "value": "Optional"
                           }
                         ]
                       }
                     },
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
+                            "value": "Request Info"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Provide Additional Info"
+                            "value": "Request Info"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "3"
+                            "value": "RequestInfo.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                       "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "vendor"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Resubmit"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Resubmit"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Resubmit.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Mandatory"
                           }
                         ]
                       }
                     },
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "aa582e37-90f1-45b6-ac95-725cea087981"
+                            "value": "Reject"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Assign Internal Information"
+                            "value": "Reject"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "4"
+                            "value": "Reject.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
+                            "value": "Mandatory"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Provide Additional Info"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Resubmit"
                           }
                         ]
                       },
-                       "allowedRoles": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "business"
+                            "value": "Resubmit"
                           }
                         ]
                       },
-                      "allowedUsers": {
-                        "values": []
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Resubmit.png"
+                          }
+                        ]
                       },
-                      "actions": {
-                        "group": [
+                      "commentsMode": {
+                        "values": [
                           {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Approve"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Approve"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Approve.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
-                          },
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "aa582e37-90f1-45b6-ac95-725cea087981"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Assign Internal Information"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "business"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
                           {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Request Info"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Request Info"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "RequestInfo.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Mandatory"
-                                }
-                              ]
-                            }
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Approve.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
                           }
                         ]
                       }
                     },
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
+                            "value": "Request Info"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Rejected SKUs"
+                            "value": "Request Info"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "5"
+                            "value": "RequestInfo.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                     "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "vendor"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Done.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "None"
-                                }
-                              ]
-                            }
+                            "value": "Mandatory"
                           }
                         ]
                       }
-                    },
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
                     {
-                      "activityGuid": {
+                      "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Rejected SKUs"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "5"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                            "value": "Done"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Enrich Copy"
+                            "value": "Done"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "6"
+                            "value": "Done.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                       "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "copywriter"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Complete"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Complete"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Complete.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "None"
                           }
                         ]
                       }
-                    },
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
                     {
-                      "activityGuid": {
+                      "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Enrich Copy"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "6"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "copywriter"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                            "value": "Complete"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Enrich with Digital Assets"
+                            "value": "Complete"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "7"
+                            "value": "Complete.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                       "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "assetEnrichment"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Complete"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Complete"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Complete.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Optional"
                           }
                         ]
                       }
-                    },
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
                     {
-                      "activityGuid": {
+                      "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Enrich with Digital Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "7"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "assetEnrichment"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "48adc483-564a-4f71-93c5-1a1b60822c4f"
+                            "value": "Complete"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Publish"
+                            "value": "Complete"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "8"
+                            "value": "Complete.png"
                           }
                         ]
                       },
-                      "assignmentType": {
-                        "values": []
-                      },
-                      "allowedRoles": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Administrator"
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "48adc483-564a-4f71-93c5-1a1b60822c4f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "8"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "Administrator"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
                           }
                         ]
                       },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
+                      "actionText": {
+                        "values": [
                           {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Done.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
                           }
                         ]
                       }
@@ -759,172 +753,166 @@
       "type": "workflowDefinition",
       "data": {
         "attributes": {
-          "workflows": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "Update Product Workflow"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.1"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
             "group": [
               {
-                "workflowName": {
+                "activityGuid": {
                   "values": [
                     {
-                      "value": "Update Product Workflow"
+                      "value": "4feccba9-977c-44a3-9dc1-d2d13ab44bbf"
                     }
                   ]
                 },
-                "workflowVersion": {
+                "activityName": {
                   "values": [
                     {
-                      "value": "V1.1"
+                      "value": "Review SKU"
                     }
                   ]
                 },
-                "published": {
+                "sequence": {
                   "values": [
                     {
-                      "value": true
+                      "value": "1"
                     }
                   ]
                 },
-                "activities": {
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "buyer"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
                   "group": [
                     {
-                      "activityGuid": {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "4feccba9-977c-44a3-9dc1-d2d13ab44bbf"
+                            "value": "Approve"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Review SKU"
+                            "value": "Approve"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "1"
+                            "value": "Approve.png"
                           }
                         ]
                       },
-                      "assignmentType": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Queue"
-                          }
-                        ]
-                      },
-                      "allowedRoles": {
-                        "values": [
-                          {
-                            "value": "buyer"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values": []
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Approve"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Approve"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Approve.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Optional"
                           }
                         ]
                       }
-                    },
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
                     {
-                      "activityGuid": {
+                      "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "Administrator"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
                         "values": [
                           {
-                            "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                            "value": "Done"
                           }
                         ]
                       },
-                      "activityName": {
+                      "actionText": {
                         "values": [
                           {
-                            "value": "Publish"
+                            "value": "Done"
                           }
                         ]
                       },
-                      "sequence": {
+                      "actionIcon": {
                         "values": [
                           {
-                            "value": "2"
+                            "value": "Done.png"
                           }
                         ]
                       },
-                      "assignmentType": {
-                        "values": []
-                      },
-                      "allowedRoles": {
+                      "commentsMode": {
                         "values": [
                           {
-                            "value": "Administrator"
-                          }
-                        ]
-                      },
-                      "allowedUsers": {
-                        "values":[]
-                      },
-                      "actions": {
-                        "group": [
-                          {
-                            "actionName": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionText": {
-                              "values": [
-                                {
-                                  "value": "Done"
-                                }
-                              ]
-                            },
-                            "actionIcon": {
-                              "values": [
-                                {
-                                  "value": "Done.png"
-                                }
-                              ]
-                            },
-                            "commentsMode": {
-                              "values": [
-                                {
-                                  "value": "Optional"
-                                }
-                              ]
-                            }
+                            "value": "Optional"
                           }
                         ]
                       }
