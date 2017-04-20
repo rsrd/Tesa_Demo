@@ -1,1 +1,79 @@
-{"metaInfo":{"dataIndex":"entityModel","collectionName":"entityModels","responseObjectName":"response"},"entityModels":[{"id":"lot_entityDefaultValueModel","name":"lot","type":"entityDefaultValueModel","domain":"generic","data":{"attributes":{"sellinguom":{"properties":{"defaultValue":"EA"}},"standarduom":{"properties":{"defaultValue":"EA"}},"sellableflag":{"properties":{"defaultValue":"Y"}},"orderableflag":{"properties":{"defaultValue":"Y"}},"inventoryflag":{"properties":{"defaultValue":"Y"}}}}},{"id":"sku_entityDefaultValueModel","name":"sku","type":"entityDefaultValueModel","domain":"generic","data":{"attributes":{"sellinguom":{"properties":{"defaultValue":"EA"}},"standarduom":{"properties":{"defaultValue":"EA"}},"sellableflag":{"properties":{"defaultValue":"Y"}},"orderableflag":{"properties":{"defaultValue":"Y"}},"inventoryflag":{"properties":{"defaultValue":"Y"}}}}}]}
+{
+    "includeRequest": "false",
+    "clientId": "e8d7df54-b704-44f1-ac10-6c7fb8ddeefd",
+    "clientState": {
+        "defaultValues": {}
+    },
+    "entityModels": [
+        {
+            "id": "lot_entityDefaultValueModel",
+            "name": "lot",
+            "type": "entityDefaultValueModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "sellinguom": {
+                        "properties": {
+                            "defaultValue": "EA"
+                        }
+                    },
+                    "standarduom": {
+                        "properties": {
+                            "defaultValue": "EA"
+                        }
+                    },
+                    "sellableflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    },
+                    "orderableflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    },
+                    "inventoryflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "sku_entityDefaultValueModel",
+            "name": "sku",
+            "type": "entityDefaultValueModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "sellinguom": {
+                        "properties": {
+                            "defaultValue": "EA"
+                        }
+                    },
+                    "standarduom": {
+                        "properties": {
+                            "defaultValue": "EA"
+                        }
+                    },
+                    "sellableflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    },
+                    "orderableflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    },
+                    "inventoryflag": {
+                        "properties": {
+                            "defaultValue": "Y"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
