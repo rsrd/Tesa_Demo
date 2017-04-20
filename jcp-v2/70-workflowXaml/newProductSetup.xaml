@@ -27,7 +27,12 @@
             <av:PointCollection x:Key="ConnectorLocation">300,141 300,169</av:PointCollection>
           </scg3:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="vendor" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Submit,Optional,;Save for Later,Optional," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Submit" DelegationAllowed="True" Description="Submit new SKUs to JCPenney for approval" DisplayName="New SKUs to Submit" DisplayOrder="1" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="e4d9b1cb-1a58-468f-a0c0-af8f00383c5c" NotifyAllAssignedUsers="False" NotifyUser="False">
+        <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Submit,Optional,;Save for Later,Optional," AllowedRoles="vendor" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Submit" DelegationAllowed="True" Description="Submit new SKUs to JCPenney for approval" DisplayName="New SKUs to Submit" DisplayOrder="1" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="db59906c-d679-4923-901d-fe75bb8a7eab" NotifyAllAssignedUsers="False" NotifyUser="False">
+          <mwac:HumanWork.AllowedUsers>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </mwac:HumanWork.AllowedUsers>
           <sap:WorkflowViewStateService.ViewState>
             <scg3:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -43,7 +48,12 @@
                 <av:PointCollection x:Key="ConnectorLocation">300,191 300,238.25 465,238.25</av:PointCollection>
               </scg3:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="buyer" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve Assortment,Optional,;Request Info,Mandatory,;Reject,Mandatory," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Review and Validate the assortment submitted by the Vendor" DisplayName="Review Assortment" DisplayOrder="1" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="a6bbf347-97a2-49df-99b2-aba14ce2865f" NotifyAllAssignedUsers="False" NotifyUser="False">
+            <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve Assortment,Optional,;Request Info,Mandatory,;Reject,Mandatory," AllowedRoles="buyer" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Review and Validate the assortment submitted by the Vendor" DisplayName="Review Assortment" DisplayOrder="1" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="4eec996e-347f-48c4-8937-14255573dc44" NotifyAllAssignedUsers="False" NotifyUser="False">
+              <mwac:HumanWork.AllowedUsers>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </mwac:HumanWork.AllowedUsers>
               <sap:WorkflowViewStateService.ViewState>
                 <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -72,7 +82,12 @@
                       <av:Size x:Key="ShapeSize">200,22</av:Size>
                     </scg3:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="vendor" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Done,None," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="SKUs here are rejected by JCPenney" DisplayName="Rejected SKUs" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="695bbbad-a137-4c86-9cbf-1af7c4eab001" NotifyAllAssignedUsers="False" NotifyUser="False">
+                  <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Done,None," AllowedRoles="vendor" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="SKUs here are rejected by JCPenney" DisplayName="Rejected SKUs" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="18b2e4f0-4cb1-4a2b-bd26-70babc16a5e2" NotifyAllAssignedUsers="False" NotifyUser="False">
+                    <mwac:HumanWork.AllowedUsers>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </mwac:HumanWork.AllowedUsers>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -88,7 +103,12 @@
                       <av:PointCollection x:Key="ConnectorLocation">720,120 750,120 750,153.73263288624 517.5,153.73263288624 517.5,216.5</av:PointCollection>
                     </scg3:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="vendor" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Resubmit,Optional," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="Provide additional required information requested by JCPenney" DisplayName="Provide Additional Info" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="c08e3340-c343-476c-8432-21ad2cd9e1a2" NotifyAllAssignedUsers="False" NotifyUser="False">
+                  <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Resubmit,Optional," AllowedRoles="vendor" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="Provide additional required information requested by JCPenney" DisplayName="Provide Additional Info" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="63ad3c0e-f938-4e32-ae94-8f72a6df28d9" NotifyAllAssignedUsers="False" NotifyUser="False">
+                    <mwac:HumanWork.AllowedUsers>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </mwac:HumanWork.AllowedUsers>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -107,7 +127,12 @@
                       <av:PointCollection x:Key="ConnectorLocation">310,401 310,439</av:PointCollection>
                     </scg3:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="copywriter" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Complete,Optional," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Complete" DelegationAllowed="True" Description="Add additional Copy for the Product Presentations" DisplayName="Enrich Copy" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="832fe1a7-2498-4528-b568-1d001f898bd5" NotifyAllAssignedUsers="False" NotifyUser="False">
+                  <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Complete,Optional," AllowedRoles="copywriter" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Complete" DelegationAllowed="True" Description="Add additional Copy for the Product Presentations" DisplayName="Enrich Copy" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="def66a0a-c7da-45ce-9a5f-edf311f293d0" NotifyAllAssignedUsers="False" NotifyUser="False">
+                    <mwac:HumanWork.AllowedUsers>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </mwac:HumanWork.AllowedUsers>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,7 +148,12 @@
                           <av:PointCollection x:Key="ConnectorLocation">310,461 310,509</av:PointCollection>
                         </scg3:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="assetEnrichment" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Complete,Optional," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="Assign and verify digital assets" DisplayName="Enrich with Digital Assets" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="412bf4f3-cd79-4057-9c19-6e48cc0c711e" NotifyAllAssignedUsers="False" NotifyUser="False">
+                      <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Complete,Optional," AllowedRoles="assetEnrichment" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" Description="Assign and verify digital assets" DisplayName="Enrich with Digital Assets" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="9e05c4bb-69b1-46d7-97f7-0ccc33eaa56f" NotifyAllAssignedUsers="False" NotifyUser="False">
+                        <mwac:HumanWork.AllowedUsers>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </mwac:HumanWork.AllowedUsers>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -138,7 +168,7 @@
                               <av:Size x:Key="ShapeSize">200,22</av:Size>
                             </scg3:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <mwac:InitiateExport Description="{x:Null}" DisplayName="Publish" ExportProfileNames="sku_S3Bucket_Excel_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="48adc483-564a-4f71-93c5-1a1b60822c4f">
+                          <mwac:InitiateExport Description="{x:Null}" DisplayName="Publish" ExportProfileNames="sku_S3Bucket_Excel_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="21595b99-6c93-4418-9b12-463157a08254">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -158,7 +188,12 @@
                       <av:PointCollection x:Key="ConnectorLocation">410,330 482.5,330 482.5,303.5</av:PointCollection>
                     </scg3:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedRoles="business" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional,;Request Info,Mandatory," AllowedUsers="" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Assign Internal attributes and Group non-automatically created Lots, Product Presentations and Ensembles" DisplayName="Assign Internal Information" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="aa582e37-90f1-45b6-ac95-725cea087981" NotifyAllAssignedUsers="False" NotifyUser="False">
+                  <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional,;Request Info,Mandatory,;Reject,Mandatory," AllowedRoles="business" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Assign Internal attributes and Group non-automatically created Lots, Product Presentations and Ensembles" DisplayName="Assign Internal Information" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="5df4376f-1d9f-4327-bdd0-66623f92656f" NotifyAllAssignedUsers="False" NotifyUser="False">
+                    <mwac:HumanWork.AllowedUsers>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </mwac:HumanWork.AllowedUsers>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
