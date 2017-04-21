@@ -1,741 +1,883 @@
 {
-    "metaInfo": {
-        "dataIndex": "entityModel",
-        "collectionName": "entityModels",
-        "responseObjectName": "response"
-    },
-    "entityModels": [
-        {
-            "id": "businessRequiredAttributesArePopulated_BusinessCondition",
-            "name": "Business required attributes are populated",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Business required attributes are populated"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Business required attributes are populated"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "businessCondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "value": "FALSE"
-                            }
-                        ]
-                    }
-                },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "businessRequiredAttributesArePopulated_BusinessCondition",
-                            "relTo": {
-                                "id": "businessReview_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
+  "metaInfo": {
+    "dataIndex": "entityModel",
+    "collectionName": "entityModels",
+    "responseObjectName": "response"
+  },
+  "entityModels": [
+    {
+      "id": "businessRequiredAttributesArePopulated_businessCondition",
+      "name": "Business required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Business required attributes are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Business required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
         },
-        {
-            "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
-            "name": "Buyer required attributes are populated",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Buyer required attributes are populated"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Buyer required attributes are populated"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "businessCondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "value": "FALSE"
-                            }
-                        ]
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_businessReviewValidationrule_businessRule",
+              "relTo": {
+                "id": "businessReviewValidationrule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
                     }
+                  ]
                 },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
-                            "relTo": {
-                                "id": "buyerReview_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "id": "imageIsSuccessfullyUploaded_BusinessCondition",
-            "name": "Image is successfully uploaded",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Image is successfully uploaded"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Image is successfully uploaded"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "businessCondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "value": "FALSE"
-                            }
-                        ]
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
                     }
-                },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "imageIsSuccessfullyUploaded_BusinessCondition",
-                            "relTo": {
-                                "id": "vendorSKUaddninfosubmission_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
+                  ]
                 }
+              }
             }
-        },
-        {
-            "id": "requiredAttributesArePopulated_BusinessCondition",
-            "name": "Required attributes are populated",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Required attributes are populated"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Required attributes are populated"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "businessCondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "value": "FALSE"
-                            }
-                        ]
-                    }
-                },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "id": "requiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUCreate_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "id": "requiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUSubmission_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "2"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "id": "requiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUaddninfosubmission_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "3"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "id": "requiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "buyerReview_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "4"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
-            "name": "Vendor required attributes are populated",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "value": "Vendor required attributes are populated"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "value": "Vendor required attributes are populated"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "value": "businessCondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "value": "FALSE"
-                            }
-                        ]
-                    }
-                },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUCreate_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUSubmission_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "2"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "relTo": {
-                                "id": "vendorSKUaddninfosubmission_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "value": "3"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "id": "validateEnityPresentInCreateWorkflow_businessCondition",
-            "name": "validate Enity Present In CreateWorkflow",
-            "type": "businessCondition",
-            "data": {
-                "attributes": {
-                    "name": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "validate Enity Present In CreateWorkflow"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "skip if entity is in Create Workflow"
-                            }
-                        ]
-                    },
-                    "ruleType": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "businesscondition"
-                            }
-                        ]
-                    },
-                    "executionMode": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "any"
-                            }
-                        ]
-                    },
-                    "enabled": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "true"
-                            }
-                        ]
-                    },
-                    "isDraft": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isDeleted": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "false"
-                            }
-                        ]
-                    },
-                    "isSystemRule": {
-                        "values": [
-                            {
-                                "id": "1",
-                                "value": "false"
-                            }
-                        ]
-                    }
-                },
-                "relationships": {
-                    "hasBusinessRules": [
-                        {
-                            "direction": "both",
-                            "operation": "association",
-                            "id": "skuvalidateEnityPresentInCreateWorkflow",
-                            "relTo": {
-                                "id": "validateEnityPresentInCreateWorkflow_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "operation": "association",
-                            "id": "nartValidateVendorExistsRuleRelId",
-                            "relTo": {
-                                "id": "validateVendorExistsRule_businessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "id": "1",
-                                            "value": "1"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
+          ]
         }
-    ]
+      }
+    },
+    {
+      "id": "buyerRequiredAttributesArePopulated_businessCondition",
+      "name": "Buyer required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Buyer required attributes are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Buyer required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
+              "relTo": {
+                "id": "buyerReviewValidationrule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+      "name": "Additional Vendor required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Additional Vendor required attributes are populatedd"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Additional Vendor required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
+              "relTo": {
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "requiredAttributesArePopulated_businessCondition",
+      "name": "Required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Required attributes are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUCreateValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "buyerReviewValidationrule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "4"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vendorRequiredAttributesArePopulated_businessCondition",
+      "name": "Vendor required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Vendor required attributes are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Vendor required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUCreateValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+      "name": "validate Enity Present In CreateWorkflow",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "id": "1",
+                "value": "validate Enity Present In CreateWorkflow"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "id": "1",
+                "value": "skip if entity is in Create Workflow"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "id": "1",
+                "value": "businesscondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "id": "1",
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "id": "1",
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "id": "1",
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "id": "1",
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "id": "1",
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "operation": "association",
+              "id": "hasBusinessRules_validateEnityPresentInCreateWorkflowValidationRule_businessRule",
+              "relTo": {
+                "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
+      "name": "Required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Required attributes are populated for Update Entity exit"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Required attributes are populated for Update Entity exit"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "id": "hasBusinessRules_vendorSKUCreateValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUCreateValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_vendorSKUSubmissionValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_buyerReviewValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "buyerReviewValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "4"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "hasBusinessRules_businessReviewValidationRule_businessRule",
+              "direction": "both",
+              "relationshipType": "association",
+              "relTo": {
+                "id": "businessReviewValidationRule_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "5"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
 }
