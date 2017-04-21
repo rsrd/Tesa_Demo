@@ -14,7 +14,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule1",
+                            "id": "hasBusinessRules_invokeNewProductSetupWFRule_businessRule",
                             "relTo": {
                                 "id": "invokeNewProductSetupWFRule_businessRule",
                                 "type": "businessRule"
@@ -23,7 +23,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -31,7 +30,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -39,7 +37,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -47,7 +44,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -55,7 +51,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "1"
                                         }
                                     ]
@@ -72,7 +67,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule2",
+                            "id": "hasBusinessRules_plannedOnSiteDate_businessRule",
                             "relTo": {
                                 "id": "plannedOnSiteDate_BusinessRule",
                                 "type": "businessRule"
@@ -81,7 +76,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -89,7 +83,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -97,7 +90,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -105,7 +97,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -113,65 +104,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "1"
-                                        }
-                                    ]
-                                },
-                                "triggerActions": {
-                                    "values": [
-                                        {
-                                            "value": "update"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "sku_classtosubclass_BusinessRule_Rel_Id",
-                            "relTo": {
-                                "id": "classtosubclass_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "ignoreChangeContext": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "enabled": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "executionMode": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "any"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
                                             "value": "2"
                                         }
                                     ]
@@ -188,16 +120,15 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule3",
+                            "id": "hasBusinessRules_classtosubclass_businessRule",
                             "relTo": {
-                                "id": "imucalculations_BusinessRule",
+                                "id": "classtosubclass_BusinessRule",
                                 "type": "businessRule"
                             },
                             "attributes": {
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -205,7 +136,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -213,7 +143,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -221,7 +150,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -229,7 +157,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "3"
                                         }
                                     ]
@@ -246,16 +173,15 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule3",
+                            "id": "hasBusinessRules_imucalculations_businessRule",
                             "relTo": {
-                                "id": "grossProfitcalculations_BusinessRule",
+                                "id": "imucalculations_BusinessRule",
                                 "type": "businessRule"
                             },
                             "attributes": {
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -263,7 +189,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -271,7 +196,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -279,7 +203,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -287,7 +210,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "4"
                                         }
                                     ]
@@ -304,16 +226,15 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule4",
+                            "id": "hasBusinessRules_grossProfitcalculations_businessRule",
                             "relTo": {
-                                "id": "estimatedUPSShippingChargecalculation_BusinessRule",
+                                "id": "grossProfitcalculations_BusinessRule",
                                 "type": "businessRule"
                             },
                             "attributes": {
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -321,7 +242,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -329,7 +249,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -337,7 +256,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -345,7 +263,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "5"
                                         }
                                     ]
@@ -362,7 +279,60 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule5",
+                            "id": "hasBusinessRules_estimatedUPSShippingChargecalculation_businessRule",
+                            "relTo": {
+                                "id": "estimatedUPSShippingChargecalculation_BusinessRule",
+                                "type": "businessRule"
+                            },
+                            "attributes": {
+                                "ignoreChangeContext": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "isDeleted": {
+                                    "values": [
+                                        {
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                "enabled": {
+                                    "values": [
+                                        {
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                "executionMode": {
+                                    "values": [
+                                        {
+                                            "value": "any"
+                                        }
+                                    ]
+                                },
+                                "executionOrder": {
+                                    "values": [
+                                        {
+                                            "value": "6"
+                                        }
+                                    ]
+                                },
+                                "triggerActions": {
+                                    "values": [
+                                        {
+                                            "value": "update"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "id": "hasBusinessRules_defaultvaluesforPP_businessRule",
                             "relTo": {
                                 "id": "defaultvaluesforPP_BusinessRule",
                                 "type": "businessRule"
@@ -371,7 +341,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -379,7 +348,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -387,7 +355,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -395,7 +362,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -403,8 +369,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "1"
+                                            "value": "7"
                                         }
                                     ]
                                 },
@@ -420,7 +385,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule6",
+                            "id": "hasBusinessRules_copyConcatenation_businessRule",
                             "relTo": {
                                 "id": "copyConcatenation_BusinessRule",
                                 "type": "businessRule"
@@ -429,7 +394,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -437,7 +401,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -445,7 +408,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -453,7 +415,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -461,8 +422,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "1"
+                                            "value": "8"
                                         }
                                     ]
                                 },
@@ -478,123 +438,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businesRule7",
-                            "relTo": {
-                                "id": "Imagevalidations_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "ignoreChangeContext": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "enabled": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "executionMode": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "any"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "1"
-                                        }
-                                    ]
-                                },
-                                "triggerActions": {
-                                    "values": [
-                                        {
-                                            "value": "update"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "sku_businesRule8",
-                            "relTo": {
-                                "id": "swatchImagevalidations_BusinessRule",
-                                "type": "businessRule"
-                            },
-                            "attributes": {
-                                "ignoreChangeContext": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "isDeleted": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "false"
-                                        }
-                                    ]
-                                },
-                                "enabled": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "true"
-                                        }
-                                    ]
-                                },
-                                "executionMode": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "any"
-                                        }
-                                    ]
-                                },
-                                "executionOrder": {
-                                    "values": [
-                                        {
-                                            "user": "users/system",
-                                            "value": "1"
-                                        }
-                                    ]
-                                },
-                                "triggerActions": {
-                                    "values": [
-                                        {
-                                            "value": "update"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "direction": "both",
-                            "relationshipType": "association",
-                            "id": "sku_businesRule9",
+                            "id": "hasBusinessRules_costChange_businessRule",
                             "relTo": {
                                 "id": "costChange_BusinessRule",
                                 "type": "businessRule"
@@ -603,7 +447,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -611,7 +454,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -619,7 +461,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -627,7 +468,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -635,8 +475,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "1"
+                                            "value": "11"
                                         }
                                     ]
                                 },
@@ -654,7 +493,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businessCondition1",
+                            "id": "hasBusinessConditions_vendorRequiredAttributesArePopulated_businessCondition",
                             "relTo": {
                                 "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
                                 "type": "businessCondition"
@@ -663,7 +502,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -671,7 +509,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -679,7 +516,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -687,7 +523,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -695,8 +530,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "2"
+                                            "value": "1"
                                         }
                                     ]
                                 }
@@ -705,7 +539,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businessCondition2",
+                            "id": "hasBusinessConditions_buyerRequiredAttributesArePopulated_businessCondition",
                             "relTo": {
                                 "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
                                 "type": "businessCondition"
@@ -714,7 +548,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -722,7 +555,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -730,7 +562,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -738,7 +569,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -753,7 +583,6 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "2"
                                         }
                                     ]
@@ -763,7 +592,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businessCondition3",
+                            "id": "hasBusinessConditions_businessRequiredAttributesArePopulated_businessCondition",
                             "relTo": {
                                 "id": "businessRequiredAttributesArePopulated_BusinessCondition",
                                 "type": "businessCondition"
@@ -772,7 +601,6 @@
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -780,7 +608,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -788,7 +615,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -796,7 +622,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -811,8 +636,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "5"
+                                            "value": "3"
                                         }
                                     ]
                                 }
@@ -821,16 +645,15 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businessCondition4",
+                            "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
                             "relTo": {
-                                "id": "imageIsSuccessfullyUploaded_BusinessCondition",
+                                "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
                                 "type": "businessCondition"
                             },
                             "attributes": {
                                 "ignoreChangeContext": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -838,7 +661,6 @@
                                 "isDeleted": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "false"
                                         }
                                     ]
@@ -846,7 +668,6 @@
                                 "enabled": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "true"
                                         }
                                     ]
@@ -854,7 +675,6 @@
                                 "executionMode": {
                                     "values": [
                                         {
-                                            "user": "users/system",
                                             "value": "any"
                                         }
                                     ]
@@ -862,8 +682,7 @@
                                 "executionOrder": {
                                     "values": [
                                         {
-                                            "user": "users/system",
-                                            "value": "5"
+                                            "value": "4"
                                         }
                                     ]
                                 }
@@ -872,7 +691,7 @@
                         {
                             "direction": "both",
                             "relationshipType": "association",
-                            "id": "sku_businessCondition5",
+                            "id": "hasBusinessConditions_requiredAttributesArePopulated_businessCondition",
                             "relTo": {
                                 "id": "requiredAttributesArePopulated_BusinessCondition",
                                 "type": "businessCondition"
@@ -940,7 +759,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionWF1",
+                                    "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedskipCriteria_businessCondition",
                                     "relTo": {
                                         "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
                                         "type": "businessCondition"
@@ -949,7 +768,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -957,7 +775,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -965,7 +782,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -973,7 +789,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -981,7 +796,6 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "1"
                                                 }
                                             ]
@@ -989,7 +803,6 @@
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "skipCriteria"
                                                 }
                                             ]
@@ -997,7 +810,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "New SKUs to Submit"
                                                 }
                                             ]
@@ -1005,7 +817,6 @@
                                         "defaultAction": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Submit"
                                                 }
                                             ]
@@ -1015,7 +826,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionWF2",
+                                    "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteria_businessCondition",
                                     "relTo": {
                                         "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
                                         "type": "businessCondition"
@@ -1024,7 +835,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1032,7 +842,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -1040,7 +849,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1048,7 +856,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -1056,7 +863,6 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "2"
                                                 }
                                             ]
@@ -1064,7 +870,6 @@
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "exitCriteria"
                                                 }
                                             ]
@@ -1072,7 +877,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "New SKUs to Submit"
                                                 }
                                             ]
@@ -1080,7 +884,6 @@
                                         "actions": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Submit"
                                                 }
                                             ]
@@ -1090,7 +893,141 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionWF3",
+                                    "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteriaexitCriteriaUpdateWf_businessCondition",
+                                    "relTo": {
+                                        "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "5"
+                                                }
+                                            ]
+                                        },
+                                        "activityCriteria": {
+                                            "values": [
+                                                {
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "value": "Rejected SKUs"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "value": "Done"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+                                    "relTo": {
+                                        "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+                                        "type": "businessCondition"
+                                    },
+                                    "attributes": {
+                                        "ignoreChangeContext": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "isDeleted": {
+                                            "values": [
+                                                {
+                                                    "value": "false"
+                                                }
+                                            ]
+                                        },
+                                        "enabled": {
+                                            "values": [
+                                                {
+                                                    "value": "true"
+                                                }
+                                            ]
+                                        },
+                                        "executionMode": {
+                                            "values": [
+                                                {
+                                                    "value": "any"
+                                                }
+                                            ]
+                                        },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "4"
+                                                }
+                                            ]
+                                        },
+                                        "activityCriteria": {
+                                            "values": [
+                                                {
+                                                    "value": "exitCriteria"
+                                                }
+                                            ]
+                                        },
+                                        "stepName": {
+                                            "values": [
+                                                {
+                                                    "value": "Provide Additional Info"
+                                                }
+                                            ]
+                                        },
+                                        "actions": {
+                                            "values": [
+                                                {
+                                                    "value": "Resubmit"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "direction": "both",
+                                    "relationshipType": "association",
+                                    "id": "hasBusinessConditions_buyerRequiredAttributesArePopulated_businessCondition",
                                     "relTo": {
                                         "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
                                         "type": "businessCondition"
@@ -1099,7 +1036,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1107,7 +1043,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -1115,7 +1050,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1123,7 +1057,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -1131,7 +1064,6 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "3"
                                                 }
                                             ]
@@ -1146,7 +1078,6 @@
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "exitCriteria"
                                                 }
                                             ]
@@ -1154,7 +1085,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Review Assortment"
                                                 }
                                             ]
@@ -1162,15 +1092,12 @@
                                         "actions": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Approve Assortment"
                                                 },
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Request Info"
                                                 },
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Reject"
                                                 }
                                             ]
@@ -1180,7 +1107,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionWF4",
+                                    "id": "hasBusinessConditions_businessRequiredAttributesArePopulated_businessCondition",
                                     "relTo": {
                                         "id": "businessRequiredAttributesArePopulated_BusinessCondition",
                                         "type": "businessCondition"
@@ -1189,7 +1116,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1205,7 +1131,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1213,7 +1138,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -1221,7 +1145,6 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "5"
                                                 }
                                             ]
@@ -1236,7 +1159,6 @@
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "exitCriteria"
                                                 }
                                             ]
@@ -1244,7 +1166,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Assign Internal Information"
                                                 }
                                             ]
@@ -1252,94 +1173,10 @@
                                         "actions": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Approve"
                                                 },
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Request Info"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                {
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "id": "sku_businessConditionWF5",
-                                    "relTo": {
-                                        "id": "imageIsSuccessfullyUploaded_BusinessCondition",
-                                        "type": "businessCondition"
-                                    },
-                                    "attributes": {
-                                        "ignoreChangeContext": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "isDeleted": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "false"
-                                                }
-                                            ]
-                                        },
-                                        "enabled": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "executionMode": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "5"
-                                                }
-                                            ]
-                                        },
-                                        "triggerActions": {
-                                            "values": [
-                                                {
-                                                    "value": "update"
-                                                }
-                                            ]
-                                        },
-                                        "activityCriteria": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "exitCriteria"
-                                                }
-                                            ]
-                                        },
-                                        "stepName": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "New SKUs to Submit"
-                                                }
-                                            ]
-                                        },
-                                        "actions": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Submit"
                                                 }
                                             ]
                                         }
@@ -1358,321 +1195,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate1",
-                                    "relTo": {
-                                        "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
-                                        "type": "businessCondition"
-                                    },
-                                    "attributes": {
-                                        "ignoreChangeContext": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "isDeleted": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "false"
-                                                }
-                                            ]
-                                        },
-                                        "enabled": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "executionMode": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "1"
-                                                }
-                                            ]
-                                        },
-                                        "activityCriteria": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "exitCriteria"
-                                                }
-                                            ]
-                                        },
-                                        "stepName": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Review SKU"
-                                                }
-                                            ]
-                                        },
-                                        "actions": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Approve"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                {
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate2",
-                                    "relTo": {
-                                        "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
-                                        "type": "businessCondition"
-                                    },
-                                    "attributes": {
-                                        "ignoreChangeContext": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "isDeleted": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "false"
-                                                }
-                                            ]
-                                        },
-                                        "enabled": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "executionMode": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "2"
-                                                }
-                                            ]
-                                        },
-                                        "triggerActions": {
-                                            "values": [
-                                                {
-                                                    "value": "update"
-                                                }
-                                            ]
-                                        },
-                                        "activityCriteria": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "exitCriteria"
-                                                }
-                                            ]
-                                        },
-                                        "stepName": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Review SKU"
-                                                }
-                                            ]
-                                        },
-                                        "actions": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Approve"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                {
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate3",
-                                    "relTo": {
-                                        "id": "businessRequiredAttributesArePopulated_BusinessCondition",
-                                        "type": "businessCondition"
-                                    },
-                                    "attributes": {
-                                        "ignoreChangeContext": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "isDeleted": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "false"
-                                                }
-                                            ]
-                                        },
-                                        "enabled": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "executionMode": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "3"
-                                                }
-                                            ]
-                                        },
-                                        "triggerActions": {
-                                            "values": [
-                                                {
-                                                    "value": "update"
-                                                }
-                                            ]
-                                        },
-                                        "activityCriteria": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "exitCriteria"
-                                                }
-                                            ]
-                                        },
-                                        "stepName": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Review SKU"
-                                                }
-                                            ]
-                                        },
-                                        "actions": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Approve"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                {
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate4",
-                                    "relTo": {
-                                        "id": "imageIsSuccessfullyUploaded_BusinessCondition",
-                                        "type": "businessCondition"
-                                    },
-                                    "attributes": {
-                                        "ignoreChangeContext": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "isDeleted": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "false"
-                                                }
-                                            ]
-                                        },
-                                        "enabled": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "true"
-                                                }
-                                            ]
-                                        },
-                                        "executionMode": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "4"
-                                                }
-                                            ]
-                                        },
-                                        "activityCriteria": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "exitCriteria"
-                                                }
-                                            ]
-                                        },
-                                        "stepName": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Review SKU"
-                                                }
-                                            ]
-                                        },
-                                        "actions": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "Approve"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                },
-                                {
-                                    "direction": "both",
-                                    "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate5",
+                                    "id": "hasBusinessConditions_requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
                                     "relTo": {
                                         "id": "requiredAttributesArePopulated_BusinessCondition",
                                         "type": "businessCondition"
@@ -1681,7 +1204,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1689,7 +1211,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -1697,7 +1218,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1705,16 +1225,7 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
-                                                }
-                                            ]
-                                        },
-                                        "executionOrder": {
-                                            "values": [
-                                                {
-                                                    "user": "users/system",
-                                                    "value": "5"
                                                 }
                                             ]
                                         },
@@ -1725,10 +1236,16 @@
                                                 }
                                             ]
                                         },
+                                        "executionOrder": {
+                                            "values": [
+                                                {
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        },
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "exitCriteria"
                                                 }
                                             ]
@@ -1736,7 +1253,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Review SKU"
                                                 }
                                             ]
@@ -1744,7 +1260,6 @@
                                         "actions": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Approve"
                                                 }
                                             ]
@@ -1754,7 +1269,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "sku_businessConditionUpdate1",
+                                    "id": "hasBusinessConditions_validateEnityPresentInCreateWorkflow_businessCondition",
                                     "relTo": {
                                         "id": "validateEnityPresentInCreateWorkflow_businessCondition",
                                         "type": "businessCondition"
@@ -1763,7 +1278,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1771,7 +1285,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -1779,7 +1292,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1787,7 +1299,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -1795,15 +1306,13 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
-                                                    "value": "1"
+                                                    "value": "2"
                                                 }
                                             ]
                                         },
                                         "activityCriteria": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "skipCriteria"
                                                 }
                                             ]
@@ -1811,7 +1320,6 @@
                                         "stepName": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Publish"
                                                 }
                                             ]
@@ -1819,7 +1327,6 @@
                                         "defaultAction": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "Submit"
                                                 }
                                             ]
@@ -1839,7 +1346,7 @@
                                 {
                                     "direction": "both",
                                     "relationshipType": "association",
-                                    "id": "autopopulateitemtype_BusinessRule_RelId",
+                                    "id": "hasBusinessRules_autopopulateitemtype_businessRule",
                                     "relTo": {
                                         "id": "autopopulateitemtype_BusinessRule",
                                         "type": "businessRule"
@@ -1848,7 +1355,6 @@
                                         "ignoreChangeContext": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1856,7 +1362,6 @@
                                         "isDeleted": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "false"
                                                 }
                                             ]
@@ -1864,7 +1369,6 @@
                                         "enabled": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "true"
                                                 }
                                             ]
@@ -1872,7 +1376,6 @@
                                         "executionMode": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "any"
                                                 }
                                             ]
@@ -1880,7 +1383,6 @@
                                         "executionOrder": {
                                             "values": [
                                                 {
-                                                    "user": "users/system",
                                                     "value": "1"
                                                 }
                                             ]
