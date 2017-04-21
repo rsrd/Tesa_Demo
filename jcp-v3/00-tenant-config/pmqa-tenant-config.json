@@ -13,7 +13,7 @@
 				"createdByService": "configservice",
 				"createdBy": "system",
 				"createdService": "configurationManageService",
-				"createdDate": "2017-04-15T06:52:08.068Z"
+				"createdDate": "2017-04-20T06:25:39.77Z"
 			},
 			"data": {
 				"jsonData": {
@@ -251,7 +251,7 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://sabineweb/RS_WCF_Int02_pmqa",
+									"resturi": "http://172.31.50.160/RS_QA_Int_WCF_pmqa",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -259,7 +259,7 @@
 								},
 								"export": {
 									"isExportEnabled": "true",
-									"resturi": "http://impexpapicluster:9095/pmqa/api/entityExportService",
+									"resturi": "http://imp-exp-rest:9095",
 									"publish": "/publish"
 								}
 							},
@@ -1372,7 +1372,7 @@
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "http://mdmuicluster:5005/api/",
+											"restUri": "http://mdm-ui:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
@@ -1638,8 +1638,12 @@
 						},
 						"authenticationService": {
 							"serviceSpecific": {
-								"isApiAuthEnabled": false,
+								"isApiAuthEnabled": true,
 								"isOAuthEnabled": false,
+								"authenticationServer": {
+									"maxUserModelUpdateInterval": 28800,
+									"enableUserModelCreate": true
+								},
 								"saml": {
 									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
 									"issuer": "urn:riversand.auth0.com",
@@ -1682,7 +1686,8 @@
 							}
 						}
 					}
-				}
+				},
+				"contexts": []
 			}
 		}
 	]
