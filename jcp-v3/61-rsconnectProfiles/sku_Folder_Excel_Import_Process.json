@@ -42,7 +42,12 @@
                 "isDataPersistent": "false",
                 "rdpConnector": {
                   "type": "RSJSON",
-                  "version": "1.1"
+                  "version": "1.1",
+				  "settings":{
+					  "includeParent": "true",
+					  "includeChildren": "false",
+					  "includeSiblings": "false"
+				  }
                 }
               },
               "transform": {
