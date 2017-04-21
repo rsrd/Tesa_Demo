@@ -197,10 +197,11 @@
 				"contexts": [
 					{
 						"context": {
+							"taxonomy": "productsetuptaxonomy",
 							"classification": "apparel/shirts"
 						},
 						"attributes": {
-							"threadCount": {
+							"threadcount": {
 								"values": [
 									{
 										"value": "150",
@@ -208,19 +209,11 @@
 										"locale": "en-US"
 									}
 								]
-							}
-						}
-					},
-					{
-						"context": {
-							"channel": "webCatalog",
-							"classification": "apparel/shirts"
-						},
-						"attributes": {
-							"webDiscount": {
+							},
+							"sleevelength": {
 								"values": [
 									{
-										"value": "10.5",
+										"value": "150",
 										"source": "internal",
 										"locale": "en-US"
 									}

@@ -6,18 +6,18 @@
 	},
 	"configObjects": [
 		{
-			"id": "jcp",
-			"name": "jcp-tenant-config",
+			"id": "pmqa",
+			"name": "pmqa-tenant-config",
 			"type": "tenantserviceconfig",
 			"properties": {
 				"createdByService": "configservice",
 				"createdBy": "system",
 				"createdService": "configurationManageService",
-				"createdDate": "2017-04-15T06:52:08.068Z"
+				"createdDate": "2017-04-20T06:25:39.77Z"
 			},
 			"data": {
 				"jsonData": {
-					"tenantId": "jcp",
+					"tenantId": "pmqa",
 					"tenantAuthKey": "2527f502-8e88-4614-80ae-5888202af9c5",
 					"messageLocale": "en-US",
 					"services": {
@@ -41,8 +41,8 @@
 											"objectTypes": {
 												"entity": {
 													"indices": {
-														"readIndex": "jcpentityreadindex",
-														"writeIndex": "jcpentitywriteindex"
+														"readIndex": "pmqaentityreadindex",
+														"writeIndex": "pmqaentitywriteindex"
 													}
 												}
 											}
@@ -51,74 +51,74 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanagerequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitymanagerequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -127,8 +127,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -141,14 +141,14 @@
 											"objectTypes": {
 												"entity": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												},
 												"product": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												}
 											}
@@ -157,44 +157,44 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitymanageevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitygovernevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitymanagerequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"entitymanagerequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -203,8 +203,8 @@
 											"objectTypes": {
 												"request": {
 													"tables": {
-														"readTable": "jcprequestobjectwritetable",
-														"writeTable": "jcprequestobjectwritetable"
+														"readTable": "pmqarequestobjectwritetable",
+														"writeTable": "pmqarequestobjectwritetable"
 													}
 												}
 											}
@@ -212,13 +212,13 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								},
 								"eventSubscribers": [
 									{
 										"name": "EntityManageSubscriber",
-										"description": "Riversand Data Platform entity govern connector for jcp",
+										"description": "Riversand Data Platform entity govern connector for pmqa",
 										"active": true,
 										"filters": [
 											{
@@ -251,7 +251,7 @@
 									}
 								},
 								"workflow": {
-									"resturi": "http://sabineweb/RS_WCF_Int02_jcp",
+									"resturi": "http://172.31.50.160/RS_QA_Int_WCF_pmqa",
 									"start": "/WorkflowRestService.svc/StartWorkflow",
 									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -259,7 +259,7 @@
 								},
 								"export": {
 									"isExportEnabled": "true",
-									"resturi": "http://impexpapicluster:9095/jcp/api/entityExportService",
+									"resturi": "http://imp-exp-rest:9095",
 									"publish": "/publish"
 								}
 							},
@@ -270,8 +270,8 @@
 											"objectTypes": {
 												"entity": {
 													"indices": {
-														"readIndex": "jcpentitygovernreadindex",
-														"writeIndex": "jcpentitygovernwriteindex"
+														"readIndex": "pmqaentitygovernreadindex",
+														"writeIndex": "pmqaentitygovernwriteindex"
 													}
 												}
 											}
@@ -280,74 +280,74 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitygovernrequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernrequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpgoverneventreadindex",
-														"writeIndex": "jcpgoverneventwriteindex"
+														"readIndex": "pmqagoverneventreadindex",
+														"writeIndex": "pmqagoverneventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -356,8 +356,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -370,8 +370,8 @@
 											"objectTypes": {
 												"entity": {
 													"tables": {
-														"readTable": "jcpentitygovernwritetable",
-														"writeTable": "jcpentitygovernwritetable"
+														"readTable": "pmqaentitygovernwritetable",
+														"writeTable": "pmqaentitygovernwritetable"
 													}
 												}
 											}
@@ -380,38 +380,38 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitygovernevent": {
 													"tables": {
-														"readTable": "jcpgoverneventwritetable",
-														"writeTable": "jcpgoverneventwritetable"
+														"readTable": "pmqagoverneventwritetable",
+														"writeTable": "pmqagoverneventwritetable"
 													}
 												},
 												"entitygovernrequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"entitygovernrequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -420,8 +420,8 @@
 											"objectTypes": {
 												"request": {
 													"tables": {
-														"readTable": "jcprequestobjectwritetable",
-														"writeTable": "jcprequestobjectwritetable"
+														"readTable": "pmqarequestobjectwritetable",
+														"writeTable": "pmqarequestobjectwritetable"
 													}
 												}
 											}
@@ -429,13 +429,13 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								},
 								"eventSubscribers": [
 									{
 										"name": "EntityGovernSubscriber",
-										"description": "Riversand Data Platform entity manage connector for jcp",
+										"description": "Riversand Data Platform entity manage connector for pmqa",
 										"active": true,
 										"filters": [
 											{
@@ -462,8 +462,8 @@
 											"objectTypes": {
 												"entity": {
 													"indices": {
-														"readIndex": "jcpentityreadindex",
-														"writeIndex": "jcpentitywriteindex"
+														"readIndex": "pmqaentityreadindex",
+														"writeIndex": "pmqaentitywriteindex"
 													}
 												}
 											}
@@ -472,74 +472,74 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityfamilymanagerequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entityfamilymanagerequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -548,8 +548,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -562,14 +562,14 @@
 											"objectTypes": {
 												"entity": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												},
 												"product": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												}
 											}
@@ -578,44 +578,44 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitymanageevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitygovernevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entityfamilymanagerequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"entityfamilymanagerequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -624,8 +624,8 @@
 											"objectTypes": {
 												"request": {
 													"tables": {
-														"readTable": "jcprequestobjectwritetable",
-														"writeTable": "jcprequestobjectwritetable"
+														"readTable": "pmqarequestobjectwritetable",
+														"writeTable": "pmqarequestobjectwritetable"
 													}
 												}
 											}
@@ -633,13 +633,13 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								},
 								"eventSubscribers": [
 									{
 										"name": "EntityFamilyManageSubscriber",
-										"description": "Riversand Data Platform entity govern connector for jcp",
+										"description": "Riversand Data Platform entity govern connector for pmqa",
 										"active": true,
 										"filters": [
 											{
@@ -666,8 +666,8 @@
 											"objectTypes": {
 												"entity": {
 													"indices": {
-														"readIndex": "jcpentityreadindex",
-														"writeIndex": "jcpentitywriteindex"
+														"readIndex": "pmqaentityreadindex",
+														"writeIndex": "pmqaentitywriteindex"
 													}
 												}
 											}
@@ -676,74 +676,74 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityfamilygovernrequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entityfamilygovernrequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -752,8 +752,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -766,14 +766,14 @@
 											"objectTypes": {
 												"entity": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												},
 												"product": {
 													"tables": {
-														"readTable": "jcpentitywritetable",
-														"writeTable": "jcpentitywritetable"
+														"readTable": "pmqaentitywritetable",
+														"writeTable": "pmqaentitywritetable"
 													}
 												}
 											}
@@ -782,44 +782,44 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitymanageevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entitygovernevent": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"entityfamilygovernrequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"entityfamilygovernrequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -828,8 +828,8 @@
 											"objectTypes": {
 												"request": {
 													"tables": {
-														"readTable": "jcprequestobjectwritetable",
-														"writeTable": "jcprequestobjectwritetable"
+														"readTable": "pmqarequestobjectwritetable",
+														"writeTable": "pmqarequestobjectwritetable"
 													}
 												}
 											}
@@ -837,13 +837,13 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								},
 								"eventSubscribers": [
 									{
 										"name": "EntityFamilyGovernSubscriber",
-										"description": "Riversand Data Platform entity manage connector for jcp",
+										"description": "Riversand Data Platform entity manage connector for pmqa",
 										"active": true,
 										"filters": [
 											{
@@ -873,8 +873,8 @@
 											"objectTypes": {
 												"entityModel": {
 													"indices": {
-														"readIndex": "jcpentitymanagemodelreadindex",
-														"writeIndex": "jcpentitymanagemodelwriteindex"
+														"readIndex": "pmqaentitymanagemodelreadindex",
+														"writeIndex": "pmqaentitymanagemodelwriteindex"
 													}
 												}
 											}
@@ -883,80 +883,80 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitymanagemodelevent": {
 													"indices": {
-														"readIndex": "jcpentitymanagemodeleventreadindex",
-														"writeIndex": "jcpentitymanagemodeleventwriteindex"
+														"readIndex": "pmqaentitymanagemodeleventreadindex",
+														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
 													}
 												},
 												"entitymanagemodelrequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitymanagemodelrequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -965,8 +965,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -979,8 +979,8 @@
 											"objectTypes": {
 												"entityModel": {
 													"tables": {
-														"readTable": "jcpentitymanagemodelwritetable",
-														"writeTable": "jcpentitymanagemodelwritetable"
+														"readTable": "pmqaentitymanagemodelwritetable",
+														"writeTable": "pmqaentitymanagemodelwritetable"
 													}
 												}
 											}
@@ -989,32 +989,32 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpentitymanagemodeleventreadtable",
-														"writeTable": "jcpentitymanagemodeleventwritetable"
+														"readTable": "pmqaentitymanagemodeleventreadtable",
+														"writeTable": "pmqaentitymanagemodeleventwritetable"
 													}
 												},
 												"entitymanagemodelrequestsuccessevent": {
 													"tables": {
-														"readIndex": "jcpinternaleventwritetable",
-														"writeIndex": "jcpinternaleventwritetable"
+														"readIndex": "pmqainternaleventwritetable",
+														"writeIndex": "pmqainternaleventwritetable"
 													}
 												},
 												"entitymanagemodelrequesterrorevent": {
 													"tables": {
-														"readIndex": "jcpinternaleventwritetable",
-														"writeIndex": "jcpinternaleventwritetable"
+														"readIndex": "pmqainternaleventwritetable",
+														"writeIndex": "pmqainternaleventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -1022,8 +1022,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1070,8 +1070,8 @@
 											"objectTypes": {
 												"entityModel": {
 													"indices": {
-														"readIndex": "jcpentitygovernmodelreadindex",
-														"writeIndex": "jcpentitygovernmodelwriteindex"
+														"readIndex": "pmqaentitygovernmodelreadindex",
+														"writeIndex": "pmqaentitygovernmodelwriteindex"
 													}
 												}
 											}
@@ -1080,74 +1080,74 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entitygovernmodelevent": {
 													"indices": {
-														"readIndex": "jcpentitymanagemodeleventreadindex",
-														"writeIndex": "jcpentitymanagemodeleventwriteindex"
+														"readIndex": "pmqaentitymanagemodeleventreadindex",
+														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
 													}
 												},
 												"entitymanagerequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitymanagerequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"entitygovernevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityerrorreadindex",
-														"writeIndex": "jcpentityerrorwriteindex"
+														"readIndex": "pmqaentityerrorreadindex",
+														"writeIndex": "pmqaentityerrorwriteindex"
 													}
 												},
 												"entityeventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"entityerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorreadindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorreadindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"eventerrorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"dataobjecterrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												},
 												"errorerrorevent": {
 													"indices": {
-														"readIndex": "jcpentityeventerrorwriteindex",
-														"writeIndex": "jcpentityeventerrorwriteindex"
+														"readIndex": "pmqaentityeventerrorwriteindex",
+														"writeIndex": "pmqaentityeventerrorwriteindex"
 													}
 												}
 											}
@@ -1156,8 +1156,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -1170,8 +1170,8 @@
 											"objectTypes": {
 												"entity": {
 													"tables": {
-														"readTable": "jcpentitygovernmodelwritetable",
-														"writeTable": "jcpentitygovernmodelwritetable"
+														"readTable": "pmqaentitygovernmodelwritetable",
+														"writeTable": "pmqaentitygovernmodelwritetable"
 													}
 												}
 											}
@@ -1180,20 +1180,20 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"eventerrorevent": {
 													"tables": {
-														"readTable": "jcpeventerrorwritetable",
-														"writeTable": "jcpeventerrorwritetable"
+														"readTable": "pmqaeventerrorwritetable",
+														"writeTable": "pmqaeventerrorwritetable"
 													}
 												},
 												"errorerrorevent": {
 													"tables": {
-														"readTable": "jcperrorerrorwritetable",
-														"writeTable": "jcperrorerrorwritetable"
+														"readTable": "pmqaerrorerrorwritetable",
+														"writeTable": "pmqaerrorerrorwritetable"
 													}
 												}
 											}
@@ -1201,8 +1201,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1228,8 +1228,8 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												}
 											}
@@ -1242,8 +1242,8 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												}
 											}
@@ -1251,8 +1251,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1274,14 +1274,14 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"internalevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												}
 											}
@@ -1294,14 +1294,14 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"internalevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												}
 											}
@@ -1309,8 +1309,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1333,8 +1333,8 @@
 											"objectTypes": {
 												"request": {
 													"indices": {
-														"readIndex": "jcprequestobjectreadindex",
-														"writeIndex": "jcprequestobjectwriteindex"
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
 													}
 												}
 											}
@@ -1347,8 +1347,8 @@
 											"objectTypes": {
 												"request": {
 													"tables": {
-														"readTable": "jcprequestobjectwritetable",
-														"writeTable": "jcprequestobjectwritetable"
+														"readTable": "pmqarequestobjectwritetable",
+														"writeTable": "pmqarequestobjectwritetable"
 													}
 												}
 											}
@@ -1356,8 +1356,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1372,7 +1372,7 @@
 									"notificationClients": [
 										{
 											"client": "uiclient",
-											"restUri": "http://mdmuicluster:5005/api/",
+											"restUri": "http://mdm-ui:5005/api/",
 											"service": "notify",
 											"action": "send"
 										}
@@ -1386,8 +1386,8 @@
 											"objectTypes": {
 												"notificationObject": {
 													"indices": {
-														"readIndex": "jcpnotificationreadindex",
-														"writeIndex": "jcpnotificationwriteindex"
+														"readIndex": "pmqanotificationreadindex",
+														"writeIndex": "pmqanotificationwriteindex"
 													}
 												}
 											}
@@ -1396,8 +1396,8 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												}
 											}
@@ -1410,8 +1410,8 @@
 											"objectTypes": {
 												"notificationObject": {
 													"tables": {
-														"readTable": "jcpnotificationwritetable",
-														"writeTable": "jcpnotificationwritetable"
+														"readTable": "pmqanotificationwritetable",
+														"writeTable": "pmqanotificationwritetable"
 													}
 												}
 											}
@@ -1420,8 +1420,8 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												}
 											}
@@ -1447,14 +1447,14 @@
 											"objectTypes": {
 												"configObject": {
 													"indices": {
-														"readIndex": "jcpconfigurationreadindex",
-														"writeIndex": "jcpconfigurationwriteindex"
+														"readIndex": "pmqaconfigurationreadindex",
+														"writeIndex": "pmqaconfigurationwriteindex"
 													}
 												},
 												"configuration": {
 													"indices": {
-														"readIndex": "jcpconfigurationreadindex",
-														"writeIndex": "jcpconfigurationwriteindex"
+														"readIndex": "pmqaconfigurationreadindex",
+														"writeIndex": "pmqaconfigurationwriteindex"
 													}
 												}
 											}
@@ -1463,20 +1463,20 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"configurationmanagerequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"configurationmanagerequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												}
 											}
@@ -1489,14 +1489,14 @@
 											"objectTypes": {
 												"configuration": {
 													"tables": {
-														"readTable": "jcpconfigurationreadtable",
-														"writeTable": "jcpconfigurationwritetable"
+														"readTable": "pmqaconfigurationreadtable",
+														"writeTable": "pmqaconfigurationwritetable"
 													}
 												},
 												"configObject": {
 													"tables": {
-														"readTable": "jcpconfigurationreadtable",
-														"writeTable": "jcpconfigurationwritetable"
+														"readTable": "pmqaconfigurationreadtable",
+														"writeTable": "pmqaconfigurationwritetable"
 													}
 												}
 											}
@@ -1505,20 +1505,20 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"configurationmanagerequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"configurationmanagerequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												}
 											}
@@ -1526,8 +1526,8 @@
 									}
 								},
 								"graphStore": {
-									"graphDatabase": "jcpgraph",
-									"traversalSource": "jcpsource"
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
 								}
 							}
 						},
@@ -1548,8 +1548,8 @@
 											"objectTypes": {
 												"binaryObject": {
 													"indices": {
-														"readIndex": "jcpbinaryobjectreadindex",
-														"writeIndex": "jcpbinaryobjectwriteindex"
+														"readIndex": "pmqabinaryobjectreadindex",
+														"writeIndex": "pmqabinaryobjectwriteindex"
 													}
 												}
 											}
@@ -1558,26 +1558,26 @@
 											"objectTypes": {
 												"event": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"binaryobjectmanageevent": {
 													"indices": {
-														"readIndex": "jcpeventreadindex",
-														"writeIndex": "jcpeventwriteindex"
+														"readIndex": "pmqaeventreadindex",
+														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"binaryobjectmanagerequestsuccessevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
 												"binaryobjectmanagerequesterrorevent": {
 													"indices": {
-														"readIndex": "jcpinternaleventreadindex",
-														"writeIndex": "jcpinternaleventwriteindex"
+														"readIndex": "pmqainternaleventreadindex",
+														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												}
 											}
@@ -1590,8 +1590,8 @@
 											"objectTypes": {
 												"binaryObject": {
 													"tables": {
-														"readTable": "jcpbinaryobjectwritetable",
-														"writeTable": "jcpbinaryobjectwritetable"
+														"readTable": "pmqabinaryobjectwritetable",
+														"writeTable": "pmqabinaryobjectwritetable"
 													}
 												}
 											}
@@ -1600,20 +1600,20 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "jcpeventwritetable",
-														"writeTable": "jcpeventwritetable"
+														"readTable": "pmqaeventwritetable",
+														"writeTable": "pmqaeventwritetable"
 													}
 												},
 												"binaryobjectmanagerequestsuccessevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												},
 												"binaryobjectmanagerequesterrorevent": {
 													"tables": {
-														"readTable": "jcpinternaleventwritetable",
-														"writeTable": "jcpinternaleventwritetable"
+														"readTable": "pmqainternaleventwritetable",
+														"writeTable": "pmqainternaleventwritetable"
 													}
 												}
 											}
@@ -1626,8 +1626,8 @@
 											"objectTypes": {
 												"binaryObject": {
 													"folderPaths": {
-														"readFolderPath": "/rdp/jcp/binaryobject",
-														"writeFolderPath": "/rdp/jcp/binaryobject"
+														"readFolderPath": "/rdp/pmqa/binaryobject",
+														"writeFolderPath": "/rdp/pmqa/binaryobject"
 													}
 												}
 											}
@@ -1638,8 +1638,12 @@
 						},
 						"authenticationService": {
 							"serviceSpecific": {
-								"isApiAuthEnabled": false,
+								"isApiAuthEnabled": true,
 								"isOAuthEnabled": false,
+								"authenticationServer": {
+									"maxUserModelUpdateInterval": 28800,
+									"enableUserModelCreate": true
+								},
 								"saml": {
 									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
 									"issuer": "urn:riversand.auth0.com",
@@ -1682,7 +1686,8 @@
 							}
 						}
 					}
-				}
+				},
+				"contexts": []
 			}
 		}
 	]

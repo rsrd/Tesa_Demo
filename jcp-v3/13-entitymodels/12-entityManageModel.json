@@ -1,9 +1,9 @@
 {
-  "metaInfo": {
-    "dataIndex": "entityModel",
-    "collectionName": "entityModels",
-    "responseObjectName": "response"
-  },
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
   "entityModels": [
     {
       "id": "lot_entityManageModel",
@@ -1650,12 +1650,6 @@
               "dataType": "string"
             }
           },
-          "": {
-            "properties": {
-              "externalName": "",
-              "dataType": "string"
-            }
-          },
           "servicedescription": {
             "properties": {
               "externalName": "Service Description",
@@ -1793,7 +1787,8 @@
                     "relEntityType": "lot"
                   }
                 ]
-              }
+              },
+              "attributes": {}
             }
           ],
           "lottoimage": [
@@ -1806,6 +1801,22 @@
                     "relEntityType": "image"
                   }
                 ]
+              },
+              "attributes": {
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ]
@@ -2189,12 +2200,6 @@
               "groupName": "Item Details",
               "dataType": "string"
             }
-          },
-          "": {
-            "properties": {
-              "externalName": "",
-              "dataType": "string"
-            }
           }
         },
         "relationships": {
@@ -2208,6 +2213,36 @@
                     "relEntityType": "lot"
                   }
                 ]
+              },
+              "attributes": {
+                "linkdescription": {
+                  "properties": {
+                    "externalName": "Link Description",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "string"
+                  }
+                },
+                "enabled": {
+                  "properties": {
+                    "externalName": "Enabled",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "boolean"
+                  }
+                },
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ],
@@ -2221,47 +2256,25 @@
                     "relEntityType": "image"
                   }
                 ]
+              },
+              "attributes": {
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ]
-        }
-      }
-    },
-    {
-      "id": "_entityManageModel",
-      "name": "",
-      "type": "entityManageModel",
-      "domain": "generic",
-      "data": {
-        "attributes": {
-          "linkdescription": {
-            "properties": {
-              "externalName": "Link Description",
-              "groupName": "Relationship Attributes",
-              "dataType": "string"
-            }
-          },
-          "enabled": {
-            "properties": {
-              "externalName": "Enabled",
-              "groupName": "Relationship Attributes",
-              "dataType": "boolean"
-            }
-          },
-          "status": {
-            "properties": {
-              "externalName": "Status",
-              "groupName": "Basic",
-              "dataType": "string",
-              "isReferenceType": true,
-              "referenceEntityInfo": [
-                {
-                  "refRelationshipName": "hasReferenceTo",
-                  "refEntityType": "statusvalues"
-                }
-              ]
-            }
-          }
         }
       }
     },
@@ -3429,12 +3442,6 @@
               "groupName": "Item Details",
               "dataType": "string"
             }
-          },
-          "": {
-            "properties": {
-              "externalName": "",
-              "dataType": "string"
-            }
           }
         },
         "relationships": {
@@ -3448,6 +3455,36 @@
                     "relEntityType": "productpresentation"
                   }
                 ]
+              },
+              "attributes": {
+                "linkdescription": {
+                  "properties": {
+                    "externalName": "Link Description",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "string"
+                  }
+                },
+                "enabled": {
+                  "properties": {
+                    "externalName": "Enabled",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "boolean"
+                  }
+                },
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ],
@@ -3461,6 +3498,22 @@
                     "relEntityType": "image"
                   }
                 ]
+              },
+              "attributes": {
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ]
@@ -4902,12 +4955,6 @@
               "dataType": "string"
             }
           },
-          "": {
-            "properties": {
-              "externalName": "",
-              "dataType": "string"
-            }
-          },
           "sellinguom": {
             "properties": {
               "externalName": "Selling UOM",
@@ -4994,7 +5041,8 @@
                     "relEntityType": "sku"
                   }
                 ]
-              }
+              },
+              "attributes": {}
             }
           ],
           "ischildof": [
@@ -5007,6 +5055,22 @@
                     "relEntityType": "lot"
                   }
                 ]
+              },
+              "attributes": {
+                "linkdescription": {
+                  "properties": {
+                    "externalName": "Link Description",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "string"
+                  }
+                },
+                "enabled": {
+                  "properties": {
+                    "externalName": "Enabled",
+                    "groupName": "Relationship Attributes",
+                    "dataType": "boolean"
+                  }
+                }
               }
             }
           ],
@@ -5020,6 +5084,22 @@
                     "relEntityType": "image"
                   }
                 ]
+              },
+              "attributes": {
+                "status": {
+                  "properties": {
+                    "externalName": "Status",
+                    "groupName": "Basic",
+                    "dataType": "string",
+                    "isReferenceType": true,
+                    "referenceEntityInfo": [
+                      {
+                        "refRelationshipName": "hasReferenceTo",
+                        "refEntityType": "statusvalues"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ]
