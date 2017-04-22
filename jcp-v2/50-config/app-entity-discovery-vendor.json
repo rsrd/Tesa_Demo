@@ -130,43 +130,43 @@
 										{
 											"header": "Start Date",
 											"name": "startDate",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "End Date",
 											"name": "endDate",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Creation Date",
 											"name": "creationDate",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Planned OnSite DateTime (mm/dd/yyyy)",
 											"name": "plannedOnSiteDate",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Warranty Flag",
 											"name": "warrantyFlag",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "eComm Min Order Qty",
 											"name": "ecommMinOrderQty",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Assembled Height(in inches)",
 											"name": "assembledHeight",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										}
 									]
@@ -261,7 +261,7 @@
 													"name": "edit",
 													"icon": "pebble-md-icons:Edit",
 													"text": "",
-													"visible": true,
+													"visible": false,
 													"tooltip": "Edit"
 												},
 												{
