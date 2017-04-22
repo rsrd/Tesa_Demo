@@ -43,7 +43,8 @@
                 "isDataPersistent": "true",
                 "kinesisStreamConnector": {
                   "streamName": "rsjcpStream4",
-                  "regionName": "us-west-2"
+                  "regionName": "us-west-2",
+                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }
               },
               "transform": {

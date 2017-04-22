@@ -44,7 +44,8 @@
                 "s3ObjectConnector": {
                   "regionName": "us-east-1",
                   "bucketName": "rs-apps-rcoa-exports",
-                  "key": "xlsx"
+                  "key": "xlsx",
+                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }
               },
               "transform": {

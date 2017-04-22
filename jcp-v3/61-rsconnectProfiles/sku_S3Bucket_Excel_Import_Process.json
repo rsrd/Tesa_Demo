@@ -36,7 +36,8 @@
                 "s3BucketConnector": {
                   "fileType": "xlsx",
                   "bucketName": "rs-apps-rcoa-imports",
-                  "regionName": "us-east-1"
+                  "regionName": "us-east-1",
+                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }
               },
               "outboundChannel": {
