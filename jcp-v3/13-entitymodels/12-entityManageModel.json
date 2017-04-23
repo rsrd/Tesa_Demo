@@ -5105,6 +5105,28 @@
           ]
         }
       }
-    }
+    },
+    {
+			"id": "classification_entityManageModel",
+			"name": "classification",
+			"type": "entityManageModel",
+			"data": {
+				"relationships": {
+					"belongsTo": [
+						{
+							"properties": {
+								"externalName": "Belongs To",
+								"relationshipType": "aggregation",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "classification"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
   ]
 }

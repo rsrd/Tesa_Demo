@@ -6,7 +6,7 @@
   },
   "entityModels": [
     {
-      "id": "businessRequiredAttributesArePopulated_businessCondition",
+      "id": "businessRequiredAttributesArePopulated_BusinessCondition",
       "name": "Business required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -75,7 +75,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_businessReviewValidationrule_businessRule",
               "relTo": {
-                "id": "businessReviewValidationrule_businessRule",
+                "id": "businessReview_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "id": "buyerRequiredAttributesArePopulated_businessCondition",
+      "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
       "name": "Buyer required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -171,7 +171,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
               "relTo": {
-                "id": "buyerReviewValidationrule_businessRule",
+                "id": "buyerReview_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -267,7 +267,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
               "relTo": {
-                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "id": "vendorSKUaddninfosubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -294,7 +294,7 @@
       }
     },
     {
-      "id": "requiredAttributesArePopulated_businessCondition",
+      "id": "requiredAttributesArePopulated_BusinessCondition",
       "name": "Required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -302,7 +302,7 @@
           "name": {
             "values": [
               {
-                "value": "Required attributes are populated for Review Sku step"
+                "value": "Required attributes are populated for Review Sku activity"
               }
             ]
           },
@@ -363,7 +363,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreateValidationRule_businessRule",
+                "id": "vendorSKUCreate_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -388,7 +388,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "id": "vendorSKUSubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -413,7 +413,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "id": "vendorSKUaddninfosubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -438,7 +438,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "buyerReviewValidationrule_businessRule",
+                "id": "buyerReview_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -463,7 +463,7 @@
       }
     },
     {
-      "id": "vendorRequiredAttributesArePopulated_businessCondition",
+      "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
       "name": "Vendor required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -532,7 +532,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreateValidationRule_businessRule",
+                "id": "vendorSKUCreate_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -557,7 +557,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "id": "vendorSKUSubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -659,7 +659,7 @@
               "operation": "association",
               "id": "hasBusinessRules_validateEnityPresentInCreateWorkflowValidationRule_businessRule",
               "relTo": {
-                "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
+                "id": "validateEnityPresentInCreateWorkflow_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -755,7 +755,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreateValidationRule_businessRule",
+                "id": "vendorSKUCreate_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -780,7 +780,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmissionValidationRule_businessRule",
+                "id": "vendorSKUSubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -805,7 +805,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
+                "id": "vendorSKUaddninfosubmission_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -830,7 +830,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "buyerReviewValidationRule_businessRule",
+                "id": "buyerReview_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -855,7 +855,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "businessReviewValidationRule_businessRule",
+                "id": "businessReview_BusinessRule",
                 "type": "businessRule"
               },
               "attributes": {
