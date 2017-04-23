@@ -79,21 +79,22 @@
 									"attributes": [
 										"displayName",
 										"description",
-										"status",
-										"startDate",
-										"endDate",
 										"creationDate",
-										"plannedOnSiteDate",
-										"warrantyFlag",
-										"ecommMinOrderQty",
-										"assembledHeight"
+										"plannedOnSiteDate"
 									]
 								},
 								"tabular": {
 									"settings": {
 										"isMultiSelect": true
 									},
-									"columns": [
+									"columns": [	
+										{
+											"header": "Entity Type",
+											"name": "type",
+											"sortable": false,
+											"filterable": false,
+											"isMetaDataColumn": true
+										},
 										{
 											"header": "Display Name",
 											"name": "displayName",
@@ -108,64 +109,14 @@
 											"filterable": false
 										},
 										{
-											"header": "Status",
-											"name": "status",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Entity Type",
-											"name": "type",
-											"sortable": false,
-											"filterable": false,
-											"isMetaDataColumn": true
-										},
-										{
-											"header": "Source",
-											"name": "source",
-											"sortable": false,
-											"filterable": false,
-											"isContextDataColumn": true
-										},
-										{
-											"header": "Start Date",
-											"name": "startDate",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "End Date",
-											"name": "endDate",
-											"sortable": false,
-											"filterable": false
-										},
-										{
 											"header": "Creation Date",
 											"name": "creationDate",
 											"sortable": false,
 											"filterable": false
 										},
 										{
-											"header": "Planned OnSite DateTime (mm/dd/yyyy)",
+											"header": "Planned On-site Date",
 											"name": "plannedOnSiteDate",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Warranty Flag",
-											"name": "warrantyFlag",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "eComm Min Order Qty",
-											"name": "ecommMinOrderQty",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Assembled Height(in inches)",
-											"name": "assembledHeight",
 											"sortable": false,
 											"filterable": false
 										}
