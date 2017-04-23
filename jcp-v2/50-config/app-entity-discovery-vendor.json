@@ -209,20 +209,6 @@
 													"tooltip": "Refresh"
 												},
 												{
-													"name": "edit",
-													"icon": "pebble-md-icons:Edit",
-													"text": "",
-													"visible": false,
-													"tooltip": "Edit"
-												},
-												{
-													"name": "addrow",
-													"icon": "pebble-sm-icons:Add",
-													"text": "",
-													"visible": false,
-													"tooltip": "Add"
-												},
-												{
 													"name": "download",
 													"icon": "pebble-md-icons:Import",
 													"text": "",
@@ -1071,74 +1057,14 @@
 													"text": "",
 													"visible": true,
 													"tooltip": "Refresh"
-												},
-												{
-													"name": "moreActions",
-													"icon": "pebble-md-icons:ToolbarMore",
-													"text": "",
-													"buttons": [
-														{
-															"name": "add",
-															"icon": "pebble-sm-icons:Add",
-															"text": "",
-															"visible": true,
-															"tooltip": "Add"
-														},
-														{
-															"name": "delete",
-															"icon": "pebble-md-icons:Delete",
-															"text": "",
-															"visible": true,
-															"tooltip": "Delete"
-														},
-														{
-															"name": "cut",
-															"icon": "pebble-md-icons:Cut",
-															"text": "",
-															"visible": true,
-															"tooltip": "Cut"
-														}
-													]
-												}
+												}												
 											]
 										}
 									]
 								},
 								"rock-entity-tofix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "missingvideos",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								}
 							}
