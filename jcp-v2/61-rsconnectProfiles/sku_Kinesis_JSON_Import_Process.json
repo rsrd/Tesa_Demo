@@ -33,8 +33,8 @@
 							"inboundChannel": {
 								"isDataPersistent": "false",
 								"kinesisStreamConnector": {
-									"streamName": "rsjcpStream3",
-									"regionName": "us-west-2",
+									"streamName": "rsQAEast1Inbound",
+									"regionName": "us-east-1",
 									"credentialsType": "AMAZON_EC2_IAM_ROLE"
 								}
 							},
@@ -65,7 +65,7 @@
 									},
 									"includeFilter": [],
 									"excludeFilter": []
-								}								
+								}
 							}
 						}
 					}
