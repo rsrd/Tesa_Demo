@@ -33,7 +33,8 @@
 									"rock-search-filter",
 									"rock-entity-search-grid",
 									"rock-entity-quick-manage",
-									"rock-saved-searches-tags"
+									"rock-saved-searches-tags",
+									"assignment-actions"
 								]
 							}
 						}
@@ -74,20 +75,14 @@
 								"dataRequest": {
 									"typesCriterion": [
 										"sku",
-										"productPresentation",
-										"lot"
+										"lot",
+										"productPresentation"
 									],
 									"attributes": [
-										"displayname",
+										"displayName",
 										"description",
-										"status",
-										"startdate",
-										"enddate",
-										"creationdate",
-										"plannedonsitedate",
-										"warrantyflag",
-										"ecommminorderqty",
-										"assembledheight"
+										"creationDate",
+										"plannedOnSiteDate"
 									]
 								},
 								"tabular": {
@@ -96,8 +91,15 @@
 									},
 									"columns": [
 										{
+											"header": "Entity Type",
+											"name": "type",
+											"sortable": false,
+											"filterable": false,
+											"isMetaDataColumn": true
+										},
+										{
 											"header": "Display Name",
-											"name": "displayname",
+											"name": "displayName",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"
@@ -109,35 +111,15 @@
 											"filterable": false
 										},
 										{
-											"header": "Status",
-											"name": "status",
+											"header": "Creation Date",
+											"name": "creationDate",
 											"sortable": false,
 											"filterable": false
 										},
 										{
-											"header": "Entity Type",
-											"name": "type",
+											"header": "Planned On-site Date",
+											"name": "plannedOnSiteDate",
 											"sortable": false,
-											"filterable": false,
-											"isMetaDataColumn": true
-										},
-										{
-											"header": "Source",
-											"name": "source",
-											"sortable": false,
-											"filterable": false,
-											"isContextDataColumn": true
-										},
-										{
-											"header": "Start Date",
-											"name": "startdate",
-											"sortable": true,
-											"filterable": false
-										},
-										{
-											"header": "End Date",
-											"name": "enddate",
-											"sortable": true,
 											"filterable": false
 										}
 									]
@@ -225,6 +207,20 @@
 												"text": "",
 												"visible": true,
 												"tooltip": "Refresh"
+											},
+											{
+												"name": "edit",
+												"icon": "pebble-md-icons:Edit",
+												"text": "",
+												"visible": true,
+												"tooltip": "Edit"
+											},
+											{
+												"name": "addrow",
+												"icon": "pebble-sm-icons:Add",
+												"text": "",
+												"visible": true,
+												"tooltip": "Add"
 											},
 											{
 												"name": "download",
@@ -590,6 +586,89 @@
 											}
 										}
 									}
+								],
+								"favourites": [
+									{
+										"id": 8,
+										"accesstype": "self",
+										"name": "Womens Shoes",
+										"icon": "pebble-icons:SavedSearch",
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "Womens"
+												}
+											}
+										]
+									}
+								],
+								"my-searches": [
+									{
+										"id": 9,
+										"accesstype": "self",
+										"name": "Mens Shoes",
+										"icon": "pebble-icons:SavedSearch",
+										"shared": false,
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "Mens"
+												}
+											}
+										]
+									}
+								],
+								"shared-searches": [
+									{
+										"id": 10,
+										"accesstype": "self",
+										"name": "Women's Sport Wear & Dresses",
+										"icon": "pebble-icons:SavedSearch",
+										"shared": true,
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "dresses",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "dresses"
+												}
+											}
+										]
+									}
 								]
 							}
 						}
@@ -618,8 +697,22 @@
 						},
 						"jsonData": {
 							"config": {
-								"title": "",
+								"title": "Create",
 								"actions": [
+									{
+										"name": "createProductPresentation",
+										"icon": "pebble-xl-icons:Brand",
+										"text": "Group in Product Presentation",
+										"visible": true,
+										"eventName": "action-createProductPresentation"
+									},
+									{
+										"name": "createEnsemble",
+										"icon": "pebble-xl-icons:Channel",
+										"text": "Group in Ensemble",
+										"visible": true,
+										"eventName": "action-createEnsemble"
+									}
 								]
 							}
 						}
@@ -648,6 +741,66 @@
 						},
 						"jsonData": {
 							"config": [
+								{
+									"name": "displayName",
+									"longName": "Display Name",
+									"displayType": "textBox"
+								},
+								{
+									"name": "skuNumber",
+									"longName": "Sku Number",
+									"value": "",
+									"displayType": "textBox"
+								},
+								{
+									"name": "description",
+									"longName": "Description",
+									"value": "",
+									"displayType": "textArea"
+								},
+								{
+									"name": "creationDate",
+									"longName": "Creation Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "startDate",
+									"longName": "Start Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "endDate",
+									"longName": "End Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "size",
+									"longName": "Size",
+									"displayType": "dropDown"
+								},
+								{
+									"name": "orin",
+									"longName": "ORIN",
+									"displayType": "numeric"
+								},
+								{
+									"name": "width",
+									"longName": "Width",
+									"displayType": "dropDown"
+								},
+								{
+									"name": "skuQuantity",
+									"longName": "Quantity",
+									"displayType": "numeric"
+								},
+								{
+									"name": "status",
+									"longName": "Status",
+									"displayType": "textBox"
+								}
 							]
 						}
 					}
@@ -784,40 +937,40 @@
 													},	
 													"config-context": {
 														"attributeNames": [
-															"displayname",
-															"alsoinstore",
+															"displayName",
+															"alsoInStore",
 															"brand",
-															"brandlogo",
+															"brandLogo",
 															"channel",
-															"channelavailability",
+															"channelAvailability",
 															"description",
-															"displayaskandanswersection",															
-															"factsheet",
-															"featurecolor",
-															"hidedisplayindicator",
+															"displayAskAndAnswerSection",															
+															"factSheet",
+															"featureColor",
+															"hideDisplayIndicator",
 															"id",
-															"iscustomerfavoriteoption",
-															"ishidden",
-															"ispreorderoption",
-															"longdescription",
-															"lotselectiontype",
-															"lottype",
-															"onlineonly",
+															"isCustomerFavoriteOption",
+															"isHidden",
+															"isPreOrderOption",
+															"longDescription",
+															"lotSelectionType",
+															"lotType",
+															"onlineOnly",
 															"orin",
-															"programtype",
-															"ratingreviewid",
-															"retailskunumber",
-															"shortname",
-															"skugrouping",
-															"skuitemtype",
-															"skunumber",
-															"skuquantity",
-															"skutype",
+															"programType",
+															"ratingReviewId",
+															"retailSkuNumber",
+															"shortName",
+															"skuGrouping",
+															"skuItemType",
+															"skuNumber",
+															"skuQuantity",
+															"skuType",
 															"source",
 															"status",
 															"stone",
-															"styletext",
-															"upcbarcode",
+															"styleText",
+															"upcBarcode",
 															"warranty"
 														]
 													}
@@ -855,24 +1008,24 @@
 															"config-context": {
 																"groupName": "Advanced",
 																"attributeNames": [
-																	"featureheadertext",
-																	"featurequotetext",
-																	"isbopiseligible",
-																	"isnewclearancetimestamp",
-																	"isnewtoclearance",
-																	"issampleensemble",
-																	"ppskuswatchesrolledupcount",
-																	"productreviewquotetext",
-																	"sourcefeedid",
-																	"isfurniture",
-																	"issephora",
-																	"mailableindicator",
-																	"questionableorderquantity",
-																	"recyclefeeindicator",
-																	"sabrixcommoditycode",
-																	"specialindicator",
-																	"unusualdemandquantity",
-																	"vdata"
+																	"featureHeaderText",
+																	"featureQuoteText",
+																	"isBopisEligible",
+																	"isNewClearanceTimestamp",
+																	"isNewToClearance",
+																	"isSampleEnsemble",
+																	"ppSkuSwatchesRolledUpCount",
+																	"productReviewQuoteText",
+																	"sourceFeedId",
+																	"isFurniture",
+																	"isSephora",
+																	"mailableIndicator",
+																	"questionableOrderQuantity",
+																	"recycleFeeIndicator",
+																	"sabrixCommodityCode",
+																	"specialIndicator",
+																	"unusualDemandQuantity",
+																	"vData"
 																]
 															}
 														}
@@ -895,31 +1048,113 @@
 												"name": "moreActions",
 												"icon": "pebble-md-icons:ToolbarMore",
 												"text": "",
-												"buttons": [
-														{
-															"name": "cut",
-															"icon": "pebble-md-icons:Cut",
-															"text": "",
-															"visible": true,
-															"tooltip": "Cut"
-														},
-														{
-															"name": "copy",
-															"icon": "pebble-md-icons:Copy",
-															"text": "",
-															"visible": true,
-															"tooltip": "Copy"
-														}
+												"buttons": [{
+														"name": "add",
+														"icon": "pebble-sm-icons:Add",
+														"text": "",
+														"visible": true,
+														"tooltip": "Add"
+													},
+													{
+														"name": "delete",
+														"icon": "pebble-md-icons:Delete",
+														"text": "",
+														"visible": true,
+														"tooltip": "Delete"
+													},
+													{
+														"name": "cut",
+														"icon": "pebble-md-icons:Cut",
+														"text": "",
+														"visible": true,
+														"tooltip": "Cut"
+													}
 												]
 											}
 										]
 									}]
                             	},
 								"rock-entity-tofix": {
-									"completionPercentage": "",
+									"completionPercentage": 65,
 									"tofixes": [
+										{
+											"data": {
+												"name": "brandext",
+												"type": "error",
+												"label": "Images not associated",
+												"eventName": "tofixtap"
+											}
+										},
+										{
+											"data": {
+												"name": "priceissue",
+												"type": "error",
+												"label": "Required Attributes not provided",
+												"eventName": "tofixtap"
+											}
+										},
+										{
+											"data": {
+												"name": "msrpissue",
+												"type": "error",
+												"label": "Incorrect MSRP",
+												"eventName": "tofixtap"
+											}
+										},
+										{
+											"data": {
+												"name": "missingvideos",
+												"type": "warning",
+												"label": "Missing videos",
+												"eventName": "tofixtap"
+											}
+										}
 									]
 								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-discovery_assignment-actions_buyer_uiConfig",
+			"name": "app-entity-discovery_assignment-actions",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "assignment-actions",
+							"subComponent": "_ALL",
+							"role": "buyer"
+						},
+						"jsonData": {
+							"config": {
+								"title": "",
+								"actions": [
+									{
+										"name": "takeTask",
+										"icon": "pebble-xl-icons:taketask",
+										"text": "Take Task",
+										"visible": true,
+										"eventName": "action-takeTask"
+									},
+									{
+										"name": "releaseTask",
+										"icon": "pebble-xl-icons:releasetask",
+										"text": "Release Task",
+										"visible": true,
+										"eventName": "action-releaseTask"
+									}
+								]
 							}
 						}
 					}

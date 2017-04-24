@@ -51,8 +51,8 @@ This MUST should be done within a command window opened at the `dataplatform-sam
                 - Provide exact folder name as shown in list of folders to lad data from that folder.
             2. Good, next question, whats' the tenant Id:
                 - Provide tenant id for which tenant data should be loaded.
-                - After providing tenant id it will show list of options to load like,
-
+                - After providing tenant id it will show list of options to load, like
+                    ![Alt text](images/step-2.jpg?raw=true)
             3. What option you like:
                 - Provide any one option from listed options.
             4. Ok, last question, do you want to flush the data before starting load? (Y/ N):
@@ -63,16 +63,15 @@ This MUST should be done within a command window opened at the `dataplatform-sam
         Go to `config.js` and update `quiteLoadConfig` inside it,
 
         `quiteLoadConfig` contains all parameters which are required to load data.
-            ```javascript
-            var quiteLoadConfig = {
-                "enabled": true, // This has to be set has true
-                "folderName": "jcp-v2", // Provide folder name from where data has to be loaded
-                "tenantId": "jcp", // Provide tenant id for which tenant data should be loaded
-                "option": "tenant-config", // Provide an option to load data as per below screen shot
-                "flush": "N" // This has to be `N` for now
-            }
-            ```
-
+        ```javascript
+        var quiteLoadConfig = {
+            "enabled": true, // This has to be set has true
+            "folderName": "jcp-v2", // Provide folder name from where data has to be loaded
+            "tenantId": "jcp", // Provide tenant id for which tenant data should be loaded
+            "option": "tenant-config", // Provide an option to load data as per below screen shot
+            "flush": "N" // This has to be `N` for now
+        }
+        ```
 
         After setting `quiteLoadConfig` run below command,
             `node index.js`
