@@ -33,7 +33,8 @@
 									"rock-search-filter",
 									"rock-entity-search-grid",
 									"rock-entity-quick-manage",
-									"rock-saved-searches-tags"
+									"rock-saved-searches-tags",
+									"assignment-actions"
 								]
 							}
 						}
@@ -78,21 +79,22 @@
 									"attributes": [
 										"displayname",
 										"description",
-										"status",
-										"startdate",
-										"enddate",
 										"creationdate",
-										"plannedonsiteDate",
-										"warrantyflag",
-										"ecommminorderqty",
-										"assembledheight"
+										"plannedonsitedate"
 									]
 								},
 								"tabular": {
 									"settings": {
 										"isMultiSelect": true
 									},
-									"columns": [
+									"columns": [	
+										{
+											"header": "Entity Type",
+											"name": "type",
+											"sortable": false,
+											"filterable": false,
+											"isMetaDataColumn": true
+										},
 										{
 											"header": "Display Name",
 											"name": "displayname",
@@ -107,65 +109,15 @@
 											"filterable": false
 										},
 										{
-											"header": "Status",
-											"name": "status",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Entity Type",
-											"name": "type",
-											"sortable": false,
-											"filterable": false,
-											"isMetaDataColumn": true
-										},
-										{
-											"header": "Source",
-											"name": "source",
-											"sortable": false,
-											"filterable": false,
-											"isContextDataColumn": true
-										},
-										{
-											"header": "Start Date",
-											"name": "startdate",
-											"sortable": true,
-											"filterable": false
-										},
-										{
-											"header": "End Date",
-											"name": "enddate",
-											"sortable": true,
-											"filterable": false
-										},
-										{
 											"header": "Creation Date",
 											"name": "creationdate",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										},
 										{
-											"header": "Planned OnSite Date",
+											"header": "Planned On-site Date",
 											"name": "plannedonsitedate",
-											"sortable": true,
-											"filterable": false
-										},
-										{
-											"header": "Warranty Flag",
-											"name": "warrantyflag",
-											"sortable": true,
-											"filterable": false
-										},
-										{
-											"header": "eComm Min Qty",
-											"name": "ecommminorderqty",
-											"sortable": true,
-											"filterable": false
-										},
-										{
-											"header": "Assembled Height(in)",
-											"name": "assembledheight",
-											"sortable": true,
+											"sortable": false,
 											"filterable": false
 										}
 									]
@@ -188,7 +140,7 @@
 									},
 									"listItems": {
 										"image": "productImageUrl",
-										"title": "displayName",
+										"title": "displayname",
 										"id": "id",
 										"fields": [
 											{
@@ -222,7 +174,7 @@
 									},
 									"tileItems": {
 										"image": "productImageUrl",
-										"title": "displayName",
+										"title": "displayname",
 										"id": "id",
 										"fields": [
 											{
@@ -301,6 +253,36 @@
 						},
 						"jsonData": {
 							"config": [
+								{
+									"id": "channel",
+									"title": "Channel",
+									"icon": "pebble-lg-icons:Master",
+									"visible": true,
+									"dataRequestType": "entity",
+									"dataRequest": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"channel"
+													]
+												}
+											}
+										}
+									},
+									"dataMappings": {
+										"id": "name",
+										"title": "name",
+										"subtitle": "",
+										"image": "",
+										"icon": "",
+										"type": [
+											"channel"
+										]
+									},
+									"selectedItem": {},
+									"default": ""
+								},
 								{
 									"id": "source",
 									"title": "Source",
@@ -591,6 +573,89 @@
 											}
 										}
 									}
+								],
+								"favourites": [
+									{
+										"id": 8,
+										"accesstype": "self",
+										"name": "Womens Shoes",
+										"icon": "pebble-icons:SavedSearch",
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "Womens"
+												}
+											}
+										]
+									}
+								],
+								"my-searches": [
+									{
+										"id": 9,
+										"accesstype": "self",
+										"name": "Mens Shoes",
+										"icon": "pebble-icons:SavedSearch",
+										"shared": false,
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "Mens"
+												}
+											}
+										]
+									}
+								],
+								"shared-searches": [
+									{
+										"id": 10,
+										"accesstype": "self",
+										"name": "Women's Sport Wear & Dresses",
+										"icon": "pebble-icons:SavedSearch",
+										"shared": true,
+										"dimensions": {
+											"catalog": "productMaster",
+											"Source": "internal",
+											"Locale": "en-US",
+											"TimeSlice": "Now"
+										},
+										"searchQuery": "dresses",
+										"searchTags": [
+											{
+												"name": "description",
+												"longName": "Description",
+												"options": {
+													"displayType": "textArea"
+												},
+												"value": {
+													"eq": "dresses"
+												}
+											}
+										]
+									}
 								]
 							}
 						}
@@ -619,20 +684,20 @@
 						},
 						"jsonData": {
 							"config": {
-								"title": "",
+								"title": "Create",
 								"actions": [
 									{
-										"name": "addDigitalAssets",
+										"name": "createProductPresentation",
 										"icon": "pebble-xl-icons:Brand",
-										"text": "Add Digital Assets",
+										"text": "Group in Product Presentation",
 										"visible": true,
-										"eventName": "action-adddigitalassets"
+										"eventName": "action-createProductPresentation"
 									},
 									{
 										"name": "createEnsemble",
 										"icon": "pebble-xl-icons:Channel",
 										"text": "Group in Ensemble",
-										"visible": false,
+										"visible": true,
 										"eventName": "action-createEnsemble"
 									}
 								]
@@ -662,8 +727,93 @@
 							"role": "vendor"
 						},
 						"jsonData": {
-							"config": {
-							}
+							"config": [
+								{
+									"name": "displayName",
+									"longName": "Display Name",
+									"displayType": "textBox"
+								},
+								{
+									"name": "skuNumber",
+									"longName": "Sku Number",
+									"value": "",
+									"displayType": "textBox"
+								},
+								{
+									"name": "description",
+									"longName": "Description",
+									"value": "",
+									"displayType": "textArea"
+								},
+								{
+									"name": "creationDate",
+									"longName": "Creation Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "startDate",
+									"longName": "Start Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "endDate",
+									"longName": "End Date",
+									"value": "",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "size",
+									"longName": "Size",
+									"displayType": "dropDown"
+								},
+								{
+									"name": "orin",
+									"longName": "ORIN",
+									"displayType": "numeric"
+								},
+								{
+									"name": "width",
+									"longName": "Width",
+									"displayType": "dropDown"
+								},
+								{
+									"name": "skuQuantity",
+									"longName": "Quantity",
+									"displayType": "numeric"
+								},
+								{
+									"name": "status",
+									"longName": "Status",
+									"displayType": "textBox"
+								},
+								{
+									"name": "creationDate",
+									"longName": "Creation Date",
+									"displayType": "date"
+								},
+								{
+									"name": "plannedOnSiteDate",
+									"longName": "Planned OnSite Date (mm/dd/yyyy)",
+									"displayType": "dateTime"
+								},
+								{
+									"name": "ecommMinOrderQty",
+									"longName": "eComm Min Order Qty",
+									"displayType": "integer"
+								},
+								{
+									"name": "assembledHeight",
+									"longName": "Assembled Height(in inches)",
+									"displayType": "decimal"
+								},
+								{
+									"name": "warrantyFlag",
+									"longName": "Warranty Flag",
+									"displayType": "boolean"
+								}
+							]
 						}
 					}
 				]
@@ -810,7 +960,7 @@
 															"factsheet",
 															"featurecolor",
 															"hidedisplayindicator",
-															"identifier",
+															"id",
 															"iscustomerfavoriteoption",
 															"ishidden",
 															"ispreorderoption",
@@ -907,28 +1057,7 @@
 													"text": "",
 													"visible": true,
 													"tooltip": "Refresh"
-												},
-												{
-													"name": "moreActions",
-													"icon": "pebble-md-icons:ToolbarMore",
-													"text": "",
-													"buttons": [
-														{
-															"name": "cut",
-															"icon": "pebble-md-icons:Cut",
-															"text": "",
-															"visible": true,
-															"tooltip": "Cut"
-														},
-														{
-															"name": "copy",
-															"icon": "pebble-md-icons:Copy",
-															"text": "",
-															"visible": true,
-															"tooltip": "Copy"
-														}
-													]
-												}
+												}												
 											]
 										}
 									]
@@ -938,6 +1067,50 @@
 									"tofixes": [
 									]
 								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-discovery_assignment-actions_vendor_uiConfig",
+			"name": "app-entity-discovery_assignment-actions",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "assignment-actions",
+							"subComponent": "_ALL",
+							"role": "vendor"
+						},
+						"jsonData": {
+							"config": {
+								"title": "",
+								"actions": [
+									{
+										"name": "takeTask",
+										"icon": "pebble-xl-icons:taketask",
+										"text": "Take Task",
+										"visible": true,
+										"eventName": "action-takeTask"
+									},
+									{
+										"name": "releaseTask",
+										"icon": "pebble-xl-icons:releasetask",
+										"text": "Release Task",
+										"visible": true,
+										"eventName": "action-releaseTask"
+									}
+								]
 							}
 						}
 					}

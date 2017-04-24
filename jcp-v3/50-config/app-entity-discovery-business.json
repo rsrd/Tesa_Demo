@@ -31,7 +31,8 @@
                                 "rock-search-filter",
                                 "rock-entity-search-grid",
                                 "rock-entity-quick-manage",
-                                "rock-saved-searches-tags"
+                                "rock-saved-searches-tags",
+                                "assignment-actions"
                             ]
                         }
                     }
@@ -76,65 +77,47 @@
                                 "attributes": [
                                     "displayName",
                                     "description",
-                                    "status",
-                                    "startDate",
-                                    "endDate",
                                     "creationDate",
-                                    "plannedOnSiteDate",
-                                    "warrantyFlag",
-                                    "ecommMinOrderQty",
-                                    "assembledHeight"
+                                    "plannedOnSiteDate"
                                 ]
                             },
                             "tabular": {
                                 "settings": {
                                     "isMultiSelect": true
                                 },
-                                "columns": [{
-                                        "header": "Display Name",
-                                        "name": "displayName",
-                                        "sortable": false,
-                                        "filterable": false,
-                                        "linkTemplate": "entity-manage?id={id}&type={type}"
-                                    },
-                                    {
-                                        "header": "Description",
-                                        "name": "description",
-                                        "sortable": false,
-                                        "filterable": false
-                                    },
-                                    {
-                                        "header": "Status",
-                                        "name": "status",
-                                        "sortable": false,
-                                        "filterable": false
-                                    },
-                                    {
-                                        "header": "Entity Type",
-                                        "name": "type",
-                                        "sortable": false,
-                                        "filterable": false,
-                                        "isMetaDataColumn": true
-                                    },
-                                    {
-                                        "header": "Source",
-                                        "name": "source",
-                                        "sortable": false,
-                                        "filterable": false,
-                                        "isContextDataColumn": true
-                                    },
-                                    {
-                                        "header": "Start Date",
-                                        "name": "startDate",
-                                        "sortable": true,
-                                        "filterable": false
-                                    },
-                                    {
-                                        "header": "End Date",
-                                        "name": "endDate",
-                                        "sortable": true,
-                                        "filterable": false
-                                    }
+                              "columns": [
+                                {
+                                    "header": "Entity Type",
+                                    "name": "type",
+                                    "sortable": false,
+                                    "filterable": false,
+                                    "isMetaDataColumn": true
+                                },
+                                {
+                                    "header": "Display Name",
+                                    "name": "displayName",
+                                    "sortable": false,
+                                    "filterable": false,
+                                    "linkTemplate": "entity-manage?id={id}&type={type}"
+                                },
+                                {
+                                    "header": "Description",
+                                    "name": "description",
+                                    "sortable": false,
+                                    "filterable": false
+                                },
+                                {
+                                    "header": "Creation Date",
+                                    "name": "creationDate",
+                                    "sortable": false,
+                                    "filterable": false
+                                },
+                                {
+                                    "header": "Planned On-site Date",
+                                    "name": "plannedOnSiteDate",
+                                    "sortable": false,
+                                    "filterable": false
+                                }
                                 ]
                             },
                             "list": {
@@ -1060,6 +1043,50 @@
                     }
                 }]
             }
-        }
+        },
+        {
+			"id": "app-entity-discovery_assignment-actions_business_uiConfig",
+			"name": "app-entity-discovery_assignment-actions",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "assignment-actions",
+							"subComponent": "_ALL",
+							"role": "business"
+						},
+						"jsonData": {
+							"config": {
+								"title": "",
+								"actions": [
+									{
+										"name": "takeTask",
+										"icon": "pebble-xl-icons:taketask",
+										"text": "Take Task",
+										"visible": true,
+										"eventName": "action-takeTask"
+									},
+									{
+										"name": "releaseTask",
+										"icon": "pebble-xl-icons:releasetask",
+										"text": "Release Task",
+										"visible": true,
+										"eventName": "action-releaseTask"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
     ]
 }
