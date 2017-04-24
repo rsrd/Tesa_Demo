@@ -200,7 +200,7 @@
                                 {
                                     "name": "createKit",
                                     "icon": "pebble-xl-icons:Kit",
-                                    "text": "PDP",
+                                    "text": "PP",
                                     "visible": true,
                                     "dataRoute": "entity-create",
                                     "contextData": {
@@ -216,22 +216,20 @@
                                     }
                                 },
                                 {
-                                    "name": "createSupplier",
-                                    "icon": "pebble-xl-icons:Customer",
-                                    "text": "Create Suplier",
+                                    "name": "createEnsemble",
+                                    "icon": "pebble-xl-icons:Kit",
+                                    "text": "Ensemble",
                                     "visible": true,
                                     "dataRoute": "entity-create",
                                     "contextData": {
                                         "itemContext": {
-                                            "type": "supplier"
+                                            "type": "ensemble"
                                         },
                                         "valueContext": {
                                             "source": "internal",
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "channel": "productMaster",
-                                            "classification": "_ALL"
                                         }
                                     }
                                 },

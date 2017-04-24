@@ -13,17 +13,17 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v3",
     "tenantId": "pmqa",
-    "option": "tenant-config",
+    "option": "config",
     "flush": "N"
 }
 
-quiteLoadConfig = {
-    "enabled": true,
-    "folderName": "jcp-v3",
-    "tenantId": "pmqa",
-    "option": "all",
-    "flush": "N"
-}
+//quiteLoadConfig = {
+//    "enabled": true,
+//    "folderName": "jcp-v3",
+//    "tenantId": "pmqa",
+//    "option": "all",
+//    "flush": "N"
+//}
 
 module.exports = {
     toolConfig: toolConfig,
