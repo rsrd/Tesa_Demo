@@ -9,21 +9,19 @@ var toolConfig = {
 // 1. option = all - to load kind of models, data and configs
 // 2. option = tenant-config - to load tenant-config only
 
-var quiteLoadConfig = {
-    "enabled": true,
-    "folderName": "jcp-v3",
-    "tenantId": "pmqa",
-    "option": "tenant-config",
-    "flush": "N"
-}
+// var quiteLoadConfig = {
+//     "enabled": true,
+//     "folderName": "jcp-v2",
+//     "tenantId": "jcp",
+//     "option": "tenant-config",
+// }
 
-quiteLoadConfig = {
-    "enabled": true,
-    "folderName": "jcp-v3",
-    "tenantId": "pmqa",
-    "option": "all",
-    "flush": "N"
-}
+// quiteLoadConfig = {
+//     "enabled": true,
+//     "folderName": "jcp-v2",
+//     "tenantId": "jcp",
+//     "option": "config",
+// }
 
 module.exports = {
     toolConfig: toolConfig,
