@@ -76,7 +76,7 @@ This MUST should be done within a command window opened at the `dataplatform-sam
         ```
 
         options
-        
+
         ![Data load options](images/data-load-options.jpg?raw=true "options")
 
         After setting `quiteLoadConfig` run below command,
@@ -86,4 +86,5 @@ This MUST should be done within a command window opened at the `dataplatform-sam
 
     
 Note: for logs got to `logs` folder
+
     - Inside log folder there wll be tenant specific folders. for ex. if user has loaded data for `t1` tenant it will have t1 folder inside and each tenant folder contains log details inside timestamp based folders.
