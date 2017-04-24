@@ -15,19 +15,19 @@ var quiteModeEnabled = config.quiteLoadConfig.enabled;
 
 if (quiteModeEnabled) {
     var quiteLoadConfig = config.quiteLoadConfig;
-    
+
     console.log('Quite mode is enabled...loading with below options: ');
-    
+
     console.log('Tool config: ', JSON.stringify(config.toolConfig, null, 2));
-    
+
     console.log('Quite load config: ', JSON.stringify(config.quiteLoadConfig, null, 2));
 
     bulkLoad.startLoadingData(quiteLoadConfig.folderName, quiteLoadConfig.option, quiteLoadConfig.tenantId, quiteLoadConfig.flush);
 }
 else {
-    console.log("Hi, there! let us start the load...");``
+    console.log("Hi, there! let us start the load..."); ``
     console.log('we are going to load config for: ', JSON.stringify(config.toolConfig, null, 2));
-    
+
     console.log("\nYou have below data folders available in the configured path---------------\n");
     list.forEach(function (item) {
         var isInIgnoreList = ignoreList.find(i => i == item);
@@ -47,11 +47,19 @@ else {
         console.log("\n");
         rl.question("2. Good, next question, whats' the tenant Id:", (tenantId) => {
             console.log("\nYou have below options to choose from---------------------------------------\n");
+            console.log("all");
             console.log("tenant-config");
-            console.log("model");
+            console.log("foundation");
+            console.log("authorizationmodel");
+            console.log("governancemodel");
+            console.log("entitymodels");
+            console.log("contexts");
+            console.log("contextualmodel");
+            console.log("referencemodel");
+            console.log("referencedata");
             console.log("data");
             console.log("config");
-            console.log("all - model, data and config");
+            console.log("rsconnectProfiles");
             console.log("\n----------------------------------------------------------------------------\n");
             rl.question('3. What option you like:', (option) => {
                 rl.question('4. Ok, last question, do you want to flush the data before starting load? (Y/ N):', (flush) => {
