@@ -107,7 +107,7 @@
                                 "id": "source",
                                 "title": "Source",
                                 "icon": "pebble-lg-icons:Source",
-                                "visible": true,
+                                "visible": false,
                                 "dataRequestType": "entity-model",
                                 "dataRequest": {
                                     "params": {
@@ -140,7 +140,7 @@
                                 "id": "locale",
                                 "title": "Locale",
                                 "icon": "pebble-lg-icons:Language",
-                                "visible": true,
+                                "visible": false,
                                 "dataRequestType": "entity-model",
                                 "dataRequest": {
                                     "params": {
@@ -335,39 +335,8 @@
                                     ]
                             },
                             "summaryToFix": {
-                                "completionPercentage": 65,
-                                "tofixes": [{
-                                        "data": {
-                                            "name": "brandext",
-                                            "type": "error",
-                                            "label": "Images not associated",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "priceissue",
-                                            "type": "error",
-                                            "label": "Required Attributes not provided",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "msrpissue",
-                                            "type": "error",
-                                            "label": "Incorrect MSRP",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "msrpissue",
-                                            "type": "warning",
-                                            "label": "Missing videos",
-                                            "eventName": "tofixtap"
-                                        }
-                                    }
+                                "completionPercentage": "",
+                                "tofixes": [
                                 ]
                             },
                             "assignmentActionsConfig": {
@@ -508,6 +477,7 @@
                             "tabItems": [{
                                     "name": "summary",
                                     "title": "Summary",
+                                    "selected": true,
                                     "enableDropdownMenu": false,
                                     "component": {
                                         "name": "rock-entity-summary",
@@ -523,8 +493,7 @@
                                         "name": "attribute-tab-menu-provider",
                                         "path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
                                         "properties": {}
-                                    },
-                                    "selected": true,
+                                    },                                  
                                     "component": {
                                         "name": "rock-attribute-split-screen",
                                         "path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
@@ -1064,7 +1033,7 @@
                                     "gridConfig": {
                                         "viewMode": "Tabular",
                                         "mode": "Read",
-                                        "title": "Is Child Of",
+                                        "title": "Parent Lot",
                                         "schemaType": "colModel",
                                         "statusEnabled": true,
                                         "tabular": {
@@ -1077,7 +1046,7 @@
                                                 }]
                                             },
                                             "columns": [{
-                                                    "header": "Related Entity",
+                                                    "header": "Parent Lot",
                                                     "name": "Related Entity",
                                                     "sortable": true,
                                                     "filterable": false,
@@ -1100,14 +1069,6 @@
                                                     "filterable": false,
                                                     "editType": "",
                                                     "isRelatedEntityAttribute": false
-                                                },
-                                                {
-                                                    "header": "SKU Number",
-                                                    "name": "skuNumber",
-                                                    "sortable": true,
-                                                    "filterable": false,
-                                                    "editType": "",
-                                                    "isRelatedEntityAttribute": true
                                                 },
                                                 {
                                                     "header": "Display Name",
@@ -1169,7 +1130,7 @@
                                     "gridConfig": {
                                         "viewMode": "Tabular",
                                         "mode": "Read",
-                                        "title": "Sku To Image",
+                                        "title": "Images",
                                         "schemaType": "colModel",
                                         "statusEnabled": true,
                                         "tabular": {
@@ -1182,7 +1143,7 @@
                                                 }]
                                             },
                                             "columns": [{
-                                                    "header": "Related Entity",
+                                                    "header": "Image",
                                                     "name": "Related Entity",
                                                     "sortable": true,
                                                     "filterable": false,
@@ -1460,39 +1421,8 @@
                     },
                     "jsonData": {
                         "config": {
-                            "completionPercentage": 65,
-                            "tofixes": [{
-                                    "data": {
-                                        "name": "brandext",
-                                        "type": "error",
-                                        "label": "Images not associated",
-                                        "eventName": "tofixtap"
-                                    }
-                                },
-                                {
-                                    "data": {
-                                        "name": "priceissue",
-                                        "type": "error",
-                                        "label": "Required Attributes not provided",
-                                        "eventName": "tofixtap"
-                                    }
-                                },
-                                {
-                                    "data": {
-                                        "name": "msrpissue",
-                                        "type": "error",
-                                        "label": "Incorrect MSRP",
-                                        "eventName": "tofixtap"
-                                    }
-                                },
-                                {
-                                    "data": {
-                                        "name": "msrpissue",
-                                        "type": "warning",
-                                        "label": "Missing videos",
-                                        "eventName": "tofixtap"
-                                    }
-                                }
+                            "completionPercentage": "",
+                            "tofixes": [
                             ]
                         }
                     }

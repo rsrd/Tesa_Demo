@@ -112,7 +112,7 @@
 									"id": "source",
 									"title": "Source",
 									"icon": "pebble-lg-icons:Source",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -145,7 +145,7 @@
 									"id": "locale",
 									"title": "Locale",
 									"icon": "pebble-lg-icons:Language",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -224,6 +224,12 @@
 												"editType": "textbox"
 											},
 											{
+												"header": "Channel",
+												"name": "Channel",
+												"sortable": false,
+												"filterable": false
+											},
+											{
 												"header": "Locale",
 												"name": "Locale",
 												"sortable": true,
@@ -233,6 +239,12 @@
 												"header": "Source",
 												"name": "Source",
 												"sortable": true,
+												"filterable": false
+											},
+											{
+												"header": "Time",
+												"name": "Time",
+												"sortable": false,
 												"filterable": false
 											}
 										]
@@ -268,12 +280,12 @@
 							"config": {
 								"headerConfig": [
 									{
-										"attributeName": "identifier",
+										"attributeName": "id",
 										"label": "SKU ID",
 										"noTrim": false
 									},
 									{
-										"attributeName": "skunumber",
+										"attributeName": "skuNumber",
 										"label": "SKU Number",
 										"noTrim": false
 									},
@@ -288,24 +300,25 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "producttype",
+										"attributeName": "productType",
 										"label": "Product Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "subproducttype",
+										"attributeName": "subProductType",
 										"label": "Sub Product Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "itemtype",
+										"attributeName": "itemType",
 										"label": "Item Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "creationdate",
+										"attributeName": "creationDate",
 										"label": "Creation Date",
-										"noTrim": false
+										"noTrim": false,
+										"dataType": "datetime"
 									}
 								],
 								"toolbarConfig": {
@@ -320,13 +333,13 @@
 													"visible": true,
 													"buttons": [
 														{
-															"name": "merchandisingtaxonomy",
+															"name": "merchandisingTaxonomy",
 															"text": "Merchandising Taxonomy",
 															"visible": true,
 															"tooltip": "Merchandising Taxonomy"
 														},
 														{
-															"name": "productsetuptaxonomy",
+															"name": "productSetupTaxonomy",
 															"text": "Product Setup Taxonomy",
 															"visible": true,
 															"tooltip": "Product Setup Taxonomy"
@@ -347,6 +360,25 @@
 								"summaryToFix": {
 									"completionPercentage": "",
 									"tofixes": [
+									]
+								},
+								"assignmentActionsConfig": {
+									"title": "",
+									"actions": [
+										{
+											"name": "takeTask",
+											"icon": "pebble-xl-icons:taketask",
+											"text": "Take Task",
+											"visible": true,
+											"eventName": "action-takeTask"
+										},
+										{
+											"name": "releaseTask",
+											"icon": "pebble-xl-icons:releasetask",
+											"text": "Release Task",
+											"visible": true,
+											"eventName": "action-releaseTask"
+										}
 									]
 								}
 							}
@@ -476,8 +508,8 @@
 									{
 										"name": "summary",
 										"title": "Summary",
-										"selected": true,
 										"enableDropdownMenu": false,
+										"selected": true,
 										"component": {
 											"name": "rock-entity-summary",
 											"path": "/src/elements/rock-entity-summary/rock-entity-summary.html",
@@ -499,8 +531,8 @@
 											"properties": {
 												"mode": "view",
 												"no-of-columns": 2,
-												"allow-save-on-error": false,
-												"do-sync-validation": false,
+												"allow-save-on-error": true,
+												"do-sync-validation": true,
 												"config-context": {
 													"attributeNames": [
 														"id",
@@ -535,7 +567,7 @@
 										},
 										"menuItems": [
 											{
-												"name": "ischildof",
+												"name": "isChildOf",
 												"title": "Variants",
 												"component": {
 													"name": "rock-relationship-split-screen",
@@ -548,17 +580,18 @@
 															}
 														],
 														"source": "internal",
+														"list": "productMaster",
 														"mode": "view",
 														"no-of-columns": 1,
 														"do-sync-validation": true,
 														"config-context": {
-															"relationshipTypeName": "ischildof"
+															"relationshipTypeName": "isChildOf"
 														}
 													}
 												}
 											},
 											{
-												"name": "productpresentationtolot",
+												"name": "productPresentationToLot",
 												"title": "Lots",
 												"component": {
 													"name": "rock-relationship-split-screen",
@@ -571,11 +604,12 @@
 															}
 														],
 														"source": "internal",
+														"list": "productMaster",
 														"mode": "view",
 														"no-of-columns": 1,
 														"do-sync-validation": true,
 														"config-context": {
-															"relationshipTypeName": "productpresentationtolot"
+															"relationshipTypeName": "productPresentationToLot"
 														}
 													}
 												}
@@ -708,7 +742,7 @@
 											},
 											{
 												"header": "Start Date",
-												"name": "startdate",
+												"name": "startDate",
 												"sortable": false,
 												"filterable": false
 											},
@@ -720,7 +754,7 @@
 											},
 											{
 												"header": "SKU Id",
-												"name": "identifier",
+												"name": "id",
 												"sortable": false,
 												"filterable": false
 											}
@@ -781,7 +815,7 @@
 											"id": "id",
 											"fields": [
 												{
-													"name": "producttype",
+													"name": "productType",
 													"label": "Product Type"
 												},
 												{
@@ -913,11 +947,11 @@
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"ischildof": {
+									"productPresentationToLot": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Is Child Of",
+											"title": "Product Presentation To Lot",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -950,6 +984,14 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
 														"header": "Enabled",
 														"name": "enabled",
 														"sortable": true,
@@ -958,12 +1000,115 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
-														"header": "SKU Number",
-														"name": "skunumber",
+														"header": "Display Name",
+														"name": "displayname",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
 														"isRelatedEntityAttribute": true
+													},
+													{
+														"header": "Description",
+														"name": "description",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "id"
+										}
+									},
+									"isChildOf": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Belongs to Lot",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Parent Lot",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkdescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
 													},
 													{
 														"header": "Display Name",
@@ -1020,15 +1165,15 @@
 											}
 										},
 										"addRelLovConfig": {
-											"idField": "identifier",
+											"idField": "id",
 											"titlePattern": "id"
 										}
 									},
-									"skutoimage": {
+									"skuToImage": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Sku To Image",
+											"title": "Related Images",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1045,7 +1190,7 @@
 												"columns": [
 													{
 														"header": "Related Entity",
-														"name": "Related Entity",
+														"name": "Image",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1079,6 +1224,101 @@
 													{
 														"header": "Display Name",
 														"name": "displayname",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "id"
+										}
+									},
+									"productPresentationToImage": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Product Presentation To Image",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Related Entity",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Descriptioin",
+														"name": "discription",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1194,16 +1434,6 @@
 									},
 									{
 										"icon": {
-											"name": "pebble-xl-icons:Channel"
-										},
-										"data": {
-											"name": "newChannel",
-											"label": "Introduce to new channel",
-											"eventName": "todotap"
-										}
-									},
-									{
-										"icon": {
 											"name": "pebble-xl-icons:Crosssell"
 										},
 										"data": {
@@ -1274,7 +1504,7 @@
 							"config": {
 								"image": "",
 								"titleAttribute": "displayname",
-								"subtitleAttribute": "type"
+								"subtitleAttribute": ""
 							}
 						}
 					}
