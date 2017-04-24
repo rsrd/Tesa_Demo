@@ -26,13 +26,14 @@ This MUST should be done within a command window opened at the `dataplatform-sam
 
     set config as below,
     
+    ```javascript
     var toolConfig = {
         "webUrl": "http://0.0.0.0:8085", // Netty API server's url
         "elasticUrl": "http://0.0.0.0:9200", // Elastic server's url
         "delay": 100,
         "delayBetweenModelObjects": 10000
     }
-
+    ```
 2. There are tow ways to run data loader tool.
 
     1. Run tool in terminal with following command,
@@ -62,6 +63,7 @@ This MUST should be done within a command window opened at the `dataplatform-sam
         Go to `config.js` and update `quiteLoadConfig` inside it,
 
         `quiteLoadConfig` contains all parameters which are required to load data.
+            ```javascript
             var quiteLoadConfig = {
                 "enabled": true, // This has to be set has true
                 "folderName": "jcp-v2", // Provide folder name from where data has to be loaded
@@ -69,6 +71,7 @@ This MUST should be done within a command window opened at the `dataplatform-sam
                 "option": "tenant-config", // Provide an option to load data as per below screen shot
                 "flush": "N" // This has to be `N` for now
             }
+            ```
 
 
         After setting `quiteLoadConfig` run below command,
