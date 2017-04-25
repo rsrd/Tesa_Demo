@@ -13,7 +13,7 @@
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-18T03:51:00.407Z",
+        "createdDate": "2017-04-24T03:51:00.407Z",
         "createdBy": "system"
       },
       "data": {
@@ -34,8 +34,8 @@
               "inboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsjcpStream3",
-                  "regionName": "us-west-2",
+                  "streamName": "rsQAEast1Inbound",
+									"regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }
               },
