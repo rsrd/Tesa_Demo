@@ -37,7 +37,7 @@ This MUST should be done within a command window opened at the `dataplatform-sam
     }
     ```
 
-2. There are tow ways to run data loader tool.
+2. There are two ways to run data loader tool.
 
     1. Run tool in terminal with following command,
         `node index.js`

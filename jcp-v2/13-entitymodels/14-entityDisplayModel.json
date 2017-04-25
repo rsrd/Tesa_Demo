@@ -877,7 +877,14 @@
 					},
 					"brand": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"vData": {
@@ -2255,7 +2262,14 @@
 					},
 					"brand": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"seoTitle": {
@@ -2559,7 +2573,14 @@
 					},
 					"brand": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"seoTitle": {
