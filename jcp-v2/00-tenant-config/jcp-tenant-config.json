@@ -13,7 +13,7 @@
 			"createdByService": "configservice",
 			"createdBy": "system",
 			"createdService": "configurationManageService",
-			"createdDate": "2017-04-20T06:25:39.77Z"
+			"createdDate": "2017-04-26T00:38:43.234+0000"
 		},
 		"data": {
 			"jsonData": {
@@ -251,7 +251,7 @@
 								}
 							},
 							"workflow": {
-								"resturi": "http://172.31.50.160/RS_QA_Int_WCF_jcp",
+								"resturi": "http://35.163.211.168/RS_QA_west_2_WCF_jcp",
 								"start": "/WorkflowRestService.svc/StartWorkflow",
 								"get": "/WorkflowRestService.svc/GetWorkflowDetails",
 								"resume": "/WorkflowRestService.svc/ResumeWorkflow",
@@ -259,7 +259,7 @@
 							},
 							"export": {
 								"isExportEnabled": "true",
-								"resturi": "http://imp-exp-rest:9095",
+								"resturi": "http://imp-exp-rest:9095/api/entityExportService",
 								"publish": "/publish"
 							}
 						},
