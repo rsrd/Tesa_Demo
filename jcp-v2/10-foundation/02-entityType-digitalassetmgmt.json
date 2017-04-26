@@ -15,75 +15,57 @@
 			}
 		},
 		{
-			"id": "originalImage_entityType",
-			"name": "originalImage",
+			"id": "video_entityType",
+			"name": "video",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Original Image"
+				"externalName": "Video"
 			}
 		},
 		{
-			"id": "originalVideo_entityType",
-			"name": "originalVideo",
+			"id": "audio_entityType",
+			"name": "audio",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Original Video"
+				"externalName": "Audio"
 			}
 		},
 		{
-			"id": "originalAudio_entityType",
-			"name": "originalAudio",
+			"id": "document_entityType",
+			"name": "document",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Original Audio"
+				"externalName": "Document"
 			}
 		},
 		{
-			"id": "originalDocument_entityType",
-			"name": "originalDocument",
+			"id": "imagerendition_entityType",
+			"name": "imagerendition",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Original Document"
+				"externalName": "Image Rendition"
 			}
 		},
 		{
-			"id": "renditionImage_entityType",
-			"name": "renditionImage",
+			"id": "videorendition_entityType",
+			"name": "videorendition",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Rendition Image"
+				"externalName": "Video Rendition"
 			}
 		},
 		{
-			"id": "renditionVideo_entityType",
-			"name": "renditionVideo",
+			"id": "audiorendition_entityType",
+			"name": "audiorendition",
 			"type": "entityType",
 			"domain": "digitalAsset",
 			"properties": {
-				"externalName": "Rendition Video"
-			}
-		},
-		{
-			"id": "renditionAudio_entityType",
-			"name": "renditionAudio",
-			"type": "entityType",
-			"domain": "digitalAsset",
-			"properties": {
-				"externalName": "Rendition Audio"
-			}
-		},
-		{
-			"id": "thumbnailImage_entityType",
-			"name": "thumbnailImage",
-			"type": "entityType",
-			"domain": "digitalAsset",
-			"properties": {
-				"externalName": "Thumbnail Image"
+				"externalName": "Audio Rendition"
 			}
 		}
 	]

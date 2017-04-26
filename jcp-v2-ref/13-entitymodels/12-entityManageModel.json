@@ -1986,21 +1986,42 @@
 						"properties": {
 							"externalName": "Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "productType"
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
 							"externalName": "Sub Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subProductType"
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
 							"externalName": "Item Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "itemType"
+								}
+							]
 						}
 					},
 					"sizeRange": {

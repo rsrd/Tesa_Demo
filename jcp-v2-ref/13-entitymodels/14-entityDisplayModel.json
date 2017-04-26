@@ -667,14 +667,7 @@
 					},
 					"status": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
-								}
-							]
+							"displayType": "Dropdown"
 						}
 					},
 					"orin": {
@@ -1205,17 +1198,38 @@
 					},
 					"productType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "/images/favicon.ico",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"sizeRange": {

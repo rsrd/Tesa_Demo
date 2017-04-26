@@ -565,7 +565,7 @@
                 "activityName": {
                   "values": [
                     {
-                      "value": "Enrich Copy"
+                      "value": "Publish to RMS for IDs"
                     }
                   ]
                 },
@@ -586,7 +586,7 @@
                 "allowedRoles": {
                   "values": [
                     {
-                      "value": "copywriter"
+                      "value": "admin"
                     }
                   ]
                 },
@@ -599,21 +599,21 @@
                       "actionName": {
                         "values": [
                           {
-                            "value": "Complete"
+                            "value": "Done"
                           }
                         ]
                       },
                       "actionText": {
                         "values": [
                           {
-                            "value": "Complete"
+                            "value": "Done"
                           }
                         ]
                       },
                       "actionIcon": {
                         "values": [
                           {
-                            "value": "Complete.png"
+                            "value": "Done.png"
                           }
                         ]
                       },
@@ -639,7 +639,7 @@
                 "activityName": {
                   "values": [
                     {
-                      "value": "Enrich with Digital Assets"
+                      "value": "Waiting for RMS"
                     }
                   ]
                 },
@@ -660,7 +660,7 @@
                 "allowedRoles": {
                   "values": [
                     {
-                      "value": "assetEnrichment"
+                      "value": "admin"
                     }
                   ]
                 },
@@ -673,28 +673,28 @@
                       "actionName": {
                         "values": [
                           {
-                            "value": "Complete"
+                            "value": "Done"
                           }
                         ]
                       },
                       "actionText": {
                         "values": [
                           {
-                            "value": "Complete"
+                            "value": "Done"
                           }
                         ]
                       },
                       "actionIcon": {
                         "values": [
                           {
-                            "value": "Complete.png"
+                            "value": "Done.png"
                           }
                         ]
                       },
                       "commentsMode": {
                         "values": [
                           {
-                            "value": "Optional"
+                            "value": "None"
                           }
                         ]
                       }
@@ -730,7 +730,7 @@
                 "allowedRoles": {
                   "values": [
                     {
-                      "value": "Administrator"
+                      "value": "admin"
                     }
                   ]
                 },
@@ -909,6 +909,258 @@
                   "values": [
                     {
                       "value": "Administrator"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "enrichmentWorkflow_workflowDefinition",
+      "name": "enrichmentWorkflow",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "Enrichment Workflow"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.1"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Enrich Copy"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "copywriter"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Enrich with Digital Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "assetEnrichment"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
                     }
                   ]
                 },

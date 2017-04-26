@@ -1,0 +1,4222 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "image_entityManageModel",
+         "name": "image",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "videorendition_entityManageModel",
+         "name": "videorendition",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            },
+            "relationships": {
+               "ischildof": [
+                  {
+                     "properties": {
+                        "externalName": "Video Rendition",
+                        "relationshipType": "composition",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "video"
+                           }
+                        ]
+                     },
+                     "attributes": {}
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "document_entityManageModel",
+         "name": "document",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "imagerendition_entityManageModel",
+         "name": "imagerendition",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            },
+            "relationships": {
+               "ischildof": [
+                  {
+                     "properties": {
+                        "externalName": "Image Rendition",
+                        "relationshipType": "composition",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "image"
+                           }
+                        ]
+                     },
+                     "attributes": {}
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "video_entityManageModel",
+         "name": "video",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "audio_entityManageModel",
+         "name": "audio",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "audiorendition_entityManageModel",
+         "name": "audiorendition",
+         "type": "entityManageModel",
+         "domain": "digitalAsset",
+         "data": {
+            "attributes": {
+               "aperturevalue": {
+                  "properties": {
+                     "externalName": "Aperture Value",
+                     "dataType": "string"
+                  }
+               },
+               "artist": {
+                  "properties": {
+                     "externalName": "Artist",
+                     "dataType": "string"
+                  }
+               },
+               "bitspersample": {
+                  "properties": {
+                     "externalName": "Data Precision/Bits Per Sample",
+                     "dataType": "string"
+                  }
+               },
+               "colorcomponents": {
+                  "properties": {
+                     "externalName": "Color Components",
+                     "dataType": "string"
+                  }
+               },
+               "colorspace": {
+                  "properties": {
+                     "externalName": "Color space",
+                     "dataType": "string"
+                  }
+               },
+               "componentsconfiguration": {
+                  "properties": {
+                     "externalName": "Components configuration",
+                     "dataType": "string"
+                  }
+               },
+               "compressedbitsperpixel": {
+                  "properties": {
+                     "externalName": "Compressed bits per pixel",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightowner": {
+                  "properties": {
+                     "externalName": "Copyright Owner",
+                     "dataType": "string"
+                  }
+               },
+               "copyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "dataType": "string"
+                  }
+               },
+               "countrycode": {
+                  "properties": {
+                     "externalName": "Country Code",
+                     "dataType": "string"
+                  }
+               },
+               "creator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoaddress": {
+                  "properties": {
+                     "externalName": "Address",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfocountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfoemails": {
+                  "properties": {
+                     "externalName": "Emails",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfophones": {
+                  "properties": {
+                     "externalName": "Phones",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfopostalcode": {
+                  "properties": {
+                     "externalName": "Postal Code",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorcontactinfostateorprovince": {
+                  "properties": {
+                     "externalName": "State/ Province",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator’s Job Title",
+                     "groupName": "Creator",
+                     "dataType": "string"
+                  }
+               },
+               "creditline": {
+                  "properties": {
+                     "externalName": "Credit Line",
+                     "dataType": "string"
+                  }
+               },
+               "customrendered": {
+                  "properties": {
+                     "externalName": "Custom Rendered",
+                     "dataType": "string"
+                  }
+               },
+               "datecreated": {
+                  "properties": {
+                     "externalName": "Date Created",
+                     "dataType": "string"
+                  }
+               },
+               "datetimedigitized": {
+                  "properties": {
+                     "externalName": "Date and time (digitized)",
+                     "dataType": "string"
+                  }
+               },
+               "datetimeoriginal": {
+                  "properties": {
+                     "externalName": "Date and time (original)",
+                     "dataType": "string"
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "externalName": "Description",
+                     "dataType": "string"
+                  }
+               },
+               "descriptionwriter": {
+                  "properties": {
+                     "externalName": "Description writer",
+                     "dataType": "string"
+                  }
+               },
+               "digitalzoomratio": {
+                  "properties": {
+                     "externalName": "Digital Zoom Ratio",
+                     "dataType": "string"
+                  }
+               },
+               "encodingprocess": {
+                  "properties": {
+                     "externalName": "Compression/Encoding Process",
+                     "dataType": "string"
+                  }
+               },
+               "exifimageheight": {
+                  "properties": {
+                     "externalName": "Exif Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "exifimagewidth": {
+                  "properties": {
+                     "externalName": "Exif Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "exifmodel": {
+                  "properties": {
+                     "externalName": "Model",
+                     "dataType": "string"
+                  }
+               },
+               "exifpadding": {
+                  "properties": {
+                     "externalName": "Padding",
+                     "dataType": "string"
+                  }
+               },
+               "exifversion": {
+                  "properties": {
+                     "externalName": "Exif version",
+                     "dataType": "string"
+                  }
+               },
+               "exposurebias": {
+                  "properties": {
+                     "externalName": "Exposure bias",
+                     "dataType": "string"
+                  }
+               },
+               "exposuremode": {
+                  "properties": {
+                     "externalName": "Exposure Mode",
+                     "dataType": "string"
+                  }
+               },
+               "exposuretime": {
+                  "properties": {
+                     "externalName": "Exposure Time",
+                     "dataType": "string"
+                  }
+               },
+               "fileaccessdatetime": {
+                  "properties": {
+                     "externalName": "File Access DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filecreationdatetime": {
+                  "properties": {
+                     "externalName": "File Creation DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filemodificationdatetime": {
+                  "properties": {
+                     "externalName": "File Modification DateTime",
+                     "dataType": "string"
+                  }
+               },
+               "filepermissions": {
+                  "properties": {
+                     "externalName": "File Permissions",
+                     "dataType": "string"
+                  }
+               },
+               "filesize": {
+                  "properties": {
+                     "externalName": "File Size",
+                     "dataType": "string"
+                  }
+               },
+               "filetype": {
+                  "properties": {
+                     "externalName": "FileType",
+                     "dataType": "string"
+                  }
+               },
+               "flash": {
+                  "properties": {
+                     "externalName": "Flash",
+                     "dataType": "string"
+                  }
+               },
+               "flashpixversion": {
+                  "properties": {
+                     "externalName": "FlashPix version",
+                     "dataType": "string"
+                  }
+               },
+               "fnumber": {
+                  "properties": {
+                     "externalName": "F-number",
+                     "dataType": "string"
+                  }
+               },
+               "focallength": {
+                  "properties": {
+                     "externalName": "Focal length",
+                     "dataType": "string"
+                  }
+               },
+               "headline": {
+                  "properties": {
+                     "externalName": "Headline",
+                     "dataType": "string"
+                  }
+               },
+               "imagedescription": {
+                  "properties": {
+                     "externalName": "Image Description",
+                     "dataType": "string"
+                  }
+               },
+               "imageheight": {
+                  "properties": {
+                     "externalName": "Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "imagewidth": {
+                  "properties": {
+                     "externalName": "Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "intellectualgenre": {
+                  "properties": {
+                     "externalName": "Intellectual Genre",
+                     "dataType": "string"
+                  }
+               },
+               "interoperabilityversion": {
+                  "properties": {
+                     "externalName": "Interoperability version",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailsinstructions": {
+                  "properties": {
+                     "externalName": "Instructions",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcadmindetailstitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcity": {
+                  "properties": {
+                     "externalName": "City",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptclocationcountry": {
+                  "properties": {
+                     "externalName": "Country",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcscenecode": {
+                  "properties": {
+                     "externalName": "IPTC Scene Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "iptcsubjectcode": {
+                  "properties": {
+                     "externalName": "IPTC Subject Code",
+                     "groupName": "IPTC",
+                     "dataType": "string"
+                  }
+               },
+               "jfifversion": {
+                  "properties": {
+                     "externalName": "JFIF Version",
+                     "dataType": "string"
+                  }
+               },
+               "jobidentifier": {
+                  "properties": {
+                     "externalName": "Job Identifier",
+                     "dataType": "string"
+                  }
+               },
+               "keyword": {
+                  "properties": {
+                     "externalName": "Keyword",
+                     "dataType": "string"
+                  }
+               },
+               "make": {
+                  "properties": {
+                     "externalName": "Make",
+                     "dataType": "string"
+                  }
+               },
+               "maxaperturevalue": {
+                  "properties": {
+                     "externalName": "Max. aperture value",
+                     "dataType": "string"
+                  }
+               },
+               "meteringmode": {
+                  "properties": {
+                     "externalName": "Metering mode",
+                     "dataType": "string"
+                  }
+               },
+               "mimetype": {
+                  "properties": {
+                     "externalName": "MIME Type",
+                     "dataType": "string"
+                  }
+               },
+               "offsetschema": {
+                  "properties": {
+                     "externalName": "Offset Schema",
+                     "dataType": "string"
+                  }
+               },
+               "orientation": {
+                  "properties": {
+                     "externalName": "Orientation (rotation)",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimageheight": {
+                  "properties": {
+                     "externalName": "Related Image Height",
+                     "dataType": "string"
+                  }
+               },
+               "relatedimagewidth": {
+                  "properties": {
+                     "externalName": "Related Image Width",
+                     "dataType": "string"
+                  }
+               },
+               "resolutionunit": {
+                  "properties": {
+                     "externalName": "Resolution Unit",
+                     "dataType": "string"
+                  }
+               },
+               "rightsusageterms": {
+                  "properties": {
+                     "externalName": "Rights Usage Terms",
+                     "dataType": "string"
+                  }
+               },
+               "scenecapturetype": {
+                  "properties": {
+                     "externalName": "Scene Capture Type",
+                     "dataType": "string"
+                  }
+               },
+               "sensingmethod": {
+                  "properties": {
+                     "externalName": "Sensing Method",
+                     "dataType": "string"
+                  }
+               },
+               "shutterspeedvalue": {
+                  "properties": {
+                     "externalName": "Shutter Speed Value",
+                     "dataType": "string"
+                  }
+               },
+               "source": {
+                  "properties": {
+                     "externalName": "Source",
+                     "dataType": "string"
+                  }
+               },
+               "stateorprovince": {
+                  "properties": {
+                     "externalName": "State/Province",
+                     "dataType": "string"
+                  }
+               },
+               "sublocation": {
+                  "properties": {
+                     "externalName": "Sublocation",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnail": {
+                  "properties": {
+                     "externalName": "Thumbnail",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnaillength": {
+                  "properties": {
+                     "externalName": "Thumbnail Length",
+                     "dataType": "string"
+                  }
+               },
+               "thumbnailoffset": {
+                  "properties": {
+                     "externalName": "Thumbnail Offset",
+                     "dataType": "string"
+                  }
+               },
+               "websites": {
+                  "properties": {
+                     "externalName": "Websites",
+                     "dataType": "string"
+                  }
+               },
+               "whitebalance": {
+                  "properties": {
+                     "externalName": "White Balance",
+                     "dataType": "string"
+                  }
+               },
+               "worldregion": {
+                  "properties": {
+                     "externalName": "World Region",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightnotice": {
+                  "properties": {
+                     "externalName": "Copyright Notice",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcopyrightstatus": {
+                  "properties": {
+                     "externalName": "Copyright Status",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreator": {
+                  "properties": {
+                     "externalName": "Creator",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpcreatorjobtitle": {
+                  "properties": {
+                     "externalName": "Creator's Job Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmpdescriptionwriter": {
+                  "properties": {
+                     "externalName": "Description Writer",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xmptitle": {
+                  "properties": {
+                     "externalName": "Title",
+                     "groupName": "XMP",
+                     "dataType": "string"
+                  }
+               },
+               "xresolution": {
+                  "properties": {
+                     "externalName": "X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrpositioning": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Positioning",
+                     "dataType": "string"
+                  }
+               },
+               "ycbcrsubsampling": {
+                  "properties": {
+                     "externalName": "Y Cb Cr Sub Sampling",
+                     "dataType": "string"
+                  }
+               },
+               "yresolution": {
+                  "properties": {
+                     "externalName": "Y Resolution",
+                     "dataType": "string"
+                  }
+               }
+            },
+            "relationships": {
+               "ischildof": [
+                  {
+                     "properties": {
+                        "externalName": "Audio Rendition",
+                        "relationshipType": "composition",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "audio"
+                           }
+                        ]
+                     },
+                     "attributes": {}
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}
