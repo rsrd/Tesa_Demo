@@ -1166,8 +1166,8 @@
 							"referenceEntityInfo": [
 								{
 									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"listTitle": "{entity.attributes.name}",
+									"listSubTitle": "{entity.name} - {entity.attributes.name}"
 								}
 							]
 						}
@@ -1202,8 +1202,8 @@
 							"referenceEntityInfo": [
 								{
 									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"listTitle": "{entity.attributes.referenceDataValue}",
+									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
 								}
 							]
 						}
@@ -1214,8 +1214,8 @@
 							"referenceEntityInfo": [
 								{
 									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"listTitle": "{entity.attributes.referenceDataValue}",
+									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
 								}
 							]
 						}
@@ -1225,9 +1225,9 @@
 							"displayType": "referenceList",
 							"referenceEntityInfo": [
 								{
-									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referenceDataValue}",
+									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
 								}
 							]
 						}
