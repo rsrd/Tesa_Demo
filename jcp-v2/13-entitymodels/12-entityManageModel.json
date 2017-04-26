@@ -1685,7 +1685,7 @@
 							}
 						}
 					],
-					"lotToImage": [
+					"linkedImages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -1697,32 +1697,118 @@
 								]
 							},
 							"attributes": {
-								"linkDescription": {
-									"properties": {
-										"externalName": "Link Description",
-										"dataType": "string"
-									}
-								},
-								"status": {
-									"properties": {
-										"externalName": "Status",
-										"dataType": "string",
-										"referenceEntityInfo": [
-											{
-												"refRelationshipName": "hasReferenceTo",
-												"entityInfo": [
-													{
-														"entityType": "status"
-													}
-												]
-											}
-										]
-									}
-								},
 								"enabled": {
 									"properties": {
-										"externalName": "Enabled",
-										"dataType": "boolean"
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedVideos": [
+						{
+							"properties": {
+								"externalName": "Videos",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "video"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedDocuments": [
+						{
+							"properties": {
+								"externalName": "Documents",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"documentType": {
+									"properties": {
+										"dataType": "string",
+										"externalName": "Document Type"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
 									}
 								}
 							}
@@ -3267,49 +3353,6 @@
 							}
 						}
 					],
-					"skuToImage": [
-						{
-							"properties": {
-								"externalName": "Images",
-								"relationshipType": "association",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "image"
-									}
-								]
-							},
-							"attributes": {
-								"linkDescription": {
-									"properties": {
-										"externalName": "Link Description",
-										"dataType": "string"
-									}
-								},
-								"status": {
-									"properties": {
-										"externalName": "Status",
-										"dataType": "string",
-										"referenceEntityInfo": [
-											{
-												"refRelationshipName": "hasReferenceTo",
-												"entityInfo": [
-													{
-														"entityType": "status"
-													}
-												]
-											}
-										]
-									}
-								},
-								"enabled": {
-									"properties": {
-										"externalName": "Enabled",
-										"dataType": "boolean"
-									}
-								}
-							}
-						}
-					],
 					"isChildOf": [
 						{
 							"properties": {
@@ -3332,6 +3375,135 @@
 									"properties": {
 										"externalName": "Enabled",
 										"dataType": "boolean"
+									}
+								}
+							}
+						}
+					],
+					"linkedImages": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedVideos": [
+						{
+							"properties": {
+								"externalName": "Videos",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "video"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedDocuments": [
+						{
+							"properties": {
+								"externalName": "Documents",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"documentType": {
+									"properties": {
+										"dataType": "string",
+										"externalName": "Document Type"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
 									}
 								}
 							}
@@ -3761,7 +3933,7 @@
 							}
 						}
 					],
-					"productPresentationToImage": [
+					"linkedImages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -3773,20 +3945,118 @@
 								]
 							},
 							"attributes": {
-								"status": {
+								"enabled": {
 									"properties": {
-										"externalName": "Status",
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedVideos": [
+						{
+							"properties": {
+								"externalName": "Videos",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "video"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedDocuments": [
+						{
+							"properties": {
+								"externalName": "Documents",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"documentType": {
+									"properties": {
 										"dataType": "string",
-										"referenceEntityInfo": [
-											{
-												"refRelationshipName": "hasReferenceTo",
-												"entityInfo": [
-													{
-														"entityType": "status"
-													}
-												]
-											}
-										]
+										"externalName": "Document Type"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
 									}
 								}
 							}
@@ -4156,7 +4426,7 @@
 							}
 						}
 					],
-					"ensembleToImage": [
+					"linkedImages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -4168,418 +4438,123 @@
 								]
 							},
 							"attributes": {
-								"status": {
+								"enabled": {
 									"properties": {
-										"externalName": "Status",
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedVideos": [
+						{
+							"properties": {
+								"externalName": "Videos",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "video"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"isPrimary": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "Primary"
+									}
+								},
+								"sequence": {
+									"properties": {
+										"dataType": "integer",
+										"externalName": "Sequence"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
+									}
+								}
+							}
+						}
+					],
+					"linkedDocuments": [
+						{
+							"properties": {
+								"externalName": "Documents",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"enabled": {
+									"properties": {
+										"dataType": "boolean",
+										"externalName": "enabled"
+									}
+								},
+								"documentType": {
+									"properties": {
 										"dataType": "string",
-										"referenceEntityInfo": [
-											{
-												"refRelationshipName": "hasReferenceTo",
-												"entityInfo": [
-													{
-														"entityType": "status"
-													}
-												]
-											}
-										]
+										"externalName": "Document Type"
+									}
+								},
+								"startDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "Start DateTime"
+									}
+								},
+								"endDateTime": {
+									"properties": {
+										"dataType": "datetime",
+										"externalName": "End DateTime"
 									}
 								}
 							}
 						}
 					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						}
-					},
-					{
-						"context": {
-							"channel": "webCatalog",
-							"classification": "_ALL"
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "image_entityManageModel",
-			"name": "image",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
-					"creationDate": {
-						"properties": {
-							"externalName": "Creation Date",
-							"groupName": "Dates",
-							"dataType": "DateTime"
-						}
-					},
-					"startDate": {
-						"properties": {
-							"externalName": "On-Site Date",
-							"groupName": "Dates",
-							"dataType": "DateTime"
-						}
-					},
-					"endDate": {
-						"properties": {
-							"externalName": "Off-Site Date",
-							"groupName": "Dates",
-							"dataType": "DateTime"
-						}
-					},
-					"displayName": {
-						"properties": {
-							"externalName": "Display Name",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"description": {
-						"properties": {
-							"externalName": "Description",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"status": {
-						"properties": {
-							"externalName": "Status",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "statusValues"
-								}
-							]
-						}
-					},
-					"orin": {
-						"properties": {
-							"externalName": "ORIN",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"id": {
-						"properties": {
-							"externalName": "Id",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"onlineOnly": {
-						"properties": {
-							"externalName": "Online Only",
-							"groupName": "Basic",
-							"dataType": "Boolean"
-						}
-					},
-					"shortName": {
-						"properties": {
-							"externalName": "Short Name",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"channelAvailability": {
-						"properties": {
-							"externalName": "Channel Availability",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "channelAvailabilityValues"
-								}
-							]
-						}
-					},
-					"isTruckItem": {
-						"properties": {
-							"externalName": "Truck Item",
-							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
-						}
-					},
-					"warehouseClass": {
-						"properties": {
-							"externalName": "Warehouse Class",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"directShipRestrict": {
-						"properties": {
-							"externalName": "Direct Ship Restrict Code",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"disposalFee": {
-						"properties": {
-							"externalName": "Disposal Fee Code",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"willCallRestrict": {
-						"properties": {
-							"externalName": "Will Call Restrict Code",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"questionableOrderQuantity": {
-						"properties": {
-							"externalName": "Questionable Order Quantity",
-							"groupName": "Advanced",
-							"dataType": "Numeric"
-						}
-					},
-					"lotType": {
-						"properties": {
-							"externalName": "Lot Type",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "lotTypeValues"
-								}
-							]
-						}
-					},
-					"whiteGlovedDelivery": {
-						"properties": {
-							"externalName": "White Gloved Delivery",
-							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
-						}
-					},
-					"styleText": {
-						"properties": {
-							"externalName": "Style Text",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"lotSelectionType": {
-						"properties": {
-							"externalName": "Lot Selection Type",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "lotSelectionTypeValues"
-								}
-							]
-						}
-					},
-					"nonContinentalPrepaid": {
-						"properties": {
-							"externalName": "Non Continental Transportation Prepaid",
-							"groupName": "Shipping Attributes",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "nonContinentalPrepaidValues"
-								}
-							]
-						}
-					},
-					"continentalPrepaid": {
-						"properties": {
-							"externalName": "Continental Tranportation Prepaid",
-							"groupName": "Shipping Attributes",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "continentalPrepaidValues"
-								}
-							]
-						}
-					},
-					"unusualDemandQuantity": {
-						"properties": {
-							"externalName": "Unusual Demand Quantity",
-							"groupName": "Advanced",
-							"dataType": "Numeric"
-						}
-					},
-					"mailableIndicator": {
-						"properties": {
-							"externalName": "Mailable Indicator",
-							"groupName": "Advanced",
-							"dataType": "Boolean"
-						}
-					},
-					"productLength": {
-						"properties": {
-							"externalName": "Product Length",
-							"groupName": "Dimensions",
-							"dataType": "Numeric"
-						}
-					},
-					"productHeight": {
-						"properties": {
-							"externalName": "Product Height",
-							"groupName": "Dimensions",
-							"dataType": "Numeric"
-						}
-					},
-					"productWeight": {
-						"properties": {
-							"externalName": "Product Weight",
-							"groupName": "Dimensions",
-							"dataType": "Numeric"
-						}
-					},
-					"productWidth": {
-						"properties": {
-							"externalName": "Product Width",
-							"groupName": "Dimensions",
-							"dataType": "Numeric"
-						}
-					},
-					"commercialCarrierCode": {
-						"properties": {
-							"externalName": "UPS Code",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"nonCommercialCarrierCode": {
-						"properties": {
-							"externalName": "Mail Code",
-							"groupName": "Shipping Attributes",
-							"dataType": "String"
-						}
-					},
-					"sabrixCommodityCode": {
-						"properties": {
-							"externalName": "Sabrix Commodity Code",
-							"groupName": "Advanced",
-							"dataType": "String"
-						}
-					},
-					"programType": {
-						"properties": {
-							"externalName": "Program Type",
-							"groupName": "Basic",
-							"dataType": "String"
-						}
-					},
-					"specialIndicator": {
-						"properties": {
-							"externalName": "Special Indicator",
-							"groupName": "Advanced",
-							"dataType": "Boolean"
-						}
-					},
-					"parantheticAmount": {
-						"properties": {
-							"externalName": "Paranthetic Amount",
-							"groupName": "Shipping Attributes",
-							"dataType": "Numeric"
-						}
-					},
-					"willCallFactoryShipInd": {
-						"properties": {
-							"externalName": "Will Call Factory Ship",
-							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
-						}
-					},
-					"internationalShippable": {
-						"properties": {
-							"externalName": "International Shippable",
-							"groupName": "Shipping Attributes",
-							"dataType": "Boolean"
-						}
-					},
-					"manufacturer": {
-						"properties": {
-							"externalName": "Manufacturer",
-							"groupName": "Vendor",
-							"dataType": "String"
-						}
-					},
-					"countryOfOrigin": {
-						"properties": {
-							"externalName": "Country Of Origin",
-							"groupName": "Vendor",
-							"dataType": "String"
-						}
-					},
-					"sizeUnit": {
-						"properties": {
-							"externalName": "Unit of Size",
-							"groupName": "Dimensions",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "temp"
-								}
-							]
-						}
-					},
-					"weightUnit": {
-						"properties": {
-							"externalName": "Unit of Weight",
-							"groupName": "Dimensions",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "temp"
-								}
-							]
-						}
-					},
-					"isSephora": {
-						"properties": {
-							"externalName": "Sephora",
-							"groupName": "Advanced",
-							"dataType": "Boolean"
-						}
-					},
-					"recycleFeeIndicator": {
-						"properties": {
-							"externalName": "Recycle Fee",
-							"groupName": "Advanced",
-							"dataType": "Boolean"
-						}
-					},
-					"modelNumber": {
-						"properties": {
-							"externalName": "Model Number",
-							"groupName": "Vendor",
-							"dataType": "String"
-						}
-					},
-					"isFurniture": {
-						"properties": {
-							"externalName": "Furniture",
-							"groupName": "Advanced",
-							"dataType": "Boolean"
-						}
-					}
 				},
 				"contexts": [
 					{
