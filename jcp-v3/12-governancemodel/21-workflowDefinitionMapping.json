@@ -33,6 +33,46 @@
                     ]
                 } 
             }
+        },        
+        {
+            "id": "productPresentation_workflowDefinitionMapping",
+            "name": "productPresentation",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "enrichmentWorkflow_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                } 
+            }
+        },
+        {
+            "id": "ensemble_workflowDefinitionMapping",
+            "name": "ensemble",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "enrichmentWorkflow_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                } 
+            }
         }
     ]
 }

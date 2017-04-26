@@ -667,7 +667,14 @@
 					},
 					"status": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"orin": {
