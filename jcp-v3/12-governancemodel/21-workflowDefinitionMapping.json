@@ -33,7 +33,7 @@
                     ]
                 } 
             }
-        },        
+        },
         {
             "id": "productPresentation_workflowDefinitionMapping",
             "name": "productPresentation",
@@ -46,7 +46,7 @@
                             "direction": "both",
                             "relationshipType": "association",
                             "relTo": {
-                                "id": "enrichmentWorkflow_workflowDefinition",
+                                "id": "productPresentationCreateWorkflow_workflowDefinition",
                                 "type": "workflowDefinition"
                             }
                         }
@@ -66,7 +66,7 @@
                             "direction": "both",
                             "relationshipType": "association",
                             "relTo": {
-                                "id": "enrichmentWorkflow_workflowDefinition",
+                                "id": "ensembleCreateWorkflow_workflowDefinition",
                                 "type": "workflowDefinition"
                             }
                         }
