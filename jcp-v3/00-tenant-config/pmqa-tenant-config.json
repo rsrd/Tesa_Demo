@@ -13,7 +13,7 @@
 				"createdByService": "configservice",
 				"createdBy": "system",
 				"createdService": "configurationManageService",
-				"createdDate": "2017-04-22T19:54:09.804Z"
+				"createdDate": "2017-04-28T04:45:42.365+0000"
 			},
 			"data": {
 				"jsonData": {
@@ -23,6 +23,7 @@
 					"services": {
 						"entityManageService": {
 							"serviceSpecific": {
+								"isRequestOfRequestsEnabled": true,
 								"defaultDataTypes": {
 									"dataObject": "entity",
 									"eventDataObject": "event",
@@ -57,8 +58,8 @@
 												},
 												"entitymanageevent": {
 													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
+														"readIndex": "pmqaentitymanageeventreadindex",
+														"writeIndex": "pmqaentitymanageeventwriteindex"
 													}
 												},
 												"entitymanagerequestsuccessevent": {
@@ -71,12 +72,6 @@
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
 														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -163,14 +158,8 @@
 												},
 												"entitymanageevent": {
 													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitygovernevent": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
+														"readTable": "pmqaentitymanageeventwritetable",
+														"writeTable": "pmqaentitymanageeventwritetable"
 													}
 												},
 												"entitymanagerequestsuccessevent": {
@@ -284,10 +273,10 @@
 														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
-												"entitymanageevent": {
+												"entitygovernevent": {
 													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
+														"readIndex": "pmqaentitygoverneventreadindex",
+														"writeIndex": "pmqaentitygoverneventwriteindex"
 													}
 												},
 												"entitygovernrequestsuccessevent": {
@@ -300,12 +289,6 @@
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
 														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqagoverneventreadindex",
-														"writeIndex": "pmqagoverneventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -386,8 +369,8 @@
 												},
 												"entitygovernevent": {
 													"tables": {
-														"readTable": "pmqagoverneventwritetable",
-														"writeTable": "pmqagoverneventwritetable"
+														"readTable": "pmqaentitygoverneventwritetable",
+														"writeTable": "pmqaentitygoverneventwritetable"
 													}
 												},
 												"entitygovernrequestsuccessevent": {
@@ -476,12 +459,6 @@
 														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
-												"entitymanageevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
 												"entityfamilymanagerequestsuccessevent": {
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
@@ -492,12 +469,6 @@
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
 														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -577,18 +548,6 @@
 										"eventDataObject": {
 											"objectTypes": {
 												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitymanageevent": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitygovernevent": {
 													"tables": {
 														"readTable": "pmqaeventwritetable",
 														"writeTable": "pmqaeventwritetable"
@@ -680,12 +639,6 @@
 														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
-												"entitymanageevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
 												"entityfamilygovernrequestsuccessevent": {
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
@@ -696,12 +649,6 @@
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
 														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -781,18 +728,6 @@
 										"eventDataObject": {
 											"objectTypes": {
 												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitymanageevent": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitygovernevent": {
 													"tables": {
 														"readTable": "pmqaeventwritetable",
 														"writeTable": "pmqaeventwritetable"
@@ -887,10 +822,10 @@
 														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
-												"entitymanageevent": {
+												"entitymodelevent": {
 													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
+														"readIndex": "pmqaentitymanagemodeleventreadindex",
+														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
 													}
 												},
 												"entitymanagemodelevent": {
@@ -909,12 +844,6 @@
 													"indices": {
 														"readIndex": "pmqainternaleventreadindex",
 														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
 													}
 												},
 												"entityerrorevent": {
@@ -989,7 +918,13 @@
 											"objectTypes": {
 												"event": {
 													"tables": {
-														"readTable": "pmqaentitymanagemodeleventreadtable",
+														"readTable": "pmqaeventreadtable",
+														"writeTable": "pmqaeventwritetable"
+													}
+												},
+												"entitymodelevent": {
+													"tables": {
+														"readTable": "pmqaentitymanagemodeleventwritetable",
 														"writeTable": "pmqaentitymanagemodeleventwritetable"
 													}
 												},
@@ -1104,12 +1039,6 @@
 														"writeIndex": "pmqainternaleventwriteindex"
 													}
 												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
 												"entityerrorevent": {
 													"indices": {
 														"readIndex": "pmqaentityerrorreadindex",
@@ -1217,10 +1146,15 @@
 								},
 								"eventToServiceMapping": {
 									"entitygovernevent": "entityGovernService",
-									"entitymanageevent": "entityManageService"
+									"entitymanageevent": "entityManageService",
+									"externalevent": "externalEventManageService",
+									"entitymodelevent": "entityManageModelService"
 								},
 								"eventManage": {
 									"isEventsEnabled": false
+								},
+								"externalEventManage": {
+									"isExternalEventsEnabled": true
 								}
 							},
 							"platformSpecific": {
@@ -1246,6 +1180,52 @@
 													"tables": {
 														"readTable": "pmqaeventwritetable",
 														"writeTable": "pmqaeventwritetable"
+													}
+												}
+											}
+										}
+									}
+								},
+								"graphStore": {
+									"graphDatabase": "pmqagraph",
+									"traversalSource": "pmqasource"
+								}
+							}
+						},
+						"externalEventManageService": {
+							"serviceSpecific": {
+								"defaultDataTypes": {
+									"dataObject": "entity",
+									"eventDataObject": "event",
+									"requestDataObject": "request"
+								},
+								"externalEventManage": {
+									"isExternalEventsEnabled": true
+								}
+							},
+							"platformSpecific": {
+								"searchStore": {
+									"domains": {
+										"eventDataObject": {
+											"objectTypes": {
+												"externalevent": {
+													"indices": {
+														"readIndex": "pmqaexternaleventreadindex",
+														"writeIndex": "pmqaexternaleventwriteindex"
+													}
+												}
+											}
+										}
+									}
+								},
+								"objectStore": {
+									"domains": {
+										"eventDataObject": {
+											"objectTypes": {
+												"externalevent": {
+													"tables": {
+														"readIndex": "pmqaexternaleventwritetable",
+														"writeIndex": "pmqaexternaleventwritetable"
 													}
 												}
 											}
@@ -1338,6 +1318,12 @@
 														"readIndex": "pmqarequestobjectreadindex",
 														"writeIndex": "pmqarequestobjectwriteindex"
 													}
+												},
+												"requestofrequestsobject": {
+													"indices": {
+														"readIndex": "pmqarequestobjectreadindex",
+														"writeIndex": "pmqarequestobjectwriteindex"
+													}
 												}
 											}
 										}
@@ -1351,6 +1337,12 @@
 													"tables": {
 														"readTable": "pmqarequestobjectwritetable",
 														"writeTable": "pmqarequestobjectwritetable"
+													}
+												},
+												"requestofrequestsobject": {
+													"tables": {
+														"readTable": "pmqarequestofrequestsobjectwritetable",
+														"writeTable": "pmqarequestofrequestsobjectwritetable"
 													}
 												}
 											}
@@ -1371,6 +1363,7 @@
 								},
 								"notificationManage": {
 									"persistNotification": false,
+									"sendNotificationToCallbackUrl": false,
 									"notificationClients": [
 										{
 											"client": "uiclient",
@@ -1491,13 +1484,13 @@
 											"objectTypes": {
 												"configuration": {
 													"tables": {
-														"readTable": "pmqaconfigurationreadtable",
+														"readTable": "pmqaconfigurationwritetable",
 														"writeTable": "pmqaconfigurationwritetable"
 													}
 												},
 												"configObject": {
 													"tables": {
-														"readTable": "pmqaconfigurationreadtable",
+														"readTable": "pmqaconfigurationwritetable",
 														"writeTable": "pmqaconfigurationwritetable"
 													}
 												}
