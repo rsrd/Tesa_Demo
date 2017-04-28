@@ -15,7 +15,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -26,32 +26,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -155,20 +155,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -191,43 +191,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -245,31 +245,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -287,19 +287,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -318,13 +318,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -335,8 +335,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -384,7 +384,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -395,7 +395,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -407,13 +407,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -426,25 +426,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -455,7 +455,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -479,7 +479,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -497,7 +497,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -576,7 +576,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -594,6 +594,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -610,7 +666,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -621,32 +677,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -750,20 +806,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -786,43 +842,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -840,31 +896,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -882,19 +938,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -913,13 +969,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -930,8 +986,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -979,7 +1035,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -990,7 +1046,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -1002,13 +1058,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -1021,25 +1077,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -1050,7 +1106,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -1074,7 +1130,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -1092,7 +1148,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -1171,7 +1227,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -1189,6 +1245,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -1221,7 +1333,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -1232,32 +1344,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -1361,20 +1473,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -1397,43 +1509,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -1451,31 +1563,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -1493,19 +1605,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -1524,13 +1636,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -1541,8 +1653,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -1590,7 +1702,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -1601,7 +1713,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -1613,13 +1725,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -1632,25 +1744,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -1661,7 +1773,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -1685,7 +1797,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -1703,7 +1815,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -1782,7 +1894,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -1800,6 +1912,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -1816,7 +1984,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -1827,32 +1995,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -1956,20 +2124,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -1992,43 +2160,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -2046,31 +2214,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -2088,19 +2256,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -2119,13 +2287,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -2136,8 +2304,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -2185,7 +2353,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -2196,7 +2364,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -2208,13 +2376,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -2227,25 +2395,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -2256,7 +2424,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -2280,7 +2448,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -2298,7 +2466,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -2377,7 +2545,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -2395,6 +2563,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -2427,7 +2651,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -2438,32 +2662,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -2567,20 +2791,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -2603,43 +2827,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -2657,31 +2881,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -2699,19 +2923,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -2730,13 +2954,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -2747,8 +2971,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -2796,7 +3020,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -2807,7 +3031,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -2819,13 +3043,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -2838,25 +3062,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -2867,7 +3091,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -2891,7 +3115,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -2909,7 +3133,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -2988,7 +3212,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -3006,6 +3230,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -3022,7 +3302,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -3033,32 +3313,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -3162,20 +3442,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -3198,43 +3478,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -3252,31 +3532,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -3294,19 +3574,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -3325,13 +3605,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -3342,8 +3622,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -3391,7 +3671,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -3402,7 +3682,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -3414,13 +3694,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -3433,25 +3713,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -3462,7 +3742,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -3486,7 +3766,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -3504,7 +3784,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -3583,7 +3863,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -3601,6 +3881,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
@@ -3617,7 +3953,7 @@
                "aperturevalue": {
                   "properties": {
                      "externalName": "Aperture Value",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "artist": {
@@ -3628,32 +3964,32 @@
                },
                "bitspersample": {
                   "properties": {
-                     "externalName": "Data Precision/Bits Per Sample",
-                     "dataType": "string"
+                     "externalName": "Bits Per Sample",
+                     "dataType": "integer"
                   }
                },
                "colorcomponents": {
                   "properties": {
                      "externalName": "Color Components",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "colorspace": {
                   "properties": {
-                     "externalName": "Color space",
+                     "externalName": "Color Space",
                      "dataType": "string"
                   }
                },
                "componentsconfiguration": {
                   "properties": {
-                     "externalName": "Components configuration",
+                     "externalName": "Components Configuration",
                      "dataType": "string"
                   }
                },
                "compressedbitsperpixel": {
                   "properties": {
-                     "externalName": "Compressed bits per pixel",
-                     "dataType": "string"
+                     "externalName": "Compressed Bits Per Pixel",
+                     "dataType": "integer"
                   }
                },
                "copyrightnotice": {
@@ -3757,20 +4093,20 @@
                },
                "datecreated": {
                   "properties": {
-                     "externalName": "Date Created",
-                     "dataType": "string"
+                     "externalName": "Create Date",
+                     "dataType": "datetime"
                   }
                },
                "datetimedigitized": {
                   "properties": {
-                     "externalName": "Date and time (digitized)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Digitized",
+                     "dataType": "datetime"
                   }
                },
                "datetimeoriginal": {
                   "properties": {
-                     "externalName": "Date and time (original)",
-                     "dataType": "string"
+                     "externalName": "Date/Time Original",
+                     "dataType": "datetime"
                   }
                },
                "description": {
@@ -3793,43 +4129,43 @@
                },
                "encodingprocess": {
                   "properties": {
-                     "externalName": "Compression/Encoding Process",
+                     "externalName": "Encoding Process",
                      "dataType": "string"
                   }
                },
                "exifimageheight": {
                   "properties": {
                      "externalName": "Exif Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifimagewidth": {
                   "properties": {
                      "externalName": "Exif Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exifmodel": {
                   "properties": {
-                     "externalName": "Model",
+                     "externalName": "exifModel",
                      "dataType": "string"
                   }
                },
                "exifpadding": {
                   "properties": {
-                     "externalName": "Padding",
+                     "externalName": "exifPadding",
                      "dataType": "string"
                   }
                },
                "exifversion": {
                   "properties": {
                      "externalName": "Exif version",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "exposurebias": {
                   "properties": {
-                     "externalName": "Exposure bias",
+                     "externalName": "exposureBias",
                      "dataType": "string"
                   }
                },
@@ -3847,31 +4183,31 @@
                },
                "fileaccessdatetime": {
                   "properties": {
-                     "externalName": "File Access DateTime",
+                     "externalName": "fileAccessDateTime",
                      "dataType": "string"
                   }
                },
                "filecreationdatetime": {
                   "properties": {
-                     "externalName": "File Creation DateTime",
+                     "externalName": "fileCreationDateTime",
                      "dataType": "string"
                   }
                },
                "filemodificationdatetime": {
                   "properties": {
-                     "externalName": "File Modification DateTime",
+                     "externalName": "fileModificationDateTime",
                      "dataType": "string"
                   }
                },
                "filepermissions": {
                   "properties": {
-                     "externalName": "File Permissions",
+                     "externalName": "filePermissions",
                      "dataType": "string"
                   }
                },
                "filesize": {
                   "properties": {
-                     "externalName": "File Size",
+                     "externalName": "fileSize",
                      "dataType": "string"
                   }
                },
@@ -3889,19 +4225,19 @@
                },
                "flashpixversion": {
                   "properties": {
-                     "externalName": "FlashPix version",
-                     "dataType": "string"
+                     "externalName": "Flashpix Version",
+                     "dataType": "integer"
                   }
                },
                "fnumber": {
                   "properties": {
-                     "externalName": "F-number",
-                     "dataType": "string"
+                     "externalName": "F Number ",
+                     "dataType": "decimal"
                   }
                },
                "focallength": {
                   "properties": {
-                     "externalName": "Focal length",
+                     "externalName": "Focal Length",
                      "dataType": "string"
                   }
                },
@@ -3920,13 +4256,13 @@
                "imageheight": {
                   "properties": {
                      "externalName": "Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "imagewidth": {
                   "properties": {
                      "externalName": "Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "intellectualgenre": {
@@ -3937,8 +4273,8 @@
                },
                "interoperabilityversion": {
                   "properties": {
-                     "externalName": "Interoperability version",
-                     "dataType": "string"
+                     "externalName": "Interoperability Version",
+                     "dataType": "integer"
                   }
                },
                "iptcadmindetailsinstructions": {
@@ -3986,7 +4322,7 @@
                "jfifversion": {
                   "properties": {
                      "externalName": "JFIF Version",
-                     "dataType": "string"
+                     "dataType": "decimal"
                   }
                },
                "jobidentifier": {
@@ -3997,7 +4333,7 @@
                },
                "keyword": {
                   "properties": {
-                     "externalName": "Keyword",
+                     "externalName": "XP Keywords",
                      "dataType": "string"
                   }
                },
@@ -4009,13 +4345,13 @@
                },
                "maxaperturevalue": {
                   "properties": {
-                     "externalName": "Max. aperture value",
-                     "dataType": "string"
+                     "externalName": "Max Aperture Value",
+                     "dataType": "decimal"
                   }
                },
                "meteringmode": {
                   "properties": {
-                     "externalName": "Metering mode",
+                     "externalName": "Metering Mode",
                      "dataType": "string"
                   }
                },
@@ -4028,25 +4364,25 @@
                "offsetschema": {
                   "properties": {
                      "externalName": "Offset Schema",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "orientation": {
                   "properties": {
-                     "externalName": "Orientation (rotation)",
+                     "externalName": "Orientation",
                      "dataType": "string"
                   }
                },
                "relatedimageheight": {
                   "properties": {
                      "externalName": "Related Image Height",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "relatedimagewidth": {
                   "properties": {
                      "externalName": "Related Image Width",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "resolutionunit": {
@@ -4057,7 +4393,7 @@
                },
                "rightsusageterms": {
                   "properties": {
-                     "externalName": "Rights Usage Terms",
+                     "externalName": "rightsUsageTerms",
                      "dataType": "string"
                   }
                },
@@ -4081,7 +4417,7 @@
                },
                "source": {
                   "properties": {
-                     "externalName": "Source",
+                     "externalName": "source",
                      "dataType": "string"
                   }
                },
@@ -4099,7 +4435,7 @@
                },
                "thumbnail": {
                   "properties": {
-                     "externalName": "Thumbnail",
+                     "externalName": "thumbnail",
                      "dataType": "string"
                   }
                },
@@ -4178,7 +4514,7 @@
                "xresolution": {
                   "properties": {
                      "externalName": "X Resolution",
-                     "dataType": "string"
+                     "dataType": "integer"
                   }
                },
                "ycbcrpositioning": {
@@ -4196,6 +4532,62 @@
                "yresolution": {
                   "properties": {
                      "externalName": "Y Resolution",
+                     "dataType": "integer"
+                  }
+               },
+               "filetypeextension": {
+                  "properties": {
+                     "externalName": "File Type Extension",
+                     "dataType": "string"
+                  }
+               },
+               "about": {
+                  "properties": {
+                     "externalName": "About",
+                     "dataType": "string"
+                  }
+               },
+               "focalplanexresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane X Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "focalplaneyresolution": {
+                  "properties": {
+                     "externalName": "Focal Plane Y Resolution",
+                     "dataType": "string"
+                  }
+               },
+               "megapixels": {
+                  "properties": {
+                     "externalName": "Megapixels",
+                     "dataType": "decimal"
+                  }
+               },
+               "ratingpercent": {
+                  "properties": {
+                     "externalName": "Rating Percent",
+                     "dataType": "decimal"
+                  }
+               },
+               "rating": {
+                  "properties": {
+                     "externalName": "Rating",
+                     "dataType": "integer"
+                  }
+               },
+               "ownershipdata": {
+                  "properties": {
+                     "externalName": "Ownership Data",
+                     "groupName": "Internal",
+                     "dataType": "string"
+                  }
+               },
+               "userlabels": {
+                  "properties": {
+                     "externalName": "User Labels",
+                     "groupName": "Internal",
                      "dataType": "string"
                   }
                }
