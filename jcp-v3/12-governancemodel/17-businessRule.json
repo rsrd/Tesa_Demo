@@ -1283,6 +1283,77 @@
           }
         }
       }
+    },
+    {
+      "id": "validateSKUidOrinIdisPopultaedforSKU_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validate SKUId OrinId is Popultaed for SKU"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Business should validate SKU ID,ORIN ID is populted before publishing it - for SKU entityType"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],AddAttributeInformation[\"SYS001\", \"\",\"orin\"]] AND IIF[ValidateEmptyAttributes[\"skuNumber\"],AddAttributeError[\"Req001\", \"\",\"skuNumber\"],AddAttributeInformation[\"SYS001\", \"\",\"skuNumber\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
