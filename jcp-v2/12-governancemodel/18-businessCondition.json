@@ -878,6 +878,102 @@
           ]
         }
       }
+    },
+    {
+      "id": "validateSKUidOrinIdisPopultaedforSKU_businessCondition",
+      "name": "Validate SKUid OrinId is Popultaed for SKU",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validate SKUid OrinId is Popultaed for SKU"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validate SKUid OrinId is Popultaed for SKU"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "FALSE"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateLOTidOrinIdisPopultaedforLOT_businessRule",
+              "relTo": {
+                "id": "validateLOTidOrinIdisPopultaedforLOT_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }
