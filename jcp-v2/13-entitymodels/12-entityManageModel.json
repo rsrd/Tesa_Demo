@@ -3518,14 +3518,15 @@
 					},
 					{
 						"context": {
-							"channel": "webCatalog",
-							"classification": "_ALL"
+                            "taxonomy": "productSetupTaxonomy",
+							"classification": "apparel"
 						},
 						"attributes": {
-							"webDiscount": {
+							"sleeveLength": {
 								"properties": {
-									"externalName": "Web Discount",
-									"dataType": "decimal"
+									"externalName": "Sleeve Length",
+									"dataType": "string",
+									"groupName": "Apparel"
 								}
 							}
 						}
