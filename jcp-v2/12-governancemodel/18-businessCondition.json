@@ -937,7 +937,7 @@
           "isSystemRule": {
             "values": [
               {
-                "value": "FALSE"
+                "value": "false"
               }
             ]
           }
@@ -947,9 +947,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "hasBusinessRules_validateLOTidOrinIdisPopultaedforLOT_businessRule",
+              "id": "hasBusinessRules_validateSKUidOrinIdisPopultaedforSKU_businessRule",
               "relTo": {
-                "id": "validateLOTidOrinIdisPopultaedforLOT_businessRule",
+                "id": "validateSKUidOrinIdisPopultaedforSKU_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
