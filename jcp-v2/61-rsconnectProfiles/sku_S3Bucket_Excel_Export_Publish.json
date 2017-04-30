@@ -8,11 +8,12 @@
     {
       "id": "sku_S3Bucket_Excel_Export_Publish",
       "name": "sku_S3Bucket_Excel_Export_Publish",
+      "version": "1.0",
       "type": "COPProfile",
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-23T00:09:08.688Z",
+        "createdDate": "2017-04-30T00:09:08.688Z",
         "createdBy": "system"
       },
       "data": {
@@ -24,11 +25,10 @@
               "list": "self"
             },
             "jsonData": {
-              "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKUPubv15",
+              "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_sku_V25",
               "name": "sku_S3Bucket_Excel_Export_Publish",
               "tenantId": "jcp",
-              "profileType": "contentOnboarding",
-              "dataInfo": "Entity",
+              "profileType": "ENTITY_EXPORT",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "false",
@@ -60,6 +60,7 @@
                 "outboundFormat": {
                   "type": "EXCEL",
                   "version": "1.1",
+                  "batchSize": 10000,
                   "settings": {
                     "encoding": "utf8"
                   },
@@ -67,18 +68,23 @@
                   "excludeFilter": []
                 },
                 "mapping": {
-                  "destination": "SAP",
-                  "allowNullValues": "true",
-                  "clearMissingAttributes": "false",
-                  "strategies": [
-                    {
-                      "caseFormat": "NONE",
-                      "removeSpecialCharacters": "false",
-                      "trimLeadingNumbers": "false",
-                      "trimTrailingNumbers": "false",
-                      "isDefault": "false"
-                    }
-                  ],
+                  "settings": {
+                    "entityType": "sku_entityManageModel",
+                    "enableDynamicMapping" : "false",
+                    "source": "rms",
+                    "allowNullValues": "true",
+                    "clearMissingAttributes": "false",
+                    "collectionSeparator": "||",
+                    "strategies": [
+                      {
+                        "caseFormat": "LOWER_CAMEL",
+                        "removeSpecialCharacters": "true",
+                        "trimLeadingNumbers": "false",
+                        "trimTrailingNumbers": "false",
+                        "isDefault": "false"
+                      }
+                    ]
+                  },
                   "fieldOverrides": [
                     {
                       "destination": "Id",

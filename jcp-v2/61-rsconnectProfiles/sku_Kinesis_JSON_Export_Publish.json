@@ -8,11 +8,12 @@
     {
       "id": "sku_Kinesis_JSON_Export_Publish",
       "name": "sku_Kinesis_JSON_Export_Publish",
+      "version": "1.0",
       "type": "COPProfile",
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-18T00:09:08.688Z",
+        "createdDate": "2017-04-30T00:09:08.688Z",
         "createdBy": "system"
       },
       "data": {
@@ -24,11 +25,10 @@
               "list": "self"
             },
             "jsonData": {
-              "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKUPubv15",
+              "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_sku_V25",
               "name": "sku_Kinesis_JSON_Export_Publish",
               "tenantId": "jcp",
-              "profileType": "contentOnboarding",
-              "dataInfo": "Entity",
+              "profileType": "ENTITY_EXPORT",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "false",
@@ -40,7 +40,7 @@
               "outboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsQAEast1Outbound",
+                  "streamName": "rs-qa-us-east1-Outbound",
                   "regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }
