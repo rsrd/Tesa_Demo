@@ -130,6 +130,18 @@
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
 				"contextsPermission": [
 					{
 						"writePermission": true,
@@ -141,22 +153,11 @@
 						"writePermission": true,
 						"readPermission": true
 					}
-				]
-			},
-			"data": {
-				"attributes": {
-				},
-				"relationships": {
-				},
-				"contexts": [
+				],
+				"contextsRelationshipsPermission": [
 					{
-						"context": {
-							"classification": "_ALL"
-						},
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
+						"writePermission": true,
+						"readPermission": true
 					}
 				]
 			}
