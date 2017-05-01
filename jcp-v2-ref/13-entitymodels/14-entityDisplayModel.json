@@ -667,7 +667,14 @@
 					},
 					"status": {
 						"properties": {
-							"displayType": "Dropdown"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.code}",
+									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+								}
+							]
 						}
 					},
 					"orin": {
@@ -1097,6 +1104,16 @@
 							"displayType": "DateTime"
 						}
 					},
+					"storeSet":{
+						"properties": {
+							"displayType": "TextBox"
+						}
+					},
+					"storeSubSet":{
+						"properties": {
+							"displayType": "TextBox"
+						}
+					},
 					"displayName": {
 						"properties": {
 							"displayType": "TextBox"
@@ -1167,7 +1184,7 @@
 								{
 									"thumbnail": "none",
 									"listTitle": "{entity.attributes.name}",
-									"listSubTitle": "{entity.name} - {entity.attributes.name}"
+									"listSubTitle": "{entity.name} - {entity.attributes.id}"
 								}
 							]
 						}
@@ -1198,38 +1215,17 @@
 					},
 					"productType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.referenceDataValue}",
-									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
-								}
-							]
+							"displayType": "referenceList"
 						}
 					},
 					"subProductType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.referenceDataValue}",
-									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
-								}
-							]
+							"displayType": "referenceList"
 						}
 					},
 					"itemType": {
 						"properties": {
-							"displayType": "referenceList",
-							"referenceEntityInfo": [
-								{
-									"thumbnail": "none",
-									"listTitle": "{entity.attributes.referenceDataValue}",
-									"listSubTitle": "{entity.name} - {entity.attributes.referenceDataValue}"
-								}
-							]
+							"displayType": "referenceList"
 						}
 					},
 					"sizeRange": {
