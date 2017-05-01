@@ -5,1685 +5,1685 @@
 		"responseObjectName": "response"
 	},
 	"configObjects": [
-		{
-			"id": "pmqa",
-			"name": "pmqa-tenant-config",
-			"type": "tenantserviceconfig",
-			"properties": {
-				"createdByService": "configservice",
-				"createdBy": "system",
-				"createdService": "configurationManageService",
-				"createdDate": "2017-04-28T04:45:42.365+0000"
-			},
-			"data": {
-				"jsonData": {
-					"tenantId": "pmqa",
-					"tenantAuthKey": "2527f502-8e88-4614-80ae-5888202af9c5",
-					"messageLocale": "en-US",
-					"services": {
-						"entityManageService": {
-							"serviceSpecific": {
-								"isRequestOfRequestsEnabled": true,
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"entityManage": {
-									"isEntityManageEventsEnabled": true,
-									"isEntityManageAttributeEventsEnabled": false,
-									"isEntityManageModelInferenceEnabled": false
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"indices": {
-														"readIndex": "pmqaentityreadindex",
-														"writeIndex": "pmqaentitywriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entitymanageevent": {
-													"indices": {
-														"readIndex": "pmqaentitymanageeventreadindex",
-														"writeIndex": "pmqaentitymanageeventwriteindex"
-													}
-												},
-												"entitymanagerequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitymanagerequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												},
-												"product": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitymanageevent": {
-													"tables": {
-														"readTable": "pmqaentitymanageeventwritetable",
-														"writeTable": "pmqaentitymanageeventwritetable"
-													}
-												},
-												"entitymanagerequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"entitymanagerequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"tables": {
-														"readTable": "pmqarequestobjectwritetable",
-														"writeTable": "pmqarequestobjectwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								},
-								"eventSubscribers": [
-									{
-										"name": "EntityManageSubscriber",
-										"description": "Riversand Data Platform entity govern connector for pmqa",
-										"active": true,
-										"filters": [
-											{
-												"filterType": "include",
-												"dataObjectType": "entitymanageevent"
-											}
-										]
-									}
-								]
-							}
-						},
-						"entityService": {
-							"serviceSpecific": {
-								"isAuthEnabled": "true"
-							}
-						},
-						"entityGovernService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"entityGovern": {
-									"isEntityGovernEventsEnabled": true,
-									"isEntityGovernAttributeEventsEnabled": false,
-									"customKeywords": {
-										"keywords": [],
-										"paths": []
-									}
-								},
-								"workflow": {
-									"resturi": "http://172.31.50.160/RS_QA_Int_WCF_pmqa",
-									"start": "/WorkflowRestService.svc/StartWorkflow",
-									"get": "/WorkflowRestService.svc/GetWorkflowDetails",
-									"resume": "/WorkflowRestService.svc/ResumeWorkflow",
-									"changeassignment": "/WorkflowRestService.svc/ChangeAssignment"
-								},
-								"export": {
-									"isExportEnabled": "true",
-									"resturi": "http://imp-exp-rest:9095/pmqa/api/entityExportService",
-									"publish": "/publish"
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"indices": {
-														"readIndex": "pmqaentitygovernreadindex",
-														"writeIndex": "pmqaentitygovernwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entitygovernevent": {
-													"indices": {
-														"readIndex": "pmqaentitygoverneventreadindex",
-														"writeIndex": "pmqaentitygoverneventwriteindex"
-													}
-												},
-												"entitygovernrequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitygovernrequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"tables": {
-														"readTable": "pmqaentitygovernwritetable",
-														"writeTable": "pmqaentitygovernwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitygovernevent": {
-													"tables": {
-														"readTable": "pmqaentitygoverneventwritetable",
-														"writeTable": "pmqaentitygoverneventwritetable"
-													}
-												},
-												"entitygovernrequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"entitygovernrequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"tables": {
-														"readTable": "pmqarequestobjectwritetable",
-														"writeTable": "pmqarequestobjectwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								},
-								"eventSubscribers": [
-									{
-										"name": "EntityGovernSubscriber",
-										"description": "Riversand Data Platform entity manage connector for pmqa",
-										"active": true,
-										"filters": [
-											{
-												"filterType": "include",
-												"dataObjectType": "entitygovernevent"
-											}
-										]
-									}
-								]
-							}
-						},
-						"entityFamilyManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"indices": {
-														"readIndex": "pmqaentityreadindex",
-														"writeIndex": "pmqaentitywriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entityfamilymanagerequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityfamilymanagerequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												},
-												"product": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entityfamilymanagerequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"entityfamilymanagerequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"tables": {
-														"readTable": "pmqarequestobjectwritetable",
-														"writeTable": "pmqarequestobjectwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								},
-								"eventSubscribers": [
-									{
-										"name": "EntityFamilyManageSubscriber",
-										"description": "Riversand Data Platform entity govern connector for pmqa",
-										"active": true,
-										"filters": [
-											{
-												"filterType": "include",
-												"dataObjectType": "entityfamilymanageevent"
-											}
-										]
-									}
-								]
-							}
-						},
-						"entityFamilyGovernService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"indices": {
-														"readIndex": "pmqaentityreadindex",
-														"writeIndex": "pmqaentitywriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entityfamilygovernrequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityfamilygovernrequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												},
-												"product": {
-													"tables": {
-														"readTable": "pmqaentitywritetable",
-														"writeTable": "pmqaentitywritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entityfamilygovernrequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"entityfamilygovernrequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"tables": {
-														"readTable": "pmqarequestobjectwritetable",
-														"writeTable": "pmqarequestobjectwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								},
-								"eventSubscribers": [
-									{
-										"name": "EntityFamilyGovernSubscriber",
-										"description": "Riversand Data Platform entity manage connector for pmqa",
-										"active": true,
-										"filters": [
-											{
-												"filterType": "include",
-												"dataObjectType": "entityfamilygovernevent"
-											}
-										]
-									}
-								]
-							}
-						},
-						"entityManageModelService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataModelDataObject": "entityModel",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"entityManageModel": {
-									"isEntityManageModelEventsEnabled": true
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataModelDataObject": {
-											"objectTypes": {
-												"entityModel": {
-													"indices": {
-														"readIndex": "pmqaentitymanagemodelreadindex",
-														"writeIndex": "pmqaentitymanagemodelwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entitymodelevent": {
-													"indices": {
-														"readIndex": "pmqaentitymanagemodeleventreadindex",
-														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
-													}
-												},
-												"entitymanagemodelevent": {
-													"indices": {
-														"readIndex": "pmqaentitymanagemodeleventreadindex",
-														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
-													}
-												},
-												"entitymanagemodelrequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitymanagemodelrequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataModelDataObject": {
-											"objectTypes": {
-												"entityModel": {
-													"tables": {
-														"readTable": "pmqaentitymanagemodelwritetable",
-														"writeTable": "pmqaentitymanagemodelwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventreadtable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"entitymodelevent": {
-													"tables": {
-														"readTable": "pmqaentitymanagemodeleventwritetable",
-														"writeTable": "pmqaentitymanagemodeleventwritetable"
-													}
-												},
-												"entitymanagemodelrequestsuccessevent": {
-													"tables": {
-														"readIndex": "pmqainternaleventwritetable",
-														"writeIndex": "pmqainternaleventwritetable"
-													}
-												},
-												"entitymanagemodelrequesterrorevent": {
-													"tables": {
-														"readIndex": "pmqainternaleventwritetable",
-														"writeIndex": "pmqainternaleventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"entityModelService": {
-							"serviceSpecific": {
-								"isAuthEnabled": true,
-								"exclusionTypeList": [
-									"entityType",
-									"domain",
-									"ruleContextMappings",
-									"businessRule",
-									"authorizationModel",
-									"businessCondition",
-									"entityValidationModel",
-									"entityDisplayModel",
-									"entityDefaultValuesModel",
-									"attributeModel",
-									"relationshipType",
-									"workflowDefinition",
-									"workflowDefinitionMapping",
-									"source",
-									"locale",
-									"role",
-									"user",
-									"list"
-								],
-								"exclusionDomainList": [
-									"thing",
-									"referenceData",
-									"party"
-								]
-							}
-						},
-						"entityGovernModelService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataModelDataObject": "entityModel",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"dataModelDataObject": {
-											"objectTypes": {
-												"entityModel": {
-													"indices": {
-														"readIndex": "pmqaentitygovernmodelreadindex",
-														"writeIndex": "pmqaentitygovernmodelwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"entitygovernmodelevent": {
-													"indices": {
-														"readIndex": "pmqaentitymanagemodeleventreadindex",
-														"writeIndex": "pmqaentitymanagemodeleventwriteindex"
-													}
-												},
-												"entitymanagerequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entitymanagerequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"entityerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityerrorreadindex",
-														"writeIndex": "pmqaentityerrorwriteindex"
-													}
-												},
-												"entityeventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"entityerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorreadindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"eventerrorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"dataobjecterrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												},
-												"errorerrorevent": {
-													"indices": {
-														"readIndex": "pmqaentityeventerrorwriteindex",
-														"writeIndex": "pmqaentityeventerrorwriteindex"
-													}
-												}
-											}
-										},
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"dataObject": {
-											"objectTypes": {
-												"entity": {
-													"tables": {
-														"readTable": "pmqaentitygovernmodelwritetable",
-														"writeTable": "pmqaentitygovernmodelwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"eventerrorevent": {
-													"tables": {
-														"readTable": "pmqaeventerrorwritetable",
-														"writeTable": "pmqaeventerrorwritetable"
-													}
-												},
-												"errorerrorevent": {
-													"tables": {
-														"readTable": "pmqaerrorerrorwritetable",
-														"writeTable": "pmqaerrorerrorwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"eventManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"eventToServiceMapping": {
-									"entitygovernevent": "entityGovernService",
-									"entitymanageevent": "entityManageService",
-									"externalevent": "externalEventManageService",
-									"entitymodelevent": "entityManageModelService"
-								},
-								"eventManage": {
-									"isEventsEnabled": false
-								},
-								"externalEventManage": {
-									"isExternalEventsEnabled": true
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"externalEventManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"externalEventManage": {
-									"isExternalEventsEnabled": true
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"externalevent": {
-													"indices": {
-														"readIndex": "pmqaexternaleventreadindex",
-														"writeIndex": "pmqaexternaleventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"externalevent": {
-													"tables": {
-														"readIndex": "pmqaexternaleventwritetable",
-														"writeIndex": "pmqaexternaleventwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"internalEventManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"internalEventManage": {
-									"isInternalEventsEnabled": true
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"internalevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"internalevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"requestManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"dataObject": "entity",
-									"eventDataObject": "event",
-									"requestDataObject": "request"
-								},
-								"requestManage": {
-									"isRequestManageEnabled": true,
-									"includeDataObject": false
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												},
-												"requestofrequestsobject": {
-													"indices": {
-														"readIndex": "pmqarequestobjectreadindex",
-														"writeIndex": "pmqarequestobjectwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"requestDataObject": {
-											"objectTypes": {
-												"request": {
-													"tables": {
-														"readTable": "pmqarequestobjectwritetable",
-														"writeTable": "pmqarequestobjectwritetable"
-													}
-												},
-												"requestofrequestsobject": {
-													"tables": {
-														"readTable": "pmqarequestofrequestsobjectwritetable",
-														"writeTable": "pmqarequestofrequestsobjectwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"notificationManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"notificationDataObject": "notificationObject",
-									"eventDataObject": "event"
-								},
-								"notificationManage": {
-									"persistNotification": false,
-									"sendNotificationToCallbackUrl": false,
-									"notificationClients": [
-										{
-											"client": "uiclient",
-											"restUri": "http://mdm-ui:5005/api/",
-											"service": "notify",
-											"action": "send"
-										}
-									]
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"notificationDataObject": {
-											"objectTypes": {
-												"notificationObject": {
-													"indices": {
-														"readIndex": "pmqanotificationreadindex",
-														"writeIndex": "pmqanotificationwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"notificationDataObject": {
-											"objectTypes": {
-												"notificationObject": {
-													"tables": {
-														"readTable": "pmqanotificationwritetable",
-														"writeTable": "pmqanotificationwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						},
-						"configurationManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"configDataObject": "configObject",
-									"eventDataObject": "event"
-								},
-								"configObjectManage": {
-									"isConfigObjectManageEventsEnabled": false
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"configDataObject": {
-											"objectTypes": {
-												"configObject": {
-													"indices": {
-														"readIndex": "pmqaconfigurationreadindex",
-														"writeIndex": "pmqaconfigurationwriteindex"
-													}
-												},
-												"configuration": {
-													"indices": {
-														"readIndex": "pmqaconfigurationreadindex",
-														"writeIndex": "pmqaconfigurationwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"configurationmanagerequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"configurationmanagerequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"configDataObject": {
-											"objectTypes": {
-												"configuration": {
-													"tables": {
-														"readTable": "pmqaconfigurationwritetable",
-														"writeTable": "pmqaconfigurationwritetable"
-													}
-												},
-												"configObject": {
-													"tables": {
-														"readTable": "pmqaconfigurationwritetable",
-														"writeTable": "pmqaconfigurationwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"configurationmanagerequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"configurationmanagerequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"graphStore": {
-									"graphDatabase": "pmqagraph",
-									"traversalSource": "pmqasource"
-								}
-							}
-						},
-						"binaryObjectManageService": {
-							"serviceSpecific": {
-								"defaultDataTypes": {
-									"binaryDataObject": "binaryObject",
-									"eventDataObject": "event"
-								},
-								"binaryObjectManage": {
-									"isbinaryObjectManageEventEnabled": true
-								}
-							},
-							"platformSpecific": {
-								"searchStore": {
-									"domains": {
-										"binaryDataObject": {
-											"objectTypes": {
-												"binaryObject": {
-													"indices": {
-														"readIndex": "pmqabinaryobjectreadindex",
-														"writeIndex": "pmqabinaryobjectwriteindex"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"binaryobjectmanageevent": {
-													"indices": {
-														"readIndex": "pmqaeventreadindex",
-														"writeIndex": "pmqaeventwriteindex"
-													}
-												},
-												"binaryobjectmanagerequestsuccessevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												},
-												"binaryobjectmanagerequesterrorevent": {
-													"indices": {
-														"readIndex": "pmqainternaleventreadindex",
-														"writeIndex": "pmqainternaleventwriteindex"
-													}
-												}
-											}
-										}
-									}
-								},
-								"objectStore": {
-									"domains": {
-										"binaryDataObject": {
-											"objectTypes": {
-												"binaryObject": {
-													"tables": {
-														"readTable": "pmqabinaryobjectwritetable",
-														"writeTable": "pmqabinaryobjectwritetable"
-													}
-												}
-											}
-										},
-										"eventDataObject": {
-											"objectTypes": {
-												"event": {
-													"tables": {
-														"readTable": "pmqaeventwritetable",
-														"writeTable": "pmqaeventwritetable"
-													}
-												},
-												"binaryobjectmanagerequestsuccessevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												},
-												"binaryobjectmanagerequesterrorevent": {
-													"tables": {
-														"readTable": "pmqainternaleventwritetable",
-														"writeTable": "pmqainternaleventwritetable"
-													}
-												}
-											}
-										}
-									}
-								},
-								"binaryObjectStore": {
-									"domains": {
-										"binaryDataObject": {
-											"objectTypes": {
-												"binaryObject": {
-													"folderPaths": {
-														"readFolderPath": "/rdp/pmqa/binaryobject",
-														"writeFolderPath": "/rdp/pmqa/binaryobject"
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						},
-						"authenticationService": {
-							"serviceSpecific": {
-								"isApiAuthEnabled": true,
-								"isOAuthEnabled": false,
-								"authenticationServer": {
-									"maxUserModelUpdateInterval": 28800,
-									"enableUserModelCreate": true
-								},
-								"saml": {
-									"entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
-									"issuer": "urn:riversand.auth0.com",
-									"allowedClockSkewMs": 300000,
-									"IdPCert": "../keys/riversand-auth0.crt",
-									"assertionLookup": {
-										"ownershipData": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
-										"tenantId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/tenantId",
-										"userId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn",
-										"userName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userName",
-										"firstName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstName",
-										"lastName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastName",
-										"userEmail": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userEmail",
-										"userRoles": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/roles"
-									}
-								},
-								"api": {
-									"clients": [
-										{
-											"clientId": "externalClient",
-											"clientAuthKey": "de8294ab-9c1c-4891-ae52-9e0458f01365"
-										},
-										{
-											"clientId": "rufClient",
-											"clientAuthKey": "3218fa37-f809-4be4-b88e-653419b20e28"
-										},
-										{
-											"clientId": "copClient",
-											"clientAuthKey": "cf117706-6222-4ef2-b145-4ab761e617ce"
-										},
-										{
-											"clientId": "governanceClient",
-											"clientAuthKey": "a6415bff-7a04-4f2e-a557-ddf8a830d498"
-										}
-									]
-								},
-								"OAuth": {
-									"_comment": "Not Supported."
-								}
-							}
-						}
-					}
-				},
-				"contexts": []
-			}
-		}
-	]
+      {
+        "id": "pmqa",
+        "name": "pmqa-tenant-config",
+        "type": "tenantserviceconfig",
+        "properties": {
+          "createdByService": "configservice",
+          "createdService": "configurationManageService",
+          "createdDate": "2017-04-30T20:12:16.827+0000",
+          "createdBy": "system"
+        },
+        "data": {
+          "jsonData": {
+            "tenantId": "pmqa",
+            "tenantAuthKey": "2527f502-8e88-4614-80ae-5888202af9c5",
+            "messageLocale": "en-US",
+            "services": {
+              "entityManageService": {
+                "serviceSpecific": {
+                  "isRequestOfRequestsEnabled": true,
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "entityManage": {
+                    "isEntityManageEventsEnabled": true,
+                    "isEntityManageAttributeEventsEnabled": false,
+                    "isEntityManageModelInferenceEnabled": false
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "indices": {
+                              "readIndex": "pmqaentityreadindex",
+                              "writeIndex": "pmqaentitywriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entitymanageevent": {
+                            "indices": {
+                              "readIndex": "pmqaentitymanageeventreadindex",
+                              "writeIndex": "pmqaentitymanageeventwriteindex"
+                            }
+                          },
+                          "entitymanagerequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entitymanagerequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          },
+                          "product": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "entitymanageevent": {
+                            "tables": {
+                              "readTable": "pmqaentitymanageeventwritetable",
+                              "writeTable": "pmqaentitymanageeventwritetable"
+                            }
+                          },
+                          "entitymanagerequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "entitymanagerequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "tables": {
+                              "readTable": "pmqarequestobjectwritetable",
+                              "writeTable": "pmqarequestobjectwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  },
+                  "eventSubscribers": [
+                    {
+                      "name": "EntityManageSubscriber",
+                      "description": "Riversand Data Platform entity govern connector for pmqa",
+                      "active": true,
+                      "filters": [
+                        {
+                          "filterType": "include",
+                          "dataObjectType": "entitymanageevent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "entityService": {
+                "serviceSpecific": {
+                  "isAuthEnabled": "true"
+                }
+              },
+              "entityGovernService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "entityGovern": {
+                    "isEntityGovernEventsEnabled": true,
+                    "isEntityGovernAttributeEventsEnabled": false,
+                    "customKeywords": {
+                      "keywords": [],
+                      "paths": []
+                    }
+                  },
+                  "workflow": {
+                    "resturi": "http://34.207.94.166/rs_wcf_qa_east_1_pmqa",
+                    "start": "/WorkflowRestService.svc/StartWorkflow",
+                    "get": "/WorkflowRestService.svc/GetWorkflowDetails",
+                    "resume": "/WorkflowRestService.svc/ResumeWorkflow",
+                    "changeassignment": "/WorkflowRestService.svc/ChangeAssignment"
+                  },
+                  "export": {
+                    "isExportEnabled": "true",
+                    "resturi": "http://imp-exp-rest:9095/api/entityExportService",
+                    "publish": "/publish"
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "indices": {
+                              "readIndex": "pmqaentitygovernreadindex",
+                              "writeIndex": "pmqaentitygovernwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entitygovernevent": {
+                            "indices": {
+                              "readIndex": "pmqaentitygoverneventreadindex",
+                              "writeIndex": "pmqaentitygoverneventwriteindex"
+                            }
+                          },
+                          "entitygovernrequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entitygovernrequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "tables": {
+                              "readTable": "pmqaentitygovernwritetable",
+                              "writeTable": "pmqaentitygovernwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "entitygovernevent": {
+                            "tables": {
+                              "readTable": "pmqaentitygoverneventwritetable",
+                              "writeTable": "pmqaentitygoverneventwritetable"
+                            }
+                          },
+                          "entitygovernrequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "entitygovernrequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "tables": {
+                              "readTable": "pmqarequestobjectwritetable",
+                              "writeTable": "pmqarequestobjectwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  },
+                  "eventSubscribers": [
+                    {
+                      "name": "EntityGovernSubscriber",
+                      "description": "Riversand Data Platform entity manage connector for pmqa",
+                      "active": true,
+                      "filters": [
+                        {
+                          "filterType": "include",
+                          "dataObjectType": "entitygovernevent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "entityFamilyManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "indices": {
+                              "readIndex": "pmqaentityreadindex",
+                              "writeIndex": "pmqaentitywriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entityfamilymanagerequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityfamilymanagerequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          },
+                          "product": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "entityfamilymanagerequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "entityfamilymanagerequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "tables": {
+                              "readTable": "pmqarequestobjectwritetable",
+                              "writeTable": "pmqarequestobjectwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  },
+                  "eventSubscribers": [
+                    {
+                      "name": "EntityFamilyManageSubscriber",
+                      "description": "Riversand Data Platform entity govern connector for pmqa",
+                      "active": true,
+                      "filters": [
+                        {
+                          "filterType": "include",
+                          "dataObjectType": "entityfamilymanageevent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "entityFamilyGovernService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "indices": {
+                              "readIndex": "pmqaentityreadindex",
+                              "writeIndex": "pmqaentitywriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entityfamilygovernrequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityfamilygovernrequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          },
+                          "product": {
+                            "tables": {
+                              "readTable": "pmqaentitywritetable",
+                              "writeTable": "pmqaentitywritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "entityfamilygovernrequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "entityfamilygovernrequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "tables": {
+                              "readTable": "pmqarequestobjectwritetable",
+                              "writeTable": "pmqarequestobjectwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  },
+                  "eventSubscribers": [
+                    {
+                      "name": "EntityFamilyGovernSubscriber",
+                      "description": "Riversand Data Platform entity manage connector for pmqa",
+                      "active": true,
+                      "filters": [
+                        {
+                          "filterType": "include",
+                          "dataObjectType": "entityfamilygovernevent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "entityManageModelService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataModelDataObject": "entityModel",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "entityManageModel": {
+                    "isEntityManageModelEventsEnabled": true
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataModelDataObject": {
+                        "objectTypes": {
+                          "entityModel": {
+                            "indices": {
+                              "readIndex": "pmqaentitymanagemodelreadindex",
+                              "writeIndex": "pmqaentitymanagemodelwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entitymodelevent": {
+                            "indices": {
+                              "readIndex": "pmqaentitymanagemodeleventreadindex",
+                              "writeIndex": "pmqaentitymanagemodeleventwriteindex"
+                            }
+                          },
+                          "entitymanagemodelevent": {
+                            "indices": {
+                              "readIndex": "pmqaentitymanagemodeleventreadindex",
+                              "writeIndex": "pmqaentitymanagemodeleventwriteindex"
+                            }
+                          },
+                          "entitymanagemodelrequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entitymanagemodelrequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataModelDataObject": {
+                        "objectTypes": {
+                          "entityModel": {
+                            "tables": {
+                              "readTable": "pmqaentitymanagemodelwritetable",
+                              "writeTable": "pmqaentitymanagemodelwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventreadtable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "entitymodelevent": {
+                            "tables": {
+                              "readTable": "pmqaentitymanagemodeleventwritetable",
+                              "writeTable": "pmqaentitymanagemodeleventwritetable"
+                            }
+                          },
+                          "entitymanagemodelrequestsuccessevent": {
+                            "tables": {
+                              "readIndex": "pmqainternaleventwritetable",
+                              "writeIndex": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "entitymanagemodelrequesterrorevent": {
+                            "tables": {
+                              "readIndex": "pmqainternaleventwritetable",
+                              "writeIndex": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "entityModelService": {
+                "serviceSpecific": {
+                  "isAuthEnabled": true,
+                  "exclusionTypeList": [
+                    "entityType",
+                    "domain",
+                    "ruleContextMappings",
+                    "businessRule",
+                    "authorizationModel",
+                    "businessCondition",
+                    "entityValidationModel",
+                    "entityDisplayModel",
+                    "entityDefaultValuesModel",
+                    "attributeModel",
+                    "relationshipType",
+                    "workflowDefinition",
+                    "workflowDefinitionMapping",
+                    "source",
+                    "locale",
+                    "role",
+                    "user",
+                    "list"
+                  ],
+                  "exclusionDomainList": [
+                    "thing",
+                    "referenceData",
+                    "party"
+                  ]
+                }
+              },
+              "entityGovernModelService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataModelDataObject": "entityModel",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "dataModelDataObject": {
+                        "objectTypes": {
+                          "entityModel": {
+                            "indices": {
+                              "readIndex": "pmqaentitygovernmodelreadindex",
+                              "writeIndex": "pmqaentitygovernmodelwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "entitygovernmodelevent": {
+                            "indices": {
+                              "readIndex": "pmqaentitymanagemodeleventreadindex",
+                              "writeIndex": "pmqaentitymanagemodeleventwriteindex"
+                            }
+                          },
+                          "entitymanagerequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entitymanagerequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "entityerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityerrorreadindex",
+                              "writeIndex": "pmqaentityerrorwriteindex"
+                            }
+                          },
+                          "entityeventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "entityerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorreadindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "eventerrorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "dataobjecterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "indices": {
+                              "readIndex": "pmqaentityeventerrorwriteindex",
+                              "writeIndex": "pmqaentityeventerrorwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "dataObject": {
+                        "objectTypes": {
+                          "entity": {
+                            "tables": {
+                              "readTable": "pmqaentitygovernmodelwritetable",
+                              "writeTable": "pmqaentitygovernmodelwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "eventerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaeventerrorwritetable",
+                              "writeTable": "pmqaeventerrorwritetable"
+                            }
+                          },
+                          "errorerrorevent": {
+                            "tables": {
+                              "readTable": "pmqaerrorerrorwritetable",
+                              "writeTable": "pmqaerrorerrorwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "eventManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "eventToServiceMapping": {
+                    "entitygovernevent": "entityGovernService",
+                    "entitymanageevent": "entityManageService",
+                    "externalevent": "externalEventManageService",
+                    "entitymodelevent": "entityManageModelService"
+                  },
+                  "eventManage": {
+                    "isEventsEnabled": false
+                  },
+                  "externalEventManage": {
+                    "isExternalEventsEnabled": true
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "externalEventManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "externalEventManage": {
+                    "isExternalEventsEnabled": true
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "externalevent": {
+                            "indices": {
+                              "readIndex": "pmqaexternaleventreadindex",
+                              "writeIndex": "pmqaexternaleventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "externalevent": {
+                            "tables": {
+                              "readIndex": "pmqaexternaleventwritetable",
+                              "writeIndex": "pmqaexternaleventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "internalEventManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "internalEventManage": {
+                    "isInternalEventsEnabled": true
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "internalevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "internalevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "requestManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "dataObject": "entity",
+                    "eventDataObject": "event",
+                    "requestDataObject": "request"
+                  },
+                  "requestManage": {
+                    "isRequestManageEnabled": true,
+                    "includeDataObject": false
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          },
+                          "requestofrequestsobject": {
+                            "indices": {
+                              "readIndex": "pmqarequestobjectreadindex",
+                              "writeIndex": "pmqarequestobjectwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "requestDataObject": {
+                        "objectTypes": {
+                          "request": {
+                            "tables": {
+                              "readTable": "pmqarequestobjectwritetable",
+                              "writeTable": "pmqarequestobjectwritetable"
+                            }
+                          },
+                          "requestofrequestsobject": {
+                            "tables": {
+                              "readTable": "pmqarequestofrequestsobjectwritetable",
+                              "writeTable": "pmqarequestofrequestsobjectwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "notificationManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "notificationDataObject": "notificationObject",
+                    "eventDataObject": "event"
+                  },
+                  "notificationManage": {
+                    "persistNotification": false,
+                    "sendNotificationToCallbackUrl": true,
+                    "notificationClients": [
+                      {
+                        "client": "uiclient",
+                        "restUri": "http://mdm-ui:5005/api/",
+                        "service": "notify",
+                        "action": "send"
+                      }
+                    ]
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "notificationDataObject": {
+                        "objectTypes": {
+                          "notificationObject": {
+                            "indices": {
+                              "readIndex": "pmqanotificationreadindex",
+                              "writeIndex": "pmqanotificationwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "notificationDataObject": {
+                        "objectTypes": {
+                          "notificationObject": {
+                            "tables": {
+                              "readTable": "pmqanotificationwritetable",
+                              "writeTable": "pmqanotificationwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "configurationManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "configDataObject": "configObject",
+                    "eventDataObject": "event"
+                  },
+                  "configObjectManage": {
+                    "isConfigObjectManageEventsEnabled": false
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "configDataObject": {
+                        "objectTypes": {
+                          "configObject": {
+                            "indices": {
+                              "readIndex": "pmqaconfigurationreadindex",
+                              "writeIndex": "pmqaconfigurationwriteindex"
+                            }
+                          },
+                          "configuration": {
+                            "indices": {
+                              "readIndex": "pmqaconfigurationreadindex",
+                              "writeIndex": "pmqaconfigurationwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "configurationmanagerequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "configurationmanagerequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "configDataObject": {
+                        "objectTypes": {
+                          "configuration": {
+                            "tables": {
+                              "readTable": "pmqaconfigurationwritetable",
+                              "writeTable": "pmqaconfigurationwritetable"
+                            }
+                          },
+                          "configObject": {
+                            "tables": {
+                              "readTable": "pmqaconfigurationwritetable",
+                              "writeTable": "pmqaconfigurationwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "configurationmanagerequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "configurationmanagerequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "graphStore": {
+                    "graphDatabase": "pmqagraph",
+                    "traversalSource": "pmqasource"
+                  }
+                }
+              },
+              "binaryObjectManageService": {
+                "serviceSpecific": {
+                  "defaultDataTypes": {
+                    "binaryDataObject": "binaryObject",
+                    "eventDataObject": "event"
+                  },
+                  "binaryObjectManage": {
+                    "isbinaryObjectManageEventEnabled": true
+                  }
+                },
+                "platformSpecific": {
+                  "searchStore": {
+                    "domains": {
+                      "binaryDataObject": {
+                        "objectTypes": {
+                          "binaryObject": {
+                            "indices": {
+                              "readIndex": "pmqabinaryobjectreadindex",
+                              "writeIndex": "pmqabinaryobjectwriteindex"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "binaryobjectmanageevent": {
+                            "indices": {
+                              "readIndex": "pmqaeventreadindex",
+                              "writeIndex": "pmqaeventwriteindex"
+                            }
+                          },
+                          "binaryobjectmanagerequestsuccessevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          },
+                          "binaryobjectmanagerequesterrorevent": {
+                            "indices": {
+                              "readIndex": "pmqainternaleventreadindex",
+                              "writeIndex": "pmqainternaleventwriteindex"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "objectStore": {
+                    "domains": {
+                      "binaryDataObject": {
+                        "objectTypes": {
+                          "binaryObject": {
+                            "tables": {
+                              "readTable": "pmqabinaryobjectwritetable",
+                              "writeTable": "pmqabinaryobjectwritetable"
+                            }
+                          }
+                        }
+                      },
+                      "eventDataObject": {
+                        "objectTypes": {
+                          "event": {
+                            "tables": {
+                              "readTable": "pmqaeventwritetable",
+                              "writeTable": "pmqaeventwritetable"
+                            }
+                          },
+                          "binaryobjectmanagerequestsuccessevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          },
+                          "binaryobjectmanagerequesterrorevent": {
+                            "tables": {
+                              "readTable": "pmqainternaleventwritetable",
+                              "writeTable": "pmqainternaleventwritetable"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "binaryObjectStore": {
+                    "domains": {
+                      "binaryDataObject": {
+                        "objectTypes": {
+                          "binaryObject": {
+                            "folderPaths": {
+                              "readFolderPath": "/rdp/pmqa/binaryobject",
+                              "writeFolderPath": "/rdp/pmqa/binaryobject"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "authenticationService": {
+                "serviceSpecific": {
+                  "isApiAuthEnabled": true,
+                  "isOAuthEnabled": false,
+                  "authenticationServer": {
+                    "maxUserModelUpdateInterval": 28800,
+                    "enableUserModelCreate": true
+                  },
+                  "saml": {
+                    "entryPoint": "https://riversand.auth0.com/samlp/PW77EctX4PkWm64HW8AHZkMZWWeod4xx",
+                    "issuer": "urn:riversand.auth0.com",
+                    "allowedClockSkewMs": 300000,
+                    "IdPCert": "../keys/riversand-auth0.crt",
+                    "assertionLookup": {
+                      "ownershipData": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/vendor",
+                      "tenantId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/tenantId",
+                      "userId": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn",
+                      "userName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userName",
+                      "firstName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstName",
+                      "lastName": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastName",
+                      "userEmail": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/userEmail",
+                      "userRoles": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/roles"
+                    }
+                  },
+                  "api": {
+                    "clients": [
+                      {
+                        "clientId": "externalClient",
+                        "clientAuthKey": "de8294ab-9c1c-4891-ae52-9e0458f01365"
+                      },
+                      {
+                        "clientId": "rufClient",
+                        "clientAuthKey": "3218fa37-f809-4be4-b88e-653419b20e28"
+                      },
+                      {
+                        "clientId": "copClient",
+                        "clientAuthKey": "cf117706-6222-4ef2-b145-4ab761e617ce"
+                      },
+                      {
+                        "clientId": "governanceClient",
+                        "clientAuthKey": "a6415bff-7a04-4f2e-a557-ddf8a830d498"
+                      }
+                    ]
+                  },
+                  "OAuth": {
+                    "_comment": "Not Supported."
+                  }
+                }
+              }
+            }
+          },
+          "contexts": []
+        }
+      }
+    ]
 }
