@@ -11,9 +11,9 @@ var toolConfig = {
 
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "jcp-v3",
-    "tenantId": "pmqa",
-    "option": "config",
+    "folderName": "jcp-v2-ref",
+    "tenantId": "jcp",
+    "option": "entitymodels",
 }
 
 // quiteLoadConfig = {
