@@ -326,7 +326,7 @@
           "definition": {
             "values": [
               {
-                "value": "var1:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];var2:=HasAttributesChanged[\"cost\"];IIF[var1, true, IIF[var2, InvokeWorkflow[\"UpdateProductWorkflow\"], true]] AND IIF[var1, true, IIF[IsEntityInWorkflow[\"newProductSetup\"] or var2, true, InitiateExport[\"temp\"]]]"
+                "value": "var1:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];var2:=HasAttributesChanged[\"cost\"];IIF[var1, true, IIF[var2, InvokeWorkflow[\"UpdateProductWorkflow\"], true]] AND IIF[var1, true, IIF[IsEntityInWorkflow[\"newProductSetup\"] or var2, true, InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"]]]"
               }
             ]
           },
