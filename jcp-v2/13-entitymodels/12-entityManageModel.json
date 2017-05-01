@@ -2084,8 +2084,22 @@
 					},
 					"itemType": {
 						"properties": {
-							"externalName": "Item Type",
+							"externalName": "RMS Item Type",
 							"groupName": "Product Hierarchy",
+							"dataType": "string"
+						}
+					},
+					"storeSet": {
+						"properties": {
+							"externalName": "Store Set",
+							"groupName": "Item Details",
+							"dataType": "string"
+						}
+					},
+					"storeSubSet": {
+						"properties": {
+							"externalName": "Store Subset",
+							"groupName": "Item Details",
 							"dataType": "string"
 						}
 					},
@@ -3213,7 +3227,7 @@
 						"properties": {
 							"externalName": "Purchase Date",
 							"groupName": "SEO",
-							"dataType": "date"
+							"dataType": "dateTime"
 						}
 					},
 					"shipPointState": {
