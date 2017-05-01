@@ -130,6 +130,18 @@
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
 				"contextsPermission": [
 					{
 						"writePermission": true,
@@ -141,24 +153,22 @@
 						"writePermission": true,
 						"readPermission": true
 					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
 				]
 			},
 			"data": {
 				"attributes": {
-				},
-				"relationships": {
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						},
+					"supplierNumberName": {
 						"properties": {
-							"writePermission": true,
-							"readPermission": true
+							"ownerPermission": true
 						}
 					}
-				]
+				}
 			}
 		}
 	]

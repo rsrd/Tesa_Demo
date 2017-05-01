@@ -25,16 +25,15 @@
               "list": "self"
             },
             "jsonData": {
-              "id": "4d05ecf6-1a9b-4d99-a89e-d2474a023c3D_jcpSKU_v3",
+              "id": "726048d5-13aa-4cc7-9275-0a0d9291f72c_v3",
               "name": "sku_Kinesis_JSON_Import_Process",
               "tenantId": "jcp",
-              "profileType": "contentOnboarding",
-              "dataInfo": "Entity",
+              "profileType": "ENTITY_IMPORT",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsQAEast1Inbound",
+                  "streamName": "rs-qa-us-east1-Inbound",
 									"regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_IAM_ROLE"
                 }

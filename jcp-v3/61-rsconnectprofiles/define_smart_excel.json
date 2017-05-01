@@ -1,0 +1,41 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+      {
+      
+      "id": "define_smart_excel",
+      "name": "define_smart_excel",
+      "version": "1.0",
+      "type": "COPProfile",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdService": "entityimportservice",
+        "createdDate": "2017-04-24T03:51:00.407Z",
+        "createdBy": "system"
+      },
+      "data": {
+        "contexts": [
+           {
+            "context": {
+              "app": "RSConnect",
+              "service": "excelImportProcessService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "4d05ecf6-1a9b-4d66-a89e-d3474a023c3c_modelV3",
+              "name": "define_smart_excel",
+              "tenantId": "jcp",
+              "profileType": "MODEL_EXPORT",              
+              "enabled": "true"
+            }
+           
+           }
+        ]
+      }
+      }
+  ]
+}

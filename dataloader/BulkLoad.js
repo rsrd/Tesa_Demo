@@ -320,8 +320,8 @@ function getSelectedFolderNames(option) {
         case "config":
             selectedFolders.push("50-config");
             break;
-        case "rsconnectProfiles":
-            selectedFolders.push("61-rsconnectProfiles");
+        case "rsconnectprofiles":
+            selectedFolders.push("61-rsconnectprofiles");
             break;
     }
 
