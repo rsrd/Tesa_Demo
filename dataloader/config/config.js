@@ -13,7 +13,7 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v3",
     "tenantId": "pmqa",
-    "option": "config",
+    "option": "entitymodels",
 }
 
 // quiteLoadConfig = {
