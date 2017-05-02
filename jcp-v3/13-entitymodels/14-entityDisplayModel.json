@@ -2211,11 +2211,18 @@
       "domain": "generic",
       "data": {
         "attributes": {
-          "skutype": {
-            "properties": {
-              "displayType": "referenceList"
-            }
-          },
+					"skutype": {
+						"properties": {
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
           "skunumber": {
             "properties": {
               "displayType": "textbox"
