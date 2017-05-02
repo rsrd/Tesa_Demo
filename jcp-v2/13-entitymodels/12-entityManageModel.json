@@ -1888,7 +1888,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "temp"
+									"refEntityType": "skuItemTypeValues"
 								}
 							]
 						}
@@ -2072,35 +2072,56 @@
 						"properties": {
 							"externalName": "Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "productType"
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
 							"externalName": "Sub Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subProductType"
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
 							"externalName": "RMS Item Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
-						}
-					},
-					"storeSet": {
-						"properties": {
-							"externalName": "Store Set",
-							"groupName": "Item Details",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "itemType"
+								}
+							]
 						}
 					},
 					"storeSubSet": {
 						"properties": {
-							"externalName": "Store Subset",
+							"externalName": "Store Sub Set",
 							"groupName": "Item Details",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "storeSubSetValues"
+								}
+							]
 						}
 					},
 					"sizeRange": {
@@ -2638,20 +2659,6 @@
 								{
 									"refRelationshipName": "hasReferenceTo",
 									"refEntityType": "specialProgramTypeValues"
-								}
-							]
-						}
-					},
-					"storeSubSet": {
-						"properties": {
-							"externalName": "Store Sub Set",
-							"groupName": "Item Details",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "storeSubSetValues"
 								}
 							]
 						}

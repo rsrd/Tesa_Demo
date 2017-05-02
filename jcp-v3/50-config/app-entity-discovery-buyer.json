@@ -77,13 +77,13 @@
 									"typesCriterion": [
 										"sku",
 										"lot",
-										"productPresentation"
+										"productpresentation"
 									],
 									"attributes": [
-										"displayName",
+										"displayname",
 										"description",
-										"creationDate",
-										"plannedOnSiteDate"
+										"creationdate",
+										"plannedonsitedate"
 									]
 								},
 								"tabular": {
@@ -100,7 +100,7 @@
 										},
 										{
 											"header": "Display Name",
-											"name": "displayName",
+											"name": "displayname",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"
@@ -113,13 +113,13 @@
 										},
 										{
 											"header": "Creation Date",
-											"name": "creationDate",
+											"name": "creationdate",
 											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Planned On-site Date",
-											"name": "plannedOnSiteDate",
+											"name": "plannedonsitedate",
 											"sortable": false,
 											"filterable": false
 										}
@@ -143,7 +143,7 @@
 									},
 									"listItems": {
 										"image": "productImageUrl",
-										"title": "displayName",
+										"title": "displayname",
 										"id": "id",
 										"fields": [
 											{
@@ -177,7 +177,7 @@
 									},
 									"tileItems": {
 										"image": "productImageUrl",
-										"title": "displayName",
+										"title": "displayname",
 										"id": "id",
 										"fields": [
 											{
@@ -208,20 +208,6 @@
 												"text": "",
 												"visible": true,
 												"tooltip": "Refresh"
-											},
-											{
-												"name": "edit",
-												"icon": "pebble-md-icons:Edit",
-												"text": "",
-												"visible": true,
-												"tooltip": "Edit"
-											},
-											{
-												"name": "addrow",
-												"icon": "pebble-sm-icons:Add",
-												"text": "",
-												"visible": true,
-												"tooltip": "Add"
 											},
 											{
 												"name": "download",
@@ -271,7 +257,7 @@
 									"id": "channel",
 									"title": "Channel",
 									"icon": "pebble-lg-icons:Master",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity",
 									"dataRequest": {
 										"params": {
@@ -301,7 +287,7 @@
 									"id": "source",
 									"title": "Source",
 									"icon": "pebble-lg-icons:Source",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -334,7 +320,7 @@
 									"id": "locale",
 									"title": "Locale",
 									"icon": "pebble-lg-icons:Language",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -801,12 +787,12 @@
 						"jsonData": {
 							"config": [
 								{
-									"name": "displayName",
+									"name": "displayname",
 									"longName": "Display Name",
 									"displayType": "textBox"
 								},
 								{
-									"name": "skuNumber",
+									"name": "skunumber",
 									"longName": "Sku Number",
 									"value": "",
 									"displayType": "textBox"
@@ -818,19 +804,19 @@
 									"displayType": "textArea"
 								},
 								{
-									"name": "creationDate",
+									"name": "creationdate",
 									"longName": "Creation Date",
 									"value": "",
 									"displayType": "dateTime"
 								},
 								{
-									"name": "startDate",
+									"name": "startdate",
 									"longName": "Start Date",
 									"value": "",
 									"displayType": "dateTime"
 								},
 								{
-									"name": "endDate",
+									"name": "enddate",
 									"longName": "End Date",
 									"value": "",
 									"displayType": "dateTime"
@@ -996,40 +982,40 @@
 													},	
 													"config-context": {
 														"attributeNames": [
-															"displayName",
-															"alsoInStore",
+															"displayname",
+															"alsoinstore",
 															"brand",
-															"brandLogo",
+															"brandlogo",
 															"channel",
-															"channelAvailability",
+															"channelavailability",
 															"description",
-															"displayAskAndAnswerSection",															
-															"factSheet",
-															"featureColor",
-															"hideDisplayIndicator",
+															"displayaskandanswersection",															
+															"factsheet",
+															"featurecolor",
+															"hidedisplayindicator",
 															"id",
-															"isCustomerFavoriteOption",
-															"isHidden",
-															"isPreOrderOption",
-															"longDescription",
-															"lotSelectionType",
-															"lotType",
-															"onlineOnly",
+															"iscustomerfavoriteoption",
+															"ishidden",
+															"ispreorderoption",
+															"longdescription",
+															"lotselectiontype",
+															"lottype",
+															"onlineonly",
 															"orin",
-															"programType",
-															"ratingReviewId",
-															"retailSkuNumber",
-															"shortName",
-															"skuGrouping",
-															"skuItemType",
-															"skuNumber",
-															"skuQuantity",
-															"skuType",
+															"programtype",
+															"ratingreviewid",
+															"retailskunumber",
+															"shortname",
+															"skugrouping",
+															"skuitemtype",
+															"skunumber",
+															"skuquantity",
+															"skutype",
 															"source",
 															"status",
 															"stone",
-															"styleText",
-															"upcBarcode",
+															"styletext",
+															"upcbarcode",
 															"warranty"
 														]
 													}
@@ -1107,67 +1093,15 @@
 												"name": "moreActions",
 												"icon": "pebble-md-icons:ToolbarMore",
 												"text": "",
-												"buttons": [{
-														"name": "add",
-														"icon": "pebble-sm-icons:Add",
-														"text": "",
-														"visible": true,
-														"tooltip": "Add"
-													},
-													{
-														"name": "delete",
-														"icon": "pebble-md-icons:Delete",
-														"text": "",
-														"visible": true,
-														"tooltip": "Delete"
-													},
-													{
-														"name": "cut",
-														"icon": "pebble-md-icons:Cut",
-														"text": "",
-														"visible": true,
-														"tooltip": "Cut"
-													}
+												"buttons": [
 												]
 											}
 										]
 									}]
                             	},
 								"rock-entity-tofix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "missingvideos",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								}
 							}

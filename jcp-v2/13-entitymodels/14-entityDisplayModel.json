@@ -1057,9 +1057,9 @@
 							"displayType": "referenceList",
 							"referenceEntityInfo": [
 								{
-									"thumbnail": "/images/favicon.ico",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
 								}
 							]
 						}
@@ -1183,8 +1183,8 @@
 							"referenceEntityInfo": [
 								{
 									"thumbnail": "none",
-									"listTitle": "{entity.attributes.code}",
-									"listSubTitle": "{entity.name} - {entity.attributes.value}"
+									"listTitle": "{entity.attributes.brandname}",
+									"listSubTitle": ""
 								}
 							]
 						}
@@ -1215,17 +1215,38 @@
 					},
 					"productType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
-							"displayType": "TextBox"
+							"displayType": "referenceList",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
 						}
 					},
 					"sizeRange": {
