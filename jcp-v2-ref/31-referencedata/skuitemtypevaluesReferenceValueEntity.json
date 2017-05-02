@@ -6,24 +6,31 @@
     },
     "entities": [
         {
-            "id": "Factory Ship",
-            "name": "Factory Ship",
+            "id": "Regular_skuItemTypeValues",
+            "name": "Regular",
             "type": "skuItemTypeValues",
+            "domain": "referenceData",
+            "properties": {
+                "source": "internal",
+                "modifiedByService": "entityservice",
+                "modifiedBy": "initLoad",
+                "modifiedDate": "6/1/2017  00:00:00 AM"
+            },
             "data": {
                 "attributes": {
-                    "code": {
+                    "referencedatacode": {
                         "values": [
                             {
-                                "value": "Factory Ship",
+                                "value": "RGLR",
                                 "source": "internal",
                                 "locale": "en-US"
                             }
                         ]
                     },
-                    "value": {
+                    "referencedatavalue": {
                         "values": [
                             {
-                                "value": "FSHP",
+                                "value": "Regular",
                                 "source": "internal",
                                 "locale": "en-US"
                             }
@@ -33,24 +40,31 @@
             }
         },
         {
-            "id": "Regular",
-            "name": "Regular",
+            "id": "FactoryShip_skuItemTypeValues",
+            "name": "Factory Ship",
             "type": "skuItemTypeValues",
+            "domain": "referenceData",
+            "properties": {
+                "source": "internal",
+                "modifiedByService": "entityservice",
+                "modifiedBy": "initLoad",
+                "modifiedDate": "6/1/2017  00:00:00 AM"
+            },
             "data": {
                 "attributes": {
-                    "code": {
+                    "referencedatacode": {
                         "values": [
                             {
-                                "value": "Regular",
+                                "value": "FSHP",
                                 "source": "internal",
                                 "locale": "en-US"
                             }
                         ]
                     },
-                    "value": {
+                    "referencedatavalue": {
                         "values": [
                             {
-                                "value": "RGLR",
+                                "value": "Factory Ship",
                                 "source": "internal",
                                 "locale": "en-US"
                             }

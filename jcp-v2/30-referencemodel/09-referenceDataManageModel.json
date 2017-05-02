@@ -50,57 +50,52 @@
 			}
 		},
 		{
-			"id": "brand_entityManageModel",
-			"name": "brand",
-			"type": "entityManageModel",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"isEntityIdentifier": "Yes",
-							"externalName": "Brand Id",
-							"groupName": "Basic",
-							"dataType": "string"
-						}
-					},
-					"name": {
-						"properties": {
-							"externalName": "Brand Name",
-							"groupName": "Basic",
-							"dataType": "string"
-						}
-					},
-					"brandType": {
-						"properties": {
-							"externalName": "Brand Type",
-							"groupName": "Basic",
-							"dataType": "string"
-						}
-					},
-					"brandLogo": {
-						"properties": {
-							"externalName": "Logo URL",
-							"groupName": "Basic",
-							"dataType": "string"
-						}
-					},
-					"parentBrand": {
-						"properties": {
-							"externalName": "Parent Brand",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "brand"
-								}
-							]
-						}
-					}
-				}
-			}
-		},
+            "id": "brand_entityManageModel",
+            "name": "brand",
+            "type": "entityManageModel",
+            "domain": "referenceData",
+            "data": {
+                "attributes": {
+                    "identifier": {
+                        "externalName": "identifier",
+                        "groupName": "Basic",
+                        "isEntityIdentifier": false,
+                        "dataType": "string"
+                    },
+                    "brandname": {
+                        "externalName": "brandName",
+                        "groupName": "Basic",
+                        "isEntityIdentifier": true,
+                        "dataType": "string"
+                    },
+                    "brandtype": {
+                        "externalName": "brandType",
+                        "groupName": "Basic",
+                        "isEntityIdentifier": false,
+                        "dataType": "string"
+                    },
+                    "brandlogo": {
+                        "externalName": "brandLogo",
+                        "groupName": "Basic",
+                        "isEntityIdentifier": false,
+                        "dataType": "string"
+                    },
+                    "parentbrand": {
+                        "externalName": "parentBrand",
+                        "groupName": "Basic",
+                        "isEntityIdentifier": false,
+                        "dataType": "string",
+                        "isReferenceType": true,
+                        "referenceEntityInfo": [
+                            {
+                                "refRelationshipName": "hasReferenceTo",
+                                "refEntityType": "brand"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
 		{
 			"id": "Class_entityManageModel",
 			"name": "Class",
@@ -527,8 +522,8 @@
 			}
 		},
 		{
-			"id": "ProductType_entityManageModel",
-			"name": "ProductType",
+			"id": "productType_entityManageModel",
+			"name": "productType",
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
@@ -544,8 +539,8 @@
 			}
 		},
 		{
-			"id": "SubProductType_entityManageModel",
-			"name": "SubProductType",
+			"id": "subProductType_entityManageModel",
+			"name": "subProductType",
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
@@ -561,8 +556,8 @@
 			}
 		},
 		{
-			"id": "ItemType_entityManageModel",
-			"name": "ItemType",
+			"id": "itemType_entityManageModel",
+			"name": "itemType",
 			"type": "entityManageModel",
 			"data": {
 				"attributes": {
