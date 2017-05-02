@@ -75,7 +75,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_businessReviewValidationrule_businessRule",
               "relTo": {
-                "id": "businessReview_BusinessRule",
+                "id": "businessReviewValidationrule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -171,7 +171,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_buyerReviewValidationrule_businessRule",
               "relTo": {
-                "id": "buyerReview_BusinessRule",
+                "id": "buyerReviewValidationrule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -267,7 +267,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_vendorSKUaddninfosubmissionValidationRule_businessRule",
               "relTo": {
-                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -363,7 +363,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -532,7 +532,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -659,7 +659,7 @@
               "operation": "association",
               "id": "hasBusinessRules_validateEnityPresentInCreateWorkflowValidationRule_businessRule",
               "relTo": {
-                "id": "validateEnityPresentInCreateWorkflow_BusinessRule",
+                "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -687,7 +687,7 @@
     },
     {
       "id": "requiredAttributesArePopulatedUpdateEntityExit_businessCondition",
-      "name": "Required attributes are populated",
+      "name": "Required attributes are populated for Update Entity exit",
       "type": "businessCondition",
       "data": {
         "attributes": {
@@ -755,7 +755,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUCreate_BusinessRule",
+                "id": "vendorSKUCreateValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -780,7 +780,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUSubmission_BusinessRule",
+                "id": "vendorSKUSubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -805,7 +805,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "vendorSKUaddninfosubmission_BusinessRule",
+                "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -830,7 +830,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "buyerReview_BusinessRule",
+                "id": "buyerReviewValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -855,7 +855,7 @@
               "direction": "both",
               "relationshipType": "association",
               "relTo": {
-                "id": "businessReview_BusinessRule",
+                "id": "businessReviewValidationRule_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
