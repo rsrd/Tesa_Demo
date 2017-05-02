@@ -177,26 +177,7 @@
                     "jsonData": {
                         "config": {
                             "title": "Create",
-                            "actions": [{
-                                    "name": "createSKU",
-                                    "icon": "pebble-xl-icons:Product",
-                                    "text": "SKU",
-                                    "visible": true,
-                                    "dataRoute": "entity-create",
-                                    "contextData": {
-                                        "itemContext": {
-                                            "type": "sku"
-                                        },
-                                        "valueContext": {
-                                            "source": "internal",
-                                            "locale": "en-US"
-                                        },
-                                        "context": {
-                                            "channel": "webCatalog",
-                                            "classification": "_ALL"
-                                        }
-                                    }
-                                },
+                            "actions": [
                                 {
                                     "name": "createKit",
                                     "icon": "pebble-xl-icons:Kit",
@@ -241,15 +222,12 @@
                                     "dataRoute": "upload-model",
                                     "contextData": {
                                         "itemContext": {
-                                            "type": "sku"
                                         },
                                         "valueContext": {
                                             "source": "internal",
                                             "locale": "en-US"
                                         },
                                         "context": {
-                                            "channel": "productMaster",
-                                            "classification": "_ALL"
                                         }
                                     }
                                 }
