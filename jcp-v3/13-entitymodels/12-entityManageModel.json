@@ -4985,6 +4985,27 @@
                             "dataType": "string"
                         }
                     },
+                    "imagename": {
+                        "properties": {
+                            "externalName": "Image Name",
+                            "groupName": "Images & Media",
+                            "dataType": "string"
+                        }
+                    },
+                    "grossprofit": {
+                        "properties": {
+                            "externalName": "Gross Profit (%)",
+                            "groupName": "Item Details",
+                            "dataType": "decimal"
+                        }
+                    },
+                    "estimatedupsshippingcharge": {
+                        "properties": {
+                            "externalName": "Estimated UPS Shipping Charge",
+                            "groupName": "Pricing (USD)",
+                            "dataType": "decimal"
+                        }
+                    },
                     "inspirationalcopy": {
                         "properties": {
                             "externalName": "Inpirational Copy",
