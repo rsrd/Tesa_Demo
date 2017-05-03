@@ -13,7 +13,7 @@
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-30T03:51:00.407Z",
+        "createdDate": "2017-04-19T03:51:00.407Z",
         "createdBy": "system"
       },
       "data": {
@@ -28,7 +28,8 @@
               "id": "4d05ecf6-1a9b-4d66-c89e-d2974a023c3c_jcpSKU_v3",
               "name": "sku_S3Bucket_Excel_Import_Process",
               "tenantId": "jcp",
-              "profileType": "ENTITY_IMPORT",
+              "profileType": "contentOnboarding",
+              "dataInfo": "Entity",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "true",
@@ -70,22 +71,19 @@
                   "excludeFilter": []
                 },
                 "mapping": {
-                  "settings": {
-                    "entityType": "sku_entityManageModel",
-                    "source": "rms",
-                    "allowNullValues": "true",
-                    "clearMissingAttributes": "false",
-                    "collectionSeparator": "||",
-                    "strategies": [
-                      {
-                        "caseFormat": "LOWER",
-                        "removeSpecialCharacters": "true",
-                        "trimLeadingNumbers": "false",
-                        "trimTrailingNumbers": "false",
-                        "isDefault": "false"
-                      }
-                    ]
-                  },
+                  "source": "rms",
+                  "allowNullValues": "true",
+                  "clearMissingAttributes": "false",
+                  "collectionSeparator": "||",
+                  "strategies": [
+                    {
+                      "caseFormat": "lower",
+                      "removeSpecialCharacters": "true",
+                      "trimLeadingNumbers": "false",
+                      "trimTrailingNumbers": "false",
+                      "isDefault": "false"
+                    }
+                  ],
                   "fieldOverrides": [
                     {
                       "source": "Id",

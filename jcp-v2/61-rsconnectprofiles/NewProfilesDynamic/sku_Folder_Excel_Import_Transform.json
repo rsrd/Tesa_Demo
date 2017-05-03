@@ -1,0 +1,100 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sku_Folder_Excel_Import_Transform",
+      "name": "sku_Folder_Excel_Import_Transform",
+      "version": "1.0",
+      "type": "COPProfile",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdService": "configurationManageService",
+        "createdDate": "2017-04-29T03:51:00.407Z",
+        "createdBy": "system"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "excelImportTransformService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "bf1c2578-8df5-4481-8cee-14075ff2af36_V2",
+              "name": "sku_Folder_Excel_Import_Transform",
+              "tenantId": "jcp",
+              "profileType": "contentOnboarding",
+              "dataInfo": "Entity",
+              "enabled": "true",
+              "inboundChannel": {
+                "isDataPersistent": "true",
+                "folderConnector": {
+                  "sourceFolder": "/apps/imports/sku",
+                  "pattern": "*.xlsx"
+                }
+              },
+              "outboundChannel": {
+                "isDataPersistent": "false",
+                "rdpConnector": {
+                  "type": "RSJSON",
+                  "version": "1.1"
+                }
+              },
+              "transform": {
+                "inboundFormat": {
+                  "type": "EXCEL",
+                  "version": "1.1",
+                  "settings": {
+                    "encoding": "utf8",
+                    "isFirstRowHeader": "true"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                },
+                "outboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 0,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                },
+                "mapping": {
+                  "settings": {
+                    "source": "SAP",
+                    "allowNullValues": "false",
+                    "clearMissingAttributes": "false",
+                    "collectionSeparator": "||",
+                    "strategies": [
+                      {
+                        "caseFormat": "LOWER_CAMEL",
+                        "removeSpecialCharacters": "false",
+                        "trimLeadingNumbers": "false",
+                        "trimTrailingNumbers": "false",
+                        "isDefault": "false"
+                      }
+                    ]
+                  },
+                  "fieldOverrides": [
+                    {
+                      "source": "@value(sku)",
+                      "destination": "type",
+                      "required": "true"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

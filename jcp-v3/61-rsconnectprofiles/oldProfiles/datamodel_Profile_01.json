@@ -6,14 +6,14 @@
   },
   "configObjects": [
     {
-      "id": "sku_Kinesis_JSON_Import_Process",
-      "name": "sku_Kinesis_JSON_Import_Process",
+      "id": "datamodel_Profile_01",
+      "name": "datamodel_Profile_01",
       "version": "1.0",
       "type": "COPProfile",
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-30T03:51:00.407Z",
+        "createdDate": "2017-04-24T03:51:00.407Z",
         "createdBy": "system"
       },
       "data": {
@@ -21,21 +21,21 @@
           {
             "context": {
               "app": "RSConnect",
-              "service": "excelImportProcessService",
+              "service": "datamodelLoadService",
               "list": "self"
             },
             "jsonData": {
-              "id": "4d05ecf6-1a9b-4d99-a89e-d2474a023c3D_sku_V25",
-              "name": "sku_Kinesis_JSON_Import_Process",
+              "id": "4d05ecf6-1a9b-4d66-a89e-e2474a023c3c_jcpdatamodel_v15",
+              "name": "datamodel_Profile_01",
               "tenantId": "jcp",
-              "profileType": "ENTITY_IMPORT",
+              "profileType": "contentOnboarding",
+              "dataInfo": "dataModel",
               "enabled": "true",
               "inboundChannel": {
-                "isDataPersistent": "false",
-                "kinesisStreamConnector": {
-                  "streamName": "rsconnect-perf-us-west-2-import",
-                  "regionName": "us-west-2",
-                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
+                "isDataPersistent": "true",
+                "folderConnector": {
+                  "sourceFolder": "/apps/imports/model",
+                  "pattern": "*.xlsx"
                 }
               },
               "outboundChannel": {
@@ -47,11 +47,11 @@
               },
               "transform": {
                 "inboundFormat": {
-                  "type": "RSJSON",
+                  "type": "EXCEL",
                   "version": "1.1",
-                  "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8"
+                    "encoding": "utf8",
+                    "isFirstRowHeader": "true"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -59,7 +59,7 @@
                 "outboundFormat": {
                   "type": "RSJSON",
                   "version": "1.1",
-                  "batchSize": 1,
+                  "batchSize": 0,
                   "settings": {
                     "encoding": "utf8"
                   },

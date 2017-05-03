@@ -51,10 +51,7 @@
                   "type": "EXCEL",
                   "version": "1.1",
                   "settings": {
-                    "encoding": "utf8",
-                    "headerRowNumber": 1,
-                    "sheetName": "Sheet1",
-                    "supportsCollection": "true"
+                    "encoding": "utf8"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -76,7 +73,6 @@
                     "source": "rms",
                     "allowNullValues": "true",
                     "clearMissingAttributes": "false",
-                    "collectionSeparator": "||",
                     "strategies": [
                       {
                         "caseFormat": "LOWER_CAMEL",
