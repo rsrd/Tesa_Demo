@@ -72,7 +72,6 @@
                 "mapping": {
                   "settings": {
                     "entityType": "sku_entityManageModel",
-                    "enableDynamicMapping" : "false",
                     "source": "rms",
                     "allowNullValues": "true",
                     "clearMissingAttributes": "false",
@@ -80,7 +79,7 @@
                     "strategies": [
                       {
                         "caseFormat": "LOWER",
-                        "removeSpecialCharacters": "false",
+                        "removeSpecialCharacters": "true",
                         "trimLeadingNumbers": "false",
                         "trimTrailingNumbers": "false",
                         "isDefault": "false"

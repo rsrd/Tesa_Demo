@@ -1,0 +1,77 @@
+{
+  "metaInfo": {
+    "dataIndex": "config",
+    "collectionName": "configObjects",
+    "responseObjectName": "response"
+  },
+  "configObjects": [
+    {
+      "id": "sku_Kinesis_JSON_Export_Publish",
+      "name": "sku_Kinesis_JSON_Export_Publish",
+      "version": "1.0",
+      "type": "COPProfile",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdService": "configurationManageService",
+        "createdDate": "2017-04-24T00:09:08.688Z",
+        "createdBy": "system"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "entityExportPublishService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_jcpSKUPubv3",
+              "name": "sku_Kinesis_JSON_Export_Publish",
+              "tenantId": "jcp",
+              "profileType": "contentOnboarding",
+              "dataInfo": "Entity",
+              "enabled": "true",
+              "inboundChannel": {
+                "isDataPersistent": "false",
+                "rdpConnector": {
+                  "type": "RSJSON",
+                  "version": "1.1"
+                }
+              },
+              "outboundChannel": {
+                "isDataPersistent": "false",
+                "kinesisStreamConnector": {
+                  "streamName": "rsQAEast1Outbound",
+                  "regionName": "us-east-1",
+                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                }
+              },
+              "transform": {
+                "inboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                },
+                "outboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

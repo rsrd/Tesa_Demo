@@ -40,10 +40,10 @@
               "outboundChannel": {
                 "isDataPersistent": "true",
                 "s3ObjectConnector": {
-                  "regionName": "us-east-1",
-                  "bucketName": "rs-apps-rcoa-exports",
+                  "regionName": "us-west-2",
+                  "bucketName": "rsconnect-perf-us-west-2-export",
                   "key": "xlsx",
-                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
               "transform": {
@@ -60,7 +60,6 @@
                 "outboundFormat": {
                   "type": "EXCEL",
                   "version": "1.1",
-                  "batchSize": 10000,
                   "settings": {
                     "encoding": "utf8"
                   },

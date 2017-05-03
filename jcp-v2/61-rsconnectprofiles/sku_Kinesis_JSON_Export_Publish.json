@@ -21,7 +21,7 @@
           {
             "context": {
               "app": "RSConnect",
-              "service": "jsonExportPublishService",
+              "service": "entityExportPublishService",
               "list": "self"
             },
             "jsonData": {
@@ -40,9 +40,9 @@
               "outboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rs-qa-us-east1-Outbound",
-                  "regionName": "us-east-1",
-                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                  "streamName": "rsconnect-perf-us-west-2-export",
+                  "regionName": "us-west-2",
+                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
               "transform": {
