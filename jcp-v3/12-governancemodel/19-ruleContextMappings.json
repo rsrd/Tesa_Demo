@@ -97,7 +97,7 @@
                 "executionMode": {
                   "values": [
                     {
-                      "value": "any"
+                     "value": "any"
                     }
                   ]
                 },
@@ -281,7 +281,7 @@
               "relationshipType": "association",
               "id": "hasBusinessRules_estimatedUPSShippingChargecalculation_businessRule",
               "relTo": {
-                "id": "estimatedUPSShippingChargecalculation_businessRul",
+                "id": "estimatedUPSShippingChargecalculation_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -559,7 +559,7 @@
                     }
                   ]
                 },
-                "enabled": {
+               "enabled": {
                   "values": [
                     {
                       "value": "true"
@@ -645,9 +645,9 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+              "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulated_businessCondition",
               "relTo": {
-                "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+                "id": "additionalVendorRequiredAttributesArePopulated_businessCondition",
                 "type": "businessCondition"
               },
               "attributes": {
@@ -836,7 +836,7 @@
                           "value": "true"
                         }
                       ]
-                    },
+                   },
                     "executionMode": {
                       "values": [
                         {
@@ -1011,9 +1011,9 @@
                 {
                   "direction": "both",
                   "relationshipType": "association",
-                  "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+                  "id": "hasBusinessConditions_additionalVendorRequiredAttributesArePopulated_businessCondition",
                   "relTo": {
-                    "id": "additionalVendorRequiredAttributesArePopulatedValidationrule_businessCondition",
+                    "id": "additionalVendorRequiredAttributesArePopulated_businessCondition",
                     "type": "businessCondition"
                   },
                   "attributes": {
