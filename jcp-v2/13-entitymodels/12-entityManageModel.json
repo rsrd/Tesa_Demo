@@ -1888,7 +1888,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "temp"
+									"refEntityType": "skuItemTypeValues"
 								}
 							]
 						}
@@ -2072,21 +2072,56 @@
 						"properties": {
 							"externalName": "Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "productType"
+								}
+							]
 						}
 					},
 					"subProductType": {
 						"properties": {
 							"externalName": "Sub Product Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subProductType"
+								}
+							]
 						}
 					},
 					"itemType": {
 						"properties": {
-							"externalName": "Item Type",
+							"externalName": "RMS Item Type",
 							"groupName": "Product Hierarchy",
-							"dataType": "string"
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "itemType"
+								}
+							]
+						}
+					},
+					"storeSubSet": {
+						"properties": {
+							"externalName": "Store Sub Set",
+							"groupName": "Item Details",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "storeSubSetValues"
+								}
+							]
 						}
 					},
 					"sizeRange": {
@@ -2624,20 +2659,6 @@
 								{
 									"refRelationshipName": "hasReferenceTo",
 									"refEntityType": "specialProgramTypeValues"
-								}
-							]
-						}
-					},
-					"storeSubSet": {
-						"properties": {
-							"externalName": "Store Sub Set",
-							"groupName": "Item Details",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "storeSubSetValues"
 								}
 							]
 						}
@@ -3213,7 +3234,7 @@
 						"properties": {
 							"externalName": "Purchase Date",
 							"groupName": "SEO",
-							"dataType": "date"
+							"dataType": "dateTime"
 						}
 					},
 					"shipPointState": {
