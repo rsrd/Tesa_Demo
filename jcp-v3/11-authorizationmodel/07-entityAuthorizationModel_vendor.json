@@ -28,14 +28,17 @@
 			"name": "referenceData_authorizationModel_vendor",
 			"type": "authorizationModel",
 			"properties": {
+				"writePermission": true,
 				"readPermission": true,
 				"attributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				]
@@ -49,13 +52,11 @@
 				"readPermission": true,
 				"attributesPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				]
@@ -67,28 +68,73 @@
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
+				"writePermission": true,
 				"attributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsAttributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsRelationshipsPermission": [
 					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "thing_authorizationModel_vendor",
+			"name": "thing_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				]
@@ -112,30 +158,41 @@
 						"writePermission": true,
 						"readPermission": true
 					}
-				]
-			},
-			"data": {
-				"contexts": [
+				],
+				"contextsPermission": [
 					{
-						"context": {
-							"taxonomy": "productsetuptaxonomy"
-						},
-						"properties": {
-							"readPermission": true,
-							"writePermission": true,
-							"attributesPermission": [
-								{
-									"writePermission": true,
-									"readPermission": true
-								}
-							],
-							"relationshipsPermission": [
-								{
-									"writePermission": true,
-									"readPermission": true
-								}
-							]
-						}
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "channel_authorizationModel_vendor",
+			"name": "channel_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
 					}
 				]
 			}
@@ -147,6 +204,135 @@
 			"properties": {
 				"readPermission": true,
 				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "lot_authorizationModel_vendor",
+			"name": "lot_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "ensemble_authorizationModel_vendor",
+			"name": "ensemble_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "productpresentation_authorizationModel_vendor",
+			"name": "productpresentation_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
 				"contextsPermission": [
 					{
 						"writePermission": true,
@@ -168,412 +354,13 @@
 			},
 			"data": {
 				"attributes": {
-					"brand": {
+					"supplierNumberName": {
 						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"identifier": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"producttype": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"imagedescription": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"image": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"printpattern": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"itemtype": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"countryofmanufacture": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"colorfamily": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"subproducttype": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"vpn": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"colordesc": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"color": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"cost": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"producttitle": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"length": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"productdescription": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"width": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"height": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"ecommcolor": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"ecommcolorabbr": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"storecolorabbr": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"purchasedate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"seodescription": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"searchkeywordsnavigation": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"size": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"startdate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"enddate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"creationdate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"plannedonsitedate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"warrantyflag": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"warrantydata": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"warranty": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"assembledheight": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"assembledlength": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"assembledwidth": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"assembledweight": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"skutype": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"skunumber": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"retailskunumber": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"hidedisplayindicator": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"skuquantity": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"upcbarcode": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"displayname": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"description": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"status": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"skugrouping": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"grossweight": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"directshiprestrict": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"disposalfee": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"willcallrestrict": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"parantheticamount": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"hazmatflag": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"shippointstate": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"shippointcity": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"msrp": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"prop65indicator": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"suppliernumbername": {
-						"properties": {
-							"readPermission": true,
-							"writePermission": true,
 							"ownerPermission": true
 						}
-					},
-					"suppliersitenumber": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"imagename": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					},
-					"orin": {
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
 					}
-				},
-				"relationships": {
-					"kitskutosku": [
-						{
-							"properties": {
-								"writePermission": true,
-								"readPermission": true
-							}
-						}
-					],
-					"skutoimage": [
-						{
-							"properties": {
-								"writePermission": true,
-								"readPermission": true
-							}
-						}
-					],
-					"ischildof": [
-						{
-							"properties": {
-								"writePermission": true,
-								"readPermission": true
-							}
-						}
-					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
-						},
-						"properties": {
-							"writePermission": true,
-							"readPermission": true
-						}
-					}
-				]
+				}
 			}
-		}		
+		}
 	]
 }
