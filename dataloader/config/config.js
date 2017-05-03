@@ -1,5 +1,5 @@
 var toolConfig = {
-    "webUrl": "http://perf-us-west-2.riversand-dataplatform.com:8085",
+    "webUrl": "http://qa-us-east-1.riversand-dataplatform.com:8085",
     "elasticUrl": "http://192.168.0.85:9200",
     "delay": 10,
     "delayBetweenModelObjects": 1000
@@ -12,8 +12,8 @@ var toolConfig = {
 var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v3",
-    "tenantId": "pmqa",
-    "option": "entitymodels",
+    "tenantId": "jcp",
+    "option": "config",
 }
 
 // quiteLoadConfig = {
