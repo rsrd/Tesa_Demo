@@ -906,7 +906,7 @@
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Belongs to Lot",
+											"title": "Parent Lot",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -945,14 +945,6 @@
 														"filterable": false,
 														"editType": "",
 														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Display Name",
-														"name": "displayname",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": true
 													}
 												]
 											},
@@ -1034,36 +1026,12 @@
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
 													{
-														"header": "Link Description",
-														"name": "linkdescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
 														"header": "Status",
 														"name": "status",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
 														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Enabled",
-														"name": "enabled",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Display Name",
-														"name": "displayname",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": true
 													}
 												]
 											},
