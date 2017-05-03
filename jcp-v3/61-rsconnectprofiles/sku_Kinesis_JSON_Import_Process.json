@@ -13,7 +13,7 @@
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-24T03:51:00.407Z",
+        "createdDate": "2017-05-2T03:51:00.407Z",
         "createdBy": "system"
       },
       "data": {
@@ -33,9 +33,9 @@
               "inboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rs-qa-us-east1-Inbound",
-									"regionName": "us-east-1",
-                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                  "streamName": "rsconnect-pmqa-perf-us-west-2-import",
+                  "regionName": "us-west-2",
+                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
               "outboundChannel": {
