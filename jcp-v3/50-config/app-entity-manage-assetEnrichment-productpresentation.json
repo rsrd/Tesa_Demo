@@ -39,8 +39,8 @@
                                 "rock-titlebar",
                                 "variant-create",
 									"rock-variants-create-grid",
-                                    "extension-manage-productSetupTaxonomy",
-                                    "extension-manage-merchandisingTaxonomy"
+                                    "extension-manage-productsetuptaxonomy",
+                                    "extension-manage-merchandisingtaxonomy"
                             ]
                         }
                     }
@@ -312,13 +312,13 @@
                                             "visible": true,
                                                   "buttons": [
                                                     {
-                                                      "name": "merchandisingTaxonomy",
+                                                      "name": "merchandisingtaxonomy",
                                                       "text": "Merchandising Taxonomy",
                                                       "visible": true,
                                                       "tooltip": "Merchandising Taxonomy"
                                                     },
                                                     {
-                                                      "name": "productSetupTaxonomy",
+                                                      "name": "productsetuptaxonomy",
                                                       "text": "Product Setup Taxonomy",
                                                       "visible": true,
                                                       "tooltip": "Product Setup Taxonomy"
@@ -1607,8 +1607,8 @@
         }
 		},
       {
-        "id": "app-entity-manage_extension-manage-productSetupTaxonomy_productpresentation_assetEnrichment_uiConfig",
-        "name": "app-entity-manage_extension-manage-productSetupTaxonomy",
+        "id": "app-entity-manage_extension-manage-productsetuptaxonomy_productpresentation_assetEnrichment_uiConfig",
+        "name": "app-entity-manage_extension-manage-productsetuptaxonomy",
         "version": "1.0",
         "type": "uiConfig",
         "properties": {
@@ -1621,14 +1621,14 @@
               "context": {
                 "app": "app-entity-manage",
                 "service": "_ALL",
-                "component": "extension-manage-productSetupTaxonomy",
+                "component": "extension-manage-productsetuptaxonomy",
                 "subComponent": "_ALL",
                 "entityType": "productpresentation",
                 "role": "assetEnrichment"
               },
               "jsonData": {
                 "config": {
-                  "name": "extension-manage-productSetupTaxonomy",
+                  "name": "extension-manage-productsetuptaxonomy",
                   "label": "Manage Extensions",
                   "steps": [
                     {
@@ -1638,7 +1638,7 @@
                         "name": "rock-extension-manage",
                         "path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
                         "properties": {
-                          "taxonomy":"productSetupTaxonomy"
+                          "taxonomy":"productsetuptaxonomy"
 		}
                       },
                       "nextEvent": "onSave",
@@ -1652,8 +1652,8 @@
         }
       },
       {
-        "id": "app-entity-manage_extension-manage-merchandisingTaxonomy_productpresentation_assetEnrichment_uiConfig",
-        "name": "app-entity-manage_extension-manage-merchandisingTaxonomy",
+        "id": "app-entity-manage_extension-manage-merchandisingtaxonomy_productpresentation_assetEnrichment_uiConfig",
+        "name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
         "version": "1.0",
         "type": "uiConfig",
         "properties": {
@@ -1666,14 +1666,14 @@
               "context": {
                 "app": "app-entity-manage",
                 "service": "_ALL",
-                "component": "extension-manage-merchandisingTaxonomy",
+                "component": "extension-manage-merchandisingtaxonomy",
                 "subComponent": "_ALL",
                 "entityType": "productpresentation",
                 "role": "assetEnrichment"
               },
               "jsonData": {
                 "config": {
-                  "name": "extension-manage-merchandisingTaxonomy",
+                  "name": "extension-manage-merchandisingtaxonomy",
                   "label": "Manage Extensions",
                   "steps": [
                     {
@@ -1683,7 +1683,7 @@
                         "name": "rock-extension-manage",
                         "path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
                         "properties": {
-                          "taxonomy":"merchandisingTaxonomy"
+                          "taxonomy":"merchandisingtaxonomy"
                         }
                       },
                       "nextEvent": "onSave",
