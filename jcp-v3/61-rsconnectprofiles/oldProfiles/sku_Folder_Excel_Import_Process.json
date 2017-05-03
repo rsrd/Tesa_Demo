@@ -6,14 +6,14 @@
   },
   "configObjects": [
     {
-      "id": "sku_S3Bucket_Excel_Import_Process",
-      "name": "sku_S3Bucket_Excel_Import_Process",
+      "id": "sku_Folder_Excel_Import_Process",
+      "name": "sku_Folder_Excel_Import_Process",
       "version": "1.0",
       "type": "COPProfile",
       "properties": {
         "createdByService": "entityservice",
         "createdService": "configurationManageService",
-        "createdDate": "2017-04-30T03:51:00.407Z",
+        "createdDate": "2017-04-24T03:51:00.407Z",
         "createdBy": "system"
       },
       "data": {
@@ -25,25 +25,29 @@
               "list": "self"
             },
             "jsonData": {
-              "id": "4d05ecf6-1a9b-4d66-c89e-d2974a023c3c_jcpSKU_v3",
-              "name": "sku_S3Bucket_Excel_Import_Process",
+              "id": "4d05ecf6-1a9b-4d66-a89e-d3474a023c3c_jcpSKU_v3",
+              "name": "sku_Folder_Excel_Import_Process",
               "tenantId": "jcp",
-              "profileType": "ENTITY_IMPORT",
+              "profileType": "contentOnboarding",
+              "dataInfo": "Entity",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "true",
-                "s3BucketConnector": {
-                  "fileType": "xlsx",
-                  "bucketName": "rs-apps-rcoa-imports",
-                  "regionName": "us-east-1",
-                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                "folderConnector": {
+                  "sourceFolder": "/apps/imports/sku",
+                  "pattern": "*.xlsx"
                 }
               },
               "outboundChannel": {
                 "isDataPersistent": "false",
                 "rdpConnector": {
                   "type": "RSJSON",
-                  "version": "1.1"
+                  "version": "1.1",
+				  "settings":{
+					  "includeParent": "true",
+					  "includeChildren": "false",
+					  "includeSiblings": "false"
+				  }
                 }
               },
               "transform": {
@@ -70,22 +74,19 @@
                   "excludeFilter": []
                 },
                 "mapping": {
-                  "settings": {
-                    "entityType": "sku_entityManageModel",
-                    "source": "rms",
-                    "allowNullValues": "true",
-                    "clearMissingAttributes": "false",
-                    "collectionSeparator": "||",
-                    "strategies": [
-                      {
-                        "caseFormat": "LOWER",
-                        "removeSpecialCharacters": "true",
-                        "trimLeadingNumbers": "false",
-                        "trimTrailingNumbers": "false",
-                        "isDefault": "false"
-                      }
-                    ]
-                  },
+                  "source": "rms",
+                  "allowNullValues": "false",
+                  "clearMissingAttributes": "false",
+                  "collectionSeparator": "||",
+                  "strategies": [
+                    {
+                      "caseFormat": "lower",
+                      "removeSpecialCharacters": "true",
+                      "trimLeadingNumbers": "false",
+                      "trimTrailingNumbers": "false",
+                      "isDefault": "false"
+                    }
+                  ],
                   "fieldOverrides": [
                     {
                       "source": "Id",
@@ -96,7 +97,7 @@
                       "destination": "entity.type"
                     },
                     {
-                      "source": "@value(internal-source)",
+                      "source": "@value(internal)",
                       "destination": "entity.properties.source"
                     },
                     {
@@ -328,8 +329,8 @@
                       "destination": "entity.data.attributes.size.values[0].value"
                     },
                     {
-                      "source": "COLOR DESC",
-                      "destination": "entity.data.attributes.colordesc.values[0].value"
+                      "source": "Orin",
+                      "destination": "entity.data.attributes.orin.values[0].value"
                     },
                     {
                       "source": "eComm Color",

@@ -6,15 +6,13 @@
   },
   "entityModels": [
     {
-      "id": "businessReview_BusinessRule",
+      "id": "businessReviewValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Business Review"
               }
             ]
@@ -22,8 +20,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "This is the step where Business will approve the SKU(s) submitted by the vendor and approved by the Buyer."
               }
             ]
@@ -31,7 +27,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -39,7 +34,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -47,7 +41,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"suppliersitenumber\"],AddAttributeError[\"Req001\", \"\", \"suppliersitenumber\"],false] AND IIF[ValidateEmptyAttributes[\"suppliermfrshippoint\"],AddAttributeError[\"Req001\", \"\", \"suppliermfrshippoint\"],false] AND IIF[ValidateEmptyAttributes[\"ecommsuppliershippoint\"],AddAttributeError[\"Req001\", \"\", \"ecommsuppliershippoint\"],false] AND IIF[ValidateEmptyAttributes[\"supplierchannel\"],AddAttributeError[\"Req001\", \"\", \"supplierchannel\"],false] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\", \"plannedonsitedate\"],false]"
               }
             ]
@@ -55,7 +48,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -63,7 +55,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -71,7 +62,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -79,7 +69,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -88,24 +77,20 @@
       }
     },
     {
-      "id": "autopopulateitemtype_BusinessRule",
+      "id": "autopopulateitemtype_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
-                "value": "Business Review"
+                "value": "auto populate itemtype"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "This is the step where Business will approve the SKU(s) submitted by the vendor and approved by the Buyer."
               }
             ]
@@ -113,7 +98,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -121,7 +105,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -129,7 +112,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "varItemType:=GetContextPath[\"classification\"];varFirstIndex:=indexof[varItemType, \"/\"];varProductType:=IIF[varFirstIndex > 0, substring[varItemType, 0, varFirstIndex], \"\"];varRemainingString:=IIF[varFirstIndex > 0,  substring[varItemType, varFirstIndex + 1, len[varItemType] - varFirstIndex - 1], \"\"];varIndexInRemaining:=indexof[varRemainingString, \"/\"];varSecondIndex:=IIF[varFirstIndex > 0 AND varIndexInRemaining > 0, indexof[varRemainingString, \"/\"], len[varRemainingString]];varSubProductType:=IIF[varFirstIndex > 0 AND varSecondIndex > 0, substring[varRemainingString, 0, varSecondIndex], \"\"];IIF[varFirstIndex > 0 AND varSecondIndex > 0, SetAttributeValueInContext[\"self:self\",\"producttype\",varProductType] AND SetAttributeValueInContext[\"self:self\",\"subproducttype\",varSubProductType] AND SetAttributeValueInContext[\"self:self\",\"itemtype\",varItemType], true]"
               }
             ]
@@ -137,7 +119,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -145,7 +126,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -153,7 +133,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -161,7 +140,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -170,15 +148,13 @@
       }
     },
     {
-      "id": "buyerReview_BusinessRule",
+      "id": "buyerReviewValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Buyer Review"
               }
             ]
@@ -186,8 +162,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "This is the step where the Buyer will approve the SKU (s) submitted by the vendor."
               }
             ]
@@ -195,7 +169,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -211,15 +184,13 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"entity\"],AddAttributeError[\"Req001\", \"\",\"entity\"],false] AND IIF[ValidateEmptyAttributes[\"subdivision\"],AddAttributeError[\"Req001\", \"\",\"subdivision\"],false] AND IIF[ValidateEmptyAttributes[\"class\"],AddAttributeError[\"Req001\", \"\",\"class\"],false]AND IIF[ValidateEmptyAttributes[\"retail\"],AddAttributeError[\"Req001\", \"\",\"retail\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"entity\"],AddAttributeError[\"Req001\", \"\",\"entity\"],false] AND IIF[ValidateEmptyAttributes[\"subdivision\"],AddAttributeError[\"Req001\", \"\",\"subdivision\"],false] AND IIF[ValidateEmptyAttributes[\"class\"],AddAttributeError[\"Req001\", \"\",\"class\"],false]AND IIF[ValidateEmptyAttributes[\"retail\"],AddAttributeError[\"Req001\", \"\",\"retail\"],false]AND IIF[ValidateEmptyAttributes[\"grossprofit\"],AddAttributeError[\"Req001\", \"\",\"grossprofit\"],false] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],false] AND IIF[ValidateEmptyAttributes[\"estimatedupsshippingcharge\"],AddAttributeError[\"Req001\", \"\",\"estimatedupsshippingcharge\"],false] AND IIF[ValidateEmptyAttributes[\"initialmarkup\"],AddAttributeError[\"Req001\", \"\",\"initialmarkup\"],false]"
               }
             ]
           },
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -227,7 +198,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -235,7 +205,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -243,7 +212,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -252,15 +220,13 @@
       }
     },
     {
-      "id": "copyConcatenation_BusinessRule",
+      "id": "copyConcatenation_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Copy Concatenation"
               }
             ]
@@ -268,8 +234,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Copy Concatenation"
               }
             ]
@@ -277,7 +241,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -285,7 +248,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -293,15 +255,13 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"productdescription\"],true,SetAttributeValue[\"inspirationalCopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
+                "value": "IIF[ValidateEmptyAttributes[\"productdescription\"],true,SetAttributeValue[\"inspirationalcopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
               }
             ]
           },
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -309,7 +269,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -317,7 +276,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -325,7 +283,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -334,15 +291,13 @@
       }
     },
     {
-      "id": "costChange_BusinessRule",
+      "id": "costChange_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Invoke Update Workflow"
               }
             ]
@@ -350,8 +305,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Invoke Update Workflow based on the Cost Attribute"
               }
             ]
@@ -359,7 +312,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -367,7 +319,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -375,7 +326,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "var1:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];var2:=HasAttributesChanged[\"cost\"];IIF[var1, true, IIF[var2, InvokeWorkflow[\"UpdateProductWorkflow\"], true]] AND IIF[var1, true, IIF[IsEntityInWorkflow[\"newProductSetup\"] or var2, true, InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"]]]"
               }
             ]
@@ -383,7 +333,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -391,7 +340,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -399,7 +347,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -407,7 +354,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -416,15 +362,13 @@
       }
     },
     {
-      "id": "defaultvaluesforPP_BusinessRule",
+      "id": "defaultvaluesforPP_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Default values for PP"
               }
             ]
@@ -432,8 +376,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Default values for PP"
               }
             ]
@@ -441,7 +383,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -449,7 +390,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -457,15 +397,13 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle:\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle:\",Concat[GetAttributevalue[\"fullproductname\"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productname\"]]"
+                "value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname \"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productName\"]]"
               }
             ]
           },
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -473,7 +411,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -481,7 +418,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -489,7 +425,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -498,15 +433,13 @@
       }
     },
     {
-      "id": "estimatedUPSShippingChargecalculation_BusinessRule",
+      "id": "estimatedUPSShippingChargecalculation_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Estimated UPS Shipping Charge calculation"
               }
             ]
@@ -514,8 +447,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Estimated UPS Shipping Charge calculation"
               }
             ]
@@ -523,7 +454,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -531,7 +461,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -546,7 +475,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -554,7 +482,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -562,7 +489,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -570,7 +496,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -579,15 +504,13 @@
       }
     },
     {
-      "id": "grossProfitcalculations_BusinessRule",
+      "id": "grossProfitcalculations_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Gross Profit calculations"
               }
             ]
@@ -595,8 +518,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Gross Profit calculations"
               }
             ]
@@ -604,7 +525,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -612,7 +532,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -620,7 +539,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\",\"estimatedshippingexpense\",\"parantheticamount\"],true,SetAttributeValue[\"grossprofit\",((GetAttributeValue[\"retail\"]-(GetAttributeValue[\"cost\"] + GetAttributeValue[\"estimatedshippingexpense\"] - GetAttributeValue[\"parantheticamount\"]))/GetAttributeValue[\"retail\"])*100]]"
               }
             ]
@@ -628,7 +546,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -636,7 +553,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -644,7 +560,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -652,7 +567,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -661,15 +575,13 @@
       }
     },
     {
-      "id": "Imagevalidations_BusinessRule",
+      "id": "Imagevalidations_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Image validations"
               }
             ]
@@ -677,8 +589,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Image validations"
               }
             ]
@@ -686,7 +596,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -694,7 +603,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -702,15 +610,13 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
-                "value": "reqimageFormat:=\".jpg\";reqcolorProfile:=\"sRGB embedded\";reqimageResolution:=300;reqimageResolutionUM:=\"dpi(pixels/inch)\";reqimageWidthMin:= 1000;reqimageWidthMax:=3000;reqimageHeightMin:= 1000;reqimageHeightMax:=3000;reqimageWidthUM:=\"pixels\";reqimageHeightUM:=\"pixels\";IIF[GetAttributeValue[\"imageformat\"]<>reqimageFormat,AddAttributeError[\"RST001\", \"\", \"imageformat\"],false]AND IIF[GetAttributeValue[\"colorprofile\"]<>reqcolorProfile,AddAttributeError[\"RST002\", \"\", \"colorprofile\"],false]AND IIF[GetAttributeValue[\"imageresolution\"]<>reqimageResolution,AddAttributeError[\"RST003\", \"\", \"imageresolution\"],false] AND IIF[GetAttributeValue[\"imageresolutionum\"]<> reqimageResolutionUM,AddAttributeError[\"RST004\", \"\", \"imageresolutionum\"],false]AND IIF[GetAttributeValue[\"imagewidth\"]<reqimageWidthMin or GetAttributeValue[\"imagewidth\"]>reqimageWidthMax,AddAttributeError[\"RST005\", \"\", \"imageWidth\"],false] AND IIF[GetAttributeValue[\"imageheight\"]<reqimageHeightMin or GetAttributeValue[\"imageheight\"]>reqimageHeightMax,AddAttributeError[\"RST006\", \"\", \"imageheight\"],false] AND IIF[GetAttributeValue[\"imagewidthum\"]<>reqimageWidthUM,AddAttributeError[\"RST007\", \"\", \"imagewidthum\"],false] AND IIF[GetAttributeValue[\"imageheightum\"]<>reqimageHeightUM,AddAttributeError[\"RST008\", \"\", \"imageheightum\"],false]"
+                "value": "areqImageFormat:=\".jpg\";reqColorProfile:=\"sRGB embedded\";reqImageResolution:=300;reqImageResolution:=\"dpi(pixels/inch)\";reqImageWidthMin:= 1000;reqImageWidthMax:=3000;reqImageHeightMin:= 1000;reqImageHeightMax:=3000;reqImageWidthUM:=\"pixels\";reqImageHeightUM:=\"pixels\";IIF[GetAttributeValue[\"imageformat\"]<>reqImageFormat,AddAttributeError[\"RST001\", \"\", \"imageformat\"],false]AND IIF[GetAttributeValue[\"colorprofile\"]<>reqColorProfile,AddAttributeError[\"RST002\", \"\", \"colorprofile\"],false]AND IIF[GetAttributeValue[\"imageresolution\"]<>reqImageResolution,AddAttributeError[\"RST003\", \"\", \"imageresolution\"],false] AND IIF[GetAttributeValue[\"imageresolutionum\"]<> reqImageResolution,AddAttributeError[\"RST004\", \"\", \"imageresolutionum\"],false]AND IIF[GetAttributeValue[\"imagewidth\"]<reqImageWidthMin or GetAttributeValue[\"imagewidth\"]>reqImageWidthMax,AddAttributeError[\"RST005\", \"\", \"imagewidth\"],false] AND IIF[GetAttributeValue[\"imageheight\"]<reqImageHeightMin or GetAttributeValue[\"imageheight\"]>reqImageHeightMax,AddAttributeError[\"RST006\", \"\", \"imageheight\"],false] AND IIF[GetAttributeValue[\"imagewidthum\"]<>reqImageWidthUM,AddAttributeError[\"RST007\", \"\", \"imagewidthum\"],false] AND IIF[GetAttributeValue[\"imageheightum\"]<>reqImageHeightUM,AddAttributeError[\"RST008\", \"\", \"imageheightum\"],false]"
               }
             ]
           },
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -718,7 +624,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -726,7 +631,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -734,7 +638,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -743,15 +646,13 @@
       }
     },
     {
-      "id": "imucalculations_BusinessRule",
+      "id": "imucalculations_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "IMU calculations"
               }
             ]
@@ -759,8 +660,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "IMU and Gross Profit calculations"
               }
             ]
@@ -768,7 +667,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -776,7 +674,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -784,7 +681,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\"],true,SetAttributeValue[\"initialmarkup\",((GetAttributeValue[\"retail\"]-GetAttributeValue[\"cost\"])/GetAttributeValue[\"retail\"])*100]]"
               }
             ]
@@ -792,7 +688,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -800,7 +695,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -808,7 +702,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -816,7 +709,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -832,8 +724,6 @@
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Invoke Workflow"
               }
             ]
@@ -841,8 +731,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Invokes the change assignment workflow when the data object is not in change assignment workflow"
               }
             ]
@@ -850,7 +738,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -858,7 +745,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -866,7 +752,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,InvokeWorkflow[\"newProductSetup\"]]"
               }
             ]
@@ -874,7 +759,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -882,7 +766,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -890,7 +773,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -898,7 +780,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -907,15 +788,13 @@
       }
     },
     {
-      "id": "plannedOnSiteDate_BusinessRule",
+      "id": "plannedOnSiteDate_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Calculate Planned On Site Date"
               }
             ]
@@ -923,8 +802,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Planned onsite date (This should be system calculated based on SKU submission date from the vendor  + 3 days)"
               }
             ]
@@ -932,7 +809,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -940,7 +816,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -948,7 +823,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "varDate:= DATEADD[DATE[YEAR[],MONTH[],DAY[]],\"d\",3]; SetAttributeValue[\"plannedonsitedate\",varDate]"
               }
             ]
@@ -956,7 +830,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -964,7 +837,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -972,7 +844,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -980,7 +851,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -989,15 +859,13 @@
       }
     },
     {
-      "id": "swatchImagevalidations_BusinessRule",
+      "id": "swatchImagevalidations_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Swatch Image validations"
               }
             ]
@@ -1005,8 +873,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Swatch Image validations"
               }
             ]
@@ -1014,7 +880,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -1022,7 +887,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1030,7 +894,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "reqImageFormat:=\".jpg\";reqColorProfile:=\"sRGB embedded\";reqImageResolution:=300;reqImageResolutionUM:=\"dpi(pixels/inch)\";reqImageWidth:=200;reqImageHeight:=200;reqImageWidthUM:=\"pixels\";reqImageHeightUM:=\"pixels\";IIF[GetAttributeValue[\"imageformat\"]<>reqImageFormat,AddAttributeError[\"InvalidImage\", \"\", \"imageformat\"],false] AND IIF[GetAttributeValue[\"colorprofile\"]<>reqColorProfile,AddAttributeError[\"InvalidImage\", \"\", \"colorprofile\"],false] AND IIF[GetAttributeValue[\"imageresolution\"]<>reqImageResolution,AddAttributeError[\"InvalidImage\", \"\", \"imageresolution\"],false] AND IIF[GetAttributeValue[\"imageresolutionum\"]<> reqImageResolutionUM,AddAttributeError[\"InvalidImage\", \"\", \"imageresolutionum\"],false] AND IIF[GetAttributeValue[\"imagewidth\"]<>reqImageWidth,AddAttributeError[\"InvalidImage\", \"\", \"imagewidth\"],false] AND IIF[GetAttributeValue[\"imageheight\"]<>reqImageHeight,AddAttributeError[\"InvalidImage\", \"\", \"imageheight\"],false] AND IIF[GetAttributeValue[\"imagewidthum\"]<>reqImageWidthUM,AddAttributeError[\"InvalidImage\", \"\", \"imagewidthum\"],false] AND IIF[GetAttributeValue[\"imageheightum\"]<>reqImageHeightUM,AddAttributeError[\"InvalidImage\", \"\", \"imageheightum\"],false]"
               }
             ]
@@ -1038,7 +901,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1046,7 +908,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1054,7 +915,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1062,7 +922,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1071,15 +930,13 @@
       }
     },
     {
-      "id": "validateEnityPresentInCreateWorkflow_BusinessRule",
+      "id": "validateEnityPresentInCreateWorkflowValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Syncing of create and update workflow"
               }
             ]
@@ -1087,8 +944,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Syncing of create and update workflow"
               }
             ]
@@ -1096,7 +951,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -1104,7 +958,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1112,7 +965,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],false]"
               }
             ]
@@ -1120,7 +972,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1128,7 +979,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1136,7 +986,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1144,7 +993,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1153,15 +1001,13 @@
       }
     },
     {
-      "id": "vendorSKUaddninfosubmission_BusinessRule",
+      "id": "vendorSKUaddninfosubmissionValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Vendor SKU addn. info submission"
               }
             ]
@@ -1169,8 +1015,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Buyer requests additional information from the Vendor by clicking “Request for Info” button on the UI. Buyer has provided the information to be requested as Comments"
               }
             ]
@@ -1178,7 +1022,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -1186,7 +1029,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1194,15 +1036,13 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
-                "value": "IIF[ValidateEmptyAttributes[\"image\"],AddAttributeError[\"Req001\", \"\",\"image\"],false] AND IIF[ValidateEmptyAttributes[\"imagename\"],AddAttributeError[\"Req001\",\"\",\"imagename\"],false] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],false] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],false] AND  IIF[ValidateEmptyAttributes[\"itemType\"],AddAttributeError[\"Req001\", \"\",\"itemType\"],false] AND IIF[ValidateEmptyAttributes[\"colorFamily\"],AddAttributeError[\"Req001\", \"\",\"colorFamily\"],false] AND IIF[ValidateEmptyAttributes[\"printPattern\"],AddAttributeError[\"Req001\", \"\",\"printPattern\"],false] AND IIF[ValidateEmptyAttributes[\"countryOfManufacture\"],AddAttributeError[\"Req001\", \"\",\"countryOfManufacture\"],false] AND IIF[ValidateEmptyAttributes[\"assembledLength\"],AddAttributeError[\"Req001\", \"\",\"assembledLength\"],false] AND IIF[ValidateEmptyAttributes[\"assembledWidth\"],AddAttributeError[\"Req001\", \"\",\"assembledWidth\"],false] AND IIF[ValidateEmptyAttributes[\"assembledHeight\"],AddAttributeError[\"Req001\", \"\",\"assembledHeight\"],false]AND IIF[ValidateEmptyAttributes[\"assembledWeight\"],AddAttributeError[\"Req001\", \"\",\"assembledWeight\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointCity\"],AddAttributeError[\"Req001\", \"\",\"shipPointCity\"],false] AND IIF[ValidateEmptyAttributes[\"shipPointState\"],AddAttributeError[\"Req001\", \"\",\"shipPointState\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"image\"],AddAttributeError[\"Req001\", \"\",\"image\"],false] AND IIF[ValidateEmptyAttributes[\"imagename\"],AddAttributeError[\"Req001\",\"\",\"imagename\"],false] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],false] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],false] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],false] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],false] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],false] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],false] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],false] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],false] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],false]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],false] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],false] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],false]"
               }
             ]
           },
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1210,7 +1050,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1218,7 +1057,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1226,7 +1064,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1235,15 +1072,13 @@
       }
     },
     {
-      "id": "vendorSKUCreate_BusinessRule",
+      "id": "vendorSKUCreateValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Vendor SKU create"
               }
             ]
@@ -1251,8 +1086,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Once the SKU is created the vendor has the option to update attributes that the vendor has permission to."
               }
             ]
@@ -1260,7 +1093,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -1268,7 +1100,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1276,7 +1107,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\", \"itemtype\"],false] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],false] AND IIF[ValidateEmptyAttributes[\"colordesc\"],AddAttributeError[\"Req001\", \"\", \"colordesc\"],false] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"Req001\", \"\", \"size\"],false] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],false] AND IIF[ValidateEmptyAttributes[\"producttitle\"],AddAttributeError[\"Req001\", \"\", \"producttitle\"],false]"
               }
             ]
@@ -1284,7 +1114,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1292,7 +1121,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1300,7 +1128,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1308,7 +1135,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1317,15 +1143,13 @@
       }
     },
     {
-      "id": "vendorSKUSubmission_BusinessRule",
+      "id": "vendorSKUSubmissionValidationRule_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Vendor SKU submission"
               }
             ]
@@ -1333,8 +1157,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Action Performed: Vendor has filled the required attributes for SKU submission.Next Workflow Step: Review Assortment"
               }
             ]
@@ -1342,7 +1164,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "validation"
               }
             ]
@@ -1350,7 +1171,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1358,7 +1178,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"],AddAttributeError[\"Req001\", \"\",\"suppliernumbername\"],false] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],false] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"Req001\", \"\",\"width\"],false] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],false] AND IIF[ValidateEmptyAttributes[\"grossweight\"],AddAttributeError[\"Req001\", \"\",\"grossweight\"],false] AND IIF[ValidateEmptyAttributes[\"prop65indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65indicator\"],false] AND IIF[ValidateEmptyAttributes[\"hazmatflag\"],AddAttributeError[\"Req001\", \"\",\"hazmatflag\"],false] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],false] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],false] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],false]"
               }
             ]
@@ -1366,7 +1185,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1374,7 +1192,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1382,7 +1199,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1390,7 +1206,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1399,15 +1214,13 @@
       }
     },
     {
-      "id": "classtosubclass_BusinessRule",
+      "id": "classtosubclass_businessRule",
       "type": "businessRule",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "Business Review"
               }
             ]
@@ -1415,8 +1228,6 @@
           "description": {
             "values": [
               {
-                "locale": "locales/locale/en-US",
-                "user": "users/system",
                 "value": "This is the step where Business will approve the SKU(s) submitted by the vendor and approved by the Buyer."
               }
             ]
@@ -1424,7 +1235,6 @@
           "ruleType": {
             "values": [
               {
-                "user": "users/system",
                 "value": "computation"
               }
             ]
@@ -1432,7 +1242,6 @@
           "executionMode": {
             "values": [
               {
-                "user": "users/system",
                 "value": "any"
               }
             ]
@@ -1440,7 +1249,6 @@
           "definition": {
             "values": [
               {
-                "user": "users/system",
                 "value": "IIF[ValidateEmptyAttributes[\"class\"],true,SetAttributeValue[\"subclass\",GetAttributeValue[\"class\"]]]"
               }
             ]
@@ -1448,7 +1256,6 @@
           "enabled": {
             "values": [
               {
-                "user": "users/system",
                 "value": "true"
               }
             ]
@@ -1456,7 +1263,6 @@
           "isDraft": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1464,7 +1270,6 @@
           "isDeleted": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1472,7 +1277,6 @@
           "isSystemRule": {
             "values": [
               {
-                "user": "users/system",
                 "value": "false"
               }
             ]
@@ -1516,7 +1320,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],false] AND IIF[ValidateEmptyAttributes[\"skunumber\"],AddAttributeError[\"Req001\", \"\",\"skunumber\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],false] AND IIF[ValidateEmptyAttributes[\"skuNumber\"],AddAttributeError[\"Req001\", \"\",\"skuNumber\"],false]"
               }
             ]
           },
