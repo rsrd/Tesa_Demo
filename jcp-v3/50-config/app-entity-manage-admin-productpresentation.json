@@ -1695,7 +1695,52 @@
             }
           ]
         }
+      },
+        {
+            "id": "app-entity-manage_fix-attribute-errors_productpresentation_admin_uiConfig",
+            "name": "app-entity-manage_fix-attribute-errors",
+            "version": "1.0",
+            "type": "uiConfig",
+            "properties": {
+                "createdByService": "entityservice",
+                "createdBy": "user"
+            },
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "app": "app-entity-manage",
+                            "service": "_ALL",
+                            "component": "fix-attribute-errors",
+                            "subComponent": "_ALL",
+                            "entityType": "productpresentation",
+                            "role": "admin"
+                        },
+                        "jsonData": {
+                            "config": {
+                                "name": "fix-attribute-errors",
+                                "label": "Fix attribute errors",
+                                "steps": [
+                                    {
+                                        "name": "step-1-fix-attribute-errors",
+                                        "label": "Fix attribute errors for an entity",
+                                        "component": {
+                                            "name": "rock-business-condition-attribute-manage",
+                                            "path": "/../../src/elements/rock-business-condition-attribute-manage/rock-business-condition-attribute-manage.html",
+                                            "properties": {
       }
+                                        },
+                                        "nextEvent": "onSave",
+                                        "skipEvent": "onSkip"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+
 
     ]
 }

@@ -6,7 +6,7 @@
   },
   "entityModels": [
     {
-      "id": "businessRequiredAttributesArePopulated_BusinessCondition",
+      "id": "businessRequiredAttributesArePopulated_businessCondition",
       "name": "Business required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -66,6 +66,25 @@
                 "value": "false"
               }
             ]
+          },
+          "impactAttributes": {
+            "values":[
+              {
+                "value": "suppliersitenumber"
+              },
+              {
+                "value": "suppliermfrshippoint"
+              },
+              {
+                "value": "ecommsuppliershippoint"
+              },
+              {
+                "value": "supplierchannel"
+              },
+              {
+                "value": "plannedonsitedate"
+              }
+            ]
           }
         },
         "relationships": {
@@ -102,7 +121,7 @@
       }
     },
     {
-      "id": "buyerRequiredAttributesArePopulated_BusinessCondition",
+      "id": "buyerRequiredAttributesArePopulated_businessCondition",
       "name": "Buyer required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -294,7 +313,7 @@
       }
     },
     {
-      "id": "requiredAttributesArePopulated_BusinessCondition",
+      "id": "requiredAttributesArePopulated_businessCondition",
       "name": "Required attributes are populated for Review Sku activity",
       "type": "businessCondition",
       "data": {
@@ -463,7 +482,7 @@
       }
     },
     {
-      "id": "vendorRequiredAttributesArePopulated_BusinessCondition",
+      "id": "vendorRequiredAttributesArePopulated_businessCondition",
       "name": "Vendor required attributes are populated",
       "type": "businessCondition",
       "data": {
@@ -521,6 +540,52 @@
             "values": [
               {
                 "value": "false"
+              }
+            ]
+          },
+          "impactAttributes": {
+            "values":[
+              {
+                "value": "itemType"
+              },
+              {
+                "value": "colordes"
+              },
+              {
+                "value": "size"
+              },
+              {
+                "value": "cost"
+              },
+              {
+                "value": "productTitle"
+              },
+              {
+                "value": "supplierNumberName"
+              },
+              {
+                "value": "length"
+              },
+              {
+                "value": "width"
+              },
+              {
+                "value": "grossweight"
+              },
+              {
+                "value": "prop65indicator"
+              },
+              {
+                "value": "hazmatflag"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              },
+              {
+                "value": "msrp"
               }
             ]
           }
