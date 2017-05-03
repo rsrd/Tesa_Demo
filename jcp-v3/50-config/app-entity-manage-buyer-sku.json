@@ -280,12 +280,12 @@
 							"config": {
 								"headerConfig": [
 									{
-										"attributeName": "id",
-										"label": "SKU ID",
+										"attributeName": "orin",
+										"label": "ORIN",
 										"noTrim": false
 									},
 									{
-										"attributeName": "skuNumber",
+										"attributeName": "skunumber",
 										"label": "SKU Number",
 										"noTrim": false
 									},
@@ -295,20 +295,30 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "status",
-										"label": "Status",
+										"attributeName": "brand",
+										"label": "Brand",
 										"noTrim": false
 									},
 									{
-										"attributeName": "startDate",
-										"label": "Start Date",
+										"attributeName": "producttype",
+										"label": "Product Type",
+										"noTrim": false
+									},
+									{
+										"attributeName": "subproducttype",
+										"label": "Sub Product Type",
+										"noTrim": false
+									},
+									{
+										"attributeName": "itemtype",
+										"label": "Item Type",
+										"noTrim": false
+									},
+									{
+										"attributeName": "creationdate",
+										"label": "Creation Date",
 										"noTrim": false,
 										"dataType": "datetime"
-									},
-									{
-										"attributeName": "webDiscount",
-										"label": "Web Discount",
-										"noTrim": false
 									}
 								],
 								"toolbarConfig": {
@@ -526,40 +536,40 @@
 												"do-sync-validation": true,
 												"config-context": {
 													"attributeNames": [
-														"alsoInStore",
+														"alsoinstore",
 														"brand",
-														"brandLogo",
+														"brandlogo",
 														"channel",
-														"channelAvailability",
+														"channelavailability",
 														"description",
-														"displayAskAndAnswerSection",
-														"displayName",
-														"factSheet",
-														"featureColor",
-														"hideDisplayIndicator",
+														"displayaskandanswersection",
+														"displayname",
+														"factsheet",
+														"featurecolor",
+														"hidedisplayindicator",
 														"id",
-														"isCustomerFavoriteOption",
-														"isHidden",
-														"isPreOrderOption",
-														"longDescription",
-														"lotSelectionType",
-														"lotType",
-														"onlineOnly",
+														"iscustomerfavoriteoption",
+														"ishidden",
+														"ispreorderoption",
+														"longdescription",
+														"lotselectiontype",
+														"lottype",
+														"onlineonly",
 														"orin",
-														"programType",
-														"ratingReviewId",
-														"retailSkuNumber",
-														"shortName",
-														"skuGrouping",
-														"skuItemType",
-														"skuNumber",
-														"skuQuantity",
-														"skuType",
+														"programtype",
+														"ratingreviewid",
+														"retailskunumber",
+														"shortname",
+														"skugrouping",
+														"skuitemtype",
+														"skunumber",
+														"skuquantity",
+														"skutype",
 														"source",
 														"status",
 														"stone",
-														"styleText",
-														"upcBarcode",
+														"styletext",
+														"upcbarcode",
 														"warranty"
 													]
 												}
@@ -680,8 +690,8 @@
 									"dataRequest": {
 										"attributes": [
 											"description",
-											"skuId",
-											"startDate",
+											"skuid",
+											"startdate",
 											"status"
 										]
 									},
@@ -714,7 +724,7 @@
 											},
 											{
 												"header": "Start Date",
-												"name": "startDate",
+												"name": "startdate",
 												"sortable": false,
 												"filterable": false
 											},
@@ -919,126 +929,7 @@
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"productPresentationToLot": {
-										"gridConfig": {
-											"viewMode": "Tabular",
-											"mode": "Read",
-											"title": "Product Presentation To Lot",
-											"schemaType": "colModel",
-											"statusEnabled": true,
-											"tabular": {
-												"settings": {
-													"isMultiSelect": true,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Related Entity",
-														"name": "Related Entity",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false,
-														"linkTemplate": "entity-manage?id={id}&type={type}"
-													},
-													{
-														"header": "Link Description",
-														"name": "linkDescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Status",
-														"name": "status",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Enabled",
-														"name": "enabled",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Display Name",
-														"name": "displayName",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": true
-													},
-													{
-														"header": "Description",
-														"name": "description",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": true
-													}
-												]
-											},
-											"toolbarConfig": {
-												"buttonItems": [
-													{
-														"buttons": [
-															{
-																"name": "pageRange",
-																"icon": "",
-																"text": "0 - 0 / 0",
-																"visible": true,
-																"tooltip": "Page Range"
-															},
-															{
-																"name": "refresh",
-																"icon": "pebble-md-icons:ToolbarRefresh",
-																"text": "",
-																"visible": true,
-																"tooltip": "Refresh"
-															},
-															{
-																"name": "edit",
-																"icon": "pebble-md-icons:Edit",
-																"text": "",
-																"visible": true,
-																"tooltip": "Edit"
-															},
-															{
-																"name": "download",
-																"icon": "pebble-md-icons:Import",
-																"text": "",
-																"visible": true,
-																"tooltip": "Download"
-															},
-															{
-																"name": "upload",
-																"icon": "pebble-md-icons:Upload",
-																"text": "",
-																"visible": true,
-																"tooltip": "Upload"
-															}
-														]
-													}
-												]
-											}
-										},
-										"addRelLovConfig": {
-											"idField": "id",
-											"titlePattern": "id"
-										}
-									},
-									"isChildOf": {
+									"ischildof": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
@@ -1068,118 +959,7 @@
 													},
 													{
 														"header": "Link Description",
-														"name": "linkDescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Enabled",
-														"name": "enabled",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Display Name",
-														"name": "displayName",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": true
-													}
-												]
-											},
-											"toolbarConfig": {
-												"buttonItems": [
-													{
-														"buttons": [
-															{
-																"name": "pageRange",
-																"icon": "",
-																"text": "0 - 0 / 0",
-																"visible": true,
-																"tooltip": "Page Range"
-															},
-															{
-																"name": "refresh",
-																"icon": "pebble-md-icons:ToolbarRefresh",
-																"text": "",
-																"visible": true,
-																"tooltip": "Refresh"
-															},
-															{
-																"name": "edit",
-																"icon": "pebble-md-icons:Edit",
-																"text": "",
-																"visible": true,
-																"tooltip": "Edit"
-															},
-															{
-																"name": "download",
-																"icon": "pebble-md-icons:Import",
-																"text": "",
-																"visible": true,
-																"tooltip": "Download"
-															},
-															{
-																"name": "upload",
-																"icon": "pebble-md-icons:Upload",
-																"text": "",
-																"visible": true,
-																"tooltip": "Upload"
-															}
-														]
-													}
-												]
-											}
-										},
-										"addRelLovConfig": {
-											"idField": "id",
-											"titlePattern": "id"
-										}
-									},
-									"skuToImage": {
-										"gridConfig": {
-											"viewMode": "Tabular",
-											"mode": "Read",
-											"title": "Images",
-											"schemaType": "colModel",
-											"statusEnabled": true,
-											"tabular": {
-												"settings": {
-													"isMultiSelect": true,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Image",
-														"name": "Related Entity",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false,
-														"linkTemplate": "entity-manage?id={id}&type={type}"
-													},
-													{
-														"header": "Link Description",
-														"name": "linkDescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Status",
-														"name": "status",
+														"name": "linkdescription",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1252,11 +1032,11 @@
 											"titlePattern": "id"
 										}
 									},
-									"productPresentationToImage": {
+									"skutoimage": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Product Presentation To Image",
+											"title": "Images",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1272,7 +1052,7 @@
 												},
 												"columns": [
 													{
-														"header": "Related Entity",
+														"header": "Image",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1289,8 +1069,8 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
-														"header": "Descriptioin",
-														"name": "discription",
+														"header": "Display Name",
+														"name": "displayname",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1485,7 +1265,7 @@
 						"jsonData": {
 							"config": {
 								"image": "",
-								"titleAttribute": "displayName",
+								"titleAttribute": "displayname",
 								"subtitleAttribute": ""
 							}
 						}
