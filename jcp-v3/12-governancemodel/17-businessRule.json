@@ -1320,7 +1320,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],false] AND IIF[ValidateEmptyAttributes[\"skuNumber\"],AddAttributeError[\"Req001\", \"\",\"skuNumber\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],false] AND IIF[ValidateEmptyAttributes[\"skunumber\"],AddAttributeError[\"Req001\", \"\",\"skunumber\"],false]"
               }
             ]
           },
