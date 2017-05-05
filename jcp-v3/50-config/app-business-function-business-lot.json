@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_lot_vendor_uiConfig",
+			"id": "app-business-function_components-list_lot_business_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -23,7 +23,7 @@
 							"component": "components-list",
 							"subComponent": "_ALL",
 							"entityType": "lot",
-							"role": "vendor"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -40,7 +40,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_create-entity_lot_vendor_uiConfig",
+			"id": "app-business-function_create-entity_lot_business_uiConfig",
 			"name": "app-business-function_create-entity",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -57,7 +57,7 @@
 							"component": "create-entity",
 							"subComponent": "_ALL",
 							"entityType": "lot",
-							"role": "vendor"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -93,12 +93,9 @@
 												"attribute-names": [
 													"brand",
 													"description",
-													"displayName",
-													"id",
-													"retailSkuNumber",
-													"shortName",
-													"skuNumber",
-													"skuType"
+													"displayname",
+													"orin",
+													"rmsitemid"
 												]
 											}
 										},
@@ -140,7 +137,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_lot_vendor_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_lot_business_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -157,7 +154,7 @@
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
 							"entityType": "lot",
-							"role": "vendor"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -300,7 +297,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_extension-manage_lot_vendor_uiConfig",
+			"id": "app-business-function_extension-manage_lot_business_uiConfig",
 			"name": "app-business-function_extension-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -317,7 +314,7 @@
 							"component": "extension-manage",
 							"subComponent": "_ALL",
 							"entityType": "lot",
-							"role": "vendor"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -343,7 +340,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-model_lot_vendor_uiConfig",
+			"id": "app-business-function_upload-model_lot_business_uiConfig",
 			"name": "app-business-function_upload-model",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -360,7 +357,7 @@
 							"component": "upload-model",
 							"subComponent": "_ALL",
 							"entityType": "lot",
-							"role": "vendor"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
