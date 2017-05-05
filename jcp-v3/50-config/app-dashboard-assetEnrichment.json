@@ -673,9 +673,10 @@
 									"attributes": [
 										"fileName",
 										"fileType",
+										"taskId",
 										"eventSubType",
+										"recordCount",
 										"createdOn",
-										"itemCount",
 										"userName",
 										"profileName",
 										"successCount"
@@ -688,9 +689,9 @@
 									"listItems": {
 										"image": "fileTypeImage",
 										"title": "fileName",
-										"linkTemplate": "/jcp/job-detail?id={id}",
+										"linkTemplate": "/jcp/job-detail?id={taskId}",
 										"subtitle": "fileType",
-										"id": "id",
+										"id": "taskId",
 										"fields": [
 											{
 												"name": "eventSubType"
@@ -700,7 +701,7 @@
 												"noTrim": true
 											},
 											{
-												"name": "itemCount",
+												"name": "recordCount",
 												"noTrim": true
 											},
 											{
