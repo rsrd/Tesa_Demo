@@ -68,7 +68,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "suppliersitenumber"
               },
@@ -183,7 +183,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "entity"
               },
@@ -307,7 +307,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "imagename"
               },
@@ -446,7 +446,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "itemtype"
               },
@@ -730,7 +730,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "itemtype"
               },
@@ -1005,7 +1005,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "itemtype"
               },
@@ -1329,11 +1329,10 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "orin"
               },
-              
               {
                 "value": "skunumber"
               }
@@ -1348,6 +1347,390 @@
               "id": "hasBusinessRules_validateSKUidOrinIdisPopultaedforSKU_businessRule",
               "relTo": {
                 "id": "validateSKUidOrinIdisPopultaedforSKU_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+      "name": "Validating Skip Criteria for Enrich Copy",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating skip Criteria For Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating skip Criteria For Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateSkipCriteriaForEnrichCopy_businessRule",
+              "relTo": {
+                "id": "validateSkipCriteriaForEnrichCopy_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+      "name": "Validating Exit Criteria for Enrich Copy",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating Exit Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating Exit Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validatExitCriteriaForEnrichCopy_businessRule",
+              "relTo": {
+                "id": "validatExitCriteriaForEnrichCopy_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+      "name": "Validating Exit Criteria for PP_BC",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating skip and exit Criteria for Digital Assets"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating skip and exit Criteria for Digital Assets"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateSkipandExitCriteriaForDigitalAssets_businessRule",
+              "relTo": {
+                "id": "validateSkipandExitCriteriaForDigitalAssets_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessCondition",
+      "name": "Validate LOTid OrinId is Popultaed for LOT",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validate LOTid OrinId is Popultaed for LOT"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validate LOTid OrinId is Popultaed for LOT"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateLOTIdOrinIdIsPopultaedForLOT_businessRule",
+              "relTo": {
+                "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessRule",
                 "type": "businessRule"
               },
               "attributes": {

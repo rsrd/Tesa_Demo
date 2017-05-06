@@ -1354,6 +1354,716 @@
           }
         }
       }
+    },
+    {
+      "id": "invokeEnsembleCreateWorkflow_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Invoking Ensemble Create Workflow"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Invoking the Ensemble Create Workflow"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[IsEntityInWorkflow[\"ensembleCreateWorkflow\"],true,InvokeWorkflow[\"ensembleCreateWorkflow\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "relationshipEnsembleAndPPsDeletion_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Remove the relationship between the parent  Ensemble and  PPs"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": " Business should not be allowed to delete the Ensembles, they should only remove the relationship between the parent  Ensemble and  PPs"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": " IIF[HasRelationships[\"ensembletoproductpresentation\"],SetAttributeValue[\"haspp\",\"true\"],SetAttributeValue[\"haspp\",\"false\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "validateSkipCriteriaForEnrichCopy_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating Skip Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating Skip Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"inspirationalcopy\"],AddAttributeInformation[\"SYS001\", \"\", \"inspirationalcopy\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"brand\"] =\"Ashley\",AddAttributeInformation[\"SYS001\", \"\", \"brand\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"division\"] =\"Sephora\",AddAttributeInformation[\"SYS001\", \"\", \"division\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"entity\"]=\"Appliances\",AddAttributeInformation[\"SYS001\", \"\", \"entity\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "validatExitCriteriaForEnrichCopy_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating Exit Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Business should validate Exit criteria for Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"inspirationalcopy\"],AddAttributeError[\"Req001\", \"\",\"inspirationalcopy\"],AddAttributeInformation[\"SYS001\", \"\",\"inspirationalcopy\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "validateSkipandExitCriteriaForDigitalAssets_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating Skip and Exit Criteria for DigitalAssets"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Business should validate Exit criteria for ENS"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\", \"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\",\"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"pptitle\"],AddAttributeError[\"Req001\", \"\",\"pptitle\"],AddAttributeInformation[\"SYS001\", \"\",\"pptitle\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\",\"plannedonsitedate \"],AddAttributeInformation[\"SYS001\", \"\",\"plannedonsitedate\"]] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],AddAttributeInformation[\"SYS001\", \"\",\"division\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "invokeproductPresentationCreateWorkflow_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Invoking Product Presentation Create Workflow"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Invoking the Product Presentation Create Workflow"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[IsEntityInWorkflow[\"productPresentationCreateWorkflow\"],true,InvokeWorkflow[\"productPresentationCreateWorkflow\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "relationshipLotsAndPPDeletion_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Remove the relationship between the  Lots and parent PP"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": " Business should not be allowed to delete the PPs, they should only remove the relationship between the  Lots and parent PP"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[HasRelationships[\"productpresentationtolot\"],SetAttributeValue[\"haslots\",\"true\"],SetAttributeValue[\"haslots\",\"false\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validate LOTId OrinId is Populted for LOT"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Business should validate LOT ID,ORIN ID is populted before publishing it - for LOT entityType"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],AddAttributeInformation[\"SYS001\", \"\",\"orin\"]] AND IIF[ValidateEmptyAttributes[\"rmsitemid\"],AddAttributeError[\"Req001\", \"\",\"rmsitemid\"],AddAttributeInformation[\"SYS001\", \"\",\"rmsitemid\"]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "populateSystemDateTimeforEntityAtPublishedToRMS_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "populate System Date Time for Entity at Published To RMS"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "In new SKU create WF,  at the time SKUs and its associated Lot get published to RMS, FirstPublishDate to be updated with system date/time."
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "SetAttributeValue[\"firstpublishdate\",Now[]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "resumeWorkFlowAfterSkuNumberAndOrinAreGenerated_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Resume the WF untill SKU ID and Orin ID are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Resume the WF untill SKU ID and Orin ID are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[HasAnyAttributesChanged[\"orin\", \"rmsskuid\"] AND IsEntityInWorkflow[\"newProductSetup\", \"Waiting for RMS\"]AND ValidateEmptyAttributes[\"orin\",\"rmsskuid\"]=false,ResumeWorkflow[\"newProductSetup\", \"Waiting for RMS\", \"Done\"],false]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                  "value": "false"
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }
