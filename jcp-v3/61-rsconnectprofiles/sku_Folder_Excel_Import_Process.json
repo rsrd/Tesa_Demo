@@ -25,7 +25,7 @@
             "jsonData": {
               "id": "4d05ecf6-1a9b-4d66-a89e-d3474a023c3c_sku_V25",
               "name": "sku_Folder_Excel_Import_Process",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_IMPORT",
               "enabled": "true",
               "inboundChannel": {
@@ -40,10 +40,7 @@
                 "rdpConnector": {
                   "type": "RSJSON",
                   "version": "1.1",
-                  "settings": {
-                    "includeParent": "false",
-                    "includeChildren": "false",
-                    "includeSiblings": "false"
+                  "settings": {                    
                   }
                 }
               },
