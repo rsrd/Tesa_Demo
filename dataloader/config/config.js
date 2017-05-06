@@ -1,8 +1,8 @@
 var toolConfig = {
-    "webUrl": "http://qa-us-east-1.riversand-dataplatform.com:8085",
+    "webUrl": "http://perf-us-west-2.riversand-dataplatform.com:8085",
     "elasticUrl": "http://192.168.0.85:9200",
-    "delay": 10,
-    "delayBetweenModelObjects": 1000
+    "delay": 50,
+    "delayBetweenModelObjects": 2000
 }
 
 //we have two options to select. 1. all 2. tenant-config
@@ -13,7 +13,7 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v3",
     "tenantId": "jcp",
-    "option": "config",
+    "option": "rsconnectProfiles",
 }
 
 // quiteLoadConfig = {

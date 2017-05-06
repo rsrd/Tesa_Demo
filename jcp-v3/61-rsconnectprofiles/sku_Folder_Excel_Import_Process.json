@@ -322,7 +322,7 @@
                       "destination": "entity.data.attributes.colorfamily.values[0].value"
                     },
                     {
-                      "source": "COLOR DESC",
+                      "source": "COLOR DESC",
                       "destination": "entity.data.attributes.colordesc.values[0].value"
                     },
                     {
@@ -798,6 +798,10 @@
                       "destination": "entity.data.attributes.seodescription.values[0].value"
                     },
                     {
+                      "source": "Brand LOGO Image",
+                      "destination": "entity.data.attributes.brandlogo.values[0].value"
+                    },
+                    {
                       "source": "Disclaimers",
                       "destination": "entity.data.attributes.disclaimercopy.values[0].value"
                     },
@@ -955,23 +959,11 @@
                     },
                     {
                       "source": "Variable Data",
-                      "destination": "entity.data.attributes.vdata.values[0].value"
+                      "destination": "entity.data.attributes.variabledata.values[0].value"
                     },
                     {
                       "source": "Factsheet",
                       "destination": "entity.data.attributes.factsheet.values[0].value"
-                    },
-                    {
-                      "source": "ASSEMBLY",
-                      "destination": "entity.data.contexts[0].attributes.assembly.values[0].value"
-                    },
-                    {
-                      "source": "BASE MATERIAL",
-                      "destination": "entity.data.contexts[0].attributes.basematerial.values[0].value"
-                    },
-                    {
-                      "source": "COMPARTMENTS",
-                      "destination": "entity.data.contexts[0].attributes.compartments.values[0].value"
                     },
                     {
                       "source": "Taxonomy",
