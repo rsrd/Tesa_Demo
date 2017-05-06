@@ -41,7 +41,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"suppliersitenumber\"],AddAttributeError[\"Req001\", \"\", \"suppliersitenumber\"],false] AND IIF[ValidateEmptyAttributes[\"suppliermfrshippoint\"],AddAttributeError[\"Req001\", \"\", \"suppliermfrshippoint\"],false] AND IIF[ValidateEmptyAttributes[\"ecommsuppliershippoint\"],AddAttributeError[\"Req001\", \"\", \"ecommsuppliershippoint\"],false] AND IIF[ValidateEmptyAttributes[\"supplierchannel\"],AddAttributeError[\"Req001\", \"\", \"supplierchannel\"],false] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\", \"plannedonsitedate\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"suppliersitenumber\"],AddAttributeError[\"Req001\", \"\", \"suppliersitenumber\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliersitenumber\"]] AND IIF[ValidateEmptyAttributes[\"suppliermfrshippoint\"],AddAttributeError[\"Req001\", \"\", \"suppliermfrshippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliermfrshippoint\"]] AND IIF[ValidateEmptyAttributes[\"ecommsuppliershippoint\"],AddAttributeError[\"Req001\", \"\", \"ecommsuppliershippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"ecommsuppliershippoint\"]] AND IIF[ValidateEmptyAttributes[\"supplierchannel\"],AddAttributeError[\"Req001\", \"\", \"supplierchannel\"],AddAttributeInformation[\"SYS001\", \"\", \"supplierchannel\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\", \"plannedonsitedate\"],AddAttributeInformation[\"SYS001\", \"\", \"plannedonsitedate\"]]"
               }
             ]
           },
@@ -184,7 +184,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"entity\"],AddAttributeError[\"Req001\", \"\",\"entity\"],false] AND IIF[ValidateEmptyAttributes[\"subdivision\"],AddAttributeError[\"Req001\", \"\",\"subdivision\"],false] AND IIF[ValidateEmptyAttributes[\"class\"],AddAttributeError[\"Req001\", \"\",\"class\"],false]AND IIF[ValidateEmptyAttributes[\"retail\"],AddAttributeError[\"Req001\", \"\",\"retail\"],false]AND IIF[ValidateEmptyAttributes[\"grossprofit\"],AddAttributeError[\"Req001\", \"\",\"grossprofit\"],false] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],false] AND IIF[ValidateEmptyAttributes[\"estimatedupsshippingcharge\"],AddAttributeError[\"Req001\", \"\",\"estimatedupsshippingcharge\"],false] AND IIF[ValidateEmptyAttributes[\"initialmarkup\"],AddAttributeError[\"Req001\", \"\",\"initialmarkup\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"entity\"],AddAttributeError[\"Req001\", \"\",\"entity\"],AddAttributeInformation[\"SYS001\", \"\", \"entity\"]] AND IIF[ValidateEmptyAttributes[\"subdivision\"],AddAttributeError[\"Req001\", \"\",\"subdivision\"],AddAttributeInformation[\"SYS001\", \"\", \"subdivision\"]] AND IIF[ValidateEmptyAttributes[\"class\"],AddAttributeError[\"Req001\", \"\",\"class\"],AddAttributeInformation[\"SYS001\", \"\", \"class\"]]AND IIF[ValidateEmptyAttributes[\"retail\"],AddAttributeError[\"Req001\", \"\",\"retail\"],AddAttributeInformation[\"SYS001\", \"\", \"retail\"]]AND IIF[ValidateEmptyAttributes[\"grossprofit\"],AddAttributeError[\"Req001\", \"\",\"grossprofit\"],AddAttributeInformation[\"SYS001\", \"\", \"grossprofit\"]] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],AddAttributeInformation[\"SYS001\", \"\", \"division\"]] AND IIF[ValidateEmptyAttributes[\"estimatedupsshippingcharge\"],AddAttributeError[\"Req001\", \"\",\"estimatedupsshippingcharge\"],AddAttributeInformation[\"SYS001\", \"\", \"estimatedupsshippingcharge\"]] AND IIF[ValidateEmptyAttributes[\"initialmarkup\"],AddAttributeError[\"Req001\", \"\",\"initialmarkup\"],AddAttributeInformation[\"SYS001\", \"\", \"initialmarkup\"]]"
               }
             ]
           },
@@ -326,7 +326,7 @@
           "definition": {
             "values": [
               {
-                "value": "var1:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];var2:=HasAttributesChanged[\"cost\"];IIF[var1, true, IIF[var2, InvokeWorkflow[\"UpdateProductWorkflow\"], true]] AND IIF[var1, true, IIF[IsEntityInWorkflow[\"newProductSetup\"] or var2, true, InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"]]]"
+                "value": "costChanged:=HasAttributesChanged[\"cost\"];IIF[costChanged AND IsEntityInWorkflow[\"newProductSetup\",\"New SKUs to Submit\",\"Review Assortment\"]=false AND IsEntityInWorkflow[\"UpdateProductWorkflow\"]=false,InvokeWorkflow[\"UpdateProductWorkflow\"],false] AND IIF[costChanged=false AND IsEntityInWorkflow[\"newProductSetup\"] = false AND IsEntityInWorkflow[\"UpdateProductWorkflow\"]=false, InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"], false]"
               }
             ]
           },
@@ -965,7 +965,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],false]"
+                "value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
               }
             ]
           },
@@ -1036,7 +1036,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"imagename\"],AddAttributeError[\"Req001\",\"\",\"imagename\"],false] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],false] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],false] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],false] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],false] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],false] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],false] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],false] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],false] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],false]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],false] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],false] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"imagename\"],AddAttributeError[\"Req001\",\"\",\"imagename\"],AddAttributeInformation[\"SYS001\", \"\", \"imagename\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],AddAttributeInformation[\"SYS001\", \"\", \"searchkeywordsnavigation\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
               }
             ]
           },
@@ -1107,7 +1107,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\", \"itemtype\"],false] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],false] AND IIF[ValidateEmptyAttributes[\"colordesc\"],AddAttributeError[\"Req001\", \"\", \"colordesc\"],false] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"Req001\", \"\", \"size\"],false] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],false] AND IIF[ValidateEmptyAttributes[\"producttitle\"],AddAttributeError[\"Req001\", \"\", \"producttitle\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\", \"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],AddAttributeInformation[\"SYS001\", \"\", \"vpn\"]] AND IIF[ValidateEmptyAttributes[\"colordesc\"],AddAttributeError[\"Req001\", \"\", \"colordesc\"],AddAttributeInformation[\"SYS001\", \"\", \"colordesc\"]] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"Req001\", \"\", \"size\"],AddAttributeInformation[\"SYS001\", \"\", \"size\"]] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],AddAttributeInformation[\"SYS001\", \"\", \"cost\"]] AND IIF[ValidateEmptyAttributes[\"producttitle\"],AddAttributeError[\"Req001\", \"\", \"producttitle\"],AddAttributeInformation[\"SYS001\", \"\", \"producttitle\"]]"
               }
             ]
           },
@@ -1178,7 +1178,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"],AddAttributeError[\"Req001\", \"\",\"suppliernumbername\"],false] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],false] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"Req001\", \"\",\"width\"],false] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],false] AND IIF[ValidateEmptyAttributes[\"grossweight\"],AddAttributeError[\"Req001\", \"\",\"grossweight\"],false] AND IIF[ValidateEmptyAttributes[\"prop65indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65indicator\"],false] AND IIF[ValidateEmptyAttributes[\"hazmatflag\"],AddAttributeError[\"Req001\", \"\",\"hazmatflag\"],false] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],false] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],false] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"],AddAttributeError[\"Req001\", \"\",\"suppliernumbername\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliernumbername\"]] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],AddAttributeInformation[\"SYS001\", \"\", \"length\"]] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"Req001\", \"\",\"width\"],AddAttributeInformation[\"SYS001\", \"\", \"width\"]] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],AddAttributeInformation[\"SYS001\", \"\", \"height\"]] AND IIF[ValidateEmptyAttributes[\"grossweight\"],AddAttributeError[\"Req001\", \"\",\"grossweight\"],AddAttributeInformation[\"SYS001\", \"\", \"grossweight\"]] AND IIF[ValidateEmptyAttributes[\"prop65indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65indicator\"],AddAttributeInformation[\"SYS001\", \"\", \"prop65indicator\"]] AND IIF[ValidateEmptyAttributes[\"hazmatflag\"],AddAttributeError[\"Req001\", \"\",\"hazmatflag\"],AddAttributeInformation[\"SYS001\", \"\", \"hazmatflag\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],AddAttributeInformation[\"SYS001\", \"\", \"msrp\"]]"
               }
             ]
           },
@@ -1320,7 +1320,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],false] AND IIF[ValidateEmptyAttributes[\"skunumber\"],AddAttributeError[\"Req001\", \"\",\"skunumber\"],false]"
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],AddAttributeError[\"Req001\", \"\",\"orin\"],AddAttributeInformation[\"SYS001\", \"\", \"orin\"]] AND IIF[ValidateEmptyAttributes[\"rmsskuid\"],AddAttributeError[\"Req001\", \"\",\"rmsskuid\"],AddAttributeInformation[\"SYS001\", \"\", \"rmsskuid\"]]"
               }
             ]
           },
@@ -2058,7 +2058,7 @@
           "isSystemRule": {
             "values": [
               {
-                  "value": "false"
+                "value": "false"
               }
             ]
           }
