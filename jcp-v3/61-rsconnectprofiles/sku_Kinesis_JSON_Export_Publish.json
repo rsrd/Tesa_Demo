@@ -60,8 +60,10 @@
                   "type": "RSJSON",
                   "version": "1.1",
                   "batchSize": 1,
-                  "settings": {
-                    "encoding": "utf8"
+                  "settings": {                    
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
