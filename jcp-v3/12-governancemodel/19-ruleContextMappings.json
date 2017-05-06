@@ -97,7 +97,7 @@
                 "executionMode": {
                   "values": [
                     {
-                     "value": "any"
+                      "value": "any"
                     }
                   ]
                 },
@@ -487,6 +487,52 @@
                   ]
                 }
               }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_resumeWorkFlowAfterSkuNumberAndOrinAreGenerated_businessRule",
+              "relTo": {
+                "id": "resumeWorkFlowAfterSkuNumberAndOrinAreGenerated_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "12"
+                    }
+                  ]
+                }
+              }
             }
           ],
           "hasBusinessConditions": [
@@ -559,7 +605,7 @@
                     }
                   ]
                 },
-               "enabled": {
+                "enabled": {
                   "values": [
                     {
                       "value": "true"
@@ -836,7 +882,7 @@
                           "value": "true"
                         }
                       ]
-                   },
+                    },
                     "executionMode": {
                       "values": [
                         {
@@ -1374,6 +1420,68 @@
                     }
                   }
                 }
+              ],
+              "hasBusinessRules": [
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessRules_populateSystemDateTimeforEntityAtPublishedToRMS_businessRule",
+                  "relTo": {
+                    "id": "populateSystemDateTimeforEntityAtPublishedToRMS_businessRule",
+                    "type": "businessRule"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Publish to RMS for IDs"
+                        }
+                      ]
+                    }
+                  }
+                }
               ]
             }
           },
@@ -1592,6 +1700,1084 @@
             }
           }
         ]
+      }
+    },
+    {
+      "id": "ensemble_ruleContextMappings",
+      "type": "ruleContextMappings",
+      "data": {
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_invokeEnsembleCreateWorkflow_businessRule",
+              "relTo": {
+                "id": "invokeEnsembleCreateWorkflow_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "create"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_relationshipEnsembleAndPPsDeletion_businessRule",
+              "relTo": {
+                "id": "relationshipEnsembleAndPPsDeletion_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "hasBusinessConditions": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkipCriteriaForEnrichCopy_businessCondition",
+              "relTo": {
+                "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateExitCriteriaForEnrichCopy_businessCondition",
+              "relTo": {
+                "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+              "relTo": {
+                "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "contexts": [
+          {
+            "context": {
+              "self": "self/ensemble_ruleContextMappings",
+              "workflow": "ensembleCreateWorkflow"
+            },
+            "relationships": {
+              "hasBusinessConditions": [
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateSkipCriteriaForEnrichCopy_businessCondition",
+                  "relTo": {
+                    "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich Copy"
+                        }
+                      ]
+                    },
+                    "defaultAction": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateExitCriteriaForEnrichCopy_businessCondition",
+                  "relTo": {
+                    "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich Copy"
+                        }
+                      ]
+                    },
+                    "actions": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                  "relTo": {
+                    "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "skipCriteria"
+                        },
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich with Digital Assets"
+                        }
+                      ]
+                    },
+                    "defaultAction": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    },
+                    "actions": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "productpresentation_ruleContextMappings",
+      "type": "ruleContextMappings",
+      "data": {
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_invokeproductPresentationCreateWorkflow_businessRule",
+              "relTo": {
+                "id": "invokeproductPresentationCreateWorkflow_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "create"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_defaultvaluesforPP_businessRule",
+              "relTo": {
+                "id": "defaultvaluesforPP_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "7"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "update"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_relationshipLotsAndPPDeletion_businessRule",
+              "relTo": {
+                "id": "relationshipLotsAndPPDeletion_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "hasBusinessConditions": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkipCriteriaForEnrichCopy_businessCondition",
+              "relTo": {
+                "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateExitCriteriaForEnrichCopy_businessCondition",
+              "relTo": {
+                "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+              "relTo": {
+                "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "contexts": [
+          {
+            "context": {
+              "self": "self/productpresentation_ruleContextMappings",
+              "workflow": "productPresentationCreateWorkflow"
+            },
+            "relationships": {
+              "hasBusinessConditions": [
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateSkipCriteriaForEnrichCopy_businessCondition",
+                  "relTo": {
+                    "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich Copy"
+                        }
+                      ]
+                    },
+                    "defaultAction": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateExitCriteriaForEnrichCopy_businessCondition",
+                  "relTo": {
+                    "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich Copy"
+                        }
+                      ]
+                    },
+                    "actions": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                  "relTo": {
+                    "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "skipCriteria"
+                        },
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Enrich with Digital Assets"
+                        }
+                      ]
+                    },
+                    "defaultAction": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    },
+                    "actions": {
+                      "values": [
+                        {
+                          "value": "Complete"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "lot_ruleContextMappings",
+      "type": "ruleContextMappings",
+      "data": {
+        "relationships": {
+          "hasBusinessConditions": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateLOTIdOrinIdIsPopultaedForLOT_businessCondition",
+              "relTo": {
+                "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "activityCriteria": {
+                  "values": [
+                    {
+                      "value": "async"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
       }
     }
   ]

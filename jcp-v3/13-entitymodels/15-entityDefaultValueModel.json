@@ -6,70 +6,70 @@
     },
     "entityModels": [
         {
-            "id": "lot_entityDefaultValueModel",
+            "id": "lot_entityDefaultValuesModel",
             "name": "lot",
-            "type": "entityDefaultValueModel",
+            "type": "entityDefaultValuesModel",
             "domain": "generic",
             "data": {
                 "attributes": {
                     "sellinguom": {
                         "properties": {
-                            "defaultValue": "EA"
+                            "defaultValues": "EA"
                         }
                     },
                     "standarduom": {
                         "properties": {
-                            "defaultValue": "EA"
+                            "defaultValues": "EA"
                         }
                     },
                     "sellableflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     },
                     "orderableflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     },
                     "inventoryflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     }
                 }
             }
         },
         {
-            "id": "sku_entityDefaultValueModel",
+            "id": "sku_entityDefaultValuesModel",
             "name": "sku",
-            "type": "entityDefaultValueModel",
+            "type": "entityDefaultValuesModel",
             "domain": "generic",
             "data": {
                 "attributes": {
                     "sellinguom": {
                         "properties": {
-                            "defaultValue": "EA"
+                            "defaultValues": "EA"
                         }
                     },
                     "standarduom": {
                         "properties": {
-                            "defaultValue": "EA"
+                            "defaultValues": "EA"
                         }
                     },
                     "sellableflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     },
                     "orderableflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     },
                     "inventoryflag": {
                         "properties": {
-                            "defaultValue": "Y"
+                            "defaultValues": "Y"
                         }
                     },
                     
@@ -206,7 +206,7 @@
                     "sizeinner": {
                         "properties": {
                             "defaultValues": "1"
-                        
+								}
                     },
                     "specialitemcode": {
                         "properties": {
@@ -278,37 +278,35 @@
                         }
                     }
                 }
-            
-                }
             }
         },
         {
-            "id": "productpresentation_entityDefaultValueModel",
+            "id": "productpresentation_entityDefaultValuesModel",
             "name": "sku",
-            "type": "entityDefaultValueModel",
+            "type": "entityDefaultValuesModel",
             "domain": "generic",
             "data": {
                 "attributes": {
                     
                     "identifier": {
                         "properties": {
-                            "defaultValue": "pdp5[[uniqueid]]"
+                            "defaultValues": "pdp5[[uniqueid]]"
                         }
                     }
                 }
             }
         },
         {
-            "id": "ensemble_entityDefaultValueModel",
+            "id": "ensemble_entityDefaultValuesModel",
             "name": "sku",
-            "type": "entityDefaultValueModel",
+            "type": "entityDefaultValuesModel",
             "domain": "generic",
             "data": {
                 "attributes": {
                     
                     "identifier": {
                         "properties": {
-                            "defaultValue": "ENP6[[uniqueid]]"
+                            "defaultValues": "ENP6[[uniqueid]]"
                         }
                     }
                 }

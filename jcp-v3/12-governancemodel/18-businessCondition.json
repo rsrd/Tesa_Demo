@@ -68,7 +68,7 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "suppliersitenumber"
               },
@@ -181,6 +181,34 @@
                 "value": "false"
               }
             ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "entity"
+              },
+              {
+                "value": "subdivision"
+              },
+              {
+                "value": "class"
+              },
+              {
+                "value": "retail"
+              },
+              {
+                "value": "grossprofit"
+              },
+              {
+                "value": "division"
+              },
+              {
+                "value": "estimatedupsshippingcharge"
+              },
+              {
+                "value": "initialmarkup"
+              }
+            ]
           }
         },
         "relationships": {
@@ -277,6 +305,49 @@
                 "value": "false"
               }
             ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "imagename"
+              },
+              {
+                "value": "productdescription"
+              },
+              {
+                "value": "searchkeywordsnavigation"
+              },
+              {
+                "value": "itemtype"
+              },
+              {
+                "value": "colorfamily"
+              },
+              {
+                "value": "printpattern"
+              },
+              {
+                "value": "countryofmanufacture"
+              },
+              {
+                "value": "assembledlength"
+              },
+              {
+                "value": "assembledwidth"
+              },
+              {
+                "value": "assembledheight"
+              },
+              {
+                "value": "assembledweight"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              }
+            ]
           }
         },
         "relationships": {
@@ -371,6 +442,121 @@
             "values": [
               {
                 "value": "false"
+              }
+            ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "itemtype"
+              },
+              {
+                "value": "vpn"
+              },
+              {
+                "value": "colordesc"
+              },
+              {
+                "value": "size"
+              },
+              {
+                "value": "cost"
+              },
+              {
+                "value": "producttitle"
+              },
+              {
+                "value": "suppliernumbername"
+              },
+              {
+                "value": "length"
+              },
+              {
+                "value": "width"
+              },
+              {
+                "value": "height"
+              },
+              {
+                "value": "grossweight"
+              },
+              {
+                "value": "prop65indicator"
+              },
+              {
+                "value": "hazmatflag"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              },
+              {
+                "value": "msrp"
+              },
+              {
+                "value": "imagename"
+              },
+              {
+                "value": "productdescription"
+              },
+              {
+                "value": "searchkeywordsnavigation"
+              },
+              {
+                "value": "itemtype"
+              },
+              {
+                "value": "colorfamily"
+              },
+              {
+                "value": "printpattern"
+              },
+              {
+                "value": "countryofmanufacture"
+              },
+              {
+                "value": "assembledlength"
+              },
+              {
+                "value": "assembledwidth"
+              },
+              {
+                "value": "assembledheight"
+              },
+              {
+                "value": "assembledweight"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              },
+              {
+                "value": "entity"
+              },
+              {
+                "value": "subdivision"
+              },
+              {
+                "value": "class"
+              },
+              {
+                "value": "retail"
+              },
+              {
+                "value": "grossprofit"
+              },
+              {
+                "value": "division"
+              },
+              {
+                "value": "estimatedupsshippingcharge"
+              },
+              {
+                "value": "initialmarkup"
               }
             ]
           }
@@ -544,12 +730,15 @@
             ]
           },
           "impactAttributes": {
-            "values":[
+            "values": [
               {
                 "value": "itemtype"
               },
               {
-                "value": "colordes"
+                "value": "vpn"
+              },
+              {
+                "value": "colordesc"
               },
               {
                 "value": "size"
@@ -568,6 +757,9 @@
               },
               {
                 "value": "width"
+              },
+              {
+                "value": "height"
               },
               {
                 "value": "grossweight"
@@ -811,6 +1003,136 @@
                 "value": "false"
               }
             ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "itemtype"
+              },
+              {
+                "value": "vpn"
+              },
+              {
+                "value": "colordesc"
+              },
+              {
+                "value": "size"
+              },
+              {
+                "value": "cost"
+              },
+              {
+                "value": "producttitle"
+              },
+              {
+                "value": "suppliernumbername"
+              },
+              {
+                "value": "length"
+              },
+              {
+                "value": "width"
+              },
+              {
+                "value": "height"
+              },
+              {
+                "value": "grossweight"
+              },
+              {
+                "value": "prop65indicator"
+              },
+              {
+                "value": "hazmatflag"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              },
+              {
+                "value": "msrp"
+              },
+              {
+                "value": "imagename"
+              },
+              {
+                "value": "productdescription"
+              },
+              {
+                "value": "searchkeywordsnavigation"
+              },
+              {
+                "value": "itemtype"
+              },
+              {
+                "value": "colorfamily"
+              },
+              {
+                "value": "printpattern"
+              },
+              {
+                "value": "countryofmanufacture"
+              },
+              {
+                "value": "assembledlength"
+              },
+              {
+                "value": "assembledwidth"
+              },
+              {
+                "value": "assembledheight"
+              },
+              {
+                "value": "assembledweight"
+              },
+              {
+                "value": "shippointcity"
+              },
+              {
+                "value": "shippointstate"
+              },
+              {
+                "value": "entity"
+              },
+              {
+                "value": "subdivision"
+              },
+              {
+                "value": "class"
+              },
+              {
+                "value": "retail"
+              },
+              {
+                "value": "grossprofit"
+              },
+              {
+                "value": "division"
+              },
+              {
+                "value": "estimatedupsshippingcharge"
+              },
+              {
+                "value": "initialmarkup"
+              },
+              {
+                "value": "suppliersitenumber"
+              },
+              {
+                "value": "suppliermfrshippoint"
+              },
+              {
+                "value": "ecommsuppliershippoint"
+              },
+              {
+                "value": "supplierchannel"
+              },
+              {
+                "value": "plannedonsitedate"
+              }
+            ]
           }
         },
         "relationships": {
@@ -1005,6 +1327,16 @@
                 "value": "false"
               }
             ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "orin"
+              },
+              {
+                "value": "skunumber"
+              }
+            ]
           }
         },
         "relationships": {
@@ -1039,6 +1371,390 @@
           ]
         }
       }
-    } 
+    },
+    {
+      "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
+      "name": "Validating Skip Criteria for Enrich Copy",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating skip Criteria For Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating skip Criteria For Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateSkipCriteriaForEnrichCopy_businessRule",
+              "relTo": {
+                "id": "validateSkipCriteriaForEnrichCopy_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateExitCriteriaForEnrichCopy_businessCondition",
+      "name": "Validating Exit Criteria for Enrich Copy",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating Exit Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating Exit Criteria for Enrich Copy"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validatExitCriteriaForEnrichCopy_businessRule",
+              "relTo": {
+                "id": "validatExitCriteriaForEnrichCopy_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
+      "name": "Validating Exit Criteria for PP_BC",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validating skip and exit Criteria for Digital Assets"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validating skip and exit Criteria for Digital Assets"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateSkipandExitCriteriaForDigitalAssets_businessRule",
+              "relTo": {
+                "id": "validateSkipandExitCriteriaForDigitalAssets_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessCondition",
+      "name": "Validate LOTid OrinId is Popultaed for LOT",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Validate LOTid OrinId is Popultaed for LOT"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Validate LOTid OrinId is Popultaed for LOT"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateLOTIdOrinIdIsPopultaedForLOT_businessRule",
+              "relTo": {
+                "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
   ]
 }
