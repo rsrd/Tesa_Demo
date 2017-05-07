@@ -4,69 +4,70 @@
     "collectionName": "configObjects",
     "responseObjectName": "response"
   },
-  "configObjects": [{
-  "id": "4d05ecf6-1a9b-4d66-a89e-d2474a023c3c_sku_V25",
-  "name": "entityModelDownload",
-  "tenantId": "",
-  "profileType": "MODEL_EXPORT",
-  "enabled": "true",
-  "inboundChannel": {
-    "isDataPersistent": "false",
-    "rdpConnector": {
-      "type": "RSJSON",
-      "version": "1.1",
-      "search": {
-        "params": {
-          "query": {
-            "id": "sku_entityManageModel",
-            "filters": {
-              "typesCriterion": [
-                "entityManageModel"
-              ]
+  "configObjects": [
+    {
+      "id": "entityModelDownload",
+      "name": "entityModelDownload",
+      "tenantId": "",
+      "profileType": "MODEL_EXPORT",
+      "enabled": "true",
+      "inboundChannel": {
+        "isDataPersistent": "false",
+        "rdpConnector": {
+          "type": "RSJSON",
+          "version": "1.1",
+          "search": {
+            "params": {
+              "query": {
+                "id": "sku_entityManageModel",
+                "filters": {
+                  "typesCriterion": [
+                    "entityManageModel"
+                  ]
+                }
+              },
+              "fields": {
+                "attributes": [
+                  "_ALL"
+                ],
+                "relationships": [
+                  "_ALL"
+                ]
+              }
             }
-          },
-          "fields": {
-            "attributes": [
-              "_ALL"
-            ],
-            "relationships": [
-              "_ALL"
-            ]
           }
+        }
+      },
+      "outboundChannel": {
+        "isDataPersistent": "false",
+        "kinesisStreamConnector": {
+          "streamName": "rsconnect-perf-us-west-2-kinesis-export",
+          "regionName": "us-west-2",
+          "credentialsType": "AMAZON_EC2_IAM_ROLE"
+        }
+      },
+      "transform": {
+        "inboundFormat": {
+          "type": "RSJSON",
+          "version": "1.1",
+          "batchSize": 1,
+          "settings": {
+            "encoding": "utf8"
+          },
+          "includeFilter": [],
+          "excludeFilter": []
+        },
+        "outboundFormat": {
+          "type": "SMARTEXCEL",
+          "version": "1.1",
+          "batchSize": 1,
+          "settings": {
+            "encoding": "utf8"
+          },
+          "includeFilter": [],
+          "excludeFilter": []
         }
       }
     }
-  },
-  "outboundChannel": {
-    "isDataPersistent": "false",
-    "kinesisStreamConnector": {
-      "streamName": "rsconnect-perf-us-west-2-kinesis-export",
-      "regionName": "us-west-2",
-      "credentialsType": "AMAZON_EC2_IAM_ROLE"
-    }
-  },
-  "transform": {
-    "inboundFormat": {
-      "type": "RSJSON",
-      "version": "1.1",
-      "batchSize": 1,
-      "settings": {
-        "encoding": "utf8"
-      },
-      "includeFilter": [],
-      "excludeFilter": []
-    },
-    "outboundFormat": {
-      "type": "SMARTEXCEL",
-      "version": "1.1",
-      "batchSize": 1,
-      "settings": {
-        "encoding": "utf8"
-      },
-      "includeFilter": [],
-      "excludeFilter": []
-    }
-  }
-}
- ]
+  ]
 }

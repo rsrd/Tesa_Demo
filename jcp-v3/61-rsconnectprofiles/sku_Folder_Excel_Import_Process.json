@@ -78,7 +78,8 @@
                     "strategies": [
                       {
                         "caseFormat": "LOWER",
-                        "removeSpecialCharacters": "false",
+                        "removeSpecialCharacters": "true",
+                        "removeWhitespace" : "true",
                         "trimLeadingNumbers": "false",
                         "trimTrailingNumbers": "false",
                         "isDefault": "false"
