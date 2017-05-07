@@ -3752,6 +3752,24 @@
          }
       },
       {
+      "id": "lifecyclestage_entityManageModel",
+      "name": "lifecyclestage",
+      "type": "entityManageModel",
+      "domain": "referenceData",
+      "data": {
+        "attributes": {
+          "lifecyclestagevalue": {
+            "properties": {
+              "externalName": "lifecyclestagevalue",
+              "groupName": "Reference Data",
+              "isEntityIdentifier": true,
+              "dataType": "string"
+            }
+          }
+        }
+      }
+    },
+      {
          "id": "pearlsizevalues_entityManageModel",
          "name": "pearlsizevalues",
          "type": "entityManageModel",

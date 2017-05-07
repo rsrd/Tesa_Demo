@@ -27,7 +27,7 @@
             "jsonData": {
               "id": "a0c3c29f-c736-47d6-a0df-c8746338bbcd_v3",
               "name": "sku_S3Bucket_Excel_Export_Publish",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_EXPORT",
               "enabled": "true",
               "inboundChannel": {
@@ -52,7 +52,10 @@
                   "version": "1.1",
                   "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8"
+                    "encoding": "utf8",                                     
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -78,6 +81,7 @@
                       {
                         "caseFormat": "LOWER",
                         "removeSpecialCharacters": "true",
+                        "removeWhitespace" : "true",
                         "trimLeadingNumbers": "false",
                         "trimTrailingNumbers": "false",
                         "isDefault": "false"

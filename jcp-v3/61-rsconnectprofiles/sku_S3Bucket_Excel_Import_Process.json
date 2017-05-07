@@ -27,7 +27,7 @@
             "jsonData": {
               "id": "4d05ecf6-1a9b-4d66-c89e-d2974a023c3c_jcpSKU_v3",
               "name": "sku_S3Bucket_Excel_Import_Process",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_IMPORT",
               "enabled": "true",
               "inboundChannel": {
@@ -79,7 +79,8 @@
                     "strategies": [
                       {
                         "caseFormat": "LOWER",
-                        "removeSpecialCharacters": "true",
+                       "removeSpecialCharacters": "true",
+                        "removeWhitespace" : "true",
                         "trimLeadingNumbers": "false",
                         "trimTrailingNumbers": "false",
                         "isDefault": "false"

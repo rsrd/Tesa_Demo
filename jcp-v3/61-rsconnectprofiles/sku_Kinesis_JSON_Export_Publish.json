@@ -27,7 +27,7 @@
             "jsonData": {
               "id": "14d5059c-5a77-422a-ac71-48cc95e959ac_sku_V3",
               "name": "sku_Kinesis_JSON_Export_Publish",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_EXPORT",
               "enabled": "true",
               "inboundChannel": {
@@ -51,7 +51,10 @@
                   "version": "1.1",
                   "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8"
+                    "encoding": "utf8",                                     
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -61,7 +64,6 @@
                   "version": "1.1",
                   "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
