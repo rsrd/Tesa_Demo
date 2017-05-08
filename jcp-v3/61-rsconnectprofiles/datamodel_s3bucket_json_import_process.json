@@ -18,57 +18,57 @@
       },
       "data": {
         "contexts": [
-         {
-          "context": {
-            "app": "RSConnect",
-            "service": "rsconnectservice",
-            "list": "self"
-          },
-          "jsonData": {
-            "id": "52c7db76-b6fd-4e5b-9f99-b2c5b0470596_jcpdatamodel_v15",
-            "name": "datamodel_s3bucket_json_import_process",
-            "tenantId": "jcp",
-            "profileType": "MODEL_IMPORT",
-            "enabled": "true",
-            "inboundChannel": {
-              "isDataPersistent": "false",
-	             "s3BucketConnector": {
-	              "fileType": "json",
-	              "bucketName": "us-east-1-import-model",
-	              "regionName": "us-east-1",
-	              "credentialsType": "AMAZON_IAM_USER"
-	            }
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "rsconnectservice",
+              "list": "self"
             },
-            "outboundChannel": {
-              "isDataPersistent": "false",
-              "rdpConnector": {
-                "type": "RSJSON",
-                "version": "1.1"
-              }
-            },
-            "transform": {
-              "inboundFormat": {
-                "type": "RSJSON",
-                "version": "1.1",
-                "settings": {
-                  "encoding": "utf8"
-                },
-                "includeFilter": [],
-                "excludeFilter": []
+            "jsonData": {
+              "id": "52c7db76-b6fd-4e5b-9f99-b2c5b0470596_jcpdatamodel_v15",
+              "name": "datamodel_s3bucket_json_import_process",
+              "tenantId": "",
+              "profileType": "MODEL_IMPORT",
+              "enabled": "true",
+              "inboundChannel": {
+                "isDataPersistent": "false",
+                "s3BucketConnector": {
+                  "fileType": "json",
+                  "bucketName": "rsconnect-qa-us-east-1-import-model",
+                  "regionName": "us-east-1",
+                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
+                }
               },
-              "outboundFormat": {
-                "type": "RSJSON",
-                "version": "1.1",
-                "batchSize": 1,
-                "settings": {
-                  "encoding": "utf8"
+              "outboundChannel": {
+                "isDataPersistent": "false",
+                "rdpConnector": {
+                  "type": "RSJSON",
+                  "version": "1.1"
+                }
+              },
+              "transform": {
+                "inboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
                 },
-                "includeFilter": [],
-                "excludeFilter": []
+                "outboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                }
               }
             }
           }
-        }
         ]
       }
     }

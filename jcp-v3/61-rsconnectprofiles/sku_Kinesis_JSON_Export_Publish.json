@@ -27,21 +27,26 @@
             "jsonData": {
               "id": "14d5059c-5a77-422a-ac71-48cc95e959ac_sku_V3",
               "name": "sku_Kinesis_JSON_Export_Publish",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_EXPORT",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "false",
                 "rdpConnector": {
                   "type": "RSJSON",
-                  "version": "1.1"
+                  "version": "1.1",
+                  "settings": {
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
+                  }
                 }
               },
               "outboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsconnect-pmqa-perf-us-west-2-export",
-                  "regionName": "us-west-2",
+                  "streamName": "rsconnect-qa-us-east-1-export",
+                  "regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
@@ -60,9 +65,7 @@
                   "type": "RSJSON",
                   "version": "1.1",
                   "batchSize": 1,
-                  "settings": {
-                    "encoding": "utf8"
-                  },
+                  "settings": {},
                   "includeFilter": [],
                   "excludeFilter": []
                 }

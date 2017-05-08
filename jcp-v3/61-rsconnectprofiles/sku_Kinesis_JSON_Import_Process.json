@@ -27,14 +27,14 @@
             "jsonData": {
               "id": "726048d5-13aa-4cc7-9275-0a0d9291f72c_v3",
               "name": "sku_Kinesis_JSON_Import_Process",
-              "tenantId": "jcp",
+              "tenantId": "",
               "profileType": "ENTITY_IMPORT",
               "enabled": "true",
               "inboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsconnect-pmqa-perf-us-west-2-import",
-                  "regionName": "us-west-2",
+                  "streamName": "rsconnect-qa-us-east-1-import",
+                  "regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },

@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "main-app_components-list_buyer_uiConfig",
-			"name": "main-app_components-list_buyer",
+			"id": "main-app_components-list_admin_uiConfig",
+			"name": "main-app_components-list_admin",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"role": "buyer"
+							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"id": "main-app_app-repository_buyer_uiConfig",
+			"id": "main-app_app-repository_admin_uiConfig",
 			"name": "main-app_app-repository",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -55,7 +55,7 @@
 							"service": "_ALL",
 							"component": "app-repository",
 							"subComponent": "_ALL",
-							"role": "buyer"
+							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
@@ -154,17 +154,6 @@
 											"name": "upload-model"
 										}
 									}
-								},
-								"job-detail": {
-									"title": "App Job Details",
-									"data_route": "job-detail",
-									"icon": "",
-									"nonClosable": true,
-									"nonMinimizable": true,
-									"component": {
-										"name": "app-job-detail",
-										"path": "../../src/elements/app-job-detail/app-job-detail.html"
-									}
 								}
 							}
 						}
@@ -173,7 +162,7 @@
 			}
 		},
 		{
-			"id": "main-app_pebble-actions_buyer_uiConfig",
+			"id": "main-app_pebble-actions_admin_uiConfig",
 			"name": "main-app_pebble-actions",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -189,7 +178,7 @@
 							"service": "_ALL",
 							"component": "pebble-actions",
 							"subComponent": "_ALL",
-							"role": "buyer"
+							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
@@ -223,7 +212,7 @@
 			}
 		},
 		{
-			"id": "main-app_rock-navmenu_buyer_uiConfig",
+			"id": "main-app_rock-navmenu_admin_uiConfig",
 			"name": "main-app_rock-navmenu",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -239,7 +228,7 @@
 							"service": "_ALL",
 							"component": "rock-navmenu",
 							"subComponent": "_ALL",
-							"role": "buyer"
+							"role": "admin"
 						},
 						"jsonData": {
 							"config": [
@@ -272,7 +261,7 @@
 			}
 		},
 		{
-			"id": "main-app_tenant-config_buyer_uiConfig",
+			"id": "main-app_tenant-config_admin_uiConfig",
 			"name": "main-app_tenant-config",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -288,13 +277,13 @@
 							"service": "_ALL",
 							"component": "tenant-config",
 							"subComponent": "_ALL",
-							"role": "buyer"
+							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
-								"logoUrl": "../src/images/jcpenney_logo.svg",
-								"tenantName": "JCPenney",
-								"primaryColor": "#D71921",
+								"logoUrl": "../src/images/ikealogo.svg",
+								"tenantName": "IKEA",
+								"primaryColor": "#0060A0",
 								"primaryLightColor": "#0bb2e8",
 								"secondaryColor": "#364653"
 							}
