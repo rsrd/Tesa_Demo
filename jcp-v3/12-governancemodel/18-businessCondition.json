@@ -7,14 +7,14 @@
   "entityModels": [
     {
       "id": "businessRequiredAttributesArePopulated_businessCondition",
-      "name": "Business has provided the requried attributes",
+      "name": "Business has provided the required attributes",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Business has provided the requried attributes"
+                "value": "Business has provided the required attributes"
               }
             ]
           },
@@ -122,14 +122,14 @@
     },
     {
       "id": "buyerRequiredAttributesArePopulated_businessCondition",
-      "name": "Buyer has provided the requried attributes",
+      "name": "Buyer has provided the required attributes",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Buyer has provided the requried attributes"
+                "value": "Buyer has provided the required attributes"
               }
             ]
           },
@@ -246,14 +246,14 @@
     },
     {
       "id": "additionalVendorRequiredAttributesArePopulated_businessCondition",
-      "name": "Vendor has provided additional requried attributes",
+      "name": "Vendor has provided additional required attributes",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Vendor has provided additional requried attributes"
+                "value": "Vendor has provided additional required attributes"
               }
             ]
           },
@@ -840,7 +840,7 @@
     },
     {
       "id": "validateEnityPresentInCreateWorkflow_businessCondition",
-      "name": "validate Enity Present In CreateWorkflow",
+      "name": "SKU is in create workflow",
       "type": "businessCondition",
       "data": {
         "attributes": {
@@ -848,7 +848,7 @@
             "values": [
               {
                 "id": "1",
-                "value": "validate Enity Present In CreateWorkflow"
+                "value": "SKU is in create workflow"
               }
             ]
           },
@@ -1268,21 +1268,21 @@
     },
     {
       "id": "validateSKUidOrinIdisPopultaedforSKU_businessCondition",
-      "name": "Validate SKUid OrinId is Popultaed for SKU",
+      "name": "Validate SKU Identifiers are populated",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Validate SKUid OrinId is Popultaed for SKU"
+                "value": "Validate SKU Identifiers are populated"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Validate SKUid OrinId is Popultaed for SKU"
+                "value": "Validate SKUid OrinId is populated for SKU"
               }
             ]
           },

@@ -45,6 +45,45 @@
       }
     },
     {
+      "id": "lifecyclestage_authorizationModel_vendor",
+      "name": "lifecyclestage_authorizationModel_vendor",
+      "type": "authorizationModel",
+      "properties": {
+        "readPermission": true,
+        "writePermission": true,
+        "attributesPermission": [
+          {
+            "writePermission": true,
+            "readPermission": true
+          }
+        ],
+        "relationshipsPermission": [
+          {
+            "writePermission": true,
+            "readPermission": true
+          }
+        ],
+        "contextsPermission": [
+          {
+            "writePermission": true,
+            "readPermission": true
+          }
+        ],
+        "contextsAttributesPermission": [
+          {
+            "writePermission": true,
+            "readPermission": true
+          }
+        ],
+        "contextsRelationshipsPermission": [
+          {
+            "writePermission": true,
+            "readPermission": true
+          }
+        ]
+      }
+    },
+    {
       "id": "vdata_authorizationModel_vendor",
       "name": "vdata_authorizationModel_vendor",
       "type": "authorizationModel",
