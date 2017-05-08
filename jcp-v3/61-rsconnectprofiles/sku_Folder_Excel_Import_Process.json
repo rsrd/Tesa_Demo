@@ -51,7 +51,7 @@
                   "settings": {
                     "encoding": "utf8",
                     "headerRowNumber": 1,
-                    "sheetName": "Sheet1",
+                    "sheetName": "Entities",
                     "supportsCollection": "false"
                   },
                   "includeFilter": [],
@@ -962,6 +962,18 @@
                     {
                       "source": "Factsheet",
                       "destination": "entity.data.attributes.factsheet.values[0].value"
+                    },
+                    {
+                      "source": "ASSEMBLY",
+                      "destination": "entity.data.contexts[0].attributes.assembly.values[0].value"
+                    },
+                    {
+                      "source": "BASE MATERIAL",
+                      "destination": "entity.data.contexts[0].attributes.basematerial.values[0].value"
+                    },
+                    {
+                      "source": "COMPARTMENTS",
+                      "destination": "entity.data.contexts[0].attributes.compartments.values[0].value"
                     },
                     {
                       "source": "Taxonomy",

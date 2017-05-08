@@ -34,14 +34,19 @@
                 "isDataPersistent": "false",
                 "rdpConnector": {
                   "type": "RSJSON",
-                  "version": "1.1"
+                  "version": "1.1",
+                  "settings": {
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
+                  }
                 }
               },
               "outboundChannel": {
                 "isDataPersistent": "false",
                 "kinesisStreamConnector": {
-                  "streamName": "rsconnect-pmqa-perf-us-west-2-export",
-                  "regionName": "us-west-2",
+                  "streamName": "rsconnect-qa-us-east-1-export",
+                  "regionName": "us-east-1",
                   "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
@@ -51,10 +56,7 @@
                   "version": "1.1",
                   "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8",                                     
-                    "includeParent": "true",
-                    "includeChildren": "false",
-                    "includeSiblings": "false"
+                    "encoding": "utf8"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -63,8 +65,7 @@
                   "type": "RSJSON",
                   "version": "1.1",
                   "batchSize": 1,
-                  "settings": {
-                  },
+                  "settings": {},
                   "includeFilter": [],
                   "excludeFilter": []
                 }

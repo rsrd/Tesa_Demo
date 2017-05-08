@@ -34,9 +34,9 @@
                 "isDataPersistent": "true",
                 "s3BucketConnector": {
                   "fileType": "xlsx",
-                  "bucketName": "rs-apps-rcoa-imports",
+                  "bucketName": "rsconnect-qa-us-east-1-import",
                   "regionName": "us-east-1",
-                  "credentialsType": "AMAZON_EC2_IAM_ROLE"
+                  "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
               },
               "outboundChannel": {

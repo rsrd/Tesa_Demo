@@ -34,14 +34,19 @@
                 "isDataPersistent": "false",
                 "rdpConnector": {
                   "type": "RSJSON",
-                  "version": "1.1"
+                  "version": "1.1",
+                  "settings": {
+                    "includeParent": "true",
+                    "includeChildren": "false",
+                    "includeSiblings": "false"
+                  }
                 }
               },
               "outboundChannel": {
                 "isDataPersistent": "true",
                 "s3ObjectConnector": {
-                  "regionName": "us-west-2",
-                  "bucketName": "rsconnect-pmqa-perf-us-west-2-export",
+                  "regionName": "us-east-1",
+                  "bucketName": "rsconnect-qa-us-east-1-export",
                   "key": "xlsx",
                   "credentialsType": "AMAZON_EC2_INSTANCE_PROFILE"
                 }
@@ -52,10 +57,7 @@
                   "version": "1.1",
                   "batchSize": 1,
                   "settings": {
-                    "encoding": "utf8",                                     
-                    "includeParent": "true",
-                    "includeChildren": "false",
-                    "includeSiblings": "false"
+                    "encoding": "utf8"
                   },
                   "includeFilter": [],
                   "excludeFilter": []
@@ -72,7 +74,7 @@
                 "mapping": {
                   "settings": {
                     "entityType": "sku_entityManageModel",
-                    "enableDynamicMapping" : "false",
+                    "enableDynamicMapping": "false",
                     "source": "rms",
                     "allowNullValues": "true",
                     "clearMissingAttributes": "false",
@@ -81,7 +83,7 @@
                       {
                         "caseFormat": "LOWER",
                         "removeSpecialCharacters": "true",
-                        "removeWhitespace" : "true",
+                        "removeWhitespace": "true",
                         "trimLeadingNumbers": "false",
                         "trimTrailingNumbers": "false",
                         "isDefault": "false"
@@ -944,46 +946,6 @@
                     {
                       "destination": "Factsheet",
                       "source": "data.attributes.factsheet.values[0].value"
-                    }
-                  ],
-                  "contexts": [
-                    {
-                      "context": [
-                        {
-                          "name": "classification",
-                          "fields": [
-                            "Sheet1.AA",
-                            "Sheet1.AB"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "context": [
-                        {
-                          "name": "channel",
-                          "fields": [
-                            "@value(Web)"
-                          ]
-                        },
-                        {
-                          "name": "classification",
-                          "fields": [
-                            "Sheet1.AC"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "context": [
-                        {
-                          "name": "channel",
-                          "fields": [
-                            "Sheet1.AA",
-                            "Sheet1.AB"
-                          ]
-                        }
-                      ]
                     }
                   ]
                 }
