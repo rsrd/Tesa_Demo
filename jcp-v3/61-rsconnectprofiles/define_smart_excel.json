@@ -8,65 +8,85 @@
     {
       "id": "entityModelDownload",
       "name": "entityModelDownload",
-      "tenantId": "",
-      "profileType": "MODEL_EXPORT",
-      "enabled": "true",
-      "inboundChannel": {
-        "isDataPersistent": "false",
-        "rdpConnector": {
-          "type": "RSJSON",
-          "version": "1.1",
-          "search": {
-            "params": {
-              "query": {
-                "id": "sku_entityManageModel",
-                "filters": {
-                  "typesCriterion": [
-                    "entityManageModel"
-                  ]
+      "type": "COPProfile",
+      "properties": {
+        "createdByService": "entityservice",
+        "createdService": "configurationManageService",
+        "createdDate": "2017-05-05T22:14:30.481+0000"
+      },
+      "data": {
+        "contexts": [
+          {
+            "context": {
+              "app": "RSConnect",
+              "service": "excelImportProcessService",
+              "list": "self"
+            },
+            "jsonData": {
+              "id": "entityModelDownload",
+              "name": "entityModelDownload",
+              "tenantId": "",
+              "profileType": "MODEL_EXPORT",
+              "enabled": "true",
+              "inboundChannel": {
+                "isDataPersistent": "false",
+                "rdpConnector": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "search": {
+                    "params": {
+                      "query": {
+                        "id": "sku_entityManageModel",
+                        "filters": {
+                          "typesCriterion": [
+                            "entityManageModel"
+                          ]
+                        }
+                      },
+                      "fields": {
+                        "attributes": [
+                          "_ALL"
+                        ],
+                        "relationships": [
+                          "_ALL"
+                        ]
+                      }
+                    }
+                  }
                 }
               },
-              "fields": {
-                "attributes": [
-                  "_ALL"
-                ],
-                "relationships": [
-                  "_ALL"
-                ]
+              "outboundChannel": {
+                "isDataPersistent": "false",
+                "folderConnector": {
+                  "sourceFolder": "/apps/imports/sku",
+                  "pattern": "*.xlsx"
+                }
+              },
+              "transform": {
+                "inboundFormat": {
+                  "type": "RSJSON",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                },
+                "outboundFormat": {
+                  "type": "SMARTEXCEL",
+                  "version": "1.1",
+                  "batchSize": 1,
+                  "settings": {
+                    "encoding": "utf8"
+                  },
+                  "includeFilter": [],
+                  "excludeFilter": []
+                }
               }
             }
           }
-        }
-      },
-      "outboundChannel": {
-        "isDataPersistent": "false",
-        "kinesisStreamConnector": {
-          "streamName": "rsconnect-perf-us-west-2-kinesis-export",
-          "regionName": "us-west-2",
-          "credentialsType": "AMAZON_EC2_IAM_ROLE"
-        }
-      },
-      "transform": {
-        "inboundFormat": {
-          "type": "RSJSON",
-          "version": "1.1",
-          "batchSize": 1,
-          "settings": {
-            "encoding": "utf8"
-          },
-          "includeFilter": [],
-          "excludeFilter": []
-        },
-        "outboundFormat": {
-          "type": "SMARTEXCEL",
-          "version": "1.1",
-          "batchSize": 1,
-          "settings": {
-            "encoding": "utf8"
-          },
-          "includeFilter": [],
-          "excludeFilter": []
-        }
+        ]
       }
     }
   ]
