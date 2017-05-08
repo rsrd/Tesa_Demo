@@ -901,6 +901,12 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -915,66 +921,6 @@
                       "values": [
                         {
                           "value": "Submit"
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "direction": "both",
-                  "relationshipType": "association",
-                  "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteria_businessCondition",
-                  "relTo": {
-                    "id": "vendorRequiredAttributesArePopulated_businessCondition",
-                    "type": "businessCondition"
-                  },
-                  "attributes": {
-                    "ignoreChangeContext": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "isDeleted": {
-                      "values": [
-                        {
-                          "value": "false"
-                        }
-                      ]
-                    },
-                    "enabled": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "executionMode": {
-                      "values": [
-                        {
-                          "value": "any"
-                        }
-                      ]
-                    },
-                    "executionOrder": {
-                      "values": [
-                        {
-                          "value": "2"
-                        }
-                      ]
-                    },
-                    "activityCriteria": {
-                      "values": [
-                        {
-                          "value": "exitCriteria"
-                        }
-                      ]
-                    },
-                    "stepName": {
-                      "values": [
-                        {
-                          "value": "New SKUs to Submit"
                         }
                       ]
                     },
@@ -1035,6 +981,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1102,6 +1051,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1176,6 +1128,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1251,6 +1206,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1326,6 +1284,9 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1401,6 +1362,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1481,6 +1445,66 @@
                       ]
                     }
                   }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessRules_generateORIN_businessRule",
+                  "relTo": {
+                    "id": "generateORIN_businessRule",
+                    "type": "businessRule"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "Assign Internal Information"
+                        }
+                      ]
+                    }
+                  }
                 }
               ]
             }
@@ -1547,6 +1571,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
@@ -1614,6 +1641,9 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
