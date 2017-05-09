@@ -25,7 +25,7 @@
             <av:PointCollection x:Key="ConnectorLocation">300,171 300,239</av:PointCollection>
           </scg3:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AllowedUsers="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional," AllowedRoles="buyer" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" DisplayName="Review SKU" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="4feccba9-977c-44a3-9dc1-d2d13ab44bbf" NotifyAllAssignedUsers="False" NotifyUser="False">         
+        <mwac:HumanWork AlertUserAfter="{x:Null}" AssignedUser="{x:Null}" AllowedUsers="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional," AllowedRoles="buyer" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" DisplayName="reviewSKU" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="4feccba9-977c-44a3-9dc1-d2d13ab44bbf" NotifyAllAssignedUsers="False" NotifyUser="False">         
           <sap:WorkflowViewStateService.ViewState>
             <scg3:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -40,7 +40,7 @@
                 <av:Size x:Key="ShapeSize">200,22</av:Size>
               </scg3:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <mwac:InitiateExport Description="{x:Null}" DisplayName="Publish" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="236d51c8-4820-46f1-9609-bf451d85bc8f">
+            <mwac:InitiateExport Description="{x:Null}" DisplayName="publish" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="236d51c8-4820-46f1-9609-bf451d85bc8f">
               <sap:WorkflowViewStateService.ViewState>
                 <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
