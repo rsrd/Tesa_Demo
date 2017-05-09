@@ -533,6 +533,52 @@
                   ]
                 }
               }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_copySupplierNumberNameAttributeValueToGovern_businessRule",
+              "relTo": {
+                "id": "copySupplierNumberNameAttributeValueToGovern_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "13"
+                    }
+                  ]
+                }
+              }
             }
           ],
           "hasBusinessConditions": [
@@ -901,13 +947,19 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "New SKUs to Submit"
+                          "value": "newSkusToSubmit"
                         }
                       ]
                     },
@@ -915,66 +967,6 @@
                       "values": [
                         {
                           "value": "Submit"
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "direction": "both",
-                  "relationshipType": "association",
-                  "id": "hasBusinessConditions_vendorRequiredAttributesArePopulatedexitCriteria_businessCondition",
-                  "relTo": {
-                    "id": "vendorRequiredAttributesArePopulated_businessCondition",
-                    "type": "businessCondition"
-                  },
-                  "attributes": {
-                    "ignoreChangeContext": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "isDeleted": {
-                      "values": [
-                        {
-                          "value": "false"
-                        }
-                      ]
-                    },
-                    "enabled": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "executionMode": {
-                      "values": [
-                        {
-                          "value": "any"
-                        }
-                      ]
-                    },
-                    "executionOrder": {
-                      "values": [
-                        {
-                          "value": "2"
-                        }
-                      ]
-                    },
-                    "activityCriteria": {
-                      "values": [
-                        {
-                          "value": "exitCriteria"
-                        }
-                      ]
-                    },
-                    "stepName": {
-                      "values": [
-                        {
-                          "value": "New SKUs to Submit"
                         }
                       ]
                     },
@@ -1035,13 +1027,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Rejected SKUs"
+                          "value": "rejectedSkus"
                         }
                       ]
                     },
@@ -1102,13 +1097,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Provide Additional Info"
+                          "value": "provideAdditionalInfo"
                         }
                       ]
                     },
@@ -1176,13 +1174,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Review Assortment"
+                          "value": "reviewAssortment"
                         }
                       ]
                     },
@@ -1251,13 +1252,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Assign Internal Information"
+                          "value": "assignInternalInformation"
                         }
                       ]
                     },
@@ -1326,13 +1330,16 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Waiting for RMS"
+                          "value": "waitingForRms"
                         }
                       ]
                     },
@@ -1401,13 +1408,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Waiting for RMS"
+                          "value": "waitingForRms"
                         }
                       ]
                     },
@@ -1476,7 +1486,67 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Publish to RMS for IDs"
+                          "value": "publishToRmsForIds"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessRules_generateORIN_businessRule",
+                  "relTo": {
+                    "id": "generateORIN_businessRule",
+                    "type": "businessRule"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "assignInternalInformation"
                         }
                       ]
                     }
@@ -1547,13 +1617,16 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Review SKU"
+                          "value": "reviewSku"
                         }
                       ]
                     },
@@ -1614,13 +1687,16 @@
                       "values": [
                         {
                           "value": "skipCriteria"
+                        },
+                        {
+                          "value": "async"
                         }
                       ]
                     },
                     "stepName": {
                       "values": [
                         {
-                          "value": "Publish"
+                          "value": "publish"
                         }
                       ]
                     },
@@ -2014,7 +2090,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich Copy"
+                          "value": "enrichCopy"
                         }
                       ]
                     },
@@ -2084,7 +2160,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich Copy"
+                          "value": "enrichCopy"
                         }
                       ]
                     },
@@ -2157,7 +2233,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich with Digital Assets"
+                          "value": "enrichWithDigitalAssets"
                         }
                       ]
                     },
@@ -2548,7 +2624,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich Copy"
+                          "value": "enrichCopy"
                         }
                       ]
                     },
@@ -2618,7 +2694,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich Copy"
+                          "value": "enrichCopy"
                         }
                       ]
                     },
@@ -2691,7 +2767,7 @@
                     "stepName": {
                       "values": [
                         {
-                          "value": "Enrich with Digital Assets"
+                          "value": "enrichWithDigitalAssets"
                         }
                       ]
                     },

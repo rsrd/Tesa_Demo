@@ -16,13 +16,6 @@ var quiteLoadConfig = {
     "option": "referencedata",
 }
 
-// quiteLoadConfig = {
-//     "enabled": true,
-//     "folderName": "jcp-v2",
-//     "tenantId": "jcp",
-//     "option": "config",
-// }
-
 module.exports = {
     toolConfig: toolConfig,
     quiteLoadConfig: quiteLoadConfig
