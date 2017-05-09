@@ -1,10 +1,74 @@
 {
-	"metaInfo": {
-		"dataIndex": "entityModel",
-		"collectionName": "entityModels",
-		"responseObjectName": "response"
-	},
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
     "entityModels": [
+        {
+            "id": "productpresentation_entityValidationModel",
+            "name": "productpresentation",
+            "type": "entityValidationModel",
+            "domain": "generic",
+            "data": {
+                "attributes": {
+                    "subdivision": {
+                        "properties": {
+                            "isCollection": true,
+                            "required": false
+                        }
+                    }
+                },
+                "relationships": {
+                    "productpresentationtolot": [
+                        {
+                            "properties": {
+                                "cardinality": [
+                                    {
+                                        "minumum": 1
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "linkdescription": {
+                                    "properties": {
+                                        "required": false
+                                    }
+                                },
+                                "enabled": {
+                                    "properties": {
+                                        "required": false
+                                    }
+                                },
+                                "status": {
+                                    "properties": {
+                                        "required": false
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "productpresentationtoimage": [
+                        {
+                            "properties": {
+                                "cardinality": [
+                                    {
+                                        "minumum": 0
+                                    }
+                                ]
+                            },
+                            "attributes": {
+                                "status": {
+                                    "properties": {
+                                        "required": false
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
         {
             "id": "lot_entityValidationModel",
             "name": "lot",
@@ -203,70 +267,6 @@
                         }
                     ],
                     "lottoimage": [
-                        {
-                            "properties": {
-                                "cardinality": [
-                                    {
-                                        "minumum": 0
-                                    }
-                                ]
-                            },
-                            "attributes": {
-                                "status": {
-                                    "properties": {
-                                        "required": false
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "id": "productpresentation_entityValidationModel",
-            "name": "productpresentation",
-            "type": "entityValidationModel",
-            "domain": "generic",
-            "data": {
-                "attributes": {
-                    "subdivision": {
-                        "properties": {
-                            "isCollection": true,
-                            "required": false
-                        }
-                    }
-                },
-                "relationships": {
-                    "productpresentationtolot": [
-                        {
-                            "properties": {
-                                "cardinality": [
-                                    {
-                                        "minumum": 1
-                                    }
-                                ]
-                            },
-                            "attributes": {
-                                "linkdescription": {
-                                    "properties": {
-                                        "required": false
-                                    }
-                                },
-                                "enabled": {
-                                    "properties": {
-                                        "required": false
-                                    }
-                                },
-                                "status": {
-                                    "properties": {
-                                        "required": false
-                                    }
-                                }
-                            }
-                        }
-                    ],
-                    "productpresentationtoimage": [
                         {
                             "properties": {
                                 "cardinality": [
@@ -488,6 +488,26 @@
                             "precision": 2,
                             "required": false
                         }
+                    },
+                    "alternateimages": {
+                        "properties": {
+                            "isCollection": true,
+                            "required": false
+                        }
+                    },
+                    "grossprofit": {
+                        "properties": {
+                            "precision": 2,
+                            "rangeToInclusive": 100,
+                            "rangeFromInclusive": 0,
+                            "required": false
+                        }
+                    },
+                    "estimatedupsshippingcharge": {
+                        "properties": {
+                            "precision": 2,
+                            "required": false
+                        }
                     }
                 },
                 "relationships": {
@@ -508,7 +528,8 @@
                             "properties": {
                                 "cardinality": [
                                     {
-                                        "minumum": 1
+                                        "minumum": 1,
+                                        "maximum": 1
                                     }
                                 ]
                             },
