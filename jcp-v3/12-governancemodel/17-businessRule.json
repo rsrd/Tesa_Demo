@@ -2101,7 +2101,149 @@
           "definition": {
             "values": [
               {
-                "value": "SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://demo4064491.mockable.io/orin\",\"{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\": \\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}\",\"RMSInfo.ItemNumber[0]\"]]"
+                "value": "IIF[ValidateEmptyAttributes[\"orin\"],SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://demo4064491.mockable.io/orin\",\"{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\": \\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}\",\"RMSInfo.ItemNumber[0]\"]],false]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "catgoryAttributesPopulated_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Catgory attributes populated Business Rule"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Catgory attributes populated Business Rule"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[AttributesHaveErrorsInContext[\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],false]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "copySupplierNumberNameAttributeValueToGovern_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Copy suppliernumbername Attribute Value To Govern"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Copy suppliernumbername Attribute Value To Govern"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "validation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"] AND HasAttributesChanged[\"suppliernumbername\"]=false,true,CopyAttributeValueToGovern[\"suppliernumbername\"]]"
               }
             ]
           },
