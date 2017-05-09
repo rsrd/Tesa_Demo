@@ -1036,7 +1036,7 @@
           "definition": {
             "values": [
               {
-                "value": "IIF[ValidateEmptyAttributes[\"primaryname\"],AddAttributeError[\"Req001\",\"\",\"primaryname\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryname\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],AddAttributeInformation[\"SYS001\", \"\", \"searchkeywordsnavigation\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
+                "value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\",\"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],AddAttributeInformation[\"SYS001\", \"\", \"searchkeywordsnavigation\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
               }
             ]
           },
@@ -2031,6 +2031,77 @@
             "values": [
               {
                 "value": "IIF[HasAnyAttributesChanged[\"orin\", \"rmsskuid\"] AND IsEntityInWorkflow[\"newProductSetup\", \"Waiting for RMS\"]AND ValidateEmptyAttributes[\"orin\",\"rmsskuid\"]=false,ResumeWorkflow[\"newProductSetup\", \"Waiting for RMS\", \"Done\"],false]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "generateORIN_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "generate ORIN businessRule"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "generate ORIN"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://demo4064491.mockable.io/orin\",\"{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\": \\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}\",\"RMSInfo.ItemNumber[0]\"]]"
               }
             ]
           },
