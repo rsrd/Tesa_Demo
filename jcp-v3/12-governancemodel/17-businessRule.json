@@ -1675,7 +1675,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\", \"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\",\"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"pptitle\"],AddAttributeError[\"Req001\", \"\",\"pptitle\"],AddAttributeInformation[\"SYS001\", \"\",\"pptitle\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\",\"plannedonsitedate\"],AddAttributeInformation[\"SYS001\", \"\",\"plannedonsitedate\"]] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],AddAttributeInformation[\"SYS001\", \"\",\"division\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\", \"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\",\"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"longdescription\"],AddAttributeError[\"Req001\", \"\",\"longdescription\"],AddAttributeInformation[\"SYS001\", \"\",\"longdescription\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\",\"plannedonsitedate\"],AddAttributeInformation[\"SYS001\", \"\",\"plannedonsitedate\"]] AND IIF[ValidateEmptyAttributes[\"division\"],AddAttributeError[\"Req001\", \"\",\"division\"],AddAttributeInformation[\"SYS001\", \"\",\"division\"]]"
 							}
 						]
 					},
@@ -2101,7 +2101,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"orin\"],SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",\"{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\": \\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}\",\"RMSInfo.ItemNumber[0]\"]],false]"
 							}
 						]
 					},
