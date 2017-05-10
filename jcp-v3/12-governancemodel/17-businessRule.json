@@ -2101,7 +2101,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"orin\"],SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://demo4064491.mockable.io/orin\",\"{\\\"UserID\\\":\\\"PimUser\\\",\\\"ItemCount\\\": \\\"1\\\",\\\"RequestID\\\":\\\"TOKEN\\\"}\",\"RMSInfo.ItemNumber[0]\"]],false]"
 							}
 						]
 					},
