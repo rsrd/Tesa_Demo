@@ -1401,21 +1401,21 @@
     },
     {
       "id": "validateSkipCriteriaForEnrichCopy_businessCondition",
-      "name": "Validating Skip Criteria for Enrich Copy",
+      "name": "CopyWriter has satisfied the condition to skip",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Validating skip Criteria For Enrich Copy"
+                "value": "CopyWriter has satisfied the condition to skip"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Validating skip Criteria For Enrich Copy"
+                "value": "CopyWriter has satisfied the condition to skip"
               }
             ]
           },
@@ -1497,21 +1497,21 @@
     },
     {
       "id": "validateExitCriteriaForEnrichCopy_businessCondition",
-      "name": "Validating Exit Criteria for Enrich Copy",
+      "name": "CopyWriter has provided the required attributes to exit",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Validating Exit Criteria for Enrich Copy"
+                "value": "CopyWriter has provided the required attributes to exit"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Validating Exit Criteria for Enrich Copy"
+                "value": "CopyWriter has provided the required attributes to exit"
               }
             ]
           },
@@ -1600,21 +1600,21 @@
     },
     {
       "id": "validateSkipandExitCriteriaForDigitalAssets_businessCondition",
-      "name": "Validating Exit Criteria for PP_BC",
+      "name": "AssetEnrichment has provided the required attributes to exit",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Validating skip and exit Criteria for Digital Assets"
+                "value": "AssetEnrichment has provided the required attributes to exit"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Validating skip and exit Criteria for Digital Assets"
+                "value": "AssetEnrichment has provided the required attributes to exit"
               }
             ]
           },
@@ -1715,7 +1715,7 @@
     },
     {
       "id": "validateLOTIdOrinIdIsPopultaedForLOT_businessCondition",
-      "name": "Validate LOTid OrinId is Popultaed for LOT",
+      "name": "Validate LOT Identifiers are populated",
       "type": "businessCondition",
       "data": {
         "attributes": {
