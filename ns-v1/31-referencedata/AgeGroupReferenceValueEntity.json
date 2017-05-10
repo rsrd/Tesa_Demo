@@ -1,0 +1,321 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "ADT_agegroup",
+			"name": "ADT",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "ADT",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Adult",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "INF_agegroup",
+			"name": "INF",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "INF",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Infant",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "NON_agegroup",
+			"name": "NON",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "NON",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "No Age",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "TEE_agegroup",
+			"name": "TEE",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "TEE",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Teen",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "TOD_agegroup",
+			"name": "TOD",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "TOD",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Toddler",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "YTH_agegroup",
+			"name": "YTH",
+			"type": "agegroup",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "YTH",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Youth",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+}

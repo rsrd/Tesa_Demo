@@ -1,0 +1,2245 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "ANC_chaintype",
+			"name": "ANC",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "ANC",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Anchor",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BAL_chaintype",
+			"name": "BAL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BAL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Ball",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BKT_chaintype",
+			"name": "BKT",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BKT",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Basket Weave",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BEA_chaintype",
+			"name": "BEA",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BEA",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Bead",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BEL_chaintype",
+			"name": "BEL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BEL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Belcher",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BEV_chaintype",
+			"name": "BEV",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BEV",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Beveled Herringbone",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BIS_chaintype",
+			"name": "BIS",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BIS",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Bismark",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BOS_chaintype",
+			"name": "BOS",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BOS",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Boston Link",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BOX_chaintype",
+			"name": "BOX",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BOX",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Box",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "BYZ_chaintype",
+			"name": "BYZ",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "BYZ",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Byzantine",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "CCH_chaintype",
+			"name": "CCH",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "CCH",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "C Chain",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "CBL_chaintype",
+			"name": "CBL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "CBL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Cable",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "CSD_chaintype",
+			"name": "CSD",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "CSD",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Cascade",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "COB_chaintype",
+			"name": "COB",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "COB",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Cobra",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "CRD_chaintype",
+			"name": "CRD",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "CRD",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Cord",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "CRB_chaintype",
+			"name": "CRB",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "CRB",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Curb",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "DBL_chaintype",
+			"name": "DBL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "DBL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Fancy Double Link",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "FIG_chaintype",
+			"name": "FIG",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "FIG",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Figaro",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "FRN_chaintype",
+			"name": "FRN",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "FRN",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Franco",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "HRT_chaintype",
+			"name": "HRT",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "HRT",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Heart",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "HER_chaintype",
+			"name": "HER",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "HER",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Herringbone",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "HOL_chaintype",
+			"name": "HOL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "HOL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Hollow Mariner",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "LCE_chaintype",
+			"name": "LCE",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "LCE",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Lace",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "LNK_chaintype",
+			"name": "LNK",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "LNK",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Link",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "MAR_chaintype",
+			"name": "MAR",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "MAR",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Mariner",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "MSH_chaintype",
+			"name": "MSH",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "MSH",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Mesh",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "MIR_chaintype",
+			"name": "MIR",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "MIR",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Mirror",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "OMG_chaintype",
+			"name": "OMG",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "OMG",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Omega",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "OCT_chaintype",
+			"name": "OCT",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "OCT",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Other Chain Type",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "POP_chaintype",
+			"name": "POP",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "POP",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Popcorn",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "PZL_chaintype",
+			"name": "PZL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "PZL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Puzzle",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "RSB_chaintype",
+			"name": "RSB",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "RSB",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Raspberry",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "ROL_chaintype",
+			"name": "ROL",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "ROL",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Rolo",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "ROP_chaintype",
+			"name": "ROP",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "ROP",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Rope",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "SER_chaintype",
+			"name": "SER",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "SER",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Serpentine",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "SBS_chaintype",
+			"name": "SBS",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "SBS",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Side by Side",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "SNG_chaintype",
+			"name": "SNG",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "SNG",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Singapore",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "SNK_chaintype",
+			"name": "SNK",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "SNK",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Snake",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "STK_chaintype",
+			"name": "STK",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "STK",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Stocking Mesh",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "STR_chaintype",
+			"name": "STR",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "STR",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Strand",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "TOR_chaintype",
+			"name": "TOR",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "TOR",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Tornado",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "TRK_chaintype",
+			"name": "TRK",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "TRK",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Track",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "WHT_chaintype",
+			"name": "WHT",
+			"type": "chaintype",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "WHT",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Wheat",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"datasourcecode": {
+						"values": [
+							{
+								"value": "EPM",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"status": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+}
