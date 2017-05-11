@@ -36,6 +36,16 @@
 						"properties": {
 							"defaultValues": "Y"
 						}
+					},
+					"creationdate": {
+						"properties":{
+							"defaultValues": "[[systemdatetime]]"
+						}
+					},
+					"suppliernumbername": {
+						"properties":{
+							"defaultValues": "[[currentuser.ownershipdata]]"
+						}
 					}
 				}
 			}
@@ -275,6 +285,16 @@
 						"properties": {
 							"defaultValues": "Core"
 						}
+					},
+					"creationdate": {
+						"properties":{
+							"defaultValues": "[[systemdatetime]]"
+						}
+					},
+					"suppliernumbername": {
+						"properties":{
+							"defaultValues": "[[currentuser.ownershipdata]]"
+						}
 					}
 				}
 			}
@@ -290,6 +310,11 @@
 						"properties": {
 							"defaultValues": "pdp5[[uniqueid]]"
 						}
+					},
+					"creationdate": {
+						"properties":{
+							"defaultValues":"[[systemdatetime]]"
+						}
 					}
 				}
 			}
@@ -304,6 +329,11 @@
 					"identifier": {
 						"properties": {
 							"defaultValues": "ENP6[[uniqueid]]"
+						}
+					},
+					"creationdate": {
+						"properties":{
+							"defaultValues":"[[systemdatetime]]"
 						}
 					}
 				}
