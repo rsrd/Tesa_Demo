@@ -965,7 +965,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],true,AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
 							}
 						]
 					},
