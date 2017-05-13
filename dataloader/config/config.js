@@ -15,7 +15,7 @@
 //          "entitymodels": {
 //              "BLAH_KEY": "blah-value"
 //          },
-//          "12-governancemodel": {
+//          "governancemodel": {
 //              "BLAH_KEY": "blah-value"
 //          }
 //      }
