@@ -15,7 +15,12 @@
 
 var toolConfig = {
     "webUrl": "http://manage.qa2-us-east-1.riversand-dataplatform.com:8085",
-    "templateVariables": { 
+    "templateVariables": {
+        "rsconnectprofiles": {
+            "ENVNAME": "qa2-us-east-1",
+            "AWSREGIONNAME": "us-east-1",
+            "AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE"
+        }
     },
     "elasticUrl": "http://192.168.0.85:9200",
     "delay": 10,
