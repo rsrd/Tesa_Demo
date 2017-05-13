@@ -1,0 +1,76 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "datamodel_s3bucket_json_import_process",
+			"name": "datamodel_s3bucket_json_import_process",
+			"version": "1.0",
+			"type": "COPProfile",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-05-04T03:51:00.407Z",
+				"createdBy": "system"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "rsconnectservice",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "datamodel_s3bucket_json_import_process",
+							"name": "datamodel_s3bucket_json_import_process",
+							"tenantId": "",
+							"profileType": "MODEL_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"s3BucketConnector": {
+									"fileType": "json",
+									"bucketName": "{{ENVNAME}}-import-model",
+									"regionName": "{{AWSREGIONNAME}}",
+									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

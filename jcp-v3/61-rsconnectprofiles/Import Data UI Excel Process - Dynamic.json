@@ -1,0 +1,105 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_Folder_Excel_Import_Process_Dynamic",
+			"name": "sku_Folder_Excel_Import_Process_Dynamic",
+			"type": "COPProfile",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-05-05T23:20:30.320+0000"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportProcessService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "sku_Folder_Excel_Import_Process_Dynamic",
+							"name": "sku_Folder_Excel_Import_Process_Dynamic",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"folderConnector": {
+									"sourceFolder": "",
+									"pattern": "*"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "EXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8",
+										"headerRowNumber": 1,
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"supportsCollection": "true"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(TYPE)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "LOWER",
+												"removeSpecialCharacters": "true",
+												"removeWhitespace": "true",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@field(Classification)",
+												"taxonomy": "@field(Taxonomy)"
+											}
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

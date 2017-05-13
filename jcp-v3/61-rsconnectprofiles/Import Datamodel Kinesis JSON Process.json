@@ -1,0 +1,75 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "kinesis_JSON_Import_Process_Model",
+			"name": "kinesis_JSON_Import_Process_Model",
+			"version": "1.0",
+			"type": "COPProfile",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-04-30T03:51:00.407Z",
+				"createdBy": "system"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportProcessService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "kinesis_JSON_Import_Process_Model",
+							"name": "kinesis_JSON_Import_Process_Model",
+							"tenantId": "",
+							"profileType": "MODEL_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"kinesisStreamConnector": {
+									"streamName": "{{ENVNAME}}-import-model",
+									"regionName": "{{AWSREGIONNAME}}",
+									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
