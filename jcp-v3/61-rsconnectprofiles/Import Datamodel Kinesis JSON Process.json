@@ -6,16 +6,9 @@
 	},
 	"configObjects": [
 		{
-			"id": "kinesis_JSON_Import_Process_Model",
-			"name": "kinesis_JSON_Import_Process_Model",
-			"version": "1.0",
+			"id": "sku_Kinesis_JSON_Import_Process_Model",
+			"name": "sku_Kinesis_JSON_Import_Process_Model",
 			"type": "COPProfile",
-			"properties": {
-				"createdByService": "entityservice",
-				"createdService": "configurationManageService",
-				"createdDate": "2017-04-30T03:51:00.407Z",
-				"createdBy": "system"
-			},
 			"data": {
 				"contexts": [
 					{
@@ -25,8 +18,8 @@
 							"list": "self"
 						},
 						"jsonData": {
-							"id": "kinesis_JSON_Import_Process_Model",
-							"name": "kinesis_JSON_Import_Process_Model",
+							"id": "sku_Kinesis_JSON_Import_Process_Model",
+							"name": "sku_Kinesis_JSON_Import_Process_Model",
 							"tenantId": "",
 							"profileType": "MODEL_IMPORT",
 							"enabled": "true",

@@ -6,27 +6,28 @@
 	},
 	"configObjects": [
 		{
-			"id": "sku_Kinesis_JSON_Import_Process",
-			"name": "sku_Kinesis_JSON_Import_Process",
+			"id": "s3_JSON_Import_Process",
+			"name": "s3_JSON_Import_Process",
 			"type": "COPProfile",
 			"data": {
 				"contexts": [
 					{
 						"context": {
 							"app": "RSConnect",
-							"service": "excelImportProcessService",
+							"service": "jsonImportProcessService",
 							"list": "self"
 						},
 						"jsonData": {
-							"id": "sku_Kinesis_JSON_Import_Process",
-							"name": "sku_Kinesis_JSON_Import_Process",
+							"id": "s3_JSON_Import_Process",
+							"name": "s3_JSON_Import_Process",
 							"tenantId": "",
 							"profileType": "ENTITY_IMPORT",
 							"enabled": "true",
 							"inboundChannel": {
 								"isDataPersistent": "false",
-								"kinesisStreamConnector": {
-									"streamName": "{{ENVNAME}}-import",
+								"s3BucketConnector": {
+									"fileType": "json",
+									"bucketName": "{{ENVNAME}}-import",
 									"regionName": "{{AWSREGIONNAME}}",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
 								}
