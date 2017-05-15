@@ -86,7 +86,8 @@
                     },{
                       "header": "Unique Identifier",
                       "name": "entityId",
-                      "sortable": false
+                      "sortable": false,
+                      "linkTemplate": "entity-manage?id={entityId}&type={entityType}"
                     },{
                       "header": "Message",
                       "name": "requestStatus",
