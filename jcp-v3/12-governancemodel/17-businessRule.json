@@ -41,7 +41,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"suppliersitenumber\"],AddAttributeError[\"Req001\", \"\", \"suppliersitenumber\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliersitenumber\"]] AND IIF[ValidateEmptyAttributes[\"suppliermfrshippoint\"],AddAttributeError[\"Req001\", \"\", \"suppliermfrshippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliermfrshippoint\"]] AND IIF[ValidateEmptyAttributes[\"ecommsuppliershippoint\"],AddAttributeError[\"Req001\", \"\", \"ecommsuppliershippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"ecommsuppliershippoint\"]] AND IIF[ValidateEmptyAttributes[\"supplierchannel\"],AddAttributeError[\"Req001\", \"\", \"supplierchannel\"],AddAttributeInformation[\"SYS001\", \"\", \"supplierchannel\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\", \"plannedonsitedate\"],AddAttributeInformation[\"SYS001\", \"\", \"plannedonsitedate\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"suppliersitenumber\"],AddAttributeError[\"Req001\", \"\", \"suppliersitenumber\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliersitenumber\"]] AND IIF[ValidateEmptyAttributes[\"suppliermfrshippoint\"],AddAttributeError[\"Req001\", \"\", \"suppliermfrshippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliermfrshippoint\"]] AND IIF[ValidateEmptyAttributes[\"ecommsuppliershippoint\"],AddAttributeError[\"Req001\", \"\", \"ecommsuppliershippoint\"],AddAttributeInformation[\"SYS001\", \"\", \"ecommsuppliershippoint\"]] AND IIF[ValidateEmptyAttributes[\"supplierchannel\"],AddAttributeError[\"Req001\", \"\", \"supplierchannel\"],AddAttributeInformation[\"SYS001\", \"\", \"supplierchannel\"]] AND IIF[ValidateEmptyAttributes[\"plannedonsitedate\"],AddAttributeError[\"Req001\", \"\", \"plannedonsitedate\"],AddAttributeInformation[\"SYS001\", \"\", \"plannedonsitedate\"]] AND IIF[ValidateEmptyAttributes[\"diff1type\"],AddAttributeError[\"Req001\", \"\", \"diff1type\"],AddAttributeInformation[\"SYS001\", \"\", \"diff1type\"]] AND IIF[ValidateEmptyAttributes[\"diff1group\"],AddAttributeError[\"Req001\", \"\", \"diff1group\"],AddAttributeInformation[\"SYS001\", \"\", \"diff1group\"]] ANDIIF[ValidateEmptyAttributes[\"diff2type\"],AddAttributeError[\"Req001\", \"\", \"diff2type\"],AddAttributeInformation[\"SYS001\", \"\", \"diff2type\"]] AND IIF[ValidateEmptyAttributes[\"diff2group\"],AddAttributeError[\"Req001\", \"\", \"diff2group\"],AddAttributeInformation[\"SYS001\", \"\", \"diff2group\"]]"
 							}
 						]
 					},
@@ -1036,7 +1036,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\",\"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"searchkeywordsnavigation\"],AddAttributeError[\"Req001\", \"\",\"searchkeywordsnavigation\"],AddAttributeInformation[\"SYS001\", \"\", \"searchkeywordsnavigation\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\",\"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
 							}
 						]
 					},
@@ -2277,6 +2277,77 @@
 					}
 				}
 			}
-		}
+		},
+		 {
+      "id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
+      "type": "businessRule",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Populate secondarydesc attribute value With description Attribute value"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Populate secondarydesc attribute value With description Attribute value."
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "computation"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "definition": {
+            "values": [
+              {
+                "value": "IIF[ValidateEmptyAttributes[\"description\"],true,SetAttributeValue[\"secondarydesc\",GetAttributeValue[\"description\"]]]"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        }
+      }
+    }
 	]
 }
