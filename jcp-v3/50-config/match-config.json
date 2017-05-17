@@ -37,7 +37,8 @@
 										"attributesCriterion": [
 											{
 												"upcbarcode": {
-													"eq": "{{upcbarcode}}"
+													"exact": "{{upcbarcode}}",
+													"type": "_STRING"
 												}
 											}
 										]
