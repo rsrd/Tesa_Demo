@@ -84,39 +84,33 @@
 			}
 		},
 		{
-			"id": "thingyyy_authorizationModel_vendor",
-			"name": "thingyyy_authorizationModel_vendor",
+			"id": "thing_authorizationModel_vendor",
+			"name": "thing_authorizationModel_vendor",
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true,
 				"attributesPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsAttributesPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"contextsRelationshipsPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				]
