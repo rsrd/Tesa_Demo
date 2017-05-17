@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-assets-discovery_components-list_vendor_uiConfig",
+			"id": "app-assets-discovery_components-list_copywriter_uiConfig",
 			"name": "app-assets-discovery_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"role": "vendor"
+							"role": "copywriter"
 						},
 						"jsonData": {
 							"config": {
@@ -330,6 +330,13 @@
 											"title": "Attributes",
 											"enableDropdownMenu": true,
 											"selected": true,
+											"menuProviderComponent": {
+												"name": "attribute-tab-menu-provider",
+												"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
+												"properties": {
+													"is-first-menu-item-selected" : true
+												}
+											},
 											"component": {
 												"name": "rock-attribute-manage",
 												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
@@ -352,11 +359,6 @@
 														"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
 														"133311": "Length should be greater than Width",
 														"133312": "Width should be less than Length"
-													},
-													"config-context": {
-														"attributeNames": [
-															"_ALL"
-														]
 													}
 												}
 											}
