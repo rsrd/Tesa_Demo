@@ -1,0 +1,72 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "downloadDataExcel",
+			"name": "downloadDataExcel",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelExportPublishService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "downloadDataExcel",
+							"name": "downloadDataExcel",
+							"tenantId": "",
+							"profileType": "ENTITY_EXPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "true",
+								"s3ObjectConnector": {
+									"regionName": "",
+									"bucketName": "",
+									"key": "xlsx",
+									"credentialsType": ""
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"includeParent": "false",
+										"includeChildren": "false",
+										"includeSiblings": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "SMARTEXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
