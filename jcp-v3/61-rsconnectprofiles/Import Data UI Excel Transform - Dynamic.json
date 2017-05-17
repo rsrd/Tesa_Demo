@@ -63,7 +63,7 @@
 								},
 								"mapping": {
 									"settings": {
-										"entityType": "@field(TYPE)",
+										"entityType": "@field(Type)",
 										"defaultEntityType": "sku",
 										"enableDynamicMapping": "true",
 										"source": "",
@@ -84,8 +84,8 @@
 									"contexts": [
 										{
 											"context": {
-												"classification": "@field(Classification)",
-												"taxonomy": "@field(Taxonomy)"
+												"classification": "@fieldExternalName(Classification)",
+												"taxonomy": "@fieldExternalName(Taxonomy)"
 											}
 										}
 									]

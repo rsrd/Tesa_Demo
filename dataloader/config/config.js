@@ -28,7 +28,8 @@ var toolConfig = {
         "rsconnectprofiles": {
             "ENVNAME": "qa2-us-east-1",
             "AWSREGIONNAME": "us-east-1",
-            "AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE"
+            "AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE",
+				"TENANT": "jcpenney"
         }
     },
     "elasticUrl": "http://192.168.0.85:9200",
@@ -43,7 +44,7 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v3",
     "tenantId": "jcpenney",
-    "option": "config"
+    "option": "authorizationmodel"
 }
 
 module.exports = {
