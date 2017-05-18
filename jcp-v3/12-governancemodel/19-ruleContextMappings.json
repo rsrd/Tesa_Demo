@@ -332,59 +332,6 @@
             {
               "direction": "both",
               "relationshipType": "association",
-              "id": "hasBusinessRules_defaultvaluesforPP_businessRule",
-              "relTo": {
-                "id": "defaultvaluesforPP_businessRule",
-                "type": "businessRule"
-              },
-              "attributes": {
-                "ignoreChangeContext": {
-                  "values": [
-                    {
-                      "value": "true"
-                    }
-                  ]
-                },
-                "isDeleted": {
-                  "values": [
-                    {
-                      "value": "false"
-                    }
-                  ]
-                },
-                "enabled": {
-                  "values": [
-                    {
-                      "value": "true"
-                    }
-                  ]
-                },
-                "executionMode": {
-                  "values": [
-                    {
-                      "value": "any"
-                    }
-                  ]
-                },
-                "executionOrder": {
-                  "values": [
-                    {
-                      "value": "7"
-                    }
-                  ]
-                },
-                "triggerActions": {
-                  "values": [
-                    {
-                      "value": "update"
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "direction": "both",
-              "relationshipType": "association",
               "id": "hasBusinessRules_copyConcatenation_businessRule",
               "relTo": {
                 "id": "copyConcatenation_businessRule",
@@ -2838,7 +2785,7 @@
               }
             }
           ],
-           "hasBusinessRules": [
+          "hasBusinessRules": [
             {
               "direction": "both",
               "relationshipType": "association",
@@ -2883,7 +2830,52 @@
                     }
                   ]
                 }
-                
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
+              "relTo": {
+                "id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                }
               }
             }
           ]
