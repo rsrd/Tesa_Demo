@@ -681,7 +681,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\"],true,SetAttributeValue[\"initialmarkup\",((GetAttributeValue[\"retail\"]-GetAttributeValue[\"cost\"])/GetAttributeValue[\"retail\"])*100]]"
+								"value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\"],true,SetAttributeValue[\"initialmarkup\",Round[((GetAttributeValue[\"retail\"]-GetAttributeValue[\"cost\"])/GetAttributeValue[\"retail\"])*100,2]]]"
 							}
 						]
 					},
@@ -2172,7 +2172,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[HasErrorsInContext[\"Attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"]]"
+								"value": "IIF[HasErrorsInContext[\"attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"]]"
 							}
 						]
 					},
