@@ -2172,7 +2172,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[AttributesHaveErrorsInContext[\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],false]"
+								"value": "IIF[HasErrorsInContext[\"Attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"]]"
 							}
 						]
 					},
@@ -2278,7 +2278,7 @@
 				}
 			}
 		},
-		 {
+		{
       "id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
       "type": "businessRule",
       "data": {
