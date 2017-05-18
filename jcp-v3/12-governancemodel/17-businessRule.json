@@ -681,7 +681,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "var:=((GetAttributeValue[\"retail\"]-GetAttributeValue[\"cost\"])/GetAttributeValue[\"retail\"])*100;roundoff:=Round[var,2];IIF[ValidateEmptyAttributes[\"retail\",\"cost\"],true,SetAttributeValue[\"initialmarkup\",roundoff]]"
+								"value": "IIF[ValidateEmptyAttributes[\"retail\",\"cost\"],true,SetAttributeValue[\"initialmarkup\",Round[((GetAttributeValue[\"retail\"]-GetAttributeValue[\"cost\"])/GetAttributeValue[\"retail\"])*100,2]]]"
 							}
 						]
 					},
