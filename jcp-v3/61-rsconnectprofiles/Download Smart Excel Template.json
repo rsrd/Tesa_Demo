@@ -27,7 +27,27 @@
 								"isDataPersistent": "false",
 								"rdpConnector": {
 									"type": "RSJSON",
-									"version": "1.1"
+									"version": "1.1",
+									"search": {
+										"params": {
+											"query": {
+												"filters": {
+													"typesCriterion": [
+														"entityManageModel"
+													]
+												},
+												"id": "sku_entityManageModel"
+											},
+											"fields": {
+												"attributes": [
+													"_ALL"
+												],
+												"relationships": [
+													"_ALL"
+												]
+											}
+										}
+									}
 								}
 							},
 							"outboundChannel": {
