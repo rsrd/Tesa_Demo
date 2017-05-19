@@ -58,7 +58,8 @@
 									"version": "1.1",
 									"settings": {
 										"encoding": "utf8",
-										"sheetName": "Sheet1"
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
 									},
 									"includeFilter": [],
 									"excludeFilter": []
@@ -81,6 +82,13 @@
 										]
 									},
 									"fieldOverrides": [
+										{
+											"destination": "Type",
+											"source": "type",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
 										{
 											"destination": "GUID",
 											"source": "id",
@@ -198,6 +206,7 @@
 											"source": "data.attributes.channel.values[0].value",
 											"required": true,
 											"enabled": true,
+											"type": "COLLECTION",
 											"entityType": "sku_entityManageModel"
 										},
 										{
@@ -1569,6 +1578,28 @@
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "Taxonomy",
+											"source": "data.contexts[0].context.taxonomy",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "Classification",
+											"source": "data.contexts[0].context.classification",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										}
+									],
+									"contexts": [
+										{
+											"context": {
+												"classification": "_ALL",
+												"taxonomy": "productsetuptaxonomy"
+											}
 										}
 									]
 								}
