@@ -48,7 +48,8 @@
 										"encoding": "utf8",
 										"includeParent": "false",
 										"includeChildren": "false",
-										"includeSiblings": "false"
+										"includeSiblings": "false",
+										"supportsCollection": "true"
 									},
 									"includeFilter": [],
 									"excludeFilter": []
@@ -58,8 +59,7 @@
 									"version": "1.1",
 									"settings": {
 										"encoding": "utf8",
-										"sheetName": "Sheet1",
-										"supportsCollection": "false"
+										"sheetName": "Sheet1"
 									},
 									"includeFilter": [],
 									"excludeFilter": []
@@ -202,11 +202,19 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "channel",
-											"source": "data.attributes.channel.values[0].value",
+											"destination": "channels",
+											"source": "data.attributes.channels.values[0].value",
 											"required": true,
 											"enabled": true,
-											"type": "COLLECTION",
+											"collectionType": "COLLECTION",
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "alternateimages",
+											"source": "data.attributes.alternateimages.values[0].value",
+											"required": true,
+											"enabled": true,
+											"collectionType": "COLLECTION",
 											"entityType": "sku_entityManageModel"
 										},
 										{
