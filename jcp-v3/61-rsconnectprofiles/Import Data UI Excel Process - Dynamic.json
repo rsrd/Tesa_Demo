@@ -88,6 +88,17 @@
 												"taxonomy": "@fieldExternalName(Taxonomy)"
 											}
 										}
+									],
+									"fieldOverrides": [
+										{
+											"source": "UPC",
+											"destination": "@attr(upcbarcode)",
+											"id": 327204039,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										}
 									]
 								}
 							}
