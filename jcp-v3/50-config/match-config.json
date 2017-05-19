@@ -1,54 +1,125 @@
 {
-  "metaInfo": {
-    "dataIndex": "config",
-    "collectionName": "configObjects",
-    "responseObjectName": "response"
-  },
-  "configObjects": [
-    {
-      "id": "sku_matchConfig",
-      "name": "sku",
-      "type": "matchConfig",
-      "properties": {
-        "createdByService": "entityservice",
-        "createdBy": "mary.jane@riversand.com",
-        "createdService": "configurationManageService",
-        "createdDate": "2017-04-23T03:16:25.502Z"
-      },
-      "data": {
-        "jsonData": {
-          "type": "config",
-          "matchRules": [
-            {
-              "matchType": "deterministic",
-              "matchSequence": 1,
-              "searchQuery": {
-                "query": {
-                  "valueContexts": [
-                    {
-                      "source": "internal",
-                      "locale": "en-US"
-                    }
-                  ],
-                  "filters": {
-                    "typesCriterion": [
-                      "sku"
-                    ],
-                    "attributesCriterion": [
-                      {
-                        "upcbarcode": {
-                          "eq": "{{upcbarcode}}"
-                        }
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "contexts": []
-      }
-    }
-  ]
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_matchConfig",
+			"name": "sku",
+			"type": "matchConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "mary.jane@riversand.com",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-04-23T03:16:25.502Z"
+			},
+			"data": {
+				"jsonData": {
+					"type": "config",
+					"matchRules": [
+						{
+							"matchType": "deterministic",
+							"matchSequence": 1,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"sku"
+										],
+										"attributesCriterion": [
+											{
+												"upcbarcode": {
+													"exact": "{{upcbarcode}}",
+													"type": "_STRING"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				},
+				"contexts": []
+			}
+		},
+		{
+			"id": "lot_matchConfig",
+			"name": "lot",
+			"type": "matchConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "mary.jane@riversand.com",
+				"createdService": "configurationManageService",
+				"createdDate": "2017-05-12T17:04:22.400-0500"
+			},
+			"data": {
+				"jsonData": {
+					"type": "config",
+					"matchRules": [
+						{
+							"matchType": "deterministic",
+							"matchSequence": 1,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"lot"
+										],
+										"attributesCriterion": [
+											{
+												"orin": {
+													"eq": "{{orin}}"
+												}
+											}
+										]
+									}
+								}
+							}
+						},
+						{
+							"matchType": "deterministic",
+							"matchSequence": 2,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"lot"
+										],
+										"attributesCriterion": [
+											{
+												"rmsitemid": {
+													"eq": "{{rmsitemid}}"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
 }

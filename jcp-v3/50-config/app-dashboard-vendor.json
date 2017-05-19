@@ -31,7 +31,8 @@
 									"rock-widget-panel",
 									"my-todo-summary-list",
 									"my-todo-detail-view-list",
-									"rock-saved-searches-tags"
+									"rock-saved-searches-tags",
+									"rock-import-list"
 								]
 							}
 						}
@@ -183,6 +184,21 @@
 											"component": {
 												"name": "rock-my-todos",
 												"path": "/src/elements/rock-my-todos/rock-my-todos.html"
+											}
+										}
+									},
+									{
+										"name": "rock-import-list",
+										"nonClosable": true,
+										"nonMaximizable": false,
+										"nonDraggable": false,
+										"iconButtons": "",
+										"config": {
+											"heading": "Batch Jobs",
+											"headerIcon": "pebble-lg-icons:InegrationDb",
+											"component": {
+												"name": "rock-import-list",
+												"path": "/src/elements/rock-import-list/rock-import-list.html"
 											}
 										}
 									},
@@ -655,6 +671,85 @@
 										"eventName": "delete-saved-search"
 									}
 								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-dashboard_rock-import-list_vendor_uiConfig",
+			"name": "app-dashboard_rock-import-list",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-dashboard",
+							"service": "_ALL",
+							"component": "rock-import-list",
+							"subComponent": "_ALL",
+							"role": "vendor"
+						},
+						"jsonData": {
+							"config":{
+								"userToggleAllowed":false,
+								"viewMode": "List",
+								"title": "Simple Data Table",
+								"mode": "read",
+								"header" : {
+									"displayTitle" : false,
+									"defaultValue" :  "Simple Data Table"
+								},
+								"dataRequest": {
+									"attributes": [
+										"fileName",
+										"fileType",
+										"formatter",
+										"taskId",
+										"eventSubType",
+										"recordCount",
+										"createdOn",
+										"userId"
+									]
+								},
+								"list": {
+									"settings": {
+										"isMultiSelect": false
+									},
+									"listItems": {
+										"image": "fileTypeImage",
+										"title": "fileName",
+										"subtitle": "formatter",
+										"id": "taskId",
+										"fields": [
+											{
+												"name": "eventSubType"
+											},
+											{
+												"name": "createdOn",
+												"noTrim": true
+											},
+											{
+												"name": "recordCount",
+												"noTrim": true
+											},
+											{
+												"name": "userId",
+												"noTrim": true
+											},
+											{
+												"name":"viewDetails",
+												"linkTemplate": "job-detail?id={taskId}"
+											}
+										]
+									}
+								}
 							}
 						}
 					}

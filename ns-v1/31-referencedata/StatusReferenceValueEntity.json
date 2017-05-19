@@ -1,0 +1,77 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "A_status",
+			"name": "A",
+			"type": "status",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "A",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Active",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "I_status",
+			"name": "I",
+			"type": "status",
+			"domain": "referenceData",
+			"properties": {
+				"source": "internal",
+				"modifiedByService": "entityservice",
+				"modifiedBy": "initLoad",
+				"modifiedDate": "6/1/2017  00:00:00 AM"
+			},
+			"data": {
+				"attributes": {
+					"code": {
+						"values": [
+							{
+								"value": "I",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Inactive",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+}

@@ -75,11 +75,10 @@
 								"dataRequest": {
 									"typesCriterion": [
 										"sku",
-										"lot",
-										"productpresentation"
+										"lot"
 									],
 									"attributes": [
-										"displayname",
+										"producttitle",
 										"description",
 										"creationdate",
 										"plannedonsitedate"
@@ -98,8 +97,8 @@
 											"isMetaDataColumn": true
 										},
 										{
-											"header": "Display Name",
-											"name": "displayname",
+											"header": "Product Title",
+											"name": "producttitle",
 											"sortable": false,
 											"filterable": false,
 											"linkTemplate": "entity-manage?id={id}&type={type}"

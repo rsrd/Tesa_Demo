@@ -40,7 +40,8 @@
 									"rock-entity-tofix",
 									"rock-titlebar",
                                     "extension-manage-productsetuptaxonomy",
-                                    "extension-manage-merchandisingtaxonomy"
+                                    "extension-manage-merchandisingtaxonomy",
+ 									"fix-attribute-errors"
 								]
 							}
 						}
@@ -944,6 +945,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": false,
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
@@ -977,6 +979,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": true
 													},
 													{
@@ -985,6 +988,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": true
 													}
 												]
@@ -1038,7 +1042,7 @@
 											"titlePattern": "id"
 										}
 									},
-									"isChildOf": {
+									"ischildof": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
@@ -1063,6 +1067,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": false,
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
@@ -1088,6 +1093,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": true
 													}
 												]
@@ -1166,6 +1172,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": false,
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
@@ -1199,6 +1206,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": true
 													}
 												]
@@ -1277,6 +1285,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": false,
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
@@ -1294,6 +1303,7 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
+														"readOnly": true,
 														"isRelatedEntityAttribute": true
 													}
 												]

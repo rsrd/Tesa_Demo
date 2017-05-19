@@ -1,0 +1,2434 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "aperturevalue_attributeModel",
+         "name": "aperturevalue",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Aperture Value"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "artist_attributeModel",
+         "name": "artist",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Artist"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "bitspersample_attributeModel",
+         "name": "bitspersample",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Bits Per Sample"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "colorcomponents_attributeModel",
+         "name": "colorcomponents",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Color Components"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "colorspace_attributeModel",
+         "name": "colorspace",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Color Space"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "comment_attributeModel",
+         "name": "comment",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "XP Comment "
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "componentsconfiguration_attributeModel",
+         "name": "componentsconfiguration",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Components Configuration"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "compressedbitsperpixel_attributeModel",
+         "name": "compressedbitsperpixel",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Compressed Bits Per Pixel"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "copyright_attributeModel",
+         "name": "copyright",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "copyrightnotice_attributeModel",
+         "name": "copyrightnotice",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright Notice"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "copyrightowner_attributeModel",
+         "name": "copyrightowner",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright Owner"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "copyrightstatus_attributeModel",
+         "name": "copyrightstatus",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright Status"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "countrycode_attributeModel",
+         "name": "countrycode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Country Code"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creator_attributeModel",
+         "name": "creator",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Creator"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfoaddress_attributeModel",
+         "name": "creatorcontactinfoaddress",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Address"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfocity_attributeModel",
+         "name": "creatorcontactinfocity",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "City"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfocountry_attributeModel",
+         "name": "creatorcontactinfocountry",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Country"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfoemails_attributeModel",
+         "name": "creatorcontactinfoemails",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Emails"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfophones_attributeModel",
+         "name": "creatorcontactinfophones",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Phones"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfopostalcode_attributeModel",
+         "name": "creatorcontactinfopostalcode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Postal Code"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorcontactinfostateorprovince_attributeModel",
+         "name": "creatorcontactinfostateorprovince",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "State/ Province"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creatorjobtitle_attributeModel",
+         "name": "creatorjobtitle",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Creator’s Job Title"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "creditline_attributeModel",
+         "name": "creditline",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Credit Line"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "customrendered_attributeModel",
+         "name": "customrendered",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Custom Rendered"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "datecreated_attributeModel",
+         "name": "datecreated",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Create Date"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "datemodified_attributeModel",
+         "name": "datemodified",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Modify Date"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "dateacquired_attributeModel",
+         "name": "dateacquired",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Date Acquired"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "datetimedigitized_attributeModel",
+         "name": "datetimedigitized",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Date/Time Digitized"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "datetimeoriginal_attributeModel",
+         "name": "datetimeoriginal",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Date/Time Original"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "description_attributeModel",
+         "name": "description",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Description"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "descriptionwriter_attributeModel",
+         "name": "descriptionwriter",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Description writer"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "digitalzoomratio_attributeModel",
+         "name": "digitalzoomratio",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Digital Zoom Ratio"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "encodingprocess_attributeModel",
+         "name": "encodingprocess",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Encoding Process"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exifimageheight_attributeModel",
+         "name": "exifimageheight",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exif Image Height"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exifimagewidth_attributeModel",
+         "name": "exifimagewidth",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exif Image Width"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "model_attributeModel",
+         "name": "model",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Camera Model Name"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "padding_attributeModel",
+         "name": "padding",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Padding"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exifversion_attributeModel",
+         "name": "exifversion",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exif version"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exposurecompensation_attributeModel",
+         "name": "exposurecompensation",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exposure Compensation   "
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exposuremode_attributeModel",
+         "name": "exposuremode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exposure Mode"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "exposuretime_attributeModel",
+         "name": "exposuretime",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Exposure Time"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "imagesize_attributeModel",
+         "name": "imagesize",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Image Size"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "filetype_attributeModel",
+         "name": "filetype",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "FileType"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "flash_attributeModel",
+         "name": "flash",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Flash"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "flashpixversion_attributeModel",
+         "name": "flashpixversion",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Flashpix Version"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "fnumber_attributeModel",
+         "name": "fnumber",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "F Number "
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "focallength_attributeModel",
+         "name": "focallength",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Focal Length"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "headline_attributeModel",
+         "name": "headline",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Headline"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "imagedescription_attributeModel",
+         "name": "imagedescription",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Image Description"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "imageheight_attributeModel",
+         "name": "imageheight",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Image Height"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "imagewidth_attributeModel",
+         "name": "imagewidth",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Image Width"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "intellectualgenre_attributeModel",
+         "name": "intellectualgenre",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Intellectual Genre"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "interoperabilityversion_attributeModel",
+         "name": "interoperabilityversion",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Interoperability Version"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptcadmindetailsinstructions_attributeModel",
+         "name": "iptcadmindetailsinstructions",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Instructions"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptcadmindetailstitle_attributeModel",
+         "name": "iptcadmindetailstitle",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Title"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptclocationcity_attributeModel",
+         "name": "iptclocationcity",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "City"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptclocationcountry_attributeModel",
+         "name": "iptclocationcountry",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Country"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptcscenecode_attributeModel",
+         "name": "iptcscenecode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "IPTC Scene Code"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "iptcsubjectcode_attributeModel",
+         "name": "iptcsubjectcode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "IPTC Subject Code"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "jfifversion_attributeModel",
+         "name": "jfifversion",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "JFIF Version"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "jobidentifier_attributeModel",
+         "name": "jobidentifier",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Job Identifier"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "keyword_attributeModel",
+         "name": "keyword",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "XP Keywords"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "make_attributeModel",
+         "name": "make",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Make"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "maxaperturevalue_attributeModel",
+         "name": "maxaperturevalue",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Max Aperture Value"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "meteringmode_attributeModel",
+         "name": "meteringmode",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Metering Mode"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "mimetype_attributeModel",
+         "name": "mimetype",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "MIME Type"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "offsetschema_attributeModel",
+         "name": "offsetschema",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Offset Schema"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "orientation_attributeModel",
+         "name": "orientation",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Orientation"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "relatedimageheight_attributeModel",
+         "name": "relatedimageheight",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Related Image Height"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "relatedimagewidth_attributeModel",
+         "name": "relatedimagewidth",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Related Image Width"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "resolutionunit_attributeModel",
+         "name": "resolutionunit",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Resolution Unit"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "rights_attributeModel",
+         "name": "rights",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Rights"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "scenecapturetype_attributeModel",
+         "name": "scenecapturetype",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Scene Capture Type"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "sensingmethod_attributeModel",
+         "name": "sensingmethod",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Sensing Method"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "shutterspeedvalue_attributeModel",
+         "name": "shutterspeedvalue",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Shutter Speed Value"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "filesource_attributeModel",
+         "name": "filesource",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "File Source"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "stateorprovince_attributeModel",
+         "name": "stateorprovince",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "State/Province"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "sublocation_attributeModel",
+         "name": "sublocation",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Sublocation"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "thumbnailimage_attributeModel",
+         "name": "thumbnailimage",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Thumbnail Image"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "thumbnaillength_attributeModel",
+         "name": "thumbnaillength",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Thumbnail Length"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "thumbnailoffset_attributeModel",
+         "name": "thumbnailoffset",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Thumbnail Offset"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "websites_attributeModel",
+         "name": "websites",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Websites"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "whitebalance_attributeModel",
+         "name": "whitebalance",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "White Balance"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "worldregion_attributeModel",
+         "name": "worldregion",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "World Region"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmpcopyrightnotice_attributeModel",
+         "name": "xmpcopyrightnotice",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright Notice"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmpcopyrightstatus_attributeModel",
+         "name": "xmpcopyrightstatus",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Copyright Status"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmpcreator_attributeModel",
+         "name": "xmpcreator",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Creator"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmpcreatorjobtitle_attributeModel",
+         "name": "xmpcreatorjobtitle",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Creator's Job Title"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmpdescriptionwriter_attributeModel",
+         "name": "xmpdescriptionwriter",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Description Writer"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xmptitle_attributeModel",
+         "name": "xmptitle",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Title"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "xresolution_attributeModel",
+         "name": "xresolution",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "X Resolution"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "ycbcrpositioning_attributeModel",
+         "name": "ycbcrpositioning",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Y Cb Cr Positioning"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "ycbcrsubsampling_attributeModel",
+         "name": "ycbcrsubsampling",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Y Cb Cr Sub Sampling"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "yresolution_attributeModel",
+         "name": "yresolution",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Y Resolution"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "filetypeextension_attributeModel",
+         "name": "filetypeextension",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "File Type Extension"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "about_attributeModel",
+         "name": "about",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "About"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "focalplanexresolution_attributeModel",
+         "name": "focalplanexresolution",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Focal Plane X Resolution"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "focalplaneyresolution_attributeModel",
+         "name": "focalplaneyresolution",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Focal Plane Y Resolution"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "megapixels_attributeModel",
+         "name": "megapixels",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Megapixels"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "ratingpercent_attributeModel",
+         "name": "ratingpercent",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Rating Percent"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "rating_attributeModel",
+         "name": "rating",
+         "type": "attributeModel",
+         "domain": "generic",
+         "properties": {
+            "externalName": "Rating",
+            "description": "1 to 5"
+         },
+         "data": {
+            "relationships": {
+               "listedUnder": [
+                  {
+                     "id": "",
+                     "direction": "both",
+                     "relationshipType": "aggregation",
+                     "relTo": {
+                        "id": "thingdomainattributemodels",
+                        "type": "list"
+                     }
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}

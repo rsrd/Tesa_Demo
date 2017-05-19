@@ -59,7 +59,7 @@ else {
             console.log("referencedata");
             console.log("data");
             console.log("config");
-            console.log("rsconnectProfiles");
+            console.log("rsconnectprofiles");
             console.log("\n----------------------------------------------------------------------------\n");
             rl.question('3. What option you like:', (option) => {
                 bulkLoad.startLoadingData(folder, option, tenantId, 'N');

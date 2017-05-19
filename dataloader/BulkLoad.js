@@ -63,7 +63,13 @@ function startLoadingData(folder, option, tenant, flush) {
                                 if (file != ".DS_Store" && file != "tenantserviceconfig_template.json") {
                                     console.log("reading file: " + file);
                                     var fileData = fs.readFileSync(dir + file);
-                                    var loaded = loadData(tenant, file, JSON.parse(fileData.toString()));
+                                    var fileDataAsString = fileData.toString();
+                                    
+                                    fileDataAsString = applyTemplateVariables(fileDataAsString, selectedFolder, config.toolConfig);
+
+                                    if(fileDataAsString) {
+                                        var loaded = loadData(tenant, file, JSON.parse(fileDataAsString));
+                                    }
                                 }
                             }, this);
                         } else { }
@@ -118,6 +124,37 @@ async function loadData(tenant, fileName, fileData) {
     }
 
     return await loaded;
+}
+
+function applyTemplateVariables(fileDataAsString, selectedFolder, toolConfig) {
+    if (!toolConfig.templateVariables) {
+        return fileDataAsString;
+    }
+
+    var option = selectedFolder.replace(/[0-9\-]/g, '');
+
+    var optionSpecificVariables = toolConfig.templateVariables[option];
+
+    if (!optionSpecificVariables) {
+        return fileDataAsString;
+    }
+    
+    var templateVariables = optionSpecificVariables;
+
+    if (!templateVariables) {
+        return fileDataAsString;
+    }
+
+    //console.log('templateVariables ', JSON.stringify(templateVariables));
+
+    var variableNames = Object.keys(templateVariables);
+    for(var variableName of variableNames) {
+        var pattern = "{{" + variableName + "}}";
+        var replaceValue = templateVariables[variableName];
+        fileDataAsString = fileDataAsString.replace(pattern, replaceValue);
+    }
+
+    return fileDataAsString;
 }
 
 async function sendDataToService(fileName, dataIndex, serviceName, tenant, data) {
@@ -285,7 +322,7 @@ function getSelectedFolderNames(option) {
         case "all":
             //selectedFolders.push("00-tenant-config", "01-model", "02-data", "03-config");
             //selectedFolders.push("01-model", "02-data", "03-config");
-            selectedFolders.push("10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", "30-referencemodel", "31-referencedata", "40-data", "50-config", "61-rsconnectProfiles");
+            selectedFolders.push("10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", "30-referencemodel", "31-referencedata", "50-config", "61-rsconnectprofiles");
             break;
         case "tenant-config":
             selectedFolders.push("00-tenant-config");
