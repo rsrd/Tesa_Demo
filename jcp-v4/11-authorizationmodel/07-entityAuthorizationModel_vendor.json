@@ -1,0 +1,200 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "party_authorizationModel_vendor",
+			"name": "party_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "referenceData_authorizationModel_vendor",
+			"name": "referenceData_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"writePermission": true,
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "digitalAsset_authorizationModel_vendor",
+			"name": "digitalAsset_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"writePermission": true,
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "generic_authorizationModel_business",
+			"name": "generic_authorizationModel_business",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "thing_authorizationModel_vendor",
+			"name": "thing_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "sku_authorizationModel_vendor",
+			"name": "sku_authorizationModel_vendor",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"writePermission": true,
+				"attributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				]
+			},
+			"data": {
+				"attributes": {
+					"orin": {
+						"properties": {
+							"writePermission": false,
+							"readPermission": false
+						}
+					},
+					"rmsskuid": {
+						"properties": {
+							"writePermission": false,
+							"readPermission": false
+						}
+					},
+					"retail": {
+						"properties": {
+							"writePermission": false,
+							"readPermission": false
+						}
+					},
+					"hidedisplayindicator": {
+						"properties": {
+							"writePermission": false,
+							"readPermission": false
+						}
+					},
+					"retailskunumber": {
+						"properties": {
+							"writePermission": false,
+							"readPermission": false
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"readPermission": true,
+							"writePermission": true,
+							"ownerPermission": true
+						}
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "system_user",
+			"name": "system",
+			"type": "user",
+			"properties": {
+				"firstName": "System",
+				"lastName": "",
+				"login": "system",
+				"email": "system@jcp.com",
+				"roles": [
+					"admin"
+				]
+			}
+		}
+	]
+}
