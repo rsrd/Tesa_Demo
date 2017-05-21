@@ -1,0 +1,168 @@
+{
+  "entity": {
+    "id": "e221",
+    "name": "firstEntity",
+    "type": "nart",
+    "properties": {
+      "source": "SAP",
+      "createdByService": "entityservice",
+      "createdBy": "Miriam Pott",
+      "modifiedByService": "entityservice"
+    },
+    "data": {
+      "contexts": [
+        {
+          "context": {
+            "list": "productMaster"
+          },
+          "attributes": {
+            "csapDescriptionOfNart": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "32d38d99-65e6-41bc-8ffb-6aca9ccaeabe",
+                  "value": "NSUN KDS_SPF30 200ML"
+                }
+              ]
+            },
+            "cpimProductName": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "e4f9fa0e-feda-4739-a4ed-6f0db74776ab",
+                  "value": "Kid's Sun Lotion"
+                }
+              ]
+            },
+            "cpimCustomerWishDateOfDelivery": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "aaac0bd4-8db0-42d7-84af-ebc1b9dfe6b7",
+                  "value": "2016-01-01"
+                }
+              ]
+            },
+            "cpimGiftWrapping": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "1b9cdc52-ac08-499f-9c0d-7100c5c6a9db",
+                  "value": false
+                }
+              ]
+            },
+            "csapSunProtectionFilterType": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "419fa8de-c315-48e7-9708-0bcd1debdb6f",
+                  "value": "mineral"
+                }
+              ]
+            },
+            "csapPropellantQuantity": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "uom": "kg",
+                  "id": "9c6cf97a-9e99-479e-972a-f25d70c23ca5",
+                  "invalidValue": "0.052"
+                }
+              ]
+            },
+            "csapMaximumStorageKey": {
+              "values": [
+                {
+                  "source": "SAP",
+                  "locale": "en-US",
+                  "id": "c9ab30a9-c353-4feb-b1e8-2b997b79c402",
+                  "value": 3
+                }
+              ]
+            },
+            "csapInci": {
+              "group": [
+                {
+                  "ranking": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "fbb6583a-d246-4412-973e-da151302f0c5",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "text": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "f56edf74-6bbb-42a0-8d33-cb5c5ebb3ba7",
+                        "value": "Aqua"
+                      }
+                    ]
+                  },
+                  "id": "fe1fdf28-3254-451d-a75b-80405e80f708"
+                },
+                {
+                  "ranking": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "c9f59c96-b865-49c6-8058-8bd1eee8aee5",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  "text": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "ac8de889-d76d-4420-9cd5-51e3443360cc",
+                        "value": "Paraffinum Liquidum"
+                      }
+                    ]
+                  },
+                  "id": "74e964d8-d108-45f2-925d-0d751865341a"
+                },
+                {
+                  "ranking": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "5e763c9a-3f7e-448f-a42e-dcf57b682cfb",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  "text": {
+                    "values": [
+                      {
+                        "source": "SAP",
+                        "locale": "en-US",
+                        "id": "9f00c8b9-9b75-4be2-864c-c95d9097443e",
+                        "value": "Cera Microcristallina"
+                      }
+                    ]
+                  },
+                  "id": "baea0af7-776a-405a-8cdc-4382d9e61108"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
