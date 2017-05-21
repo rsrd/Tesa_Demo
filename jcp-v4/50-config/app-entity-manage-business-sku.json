@@ -281,13 +281,23 @@
 							"config": {
 								"headerConfig": [
 									{
+										"attributeName": "producttitle",
+										"label": "Product Title",
+										"noTrim": false
+									},
+									{
+										"attributeName": "upcbarcode",
+										"label": "UPC",
+										"noTrim": false
+									},
+									{
 										"attributeName": "orin",
 										"label": "ORIN",
 										"noTrim": false
 									},
 									{
-										"attributeName": "skunumber",
-										"label": "SKU Number",
+										"attributeName": "rmsskuid",
+										"label": "SKU ID",
 										"noTrim": false
 									},
 									{
@@ -298,21 +308,6 @@
 									{
 										"attributeName": "brand",
 										"label": "Brand",
-										"noTrim": false
-									},
-									{
-										"attributeName": "producttype",
-										"label": "Product Type",
-										"noTrim": false
-									},
-									{
-										"attributeName": "subproducttype",
-										"label": "Sub Product Type",
-										"noTrim": false
-									},
-									{
-										"attributeName": "itemtype",
-										"label": "Item Type",
 										"noTrim": false
 									},
 									{

@@ -108,7 +108,7 @@
                                 "id": "source",
                                 "title": "Source",
                                 "icon": "pebble-lg-icons:Source",
-                                "visible": true,
+                                "visible": false,
                                 "dataRequestType": "entity-model",
                                 "dataRequest": {
                                     "params": {
@@ -141,7 +141,7 @@
                                 "id": "locale",
                                 "title": "Locale",
                                 "icon": "pebble-lg-icons:Language",
-                                "visible": true,
+                                "visible": false,
                                 "dataRequestType": "entity-model",
                                 "dataRequest": {
                                     "params": {
@@ -270,36 +270,36 @@
                     "jsonData": {
                         "config": {
                             "headerConfig": [{
-                                    "attributeName": "id",
-                                    "label": "SKU ID",
-                                    "noTrim": false
-                                },
-                                {
-                                    "attributeName": "skuNumber",
-                                    "label": "SKU Number",
-                                    "noTrim": false
-                                },
-                                {
-                                    "attributeName": "description",
-                                    "label": "Description",
-                                    "noTrim": false
-                                },
-                                {
-                                    "attributeName": "status",
-                                    "label": "Status",
-                                    "noTrim": false
-                                },
-                                {
-                                    "attributeName": "startDate",
-                                    "label": "Start Date",
-                                    "noTrim": false,
-									"dataType": "datetime"
-                                },
-                                {
-                                    "attributeName": "webDiscount",
-                                    "label": "Web Discount",
-                                    "noTrim": false
-                                }
+										"attributeName": "producttitle",
+										"label": "Product Title",
+										"noTrim": false
+									},
+									{
+										"attributeName": "rmsitemid",
+										"label": "LOT ID",
+										"noTrim": false
+									},
+									{
+										"attributeName": "orin",
+										"label": "ORIN",
+										"noTrim": false
+									},
+									{
+										"attributeName": "description",
+										"label": "Description",
+										"noTrim": false
+									},
+									{
+										"attributeName": "brand",
+										"label": "Brand",
+										"noTrim": false
+									},
+									{
+										"attributeName": "creationdate",
+										"label": "Creation Date",
+										"noTrim": false,
+										"dataType": "datetime"
+									}
                             ],
                             "toolbarConfig": {
                                 "buttonItems": [{
@@ -336,39 +336,8 @@
                                     ]
                             },
                             "summaryToFix": {
-                                "completionPercentage": 65,
-                                "tofixes": [{
-                                        "data": {
-                                            "name": "brandext",
-                                            "type": "error",
-                                            "label": "Images not associated",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "priceissue",
-                                            "type": "error",
-                                            "label": "Required Attributes not provided",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "msrpissue",
-                                            "type": "error",
-                                            "label": "Incorrect MSRP",
-                                            "eventName": "tofixtap"
-                                        }
-                                    },
-                                    {
-                                        "data": {
-                                            "name": "msrpissue",
-                                            "type": "warning",
-                                            "label": "Missing videos",
-                                            "eventName": "tofixtap"
-                                        }
-                                    }
+                                "completionPercentage": "",
+                                "tofixes": [
                                 ]
                             },
                             "assignmentActionsConfig": {
