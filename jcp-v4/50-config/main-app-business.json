@@ -234,7 +234,43 @@
                         "jsonData": {
                             "config": {
                                 "title": "Create",
-                                "actions": []
+                                "actions": [
+                                    {
+                                        "name": "createSKU",
+                                        "icon": "pebble-xl-icons:Product",
+                                        "text": "SKU",
+                                        "visible": true,
+                                        "dataRoute": "entity-create",
+                                        "contextData": {
+                                            "itemContext": {
+                                                "type": "sku"
+                                            },
+                                            "valueContext": {
+                                                "source": "internal",
+                                                "locale": "en-US"
+                                            },
+                                            "context": {
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "createLot",
+                                        "icon": "pebble-xl-icons:Kit",
+                                        "text": "Lot",
+                                        "visible": true,
+                                        "dataRoute": "entity-create",
+                                        "contextData": {
+                                            "itemContext": {
+                                                "type": "lot"
+                                            },
+                                            "valueContext": {
+                                                "source": "internal",
+                                                "locale": "en-US"
+                                            },
+                                            "context": {}
+                                        }
+                                    }
+                                ]
                             }
                         }
                     }
