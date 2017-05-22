@@ -1058,45 +1058,6 @@
 			}
 		},
 		{
-			"id": "lottypevalues_matchConfig",
-			"name": "lottypevalues",
-			"type": "matchConfig",
-			"data": {
-				"jsonData": {
-					"type": "config",
-					"matchRules": [
-						{
-							"matchType": "deterministic",
-							"matchSequence": 1,
-							"searchQuery": {
-								"query": {
-									"valueContexts": [
-										{
-											"source": "internal",
-											"locale": "en-US"
-										}
-									],
-									"filters": {
-										"typesCriterion": [
-											"lottypevalues"
-										],
-										"attributesCriterion": [
-											{
-												"referencedatacode": {
-													"exact": "{{referencedatacode}}",
-													"type": "_STRING"
-												}
-											}
-										]
-									}
-								}
-							}
-						}
-					]
-				}
-			}
-		},
-		{
 			"id": "liquidunitofmeasurevalues_matchConfig",
 			"name": "liquidunitofmeasurevalues",
 			"type": "matchConfig",
