@@ -1,0 +1,73 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_Kinesis_JSON_Export_Publish",
+			"name": "sku_Kinesis_JSON_Export_Publish",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "entityExportPublishService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "sku_Kinesis_JSON_Export_Publish",
+							"name": "sku_Kinesis_JSON_Export_Publish",
+							"tenantId": "",
+							"profileType": "ENTITY_EXPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"settings": {
+										"includeParent": "true",
+										"includeChildren": "false",
+										"includeSiblings": "false",
+										"includeRelatedEntityExternalIds": "true"
+									}
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"kinesisStreamConnector": {
+									"streamName": "{{ENVNAME}}-export",
+									"regionName": "{{AWSREGIONNAME}}",
+									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 100,
+									"settings": {},
+									"includeFilter": [],
+									"excludeFilter": []
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

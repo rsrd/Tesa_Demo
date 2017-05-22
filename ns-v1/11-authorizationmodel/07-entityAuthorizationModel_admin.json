@@ -201,45 +201,6 @@
 			}
 		},
 		{
-			"id": "item_authorizationModel_admin",
-			"name": "item_authorizationModel_admin",
-			"type": "authorizationModel",
-			"properties": {
-				"readPermission": true,
-				"writePermission": true,
-				"attributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
 			"id": "sku_authorizationModel_admin",
 			"name": "sku_authorizationModel_admin",
 			"type": "authorizationModel",

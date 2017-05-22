@@ -1,0 +1,111 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+			"name": "sku_Folder_Excel_Import_Transform_Dynamic",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportTransformService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+							"name": "sku_Folder_Excel_Import_Transform_Dynamic",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"folderConnector": {
+									"sourceFolder": "",
+									"pattern": "*"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "EXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8",
+										"headerRowNumber": 1,
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"supportsCollection": "true"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(Type)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "LOWER",
+												"removeSpecialCharacters": "true",
+												"removeWhitespace": "true",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@fieldExternalName(Classification)",
+												"taxonomy": "@fieldExternalName(Taxonomy)"
+											}
+										}
+									],
+									"fieldOverrides": [
+										{
+											"source": "UPC",
+											"destination": "@attr(upcbarcode)",
+											"id": 327204039,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
