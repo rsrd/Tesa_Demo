@@ -484,8 +484,8 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"source": "orin",
-											"destination": "data.attributes.orin.values[0].value",
+											"destination": "orin",
+			                        "source": "data.attributes.orin.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
