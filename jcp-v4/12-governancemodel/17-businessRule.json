@@ -1533,7 +1533,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"inspirationalcopy\"],AddAttributeInformation[\"SYS001\", \"\", \"inspirationalcopy\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"brand\"] =\"Ashley\",AddAttributeInformation[\"SYS001\", \"\", \"brand\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"division\"] =\"Sephora\",AddAttributeInformation[\"SYS001\", \"\", \"division\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"entity\"]=\"Appliances\",AddAttributeInformation[\"SYS001\", \"\", \"entity\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"inspirationalcopy\"],AddAttributeInformation[\"SYS001\", \"\", \"inspirationalcopy\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"brand\"] =\"Ashley Furniture Ind.\",AddAttributeInformation[\"SYS001\", \"\", \"brand\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"division\"] =\"Sephora\",AddAttributeInformation[\"SYS001\", \"\", \"division\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]] AND IIF[GetAttributeValue[\"entity\"]=\"Appliances\",AddAttributeInformation[\"SYS001\", \"\", \"entity\"],AddAttributeError[\"Req001\", \"\", \"naAttribute\"]]"
 							}
 						]
 					},
@@ -2348,6 +2348,77 @@
           }
         }
       }
-    }
+    },
+    {
+			"id": "validateSkuIsNotAssignedToLot_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "validation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[HasRelationships[\"ischildof\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		}
 	]
 }

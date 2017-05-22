@@ -888,6 +888,108 @@
                   ]
                 }
               }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateEnityPresentInCreateWorkflow_businessCondition",
+              "relTo": {
+                "id": "validateEnityPresentInCreateWorkflow_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "8"
+                    }
+                  ]
+                }
+              }
+            },
+	          {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkuIsNotAssignedToLot_businessCondition",
+              "relTo": {
+                "id": "validateSkuIsNotAssignedToLot_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "8"
+                    }
+                  ]
+                }
+              }
             }
           ]
         },
@@ -1361,7 +1463,84 @@
                       ]
                     }
                   }
-                }
+                },
+                {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_validateSkuIsNotAssignedToLot_businessCondition",
+              "relTo": {
+                "id": "validateSkuIsNotAssignedToLot_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "user": "users/system",
+                      "value": "8"
+                    }
+                  ]
+                },
+		            
+                "activityCriteria": {
+                      "values": [
+                       
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                "stepName": {
+                      "values": [
+                        {
+                          "value": "assignInternalInformation"
+                        }
+                      ]
+                    },
+		 "actions": {
+                      "values": [
+                        {
+                          "value": "Approve"
+                        }
+                      ]
+                    }
+              }
+            }
               ],
               "hasBusinessRules": [
                 {
