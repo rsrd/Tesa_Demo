@@ -30,6 +30,60 @@
 										],
 										"attributesCriterion": [
 											{
+												"orin": {
+													"exact": "{{orin}}",
+													"type": "_STRING"
+												}
+											}
+										]
+									}
+								}
+							}
+						},
+						{
+							"matchType": "deterministic",
+							"matchSequence": 2,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"sku"
+										],
+										"attributesCriterion": [
+											{
+												"rmsskuid": {
+													"exact": "{{rmsskuid}}",
+													"type": "_STRING"
+												}
+											}
+										]
+									}
+								}
+							}
+						},
+						{
+							"matchType": "deterministic",
+							"matchSequence": 3,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"sku"
+										],
+										"attributesCriterion": [
+											{
 												"upcbarcode": {
 													"exact": "{{upcbarcode}}",
 													"type": "_STRING"
