@@ -109,6 +109,82 @@
 			}
 		},
 		{
+			"id": "productpresentation_matchConfig",
+			"name": "productpresentation",
+			"type": "matchConfig",
+			"data": {
+				"jsonData": {
+					"type": "config",
+					"matchRules": [
+						{
+							"matchType": "deterministic",
+							"matchSequence": 1,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"productpresentation"
+										],
+										"attributesCriterion": [
+											{
+												"identifier": {
+													"eq": "{{identifier}}"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "ensemble_matchConfig",
+			"name": "ensemble",
+			"type": "matchConfig",
+			"data": {
+				"jsonData": {
+					"type": "config",
+					"matchRules": [
+						{
+							"matchType": "deterministic",
+							"matchSequence": 1,
+							"searchQuery": {
+								"query": {
+									"valueContexts": [
+										{
+											"source": "internal",
+											"locale": "en-US"
+										}
+									],
+									"filters": {
+										"typesCriterion": [
+											"ensemble"
+										],
+										"attributesCriterion": [
+											{
+												"identifier": {
+													"eq": "{{identifier}}"
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
 			"id": "lifecyclestage_matchConfig",
 			"name": "lifecyclestage",
 			"type": "matchConfig",
