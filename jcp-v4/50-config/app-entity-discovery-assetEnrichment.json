@@ -34,7 +34,8 @@
                                     "rock-entity-search-grid",
                                     "rock-entity-quick-manage",
                                     "rock-saved-searches-tags",
-                                    "assignment-actions"
+                                    "assignment-actions",
+                                    "rock-workflow-transition"
                                 ]
                             }
                         }
@@ -700,11 +701,11 @@
                             "role": "assetEnrichment"
                         },
                         "jsonData": {
-                            "config": {
+                            "config": [{
                                 "title": "Create",
                                 "actions": [                                    
                                 ]
-                            }
+                            }]
                         }
                     }
                 ]
@@ -1131,7 +1132,7 @@
                             "role": "assetEnrichment"
                         },
                         "jsonData": {
-                            "config": {
+                            "config": [{
                                 "title": "",
                                 "actions": [
                                     {
@@ -1149,11 +1150,67 @@
                                         "eventName": "action-releaseTask"
                                     }
                                 ]
-                            }
+                            }]
                         }
                     }
                 ]
             }
-        }
+        },
+        {
+			"id": "app-entity-discovery_rock-workflow-transition_assetEnrichment_uiConfig",
+			"name": "app-entity-discovery_rock-workflow-transition",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "rock-workflow-transition",
+							"subComponent": "_ALL",
+							"role": "assetEnrichment"
+						},
+						"jsonData": {
+							"config": {
+									"name": "rock-workflow-transition",
+									"label": "Manage bulk transitions",
+									"steps": [
+										{
+											"name": "step-1-rock-workflow-transition",
+											"label": "Manage bulk transitions",
+											"component": {
+												"name": "rock-workflow-transition",
+												"path": "/../../src/elements/rock-workflow-transition/rock-workflow-transition.html",
+											"properties": {												
+													"result-attribute": "producttitle"
+												}
+											},
+											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"nextEvent": "onComplete",
+											"backEvent": "onCancel"
+										},
+										{
+											"name": "step-2-rock-workflow-transition",
+											"label": "Workflow transitions finish",
+											"component": {
+												"name": "rock-bulk-action-result",
+												"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+												"properties": {
+													"business-function-data": {}
+												}
+											}
+										}
+									]
+								}
+						}
+					}
+				]
+			}
+		}
     ]
 }
