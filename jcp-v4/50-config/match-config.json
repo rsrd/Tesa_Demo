@@ -124,7 +124,7 @@
 										"attributesCriterion": [
 											{
 												"orin": {
-													"eq": "{{orin}}"
+													"exact": "{{orin}}"
 												}
 											}
 										]
@@ -150,7 +150,7 @@
 										"attributesCriterion": [
 											{
 												"rmsitemid": {
-													"eq": "{{rmsitemid}}"
+													"exact": "{{rmsitemid}}"
 												}
 											}
 										]
