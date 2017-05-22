@@ -34,7 +34,7 @@
                                 "rock-saved-searches-tags",
                                 "assignment-actions",
 								"rock-roll-up",
-								"rock-workflow-transition",
+                                "rock-workflow-transition",
                                 "rock-entity-upload"
                             ]
                         }
@@ -1190,13 +1190,8 @@
 			}
 		},
         {
-<<<<<<< HEAD
-			"id": "app-entity-discovery_rock-workflow-transition_business_uiConfig",
-			"name": "app-entity-discovery_rock-workflow-transition",
-=======
 			"id": "app-entity-discovery_rock-entity-upload_business_uiConfig",
 			"name": "app-entity-discovery_rock-entity-upload",
->>>>>>> a7fe727df6607c8090ebfeac7289ba432f07bacc
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -1209,17 +1204,64 @@
 						"context": {
 							"app": "app-entity-discovery",
 							"service": "_ALL",
-<<<<<<< HEAD
-							"component": "rock-workflow-transition",
-=======
 							"component": "rock-entity-upload",
->>>>>>> a7fe727df6607c8090ebfeac7289ba432f07bacc
 							"subComponent": "_ALL",
 							"role": "business"
 						},
 						"jsonData": {
 							"config": {
-<<<<<<< HEAD
+                                "name": "rock-entity-upload",
+                                "label": "Upload bulk entities",
+                                "steps": [
+                                    {
+                                        "name": "step-1-rock-entity-upload",
+                                        "label": "Upload the excel file",
+                                        "component": {
+                                            "name": "rock-entity-upload",
+                                            "path": "/../../src/elements/rock-entity-upload/rock-entity-upload.html"
+                                        },
+                                        "sharedProperties":{"business-function-data": "businessFunctionData"},
+                                        "nextEvent": "onNext"
+                                    },
+                                    {
+                                        "name": "step-2-rock-entity-upload",
+                                        "label": "Entities upload finish",
+                                        "component": {
+                                            "name": "rock-business-function-finish",
+                                            "path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+                                            "properties": {
+                                                "business-function-data": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+						}
+					}
+				]
+			}
+		},
+        {
+			"id": "app-entity-discovery_rock-workflow-transition_business_uiConfig",
+			"name": "app-entity-discovery_rock-workflow-transition",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "rock-workflow-transition",
+							"subComponent": "_ALL",
+							"role": "business"
+						},
+						"jsonData": {
+							"config": {
 									"name": "rock-workflow-transition",
 									"label": "Manage bulk transitions",
 									"steps": [
@@ -1250,34 +1292,6 @@
 										}
 									]
 								}
-=======
-                                "name": "rock-entity-upload",
-                                "label": "Upload bulk entities",
-                                "steps": [
-                                    {
-                                        "name": "step-1-rock-entity-upload",
-                                        "label": "Upload the excel file",
-                                        "component": {
-                                            "name": "rock-entity-upload",
-                                            "path": "/../../src/elements/rock-entity-upload/rock-entity-upload.html"
-                                        },
-                                        "sharedProperties":{"business-function-data": "businessFunctionData"},
-                                        "nextEvent": "onNext"
-                                    },
-                                    {
-                                        "name": "step-2-rock-entity-upload",
-                                        "label": "Entities upload finish",
-                                        "component": {
-                                            "name": "rock-business-function-finish",
-                                            "path": "/../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
-                                            "properties": {
-                                                "business-function-data": {}
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
->>>>>>> a7fe727df6607c8090ebfeac7289ba432f07bacc
 						}
 					}
 				]
