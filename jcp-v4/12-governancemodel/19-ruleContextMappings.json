@@ -940,7 +940,7 @@
                 }
               }
             },
-	          {
+            {
               "direction": "both",
               "relationshipType": "association",
               "id": "hasBusinessConditions_validateSkuIsNotAssignedToLot_businessCondition",
@@ -1465,58 +1465,56 @@
                   }
                 },
                 {
-              "direction": "both",
-              "relationshipType": "association",
-              "id": "hasBusinessConditions_validateSkuIsNotAssignedToLot_businessCondition",
-              "relTo": {
-                "id": "validateSkuIsNotAssignedToLot_businessCondition",
-                "type": "businessCondition"
-              },
-              "attributes": {
-                "ignoreChangeContext": {
-                  "values": [
-                    {
-                      "user": "users/system",
-                      "value": "true"
-                    }
-                  ]
-                },
-                "isDeleted": {
-                  "values": [
-                    {
-                      "user": "users/system",
-                      "value": "false"
-                    }
-                  ]
-                },
-                "enabled": {
-                  "values": [
-                    {
-                      "user": "users/system",
-                      "value": "true"
-                    }
-                  ]
-                },
-                "executionMode": {
-                  "values": [
-                    {
-                      "user": "users/system",
-                      "value": "any"
-                    }
-                  ]
-                },
-                "executionOrder": {
-                  "values": [
-                    {
-                      "user": "users/system",
-                      "value": "8"
-                    }
-                  ]
-                },
-		            
-                "activityCriteria": {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_validateSkuIsNotAssignedToLot_businessCondition",
+                  "relTo": {
+                    "id": "validateSkuIsNotAssignedToLot_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
                       "values": [
-                       
+                        {
+                          "user": "users/system",
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "user": "users/system",
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "user": "users/system",
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "user": "users/system",
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "user": "users/system",
+                          "value": "8"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
                         {
                           "value": "exitCriteria"
                         },
@@ -1525,22 +1523,92 @@
                         }
                       ]
                     },
-                "stepName": {
+                    "stepName": {
                       "values": [
                         {
                           "value": "assignInternalInformation"
                         }
                       ]
                     },
-		 "actions": {
+                    "actions": {
                       "values": [
                         {
                           "value": "Approve"
                         }
                       ]
                     }
-              }
-            }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_categorySpecificRequiredAttributesArePopulated_businessCondition",
+                  "relTo": {
+                    "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "3"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "exitCriteria"
+                        },
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "provideAdditionalInfo"
+                        }
+                      ]
+                    },
+                    "actions": {
+                      "values": [
+                        {
+                          "value": "Resubmit"
+                        }
+                      ]
+                    }
+                  }
+                }
               ],
               "hasBusinessRules": [
                 {
@@ -1878,6 +1946,54 @@
                       "values": [
                         {
                           "value": "create"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "hasBusinessConditions": [
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessConditions_categorySpecificRequiredAttributesArePopulated_businessCondition",
+                  "relTo": {
+                    "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
+                    "type": "businessCondition"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "1"
                         }
                       ]
                     }
