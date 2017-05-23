@@ -42,9 +42,9 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "jcp-v3",
+    "folderName": "jcp-v4",
     "tenantId": "jcpenney",
-    "option": "config"
+    "option": "governancemodel"
 }
 
 module.exports = {
