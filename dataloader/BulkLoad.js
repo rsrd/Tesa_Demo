@@ -14,6 +14,9 @@ var logPath = './logs';
 
 var counters = {};
 
+var duplicateIds = [];
+var uniqueIds = new Set();
+
 function getListOfDir(path) {
     this.path = path;
     return fs.readdirSync(path);
@@ -75,7 +78,14 @@ function startLoadingData(folder, option, tenant, flush) {
                         } else { }
 
                         if (counters) {
-                            console.log('Total RDF requests generated: ', JSON.stringify(counters, null, 3));
+                            console.log('Total RDF requests generated: ', JSON.stringify(counters, null, 3));                            
+                            console.log("Unique IDs : " +uniqueIds.size);
+                            console.log("Duplicate IDs : " +duplicateIds.length);
+                            duplicateIds.sort();
+                            for (var i=0; i<duplicateIds.length;i++)
+                            {
+                                console.log(duplicateIds[i]);
+                            }
                         }
                     }
                 }, this);
@@ -112,9 +122,22 @@ async function loadData(tenant, fileName, fileData) {
             console.error(fileName + ": file doesn't contains meta info.");
         }
 
-        if (serviceName && data) {
+        if (serviceName && data) {                        
+
+            for (var i=0; i<data.length; i++)
+            {                                
+                if(!uniqueIds.has(data[i].id))
+                {
+                    uniqueIds.add(data[i].id);
+                }
+                else
+                {
+                    duplicateIds.push(data[i].id);
+                }
+            }
 
             loaded = await sendDataToService(fileName, dataIndex, serviceName, tenant, data);
+
             if (loaded) {
                 console.log(fileName + " loaded successfully.\n");
             } else {
