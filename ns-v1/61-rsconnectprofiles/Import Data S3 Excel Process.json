@@ -1,0 +1,102 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_S3Bucket_Excel_Import_Process",
+			"name": "sku_S3Bucket_Excel_Import_Process",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportProcessService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "sku_S3Bucket_Excel_Import_Process",
+							"name": "sku_S3Bucket_Excel_Import_Process",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "true",
+								"s3BucketConnector": {
+									"fileType": "xlsx",
+									"bucketName": "{{ENVNAME}}-import",
+									"regionName": "{{AWSREGIONNAME}}",
+									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "EXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8",
+										"headerRowNumber": 1,
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"supportsCollection": "true"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(Type)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "LOWER",
+												"removeSpecialCharacters": "true",
+												"removeWhitespace": "true",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@fieldExternalName(Classification)",
+												"taxonomy": "@fieldExternalName(Taxonomy)"
+											}
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

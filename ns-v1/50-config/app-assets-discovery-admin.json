@@ -71,15 +71,17 @@
 								},
 								"dataRequest": {
 									"domains":[
+										"digitalAsset"
 									],
 									"typesCriterion": [
 										"sku"
 									],
 									"attributes": [
-										"displayname",
-										"description",
-										"creationdate",
-										"plannedonsitedate"
+										"xmptitle",
+										"headline",
+										"imagesize",
+										"imagedescription",
+										"thumbnail"
 									]
 								},
 								"tile": {
@@ -88,25 +90,17 @@
 									},
 									"tileItems" : {
 										"image": "thumbnail",
-										"title": "displayname",
-										"subtitle": "type",
+										"title": "xmptitle",
+										"subtitle": "headline",
 										"id": "id",
 										"fields": [
 											{
-												"label": "Display Name",
-												"name": "displayname"
+												"label": "Image Size",
+												"name": "imagesize"
 											},
 											{
 												"label": "Description",
-												"name": "description"
-											},
-											{
-												"label": "Creation Date",
-												"name": "creationdate"
-											},
-											{
-												"label": "Planned On-site Date",
-												"name": "plannedonsitedate"
+												"name": "imagedescription"
 											}
 										]
 									}
@@ -296,11 +290,11 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config": {
+							"config": [{
 								"title": "Create",
 								"actions": [
 								]
-							}
+							}]
 						}
 					}
 				]
@@ -336,6 +330,13 @@
 											"title": "Attributes",
 											"enableDropdownMenu": true,
 											"selected": true,
+											"menuProviderComponent": {
+												"name": "attribute-tab-menu-provider",
+												"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
+												"properties": {
+													"is-first-menu-item-selected" : true
+												}
+											},
 											"component": {
 												"name": "rock-attribute-manage",
 												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
@@ -414,7 +415,7 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config": {
+							"config": [{
 								"title": "",
 								"actions": [
 									{
@@ -432,7 +433,7 @@
 										"eventName": "action-releaseTask"
 									}
 								]
-							}
+							}]
 						}
 					}
 				]

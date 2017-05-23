@@ -6,8 +6,45 @@
 	},
 	"entityModels": [
 		{
-			"id": "party_authorizationModel_admin",
-			"name": "party_authorizationModel_admin",
+			"id": "party_authorizationModel_assetEnrichment",
+			"name": "party_authorizationModel_assetEnrichment",
+			"type": "authorizationModel",
+			"properties": {
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "referenceData_authorizationModel_assetEnrichment",
+			"name": "referenceData_authorizationModel_assetEnrichment",
+			"type": "authorizationModel",
+			"properties": {
+				"writePermission": true,
+				"readPermission": true,
+				"attributesPermission": [
+					{
+						"readPermission": true
+					}
+				],
+				"relationshipsPermission": [
+					{
+						"readPermission": true
+					}
+				]
+			}
+		},
+		{
+			"id": "digitalAsset_authorizationModel_assetEnrichment",
+			"name": "digitalAsset_authorizationModel_assetEnrichment",
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
@@ -45,125 +82,26 @@
 			}
 		},
 		{
-			"id": "referenceData_authorizationModel_admin",
-			"name": "referenceData_authorizationModel_admin",
+			"id": "generic_authorizationModel_assetEnrichment",
+			"name": "generic_authorizationModel_assetEnrichment",
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
-				"writePermission": true,
 				"attributesPermission": [
 					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
 						"readPermission": true
 					}
 				]
 			}
 		},
 		{
-			"id": "digitalAsset_authorizationModel_admin",
-			"name": "digitalAsset_authorizationModel_admin",
-			"type": "authorizationModel",
-			"properties": {
-				"readPermission": true,
-				"writePermission": true,
-				"attributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "generic_authorizationModel_admin",
-			"name": "generic_authorizationModel_admin",
-			"type": "authorizationModel",
-			"properties": {
-				"readPermission": true,
-				"writePermission": true,
-				"attributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"relationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsAttributesPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				],
-				"contextsRelationshipsPermission": [
-					{
-						"writePermission": true,
-						"readPermission": true
-					}
-				]
-			}
-		},
-		{
-			"id": "thing_authorizationModel_admin",
-			"name": "thing_authorizationModel_admin",
+			"id": "thing_authorizationModel_assetEnrichment",
+			"name": "thing_authorizationModel_assetEnrichment",
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,

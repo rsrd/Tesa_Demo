@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_lot_admin_uiConfig",
+			"id": "app-business-function_components-list_style_admin_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "lot",
+							"entityType": "style",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -31,7 +31,8 @@
 									"create-entity",
 									"rock-variants-create-grid",
 									"extension-manage",
-									"upload-model"
+									"upload-model",
+									"upload-assets"
 								]
 							}
 						}
@@ -40,8 +41,8 @@
 			}
 		},
 		{
-			"id": "app-business-function_create-entity_lot_admin_uiConfig",
-			"name": "app-business-function_create-entity_lot_admin",
+			"id": "app-business-function_create-entity_style_admin_uiConfig",
+			"name": "app-business-function_create-entity_style_admin",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -56,7 +57,7 @@
 							"service": "_ALL",
 							"component": "create-entity",
 							"subComponent": "_ALL",
-							"entityType": "lot",
+							"entityType": "style",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -122,8 +123,8 @@
 										"skipEvent": "onSkip"
 									},
 									{
-										"name": "Entitis successfully created",
-										"label": "Entitis created successfully.",
+										"name": "Entities successfully created",
+										"label": "Entities created successfully.",
 										"component": {
 											"name": "rock-business-function-finish",
 											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
@@ -140,7 +141,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_lot_admin_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_style_admin_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -156,7 +157,7 @@
 							"service": "_ALL",
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
-							"entityType": "lot",
+							"entityType": "style",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -300,7 +301,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_extension-manage_lot_admin_uiConfig",
+			"id": "app-business-function_extension-manage_style_admin_uiConfig",
 			"name": "app-business-function_extension-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -316,7 +317,7 @@
 							"service": "_ALL",
 							"component": "extension-manage",
 							"subComponent": "_ALL",
-							"entityType": "lot",
+							"entityType": "style",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -343,7 +344,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-model_lot_admin_uiConfig",
+			"id": "app-business-function_upload-model_style_admin_uiConfig",
 			"name": "app-business-function_upload-model",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -359,7 +360,7 @@
 							"service": "_ALL",
 							"component": "upload-model",
 							"subComponent": "_ALL",
-							"entityType": "lot",
+							"entityType": "style",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -383,6 +384,63 @@
 									{
 										"name": "Data Model Uploaded",
 										"label": "Data Model Uploaded",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-business-function_upload-assets_style_admin_uiConfig",
+			"name": "app-business-function_upload-assets",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "upload-assets",
+							"subComponent": "_ALL",
+							"entityType": "style",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"name": "upload-assets",
+								"label": "Upload",
+								"steps": [
+									{
+										"name": "step-1-fill-initial-data",
+										"label": "Upload Assets",
+										"component": {
+											"name": "rock-asset-upload",
+											"path": "/../../src/elements/rock-asset-upload/rock-asset-upload.html",
+											"properties": {
+												"import-profile-name": "imageMetadataConfig"
+											}
+										},
+										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"nextEvent": "onSave",
+										"cancelEvent": "onCancel"
+									},
+									{
+										"name": "Assets uploaded successfully.",
+										"label": "Assets uploaded successfully.",
 										"component": {
 											"name": "rock-business-function-finish",
 											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
