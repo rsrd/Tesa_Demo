@@ -381,33 +381,6 @@
                   ]
                 }
               }
-            },
-            {
-              "direction": "both",
-              "relationshipType": "association",
-              "id": "hasBusinessRules_catgoryAttributesPopulated_businessRule",
-              "relTo": {
-                "id": "catgoryAttributesPopulated_businessRule",
-                "type": "businessRule"
-              },
-              "attributes": {
-                "isDeleted": {
-                  "values": [
-                    {
-                      "id": "1",
-                      "value": "false"
-                    }
-                  ]
-                },
-                "executionOrder": {
-                  "values": [
-                    {
-                      "id": "1",
-                      "value": "2"
-                    }
-                  ]
-                }
-              }
             }
           ]
         }
@@ -1881,7 +1854,6 @@
               }
             ]
           }
-          
         },
         "relationships": {
           "hasBusinessRules": [
@@ -1891,6 +1863,102 @@
               "id": "hasBusinessRules_validateSkuIsNotAssignedToLot_businessRule",
               "relTo": {
                 "id": "validateSkuIsNotAssignedToLot_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
+      "name": "Category specific required attributes are populated",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "Category specific required attributes are populated"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "Category specific required attributes are populated"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_catgoryAttributesPopulated_businessRule",
+              "relTo": {
+                "id": "catgoryAttributesPopulated_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
