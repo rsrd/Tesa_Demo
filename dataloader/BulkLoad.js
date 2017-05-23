@@ -345,7 +345,9 @@ function getSelectedFolderNames(option) {
         case "all":
             //selectedFolders.push("00-tenant-config", "01-model", "02-data", "03-config");
             //selectedFolders.push("01-model", "02-data", "03-config");
-            selectedFolders.push("10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", "30-referencemodel", "31-referencedata", "50-config", "61-rsconnectprofiles");
+            selectedFolders.push(
+                "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", 
+                "30-referencemodel", "31-referencedata", "50-uiconfig", "50-matchconfig", "61-rsconnectprofiles");
             break;
         case "tenant-config":
             selectedFolders.push("00-tenant-config");
@@ -377,8 +379,11 @@ function getSelectedFolderNames(option) {
         case "data":
             selectedFolders.push("40-data");
             break;
-        case "config":
-            selectedFolders.push("50-config");
+        case "uiconfig":
+            selectedFolders.push("50-uiconfig");
+            break;
+        case "matchconfig":
+            selectedFolders.push("51-matchconfig");
             break;
         case "rsconnectprofiles":
             selectedFolders.push("61-rsconnectprofiles");

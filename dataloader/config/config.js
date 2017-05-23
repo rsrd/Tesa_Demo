@@ -44,7 +44,7 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v4",
     "tenantId": "jcpenney",
-    "option": "config"
+    "option": "uiconfig"
 }
 
 module.exports = {
