@@ -97,71 +97,102 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "creationdate",
-											"source": "data.attributes.creationdate.values[0].value",
+											"destination": "alternateimages",
+											"source": "data.attributes.alternateimages.values[0].value",
 											"required": true,
 											"enabled": true,
-											"entityType": "skuentityManageModel"
+											"collectionType": "COLLECTION",
+											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "startdate",
-											"source": "data.attributes.startdate.values[0].value",
+											"destination": "alternatesupplierid",
+											"source": "data.attributes.alternatesupplierid.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "enddate",
-											"source": "data.attributes.enddate.values[0].value",
+											"destination": "artworkid",
+											"source": "data.attributes.artworkid.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "displayname",
-											"source": "data.attributes.displayname.values[0].value",
+											"destination": "assembledheight",
+											"source": "data.attributes.assembledheight.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "description",
-											"source": "data.attributes.description.values[0].value",
+											"destination": "assembledlength",
+											"source": "data.attributes.assembledlength.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "shortdescription",
-											"source": "data.attributes.shortdescription.values[0].value",
+											"destination": "assembledweight",
+											"source": "data.attributes.assembledweight.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "producttype",
-											"source": "data.attributes.producttype.values[0].value",
+											"destination": "assembledwidth",
+											"source": "data.attributes.assembledwidth.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "subproducttype",
-											"source": "data.attributes.subproducttype.values[0].value",
+											"destination": "brand",
+											"source": "data.attributes.brand.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "itemtype",
-											"source": "data.attributes.itemtype.values[0].value",
+											"destination": "businesstype",
+											"source": "data.attributes.businesstype.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "sizerange",
-											"source": "data.attributes.sizerange.values[0].value",
+											"destination": "casequantitycolor",
+											"source": "data.attributes.casequantitycolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "channel",
+											"source": "data.attributes.channel.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "channelavailability",
+											"source": "data.attributes.channelavailability.values[0].value",
+											"required": true,
+											"enabled": true,
+											"collectionType": "COLLECTION",
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "channels",
+											"source": "data.attributes.channels.values[0].value",
+											"required": true,
+											"enabled": true,
+											"collectionType": "COLLECTION",
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "christmasindicator",
+											"source": "data.attributes.christmasindicator.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -174,290 +205,8 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "subclass",
-											"source": "data.attributes.subclass.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "destination",
-											"source": "data.attributes.destination.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "skuitemtype",
-											"source": "data.attributes.skuitemtype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "skugrouping",
-											"source": "data.attributes.skugrouping.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "channels",
-											"source": "data.attributes.channels.values[0].value",
-											"required": true,
-											"enabled": true,
-											"collectionType": "COLLECTION",
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "alternateimages",
-											"source": "data.attributes.alternateimages.values[0].value",
-											"required": true,
-											"enabled": true,
-											"collectionType": "COLLECTION",
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "directshiprestrict",
-											"source": "data.attributes.directshiprestrict.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "disposalfee",
-											"source": "data.attributes.disposalfee.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "willcallrestrict",
-											"source": "data.attributes.willcallrestrict.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "parantheticamount",
-											"source": "data.attributes.parantheticamount.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "willcallfactoryshipind",
-											"source": "data.attributes.willcallfactoryshipind.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "noncontinentalprepaid",
-											"source": "data.attributes.noncontinentalprepaid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "continentalprepaid",
-											"source": "data.attributes.continentalprepaid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "unusualdemandquantity",
-											"source": "data.attributes.unusualdemandquantity.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "hazmatflag",
-											"source": "data.attributes.hazmatflag.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "prop65indicator",
-											"source": "data.attributes.prop65indicator.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "suppliernumbername",
-											"source": "data.attributes.suppliernumbername.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "suppliersitenumber",
-											"source": "data.attributes.suppliersitenumber.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeprimarysupplierid",
-											"source": "data.attributes.storeprimarysupplierid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecomprimarysupplierid",
-											"source": "data.attributes.ecomprimarysupplierid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "supplierchannel",
-											"source": "data.attributes.supplierchannel.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "alternatesupplierid",
-											"source": "data.attributes.alternatesupplierid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "msrp",
-											"source": "data.attributes.msrp.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeunitcost",
-											"source": "data.attributes.storeunitcost.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommunitcost",
-											"source": "data.attributes.ecommunitcost.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "retail",
-											"source": "data.attributes.retail.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "length",
-											"source": "data.attributes.length.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "width",
-											"source": "data.attributes.width.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "height",
-											"source": "data.attributes.height.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "grossweight",
-											"source": "data.attributes.grossweight.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "liquidvolume",
-											"source": "data.attributes.liquidvolume.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "liquidunitofmeasure",
-											"source": "data.attributes.liquidunitofmeasure.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "countryofmanufacture",
-											"source": "data.attributes.countryofmanufacture.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "originindicator",
-											"source": "data.attributes.originindicator.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "plannedonsitedate",
-											"source": "data.attributes.plannedonsitedate.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "warrantyflag",
-											"source": "data.attributes.warrantyflag.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "monogramcharge",
-											"source": "data.attributes.monogramcharge.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "diff1type",
-											"source": "data.attributes.diff1type.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "diff1group",
-											"source": "data.attributes.diff1group.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "diff2type",
-											"source": "data.attributes.diff2type.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "diff2group",
-											"source": "data.attributes.diff2group.values[0].value",
+											"destination": "colordesc",
+											"source": "data.attributes.colordesc.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -470,22 +219,155 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "colordesc",
-											"source": "data.attributes.colordesc.values[0].value",
+											"destination": "commercialcarriercode",
+											"source": "data.attributes.commercialcarriercode.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "size",
-											"source": "data.attributes.size.values[0].value",
+											"destination": "competitorprice",
+											"source": "data.attributes.competitorprice.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "orin",
-			                        "source": "data.attributes.orin.values[0].value",
+											"destination": "compliancelikeitem",
+											"source": "data.attributes.compliancelikeitem.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "conceptual",
+											"source": "data.attributes.conceptual.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "continentalprepaid",
+											"source": "data.attributes.continentalprepaid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "cost",
+											"source": "data.attributes.cost.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "countryofmanufacture",
+											"source": "data.attributes.countryofmanufacture.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "countryoforigin",
+											"source": "data.attributes.countryoforigin.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "createdby",
+											"source": "data.attributes.createdby.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "creationdate",
+											"source": "data.attributes.creationdate.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "deliveryinstructions",
+											"source": "data.attributes.deliveryinstructions.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "description",
+											"source": "data.attributes.description.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "diff1group",
+											"source": "data.attributes.diff1group.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "diff1type",
+											"source": "data.attributes.diff1type.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "diff2group",
+											"source": "data.attributes.diff2group.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "diff2type",
+											"source": "data.attributes.diff2type.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "directshiprestrict",
+											"source": "data.attributes.directshiprestrict.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "displayname",
+											"source": "data.attributes.displayname.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "disposalfee",
+											"source": "data.attributes.disposalfee.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "division",
+											"source": "data.attributes.division.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ecomhangingindicator",
+											"source": "data.attributes.ecomhangingindicator.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ecommactivesizes",
+											"source": "data.attributes.ecommactivesizes.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -505,303 +387,8 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "storecolorabbr",
-											"source": "data.attributes.storecolorabbr.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "printpattern",
-											"source": "data.attributes.printpattern.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "artworkid",
-											"source": "data.attributes.artworkid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "vpn",
-											"source": "data.attributes.vpn.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeunitcostcolor",
-											"source": "data.attributes.storeunitcostcolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommunitcostcolor",
-											"source": "data.attributes.ecommunitcostcolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommactivesizes",
-											"source": "data.attributes.ecommactivesizes.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeprimarysupplieridcolo",
-											"source": "data.attributes.storeprimarysupplieridcolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecomprimarysupplieridcolor",
-											"source": "data.attributes.ecomprimarysupplieridcolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "innerpackincrementcolor",
-											"source": "data.attributes.innerpackincrementcolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "cost",
-											"source": "data.attributes.cost.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
 											"destination": "ecomminnerpack",
 											"source": "data.attributes.ecomminnerpack.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommoosdate",
-											"source": "data.attributes.ecommoosdate.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "specialprogramtype",
-											"source": "data.attributes.specialprogramtype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storesubset",
-											"source": "data.attributes.storesubset.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storejcpstatus",
-											"source": "data.attributes.storejcpstatus.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "factoryshipleadtime",
-											"source": "data.attributes.factoryshipleadtime.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sizecase",
-											"source": "data.attributes.sizecase.values[0].value"
-										},
-										{
-											"destination": "storecollectionnumbername",
-											"source": "data.attributes.storecollectionnumbername.values[0].value"
-										},
-										{
-											"destination": "lifestyle",
-											"source": "data.attributes.lifestyle.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "suppliermfrshippoint",
-											"source": "data.attributes.suppliermfrshippoint.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sizeinner",
-											"source": "data.attributes.sizeinner.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "packagetype",
-											"source": "data.attributes.packagetype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "weightunitofmeasure",
-											"source": "data.attributes.weightunitofmeasure.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "whsesupplier1",
-											"source": "data.attributes.whsesupplier1.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "whsesuppliershippoint1",
-											"source": "data.attributes.whsesuppliershippoint1.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "supplierleadtime",
-											"source": "data.attributes.supplierleadtime.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecomHangingindicator",
-											"source": "data.attributes.ecomHangingindicator.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "effindicator",
-											"source": "data.attributes.effindicator.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeset",
-											"source": "data.attributes.storeset.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "floorsetdate",
-											"source": "data.attributes.floorsetdate.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "christmasindicator",
-											"source": "data.attributes.christmasindicator.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "protectionplan",
-											"source": "data.attributes.protectionplan.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommsuppliershippoint",
-											"source": "data.attributes.ecommsuppliershippoint.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "maxbackorderdays",
-											"source": "data.attributes.maxbackorderdays.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeactivesizes",
-											"source": "data.attributes.storeactivesizes.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storepurchasetype",
-											"source": "data.attributes.storepurchasetype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ecommpurchasetype",
-											"source": "data.attributes.ecommpurchasetype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sourcingpartner",
-											"source": "data.attributes.sourcingpartner.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "factoryshipuom",
-											"source": "data.attributes.factoryshipuom.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ticketstockno",
-											"source": "data.attributes.ticketstockno.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ticketattribute",
-											"source": "data.attributes.ticketattribute.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "season",
-											"source": "data.attributes.season.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ppkno",
-											"source": "data.attributes.ppkno.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -814,36 +401,71 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "innerquantitycolor",
-											"source": "data.attributes.innerquantitycolor.values[0].value",
+											"destination": "ecommminorderqty",
+											"source": "data.attributes.ecommminorderqty.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "casequantitycolor",
-											"source": "data.attributes.casequantitycolor.values[0].value",
+											"destination": "ecommoosdate",
+											"source": "data.attributes.ecommoosdate.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "conceptual",
-											"source": "data.attributes.conceptual.values[0].value",
+											"destination": "ecommpurchasetype",
+											"source": "data.attributes.ecommpurchasetype.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "whseprocessingfee1",
-											"source": "data.attributes.whseprocessingfee1.values[0].value",
+											"destination": "ecommsuppliershippoint",
+											"source": "data.attributes.ecommsuppliershippoint.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "compliancelikeitem",
-											"source": "data.attributes.compliancelikeitem.values[0].value",
+											"destination": "ecommunitcost",
+											"source": "data.attributes.ecommunitcost.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ecommunitcostcolor",
+											"source": "data.attributes.ecommunitcostcolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ecomprimarysupplierid",
+											"source": "data.attributes.ecomprimarysupplierid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ecomprimarysupplieridcolor",
+											"source": "data.attributes.ecomprimarysupplieridcolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "effindicator",
+											"source": "data.attributes.effindicator.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "enddate",
+											"source": "data.attributes.enddate.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -856,43 +478,29 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "fashionpyramid",
-											"source": "data.attributes.fashionpyramid.values[0].value",
+											"destination": "entity",
+											"source": "data.attributes.entity.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "deliveryinstructions",
-											"source": "data.attributes.deliveryinstructions.values[0].value",
+											"destination": "estimatedshippingexpense",
+											"source": "data.attributes.estimatedshippingexpense.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "packingmethod",
-											"source": "data.attributes.packingmethod.values[0].value",
+											"destination": "estimatedupsshippingcharge",
+											"source": "data.attributes.estimatedupsshippingcharge.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "pricetier",
-											"source": "data.attributes.pricetier.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "specialitemcode",
-											"source": "data.attributes.specialitemcode.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "storeoosdate",
-											"source": "data.attributes.storeoosdate.values[0].value",
+											"destination": "factoryshipleadtime",
+											"source": "data.attributes.factoryshipleadtime.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -905,61 +513,23 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "minorderqtycolor",
-											"source": "data.attributes.minorderqtycolor.values[0].value",
+											"destination": "factoryshipuom",
+											"source": "data.attributes.factoryshipuom.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "ecommminorderqty",
-											"source": "data.attributes.ecommminorderqty.values[0].value",
+											"destination": "factsheet",
+											"source": "data.attributes.factsheet.values[0].value",
 											"required": true,
 											"enabled": true,
+											"collectionType": "COLLECTION",
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "shippinginforequired",
-											"source": "data.attributes.shippinginforequired.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "producttitle",
-											"source": "data.attributes.producttitle.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "assembledlength",
-											"source": "data.attributes.assembledlength.values[0].value"
-										},
-										{
-											"destination": "assembledwidth",
-											"source": "data.attributes.assembledwidth.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "assembledheight",
-											"source": "data.attributes.assembledheight.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "assembledweight",
-											"source": "data.attributes.assembledweight.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "productdescription",
-											"source": "data.attributes.productdescription.values[0].value",
+											"destination": "fashionpyramid",
+											"source": "data.attributes.fashionpyramid.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1000,43 +570,50 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "searchkeywordsnavigation",
-											"source": "data.attributes.searchkeywordsnavigation.values[0].value",
+											"destination": "floorsetdate",
+											"source": "data.attributes.floorsetdate.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "competitorprice",
-											"source": "data.attributes.competitorprice.values[0].value",
+											"destination": "grossprofit",
+											"source": "data.attributes.grossprofit.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "shippointstate",
-											"source": "data.attributes.shippointstate.values[0].value",
+											"destination": "grossweight",
+											"source": "data.attributes.grossweight.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "shippointcity",
-											"source": "data.attributes.shippointcity.values[0].value",
+											"destination": "haslot",
+											"source": "data.attributes.haslot.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "programname",
-											"source": "data.attributes.programname.values[0].value",
+											"destination": "hazmatflag",
+											"source": "data.attributes.hazmatflag.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "stone",
-											"source": "data.attributes.stone.values[0].value",
+											"destination": "height",
+											"source": "data.attributes.height.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "hidedisplayindicator",
+											"source": "data.attributes.hidedisplayindicator.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1049,113 +626,15 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "estimatedshippingexpense",
-											"source": "data.attributes.estimatedshippingexpense.values[0].value",
+											"destination": "innerpackincrementcolor",
+											"source": "data.attributes.innerpackincrementcolor.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "longdescription",
-											"source": "data.attributes.longdescription.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "seotags",
-											"source": "data.attributes.seotags.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "seodisplayname",
-											"source": "data.attributes.seodisplayname.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "canonicalurl",
-											"source": "data.attributes.canonicalurl.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "disableads",
-											"source": "data.attributes.disableads.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "disablegoogleads",
-											"source": "data.attributes.disablegoogleads.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "seotaginclude",
-											"source": "data.attributes.seotaginclude.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "medialetter",
-											"source": "data.attributes.medialetter.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "mediayear",
-											"source": "data.attributes.mediayear.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ishidden",
-											"source": "data.attributes.ishidden.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "productreviewquotetext",
-											"source": "data.attributes.productreviewquotetext.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "featureheadertext",
-											"source": "data.attributes.featureheadertext.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "featurequotetext",
-											"source": "data.attributes.featurequotetext.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "longcopy",
-											"source": "data.attributes.longcopy.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "secondarycopy",
-											"source": "data.attributes.secondarycopy.values[0].value",
+											"destination": "innerquantitycolor",
+											"source": "data.attributes.innerquantitycolor.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1168,162 +647,29 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "alsoinstore",
-											"source": "data.attributes.alsoinstore.values[0].value",
+											"destination": "internationalshippable",
+											"source": "data.attributes.internationalshippable.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "promotionalimagecontent",
-											"source": "data.attributes.promotionalimagecontent.values[0].value",
+											"destination": "inventoryflag",
+											"source": "data.attributes.inventoryflag.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "ratingreviewid",
-											"source": "data.attributes.ratingreviewid.values[0].value",
+											"destination": "isfurniture",
+											"source": "data.attributes.isfurniture.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "ensembledhtml",
-											"source": "data.attributes.ensembledhtml.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "displayaskandanswersection",
-											"source": "data.attributes.displayaskandanswersection.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "destinationfeedid",
-											"source": "data.attributes.destinationfeedid.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "issampleensemble",
-											"source": "data.attributes.issampleensemble.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "isnewtoclearance",
-											"source": "data.attributes.isnewtoclearance.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "isnewclearancetimestamp",
-											"source": "data.attributes.isnewclearancetimestamp.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "productpresentationtype",
-											"source": "data.attributes.productpresentationtype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "ispreorderoption",
-											"source": "data.attributes.ispreorderoption.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "galleryvideo",
-											"source": "data.attributes.galleryvideo.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "iscustomerfavoriteoption",
-											"source": "data.attributes.iscustomerfavoriteoption.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "featurecolor",
-											"source": "data.attributes.featurecolor.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "isbopiseligible",
-											"source": "data.attributes.isbopiseligible.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "brandlogo",
-											"source": "data.attributes.brandlogo.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "seotitle",
-											"source": "data.attributes.seotitle.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "seodescription",
-											"source": "data.attributes.seodescription.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "brandlogo",
-											"source": "data.attributes.brandlogo.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "disclaimercopy",
-											"source": "data.attributes.disclaimercopy.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "onlineonly",
-											"source": "data.attributes.onlineonly.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "shortname",
-											"source": "data.attributes.shortname.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "channelavailability",
-											"source": "data.attributes.channelavailability.values[0].value",
+											"destination": "issephora",
+											"source": "data.attributes.issephora.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1336,36 +682,57 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "warehouseclass",
-											"source": "data.attributes.warehouseclass.values[0].value",
+											"destination": "itemtype",
+											"source": "data.attributes.itemtype.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "questionableorderquantity",
-											"source": "data.attributes.questionableorderquantity.values[0].value",
+											"destination": "lastmodifiedby",
+											"source": "data.attributes.lastmodifiedby.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "lottype",
-											"source": "data.attributes.lottype.values[0].value",
+											"destination": "lastmodifiedtimestamp",
+											"source": "data.attributes.lastmodifiedtimestamp.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "whitegloveddelivery",
-											"source": "data.attributes.whitegloveddelivery.values[0].value",
+											"destination": "length",
+											"source": "data.attributes.length.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "styletext",
-											"source": "data.attributes.styletext.values[0].value",
+											"destination": "lifecyclestage",
+											"source": "data.attributes.lifecyclestage.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "lifestyle",
+											"source": "data.attributes.lifestyle.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "liquidunitofmeasure",
+											"source": "data.attributes.liquidunitofmeasure.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "liquidvolume",
+											"source": "data.attributes.liquidvolume.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1378,8 +745,190 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
+											"destination": "lottype",
+											"source": "data.attributes.lottype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
 											"destination": "mailableindicator",
 											"source": "data.attributes.mailableindicator.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "manufacturer",
+											"source": "data.attributes.manufacturer.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "maxbackorderdays",
+											"source": "data.attributes.maxbackorderdays.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "minorderqtycolor",
+											"source": "data.attributes.minorderqtycolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "modelnumber",
+											"source": "data.attributes.modelnumber.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "monogramcharge",
+											"source": "data.attributes.monogramcharge.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "msrp",
+											"source": "data.attributes.msrp.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "multilotpp",
+											"source": "data.attributes.multilotpp.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "multilotppval",
+											"source": "data.attributes.multilotppval.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "noncommercialcarriercode",
+											"source": "data.attributes.noncommercialcarriercode.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "noncontinentalprepaid",
+											"source": "data.attributes.noncontinentalprepaid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "onlineonly",
+											"source": "data.attributes.onlineonly.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "orderableflag",
+											"source": "data.attributes.orderableflag.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "originindicator",
+											"source": "data.attributes.originindicator.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "orin",
+											"source": "data.attributes.orin.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "orinfetchrequestbody",
+											"source": "data.attributes.orinfetchrequestbody.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "packagetype",
+											"source": "data.attributes.packagetype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "packingmethod",
+											"source": "data.attributes.packingmethod.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "parantheticamount",
+											"source": "data.attributes.parantheticamount.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "plannedonsitedate",
+											"source": "data.attributes.plannedonsitedate.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ppkno",
+											"source": "data.attributes.ppkno.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "pricetier",
+											"source": "data.attributes.pricetier.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "primaryimage",
+											"source": "data.attributes.primaryimage.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "printpattern",
+											"source": "data.attributes.printpattern.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "productdescription",
+											"source": "data.attributes.productdescription.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "productheight",
+											"source": "data.attributes.productheight.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1392,8 +941,29 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "productheight",
-											"source": "data.attributes.productheight.values[0].value",
+											"destination": "productline",
+											"source": "data.attributes.productline.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "productpresentationtype",
+											"source": "data.attributes.productpresentationtype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "producttitle",
+											"source": "data.attributes.producttitle.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "producttype",
+											"source": "data.attributes.producttype.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1413,27 +983,6 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "commercialcarriercode",
-											"source": "data.attributes.commercialcarriercode.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "noncommercialcarriercode",
-											"source": "data.attributes.noncommercialcarriercode.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sabrixcommoditycode",
-											"source": "data.attributes.sabrixcommoditycode.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
 											"destination": "programtype",
 											"source": "data.attributes.programtype.values[0].value",
 											"required": true,
@@ -1441,50 +990,22 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "specialindicator",
-											"source": "data.attributes.specialindicator.values[0].value",
+											"destination": "prop65indicator",
+											"source": "data.attributes.prop65indicator.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "internationalshippable",
-											"source": "data.attributes.internationalshippable.values[0].value",
+											"destination": "protectionplan",
+											"source": "data.attributes.protectionplan.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "manufacturer",
-											"source": "data.attributes.manufacturer.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "countryoforigin",
-											"source": "data.attributes.countryoforigin.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sizeunit",
-											"source": "data.attributes.sizeunit.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "weightunit",
-											"source": "data.attributes.weightunit.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "issephora",
-											"source": "data.attributes.issephora.values[0].value",
+											"destination": "questionableorderquantity",
+											"source": "data.attributes.questionableorderquantity.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1497,29 +1018,8 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "modelnumber",
-											"source": "data.attributes.modelnumber.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "isfurniture",
-											"source": "data.attributes.isfurniture.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "sku_entitymanagemodeltype",
-											"source": "data.attributes.sku_entitymanagemodeltype.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "skunumber",
-											"source": "data.attributes.skunumber.values[0].value",
+											"destination": "retail",
+											"source": "data.attributes.retail.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1532,8 +1032,162 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "hidedisplayindicator",
-											"source": "data.attributes.hidedisplayindicator.values[0].value",
+											"destination": "rmsitemid",
+											"source": "data.attributes.rmsitemid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "rmsskuid",
+											"source": "data.attributes.rmsskuid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sabrixcommoditycode",
+											"source": "data.attributes.sabrixcommoditycode.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "searchkeywordsnavigation",
+											"source": "data.attributes.searchkeywordsnavigation.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "season",
+											"source": "data.attributes.season.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "secondarydesc",
+											"source": "data.attributes.secondarydesc.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sellableflag",
+											"source": "data.attributes.sellableflag.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sellinguom",
+											"source": "data.attributes.sellinguom.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "servicedescription",
+											"source": "data.attributes.servicedescription.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "shippinginforequired",
+											"source": "data.attributes.shippinginforequired.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "shippointcity",
+											"source": "data.attributes.shippointcity.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "shippointstate",
+											"source": "data.attributes.shippointstate.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "shortdescription",
+											"source": "data.attributes.shortdescription.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "shortname",
+											"source": "data.attributes.shortname.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "singlelotpp",
+											"source": "data.attributes.singlelotpp.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "size",
+											"source": "data.attributes.size.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sizecase",
+											"source": "data.attributes.sizecase.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sizeinner",
+											"source": "data.attributes.sizeinner.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sizerange",
+											"source": "data.attributes.sizerange.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sizeunit",
+											"source": "data.attributes.sizeunit.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "skugrouping",
+											"source": "data.attributes.skugrouping.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "skuitemtype",
+											"source": "data.attributes.skuitemtype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "skunumber",
+											"source": "data.attributes.skunumber.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1546,29 +1200,260 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
+											"destination": "skutype",
+											"source": "data.attributes.skutype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "source",
+											"source": "data.attributes.source.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "sourcingpartner",
+											"source": "data.attributes.sourcingpartner.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "specialindicator",
+											"source": "data.attributes.specialindicator.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "specialitemcode",
+											"source": "data.attributes.specialitemcode.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "specialprogramtype",
+											"source": "data.attributes.specialprogramtype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "standarduom",
+											"source": "data.attributes.standarduom.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "startdate",
+											"source": "data.attributes.startdate.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "status",
+											"source": "data.attributes.status.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "stone",
+											"source": "data.attributes.stone.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeactivesizes",
+											"source": "data.attributes.storeactivesizes.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storecollectionnumbername",
+											"source": "data.attributes.storecollectionnumbername.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storecolorabbr",
+											"source": "data.attributes.storecolorabbr.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storejcpstatus",
+											"source": "data.attributes.storejcpstatus.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeoosdate",
+											"source": "data.attributes.storeoosdate.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeprimarysupplierid",
+											"source": "data.attributes.storeprimarysupplierid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeprimarysupplieridcolor",
+											"source": "data.attributes.storeprimarysupplieridcolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storepurchasetype",
+											"source": "data.attributes.storepurchasetype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeset",
+											"source": "data.attributes.storeset.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storesetattribute",
+											"source": "data.attributes.storesetattribute.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storesubset",
+											"source": "data.attributes.storesubset.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeunitcost",
+											"source": "data.attributes.storeunitcost.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "storeunitcostcolor",
+											"source": "data.attributes.storeunitcostcolor.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "styletext",
+											"source": "data.attributes.styletext.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "subclass",
+											"source": "data.attributes.subclass.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "subdivision",
+											"source": "data.attributes.subdivision.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "subproducttype",
+											"source": "data.attributes.subproducttype.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "supplierchannel",
+											"source": "data.attributes.supplierchannel.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "supplierleadtime",
+											"source": "data.attributes.supplierleadtime.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "suppliermfrshippoint",
+											"source": "data.attributes.suppliermfrshippoint.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "suppliernumbername",
+											"source": "data.attributes.suppliernumbername.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "suppliersitenumber",
+											"source": "data.attributes.suppliersitenumber.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ticketattribute",
+											"source": "data.attributes.ticketattribute.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ticketattributegrid",
+											"source": "data.attributes.ticketattributegrid.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "ticketstockno",
+											"source": "data.attributes.ticketstockno.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "unusualdemandquantity",
+											"source": "data.attributes.unusualdemandquantity.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
 											"destination": "upcbarcode",
 											"source": "data.attributes.upcbarcode.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "componentskuquantit",
-											"source": "data.attributes.componentskuquantity.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "brand",
-											"source": "data.attributes.brand.values[0].value",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "warranty",
-											"source": "data.attributes.warranty.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
@@ -1581,8 +1466,93 @@
 											"entityType": "sku_entityManageModel"
 										},
 										{
-											"destination": "factsheet",
-											"source": "data.attributes.factsheet.values[0].value",
+											"destination": "vpn",
+											"source": "data.attributes.vpn.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "warehouseclass",
+											"source": "data.attributes.warehouseclass.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "warranty",
+											"source": "data.attributes.warranty.values[0].value",
+											"required": true,
+											"enabled": true,
+											"collectionType": "COLLECTION",
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "warrantyflag",
+											"source": "data.attributes.warrantyflag.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "weightunit",
+											"source": "data.attributes.weightunit.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "weightunitofmeasure",
+											"source": "data.attributes.weightunitofmeasure.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "whitegloveddelivery",
+											"source": "data.attributes.whitegloveddelivery.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "whseprocessingfee1",
+											"source": "data.attributes.whseprocessingfee1.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "whsesupplier1",
+											"source": "data.attributes.whsesupplier1.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "whsesuppliershippoint1",
+											"source": "data.attributes.whsesuppliershippoint1.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "width",
+											"source": "data.attributes.width.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "willcallfactoryshipind",
+											"source": "data.attributes.willcallfactoryshipind.values[0].value",
+											"required": true,
+											"enabled": true,
+											"entityType": "sku_entityManageModel"
+										},
+										{
+											"destination": "willcallrestrict",
+											"source": "data.attributes.willcallrestrict.values[0].value",
 											"required": true,
 											"enabled": true,
 											"entityType": "sku_entityManageModel"
