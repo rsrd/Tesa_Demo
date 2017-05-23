@@ -1818,6 +1818,103 @@
           ]
         }
       }
+    },
+    {
+      "id": "validateSkuIsNotAssignedToLot_businessCondition",
+      "name": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU",
+      "type": "businessCondition",
+      "data": {
+        "attributes": {
+          "name": {
+            "values": [
+              {
+                "value": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU"
+              }
+            ]
+          },
+          "description": {
+            "values": [
+              {
+                "value": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU"
+              }
+            ]
+          },
+          "ruleType": {
+            "values": [
+              {
+                "value": "businessCondition"
+              }
+            ]
+          },
+          "executionMode": {
+            "values": [
+              {
+                "value": "any"
+              }
+            ]
+          },
+          "enabled": {
+            "values": [
+              {
+                "value": "true"
+              }
+            ]
+          },
+          "isDraft": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isDeleted": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          },
+          "isSystemRule": {
+            "values": [
+              {
+                "value": "false"
+              }
+            ]
+          }
+          
+        },
+        "relationships": {
+          "hasBusinessRules": [
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_validateSkuIsNotAssignedToLot_businessRule",
+              "relTo": {
+                "id": "validateSkuIsNotAssignedToLot_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "isDeleted": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "id": "1",
+                      "value": "1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }
