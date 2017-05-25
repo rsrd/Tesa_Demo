@@ -78,50 +78,78 @@
                                 ],
                                 "attributes": [
                                     "producttitle",
-                                    "description",
-                                    "creationdate",
-                                    "plannedonsitedate"
+                                    "vpn",
+                                    "upcbarcode",
+                                    "brand",
+                                    "suppliernumbername",
+                                    "colordesc",
+                                    "itemtype",
+                                    "creationdate"
                                 ]
                             },
                             "tabular": {
-                                "settings": {
-                                    "isMultiSelect": true
-                                },
-                              "columns": [
-                                {
-                                    "header": "Entity Type",
-                                    "name": "type",
-                                    "sortable": false,
-                                    "filterable": false,
-                                    "isMetaDataColumn": true
-                                },
-                                {
-                                    "header": "Product Title",
-                                    "name": "producttitle",
-                                    "sortable": false,
-                                    "filterable": false,
-                                    "linkTemplate": "entity-manage?id={id}&type={type}"
-                                },
-                                {
-                                    "header": "Description",
-                                    "name": "description",
-                                    "sortable": false,
-                                    "filterable": false
-                                },
-                                {
-                                    "header": "Creation Date",
-                                    "name": "creationdate",
-                                    "sortable": false,
-                                    "filterable": false
-                                },
-                                {
-                                    "header": "Planned On-site Date",
-                                    "name": "plannedonsitedate",
-                                    "sortable": false,
-                                    "filterable": false
-                                }
-                                ]
-                            },
+									"settings": {
+										"isMultiSelect": true
+									},
+									"columns": [
+										{
+											"header": "Entity Type",
+											"name": "type",
+											"sortable": false,
+											"filterable": false,
+											"isMetaDataColumn": true
+										},
+										{
+											"header": "Product Title",
+											"name": "producttitle",
+											"sortable": false,
+											"filterable": false,
+											"linkTemplate": "entity-manage?id={id}&type={type}"
+										},
+										{
+											"header": "VPN",
+											"name": "vpn",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "UPC",
+											"name": "upcbarcode",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Brand",
+											"name": "brand",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Supplier",
+											"name": "suppliernumbername",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Color Desc",
+											"name": "colordesc",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Item Type",
+											"name": "itemtype",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Creation Date",
+											"name": "creationdate",
+											"sortable": false,
+											"filterable": false
+										}
+									]
+								},
                             "list": {
                                 "settings": {
                                     "isMultiSelect": true,
@@ -364,246 +392,10 @@
                     },
                     "jsonData": {
                         "config": {
-                            "workflowSavedSearch": [{
-                                    "id": 1,
-                                    "accesstype": "self",
-                                    "name": "New SKUs to Submit",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "New SKUs to Submit"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 2,
-                                    "accesstype": "self",
-                                    "name": "Provide Additional Info",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Provide Additional Info"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 3,
-                                    "accesstype": "self",
-                                    "name": "Rejected SKUs",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Rejected SKUs"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 4,
-                                    "accesstype": "self",
-                                    "name": "Review Assortment",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Review Assortment"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 5,
-                                    "accesstype": "self",
-                                    "name": "Assign Internal Information",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Assign Internal Information"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 6,
-                                    "accesstype": "self",
-                                    "name": "Enrich Copy",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Enrich Copy"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": 7,
-                                    "accesstype": "self",
-                                    "name": "Enrich with Digital Assets",
-                                    "workflowSearchCriterion": {
-                                        "dataRequest": {
-                                            "params": {
-                                                "query": {
-                                                    "contexts": [{
-                                                        "workflow": "newProductSetup"
-                                                    }],
-                                                    "filters": {
-                                                        "attributesCriterion": [{
-                                                            "activities/activityName": {
-                                                                "eq": "Enrich with Digital Assets"
-                                                            }
-                                                        }],
-                                                        "typesCriterion": []
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            ],
-                            "favourites": [{
-                                "id": 8,
-                                "accesstype": "self",
-                                "name": "Womens Shoes",
-                                "icon": "pebble-icons:SavedSearch",
-                                "dimensions": {
-                                    "catalog": "productMaster",
-                                    "Source": "internal",
-                                    "Locale": "en-US",
-                                    "TimeSlice": "Now"
-                                },
-                                "searchQuery": "",
-                                "searchTags": [{
-                                    "name": "description",
-                                    "longName": "Description",
-                                    "options": {
-                                        "displayType": "textArea"
-                                    },
-                                    "value": {
-                                        "eq": "Womens"
-                                    }
-                                }]
-                            }],
-                            "my-searches": [{
-                                "id": 9,
-                                "accesstype": "self",
-                                "name": "Mens Shoes",
-                                "icon": "pebble-icons:SavedSearch",
-                                "shared": false,
-                                "dimensions": {
-                                    "catalog": "productMaster",
-                                    "Source": "internal",
-                                    "Locale": "en-US",
-                                    "TimeSlice": "Now"
-                                },
-                                "searchQuery": "",
-                                "searchTags": [{
-                                    "name": "description",
-                                    "longName": "Description",
-                                    "options": {
-                                        "displayType": "textArea"
-                                    },
-                                    "value": {
-                                        "eq": "Mens"
-                                    }
-                                }]
-                            }],
-                            "shared-searches": [{
-                                "id": 10,
-                                "accesstype": "self",
-                                "name": "Women's Sport Wear & Dresses",
-                                "icon": "pebble-icons:SavedSearch",
-                                "shared": true,
-                                "dimensions": {
-                                    "catalog": "productMaster",
-                                    "Source": "internal",
-                                    "Locale": "en-US",
-                                    "TimeSlice": "Now"
-                                },
-                                "searchQuery": "dresses",
-                                "searchTags": [{
-                                    "name": "description",
-                                    "longName": "Description",
-                                    "options": {
-                                        "displayType": "textArea"
-                                    },
-                                    "value": {
-                                        "eq": "dresses"
-                                    }
-                                }]
-                            }]
+                            "workflowSavedSearch": [],
+                            "favourites": [],
+                            "my-searches": [],
+                            "shared-searches": []
                         }
                     }
                 }]
@@ -682,66 +474,8 @@
                         "role": "business"
                     },
                     "jsonData": {
-                        "config": [{
-                                "name": "displayname",
-                                "longName": "Display Name",
-                                "displayType": "textBox"
-                            },
-                            {
-                                "name": "skunumber",
-                                "longName": "Sku Number",
-                                "value": "",
-                                "displayType": "textBox"
-                            },
-                            {
-                                "name": "description",
-                                "longName": "Description",
-                                "value": "",
-                                "displayType": "textArea"
-                            },
-                            {
-                                "name": "creationDate",
-                                "longName": "Creation Date",
-                                "value": "",
-                                "displayType": "dateTime"
-                            },
-                            {
-                                "name": "startDate",
-                                "longName": "Start Date",
-                                "value": "",
-                                "displayType": "dateTime"
-                            },
-                            {
-                                "name": "endDate",
-                                "longName": "End Date",
-                                "value": "",
-                                "displayType": "dateTime"
-                            },
-                            {
-                                "name": "size",
-                                "longName": "Size",
-                                "displayType": "dropDown"
-                            },
-                            {
-                                "name": "orin",
-                                "longName": "ORIN",
-                                "displayType": "numeric"
-                            },
-                            {
-                                "name": "width",
-                                "longName": "Width",
-                                "displayType": "dropDown"
-                            },
-                            {
-                                "name": "skuQuantity",
-                                "longName": "Quantity",
-                                "displayType": "numeric"
-                            },
-                            {
-                                "name": "status",
-                                "longName": "Status",
-                                "displayType": "textBox"
-                            }
+                        "config": [
+                            
                         ]
                     }
                 }]
