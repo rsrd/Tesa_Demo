@@ -7,21 +7,21 @@
   "entityModels": [
     {
       "id": "businessRequiredAttributesArePopulated_businessCondition",
-      "name": "Business has provided the required attributes",
+      "name": "Business Required attributes need to be completed",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Business has provided the required attributes"
+                "value": "Business Required attributes need to be completed"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Business required attributes are populated"
+                "value": "Business Required attributes need to be completed"
               }
             ]
           },
@@ -134,21 +134,21 @@
     },
     {
       "id": "buyerRequiredAttributesArePopulated_businessCondition",
-      "name": "Buyer has provided the required attributes",
+      "name": "Buyer Required attributes need to be completed",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Buyer has provided the required attributes"
+                "value": "Buyer Required attributes need to be completed"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Buyer required attributes are populated"
+                "value": "Buyer Required attributes need to be completed"
               }
             ]
           },
@@ -252,21 +252,21 @@
     },
     {
       "id": "additionalVendorRequiredAttributesArePopulated_businessCondition",
-      "name": "Vendor has provided additional required attributes",
+      "name": "Request for additional core attributes",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Vendor has provided additional required attributes"
+                "value": "Request for additional core attributes"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Additional Vendor required attributes are populated"
+                "value": "Request for additional core attributes"
               }
             ]
           },
@@ -672,21 +672,21 @@
     },
     {
       "id": "vendorRequiredAttributesArePopulated_businessCondition",
-      "name": "SKU is ready to be submitted to Buyer",
+      "name": "SKUs submitted require attention",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "SKU is ready to be submitted to Buyer"
+                "value": "SKUs submitted require attention"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Vendor required attributes are populated"
+                "value": "SKUs submitted require attention"
               }
             ]
           },
@@ -1794,14 +1794,14 @@
     },
     {
       "id": "validateSkuIsNotAssignedToLot_businessCondition",
-      "name": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU",
+      "name": "SKUs Not associated to LOTs",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "SKU is not assigned to a Lot. Please assign it to a Lot before Approving the SKU"
+                "value": "SKUs Not associated to LOTs"
               }
             ]
           },
@@ -1851,6 +1851,13 @@
             "values": [
               {
                 "value": "false"
+              }
+            ]
+          },
+          "impactRelationships": {
+            "values": [
+              {
+                "value": "ischildof"
               }
             ]
           }
@@ -1890,21 +1897,21 @@
     },
     {
       "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
-      "name": "Category specific required attributes are populated",
+      "name": "Request for additional category attributes",
       "type": "businessCondition",
       "data": {
         "attributes": {
           "name": {
             "values": [
               {
-                "value": "Category specific required attributes are populated"
+                "value": "Request for additional category attributes"
               }
             ]
           },
           "description": {
             "values": [
               {
-                "value": "Category specific required attributes are populated"
+                "value": "Request for additional category attributes"
               }
             ]
           },
@@ -1947,6 +1954,310 @@
             "values": [
               {
                 "value": "false"
+              }
+            ]
+          },
+          "impactAttributes": {
+            "values": [
+              {
+                "value": "features"
+              },
+              {
+                "value": "programname"
+              },
+              {
+                "value": "basematerial"
+              },
+              {
+                "value": "care"
+              },
+              {
+                "value": "measurements"
+              },
+              {
+                "value": "piecesinset"
+              },
+              {
+                "value": "agegroup"
+              },
+              {
+                "value": "intendedroom"
+              },
+              {
+                "value": "chairmeasurements"
+              },
+              {
+                "value": "disclaimers"
+              },
+              {
+                "value": "ottomanmeasurements"
+              },
+              {
+                "value": "intendedgender"
+              },
+              {
+                "value": "fabric"
+              },
+              {
+                "value": "topmaterial"
+              },
+              {
+                "value": "outersurfmaterial"
+              },
+              {
+                "value": "basematerials"
+              },
+              {
+                "value": "occasion"
+              },
+              {
+                "value": "setincludes"
+              },
+              {
+                "value": "material"
+              },
+              {
+                "value": "sizerange"
+              },
+              {
+                "value": "shoeliningmaterial"
+              },
+              {
+                "value": "fibercontent"
+              },
+              {
+                "value": "mobilemeasurements"
+              },
+              {
+                "value": "camerameasurements"
+              },
+              {
+                "value": "monitormeasurements"
+              },
+              {
+                "value": "barmeasurements"
+              },
+              {
+                "value": "tablemeasurements"
+              },
+              {
+                "value": "stoolmeasurements"
+              },
+              {
+                "value": "sinkmaterial"
+              },
+              {
+                "value": "vanitytopmaterial"
+              },
+              {
+                "value": "beddingmeasurements"
+              },
+              {
+                "value": "bedskirtcare"
+              },
+              {
+                "value": "beddingcare"
+              },
+              {
+                "value": "sheetscare"
+              },
+              {
+                "value": "shamcare"
+              },
+              {
+                "value": "shamfibercontent"
+              },
+              {
+                "value": "fibercontentback"
+              },
+              {
+                "value": "sheetsfibercontent"
+              },
+              {
+                "value": "bedmeasurements"
+              },
+              {
+                "value": "chestmeasurements"
+              },
+              {
+                "value": "mirrormeasurements"
+              },
+              {
+                "value": "dressermeasurements"
+              },
+              {
+                "value": "containerbasematrl"
+              },
+              {
+                "value": "framematerialtype"
+              },
+              {
+                "value": "liningmaterial"
+              },
+              {
+                "value": "stone"
+              },
+              {
+                "value": "basematerialjwry"
+              },
+              {
+                "value": "metaltype"
+              },
+              {
+                "value": "otherfibercontent"
+              },
+              {
+                "value": "framematerial"
+              },
+              {
+                "value": "2ndcompcare"
+              },
+              {
+                "value": "1stcompcare"
+              },
+              {
+                "value": "3rdcompcare"
+              },
+              {
+                "value": "4thcompcare"
+              },
+              {
+                "value": "basemodelnumber"
+              },
+              {
+                "value": "bladematerial"
+              },
+              {
+                "value": "handlematerial"
+              },
+              {
+                "value": "benchmeasurements"
+              },
+              {
+                "value": "rodmaterial"
+              },
+              {
+                "value": "theme"
+              },
+              {
+                "value": "weight"
+              },
+              {
+                "value": "shaftmaterial"
+              },
+              {
+                "value": "fibercontentlegs"
+              },
+              {
+                "value": "fibercontentbrief"
+              },
+              {
+                "value": "fibercontentcrotch"
+              },
+              {
+                "value": "materialcomposition"
+              },
+              {
+                "value": "basepreciousmetal"
+              },
+              {
+                "value": "dimensions"
+              },
+              {
+                "value": "saucermeasurements"
+              },
+              {
+                "value": "shadematerial"
+              },
+              {
+                "value": "legstyle"
+              },
+              {
+                "value": "skirtlength"
+              },
+              {
+                "value": "rise"
+              },
+              {
+                "value": "fit"
+              },
+              {
+                "value": "shortlength"
+              },
+              {
+                "value": "coatingmaterial"
+              },
+              {
+                "value": "weightgramssqmet"
+              },
+              {
+                "value": "fibercontenttop"
+              },
+              {
+                "value": "glassmeasurements"
+              },
+              {
+                "value": "ventmaterial"
+              },
+              {
+                "value": "shlfmaterialfrzr"
+              },
+              {
+                "value": "shlfmaterialfridge"
+              },
+              {
+                "value": "rugsize"
+              },
+              {
+                "value": "shape"
+              },
+              {
+                "value": "materialcontent"
+              },
+              {
+                "value": "unitofmeasure"
+              },
+              {
+                "value": "character"
+              },
+              {
+                "value": "neckline"
+              },
+              {
+                "value": "collar"
+              },
+              {
+                "value": "sleevelength"
+              },
+              {
+                "value": "shoesizerange"
+              },
+              {
+                "value": "futonmeasurements"
+              },
+              {
+                "value": "setteemeasurements"
+              },
+              {
+                "value": "sofameasurements"
+              },
+              {
+                "value": "floorcarefeatures"
+              },
+              {
+                "value": "deliverytype"
+              },
+              {
+                "value": "metalfinish"
+              },
+              {
+                "value": "woodfinish"
+              },
+              {
+                "value": "casematerials"
+              },
+              {
+                "value": "shelfmaterialtype"
               }
             ]
           }
