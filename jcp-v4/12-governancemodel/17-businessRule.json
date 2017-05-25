@@ -255,7 +255,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"productdescription\"],true,SetAttributeValue[\"inspirationalcopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
+								"value": "IIF[ValidateEmptyAttributes[\"productdescription\",\"features1\",\"features2\",\"features3\",\"features4\"],true,SetAttributeValue[\"inspirationalcopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
 							}
 						]
 					},
@@ -2101,7 +2101,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"orin\"],SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]],false]"
+								"value": "getresp:=GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]];IIF[IsNullOrEmpty[\"getresp\"],true,SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]]]"
 							}
 						]
 					},
@@ -2385,7 +2385,78 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[HasRelationships[\"ischildof\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+								"value": "IIF[HasRelationships[\"ischildof\"] AND RelationshipsCountInContext[\"ischildof\"]=1,AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		 {
+			"id": "lotSequenceGroupId_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Generate Lot Sequence Group ID"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Generate Lot Sequence Group ID"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "getclientid:=GetClientAttributesFromRequest[\"taskId.values[0].value\"]; getlotgroup:=GetAttributeValue[\"lotgroup\"];IIF[IsNullOrEmpty[getclientid],true,SetAttributeValue[\"lotgroupid\",concat[getclientid,\"_\",getlotgroup]]]"
 							}
 						]
 					},
