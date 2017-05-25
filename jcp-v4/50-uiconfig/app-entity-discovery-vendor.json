@@ -81,9 +81,11 @@
 									],
 									"attributes": [
 										"producttitle",
-										"description",
-										"creationdate",
-										"plannedonsitedate"
+										"vpn",
+										"upcbarcode",
+										"colordesc",
+										"itemtype",
+										"creationdate"
 									]
 								},
 								"tabular": {
@@ -106,20 +108,32 @@
 											"linkTemplate": "entity-manage?id={id}&type={type}"
 										},
 										{
-											"header": "Description",
-											"name": "description",
+											"header": "VPN",
+											"name": "vpn",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "UPC",
+											"name": "upcbarcode",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Color Desc",
+											"name": "colordesc",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Item Type",
+											"name": "itemtype",
 											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Creation Date",
 											"name": "creationdate",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Planned On-site Date",
-											"name": "plannedonsitedate",
 											"sortable": false,
 											"filterable": false
 										}
