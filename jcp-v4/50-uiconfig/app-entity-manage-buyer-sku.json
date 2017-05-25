@@ -285,8 +285,23 @@
 							"config": {
 								"headerConfig": [
 									{
+										"attributeName": "brand",
+										"label": "Brand",
+										"noTrim": false
+									},
+									{
 										"attributeName": "producttitle",
 										"label": "Product Title",
+										"noTrim": false
+									},
+									{
+										"attributeName": "colordesc",
+										"label": "Color Desc",
+										"noTrim": false
+									},
+									{
+										"attributeName": "vpn",
+										"label": "VPN",
 										"noTrim": false
 									},
 									{
@@ -295,30 +310,19 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "orin",
-										"label": "ORIN",
+										"attributeName": "producttype",
+										"label": "Product Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "rmsskuid",
-										"label": "SKU ID",
+										"attributeName": "subproducttype",
+										"label": "Sub-Product Type",
 										"noTrim": false
 									},
 									{
-										"attributeName": "description",
-										"label": "Description",
+										"attributeName": "itemtype",
+										"label": "Item Type",
 										"noTrim": false
-									},
-									{
-										"attributeName": "brand",
-										"label": "Brand",
-										"noTrim": false
-									},
-									{
-										"attributeName": "creationdate",
-										"label": "Creation Date",
-										"noTrim": false,
-										"dataType": "datetime"
 									}
 								],
 								"toolbarConfig": {
@@ -326,25 +330,25 @@
 										{
 											"buttons": [
 												{
-                                                  "name": "addContext",
-                                                  "icon":"pebble-lg-icons:Master",
+													"name": "addContext",
+													"icon":"pebble-lg-icons:Master",
 													"text": "",
-                                                  "tooltip": "Add Context",
+													"tooltip": "Add Context",
 													"visible": true,
-                                                  "buttons": [
-                                                    {
-                                                      "name": "merchandisingtaxonomy",
-                                                      "text": "Merchandising Taxonomy",
-                                                      "visible": true,
-                                                      "tooltip": "Merchandising Taxonomy"
-                                                    },
-                                                    {
-                                                      "name": "productsetuptaxonomy",
-                                                      "text": "Product Setup Taxonomy",
-                                                      "visible": true,
-                                                      "tooltip": "Product Setup Taxonomy"
-                                                    }
-                                                  ]
+													"buttons": [
+														{
+															"name": "merchandisingtaxonomy",
+															"text": "Merchandising Taxonomy",
+															"visible": true,
+															"tooltip": "Merchandising Taxonomy"
+														},
+														{
+															"name": "productsetuptaxonomy",
+															"text": "Product Setup Taxonomy",
+															"visible": true,
+															"tooltip": "Product Setup Taxonomy"
+														}
+													]
 												},
 												{
 													"name": "refresh",
@@ -354,18 +358,18 @@
 													"tooltip": "Refresh"
 												},
 												{
-													"name": "upload",
-													"icon": "pebble-md-icons:Upload",
-													"text": "",
-													"visible": true,
-													"tooltip": "Upload"
-												},
-												{
 													"name": "download",
 													"icon": "pebble-md-icons:Import",
 													"text": "",
 													"visible": true,
 													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
 												}
 											]
 										}
