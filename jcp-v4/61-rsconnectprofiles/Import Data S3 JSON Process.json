@@ -59,6 +59,35 @@
 									},
 									"includeFilter": [],
 									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(type)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "NONE",
+												"removeSpecialCharacters": "false",
+												"removeWhitespace": "false",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@fieldExternalName(entity.data.contexts[0].context.classification)",
+												"taxonomy": "@fieldExternalName(entity.data.contexts[0].context.taxonomy)"
+											}
+										}
+									]
 								}
 							}
 						}
