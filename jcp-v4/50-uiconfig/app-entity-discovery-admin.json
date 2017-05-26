@@ -82,9 +82,13 @@
 									],
 									"attributes": [
 										"producttitle",
-										"description",
-										"creationDate",
-										"plannedOnSiteDate"
+										"vpn",
+										"upcbarcode",
+										"brand",
+										"suppliernumbername",
+										"colordesc",
+										"itemtype",
+										"creationdate"
 									]
 								},
 								"tabular": {
@@ -92,7 +96,7 @@
 										"isMultiSelect": true
 									},
 									"columns": [
-										{
+																				{
 											"header": "Entity Type",
 											"name": "type",
 											"sortable": false,
@@ -107,8 +111,38 @@
 											"linkTemplate": "entity-manage?id={id}&type={type}"
 										},
 										{
-											"header": "Description",
-											"name": "description",
+											"header": "VPN",
+											"name": "vpn",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "UPC",
+											"name": "upcbarcode",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Brand",
+											"name": "brand",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Supplier",
+											"name": "suppliernumbername",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Color Desc",
+											"name": "colordesc",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Item Type",
+											"name": "itemtype",
 											"sortable": false,
 											"filterable": false
 										},
@@ -116,13 +150,8 @@
 											"header": "Creation Date",
 											"name": "creationdate",
 											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Planned On-site Date",
-											"name": "plannedonsitedate",
-											"sortable": false,
-											"filterable": false
+											"filterable": false,
+											"displayType": "dateTime"
 										}
 									]
 								},
