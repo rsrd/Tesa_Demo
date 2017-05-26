@@ -21,6 +21,11 @@
                         "properties": {
                             "defaultValues": "[[systemdatetime]]"
                         }
+                    },
+                    "source": {
+                        "properties": {
+                            "defaultValues": "PIM"
+                        }
                     }
                 }
             }
@@ -32,6 +37,11 @@
             "domain": "generic",
             "data": {
                 "attributes": {
+                    "source": {
+                        "properties": {
+                            "defaultValues": "PIM"
+                        }
+                    },
                     "ecomhangingindicator": {
                         "properties": {
                             "defaultValues": "0"
@@ -91,6 +101,11 @@
                         "properties": {
                             "defaultValues": "[[systemdatetime]]"
                         }
+                    },
+                    "source": {
+                        "properties": {
+                            "defaultValues": "PIM"
+                        }
                     }
                 }
             }
@@ -112,9 +127,14 @@
                             "defaultValues": "[[systemdatetime]]"
                         }
                     },
+                    "source": {
+                        "properties": {
+                            "defaultValues": "PIM"
+                        }
+                    },
                     "skuitemtype": {
                         "properties": {
-                            "defaultValues": "FSHP"
+                            "defaultValues": "FS"
                         }
                     },
                     "channel": {
@@ -325,20 +345,6 @@
                     "inventoryflag": {
                         "properties": {
                             "defaultValues": "Y"
-                        }
-                    },
-                    "channels": {
-                        "properties": {
-                            "defaultValues": [
-                                "Dotcom",
-                                "Mobile",
-                                "Tablet"
-                            ]
-                        }
-                    },
-                    "productpresentationtype": {
-                        "properties": {
-                            "defaultValues": "0"
                         }
                     },
                     "orinfetchrequestbody": {
