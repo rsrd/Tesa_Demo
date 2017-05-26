@@ -397,7 +397,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname \"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productName\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname \"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productname\"]]"
 							}
 						]
 					},
@@ -2279,77 +2279,77 @@
 			}
 		},
 		{
-      "id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
-      "type": "businessRule",
-      "data": {
-        "attributes": {
-          "name": {
-            "values": [
-              {
-                "value": "Populate secondarydesc attribute value With description Attribute value"
-              }
-            ]
-          },
-          "description": {
-            "values": [
-              {
-                "value": "Populate secondarydesc attribute value With description Attribute value."
-              }
-            ]
-          },
-          "ruleType": {
-            "values": [
-              {
-                "value": "computation"
-              }
-            ]
-          },
-          "executionMode": {
-            "values": [
-              {
-                "value": "any"
-              }
-            ]
-          },
-          "definition": {
-            "values": [
-              {
-                "value": "IIF[ValidateEmptyAttributes[\"description\"],true,SetAttributeValue[\"secondarydesc\",GetAttributeValue[\"description\"]]]"
-              }
-            ]
-          },
-          "enabled": {
-            "values": [
-              {
-                "value": "true"
-              }
-            ]
-          },
-          "isDraft": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          },
-          "isDeleted": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          },
-          "isSystemRule": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
+			"id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Populate secondarydesc attribute value With description Attribute value"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Populate secondarydesc attribute value With description Attribute value."
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[ValidateEmptyAttributes[\"description\"],true,SetAttributeValue[\"secondarydesc\",GetAttributeValue[\"description\"]]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
 			"id": "validateSkuIsNotAssignedToLot_businessRule",
 			"type": "businessRule",
 			"data": {
@@ -2386,6 +2386,77 @@
 						"values": [
 							{
 								"value": "IIF[HasRelationships[\"ischildof\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "defaultvaluesforSKU_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Default values for SKU"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Default values for SKU"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "varSource:=GetAttributevalue[\"source\"];IIF[ValidateEmptyAttributes[\"diff1type\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff1type\",\"COLOR\"]];IIF[ValidateEmptyAttributes[\"diff1group\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff1group\",\"COLORS\"]];IIF[ValidateEmptyAttributes[\"diff2type\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff2type\",\"SIZE\"]];IIF[ValidateEmptyAttributes[\"diff2group\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff2group\",\"NOSIZE\"]];IIF[ValidateEmptyAttributes[\"skusize\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"skusize\",\"1SZ*\"]];"
 							}
 						]
 					},

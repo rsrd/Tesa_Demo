@@ -579,6 +579,59 @@
                   ]
                 }
               }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_defaultvaluesforSKU_businessRule",
+              "relTo": {
+                "id": "defaultvaluesforSKU_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "20"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "create"
+                    }
+                  ]
+                }
+              }
             }
           ],
           "hasBusinessConditions": [
