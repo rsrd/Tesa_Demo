@@ -2101,11 +2101,7 @@
 					"definition": {
 						"values": [
 							{
-<<<<<<< HEAD
-								"value": "IIF[ValidateEmptyAttributes[\"orin\"],SetVariable[\"getresp\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]],IIF[IsNullOrEmpty[getresp],true,SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]]]]"
-=======
 								"value": "IIF[ValidateEmptyAttributes[\"orin\"],SetAttributeValue[\"orin\",GetRestAPIResponse[\"http://lenlmpadmrfpp01.jcpenney.com:7005/RMSItem/GenerateORIN/getItemNumbers\",GetAttributeValue[\"orinfetchrequestbody\"],\"RMSInfo.ItemNumber[0]\"]],false]"
->>>>>>> 8358bde3a3be350e5e28bbdade2ee50ff858e3fc
 							}
 						]
 					},
