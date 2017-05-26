@@ -36,7 +36,8 @@
 									"rock-saved-searches-tags",
 									"assignment-actions",
 									"rock-workflow-transition",
-									"rock-entity-upload"
+									"rock-entity-upload",
+									"rock-workflow-assignment"
 								]
 							}
 						}
@@ -80,9 +81,13 @@
 									],
 									"attributes": [
 										"producttitle",
-										"description",
-										"creationdate",
-										"plannedonsitedate"
+										"vpn",
+										"upcbarcode",
+										"brand",
+										"suppliernumbername",
+										"colordesc",
+										"itemtype",
+										"creationdate"
 									]
 								},
 								"tabular": {
@@ -105,20 +110,44 @@
 											"linkTemplate": "entity-manage?id={id}&type={type}"
 										},
 										{
-											"header": "Description",
-											"name": "description",
+											"header": "VPN",
+											"name": "vpn",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "UPC",
+											"name": "upcbarcode",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Brand",
+											"name": "brand",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Supplier",
+											"name": "suppliernumbername",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Color Desc",
+											"name": "colordesc",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Item Type",
+											"name": "itemtype",
 											"sortable": false,
 											"filterable": false
 										},
 										{
 											"header": "Creation Date",
 											"name": "creationdate",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Planned On-site Date",
-											"name": "plannedonsitedate",
 											"sortable": false,
 											"filterable": false
 										}
@@ -1065,14 +1094,16 @@
 										"icon": "pebble-xl-icons:taketask",
 										"text": "Take Task",
 										"visible": true,
-										"eventName": "action-takeTask"
+										"eventName": "action-takeTask",
+										"componentName": "rock-workflow-assignment"
 									},
 									{
 										"name": "releaseTask",
 										"icon": "pebble-xl-icons:releasetask",
 										"text": "Release Task",
 										"visible": true,
-										"eventName": "action-releaseTask"
+										"eventName": "action-releaseTask",
+										"componentName": "rock-workflow-assignment"
 									}
 								]
 							},
@@ -1198,6 +1229,65 @@
 									}
 								]
 							}
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "app-entity-discovery_rock-workflow-assignment_buyer_uiConfig",
+			"name": "app-entity-discovery_rock-workflow-assignment",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-discovery",
+							"service": "_ALL",
+							"component": "rock-workflow-assignment",
+							"subComponent": "_ALL",
+							"role": "buyer"
+						},
+						"jsonData": {
+							"config": {
+									"name": "rock-workflow-assignment",
+									"label": "Manage bulk assignments",
+									"steps": [
+										{
+											"name": "step-1-rock-workflow-assignment",
+											"label": "Manage bulk assignments",
+											"component": {
+												"name": "rock-workflow-assignment",
+												"path": "/../../src/elements/rock-workflow-assignment/rock-workflow-assignment.html",
+											"properties": {												
+													"result-attribute": {
+														"name": "producttitle", 
+														"externalName": "Product Title"
+													}
+												}
+											},
+											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"nextEvent": "onComplete",
+											"backEvent": "onCancel"
+										},
+										{
+											"name": "step-2-rock-workflow-assignment",
+											"label": "Workflow assignment finish",
+											"component": {
+												"name": "rock-bulk-action-result",
+												"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+												"properties": {
+													"business-function-data": {}
+												}
+											}
+										}
+									]
+								}
 						}
 					}
 				]
