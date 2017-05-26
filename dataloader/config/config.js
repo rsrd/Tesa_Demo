@@ -29,7 +29,7 @@ var toolConfig = {
             "ENVNAME": "qa2-us-east-1",
             "AWSREGIONNAME": "us-east-1",
             "AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE",
-				"TENANT": "jcpenney"
+            "TENANT": "jcpenney"
         }
     },
     "elasticUrl": "http://192.168.0.85:9200",
@@ -42,9 +42,9 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "jcp-v3",
+    "folderName": "jcp-v4",
     "tenantId": "jcpenney",
-    "option": "authorizationmodel"
+    "option": "uiconfig"
 }
 
 module.exports = {

@@ -1,0 +1,69 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "sku_entityType",
+			"name": "sku",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "SKU",
+				"description": ""
+			}
+		},
+		{
+			"id": "lot_entityType",
+			"name": "lot",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Lot",
+				"description": ""
+			}
+		},
+		{
+			"id": "productpresentation_entityType",
+			"name": "productpresentation",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Product Presentation",
+				"description": ""
+			}
+		},
+		{
+			"id": "ensemble_entityType",
+			"name": "ensemble",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Ensemble",
+				"description": ""
+			}
+		},
+		{
+			"id": "classification_entityType",
+			"name": "classification",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Classification",
+				"description": "Classification"
+			}
+		},
+		{
+			"id": "taxonomy_entityType",
+			"name": "taxonomy",
+			"type": "entityType",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Taxonomy",
+				"description": "Taxonomy"
+			}
+		}
+	]
+}
