@@ -2172,7 +2172,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[HasErrorsInContext[\"attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"]]"
+								"value": "IIF[HasErrorsInContext[\"attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[],true]"
 							}
 						]
 					},
