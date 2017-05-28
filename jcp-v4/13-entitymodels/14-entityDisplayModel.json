@@ -453,15 +453,64 @@
 								}
 							}
 						}
-					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
+					],
+					"productpresentationtovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
 						}
-					}
-				]
+					],
+					"productpresentationtodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
 			}
 		},
 		{
@@ -2257,15 +2306,369 @@
 								}
 							}
 						}
+					],
+					"lottovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"lottodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
 					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
+				}
+			}
+		},
+		{
+			"id": "image_entityDisplayModel",
+			"name": "image",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"colorname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"colorprofile": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"division": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"imageformat": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"imageheightunit": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": ""
+						}
+					},
+					"imageresolution": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"imagesize": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"imagetype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"imagewidthunit": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": ""
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.lifecyclestagevalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"maximagequality": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"mediatype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
 						}
 					}
-				]
+				}
+			}
+		},
+		{
+			"id": "document_entityDisplayModel",
+			"name": "document",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.lifecyclestagevalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				}
 			}
 		},
 		{
@@ -2674,15 +3077,288 @@
 								}
 							}
 						}
+					],
+					"ensembletovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"ensembletodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
 					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
+				}
+			}
+		},
+		{
+			"id": "audio_entityDisplayModel",
+			"name": "audio",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.lifecyclestagevalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
 						}
 					}
-				]
+				}
+			}
+		},
+		{
+			"id": "video_entityDisplayModel",
+			"name": "video",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.lifecyclestagevalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.referencedatavalue}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.attributes.identifier}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				}
 			}
 		},
 		{
@@ -4351,15 +5027,64 @@
 								}
 							}
 						}
-					]
-				},
-				"contexts": [
-					{
-						"context": {
-							"classification": "_ALL"
+					],
+					"skutovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
 						}
-					}
-				]
+					],
+					"skutodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"displayType": "referencelist",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.attributes.referencedatavalue}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								}
+							}
+						}
+					]
+				}
 			}
 		}
 	]

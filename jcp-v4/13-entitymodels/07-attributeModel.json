@@ -5888,6 +5888,390 @@
 					]
 				}
 			}
+		},
+		{
+			"id": "colorname_attributeModel",
+			"name": "colorname",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Color Name"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "colorprofile_attributeModel",
+			"name": "colorprofile",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Color Profile"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imageformat_attributeModel",
+			"name": "imageformat",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Format"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imageheightunit_attributeModel",
+			"name": "imageheightunit",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Height"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imageresolution_attributeModel",
+			"name": "imageresolution",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Resolution"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imagesequencing_attributeModel",
+			"name": "imagesequencing",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Sequencing"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imagesize_attributeModel",
+			"name": "imagesize",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Size"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imagetype_attributeModel",
+			"name": "imagetype",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Type"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "imagewidthunit_attributeModel",
+			"name": "imagewidthunit",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Image Width"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "lastaccesseddate_attributeModel",
+			"name": "lastaccesseddate",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Last Accessed Date"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "lastmodifieddate_attributeModel",
+			"name": "lastmodifieddate",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Last Modified Date"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "maximagequality_attributeModel",
+			"name": "maximagequality",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Max Image Quality"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "mediatype_attributeModel",
+			"name": "mediatype",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Media Type"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "month_attributeModel",
+			"name": "month",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Month"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shottype_attributeModel",
+			"name": "shottype",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Shot Type/Primary Image indicator"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "year_attributeModel",
+			"name": "year",
+			"type": "attributeModel",
+			"domain": "generic",
+			"properties": {
+				"externalName": "Year"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
 		}
 	]
 }

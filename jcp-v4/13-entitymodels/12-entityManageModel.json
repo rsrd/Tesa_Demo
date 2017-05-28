@@ -534,6 +534,64 @@
 								}
 							}
 						}
+					],
+					"productpresentationtovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"productpresentationtodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
 					]
 				}
 			}
@@ -2517,7 +2575,400 @@
 								}
 							}
 						}
+					],
+					"lottovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"lottodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
 					]
+				}
+			}
+		},
+		{
+			"id": "image_entityManageModel",
+			"name": "image",
+			"type": "entityManageModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"colorname": {
+						"properties": {
+							"externalName": "Color Name",
+							"groupName": "Asset Information",
+							"dataType": "string"
+						}
+					},
+					"colorprofile": {
+						"properties": {
+							"externalName": "Color Profile",
+							"groupName": "Asset Information",
+							"dataType": "string"
+						}
+					},
+					"division": {
+						"properties": {
+							"externalName": "Division",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "division"
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"externalName": "Entity",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "entity"
+								}
+							]
+						}
+					},
+					"imageformat": {
+						"properties": {
+							"externalName": "Image Format",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "imageformatvalues"
+								}
+							]
+						}
+					},
+					"imageheightunit": {
+						"properties": {
+							"externalName": "Image Height",
+							"groupName": "Asset Information",
+							"dataType": "list of values"
+						}
+					},
+					"imageresolution": {
+						"properties": {
+							"externalName": "Image Resolution",
+							"groupName": "Asset Information",
+							"dataType": "string"
+						}
+					},
+					"imagesize": {
+						"properties": {
+							"externalName": "Image Size",
+							"groupName": "Asset Information",
+							"dataType": "string"
+						}
+					},
+					"imagetype": {
+						"properties": {
+							"externalName": "Image Type",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "imagetypevalues"
+								}
+							]
+						}
+					},
+					"imagewidthunit": {
+						"properties": {
+							"externalName": "Image Width",
+							"groupName": "Asset Information",
+							"dataType": "list of values"
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"externalName": "Last Accessed Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"externalName": "Last Modified Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"externalName": "Lifecycle Stage",
+							"groupName": "System",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lifecyclestage"
+								}
+							]
+						}
+					},
+					"maximagequality": {
+						"properties": {
+							"externalName": "Max Image Quality",
+							"groupName": "Asset Information",
+							"dataType": "string"
+						}
+					},
+					"mediatype": {
+						"properties": {
+							"externalName": "Media Type",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "dummyreferencedata"
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"externalName": "Month",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "monthvalues"
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"externalName": "Shot Type/Primary Image indicator",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "shottypevalues"
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"externalName": "Sub-Divisions",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subdivision"
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"externalName": "Year",
+							"groupName": "Asset Information",
+							"dataType": "decimal"
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"externalName": "Supplier Number/Name",
+							"groupName": "Supplier",
+							"dataType": "string"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "document_entityManageModel",
+			"name": "document",
+			"type": "entityManageModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"externalName": "Division",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "division"
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"externalName": "Entity",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "entity"
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"externalName": "Last Accessed Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"externalName": "Last Modified Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"externalName": "Lifecycle Stage",
+							"groupName": "System",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lifecyclestage"
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"externalName": "Month",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "monthvalues"
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"externalName": "Shot Type/Primary Image indicator",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "shottypevalues"
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"externalName": "Sub-Divisions",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subdivision"
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"externalName": "Year",
+							"groupName": "Asset Information",
+							"dataType": "decimal"
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"externalName": "Supplier Number/Name",
+							"groupName": "Supplier",
+							"dataType": "string"
+						}
+					}
 				}
 			}
 		},
@@ -2978,7 +3429,309 @@
 								}
 							}
 						}
+					],
+					"ensembletovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"ensembletodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
 					]
+				}
+			}
+		},
+		{
+			"id": "audio_entityManageModel",
+			"name": "audio",
+			"type": "entityManageModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"externalName": "Division",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "division"
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"externalName": "Entity",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "entity"
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"externalName": "Last Accessed Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"externalName": "Last Modified Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"externalName": "Lifecycle Stage",
+							"groupName": "System",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lifecyclestage"
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"externalName": "Month",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "monthvalues"
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"externalName": "Shot Type/Primary Image indicator",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "shottypevalues"
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"externalName": "Sub-Divisions",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subdivision"
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"externalName": "Year",
+							"groupName": "Asset Information",
+							"dataType": "decimal"
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"externalName": "Supplier Number/Name",
+							"groupName": "Supplier",
+							"dataType": "string"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "video_entityManageModel",
+			"name": "video",
+			"type": "entityManageModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"division": {
+						"properties": {
+							"externalName": "Division",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "division"
+								}
+							]
+						}
+					},
+					"entity": {
+						"properties": {
+							"externalName": "Entity",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "entity"
+								}
+							]
+						}
+					},
+					"lastaccesseddate": {
+						"properties": {
+							"externalName": "Last Accessed Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lastmodifieddate": {
+						"properties": {
+							"externalName": "Last Modified Date",
+							"groupName": "Asset Information",
+							"dataType": "datetime"
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"externalName": "Lifecycle Stage",
+							"groupName": "System",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "lifecyclestage"
+								}
+							]
+						}
+					},
+					"month": {
+						"properties": {
+							"externalName": "Month",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "monthvalues"
+								}
+							]
+						}
+					},
+					"shottype": {
+						"properties": {
+							"externalName": "Shot Type/Primary Image indicator",
+							"groupName": "Asset Information",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "shottypevalues"
+								}
+							]
+						}
+					},
+					"subdivision": {
+						"properties": {
+							"externalName": "Sub-Divisions",
+							"groupName": "Taxonomy & Hierarchy",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "subdivision"
+								}
+							]
+						}
+					},
+					"year": {
+						"properties": {
+							"externalName": "Year",
+							"groupName": "Asset Information",
+							"dataType": "decimal"
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"externalName": "Supplier Number/Name",
+							"groupName": "Supplier",
+							"dataType": "string"
+						}
+					}
 				}
 			}
 		},
@@ -4797,6 +5550,64 @@
 								"relatedEntityInfo": [
 									{
 										"relEntityType": "image"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"skutovideo": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "videos"
+									}
+								]
+							},
+							"attributes": {
+								"status": {
+									"properties": {
+										"externalName": "Status",
+										"groupName": "Basic",
+										"dataType": "string",
+										"isReferenceType": true,
+										"referenceEntityInfo": [
+											{
+												"refRelationshipName": "hasReferenceTo",
+												"refEntityType": "statusvalues"
+											}
+										]
+									}
+								}
+							}
+						}
+					],
+					"skutodocument": [
+						{
+							"properties": {
+								"externalName": "Images",
+								"relationshipType": "association",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "document"
 									}
 								]
 							},
