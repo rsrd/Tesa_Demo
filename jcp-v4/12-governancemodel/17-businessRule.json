@@ -255,7 +255,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"productdescription\",\"features1\",\"features2\",\"features3\",\"features4\"],true,SetAttributeValue[\"inspirationalcopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
+								"value": "IIF[ValidateEmptyAttributes[\"productdescription\"],true,SetAttributeValue[\"inspirationalcopy\",concat[GetAttributeValue[\"productdescription\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features1\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features2\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features3\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features4\"],\" \",\"\n\",\" \",\"*\", GetAttributeValue[\"features5\"]]]]"
 							}
 						]
 					},
@@ -397,7 +397,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname \"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productName\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"seodescription\"],true,SetAttributeValue[\"seodescription\",Concat[\"buy\",GetAttributevalue[\"productname\"],\"today at jcpenney.com. You deserve great deals and we’ve got them at jcp!\"]]] AND IIF[GetAttributevalue[\"subproducttype\"]=\"Small\" AND GetAttributevalue[\"subproducttype\"]=\"Large appliance\",SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname\"],\"-\", GetAttributevalue[\"modelnumber\"],\"-\",\"JCPenney\"]],SetAttributeValue[\"seotitle\",Concat[GetAttributevalue[\"fullproductname \"],\"-\",\"JCPenney\"]]]AND SetAttributeValue[\"seodisplayname\",GetAttributevalue[\"productname\"]]"
 							}
 						]
 					},
@@ -468,7 +468,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "varLength:=GetAttributeValue[\"length\"];varWidth:=GetAttributeValue[\"width\"];varHeight:=GetAttributeValue[\"height\"];varGrossWeight:=GetAttributeValue[\"grossweight\"];unitedInches:=0;dimW:=0;dimWRdup:=0;maxSide:=0;billingWeight:=0;baseCost:=0;IIF[IsNullOrEmpty[varLength],SetVariable[\"varLength\", 0],false] AND IIF[IsNullOrEmpty[varWidth],SetVariable[\"varWidth\", 0],false] AND IIF[IsNullOrEmpty[varHeight],SetVariable[\"varHeight\", 0],false] AND IIF[IsNullOrEmpty[varGrossWeight],SetVariable[\"varGrossWeight\", 0],false] AND IIF[IsNullOrEmpty[unitedInches],true,SetVariable[\"unitedInches\", ((varLength + varWidth + varHeight)*2 - NumericMax[varLength,varWidth,varHeight]) ]] AND IIF[IsNullOrEmpty[dimW],true,SetVariable[\"dimW\", ((varLength + varWidth + varHeight)/250)]] AND IIF[IsNullOrEmpty[dimWRdup],true,SetVariable[\"dimWRdup\", round[dimW + 0.99]]] AND IIF[IsNullOrEmpty[billingWeight],true,SetVariable[\"billingWeight\", NumericMax[dimWRdup,varGrossWeight]]] AND IIF[billingWeight>=1 AND billingWeight<=10,SetVariable[\"baseCost\",5.62],false] AND IIF[billingWeight>=11 AND billingWeight<=20,SetVariable[\"baseCost\",7.49],false] AND IIF[billingWeight>=21 AND billingWeight<=30,SetVariable[\"baseCost\",8.62],false] AND IIF[billingWeight>=31 AND billingWeight<=40,SetVariable[\"baseCost\",11.18],false] AND IIF[billingWeight>=41 AND billingWeight<=50,SetVariable[\"baseCost\",13.40],false] AND IIF[billingWeight>=51 AND billingWeight<=60,SetVariable[\"baseCost\",14.90],false] AND IIF[billingWeight>=61 AND billingWeight<=70,SetVariable[\"baseCost\",16.14],false] AND IIF[billingWeight>=71 AND billingWeight<=80,SetVariable[\"baseCost\",29.80],false] AND IIF[billingWeight>=81 AND billingWeight<=90,SetVariable[\"baseCost\",35.79],false] AND IIF[billingWeight>=91 AND billingWeight<=100,SetVariable[\"baseCost\",39.51],false] AND IIF[billingWeight>=101 AND billingWeight<=110,SetVariable[\"baseCost\",43.12],false] AND IIF[billingWeight>=111 AND billingWeight<=120,SetVariable[\"baseCost\",46.57],false] AND IIF[billingWeight>=121 AND billingWeight<=130,SetVariable[\"baseCost\",50.01],false] AND IIF[billingWeight>=131 AND billingWeight<=140,SetVariable[\"baseCost\",53.52],false] AND IIF[billingWeight>=141 AND billingWeight<=150,SetVariable[\"baseCost\",57.04],false] AND IIF[IsNullOrEmpty[maxSide],true,SetVariable[\"maxSide\", NumericMax[varLength,varWidth,varHeight]]] AND IIF[unitedInches<135 and varGrossWeight<150,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 0.5+1.39)],false] AND IIF[maxSide>60 and varGrossWeight>150,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 3.0+1.64)],false] AND IIF[unitedInches>135 and unitedInches<165,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 68.0+10.38]),false] AND IIF[unitedInches>165,SetAttributeValue[\"estimatedupsshippingcharge\",150],false ]"
+								"value": "varLength:=GetAttributeValue[\"length\"];varWidth:=GetAttributeValue[\"shippingwidth\"];varHeight:=GetAttributeValue[\"height\"];varGrossWeight:=GetAttributeValue[\"grossweight\"];unitedInches:=0;dimW:=0;dimWRdup:=0;maxSide:=0;billingWeight:=0;baseCost:=0;IIF[IsNullOrEmpty[varLength],SetVariable[\"varLength\", 0],false] AND IIF[IsNullOrEmpty[varWidth],SetVariable[\"varWidth\", 0],false] AND IIF[IsNullOrEmpty[varHeight],SetVariable[\"varHeight\", 0],false] AND IIF[IsNullOrEmpty[varGrossWeight],SetVariable[\"varGrossWeight\", 0],false] AND IIF[IsNullOrEmpty[unitedInches],true,SetVariable[\"unitedInches\", ((varLength + varWidth + varHeight)*2 - NumericMax[varLength,varWidth,varHeight]) ]] AND IIF[IsNullOrEmpty[dimW],true,SetVariable[\"dimW\", ((varLength + varWidth + varHeight)/250)]] AND IIF[IsNullOrEmpty[dimWRdup],true,SetVariable[\"dimWRdup\", round[dimW + 0.99]]] AND IIF[IsNullOrEmpty[billingWeight],true,SetVariable[\"billingWeight\", NumericMax[dimWRdup,varGrossWeight]]] AND IIF[billingWeight>=1 AND billingWeight<=10,SetVariable[\"baseCost\",5.62],false] AND IIF[billingWeight>=11 AND billingWeight<=20,SetVariable[\"baseCost\",7.49],false] AND IIF[billingWeight>=21 AND billingWeight<=30,SetVariable[\"baseCost\",8.62],false] AND IIF[billingWeight>=31 AND billingWeight<=40,SetVariable[\"baseCost\",11.18],false] AND IIF[billingWeight>=41 AND billingWeight<=50,SetVariable[\"baseCost\",13.40],false] AND IIF[billingWeight>=51 AND billingWeight<=60,SetVariable[\"baseCost\",14.90],false] AND IIF[billingWeight>=61 AND billingWeight<=70,SetVariable[\"baseCost\",16.14],false] AND IIF[billingWeight>=71 AND billingWeight<=80,SetVariable[\"baseCost\",29.80],false] AND IIF[billingWeight>=81 AND billingWeight<=90,SetVariable[\"baseCost\",35.79],false] AND IIF[billingWeight>=91 AND billingWeight<=100,SetVariable[\"baseCost\",39.51],false] AND IIF[billingWeight>=101 AND billingWeight<=110,SetVariable[\"baseCost\",43.12],false] AND IIF[billingWeight>=111 AND billingWeight<=120,SetVariable[\"baseCost\",46.57],false] AND IIF[billingWeight>=121 AND billingWeight<=130,SetVariable[\"baseCost\",50.01],false] AND IIF[billingWeight>=131 AND billingWeight<=140,SetVariable[\"baseCost\",53.52],false] AND IIF[billingWeight>=141 AND billingWeight<=150,SetVariable[\"baseCost\",57.04],false] AND IIF[IsNullOrEmpty[maxSide],true,SetVariable[\"maxSide\", NumericMax[varLength,varWidth,varHeight]]] AND IIF[unitedInches<135 and varGrossWeight<150,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 0.5+1.39)],false] AND IIF[maxSide>60 and varGrossWeight>150,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 3.0+1.64)],false] AND IIF[unitedInches>135 and unitedInches<165,SetAttributeValue[\"estimatedupsshippingcharge\",(baseCost+ 68.0+10.38]),false] AND IIF[unitedInches>165,SetAttributeValue[\"estimatedupsshippingcharge\",150],false ]"
 							}
 						]
 					},
@@ -1036,7 +1036,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\",\"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"printpattern\"],AddAttributeError[\"Req001\", \"\",\"printpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"primaryimage\"],AddAttributeError[\"Req001\",\"\",\"primaryimage\"],AddAttributeInformation[\"SYS001\", \"\", \"primaryimage\"]] AND IIF[ValidateEmptyAttributes[\"productdescription\"],AddAttributeError[\"Req001\", \"\",\"productdescription\"],AddAttributeInformation[\"SYS001\", \"\", \"productdescription\"]] AND IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\",\"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"colorfamily\"],AddAttributeError[\"Req001\", \"\",\"colorfamily\"],AddAttributeInformation[\"SYS001\", \"\", \"colorfamily\"]] AND IIF[ValidateEmptyAttributes[\"skuprintpattern\"],AddAttributeError[\"Req001\", \"\",\"skuprintpattern\"],AddAttributeInformation[\"SYS001\", \"\", \"printpattern\"]] AND IIF[ValidateEmptyAttributes[\"countryofmanufacture\"],AddAttributeError[\"Req001\", \"\",\"countryofmanufacture\"],AddAttributeInformation[\"SYS001\", \"\", \"countryofmanufacture\"]] AND IIF[ValidateEmptyAttributes[\"assembledlength\"],AddAttributeError[\"Req001\", \"\",\"assembledlength\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledlength\"]] AND IIF[ValidateEmptyAttributes[\"assembledwidth\"],AddAttributeError[\"Req001\", \"\",\"assembledwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledwidth\"]] AND IIF[ValidateEmptyAttributes[\"assembledheight\"],AddAttributeError[\"Req001\", \"\",\"assembledheight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledheight\"]]AND IIF[ValidateEmptyAttributes[\"assembledweight\"],AddAttributeError[\"Req001\", \"\",\"assembledweight\"],AddAttributeInformation[\"SYS001\", \"\", \"assembledweight\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]]"
 							}
 						]
 					},
@@ -1107,7 +1107,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\", \"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],AddAttributeInformation[\"SYS001\", \"\", \"vpn\"]] AND IIF[ValidateEmptyAttributes[\"colordesc\"],AddAttributeError[\"Req001\", \"\", \"colordesc\"],AddAttributeInformation[\"SYS001\", \"\", \"colordesc\"]] AND IIF[ValidateEmptyAttributes[\"size\"],AddAttributeError[\"Req001\", \"\", \"size\"],AddAttributeInformation[\"SYS001\", \"\", \"size\"]] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],AddAttributeInformation[\"SYS001\", \"\", \"cost\"]] AND IIF[ValidateEmptyAttributes[\"producttitle\"],AddAttributeError[\"Req001\", \"\", \"producttitle\"],AddAttributeInformation[\"SYS001\", \"\", \"producttitle\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"itemtype\"],AddAttributeError[\"Req001\", \"\", \"itemtype\"],AddAttributeInformation[\"SYS001\", \"\", \"itemtype\"]] AND IIF[ValidateEmptyAttributes[\"vpn\"],AddAttributeError[\"Req001\", \"\", \"vpn\"],AddAttributeInformation[\"SYS001\", \"\", \"vpn\"]] AND IIF[ValidateEmptyAttributes[\"colordesc\"],AddAttributeError[\"Req001\", \"\", \"colordesc\"],AddAttributeInformation[\"SYS001\", \"\", \"colordesc\"]] AND IIF[ValidateEmptyAttributes[\"skusize\"],AddAttributeError[\"Req001\", \"\", \"skusize\"],AddAttributeInformation[\"SYS001\", \"\", \"skusize\"]] AND IIF[ValidateEmptyAttributes[\"cost\"],AddAttributeError[\"Req001\", \"\", \"cost\"],AddAttributeInformation[\"SYS001\", \"\", \"cost\"]] AND IIF[ValidateEmptyAttributes[\"producttitle\"],AddAttributeError[\"Req001\", \"\", \"producttitle\"],AddAttributeInformation[\"SYS001\", \"\", \"producttitle\"]]"
 							}
 						]
 					},
@@ -1178,7 +1178,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"],AddAttributeError[\"Req001\", \"\",\"suppliernumbername\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliernumbername\"]] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],AddAttributeInformation[\"SYS001\", \"\", \"length\"]] AND IIF[ValidateEmptyAttributes[\"width\"],AddAttributeError[\"Req001\", \"\",\"width\"],AddAttributeInformation[\"SYS001\", \"\", \"width\"]] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],AddAttributeInformation[\"SYS001\", \"\", \"height\"]] AND IIF[ValidateEmptyAttributes[\"grossweight\"],AddAttributeError[\"Req001\", \"\",\"grossweight\"],AddAttributeInformation[\"SYS001\", \"\", \"grossweight\"]] AND IIF[ValidateEmptyAttributes[\"prop65indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65indicator\"],AddAttributeInformation[\"SYS001\", \"\", \"prop65indicator\"]] AND IIF[ValidateEmptyAttributes[\"hazmatflag\"],AddAttributeError[\"Req001\", \"\",\"hazmatflag\"],AddAttributeInformation[\"SYS001\", \"\", \"hazmatflag\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],AddAttributeInformation[\"SYS001\", \"\", \"msrp\"]]"
+								"value": "IIF[ValidateEmptyAttributes[\"suppliernumbername\"],AddAttributeError[\"Req001\", \"\",\"suppliernumbername\"],AddAttributeInformation[\"SYS001\", \"\", \"suppliernumbername\"]] AND IIF[ValidateEmptyAttributes[\"length\"],AddAttributeError[\"Req001\", \"\",\"length\"],AddAttributeInformation[\"SYS001\", \"\", \"length\"]] AND IIF[ValidateEmptyAttributes[\"shippingwidth\"],AddAttributeError[\"Req001\", \"\",\"shippingwidth\"],AddAttributeInformation[\"SYS001\", \"\", \"shippingwidth\"]] AND IIF[ValidateEmptyAttributes[\"height\"],AddAttributeError[\"Req001\", \"\",\"height\"],AddAttributeInformation[\"SYS001\", \"\", \"height\"]] AND IIF[ValidateEmptyAttributes[\"grossweight\"],AddAttributeError[\"Req001\", \"\",\"grossweight\"],AddAttributeInformation[\"SYS001\", \"\", \"grossweight\"]] AND IIF[ValidateEmptyAttributes[\"prop65indicator\"],AddAttributeError[\"Req001\", \"\",\"prop65indicator\"],AddAttributeInformation[\"SYS001\", \"\", \"prop65indicator\"]] AND IIF[ValidateEmptyAttributes[\"hazmatflag\"],AddAttributeError[\"Req001\", \"\",\"hazmatflag\"],AddAttributeInformation[\"SYS001\", \"\", \"hazmatflag\"]] AND IIF[ValidateEmptyAttributes[\"shippointcity\"],AddAttributeError[\"Req001\", \"\",\"shippointcity\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointcity\"]] AND IIF[ValidateEmptyAttributes[\"shippointstate\"],AddAttributeError[\"Req001\", \"\",\"shippointstate\"],AddAttributeInformation[\"SYS001\", \"\", \"shippointstate\"]] AND IIF[ValidateEmptyAttributes[\"msrp\"],AddAttributeError[\"Req001\", \"\",\"msrp\"],AddAttributeInformation[\"SYS001\", \"\", \"msrp\"]]"
 							}
 						]
 					},
@@ -2172,7 +2172,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[HasErrorsInContext[\"attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[\"Req001\", \"\", \"unknown\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"]]"
+								"value": "IIF[HasErrorsInContext[\"attributes\",\"taxonomy:productsetuptaxonomy,classification:_ALL\"],AddAttributeError[],true]"
 							}
 						]
 					},
@@ -2279,77 +2279,77 @@
 			}
 		},
 		{
-      "id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
-      "type": "businessRule",
-      "data": {
-        "attributes": {
-          "name": {
-            "values": [
-              {
-                "value": "Populate secondarydesc attribute value With description Attribute value"
-              }
-            ]
-          },
-          "description": {
-            "values": [
-              {
-                "value": "Populate secondarydesc attribute value With description Attribute value."
-              }
-            ]
-          },
-          "ruleType": {
-            "values": [
-              {
-                "value": "computation"
-              }
-            ]
-          },
-          "executionMode": {
-            "values": [
-              {
-                "value": "any"
-              }
-            ]
-          },
-          "definition": {
-            "values": [
-              {
-                "value": "IIF[ValidateEmptyAttributes[\"description\"],true,SetAttributeValue[\"secondarydesc\",GetAttributeValue[\"description\"]]]"
-              }
-            ]
-          },
-          "enabled": {
-            "values": [
-              {
-                "value": "true"
-              }
-            ]
-          },
-          "isDraft": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          },
-          "isDeleted": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          },
-          "isSystemRule": {
-            "values": [
-              {
-                "value": "false"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
+			"id": "populateSecondaryDescAttributeWithDescriptionAttribute_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Populate secondarydesc attribute value With description Attribute value"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Populate secondarydesc attribute value With description Attribute value."
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[ValidateEmptyAttributes[\"description\"],true,SetAttributeValue[\"secondarydesc\",GetAttributeValue[\"description\"]]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
 			"id": "validateSkuIsNotAssignedToLot_businessRule",
 			"type": "businessRule",
 			"data": {
@@ -2385,7 +2385,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[HasRelationships[\"ischildof\"] AND RelationshipsCountInContext[\"ischildof\"]=1,AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
+								"value": "IIF[HasRelationships[\"ischildof\"],AddAttributeInformation[\"SYS001\", \"\", \"unknown\"],AddAttributeError[\"Req001\", \"\", \"unknown\"]]"
 							}
 						]
 					},
@@ -2420,22 +2420,22 @@
 				}
 			}
 		},
-		 {
-			"id": "lotSequenceGroupId_businessRule",
+		{
+			"id": "defaultvaluesforSKU_businessRule",
 			"type": "businessRule",
 			"data": {
 				"attributes": {
 					"name": {
 						"values": [
 							{
-								"value": "Generate Lot Sequence Group ID"
+								"value": "Default values for SKU"
 							}
 						]
 					},
 					"description": {
 						"values": [
 							{
-								"value": "Generate Lot Sequence Group ID"
+								"value": "Default values for SKU"
 							}
 						]
 					},
@@ -2456,7 +2456,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "getclientid:=GetClientAttributesFromRequest[\"taskId.values[0].value\"]; getlotgroup:=GetAttributeValue[\"lotgroup\"];IIF[IsNullOrEmpty[getclientid],true,SetAttributeValue[\"lotgroup\",concat[getclientid,\"_\",getlotgroup]]]"
+								"value": "varSource:=GetAttributevalue[\"source\"];IIF[ValidateEmptyAttributes[\"diff1type\"] AND varSource = \"PIM\",SetAttributeValue[\"diff1type\",\"COLOR\"],false];IIF[ValidateEmptyAttributes[\"diff1group\"] AND varSource = \"PIM\",SetAttributeValue[\"diff1group\",\"COLORS\"],false];IIF[ValidateEmptyAttributes[\"diff2type\"] AND varSource = \"PIM\",SetAttributeValue[\"diff2type\",\"SIZE\"],false];IIF[ValidateEmptyAttributes[\"diff2group\"] AND varSource = \"PIM\",SetAttributeValue[\"diff2group\",\"NOSIZE\"],false];IIF[ValidateEmptyAttributes[\"skusize\"] AND varSource = \"PIM\",SetAttributeValue[\"skusize\",\"1SZ*\"],false];"
 							}
 						]
 					},
@@ -2490,6 +2490,77 @@
 					}
 				}
 			}
-		}
+		},
+		{
+            "id": "publishReTrigger_businessRule",
+            "type": "businessRule",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Retrigger Publish for Emergencies"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Retrigger Publish for Emergencies"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "computation"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "definition": {
+                        "values": [
+                            {
+                                "value": "publishDateChanged:=HasAttributesChanged[\"lastpublishdate\"];workflowStepNPS:=IsEntityInWorkflow[\"newProductSetup\",\"newSkusToSubmit\",\"reviewAssortment\",\"assignInternalInformation\",\"provideAdditionalInfo\",\"rejectedSkus\"];workflowStepUpdate:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];IIF[publishDateChanged AND workflowStepNPS = false AND workflowStepUpdate = false,InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"],false];"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
 	]
 }

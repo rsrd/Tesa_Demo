@@ -51,7 +51,7 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "value": "1"
+                      "value": "100"
                     }
                   ]
                 },
@@ -580,12 +580,12 @@
                 }
               }
             },
-	    {
+            {
               "direction": "both",
               "relationshipType": "association",
-              "id": "hasBusinessRules_lotSequenceGroupId_businessRule",
+              "id": "hasBusinessRules_defaultvaluesforSKU_businessRule",
               "relTo": {
-                "id": "lotSequenceGroupId_businessRule",
+                "id": "defaultvaluesforSKU_businessRule",
                 "type": "businessRule"
               },
               "attributes": {
@@ -620,7 +620,67 @@
                 "executionOrder": {
                   "values": [
                     {
-                      "value": "1"
+                      "value": "20"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "create"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_publishReTrigger_businessRule",
+              "relTo": {
+                "id": "publishReTrigger_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "10"
+                    }
+                  ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "update"
                     }
                   ]
                 }
@@ -3170,6 +3230,13 @@
                       "value": "1"
                     }
                   ]
+                },
+                "triggerActions": {
+                  "values": [
+                    {
+                      "value": "create"
+                    }
+                  ]
                 }
               }
             },
@@ -3219,7 +3286,6 @@
                 }
               }
             }
-           
           ]
         }
       }

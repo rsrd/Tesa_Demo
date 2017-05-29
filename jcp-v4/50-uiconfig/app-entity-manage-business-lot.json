@@ -273,7 +273,7 @@
                     },
                     "jsonData": {
                         "config": {
-                           "headerConfig": [
+                            "headerConfig": [
 									{
 										"attributeName": "brand",
 										"label": "Brand",
@@ -334,33 +334,33 @@
 										"label": "Item Type",
 										"noTrim": false
 									}
-								],
-								"toolbarConfig": {
-									"buttonItems": [
-										{
-											"buttons": [
-												{
-													"name": "addContext",
-													"icon":"pebble-lg-icons:Master",
-													"text": "",
-													"tooltip": "Add Context",
-													"visible": true,
-													"buttons": [
-														{
-															"name": "merchandisingtaxonomy",
-															"text": "Merchandising Taxonomy",
-															"visible": true,
-															"tooltip": "Merchandising Taxonomy"
-														},
-														{
-															"name": "productsetuptaxonomy",
-															"text": "Product Setup Taxonomy",
-															"visible": true,
-															"tooltip": "Product Setup Taxonomy"
-														}
-													]
-												},
-												{
+                            ],
+                            "toolbarConfig": {
+                                "buttonItems": [
+                                    {
+                                        "buttons": [
+                                            {
+                                                "name": "addContext",
+                                                "icon": "pebble-lg-icons:Master",
+                                                "text": "",
+                                                "tooltip": "Add Context",
+                                                "visible": true,
+                                                "buttons": [
+                                                    {
+                                                        "name": "merchandisingtaxonomy",
+                                                        "text": "Merchandising Taxonomy",
+                                                        "visible": true,
+                                                        "tooltip": "Merchandising Taxonomy"
+                                                    },
+                                                    {
+                                                        "name": "productsetuptaxonomy",
+                                                        "text": "Product Setup Taxonomy",
+                                                        "visible": true,
+                                                        "tooltip": "Product Setup Taxonomy"
+                                                    }
+                                                ]
+                                            },
+                                            {
 													"name": "refresh",
 													"icon": "pebble-md-icons:ToolbarRefresh",
 													"text": "",
@@ -381,10 +381,10 @@
 													"visible": true,
 													"tooltip": "Upload"
 												}
-											]
-										}
-									]
-								},
+                                        ]
+                                    }
+                                ]
+                            },
                             "summaryToFix": {
                                 "completionPercentage": "",
                                 "tofixes": [

@@ -6,125 +6,125 @@
 	},
 	"configObjects": [
 		{
-			"id": "downloadDataExcel",
-			"name": "downloadDataExcel",
-			"type": "COPProfile",
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"app": "RSConnect",
-							"service": "excelExportPublishService",
-							"list": "self"
-						},
-						"jsonData": {
-							"id": "downloadDataExcel",
-							"name": "downloadDataExcel",
-							"tenantId": "",
-							"profileType": "ENTITY_EXPORT",
-							"enabled": "true",
-							"inboundChannel": {
-								"isDataPersistent": "false",
-								"rdpConnector": {
-									"type": "RSJSON",
-									"version": "1.1"
-								}
-							},
-							"outboundChannel": {
-								"isDataPersistent": "true",
-								"s3ObjectConnector": {
-									"regionName": "",
-									"bucketName": "",
-									"key": "xlsx",
-									"credentialsType": ""
-								}
-							},
-							"transform": {
-								"inboundFormat": {
-									"type": "RSJSON",
-									"version": "1.1",
-									"batchSize": 1,
-									"settings": {
-										"encoding": "utf8",
-										"includeParent": "false",
-										"includeChildren": "false",
-										"includeSiblings": "false",
-										"supportsCollection": "true"
-									},
-									"includeFilter": [],
-									"excludeFilter": []
-								},
-								"outboundFormat": {
-									"type": "SMARTEXCEL",
-									"version": "1.1",
-									"settings": {
-										"encoding": "utf8",
-										"sheetName": "Sheet1"
-									},
-									"includeFilter": [],
-									"excludeFilter": []
-								},
-								"mapping": {
-									"settings": {
-										"entityType": "sku_entityManageModel",
-										"enableDynamicMapping": "false",
-										"source": "rms",
-										"allowNullValues": "true",
-										"clearMissingAttributes": "false",
-										"strategies": [
-											{
-												"caseFormat": "LOWER",
-												"removeSpecialCharacters": "false",
-												"trimLeadingNumbers": "false",
-												"trimTrailingNumbers": "false",
-												"isDefault": "false"
-											}
-										]
-									},
-									"fieldOverrides": [
-										{
-											"destination": "Type",
-											"source": "type",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "GUID",
-											"source": "id",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "Taxonomy",
-											"source": "data.contexts[0].context.taxonomy",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										},
-										{
-											"destination": "Classification",
-											"source": "data.contexts[0].context.classification",
-											"required": true,
-											"enabled": true,
-											"entityType": "sku_entityManageModel"
-										}
-									],
-									"contexts": [
-										{
-											"context": {
-												"classification": "_ALL",
-												"taxonomy": "productsetuptaxonomy"
-											}
-										}
-									]
-								}
-							}
-						}
-					}
-				]
-			}
-		}
+        "id": "downloadDataExcel",
+        "name": "downloadDataExcel",
+        "type": "COPProfile",
+        "data": {
+          "contexts": [
+            {
+              "context": {
+                "app": "RSConnect",
+                "service": "excelExportPublishService",
+                "list": "self"
+              },
+              "jsonData": {
+                "id": "downloadDataExcel",
+                "name": "downloadDataExcel",
+                "tenantId": "",
+                "profileType": "ENTITY_EXPORT",
+                "enabled": "true",
+                "inboundChannel": {
+                  "isDataPersistent": "false",
+                  "rdpConnector": {
+                    "type": "RSJSON",
+                    "version": "1.1"
+                  }
+                },
+                "outboundChannel": {
+                  "isDataPersistent": "true",
+                  "s3ObjectConnector": {
+                    "regionName": "",
+                    "bucketName": "",
+                    "key": "xlsx",
+                    "credentialsType": ""
+                  }
+                },
+                "transform": {
+                  "inboundFormat": {
+                    "type": "RSJSON",
+                    "version": "1.1",
+                    "batchSize": 1,
+                    "settings": {
+                      "encoding": "utf8",
+                      "includeParent": "false",
+                      "includeChildren": "false",
+                      "includeSiblings": "false",
+                      "supportsCollection": "true"
+                    },
+                    "includeFilter": [],
+                    "excludeFilter": []
+                  },
+                  "outboundFormat": {
+                    "type": "SMARTEXCEL",
+                    "version": "1.1",
+                    "settings": {
+                      "encoding": "utf8",
+                      "sheetName": "Sheet1"
+                    },
+                    "includeFilter": [],
+                    "excludeFilter": []
+                  },
+                  "mapping": {
+                    "settings": {
+                      "entityType": "sku_entityManageModel",
+                      "enableDynamicMapping": "false",
+                      "source": "rms",
+                      "allowNullValues": "true",
+                      "clearMissingAttributes": "false",
+                      "strategies": [
+                        {
+                          "caseFormat": "LOWER",
+                          "removeSpecialCharacters": "false",
+                          "trimLeadingNumbers": "false",
+                          "trimTrailingNumbers": "false",
+                          "isDefault": "false"
+                        }
+                      ]
+                    },
+                    "fieldOverrides": [
+                      {
+                        "destination": "Type",
+                        "source": "type",
+                        "required": true,
+                        "enabled": true,
+                        "entityType": "sku_entityManageModel"
+                      },
+                      {
+                        "destination": "GUID",
+                        "source": "id",
+                        "required": true,
+                        "enabled": true,
+                        "entityType": "sku_entityManageModel"
+                      },
+                      {
+                        "destination": "Taxonomy",
+                        "source": "data.contexts[0].context.taxonomy",
+                        "required": true,
+                        "enabled": true,
+                        "entityType": "sku_entityManageModel"
+                      },
+                      {
+                        "destination": "Classification",
+                        "source": "data.contexts[0].context.classification",
+                        "required": true,
+                        "enabled": true,
+                        "entityType": "sku_entityManageModel"
+                      }
+                    ],
+                    "contexts": [
+                      {
+                        "context": {
+                          "classification": "_ALL",
+                          "taxonomy": "productsetuptaxonomy"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
 	]
 }

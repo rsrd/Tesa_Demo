@@ -310,12 +310,6 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "creationdate",
-										"label": "Creation Date",
-										"noTrim": false,
-										"displayType": "datetime"
-									},
-									{
 										"attributeName": "producttype",
 										"label": "Product Type",
 										"noTrim": false
@@ -336,25 +330,25 @@
 										{
 											"buttons": [
 												{
-													"name": "addContext",
-													"icon":"pebble-lg-icons:Master",
+                                                  "name": "addContext",
+                                                  "icon":"pebble-lg-icons:Master",
 													"text": "",
-													"tooltip": "Add Context",
+                                                  "tooltip": "Add Context",
 													"visible": true,
-													"buttons": [
-														{
-															"name": "merchandisingtaxonomy",
-															"text": "Merchandising Taxonomy",
-															"visible": true,
-															"tooltip": "Merchandising Taxonomy"
-														},
-														{
-															"name": "productsetuptaxonomy",
-															"text": "Product Setup Taxonomy",
-															"visible": true,
-															"tooltip": "Product Setup Taxonomy"
-														}
-													]
+                                                  "buttons": [
+                                                    {
+                                                      "name": "merchandisingtaxonomy",
+                                                      "text": "Merchandising Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Merchandising Taxonomy"
+                                                    },
+                                                    {
+                                                      "name": "productsetuptaxonomy",
+                                                      "text": "Product Setup Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Product Setup Taxonomy"
+                                                    }
+                                                  ]
 												},
 												{
 													"name": "refresh",
