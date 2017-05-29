@@ -311,6 +311,40 @@
 										}
 									},
 									{
+										"name": "createImage",
+										"icon": "pebble-xl-icons:Kit",
+										"text": "Image",
+										"visible": true,
+										"dataRoute": "entity-create",
+										"contextData": {
+											"itemContext": {
+												"type": "image"
+											},
+											"valueContext": {
+												"source": "internal",
+												"locale": "en-US"
+											},
+											"context": {}
+										}
+									},
+									{
+										"name": "createDocument",
+										"icon": "pebble-xl-icons:Kit",
+										"text": "Document",
+										"visible": true,
+										"dataRoute": "entity-create",
+										"contextData": {
+											"itemContext": {
+												"type": "document"
+											},
+											"valueContext": {
+												"source": "internal",
+												"locale": "en-US"
+											},
+											"context": {}
+										}
+									},
+									{
 										"name": "createEnsemble",
 										"icon": "pebble-xl-icons:Kit",
 										"text": "Ensemble",
