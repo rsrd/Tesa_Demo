@@ -1,1 +1,201 @@
-{"metaInfo":{"dataIndex":"entityModel","collectionName":"entityModels","responseObjectName":"response"},"entityModels":[{"id":"hasdocuments_relationshipModel","name":"hasdocuments","type":"relationshipModel","domain":"thing","properties":{"externalName":"Images"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"kitskutosku_relationshipModel","name":"kitskutosku","type":"relationshipModel","domain":"thing","properties":{"externalName":"Kit SKUs"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"hasimages_relationshipModel","name":"hasimages","type":"relationshipModel","domain":"thing","properties":{"externalName":"Images"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"kitlottolot_relationshipModel","name":"kitlottolot","type":"relationshipModel","domain":"thing","properties":{"externalName":"Kit Lots"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"ensembletoproductpresentation_relationshipModel","name":"ensembletoproductpresentation","type":"relationshipModel","domain":"thing","properties":{"externalName":"Product Presentations"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"ischildof_relationshipModel","name":"ischildof","type":"relationshipModel","domain":"thing","properties":{"externalName":"Parent Lot"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"productpresentationtolot_relationshipModel","name":"productpresentationtolot","type":"relationshipModel","domain":"thing","properties":{"externalName":"Lots"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}},{"id":"hasvideos_relationshipModel","name":"hasvideos","type":"relationshipModel","domain":"thing","properties":{"externalName":"Images"},"data":{"relationships":{"listedUnder":[{"id":"","direction":"both","relationshipType":"aggregation","relTo":{"id":"thingdomainrelationshipmodels","type":"list"}}]}}}]}
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "hasdocuments_relationshipModel",
+            "name": "hasdocuments",
+            "type": "relationshipModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Images"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "kitskutosku_relationshipModel",
+            "name": "kitskutosku",
+            "type": "relationshipModel",
+            "domain": "thing",
+            "properties": {
+                "externalName": "Kit SKUs"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "hasimages_relationshipModel",
+            "name": "hasimages",
+            "type": "relationshipModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Images"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "kitlottolot_relationshipModel",
+            "name": "kitlottolot",
+            "type": "relationshipModel",
+            "domain": "thing",
+            "properties": {
+                "externalName": "Kit Lots"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ensembletoproductpresentation_relationshipModel",
+            "name": "ensembletoproductpresentation",
+            "type": "relationshipModel",
+            "domain": "thing",
+            "properties": {
+                "externalName": "Product Presentations"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "ischildof_relationshipModel",
+            "name": "ischildof",
+            "type": "relationshipModel",
+            "domain": "thing",
+            "properties": {
+                "externalName": "Parent Lot"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "productpresentationtolot_relationshipModel",
+            "name": "productpresentationtolot",
+            "type": "relationshipModel",
+            "domain": "thing",
+            "properties": {
+                "externalName": "Lots"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "hasvideos_relationshipModel",
+            "name": "hasvideos",
+            "type": "relationshipModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Images"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "thingdomainrelationshipmodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
