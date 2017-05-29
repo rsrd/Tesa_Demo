@@ -833,6 +833,24 @@
 											"collectionType": "collection",
 											"required": true,
 											"enabled": true
+										},
+										{
+											"source": "WEIGHT (LB.)",
+											"destination": "@attr(weight)",
+											"id": -2114741250,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "VOLTAGE (VOLTS)",
+											"destination": "@attr(voltage)",
+											"id": -1424620686,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
 										}
 									]
 								}
