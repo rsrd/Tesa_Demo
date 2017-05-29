@@ -3812,6 +3812,13 @@
 							"dataType": "datetime"
 						}
 					},
+					"lastpublishdate": {
+						"properties": {
+							"externalName": "Last Publish Date",
+							"groupName": "System",
+							"dataType": "datetime"
+						}
+					},
 					"startdate": {
 						"properties": {
 							"externalName": "On-Site Date",
@@ -5263,14 +5270,14 @@
 					},
 					"shippointstate": {
 						"properties": {
-							"externalName": "Ship point city",
+							"externalName": "Ship Point State",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
 					},
 					"shippointcity": {
 						"properties": {
-							"externalName": "Ship point state",
+							"externalName": "Ship Point City",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
