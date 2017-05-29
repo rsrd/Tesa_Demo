@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-manage_components-list_productpresentation_admin_uiConfig",
-			"name": "app-entity-manage_components-list_productpresentation_admin",
+			"id": "app-entity-manage_components-list_image_admin_uiConfig",
+			"name": "app-entity-manage_components-list_image_admin",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-selector_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-dimension-selector_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -67,7 +67,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -186,7 +186,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-grid_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-dimension-grid_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-dimension-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -202,7 +202,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-grid",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -262,7 +262,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-header_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-header_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-header",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -278,15 +278,16 @@
 							"service": "_ALL",
 							"component": "rock-entity-header",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
 								"headerConfig": [
+									
 									{
-										"attributeName": "identifier",
-										"label": "PP ID",
+										"attributeName": "about",
+										"label": "About",
 										"noTrim": false
 									},
 									{
@@ -295,30 +296,19 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "brand",
-										"label": "Brand",
+										"attributeName": "creator",
+										"label": "Creator",
 										"noTrim": false
 									},
 									{
-										"attributeName": "producttype",
-										"label": "Product Type",
+										"attributeName": "filesize",
+										"label": "File Size",
 										"noTrim": false
 									},
 									{
-										"attributeName": "subproducttype",
-										"label": "Sub Product Type",
+										"attributeName": "filetype",
+										"label": "File Type",
 										"noTrim": false
-									},
-									{
-										"attributeName": "itemtype",
-										"label": "Item Type",
-										"noTrim": false
-									},
-									{
-										"attributeName": "creationdate",
-										"label": "Creation Date",
-										"noTrim": false,
-										"dataType": "datetime"
 									}
 								],
 								"toolbarConfig": {
@@ -354,18 +344,18 @@
 													"tooltip": "Refresh"
 												},
 												{
-													"name": "upload",
-													"icon": "pebble-md-icons:Upload",
-													"text": "",
-													"visible": true,
-													"tooltip": "Upload"
-												},
-												{
 													"name": "download",
 													"icon": "pebble-md-icons:Import",
 													"text": "",
 													"visible": true,
 													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
 												}
 											]
 										}
@@ -402,7 +392,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-summary_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-summary_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-summary",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -418,7 +408,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-summary",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -495,7 +485,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-tabs_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-tabs_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-tabs",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -511,7 +501,7 @@
 							"service": "_ALL",
 							"component": "rock-tabs",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -550,40 +540,28 @@
 												"do-sync-validation": true,
 												"config-context": {
 													"attributeNames": [
-														"alsoinstore",
-														"brand",
-														"brandlogo",
-														"channel",
-														"channelavailability",
+														"id",
+														"about",
 														"description",
-														"displayaskandanswersection",
-														"displayname",
-														"factsheet",
-														"featurecolor",
-														"hidedisplayindicator",
-														"identifier",
-														"iscustomerfavoriteoption",
-														"ishidden",
-														"ispreorderoption",
-														"longdescription",
-														"lotselectiontype",
-														"lottype",
-														"onlineonly",														
-														"programtype",
-														"ratingreviewid",
-														"retailproductpresentationnumber",
-														"shortname",
-														"productpresentationgrouping",
-														"productpresentationitemtype",
-														"productpresentationnumber",
-														"productpresentationquantity",
-														"productpresentationtype",
-														"source",
-														"status",
-														"stone",
-														"styletext",
-														"upcbarcode",
-														"warranty"
+														"headline",
+														"colorspace",
+														"creator",
+														"artist",
+														"datecreated",
+														"resolutionunit",
+														"xresolution",
+														"yresolution",
+														"digitalzoomratio",
+														"encodingprocess",
+														"filetype",
+														"filetypeextension",
+														"filesource",
+														"filesize",
+														"imagesize",
+														"imageheight",
+														"imagewidth",
+														"imagedescription",
+														"suppliernumbername"
 													]
 												}
 											}
@@ -610,6 +588,16 @@
 												}
 											}
 										}
+									},
+									{
+										"name": "assets",
+										"title": "Assets",
+										"enableDropdownMenu": false,
+										"component": {
+											"name": "app-entity-discovery",
+											"path": "/src/elements/app-entity-discovery/app-entity-discovery.html",
+											"properties": {}
+										}
 									}
 								]
 							}
@@ -619,7 +607,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-attribute-manage_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-attribute-manage_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-attribute-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -635,7 +623,7 @@
 							"service": "_ALL",
 							"component": "rock-attribute-manage",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -664,7 +652,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-variant_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-variant_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-variant",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -680,7 +668,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-variant",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -693,8 +681,8 @@
 									"dataRequest": {
 										"attributes": [
 											"description",
-											"productpresentationid",
-											"startdate",
+											"imageId",
+											"startDate",
 											"status"
 										]
 									},
@@ -727,7 +715,7 @@
 											},
 											{
 												"header": "Start Date",
-												"name": "startdate",
+												"name": "startDate",
 												"sortable": false,
 												"filterable": false
 											},
@@ -738,7 +726,7 @@
 												"filterable": false
 											},
 											{
-												"header": "productpresentation Id",
+												"header": "image Id",
 												"name": "id",
 												"sortable": false,
 												"filterable": false
@@ -815,7 +803,7 @@
 									"name": "ehd1",
 									"levels": [
 										{
-											"entityType": "productpresentation",
+											"entityType": "image",
 											"index": 1,
 											"optional": false,
 											"dimensionAttributes": [
@@ -851,7 +839,7 @@
 									"steps": [
 										{
 											"name": "step-1-selection-option",
-											"label": "Select Options to create productpresentations",
+											"label": "Select Options to create images",
 											"component": {
 												"name": "rock-variants-option-select",
 												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
@@ -910,7 +898,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-relationship-manage_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-relationship-manage_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-relationship-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -926,17 +914,17 @@
 							"service": "_ALL",
 							"component": "rock-relationship-manage",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"productpresentationtolot": {
+									"productPresentationToLot": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Lots",
+											"title": "Product Presentation To Lot",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -952,7 +940,7 @@
 												},
 												"columns": [
 													{
-														"header": "Lot",
+														"header": "Related Entity",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -962,8 +950,251 @@
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
 													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
 														"header": "Status",
 														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Display Name",
+														"name": "displayName",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													},
+													{
+														"header": "Description",
+														"name": "description",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "id"
+										}
+									},
+									"ischildof": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Parent Lot",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Parent Lot",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Display Name",
+														"name": "displayName",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "id"
+										}
+									},
+									"imageToImage": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Images",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Image",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1009,14 +1240,14 @@
 																"name": "download",
 																"icon": "pebble-md-icons:Import",
 																"text": "",
-																"visible": false,
+																"visible": true,
 																"tooltip": "Download"
 															},
 															{
 																"name": "upload",
 																"icon": "pebble-md-icons:Upload",
 																"text": "",
-																"visible": false,
+																"visible": true,
 																"tooltip": "Upload"
 															}
 														]
@@ -1029,11 +1260,11 @@
 											"titlePattern": "id"
 										}
 									},
-									"productpresentationtoimage": {
+									"productPresentationToImage": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Images",
+											"title": "Product Presentation To Image",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1049,7 +1280,7 @@
 												},
 												"columns": [
 													{
-														"header": "Image",
+														"header": "Related Entity",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1067,8 +1298,8 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
-														"header": "Display Name",
-														"name": "displayname",
+														"header": "Descriptioin",
+														"name": "discription",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1151,7 +1382,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-todo_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-todo_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-todo",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1167,7 +1398,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-todo",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1211,7 +1442,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-tofix_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-tofix_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-tofix",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1227,7 +1458,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-tofix",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1242,7 +1473,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-titlebar_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-titlebar_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-titlebar",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1258,13 +1489,13 @@
 							"service": "_ALL",
 							"component": "rock-titlebar",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
 								"image": "",
-								"titleAttribute": "displayname",
+								"titleAttribute": "producttitle",
 								"subtitleAttribute": ""
 							}
 						}
@@ -1273,7 +1504,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_image_admin_uiConfig",
 			"name": "app-entity-manage_extension-manage-productsetuptaxonomy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1289,7 +1520,7 @@
 							"service": "_ALL",
 							"component": "extension-manage-productsetuptaxonomy",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1318,7 +1549,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_image_admin_uiConfig",
 			"name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1334,7 +1565,7 @@
 							"service": "_ALL",
 							"component": "extension-manage-merchandisingtaxonomy",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1363,7 +1594,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_fix-attribute-errors_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_fix-attribute-errors_image_admin_uiConfig",
 			"name": "app-entity-manage_fix-attribute-errors",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1379,7 +1610,7 @@
 							"service": "_ALL",
 							"component": "fix-attribute-errors",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1406,7 +1637,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-upload_productpresentation_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-upload_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-upload",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1422,7 +1653,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-upload",
 							"subComponent": "_ALL",
-							"entityType": "productpresentation",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
