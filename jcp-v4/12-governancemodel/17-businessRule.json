@@ -2456,7 +2456,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "varSource:=GetAttributevalue[\"source\"];IIF[ValidateEmptyAttributes[\"diff1type\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff1type\",\"COLOR\"]];IIF[ValidateEmptyAttributes[\"diff1group\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff1group\",\"COLORS\"]];IIF[ValidateEmptyAttributes[\"diff2type\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff2type\",\"SIZE\"]];IIF[ValidateEmptyAttributes[\"diff2group\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"diff2group\",\"NOSIZE\"]];IIF[ValidateEmptyAttributes[\"skusize\"] AND len[varSource] > 0 AND varSource = \"PIM\",true,SetAttributeValue[\"skusize\",\"1SZ*\"]];"
+								"value": "varSource:=GetAttributevalue[\"source\"];IIF[ValidateEmptyAttributes[\"diff1type\"] AND varSource = \"PIM\",SetAttributeValue[\"diff1type\",\"COLOR\"],false];IIF[ValidateEmptyAttributes[\"diff1group\"] AND varSource = \"PIM\",SetAttributeValue[\"diff1group\",\"COLORS\"],false];IIF[ValidateEmptyAttributes[\"diff2type\"] AND varSource = \"PIM\",SetAttributeValue[\"diff2type\",\"SIZE\"],false];IIF[ValidateEmptyAttributes[\"diff2group\"] AND varSource = \"PIM\",SetAttributeValue[\"diff2group\",\"NOSIZE\"],false];IIF[ValidateEmptyAttributes[\"skusize\"] AND varSource = \"PIM\",SetAttributeValue[\"skusize\",\"1SZ*\"],false];"
 							}
 						]
 					},
@@ -2490,6 +2490,77 @@
 					}
 				}
 			}
-		}
+		},
+		{
+            "id": "publishReTrigger_businessRule",
+            "type": "businessRule",
+            "data": {
+                "attributes": {
+                    "name": {
+                        "values": [
+                            {
+                                "value": "Retrigger Publish for Emergencies"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "values": [
+                            {
+                                "value": "Retrigger Publish for Emergencies"
+                            }
+                        ]
+                    },
+                    "ruleType": {
+                        "values": [
+                            {
+                                "value": "computation"
+                            }
+                        ]
+                    },
+                    "executionMode": {
+                        "values": [
+                            {
+                                "value": "any"
+                            }
+                        ]
+                    },
+                    "definition": {
+                        "values": [
+                            {
+                                "value": "publishDateChanged:=HasAttributesChanged[\"lastpublishdate\"];workflowStepNPS:=IsEntityInWorkflow[\"newProductSetup\",\"newSkusToSubmit\",\"reviewAssortment\",\"assignInternalInformation\",\"provideAdditionalInfo\",\"rejectedSkus\"];workflowStepUpdate:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];IIF[publishDateChanged AND workflowStepNPS = false AND workflowStepUpdate = false,InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"],false];"
+                            }
+                        ]
+                    },
+                    "enabled": {
+                        "values": [
+                            {
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    "isDraft": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isDeleted": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "isSystemRule": {
+                        "values": [
+                            {
+                                "value": "false"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
 	]
 }
