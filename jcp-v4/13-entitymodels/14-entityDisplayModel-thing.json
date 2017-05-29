@@ -426,7 +426,7 @@
 							}
 						}
 					],
-					"productpresentationtoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -454,7 +454,7 @@
 							}
 						}
 					],
-					"productpresentationtovideo": [
+					"hasvideos": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -482,7 +482,7 @@
 							}
 						}
 					],
-					"productpresentationtodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -2279,7 +2279,7 @@
 							"attributes": {}
 						}
 					],
-					"lottoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -2307,7 +2307,7 @@
 							}
 						}
 					],
-					"lottovideo": [
+					"hasvideos": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -2335,7 +2335,7 @@
 							}
 						}
 					],
-					"lottodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -2370,7 +2370,7 @@
 			"id": "image_entityDisplayModel",
 			"name": "image",
 			"type": "entityDisplayModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"colorname": {
@@ -2563,7 +2563,7 @@
 			"id": "document_entityDisplayModel",
 			"name": "document",
 			"type": "entityDisplayModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -3050,7 +3050,7 @@
 							}
 						}
 					],
-					"ensembletoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -3078,7 +3078,7 @@
 							}
 						}
 					],
-					"ensembletovideo": [
+					"hasvideos": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -3106,7 +3106,7 @@
 							}
 						}
 					],
-					"ensembletodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -3141,7 +3141,7 @@
 			"id": "audio_entityDisplayModel",
 			"name": "audio",
 			"type": "entityDisplayModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -3253,7 +3253,7 @@
 			"id": "video_entityDisplayModel",
 			"name": "video",
 			"type": "entityDisplayModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -5006,7 +5006,7 @@
 							}
 						}
 					],
-					"skutoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -5034,7 +5034,7 @@
 							}
 						}
 					],
-					"skutovideo": [
+					"hasvideos": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -5062,7 +5062,7 @@
 							}
 						}
 					],
-					"skutodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
 								"externalName": "Images",
