@@ -1,0 +1,163 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "image_entityValidationModel",
+			"name": "image",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "videorendition_entityValidationModel",
+			"name": "videorendition",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				},
+				"relationships": {
+					"ischildof": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 0
+									}
+								]
+							},
+							"attributes": {}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "document_entityValidationModel",
+			"name": "document",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "imagerendition_entityValidationModel",
+			"name": "imagerendition",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				},
+				"relationships": {
+					"ischildof": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 0
+									}
+								]
+							},
+							"attributes": {}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "audio_entityValidationModel",
+			"name": "audio",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "audiorendition_entityValidationModel",
+			"name": "audiorendition",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				},
+				"relationships": {
+					"ischildof": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 0
+									}
+								]
+							},
+							"attributes": {}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "video_entityValidationModel",
+			"name": "video",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"userlabels": {
+						"properties": {
+							"isCollection": true,
+							"required": false
+						}
+					}
+				}
+			}
+		}
+	]
+}
