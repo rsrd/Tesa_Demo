@@ -9,7 +9,7 @@
 			"id": "identifier_attributeModel",
 			"name": "identifier",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Id"
 			},
@@ -33,7 +33,7 @@
 			"id": "lifecyclestage_attributeModel",
 			"name": "lifecyclestage",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Lifecycle Stage"
 			},
@@ -57,7 +57,7 @@
 			"id": "creationdate_attributeModel",
 			"name": "creationdate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Creation Date"
 			},
@@ -81,7 +81,7 @@
 			"id": "startdate_attributeModel",
 			"name": "startdate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "On-Site Date"
 			},
@@ -105,7 +105,7 @@
 			"id": "enddate_attributeModel",
 			"name": "enddate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Off-Site Date"
 			},
@@ -129,7 +129,7 @@
 			"id": "displayname_attributeModel",
 			"name": "displayname",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Display Name"
 			},
@@ -153,7 +153,7 @@
 			"id": "description_attributeModel",
 			"name": "description",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Description",
 				"rmsjsongroup": "Core Attributes",
@@ -179,7 +179,7 @@
 			"id": "shortdescription_attributeModel",
 			"name": "shortdescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Short Description",
 				"rmsjsongroup": "Core Attributes",
@@ -205,7 +205,7 @@
 			"id": "status_attributeModel",
 			"name": "status",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Status"
 			},
@@ -229,7 +229,7 @@
 			"id": "orin_attributeModel",
 			"name": "orin",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "ORIN",
 				"rmsjsongroup": "Core Attributes",
@@ -255,7 +255,7 @@
 			"id": "division_attributeModel",
 			"name": "division",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Division",
 				"rmsjsongroup": "Core Attributes"
@@ -280,7 +280,7 @@
 			"id": "subdivision_attributeModel",
 			"name": "subdivision",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sub-Divisions",
 				"rmsjsongroup": "Core Attributes",
@@ -306,7 +306,7 @@
 			"id": "entity_attributeModel",
 			"name": "entity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Entity",
 				"rmsjsongroup": "Core Attributes"
@@ -331,7 +331,7 @@
 			"id": "productline_attributeModel",
 			"name": "productline",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Line"
 			},
@@ -355,7 +355,7 @@
 			"id": "producttype_attributeModel",
 			"name": "producttype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Type",
 				"rmsjsongroup": "Core Attributes",
@@ -381,7 +381,7 @@
 			"id": "subproducttype_attributeModel",
 			"name": "subproducttype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sub Product Type",
 				"rmsjsongroup": "Core Attributes",
@@ -407,7 +407,7 @@
 			"id": "itemtype_attributeModel",
 			"name": "itemtype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Item Type",
 				"rmsjsongroup": "Core Attributes",
@@ -433,7 +433,7 @@
 			"id": "class_attributeModel",
 			"name": "class",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Class",
 				"rmsjsongroup": "Core Attributes",
@@ -459,7 +459,7 @@
 			"id": "subclass_attributeModel",
 			"name": "subclass",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sub Class"
 			},
@@ -483,7 +483,7 @@
 			"id": "source_attributeModel",
 			"name": "source",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Source"
 			},
@@ -507,7 +507,7 @@
 			"id": "skuitemtype_attributeModel",
 			"name": "skuitemtype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "RMS Item Type",
 				"rmsjsongroup": "Core Attributes",
@@ -533,7 +533,7 @@
 			"id": "skugrouping_attributeModel",
 			"name": "skugrouping",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SKU Grouping"
 			},
@@ -557,7 +557,7 @@
 			"id": "channel_attributeModel",
 			"name": "channel",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Channel",
 				"rmsjsongroup": "Core Attributes",
@@ -583,7 +583,7 @@
 			"id": "directshiprestrict_attributeModel",
 			"name": "directshiprestrict",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Direct Ship Restrict Code",
 				"multivalued": "Yes",
@@ -610,7 +610,7 @@
 			"id": "disposalfee_attributeModel",
 			"name": "disposalfee",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Disposal Fee Code",
 				"multivalued": "Yes",
@@ -637,7 +637,7 @@
 			"id": "willcallrestrict_attributeModel",
 			"name": "willcallrestrict",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Will Call Restrict Code",
 				"multivalued": "Yes",
@@ -664,7 +664,7 @@
 			"id": "parantheticamount_attributeModel",
 			"name": "parantheticamount",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Paranthetic Amount",
 				"rmsjsongroup": "Core Attributes",
@@ -690,7 +690,7 @@
 			"id": "willcallfactoryshipind_attributeModel",
 			"name": "willcallfactoryshipind",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Will Call Factory Ship",
 				"rmsjsongroup": "Core Attributes",
@@ -716,7 +716,7 @@
 			"id": "noncontinentalprepaid_attributeModel",
 			"name": "noncontinentalprepaid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Non Continental Transportation Prepaid",
 				"rmsjsongroup": "Core Attributes",
@@ -742,7 +742,7 @@
 			"id": "continentalprepaid_attributeModel",
 			"name": "continentalprepaid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Continental Tranportation Prepaid",
 				"rmsjsongroup": "Core Attributes",
@@ -768,7 +768,7 @@
 			"id": "unusualdemandquantity_attributeModel",
 			"name": "unusualdemandquantity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Unusual Demand Quantity",
 				"rmsjsongroup": "Core Attributes",
@@ -794,7 +794,7 @@
 			"id": "hazmatflag_attributeModel",
 			"name": "hazmatflag",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Haz Mat Flag",
 				"rmsjsongroup": "Core Attributes",
@@ -820,7 +820,7 @@
 			"id": "prop65indicator_attributeModel",
 			"name": "prop65indicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Prop 65 Indicator",
 				"rmsjsongroup": "Core Attributes",
@@ -846,7 +846,7 @@
 			"id": "suppliernumbername_attributeModel",
 			"name": "suppliernumbername",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Supplier Number/Name",
 				"rmsjsongroup": "Supplier Attributes",
@@ -872,7 +872,7 @@
 			"id": "suppliersitenumber_attributeModel",
 			"name": "suppliersitenumber",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Supplier Site Number",
 				"rmsjsongroup": "Supplier Attributes",
@@ -898,7 +898,7 @@
 			"id": "storeprimarysupplierid_attributeModel",
 			"name": "storeprimarysupplierid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Primary Supplier ID",
 				"rmsjsongroup": "Supplier Attributes",
@@ -924,7 +924,7 @@
 			"id": "ecomprimarysupplierid_attributeModel",
 			"name": "ecomprimarysupplierid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ecom Primary Supplier ID",
 				"rmsjsongroup": "Supplier Attributes",
@@ -950,7 +950,7 @@
 			"id": "supplierchannel_attributeModel",
 			"name": "supplierchannel",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Supplier Channel",
 				"rmsjsongroup": "Supplier Attributes",
@@ -976,7 +976,7 @@
 			"id": "alternatesupplierid_attributeModel",
 			"name": "alternatesupplierid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Alternate Supplier ID",
 				"rmsjsongroup": "Core Attributes",
@@ -1002,7 +1002,7 @@
 			"id": "msrp_attributeModel",
 			"name": "msrp",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "MSRP",
 				"rmsjsongroup": "Core Attributes",
@@ -1028,7 +1028,7 @@
 			"id": "storeunitcost_attributeModel",
 			"name": "storeunitcost",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Unit Cost",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1054,7 +1054,7 @@
 			"id": "ecommunitcost_attributeModel",
 			"name": "ecommunitcost",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Unit Cost",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1080,7 +1080,7 @@
 			"id": "retail_attributeModel",
 			"name": "retail",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Retail",
 				"rmsjsongroup": "Core Attributes",
@@ -1106,7 +1106,7 @@
 			"id": "length_attributeModel",
 			"name": "length",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Length",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1132,7 +1132,7 @@
 			"id": "shippingwidth_attributeModel",
 			"name": "shippingwidth",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Width",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1158,7 +1158,7 @@
 			"id": "height_attributeModel",
 			"name": "height",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Height",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1184,7 +1184,7 @@
 			"id": "grossweight_attributeModel",
 			"name": "grossweight",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Gross Weight",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1210,7 +1210,7 @@
 			"id": "liquidvolume_attributeModel",
 			"name": "liquidvolume",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Liquid Volume",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1236,7 +1236,7 @@
 			"id": "liquidunitofmeasure_attributeModel",
 			"name": "liquidunitofmeasure",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Liquid Unit of Measure",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1262,7 +1262,7 @@
 			"id": "countryofmanufacture_attributeModel",
 			"name": "countryofmanufacture",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Country Of Manufacture",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1288,7 +1288,7 @@
 			"id": "originindicator_attributeModel",
 			"name": "originindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Origin Indicator",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1314,7 +1314,7 @@
 			"id": "plannedonsitedate_attributeModel",
 			"name": "plannedonsitedate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Planned OnSite Date (mm/dd/yyyy)",
 				"rmsjsongroup": "Core Attributes",
@@ -1340,7 +1340,7 @@
 			"id": "warrantyflag_attributeModel",
 			"name": "warrantyflag",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Warranty Flag",
 				"rmsjsongroup": "Core Attributes",
@@ -1366,7 +1366,7 @@
 			"id": "monogramcharge_attributeModel",
 			"name": "monogramcharge",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Monogram Charge",
 				"rmsjsongroup": "Core Attributes",
@@ -1392,7 +1392,7 @@
 			"id": "diff1type_attributeModel",
 			"name": "diff1type",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Diff 1 Type",
 				"rmsjsongroup": "Core Attributes",
@@ -1418,7 +1418,7 @@
 			"id": "diff1group_attributeModel",
 			"name": "diff1group",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Diff 1 Group",
 				"rmsjsongroup": "Core Attributes",
@@ -1444,7 +1444,7 @@
 			"id": "diff2type_attributeModel",
 			"name": "diff2type",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Diff 2 Type",
 				"rmsjsongroup": "Core Attributes",
@@ -1470,7 +1470,7 @@
 			"id": "diff2group_attributeModel",
 			"name": "diff2group",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Diff 2 Group",
 				"rmsjsongroup": "Core Attributes",
@@ -1496,7 +1496,7 @@
 			"id": "colorfamily_attributeModel",
 			"name": "colorfamily",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "COLOR FAMILY",
 				"rmsjsongroup": "SKU Attributes",
@@ -1522,7 +1522,7 @@
 			"id": "colordesc_attributeModel",
 			"name": "colordesc",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "COLOR DESC",
 				"rmsjsongroup": "SKU Attributes",
@@ -1548,7 +1548,7 @@
 			"id": "skusize_attributeModel",
 			"name": "skusize",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Size",
 				"rmsjsongroup": "SKU Attributes",
@@ -1574,7 +1574,7 @@
 			"id": "ecommcolor_attributeModel",
 			"name": "ecommcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Color",
 				"rmsjsongroup": "SKU Attributes",
@@ -1600,7 +1600,7 @@
 			"id": "ecommcolorabbr_attributeModel",
 			"name": "ecommcolorabbr",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Color Abbr",
 				"rmsjsongroup": "SKU Attributes",
@@ -1626,7 +1626,7 @@
 			"id": "storecolorabbr_attributeModel",
 			"name": "storecolorabbr",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Color Abbr",
 				"rmsjsongroup": "SKU Attributes",
@@ -1652,7 +1652,7 @@
 			"id": "skuprintpattern_attributeModel",
 			"name": "skuprintpattern",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Print/Pattern",
 				"rmsjsongroup": "SKU Attributes",
@@ -1678,7 +1678,7 @@
 			"id": "artworkid_attributeModel",
 			"name": "artworkid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Artwork ID",
 				"rmsjsongroup": "SKU Attributes",
@@ -1704,7 +1704,7 @@
 			"id": "vpn_attributeModel",
 			"name": "vpn",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "VPN",
 				"rmsjsongroup": "SKU Attributes",
@@ -1730,7 +1730,7 @@
 			"id": "storeunitcostcolor_attributeModel",
 			"name": "storeunitcostcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Unit Cost @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1756,7 +1756,7 @@
 			"id": "ecommunitcostcolor_attributeModel",
 			"name": "ecommunitcostcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Unit Cost @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1782,7 +1782,7 @@
 			"id": "ecommactivesizes_attributeModel",
 			"name": "ecommactivesizes",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Active Sizes"
 			},
@@ -1806,7 +1806,7 @@
 			"id": "storeprimarysupplieridcolor_attributeModel",
 			"name": "storeprimarysupplieridcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Primary Supplier ID @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1832,7 +1832,7 @@
 			"id": "ecomprimarysupplieridcolor_attributeModel",
 			"name": "ecomprimarysupplieridcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ecom Primary Supplier ID @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1858,7 +1858,7 @@
 			"id": "innerpackincrementcolor_attributeModel",
 			"name": "innerpackincrementcolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Inner Pack (Increment) @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1884,7 +1884,7 @@
 			"id": "cost_attributeModel",
 			"name": "cost",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Cost"
 			},
@@ -1908,7 +1908,7 @@
 			"id": "ecomminnerpack_attributeModel",
 			"name": "ecomminnerpack",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Inner Pack",
 				"rmsjsongroup": "Supplier Attributes",
@@ -1934,7 +1934,7 @@
 			"id": "ecommoosdate_attributeModel",
 			"name": "ecommoosdate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm OOS Date",
 				"rmsjsongroup": "Core Attributes",
@@ -1960,7 +1960,7 @@
 			"id": "specialprogramtype_attributeModel",
 			"name": "specialprogramtype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Special Program Type",
 				"rmsjsongroup": "Core Attributes",
@@ -1986,7 +1986,7 @@
 			"id": "storesubset_attributeModel",
 			"name": "storesubset",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Sub Set",
 				"rmsjsongroup": "Core Attributes",
@@ -2012,7 +2012,7 @@
 			"id": "storejcpstatus_attributeModel",
 			"name": "storejcpstatus",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store JCP Status",
 				"rmsjsongroup": "SKU Attributes",
@@ -2038,7 +2038,7 @@
 			"id": "factoryshipleadtime_attributeModel",
 			"name": "factoryshipleadtime",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Factory Ship Lead Time",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2064,7 +2064,7 @@
 			"id": "sizecase_attributeModel",
 			"name": "sizecase",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Size: Case",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2090,7 +2090,7 @@
 			"id": "storecollectionnumbername_attributeModel",
 			"name": "storecollectionnumbername",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Collection Number/Name",
 				"rmsjsongroup": "Core Attributes",
@@ -2116,7 +2116,7 @@
 			"id": "lifestyle_attributeModel",
 			"name": "lifestyle",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Lifestyle",
 				"rmsjsongroup": "Core Attributes",
@@ -2142,7 +2142,7 @@
 			"id": "suppliermfrshippoint_attributeModel",
 			"name": "suppliermfrshippoint",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Supplier/Mfr Ship Point",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2168,7 +2168,7 @@
 			"id": "sizeinner_attributeModel",
 			"name": "sizeinner",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Size: Inner",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2194,7 +2194,7 @@
 			"id": "packagetype_attributeModel",
 			"name": "packagetype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Package Type",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2220,7 +2220,7 @@
 			"id": "weightunitofmeasure_attributeModel",
 			"name": "weightunitofmeasure",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Weight Unit of Measure",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2246,7 +2246,7 @@
 			"id": "whsesupplier1_attributeModel",
 			"name": "whsesupplier1",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Whse Supplier 1",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2272,7 +2272,7 @@
 			"id": "whsesuppliershippoint1_attributeModel",
 			"name": "whsesuppliershippoint1",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Whse Supplier Ship Point 1",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2298,7 +2298,7 @@
 			"id": "supplierleadtime_attributeModel",
 			"name": "supplierleadtime",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Supplier Lead Time",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2324,7 +2324,7 @@
 			"id": "ecomhangingindicator_attributeModel",
 			"name": "ecomhangingindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "e-Com Hanging Indicator",
 				"rmsjsongroup": "Core Attributes",
@@ -2350,7 +2350,7 @@
 			"id": "effindicator_attributeModel",
 			"name": "effindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "EFF Indicator",
 				"rmsjsongroup": "Core Attributes",
@@ -2376,7 +2376,7 @@
 			"id": "storeset_attributeModel",
 			"name": "storeset",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Set",
 				"rmsjsongroup": "Core Attributes",
@@ -2402,7 +2402,7 @@
 			"id": "floorsetname_attributeModel",
 			"name": "floorsetname",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Floor Set Name",
 				"rmsjsongroup": "Core Attributes"
@@ -2427,7 +2427,7 @@
 			"id": "floorsetdate_attributeModel",
 			"name": "floorsetdate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Floor Set Date",
 				"rmsjsongroup": "Core Attributes",
@@ -2453,7 +2453,7 @@
 			"id": "christmasindicator_attributeModel",
 			"name": "christmasindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Christmas Indicator",
 				"rmsjsongroup": "Core Attributes",
@@ -2479,7 +2479,7 @@
 			"id": "protectionplan_attributeModel",
 			"name": "protectionplan",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Protection Plan",
 				"rmsjsongroup": "Core Attributes",
@@ -2505,7 +2505,7 @@
 			"id": "ecommsuppliershippoint_attributeModel",
 			"name": "ecommsuppliershippoint",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Supplier Ship Point",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2531,7 +2531,7 @@
 			"id": "maxbackorderdays_attributeModel",
 			"name": "maxbackorderdays",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Max Backorder Days",
 				"rmsjsongroup": "Core Attributes",
@@ -2557,7 +2557,7 @@
 			"id": "storeactivesizes_attributeModel",
 			"name": "storeactivesizes",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Active Sizes"
 			},
@@ -2581,7 +2581,7 @@
 			"id": "storepurchasetype_attributeModel",
 			"name": "storepurchasetype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store Purchase Type",
 				"rmsjsongroup": "Core Attributes",
@@ -2607,7 +2607,7 @@
 			"id": "ecommpurchasetype_attributeModel",
 			"name": "ecommpurchasetype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Purchase Type",
 				"rmsjsongroup": "Core Attributes",
@@ -2633,7 +2633,7 @@
 			"id": "sourcingpartner_attributeModel",
 			"name": "sourcingpartner",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sourcing Partner",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2659,7 +2659,7 @@
 			"id": "factoryshipuom_attributeModel",
 			"name": "factoryshipuom",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Factory Ship UOM",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2685,7 +2685,7 @@
 			"id": "ticketstockno_attributeModel",
 			"name": "ticketstockno",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ticket Stock #",
 				"rmsjsongroup": "Core Attributes",
@@ -2711,7 +2711,7 @@
 			"id": "ticketattribute_attributeModel",
 			"name": "ticketattribute",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ticket Attribute",
 				"rmsjsongroup": "Core Attributes",
@@ -2737,7 +2737,7 @@
 			"id": "ticketattributeval_attributeModel",
 			"name": "ticketattributeval",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ticket Attribute Text",
 				"rmsjsongroup": "Core Attributes",
@@ -2763,7 +2763,7 @@
 			"id": "season_attributeModel",
 			"name": "season",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Season",
 				"rmsjsongroup": "Core Attributes",
@@ -2789,7 +2789,7 @@
 			"id": "ppkno_attributeModel",
 			"name": "ppkno",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "PPK #",
 				"rmsjsongroup": "SKU Attributes",
@@ -2815,7 +2815,7 @@
 			"id": "ecommjcpstatus_attributeModel",
 			"name": "ecommjcpstatus",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm JCP Status",
 				"rmsjsongroup": "SKU Attributes",
@@ -2841,7 +2841,7 @@
 			"id": "innerquantitycolor_attributeModel",
 			"name": "innerquantitycolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Inner Quantity @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2867,7 +2867,7 @@
 			"id": "casequantitycolor_attributeModel",
 			"name": "casequantitycolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Case Quantity @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2893,7 +2893,7 @@
 			"id": "conceptual_attributeModel",
 			"name": "conceptual",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Conceptual",
 				"rmsjsongroup": "Core Attributes",
@@ -2919,7 +2919,7 @@
 			"id": "whseprocessingfee1_attributeModel",
 			"name": "whseprocessingfee1",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Whse Processing Fee 1",
 				"rmsjsongroup": "Supplier Attributes",
@@ -2945,7 +2945,7 @@
 			"id": "compliancelikeitem_attributeModel",
 			"name": "compliancelikeitem",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Compliance Like Item",
 				"rmsjsongroup": "Core Attributes",
@@ -2971,7 +2971,7 @@
 			"id": "enterpriseinventoryindicator_attributeModel",
 			"name": "enterpriseinventoryindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Enterprise Inventory Indicator",
 				"rmsjsongroup": "Core Attributes",
@@ -2997,7 +2997,7 @@
 			"id": "fashionpyramid_attributeModel",
 			"name": "fashionpyramid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Fashion Pyramid",
 				"rmsjsongroup": "Core Attributes",
@@ -3023,7 +3023,7 @@
 			"id": "deliveryinstructions_attributeModel",
 			"name": "deliveryinstructions",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Delivery Instructions",
 				"rmsjsongroup": "Core Attributes",
@@ -3049,7 +3049,7 @@
 			"id": "packingmethod_attributeModel",
 			"name": "packingmethod",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Packing Method",
 				"rmsjsongroup": "Supplier Attributes",
@@ -3075,7 +3075,7 @@
 			"id": "pricetier_attributeModel",
 			"name": "pricetier",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Price Tier",
 				"rmsjsongroup": "Core Attributes",
@@ -3101,7 +3101,7 @@
 			"id": "specialitemcode_attributeModel",
 			"name": "specialitemcode",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Special Item Code",
 				"rmsjsongroup": "Core Attributes",
@@ -3127,7 +3127,7 @@
 			"id": "storeoosdate_attributeModel",
 			"name": "storeoosdate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Store OOS Date",
 				"rmsjsongroup": "Core Attributes",
@@ -3153,7 +3153,7 @@
 			"id": "factoryshiplimitedinvind_attributeModel",
 			"name": "factoryshiplimitedinvind",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Factory Ship Limited Inv Ind",
 				"rmsjsongroup": "Supplier Attributes",
@@ -3179,7 +3179,7 @@
 			"id": "minorderqtycolor_attributeModel",
 			"name": "minorderqtycolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Min Order Qty @ Color",
 				"rmsjsongroup": "Supplier Attributes",
@@ -3205,7 +3205,7 @@
 			"id": "ecommminorderqty_attributeModel",
 			"name": "ecommminorderqty",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "eComm Min Order Qty",
 				"rmsjsongroup": "Supplier Attributes",
@@ -3231,7 +3231,7 @@
 			"id": "shippinginforequired_attributeModel",
 			"name": "shippinginforequired",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Shipping Info Required",
 				"rmsjsongroup": "Core Attributes",
@@ -3257,7 +3257,7 @@
 			"id": "producttitle_attributeModel",
 			"name": "producttitle",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Title"
 			},
@@ -3281,7 +3281,7 @@
 			"id": "assembledlength_attributeModel",
 			"name": "assembledlength",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Assembled Length(in inches)"
 			},
@@ -3305,7 +3305,7 @@
 			"id": "assembledwidth_attributeModel",
 			"name": "assembledwidth",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Assembled Width(in inches)"
 			},
@@ -3329,7 +3329,7 @@
 			"id": "assembledheight_attributeModel",
 			"name": "assembledheight",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Assembled Height(in inches)"
 			},
@@ -3353,7 +3353,7 @@
 			"id": "assembledweight_attributeModel",
 			"name": "assembledweight",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Assembled Weight(in pounds)"
 			},
@@ -3377,7 +3377,7 @@
 			"id": "productdescription_attributeModel",
 			"name": "productdescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Description"
 			},
@@ -3401,7 +3401,7 @@
 			"id": "features1_attributeModel",
 			"name": "features1",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Features 1"
 			},
@@ -3425,7 +3425,7 @@
 			"id": "features2_attributeModel",
 			"name": "features2",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Features 2"
 			},
@@ -3449,7 +3449,7 @@
 			"id": "features3_attributeModel",
 			"name": "features3",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Features 3"
 			},
@@ -3473,7 +3473,7 @@
 			"id": "features4_attributeModel",
 			"name": "features4",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Features 4"
 			},
@@ -3497,7 +3497,7 @@
 			"id": "features5_attributeModel",
 			"name": "features5",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Features 5"
 			},
@@ -3521,7 +3521,7 @@
 			"id": "searchkeywordsnavigation_attributeModel",
 			"name": "searchkeywordsnavigation",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Search keywords & Navigation"
 			},
@@ -3545,7 +3545,7 @@
 			"id": "competitorprice_attributeModel",
 			"name": "competitorprice",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Competitor Price"
 			},
@@ -3569,9 +3569,9 @@
 			"id": "shippointstate_attributeModel",
 			"name": "shippointstate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
-				"externalName": "Ship point city"
+				"externalName": "Ship Point State"
 			},
 			"data": {
 				"relationships": {
@@ -3593,9 +3593,9 @@
 			"id": "shippointcity_attributeModel",
 			"name": "shippointcity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
-				"externalName": "Ship point state"
+				"externalName": "Ship Point City"
 			},
 			"data": {
 				"relationships": {
@@ -3617,7 +3617,7 @@
 			"id": "initialmarkup_attributeModel",
 			"name": "initialmarkup",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Initial Markup (%)",
 				"rmsjsongroup": "Core Attributes"
@@ -3642,7 +3642,7 @@
 			"id": "longdescription_attributeModel",
 			"name": "longdescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Long Description"
 			},
@@ -3666,7 +3666,7 @@
 			"id": "seotags_attributeModel",
 			"name": "seotags",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SEO Tags"
 			},
@@ -3690,7 +3690,7 @@
 			"id": "seodisplayname_attributeModel",
 			"name": "seodisplayname",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SEO Display Name"
 			},
@@ -3714,7 +3714,7 @@
 			"id": "canonicalurl_attributeModel",
 			"name": "canonicalurl",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Canonical URL"
 			},
@@ -3738,7 +3738,7 @@
 			"id": "disableads_attributeModel",
 			"name": "disableads",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Disable Ads"
 			},
@@ -3762,7 +3762,7 @@
 			"id": "disablegoogleads_attributeModel",
 			"name": "disablegoogleads",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Disable Google Ads"
 			},
@@ -3786,7 +3786,7 @@
 			"id": "seotaginclude_attributeModel",
 			"name": "seotaginclude",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Include SEO Tags"
 			},
@@ -3810,7 +3810,7 @@
 			"id": "medialetter_attributeModel",
 			"name": "medialetter",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Media Letter"
 			},
@@ -3834,7 +3834,7 @@
 			"id": "mediayear_attributeModel",
 			"name": "mediayear",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Media Year"
 			},
@@ -3858,7 +3858,7 @@
 			"id": "ishidden_attributeModel",
 			"name": "ishidden",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Hide Display"
 			},
@@ -3882,7 +3882,7 @@
 			"id": "productreviewquotetext_attributeModel",
 			"name": "productreviewquotetext",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Review Quote Text"
 			},
@@ -3906,7 +3906,7 @@
 			"id": "featureheadertext_attributeModel",
 			"name": "featureheadertext",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Feature Header"
 			},
@@ -3930,7 +3930,7 @@
 			"id": "featurequotetext_attributeModel",
 			"name": "featurequotetext",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Feature Quote"
 			},
@@ -3954,7 +3954,7 @@
 			"id": "longcopy_attributeModel",
 			"name": "longcopy",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Long Copy"
 			},
@@ -3978,7 +3978,7 @@
 			"id": "secondarycopy_attributeModel",
 			"name": "secondarycopy",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Secondary Copy"
 			},
@@ -4002,7 +4002,7 @@
 			"id": "inspirationalcopy_attributeModel",
 			"name": "inspirationalcopy",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Inspirational Copy"
 			},
@@ -4026,7 +4026,7 @@
 			"id": "alsoinstore_attributeModel",
 			"name": "alsoinstore",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Also In Store"
 			},
@@ -4050,7 +4050,7 @@
 			"id": "promotionalimagecontent_attributeModel",
 			"name": "promotionalimagecontent",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Promotional Image"
 			},
@@ -4074,7 +4074,7 @@
 			"id": "ratingreviewid_attributeModel",
 			"name": "ratingreviewid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Rating Review Id"
 			},
@@ -4098,7 +4098,7 @@
 			"id": "ppskuswatchesrolledupcount_attributeModel",
 			"name": "ppskuswatchesrolledupcount",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": ""
 			},
@@ -4122,7 +4122,7 @@
 			"id": "ensembledhtml_attributeModel",
 			"name": "ensembledhtml",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Ensemble DHTML"
 			},
@@ -4146,7 +4146,7 @@
 			"id": "displayaskandanswersection_attributeModel",
 			"name": "displayaskandanswersection",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Display Ask and Answer Section"
 			},
@@ -4170,7 +4170,7 @@
 			"id": "sourcefeedid_attributeModel",
 			"name": "sourcefeedid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Source Feed"
 			},
@@ -4194,7 +4194,7 @@
 			"id": "issampleensemble_attributeModel",
 			"name": "issampleensemble",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sample Ensemble"
 			},
@@ -4218,7 +4218,7 @@
 			"id": "isnewtoclearance_attributeModel",
 			"name": "isnewtoclearance",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "New To Clearance"
 			},
@@ -4242,7 +4242,7 @@
 			"id": "isnewclearancetimestamp_attributeModel",
 			"name": "isnewclearancetimestamp",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "New To Clearance Timestamp"
 			},
@@ -4266,7 +4266,7 @@
 			"id": "productpresentationtype_attributeModel",
 			"name": "productpresentationtype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Product Presentation Type"
 			},
@@ -4290,7 +4290,7 @@
 			"id": "ispreorderoption_attributeModel",
 			"name": "ispreorderoption",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "PreOrder Option"
 			},
@@ -4314,7 +4314,7 @@
 			"id": "galleryvideo_attributeModel",
 			"name": "galleryvideo",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Gallery Video"
 			},
@@ -4338,7 +4338,7 @@
 			"id": "iscustomerfavoriteoption_attributeModel",
 			"name": "iscustomerfavoriteoption",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Customer Favorite"
 			},
@@ -4362,7 +4362,7 @@
 			"id": "featurecolor_attributeModel",
 			"name": "featurecolor",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Feature Color",
 				"rmsjsongroup": "Core Attributes",
@@ -4388,7 +4388,7 @@
 			"id": "isbopiseligible_attributeModel",
 			"name": "isbopiseligible",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Bopis Eligible"
 			},
@@ -4412,7 +4412,7 @@
 			"id": "brandlogo_attributeModel",
 			"name": "brandlogo",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Brand LOGO Image"
 			},
@@ -4436,7 +4436,7 @@
 			"id": "seotitle_attributeModel",
 			"name": "seotitle",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SEO Title"
 			},
@@ -4460,7 +4460,7 @@
 			"id": "seodescription_attributeModel",
 			"name": "seodescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SEO Description"
 			},
@@ -4484,7 +4484,7 @@
 			"id": "disclaimercopy_attributeModel",
 			"name": "disclaimercopy",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Disclaimers"
 			},
@@ -4508,7 +4508,7 @@
 			"id": "onlineonly_attributeModel",
 			"name": "onlineonly",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Online Only"
 			},
@@ -4532,7 +4532,7 @@
 			"id": "shortname_attributeModel",
 			"name": "shortname",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Short Name"
 			},
@@ -4556,7 +4556,7 @@
 			"id": "channelavailability_attributeModel",
 			"name": "channelavailability",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Channel Availability"
 			},
@@ -4580,7 +4580,7 @@
 			"id": "istruckitem_attributeModel",
 			"name": "istruckitem",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Truck Item"
 			},
@@ -4604,7 +4604,7 @@
 			"id": "warehouseclass_attributeModel",
 			"name": "warehouseclass",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Warehouse Class"
 			},
@@ -4628,7 +4628,7 @@
 			"id": "questionableorderquantity_attributeModel",
 			"name": "questionableorderquantity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Questionable Order Quantity"
 			},
@@ -4652,7 +4652,7 @@
 			"id": "lottype_attributeModel",
 			"name": "lottype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Lot Type"
 			},
@@ -4676,7 +4676,7 @@
 			"id": "whitegloveddelivery_attributeModel",
 			"name": "whitegloveddelivery",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "White Gloved Delivery"
 			},
@@ -4700,7 +4700,7 @@
 			"id": "styletext_attributeModel",
 			"name": "styletext",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Style Text"
 			},
@@ -4724,7 +4724,7 @@
 			"id": "lotselectiontype_attributeModel",
 			"name": "lotselectiontype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Lot Selection Type"
 			},
@@ -4748,7 +4748,7 @@
 			"id": "mailableindicator_attributeModel",
 			"name": "mailableindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Mailable Indicator"
 			},
@@ -4772,7 +4772,7 @@
 			"id": "commercialcarriercode_attributeModel",
 			"name": "commercialcarriercode",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "UPS Code"
 			},
@@ -4796,7 +4796,7 @@
 			"id": "noncommercialcarriercode_attributeModel",
 			"name": "noncommercialcarriercode",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Mail Code"
 			},
@@ -4820,7 +4820,7 @@
 			"id": "sabrixcommoditycode_attributeModel",
 			"name": "sabrixcommoditycode",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sabrix Commodity Code"
 			},
@@ -4844,7 +4844,7 @@
 			"id": "programtype_attributeModel",
 			"name": "programtype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Program Type"
 			},
@@ -4868,7 +4868,7 @@
 			"id": "specialindicator_attributeModel",
 			"name": "specialindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Special Indicator"
 			},
@@ -4892,7 +4892,7 @@
 			"id": "internationalshippable_attributeModel",
 			"name": "internationalshippable",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "International Shippable",
 				"rmsjsongroup": "Core Attributes",
@@ -4918,7 +4918,7 @@
 			"id": "manufacturer_attributeModel",
 			"name": "manufacturer",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Manufacturer"
 			},
@@ -4942,7 +4942,7 @@
 			"id": "countryoforigin_attributeModel",
 			"name": "countryoforigin",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Country Of Origin"
 			},
@@ -4966,7 +4966,7 @@
 			"id": "sizeunit_attributeModel",
 			"name": "sizeunit",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Unit of Size"
 			},
@@ -4990,7 +4990,7 @@
 			"id": "weightunit_attributeModel",
 			"name": "weightunit",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Unit of Weight"
 			},
@@ -5014,7 +5014,7 @@
 			"id": "issephora_attributeModel",
 			"name": "issephora",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sephora"
 			},
@@ -5038,7 +5038,7 @@
 			"id": "recyclefeeindicator_attributeModel",
 			"name": "recyclefeeindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Recycle Fee"
 			},
@@ -5062,7 +5062,7 @@
 			"id": "modelnumber_attributeModel",
 			"name": "modelnumber",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Model Number"
 			},
@@ -5086,7 +5086,7 @@
 			"id": "isfurniture_attributeModel",
 			"name": "isfurniture",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Furniture"
 			},
@@ -5110,7 +5110,7 @@
 			"id": "skutype_attributeModel",
 			"name": "skutype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sku Type"
 			},
@@ -5134,7 +5134,7 @@
 			"id": "skunumber_attributeModel",
 			"name": "skunumber",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sku Number"
 			},
@@ -5158,7 +5158,7 @@
 			"id": "retailskunumber_attributeModel",
 			"name": "retailskunumber",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Retail Sku Number"
 			},
@@ -5182,7 +5182,7 @@
 			"id": "hidedisplayindicator_attributeModel",
 			"name": "hidedisplayindicator",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Hide Display"
 			},
@@ -5206,7 +5206,7 @@
 			"id": "skuquantity_attributeModel",
 			"name": "skuquantity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Quantity"
 			},
@@ -5230,7 +5230,7 @@
 			"id": "upcbarcode_attributeModel",
 			"name": "upcbarcode",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "UPC",
 				"rmsjsongroup": "SKU Attributes",
@@ -5256,7 +5256,7 @@
 			"id": "componentskuquantity_attributeModel",
 			"name": "componentskuquantity",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Component Sku Quantity"
 			},
@@ -5280,7 +5280,7 @@
 			"id": "brand_attributeModel",
 			"name": "brand",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Brand",
 				"rmsjsongroup": "Core Attributes",
@@ -5306,7 +5306,7 @@
 			"id": "warranty_attributeModel",
 			"name": "warranty",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Warranty"
 			},
@@ -5330,7 +5330,7 @@
 			"id": "vdata_attributeModel",
 			"name": "vdata",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Variable Data",
 				"rmsjsongroup": "Core Attributes",
@@ -5356,7 +5356,7 @@
 			"id": "factsheet_attributeModel",
 			"name": "factsheet",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Factsheet"
 			},
@@ -5380,7 +5380,7 @@
 			"id": "secondarydesc_attributeModel",
 			"name": "secondarydesc",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Secondary Description",
 				"rmsjsongroup": "Core Attributes",
@@ -5406,7 +5406,7 @@
 			"id": "sellinguom_attributeModel",
 			"name": "sellinguom",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Selling UOM"
 			},
@@ -5430,7 +5430,7 @@
 			"id": "standarduom_attributeModel",
 			"name": "standarduom",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Standard UOM"
 			},
@@ -5454,7 +5454,7 @@
 			"id": "businesstype_attributeModel",
 			"name": "businesstype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Business Type"
 			},
@@ -5478,7 +5478,7 @@
 			"id": "sellableflag_attributeModel",
 			"name": "sellableflag",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Sellable"
 			},
@@ -5502,7 +5502,7 @@
 			"id": "orderableflag_attributeModel",
 			"name": "orderableflag",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Orderable"
 			},
@@ -5526,7 +5526,7 @@
 			"id": "inventoryflag_attributeModel",
 			"name": "inventoryflag",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Inventory"
 			},
@@ -5550,7 +5550,7 @@
 			"id": "singlelotpp_attributeModel",
 			"name": "singlelotpp",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Single LOT PP",
 				"rmsjsongroup": "Core Attributes",
@@ -5576,7 +5576,7 @@
 			"id": "multilotpp_attributeModel",
 			"name": "multilotpp",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Multi LOT PP",
 				"rmsjsongroup": "Core Attributes",
@@ -5602,7 +5602,7 @@
 			"id": "multilotppval_attributeModel",
 			"name": "multilotppval",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Multi LOT PP Value",
 				"rmsjsongroup": "Core Attributes",
@@ -5628,7 +5628,7 @@
 			"id": "servicedescription_attributeModel",
 			"name": "servicedescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Service Description"
 			},
@@ -5652,7 +5652,7 @@
 			"id": "lastmodifiedtimestamp_attributeModel",
 			"name": "lastmodifiedtimestamp",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Last Modified Timestamp"
 			},
@@ -5676,7 +5676,7 @@
 			"id": "createdby_attributeModel",
 			"name": "createdby",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Created By"
 			},
@@ -5700,7 +5700,7 @@
 			"id": "lastmodifiedby_attributeModel",
 			"name": "lastmodifiedby",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Last Modified By"
 			},
@@ -5724,7 +5724,7 @@
 			"id": "rmsitemid_attributeModel",
 			"name": "rmsitemid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "LOT ID",
 				"rmsattributecode": "L_LOT"
@@ -5749,7 +5749,7 @@
 			"id": "rmsskuid_attributeModel",
 			"name": "rmsskuid",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "SKU ID"
 			},
@@ -5773,7 +5773,7 @@
 			"id": "linkdescription_attributeModel",
 			"name": "linkdescription",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Link Description"
 			},
@@ -5797,7 +5797,7 @@
 			"id": "enabled_attributeModel",
 			"name": "enabled",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Enabled"
 			},
@@ -5821,7 +5821,7 @@
 			"id": "primaryimage_attributeModel",
 			"name": "primaryimage",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Primary Image"
 			},
@@ -5845,7 +5845,7 @@
 			"id": "alternateimages_attributeModel",
 			"name": "alternateimages",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Alternate Images"
 			},
@@ -5869,9 +5869,33 @@
 			"id": "lotgroup_attributeModel",
 			"name": "lotgroup",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Lot Group"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainattributemodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "lastpublishdate_attributeModel",
+			"name": "lastpublishdate",
+			"type": "attributeModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Last Publish Date"
 			},
 			"data": {
 				"relationships": {
@@ -5893,7 +5917,7 @@
 			"id": "colorname_attributeModel",
 			"name": "colorname",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Color Name"
 			},
@@ -5917,7 +5941,7 @@
 			"id": "colorprofile_attributeModel",
 			"name": "colorprofile",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Color Profile"
 			},
@@ -5941,7 +5965,7 @@
 			"id": "imageformat_attributeModel",
 			"name": "imageformat",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Format"
 			},
@@ -5965,7 +5989,7 @@
 			"id": "imageheightunit_attributeModel",
 			"name": "imageheightunit",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Height"
 			},
@@ -5989,7 +6013,7 @@
 			"id": "imageresolution_attributeModel",
 			"name": "imageresolution",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Resolution"
 			},
@@ -6013,7 +6037,7 @@
 			"id": "imagesequencing_attributeModel",
 			"name": "imagesequencing",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Sequencing"
 			},
@@ -6037,7 +6061,7 @@
 			"id": "imagesize_attributeModel",
 			"name": "imagesize",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Size"
 			},
@@ -6061,7 +6085,7 @@
 			"id": "imagetype_attributeModel",
 			"name": "imagetype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Type"
 			},
@@ -6085,7 +6109,7 @@
 			"id": "imagewidthunit_attributeModel",
 			"name": "imagewidthunit",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Image Width"
 			},
@@ -6109,7 +6133,7 @@
 			"id": "lastaccesseddate_attributeModel",
 			"name": "lastaccesseddate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Last Accessed Date"
 			},
@@ -6133,7 +6157,7 @@
 			"id": "lastmodifieddate_attributeModel",
 			"name": "lastmodifieddate",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Last Modified Date"
 			},
@@ -6157,7 +6181,7 @@
 			"id": "maximagequality_attributeModel",
 			"name": "maximagequality",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Max Image Quality"
 			},
@@ -6181,7 +6205,7 @@
 			"id": "mediatype_attributeModel",
 			"name": "mediatype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Media Type"
 			},
@@ -6205,7 +6229,7 @@
 			"id": "month_attributeModel",
 			"name": "month",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Month"
 			},
@@ -6229,7 +6253,7 @@
 			"id": "shottype_attributeModel",
 			"name": "shottype",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Shot Type/Primary Image indicator"
 			},
@@ -6253,7 +6277,7 @@
 			"id": "year_attributeModel",
 			"name": "year",
 			"type": "attributeModel",
-			"domain": "generic",
+			"domain": "thing",
 			"properties": {
 				"externalName": "Year"
 			},
