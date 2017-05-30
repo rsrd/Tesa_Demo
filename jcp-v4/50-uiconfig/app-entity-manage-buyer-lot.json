@@ -1350,7 +1350,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									},
 									"ischildof": {
@@ -1464,7 +1464,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									}
 								},

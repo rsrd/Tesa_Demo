@@ -1211,7 +1211,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									},
 									"ensembletoimage": {
@@ -1308,7 +1308,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									}
 								},
