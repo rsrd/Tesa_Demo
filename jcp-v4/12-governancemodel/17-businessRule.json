@@ -2561,6 +2561,148 @@
                     }
                 }
             }
-        }
+        },
+    {
+			"id": "lotSequenceGroupId_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Generate Lot Sequence Group ID"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Generate Lot Sequence Group ID"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "getclientid:=GetClientAttributesFromRequest[\"taskId.values[0].value\"];getlotgroup:=GetAttributeValue[\"lotgroup\"];IIF[IsNullOrEmpty[getclientid],true,SetAttributeValue[\"lotgroup\",concat[getclientid,\"_\",getlotgroup]]]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "SendEntityForGraphProcessing_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Send Entity For Graph Processing"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Send Entity For Graph Processing"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\",\"autoCreateLotsAndPPs\"],SendEntityForGraphProcessing[\"sku_ischildof_lot\"],false]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		}
 	]
 }
