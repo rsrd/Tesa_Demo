@@ -2,12 +2,13 @@
     "metaInfo": {
         "dataIndex": "entityModel",
         "collectionName": "entityModels",
-        "responseObjectName": "response"
+        "responseObjectName": "entityModelOperationResponse"
     },
     "entityModels": [
         {
             "id": "en-US_locale",
             "name": "en-US",
+            "domain": "generic",
             "type": "locale",
             "properties": {
                 "externalName": "English - United States",
@@ -17,6 +18,7 @@
         {
             "id": "de-DE_locale",
             "name": "de-DE",
+            "domain": "generic",
             "type": "locale",
             "properties": {
                 "externalName": "German - Germany",
@@ -26,6 +28,7 @@
         {
             "id": "fr-FR_locale",
             "name": "fr-FR",
+            "domain": "generic",
             "type": "locale",
             "properties": {
                 "externalName": "French - France",
@@ -35,6 +38,7 @@
         {
             "id": "es-SP_locale",
             "name": "es-SP",
+            "domain": "generic",
             "type": "locale",
             "properties": {
                 "externalName": "Spanish - Spain",

@@ -6,29 +6,6 @@
 	},
 	"entityModels": [
 		{
-			"id": "classification_entityManageModel",
-			"name": "classification",
-			"type": "entityManageModel",
-			"domain": "generic",
-			"data": {
-				"relationships": {
-					"belongsto": [
-						{
-							"properties": {
-								"enternalName": "Belongs To",
-								"relationshipType": "aggregation",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "classification"
-									}
-								]
-							}
-						}
-					]
-				}
-			}
-		},
-		{
 			"id": "productpresentation_entityManageModel",
 			"name": "productpresentation",
 			"type": "entityManageModel",
@@ -506,7 +483,7 @@
 							}
 						}
 					],
-					"productpresentationtoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -535,10 +512,10 @@
 							}
 						}
 					],
-					"productpresentationtovideo": [
+					"hasvideos": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Videos",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -564,10 +541,10 @@
 							}
 						}
 					],
-					"productpresentationtodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Documents",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -1837,14 +1814,14 @@
 					},
 					"shippointstate": {
 						"properties": {
-							"externalName": "Ship point city",
+							"externalName": "Ship Point State",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
 					},
 					"shippointcity": {
 						"properties": {
-							"externalName": "Ship point state",
+							"externalName": "Ship Point City",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
@@ -2547,7 +2524,7 @@
 							"attributes": {}
 						}
 					],
-					"lottoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -2576,10 +2553,10 @@
 							}
 						}
 					],
-					"lottovideo": [
+					"hasvideos": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Videos",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -2605,10 +2582,10 @@
 							}
 						}
 					],
-					"lottodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Documents",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -2641,7 +2618,7 @@
 			"id": "image_entityManageModel",
 			"name": "image",
 			"type": "entityManageModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"colorname": {
@@ -2854,7 +2831,7 @@
 			"id": "document_entityManageModel",
 			"name": "document",
 			"type": "entityManageModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -3401,7 +3378,7 @@
 							}
 						}
 					],
-					"ensembletoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -3430,10 +3407,10 @@
 							}
 						}
 					],
-					"ensembletovideo": [
+					"hasvideos": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Videos",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -3459,10 +3436,10 @@
 							}
 						}
 					],
-					"ensembletodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Documents",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -3495,7 +3472,7 @@
 			"id": "audio_entityManageModel",
 			"name": "audio",
 			"type": "entityManageModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -3617,7 +3594,7 @@
 			"id": "video_entityManageModel",
 			"name": "video",
 			"type": "entityManageModel",
-			"domain": "digitalAsset",
+			"domain": "generic",
 			"data": {
 				"attributes": {
 					"division": {
@@ -5549,7 +5526,7 @@
 							}
 						}
 					],
-					"skutoimage": [
+					"hasimages": [
 						{
 							"properties": {
 								"externalName": "Images",
@@ -5578,10 +5555,10 @@
 							}
 						}
 					],
-					"skutovideo": [
+					"hasvideos": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Videos",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
@@ -5607,10 +5584,10 @@
 							}
 						}
 					],
-					"skutodocument": [
+					"hasdocuments": [
 						{
 							"properties": {
-								"externalName": "Images",
+								"externalName": "Documents",
 								"relationshipType": "association",
 								"relatedEntityInfo": [
 									{
