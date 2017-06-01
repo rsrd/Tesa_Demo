@@ -28,7 +28,6 @@
 							"config": {
 								"components": [
 									"rock-dimension-selector",
-									"pebble-actions",
 									"rock-search-filter",
 									"rock-entity-search-grid",
 									"rock-entity-quick-manage"
@@ -285,36 +284,6 @@
 									"default": ""
 								}
 							]
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "app-reference-discovery_pebble-actions_vendor_uiConfig",
-			"name": "app-reference-discovery_pebble-actions",
-			"version": "1.0",
-			"type": "uiConfig",
-			"properties": {
-				"createdByService": "entityservice",
-				"createdBy": "user"
-			},
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"app": "app-reference-discovery",
-							"service": "_ALL",
-							"component": "pebble-actions",
-							"subComponent": "_ALL",
-							"role": "vendor"
-						},
-						"jsonData": {
-							"config": {
-								"title": "",
-								"actions": [
-								]
-							}
 						}
 					}
 				]
