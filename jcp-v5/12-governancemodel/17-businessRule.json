@@ -2527,7 +2527,7 @@
                     "definition": {
                         "values": [
                             {
-                                "value": "publishDateChanged:=HasAttributesChanged[\"lastpublishdate\"];workflowStepNPS:=IsEntityInWorkflow[\"newProductSetup\",\"newSkusToSubmit\",\"reviewAssortment\",\"assignInternalInformation\",\"provideAdditionalInfo\",\"rejectedSkus\"];workflowStepUpdate:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];IIF[publishDateChanged AND workflowStepNPS = false AND workflowStepUpdate = false,InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"],false]"
+                                "value": "publishDateChanged:=HasAttributesChanged[\"lastpublishdate\"];workflowStepNPS:=IsEntityInWorkflow[\"newProductSetup\",\"newSkusToSubmit\",\"reviewAssortment\",\"assignInternalInformation\",\"provideAdditionalInfo\",\"rejectedSkus\"];workflowStepUpdate:=IsEntityInWorkflow[\"UpdateProductWorkflow\"];IIF[publishDateChanged AND workflowStepNPS = false AND workflowStepUpdate = false,InitiateExport[\"sku_Kinesis_JSON_Export_Publish\"] AND SetAttributeValue[\"lastpublishdate\",[[systemdatetime]],false]"
                             }
                         ]
                     },

@@ -119,7 +119,7 @@
 									"id": "source",
 									"title": "Source",
 									"icon": "pebble-lg-icons:Source",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -152,7 +152,7 @@
 									"id": "locale",
 									"title": "Locale",
 									"icon": "pebble-lg-icons:Language",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -398,40 +398,9 @@
 									]
 								},
 								"summaryToFix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
+										
 									]
 								},
 								"assignmentActionsConfig": [{
@@ -1082,243 +1051,7 @@
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"productPresentationToLot": {
-										"gridConfig": {
-											"viewMode": "Tabular",
-											"mode": "Read",
-											"title": "Product Presentation To Lot",
-											"schemaType": "colModel",
-											"statusEnabled": true,
-											"tabular": {
-												"settings": {
-													"isMultiSelect": true,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Related Entity",
-														"name": "Related Entity",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false,
-														"readOnly": true,
-														"linkTemplate": "entity-manage?id={id}&type={type}"
-													},
-													{
-														"header": "Link Description",
-														"name": "linkDescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Status",
-														"name": "status",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Enabled",
-														"name": "enabled",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Display Name",
-														"name": "displayName",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
-													},
-													{
-														"header": "Description",
-														"name": "description",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
-													}
-												]
-											},
-											"toolbarConfig": {
-												"buttonItems": [
-													{
-														"buttons": [
-															{
-																"name": "pageRange",
-																"icon": "",
-																"text": "0 - 0 / 0",
-																"visible": true,
-																"tooltip": "Page Range"
-															},
-															{
-																"name": "refresh",
-																"icon": "pebble-md-icons:ToolbarRefresh",
-																"text": "",
-																"visible": true,
-																"tooltip": "Refresh"
-															},
-															{
-																"name": "edit",
-																"icon": "pebble-md-icons:Edit",
-																"text": "",
-																"visible": true,
-																"tooltip": "Edit"
-															},
-															{
-																"name": "download",
-																"icon": "pebble-md-icons:Import",
-																"text": "",
-																"visible": false,
-																"tooltip": "Download"
-															},
-															{
-																"name": "upload",
-																"icon": "pebble-md-icons:Upload",
-																"text": "",
-																"visible": false,
-																"tooltip": "Upload"
-															}
-														]
-													}
-												]
-											}
-										},
-										"addRelLovConfig": {
-											"idField": "id",
-											"titlePattern": "id"
-										}
-									},
-									"ischildof": {
-										"gridConfig": {
-											"viewMode": "Tabular",
-											"mode": "Read",
-											"title": "Is Child Of",
-											"schemaType": "colModel",
-											"statusEnabled": true,
-											"tabular": {
-												"settings": {
-													"isMultiSelect": true,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Related Entity",
-														"name": "Related Entity",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": false,
-														"linkTemplate": "entity-manage?id={id}&type={type}"
-													},
-													{
-														"header": "Link Description",
-														"name": "linkDescription",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Enabled",
-														"name": "enabled",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "SKU Number",
-														"name": "skuNumber",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
-													},
-													{
-														"header": "Display Name",
-														"name": "displayName",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
-													}
-												]
-											},
-											"toolbarConfig": {
-												"buttonItems": [
-													{
-														"buttons": [
-															{
-																"name": "pageRange",
-																"icon": "",
-																"text": "0 - 0 / 0",
-																"visible": true,
-																"tooltip": "Page Range"
-															},
-															{
-																"name": "refresh",
-																"icon": "pebble-md-icons:ToolbarRefresh",
-																"text": "",
-																"visible": true,
-																"tooltip": "Refresh"
-															},
-															{
-																"name": "edit",
-																"icon": "pebble-md-icons:Edit",
-																"text": "",
-																"visible": true,
-																"tooltip": "Edit"
-															},
-															{
-																"name": "download",
-																"icon": "pebble-md-icons:Import",
-																"text": "",
-																"visible": true,
-																"tooltip": "Download"
-															},
-															{
-																"name": "upload",
-																"icon": "pebble-md-icons:Upload",
-																"text": "",
-																"visible": true,
-																"tooltip": "Upload"
-															}
-														]
-													}
-												]
-											}
-										},
-										"addRelLovConfig": {
-											"idField": "id",
-											"titlePattern": "id"
-										}
-									},
-									"skuToImage": {
+									"hasimages": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
@@ -1372,105 +1105,8 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
-														"header": "Display Name",
-														"name": "displayname",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
-													}
-												]
-											},
-											"toolbarConfig": {
-												"buttonItems": [
-													{
-														"buttons": [
-															{
-																"name": "pageRange",
-																"icon": "",
-																"text": "0 - 0 / 0",
-																"visible": true,
-																"tooltip": "Page Range"
-															},
-															{
-																"name": "refresh",
-																"icon": "pebble-md-icons:ToolbarRefresh",
-																"text": "",
-																"visible": true,
-																"tooltip": "Refresh"
-															},
-															{
-																"name": "edit",
-																"icon": "pebble-md-icons:Edit",
-																"text": "",
-																"visible": true,
-																"tooltip": "Edit"
-															},
-															{
-																"name": "download",
-																"icon": "pebble-md-icons:Import",
-																"text": "",
-																"visible": true,
-																"tooltip": "Download"
-															},
-															{
-																"name": "upload",
-																"icon": "pebble-md-icons:Upload",
-																"text": "",
-																"visible": true,
-																"tooltip": "Upload"
-															}
-														]
-													}
-												]
-											}
-										},
-										"addRelLovConfig": {
-											"idField": "id",
-											"titlePattern": "id"
-										}
-									},
-									"productPresentationToImage": {
-										"gridConfig": {
-											"viewMode": "Tabular",
-											"mode": "Read",
-											"title": "Product Presentation To Image",
-											"schemaType": "colModel",
-											"statusEnabled": true,
-											"tabular": {
-												"settings": {
-													"isMultiSelect": true,
-													"actions": [
-														{
-															"name": "delete",
-															"icon": "pebble-icons:Delete",
-															"eventName": "delete-item"
-														}
-													]
-												},
-												"columns": [
-													{
-														"header": "Related Entity",
-														"name": "Related Entity",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": false,
-														"linkTemplate": "entity-manage?id={id}&type={type}"
-													},
-													{
-														"header": "Status",
-														"name": "status",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "Descriptioin",
-														"name": "discription",
+														"header": "Product Title",
+														"name": "producttitle",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
