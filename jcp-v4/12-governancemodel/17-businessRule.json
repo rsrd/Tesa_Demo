@@ -2703,6 +2703,77 @@
 					}
 				}
 			}
+		},
+		{
+			"id": "resumeWorkFlowNewSkusToSubmitIfVendorFilled_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Resume the WF newSkusToSubmit step when vendor provided attributes"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Resume the WF newSkusToSubmit step when vendor provided attributes"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "asynconly"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\", \"newSkusToSubmit\"] AND ValidateEmptyAttributes[\"itemtype\",\"vpn\",\"colordesc\",\"skusize\",\"cost\",\"producttitle\",\"suppliernumbername\",\"length\",\"shippingwidth\",\"height\",\"grossweight\",\"prop65indicator\",\"hazmatflag\",\"shippointcity\",\"shippointstate\",\"msrp\"]=false,ResumeWorkflow[\"newProductSetup\", \"newSkusToSubmit\", \"Submit\"],false]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
 		}
 	]
 }
