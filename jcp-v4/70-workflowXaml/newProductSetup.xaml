@@ -60,7 +60,7 @@
                     <av:PointCollection x:Key="Approve AssortmentConnector">465,281.75 310,281.75 310,319</av:PointCollection>
                     <av:PointCollection x:Key="RejectConnector">535,238.25 680,238.25 680,201</av:PointCollection>
                     <av:PointCollection x:Key="ResubmitConnector">465,260 170,260 170,180 200,180</av:PointCollection>
-                    <av:PointCollection x:Key="ApproveConnector">517.5,303.5 517.5,390 410,390</av:PointCollection>
+                    <av:PointCollection x:Key="ApproveConnector">517.5,303.5 517.5,440 410,440</av:PointCollection>
                     <av:PointCollection x:Key="Request InfoConnector">482.5,216.5 482.5,190.5 463,190.5 463,120 520,120</av:PointCollection>
                   </scg3:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -99,34 +99,15 @@
                     <x:Reference>__ReferenceID1</x:Reference>
                   </FlowStep.Next>
                 </FlowStep>
-                <FlowStep x:Key="Approve Assortment" x:Name="__ReferenceID3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg3:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">210,319</av:Point>
-                      <av:Size x:Key="ShapeSize">200,22</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">410,330 482.5,330 482.5,303.5</av:PointCollection>
-                    </scg3:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedUsers="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional,;Request Info,Mandatory,;Reject,Mandatory," AllowedRoles="business" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Assign Internal attributes and Group non-automatically created Lots, Product Presentations and Ensembles" DisplayName="assignInternalInformation" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="a7a194fa-1622-4182-896e-faf401c515ca" NotifyAllAssignedUsers="False" NotifyUser="False">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg3:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </mwac:HumanWork>
-                  <FlowStep.Next>
-                    <x:Reference>__ReferenceID1</x:Reference>
-                  </FlowStep.Next>
-                </FlowStep>
                 <FlowStep x:Key="Approve" x:Name="__ReferenceID7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg3:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">210,379</av:Point>
+                      <av:Point x:Key="ShapeLocation">210,429</av:Point>
                       <av:Size x:Key="ShapeSize">200,22</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">310,401 310,439</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">310,451 310,489</av:PointCollection>
                     </scg3:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <mwac:InitiateExport Description="Publish to RMS for IDs" DisplayName="publishToRmsForIds" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="d1873d7d-bb26-42fa-8dd5-17c8cdf1ff1a">
+                  <mwac:InitiateExport Actions="{x:Null}" Description="Publish to RMS for IDs" DisplayName="publishToRmsForIds" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="d1873d7d-bb26-42fa-8dd5-17c8cdf1ff1a">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,9 +118,9 @@
                     <FlowStep x:Name="__ReferenceID8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg3:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">210,439</av:Point>
+                          <av:Point x:Key="ShapeLocation">210,489</av:Point>
                           <av:Size x:Key="ShapeSize">200,22</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">310,461 310,509</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">310,511 310,549</av:PointCollection>
                         </scg3:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedUsers="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Done,None," AllowedRoles="admin" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" DisplayName="waitingForRms" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="a3e0a553-6c83-4b7b-b714-6b23855175d3" NotifyAllAssignedUsers="False" NotifyUser="False">
@@ -153,11 +134,11 @@
                         <FlowStep x:Name="__ReferenceID6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg3:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">210,509</av:Point>
+                              <av:Point x:Key="ShapeLocation">210,549</av:Point>
                               <av:Size x:Key="ShapeSize">200,22</av:Size>
                             </scg3:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <mwac:InitiateExport Description="{x:Null}" DisplayName="publish" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="0421dfcd-92f0-40d9-9545-cfeec4f88c22">
+                          <mwac:InitiateExport Actions="{x:Null}" Description="{x:Null}" DisplayName="publish" ExportProfileNames="sku_Kinesis_JSON_Export_Publish" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="0421dfcd-92f0-40d9-9545-cfeec4f88c22">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg3:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,6 +146,43 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </mwac:InitiateExport>
                         </FlowStep>
+                      </FlowStep.Next>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+                <FlowStep x:Key="Approve Assortment" x:Name="__ReferenceID9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">210,319</av:Point>
+                      <av:Size x:Key="ShapeSize">200,22</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">310,341 310,379</av:PointCollection>
+                    </scg3:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedUsers="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" DefaultActionForSkipCriteria="{x:Null}" Description="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Done,None," AllowedRoles="admin" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DelegationAllowed="True" DisplayName="autoCreateLotsAndPPs" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="6e507ff4-e7ef-4ad6-87ae-4288d3a0cef2" NotifyAllAssignedUsers="False" NotifyUser="False">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg3:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </mwac:HumanWork>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">210,379</av:Point>
+                          <av:Size x:Key="ShapeSize">200,22</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">410,390 482.5,390 482.5,303.5</av:PointCollection>
+                        </scg3:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <mwac:HumanWork AlertUserAfter="{x:Null}" AllowedUsers="{x:Null}" AssignedUser="{x:Null}" AssignmentBusinessRuleAssemblyName="{x:Null}" AssignmentBusinessRuleTypeName="{x:Null}" EscalateToManagerAfter="{x:Null}" EscalationDuration="{x:Null}" MessageTemplate="{x:Null}" MoveToUnassignedPoolAfter="{x:Null}" Actions="Approve,Optional,;Request Info,Mandatory,;Reject,Mandatory," AllowedRoles="business" AssignToPreviousActorOnRerun="True" AssignmentType="Queue" Assignment_Type="Queue" DefaultActionForSkipCriteria="Approve" DelegationAllowed="True" Description="Assign Internal attributes and Group non-automatically created Lots, Product Presentations and Ensembles" DisplayName="assignInternalInformation" DisplayOrder="0" DisplayOtherUsersEntities="False" DisplayUnassignedEntities="True" EnableEscalation="False" sap:VirtualizedContainerService.HintSize="200,22" IsHumanActivity="True" MDMActionContext="[MDMActionContext]" MDMDataContext="[MDMDataContext]" Name="a7a194fa-1622-4182-896e-faf401c515ca" NotifyAllAssignedUsers="False" NotifyUser="False">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg3:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </mwac:HumanWork>
+                      <FlowStep.Next>
+                        <x:Reference>__ReferenceID1</x:Reference>
                       </FlowStep.Next>
                     </FlowStep>
                   </FlowStep.Next>
@@ -184,5 +202,6 @@
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
+    <x:Reference>__ReferenceID9</x:Reference>
   </Flowchart>
 </Activity>
