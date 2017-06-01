@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_sku_admin_uiConfig",
+			"id": "app-business-function_components-list_document_admin_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -42,7 +42,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_create-entity_sku_admin_uiConfig",
+			"id": "app-business-function_create-entity_document_admin_uiConfig",
 			"name": "app-business-function_create-entity",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -58,7 +58,7 @@
 							"service": "_ALL",
 							"component": "create-entity",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -73,6 +73,8 @@
 											"name": "rock-entity-create",
 											"path": "/../../src/elements/rock-entity-create/rock-entity-create.html",
 											"properties": {
+												"import-profile-name": "document_Folder_Excel_Import_Transform",
+												"process-profile-name": "document_Folder_Excel_Import_Process",
 												"message-code-mapping": {
 													"Req001": "Required",
 													"MinLen001": "MIN_LENGTH",
@@ -91,19 +93,29 @@
 													"133312": "Width should be less than Length"
 												},
 												"attribute-names": [
-													"identifier",
-													"primaryupc",
-													"primaryvpn",
-													"shortdescription",
-													"createdate",
-													"departmentdescription",
-													"classdescription",
-													"subclassdescription",
-													"islocked"
+													"id",
+													"about",
+													"description",
+													"comment",
+													"headline",
+													"creator",
+													"artist",
+													"datecreated",
+													"encodingprocess",
+													"filetype",
+													"filetypeextension",
+													"filesource",
+													"filesize",
+													"suppliernumbername",
+													"thumbnail",
+													"thumbnailid"
 												]
 											}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},
@@ -114,11 +126,13 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy":"productclasshierarchy",
+												"taxonomy": "productsetuptaxonomy",
 												"business-function-data": {}
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"skipEvent": "onSkip"
 									},
@@ -141,7 +155,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_sku_admin_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_document_admin_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -157,7 +171,7 @@
 							"service": "_ALL",
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -237,17 +251,17 @@
 											]
 										},
 										{
-											"entityType": "sku",
+											"entityType": "document",
 											"index": 2,
 											"dimensions": [
 												{
 													"sourceAttribute": "primarySizes",
-													"targetAttribute": "skuSize1",
+													"targetAttribute": "documentSize1",
 													"optional": false
 												},
 												{
 													"sourceAttribute": "secondarySizes",
-													"targetAttribute": "skuSize2",
+													"targetAttribute": "documentSize2",
 													"optional": false
 												}
 											]
@@ -272,7 +286,7 @@
 									"steps": [
 										{
 											"name": "step-1-selection-option",
-											"label": "Select Options to create Skus",
+											"label": "Select Options to create documents",
 											"component": {
 												"name": "rock-variants-option-select",
 												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
@@ -301,7 +315,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_extension-manage_sku_admin_uiConfig",
+			"id": "app-business-function_extension-manage_document_admin_uiConfig",
 			"name": "app-business-function_extension-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -317,7 +331,7 @@
 							"service": "_ALL",
 							"component": "extension-manage",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -344,7 +358,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-model_sku_admin_uiConfig",
+			"id": "app-business-function_upload-model_document_admin_uiConfig",
 			"name": "app-business-function_upload-model",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -360,7 +374,7 @@
 							"service": "_ALL",
 							"component": "upload-model",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -378,7 +392,9 @@
 												"import-profile-name": "datamodel_Profile_01"
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onNext"
 									},
 									{
@@ -400,7 +416,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-assets_sku_admin_uiConfig",
+			"id": "app-business-function_upload-assets_document_admin_uiConfig",
 			"name": "app-business-function_upload-assets",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -416,7 +432,7 @@
 							"service": "_ALL",
 							"component": "upload-assets",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -434,7 +450,10 @@
 												"import-profile-name": "imageMetadataConfig"
 											}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},
@@ -457,7 +476,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-excel_sku_admin_uiConfig",
+			"id": "app-business-function_upload-excel_document_admin_uiConfig",
 			"name": "app-business-function_upload-excel",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -473,7 +492,7 @@
 							"service": "_ALL",
 							"component": "upload-excel",
 							"subComponent": "_ALL",
-							"entityType": "sku",
+							"entityType": "document",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -491,7 +510,7 @@
 										"sharedProperties": {
 											"business-function-data": "businessFunctionData"
 										},
-										"nextEvent": "onSave"
+										"nextEvent": "onNext"
 									},
 									{
 										"name": "Entities uploaded successfully.",
