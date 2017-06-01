@@ -685,6 +685,53 @@
                   ]
                 }
               }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_lotSequenceGroupId_businessRule",
+              "relTo": {
+                "id": "lotSequenceGroupId_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "10"
+                    }
+                  ]
+                }
+               
+              }
             }
           ],
           "hasBusinessConditions": [
@@ -1199,9 +1246,6 @@
                     },
                     "activityCriteria": {
                       "values": [
-                        {
-                          "value": "skipCriteria"
-                        },
                         {
                           "value": "exitCriteria"
                         },
@@ -1878,6 +1922,126 @@
                       "values": [
                         {
                           "value": "assignInternalInformation"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessRules_SendEntityForGraphProcessing_businessRule",
+                  "relTo": {
+                    "id": "SendEntityForGraphProcessing_businessRule",
+                    "type": "businessRule"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "any"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "3"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "autoCreateLotsAndPPs"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "direction": "both",
+                  "relationshipType": "association",
+                  "id": "hasBusinessRules_resumeWorkFlowNewSkusToSubmitIfVendorFilled_businessRule",
+                  "relTo": {
+                    "id": "resumeWorkFlowNewSkusToSubmitIfVendorFilled_businessRule",
+                    "type": "businessRule"
+                  },
+                  "attributes": {
+                    "ignoreChangeContext": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "isDeleted": {
+                      "values": [
+                        {
+                          "value": "false"
+                        }
+                      ]
+                    },
+                    "enabled": {
+                      "values": [
+                        {
+                          "value": "true"
+                        }
+                      ]
+                    },
+                    "executionMode": {
+                      "values": [
+                        {
+                          "value": "asynconly"
+                        }
+                      ]
+                    },
+                    "executionOrder": {
+                      "values": [
+                        {
+                          "value": "100"
+                        }
+                      ]
+                    },
+                    "activityCriteria": {
+                      "values": [
+                        {
+                          "value": "async"
+                        }
+                      ]
+                    },
+                    "stepName": {
+                      "values": [
+                        {
+                          "value": "newSkusToSubmit"
                         }
                       ]
                     }

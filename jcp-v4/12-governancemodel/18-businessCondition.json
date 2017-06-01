@@ -67,6 +67,19 @@
               }
             ]
           },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "buyer"
+              },
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              }
+              ]
+          },
           "impactAttributes": {
             "values": [
               {
@@ -194,6 +207,19 @@
               }
             ]
           },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "buyer"
+              },
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              }
+              ]
+          },
           "impactAttributes": {
             "values": [
               {
@@ -311,6 +337,22 @@
                 "value": "false"
               }
             ]
+          },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "buyer"
+              },
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              },
+              {
+                "value": "vendor"
+              }
+              ]
           },
           "impactAttributes": {
             "values": [
@@ -447,6 +489,19 @@
                 "value": "false"
               }
             ]
+          },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "buyer"
+              },
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              }
+              ]
           },
           "impactAttributes": {
             "values": [
@@ -732,6 +787,22 @@
               }
             ]
           },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "vendor"
+              },
+              {
+                "value": "buyer"
+              },
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              }
+              ]
+          },
           "impactAttributes": {
             "values": [
               {
@@ -910,6 +981,14 @@
                 "value": "false"
               }
             ]
+          },
+          ,
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "admin"
+              }
+              ]
           }
         },
         "relationships": {
@@ -1331,6 +1410,16 @@
               }
             ]
           },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              }
+              ]
+          },
           "impactAttributes": {
             "values": [
               {
@@ -1436,6 +1525,19 @@
                 "value": "false"
               }
             ]
+          },
+          "impactedRoles": {
+            "values": [
+              {
+                "value": "business"
+              },
+              {
+                "value": "admin"
+              },
+              {
+                "value": "assetenrightment" 
+              }
+              ]
           }
         },
         "relationships": {
