@@ -1,18 +1,19 @@
 {
-    "metaInfo": {
-        "dataIndex": "entityModel",
-        "collectionName": "entityModels",
-        "responseObjectName": "entityModelOperationResponse"
-    },
-    "entityModels": [
-        {
-            "id": "default",
-            "name": "default",
-            "type": "source",
-            "properties": {
-                "externalName": "Default source",
-                "description": "Internal source"
-            }
-        }
-    ]
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "entityModelOperationResponse"
+   },
+   "entityModels": [
+      {
+         "id": "internal_source",
+         "name": "internal",
+         "domain": "generic",
+         "type": "source",
+         "properties": {
+            "externalName": "Internal source",
+            "description": "Internal source"
+         }
+      }
+   ]
 }

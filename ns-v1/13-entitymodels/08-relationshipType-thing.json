@@ -1,0 +1,201 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "componentsku_relationshipModel",
+			"name": "componentsku",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Component SKU"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "setpackassociation_relationshipModel",
+			"name": "setpackassociation",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Set Pack Association"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "packupcassociation_relationshipModel",
+			"name": "packupcassociation",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Pack UPC Association"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "suppliervpn_relationshipModel",
+			"name": "suppliervpn",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Supplier VPN"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "stylelabel_relationshipModel",
+			"name": "stylelabel",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Style Label"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "labelbrand_relationshipModel",
+			"name": "labelbrand",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Label Brand"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "productgroupassociation_relationshipModel",
+			"name": "productgroupassociation",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Product Group Association"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "supplierupc_relationshipModel",
+			"name": "supplierupc",
+			"type": "relationshipModel",
+			"domain": "thing",
+			"properties": {
+				"externalName": "Supplier UPC"
+			},
+			"data": {
+				"relationships": {
+					"listedUnder": [
+						{
+							"id": "",
+							"direction": "both",
+							"relationshipType": "aggregation",
+							"relTo": {
+								"id": "thingdomainrelationshipmodels",
+								"type": "list"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

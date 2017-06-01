@@ -6,15 +6,12 @@
 	},
 	"entities": [
 		{
-			"id": "ADT_agegroup",
+			"id": "adt_agegroup",
 			"name": "ADT",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -28,6 +25,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "Adult",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "Adult",
@@ -58,15 +64,12 @@
 			}
 		},
 		{
-			"id": "INF_agegroup",
+			"id": "inf_agegroup",
 			"name": "INF",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -80,6 +83,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "Infant",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "Infant",
@@ -110,15 +122,12 @@
 			}
 		},
 		{
-			"id": "NON_agegroup",
+			"id": "non_agegroup",
 			"name": "NON",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -132,6 +141,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "No Age",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "No Age",
@@ -162,15 +180,12 @@
 			}
 		},
 		{
-			"id": "TEE_agegroup",
+			"id": "tee_agegroup",
 			"name": "TEE",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -184,6 +199,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "Teen",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "Teen",
@@ -214,15 +238,12 @@
 			}
 		},
 		{
-			"id": "TOD_agegroup",
+			"id": "tod_agegroup",
 			"name": "TOD",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -236,6 +257,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "Toddler",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "Toddler",
@@ -266,15 +296,12 @@
 			}
 		},
 		{
-			"id": "YTH_agegroup",
+			"id": "yth_agegroup",
 			"name": "YTH",
 			"type": "agegroup",
 			"domain": "referenceData",
 			"properties": {
-				"source": "internal",
-				"modifiedByService": "entityservice",
-				"modifiedBy": "initLoad",
-				"modifiedDate": "6/1/2017  00:00:00 AM"
+				"source": "internal"
 			},
 			"data": {
 				"attributes": {
@@ -288,6 +315,15 @@
 						]
 					},
 					"description": {
+						"values": [
+							{
+								"value": "Youth",
+								"source": "internal",
+								"locale": "en-US"
+							}
+						]
+					},
+					"externalName": {
 						"values": [
 							{
 								"value": "Youth",

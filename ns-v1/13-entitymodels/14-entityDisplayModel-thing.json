@@ -1,0 +1,7694 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "item_entityDisplayModel",
+			"name": "item",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"additionalupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"careinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"concessionname": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerdeliveryrule": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customermaxorderqty": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"customizationrequired": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"customizationtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"donotsellreason": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"estimatedmarkdowndate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"excludefromdiscount": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fairmarketvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"firstreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"fulfillmenttypeassignment": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ismerchandise": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"issample": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemtktoverpct": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"itemtktprintpochg": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"lastreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastsolddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"livedate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"nordstromlabelind": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"primaryupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primaryvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"rmsskuid": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"promotionalproduct": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"initialredemptionpointsvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"returnsdisposition": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"rmscolorid": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"serviceaddons": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"srvctargetuseapplication": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"taxexempt": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ticketitemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"tickettype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"tickettypepoprinttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"typeofdeposit": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"typeoffee": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"typeofnoninvtmerchandise": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"typeofservice": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"itemtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"webhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarywebhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"supplierupc": [
+						{
+							"properties": {
+								"externalName": "Supplier UPC",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "upc"
+									}
+								]
+							},
+							"attributes": {
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"supplier": {
+									"properties": {
+										"externalName": "supplier",
+										"displayType": "TextBox"
+									}
+								},
+								"manufacturer": {
+									"properties": {
+										"externalName": "manufacturer",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"suppliervpn": [
+						{
+							"properties": {
+								"externalName": "Supplier VPN",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "supplier"
+									}
+								]
+							},
+							"attributes": {
+								"primaryorigincountry": {
+									"properties": {
+										"externalName": "primaryorigincountry",
+										"displayType": "TextBox"
+									}
+								},
+								"pointoforigincode": {
+									"properties": {
+										"externalName": "pointoforigincode",
+										"displayType": "TextBox"
+									}
+								},
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"productcontainertype": {
+									"properties": {
+										"externalName": "Product Container Type",
+										"displayType": "ReferenceList",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.name}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								},
+								"unitcostsupplier": {
+									"properties": {
+										"externalName": "unitcostsupplier",
+										"displayType": "TextBox"
+									}
+								},
+								"vpn": {
+									"properties": {
+										"externalName": "VPN",
+										"displayType": "TextBox"
+									}
+								},
+								"vpndescription": {
+									"properties": {
+										"externalName": "VPN Description",
+										"displayType": "TextBox"
+									}
+								},
+								"dropshipindicator": {
+									"properties": {
+										"externalName": "dropshipindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"itemsupplierrtvindicator": {
+									"properties": {
+										"externalName": "itemsupplierrtvindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"leadtime": {
+									"properties": {
+										"externalName": "leadtime",
+										"displayType": "TextBox"
+									}
+								},
+								"maximumorderquantity": {
+									"properties": {
+										"externalName": "maximumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"minimumorderquantity": {
+									"properties": {
+										"externalName": "minimumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"msrp": {
+									"properties": {
+										"externalName": "MSRP",
+										"displayType": "NumericTextBox"
+									}
+								},
+								"ordermultiplenumber": {
+									"properties": {
+										"externalName": "ordermultiplenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"countriesofmanufacture": {
+									"properties": {
+										"externalName": "countriesofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"origincountries": {
+									"properties": {
+										"externalName": "origincountries",
+										"displayType": "TextBox"
+									}
+								},
+								"primarycountryofmanufacture": {
+									"properties": {
+										"externalName": "primarycountryofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"vendorrole": {
+									"properties": {
+										"externalName": "vendorrole",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "productlabel_entityDisplayModel",
+			"name": "productlabel",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"isproductlabelactive": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"nordstromlabelind": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"labelbrand": [
+						{
+							"properties": {
+								"externalName": "Label Brand",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "productbrand"
+									}
+								]
+							},
+							"attributes": {
+								"longdescription": {
+									"properties": {
+										"externalName": "Long Description",
+										"displayType": "TextArea"
+									}
+								},
+								"shortdescription": {
+									"properties": {
+										"externalName": "Short Description",
+										"displayType": "TextBox"
+									}
+								},
+								"productbrandinformation": {
+									"properties": {
+										"externalName": "Product Brand Information",
+										"displayType": "TextArea"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "setpack_entityDisplayModel",
+			"name": "setpack",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"additionalupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"aggregateitemselltype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"careinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"customerdeliveryrule": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customermaxorderqty": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"dryinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"donotsellreason": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"estimatedmarkdowndate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"excludefromdiscount": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fragile": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fulfillmenttypeassignment": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ismerchandise": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"issample": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemtktoverpct": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"itemtktprintpochg": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"lastsolddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"livedate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"nordstrombrandind": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"nordstromlabelind": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"phexclude": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"phsurcharge": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"packitemquantity": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"packingmethod": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"primaryupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productcontainertype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productorigintype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"promotionalproduct": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"returnsdisposition": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingstatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"taxexempt": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"washinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"webhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarywebhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"setpackassociation": [
+						{
+							"properties": {
+								"externalName": "Set Pack Association",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "sku"
+									}
+								]
+							},
+							"attributes": {
+								"itemperpackquantity": {
+									"properties": {
+										"externalName": "itemperpackquantity",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"supplierupc": [
+						{
+							"properties": {
+								"externalName": "Supplier UPC",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "upc"
+									}
+								]
+							},
+							"attributes": {
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"supplier": {
+									"properties": {
+										"externalName": "supplier",
+										"displayType": "TextBox"
+									}
+								},
+								"manufacturer": {
+									"properties": {
+										"externalName": "manufacturer",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "upc_entityDisplayModel",
+			"name": "upc",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"catalogprovider": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"catalogresponse": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"requestsource": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"selectioncode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"selectiondescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediupctype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edicomponentstandarduom": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"canceldatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"changedatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"consumeritemheightcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"consumeritemlengthcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"consumeritemwidthcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"innerpackquantity": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"discontinuedatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"externalupcindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"edipointoforigincode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edileadtimeuom": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edicomponentrelationcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediitemperpackquantity": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"edileadtime": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"edimaximumorderquantity": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediminimumorderquantity": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edimsrp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edinrfcolorcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediordermultiplenumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"reinstatementdatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"shipcartondimensionuomcatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"shipcartonheightcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shipcartonlengthcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shipcartonweightcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shipcartonweightuomcatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"shipcartonwidthcatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercolordesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersizedesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediunitcost": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"upcsupplement": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"upctype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"componentstduomcatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edivpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edivpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfsizecodecatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"edisupplier": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediproductlabel": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edicurrency": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediorigincountry": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edishipcartondimuom": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edishipcartonweightuom": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edisizestandard": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "packupc_entityDisplayModel",
+			"name": "packupc",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"canceldatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"changedatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"discontinuedatecatalog": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercolordesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersizedesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"upcsupplement": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"upctype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"catalogprovider": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"catalogresponse": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edivpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"selectioncode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfcolorcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfsizecode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"edivpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"selectiondescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"requestsource": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfsizecodecatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ediupctype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediupctypepack": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ediupctypecomponent": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"packupcassociation": [
+						{
+							"properties": {
+								"externalName": "Pack UPC Association",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "upc"
+									}
+								]
+							},
+							"attributes": {
+								"itemperpackquantity": {
+									"properties": {
+										"externalName": "itemperpackquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"componentsequencenumber": {
+									"properties": {
+										"externalName": "componentsequencenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"componentuom": {
+									"properties": {
+										"externalName": "componentuom",
+										"displayType": "TextBox"
+									}
+								},
+								"componentrelationcode": {
+									"properties": {
+										"externalName": "componentrelationcode",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "presku_entityDisplayModel",
+			"name": "presku",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"forcecreate": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"businessneedbydate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"itemsetuppriority": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"upcgenerate": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"applicationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"usfpforecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usfpitemplanningindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usfprelenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usopforecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usopitemplanningindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usopreplenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"usreservestockindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"epmskuid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"epmstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"color": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"colorfamily": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"nordstromdisplaycolor": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfcolorcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercolordesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersize1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersize2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vpedinrfsizecode": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"vpsizerange": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"class": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"department": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclass": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"corppriceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"corpstyleplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"npgrsrpmanufacturer": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"casetupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"casetupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"ussetupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"ussetupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"camsrp": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productlabel": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"vpsellingmarket": {
+						"properties": {
+							"displayType": "dropdown",
+							"displaySequence": ""
+						}
+					},
+					"specialtreatmenttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"usmsrp": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"externalsystemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"cacountryofmanufacture": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"camanufacturer": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"caordermultiplenumber": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"caorigincountry": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"casupplier": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"uscountryofmanufacture": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"usmanufacturer": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"usordermultiplenumber": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"usorigincountry": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"ussupplier": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"vpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"caupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"fulfillmenttypeassignment": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hangertype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"packingmethod": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"tickettype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"usupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"errordescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"lastupdatedby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdateddate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"requesteddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"status": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"submitteddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"preskuid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"assignto": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"assigndate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"state": {
+						"properties": {
+							"displayType": "dropdown",
+							"displaySequence": ""
+						}
+					},
+					"departmentclasssubclass": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productsourceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "manufacturer_entityDisplayModel",
+			"name": "manufacturer",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"datasource": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"manufacturername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"manufacturernumber": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"manufacturerstatus": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vendorprovidername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vendorprovidernumber": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"vendorinvoicecurrency": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "customerchoice_entityDisplayModel",
+			"name": "customerchoice",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"businessneedbydate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"applicationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textcolor": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeliveryplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptcolorplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptstyleplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textfabricationplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textgenderplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textgendersizeplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textitemcategoryplannin": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textproductsourceplanni": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textshadeplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"texttoneplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textturnoverevent": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingmarket": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shipalone": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"additionalvariation": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"material": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"exclusivity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"warningsdisclaimers": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productlifecyclestatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"webcolor": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"uniqueproductdistinctions": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"relationshipexporttriggertimestampatcustomerchoice": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"charactername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"teamname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"commonaliases": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"systemexporttriggertimestamp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"customerplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerassortmentplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"occasionplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"relationshipexporttriggertimestampatstyle": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"isuvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"isuvpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"customerchoice": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdatedby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"correlationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarysupplier": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdateddate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"chokehazard": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"externalsystemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ripindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"reservestockindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"apindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opforecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"forecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"replenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opitemplanningindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opreplenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"msrp": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"bindingruling": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"careinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"color": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"colorfamily": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerdeliveryrule": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customermaxorderqty": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"customizationrequired": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"customizationtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customsdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"deliveryplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"deptcolorplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hts1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"deptstyleplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"dryinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"displaysequence": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"donotsellreason": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"estimatedmarkdowndate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"excludefromdiscount": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fabricationplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"fairmarketvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"finish": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"firstreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"fishandwildlife": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"foodanddrug": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fragile": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"hts2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"genderplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"gendersizeplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hts3": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hts4": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ismerchandise": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"issample": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemcategoryplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"itemtktoverpct": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"itemtktprintpochg": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemweight": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"lastreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastsolddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"licensedproducttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"livedate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"metal": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"stone": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"materialcountryoforigin": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"nordstromdisplaycolor": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"npgdevelopmentstyle": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"npgsourcingcategory": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"nrfcolorcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"packingmethod": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"pattern": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"primaryvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productcountryoforigin": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productimageurl": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productorigintype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productsourceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"promotionalproduct": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"initialredemptionpointsvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"rgbcolorbluevalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"rgbcolorgreenvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"rgbcolorredvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstylegroupid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"senttobroker": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shadeplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizerange": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ticketitemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"tickettype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"tickettypepoprinttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"toneplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"turnoverevent": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"umap": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"washinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"webhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarywebhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"exporttriggertimestamp": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"suppliervpn": [
+						{
+							"properties": {
+								"externalName": "Supplier VPN",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "supplier"
+									}
+								]
+							},
+							"attributes": {
+								"primaryorigincountry": {
+									"properties": {
+										"externalName": "primaryorigincountry",
+										"displayType": "TextBox"
+									}
+								},
+								"pointoforigincode": {
+									"properties": {
+										"externalName": "pointoforigincode",
+										"displayType": "TextBox"
+									}
+								},
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"productcontainertype": {
+									"properties": {
+										"externalName": "Product Container Type",
+										"displayType": "ReferenceList",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.name}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								},
+								"unitcostsupplier": {
+									"properties": {
+										"externalName": "unitcostsupplier",
+										"displayType": "TextBox"
+									}
+								},
+								"vpn": {
+									"properties": {
+										"externalName": "VPN",
+										"displayType": "TextBox"
+									}
+								},
+								"vpndescription": {
+									"properties": {
+										"externalName": "VPN Description",
+										"displayType": "TextBox"
+									}
+								},
+								"dropshipindicator": {
+									"properties": {
+										"externalName": "dropshipindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"itemsupplierrtvindicator": {
+									"properties": {
+										"externalName": "itemsupplierrtvindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"leadtime": {
+									"properties": {
+										"externalName": "leadtime",
+										"displayType": "TextBox"
+									}
+								},
+								"maximumorderquantity": {
+									"properties": {
+										"externalName": "maximumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"minimumorderquantity": {
+									"properties": {
+										"externalName": "minimumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"msrp": {
+									"properties": {
+										"externalName": "MSRP",
+										"displayType": "NumericTextBox"
+									}
+								},
+								"ordermultiplenumber": {
+									"properties": {
+										"externalName": "ordermultiplenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"countriesofmanufacture": {
+									"properties": {
+										"externalName": "countriesofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"origincountries": {
+									"properties": {
+										"externalName": "origincountries",
+										"displayType": "TextBox"
+									}
+								},
+								"primarycountryofmanufacture": {
+									"properties": {
+										"externalName": "primarycountryofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"vendorrole": {
+									"properties": {
+										"externalName": "vendorrole",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "supplier_entityDisplayModel",
+			"name": "supplier",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"datasource": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"paytovendornumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"npgsupplierindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"paytovendorname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliernumber": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"supplierstatus": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vendorinvoicecurrency": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "productgroup_entityDisplayModel",
+			"name": "productgroup",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"careinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productgrouptype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"specialtreatmenttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"productgroupassociation": [
+						{
+							"properties": {
+								"externalName": "Product Group Association",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "style"
+									}
+								]
+							},
+							"attributes": {}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "casepack_entityDisplayModel",
+			"name": "casepack",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"correlationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"requestid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingmarket": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"rmsstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"packingmethod": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"rmscasepackid": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercolordesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersizedesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfcolorcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarysupplier": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdateddate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdatedby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"eligiblechannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"exporttriggertimestamp": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"additionalupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"containsinners": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"innerpacktype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"packitemquantity": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"packordertype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"primaryupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primaryvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"simplepack": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"componentsku": [
+						{
+							"properties": {
+								"externalName": "Component SKU",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "sku"
+									}
+								]
+							},
+							"attributes": {
+								"itemperpackquantity": {
+									"properties": {
+										"externalName": "itemperpackquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"componentsequencenumber": {
+									"properties": {
+										"externalName": "componentsequencenumber",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"supplierupc": [
+						{
+							"properties": {
+								"externalName": "Supplier UPC",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "upc"
+									}
+								]
+							},
+							"attributes": {
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"supplier": {
+									"properties": {
+										"externalName": "supplier",
+										"displayType": "TextBox"
+									}
+								},
+								"manufacturer": {
+									"properties": {
+										"externalName": "manufacturer",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"suppliervpn": [
+						{
+							"properties": {
+								"externalName": "Supplier VPN",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "supplier"
+									}
+								]
+							},
+							"attributes": {
+								"primaryorigincountry": {
+									"properties": {
+										"externalName": "primaryorigincountry",
+										"displayType": "TextBox"
+									}
+								},
+								"pointoforigincode": {
+									"properties": {
+										"externalName": "pointoforigincode",
+										"displayType": "TextBox"
+									}
+								},
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"productcontainertype": {
+									"properties": {
+										"externalName": "Product Container Type",
+										"displayType": "ReferenceList",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.name}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								},
+								"unitcostsupplier": {
+									"properties": {
+										"externalName": "unitcostsupplier",
+										"displayType": "TextBox"
+									}
+								},
+								"vpn": {
+									"properties": {
+										"externalName": "VPN",
+										"displayType": "TextBox"
+									}
+								},
+								"vpndescription": {
+									"properties": {
+										"externalName": "VPN Description",
+										"displayType": "TextBox"
+									}
+								},
+								"dropshipindicator": {
+									"properties": {
+										"externalName": "dropshipindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"itemsupplierrtvindicator": {
+									"properties": {
+										"externalName": "itemsupplierrtvindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"leadtime": {
+									"properties": {
+										"externalName": "leadtime",
+										"displayType": "TextBox"
+									}
+								},
+								"maximumorderquantity": {
+									"properties": {
+										"externalName": "maximumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"minimumorderquantity": {
+									"properties": {
+										"externalName": "minimumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"msrp": {
+									"properties": {
+										"externalName": "MSRP",
+										"displayType": "NumericTextBox"
+									}
+								},
+								"ordermultiplenumber": {
+									"properties": {
+										"externalName": "ordermultiplenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"countriesofmanufacture": {
+									"properties": {
+										"externalName": "countriesofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"origincountries": {
+									"properties": {
+										"externalName": "origincountries",
+										"displayType": "TextBox"
+									}
+								},
+								"primarycountryofmanufacture": {
+									"properties": {
+										"externalName": "primarycountryofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"vendorrole": {
+									"properties": {
+										"externalName": "vendorrole",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "style_entityDisplayModel",
+			"name": "style",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"agegroup": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"averagerepurchasedays": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"bindingruling": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"bottomsfitplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"careinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"corppriceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"corpstyleplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"currency": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerassortmentplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customerdeliveryrule": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customermaxorderqty": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"customizationrequired": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"customizationtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customsdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"deliveryplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"depositrange": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"deptcolorplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"deptfitplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hts1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"deptpreferenceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"deptpriceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"deptstyleplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"dryinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"donotsellreason": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eventplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"excludefromdiscount": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fabricationplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"fairmarketvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"firstreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"fishandwildlife": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fitplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"fitcategory": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"foodanddrug": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fragile": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"functionplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hts2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"gender": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"genderplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"gendersizeplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hangertype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hts3": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hts4": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ismerchandise": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"issample": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemcategoryplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"itemtktoverpct": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"itemtktprintpochg": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemweight": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"keysellingbenefits": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"lastreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastsolddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"licensedproducttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"markuppercentage": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"materialcountryoforigin": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"mixofbusinessplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"nondetailedindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"npgdevelopmentstyle": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"npgrsrpmanufacturer": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"npgsourcingcategory": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"occasionplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"phexclude": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"phsurcharge": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"packingmethod": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"primaryvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productcategoryplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productcountryoforigin": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productorigintype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productpriceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"productsourceplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"promotionalproduct": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"initialredemptionpointsvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"remindautofulfill": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"rmsstylegroupid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"senttobroker": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shadeplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"shipalone": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"silhouetteplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"sizegroup1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup3": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup3description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup1dimensiontype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup1dimensiontypdes": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup2dimensiontype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup2dimensiontypdes": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup3dimensiontype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizegroup3dimensiontypdes": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizerange": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"sizestandardcode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizestandarddescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"skintypeplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"specialtreatmenttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"supplierroleplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"taxcategory": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"taxexempt": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ticketitemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"tickettype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"tickettypepoprinttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"toneplanning": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"umap": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"washinginstructions": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"webhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarywebhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"exporttriggertimestamp": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"textproductlabel": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productlabel": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"opreplenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opitemplanningindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"replenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"forecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opforecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"apindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"reservestockindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ripindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"typeofnoninvtmerchandise": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"externalsystemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"chokehazard": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"createdate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdateddate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarysupplier": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"correlationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"forcecreate": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"lastupdatedby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"isuvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"isuvpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productlifecyclestatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"relationshipexporttriggertimestampatstyle": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"msrp": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"materialcompositionnotes": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"systemexporttriggertimestamp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"material": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"exclusivity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"isgiftwrapeligible": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"warningsdisclaimers": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"charactername": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"teamname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"uniqueproductdistinctions": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingpackcount": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"model": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"commonaliases": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"pattern": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"itemanalystlanid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"colorassignment": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"rmsexcludefromonlinepuspbopus": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"vendorfit": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingmarket": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"textnpgrsrpmanufacturer": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textprimarymanufacturer": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"filename": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"taketimestamp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"supplierhasecatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"catalogprovider": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercatalogname": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"existingvpn": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"textproductlabeldescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textbottomsfitplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textcorppriceplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textcorpstyleplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textcustomerplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textcustomerassortmentp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeliveryplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptcolorplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptfitplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptpreferenceplann": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptpriceplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textdeptstyleplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"texteventplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textfabricationplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textfitplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textfunctionplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textgenderplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textgendersizeplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textitemcategoryplannin": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textmixofbusinessplann": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textoccasionplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textproductcategoryplan": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textproductpriceplannin": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textproductsourceplanni": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textshadeplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textsilhouetteplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textskintypeplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textsupplierroleplannin": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"texttoneplanning": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"businessneedbydate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"applicationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"itemsetuppriority": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"externalupcindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"suppliervpn": [
+						{
+							"properties": {
+								"externalName": "Supplier VPN",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "supplier"
+									}
+								]
+							},
+							"attributes": {
+								"primaryorigincountry": {
+									"properties": {
+										"externalName": "primaryorigincountry",
+										"displayType": "TextBox"
+									}
+								},
+								"pointoforigincode": {
+									"properties": {
+										"externalName": "pointoforigincode",
+										"displayType": "TextBox"
+									}
+								},
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"productcontainertype": {
+									"properties": {
+										"externalName": "Product Container Type",
+										"displayType": "ReferenceList",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.name}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								},
+								"unitcostsupplier": {
+									"properties": {
+										"externalName": "unitcostsupplier",
+										"displayType": "TextBox"
+									}
+								},
+								"vpn": {
+									"properties": {
+										"externalName": "VPN",
+										"displayType": "TextBox"
+									}
+								},
+								"vpndescription": {
+									"properties": {
+										"externalName": "VPN Description",
+										"displayType": "TextBox"
+									}
+								},
+								"dropshipindicator": {
+									"properties": {
+										"externalName": "dropshipindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"itemsupplierrtvindicator": {
+									"properties": {
+										"externalName": "itemsupplierrtvindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"leadtime": {
+									"properties": {
+										"externalName": "leadtime",
+										"displayType": "TextBox"
+									}
+								},
+								"maximumorderquantity": {
+									"properties": {
+										"externalName": "maximumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"minimumorderquantity": {
+									"properties": {
+										"externalName": "minimumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"msrp": {
+									"properties": {
+										"externalName": "MSRP",
+										"displayType": "NumericTextBox"
+									}
+								},
+								"ordermultiplenumber": {
+									"properties": {
+										"externalName": "ordermultiplenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"countriesofmanufacture": {
+									"properties": {
+										"externalName": "countriesofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"origincountries": {
+									"properties": {
+										"externalName": "origincountries",
+										"displayType": "TextBox"
+									}
+								},
+								"primarycountryofmanufacture": {
+									"properties": {
+										"externalName": "primarycountryofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"vendorrole": {
+									"properties": {
+										"externalName": "vendorrole",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"stylelabel": [
+						{
+							"properties": {
+								"externalName": "Style Label",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "productlabel"
+									}
+								]
+							},
+							"attributes": {
+								"longdescription": {
+									"properties": {
+										"externalName": "Long Description",
+										"displayType": "TextArea"
+									}
+								},
+								"nordstromlabelind": {
+									"properties": {
+										"externalName": "Is Nordstrom Label",
+										"displayType": "Boolean"
+									}
+								},
+								"shortdescription": {
+									"properties": {
+										"externalName": "Short Description",
+										"displayType": "TextBox"
+									}
+								},
+								"isproductlabelactive": {
+									"properties": {
+										"externalName": "Is Product Label Active",
+										"displayType": "Boolean"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "productbrand_entityDisplayModel",
+			"name": "productbrand",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"productbrandinformation": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "category_entityDisplayModel",
+			"name": "category",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"originalgpcdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productclassificationlevel": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"averagerepurchasedays": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentbuyingtype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentstatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"departmentsubtype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmenttype": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hierarchylevel": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"markuppercentofcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"markuppercentofretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"taxcategory": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"datasource": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hierarchystatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"requestid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "sku_entityDisplayModel",
+			"name": "sku",
+			"type": "entityDisplayModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"additionalupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"customerdeliveryrule": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"customermaxorderqty": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"customizationrequired": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"customizationtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"donotsellreason": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"eligiblesellingchannels": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"estimatedmarkdowndate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"excludefromdiscount": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fairmarketvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"firstreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"fragile": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"fulfillmenttypeassignment": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hazardousmaterialclasscode": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"id": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ismerchandise": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"issample": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"itemtktoverpct": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"itemtktprintpochg": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"lastreceiveddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"lastsolddate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"livedate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"longdescription": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"nrfsizecode": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primaryupc": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primaryvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productalert": {
+						"properties": {
+							"displayType": "textarea",
+							"displaySequence": ""
+						}
+					},
+					"rmsskuid": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"promotionalproduct": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"initialredemptionpointsvalue": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"restrictintlshipping": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"returnsdisposition": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"rmscolorid": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstylegroupid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"departmentdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingstatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"setupcost": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"setupretail": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shortdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"classnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size3": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"size3description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sizedisplaysequence": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"sizerange": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"sizerangedetail": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"sizetype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"classdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliercolordesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"suppliersizedesccatalog": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"ticketitemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"tickettype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"tickettypepoprinttype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassnumber": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"uom": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"uomdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"uomclass": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"itemtype": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"subclassdescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"merchhierarchydescdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"webhierarchynumdisplay": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarywebhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarymerchhierindicator": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev1description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2number": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"producttypelev2description": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"nrfsizecodecatalog": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"nordstromsize": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"islocked": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ispublished": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"exporttriggertimestamp": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"requestid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"msrp": {
+						"properties": {
+							"displayType": "numerictextbox",
+							"displaySequence": ""
+						}
+					},
+					"shipalone": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opreplenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opitemplanningindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"replenishmentindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"forecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"opforecastindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"apindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"reservestockindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"ripindicator": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"externalsystemid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"productlifecyclestatus": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"chokehazard": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"hsizegroup": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"hrmssize1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hrmssize2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdateddate": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"primarysupplier": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"createdby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hsize1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"hsize2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"correlationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"lastupdatedby": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"customerchoice": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sku": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"isuvpn": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"isuvpndescription": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"color": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"relationshipexporttriggertimestampatstyle": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"rmsskustyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"systemexporttriggertimestamp": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"exclusivity": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"warningsdisclaimers": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"relationshipexporttriggertimestampatcustomerchoice": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"relationshipexporttriggertimestampatsku": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"uniqueproductdistinctions": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"normalizedsize1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"normalizedsize2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"rmsstyleid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"sellingmarket": {
+						"properties": {
+							"displayType": "referencelist",
+							"displaySequence": "",
+							"referenceEntityInfo": [
+								{
+									"thumbnail": "none",
+									"listTitle": "{entity.name}",
+									"listSubTitle": ""
+								}
+							]
+						}
+					},
+					"textnordstromsize1": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textnordstromsize2": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"textnordstromsize3": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"businessneedbydate": {
+						"properties": {
+							"displayType": "datetime",
+							"displaySequence": ""
+						}
+					},
+					"fullpriceskuid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					},
+					"upcgenerate": {
+						"properties": {
+							"displayType": "boolean",
+							"displaySequence": ""
+						}
+					},
+					"applicationid": {
+						"properties": {
+							"displayType": "textbox",
+							"displaySequence": ""
+						}
+					}
+				},
+				"relationships": {
+					"supplierupc": [
+						{
+							"properties": {
+								"externalName": "Supplier UPC",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "upc"
+									}
+								]
+							},
+							"attributes": {
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"supplier": {
+									"properties": {
+										"externalName": "supplier",
+										"displayType": "TextBox"
+									}
+								},
+								"manufacturer": {
+									"properties": {
+										"externalName": "manufacturer",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					],
+					"suppliervpn": [
+						{
+							"properties": {
+								"externalName": "Supplier VPN",
+								"relationshipType": "",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "supplier"
+									}
+								]
+							},
+							"attributes": {
+								"primaryorigincountry": {
+									"properties": {
+										"externalName": "primaryorigincountry",
+										"displayType": "TextBox"
+									}
+								},
+								"pointoforigincode": {
+									"properties": {
+										"externalName": "pointoforigincode",
+										"displayType": "TextBox"
+									}
+								},
+								"primary": {
+									"properties": {
+										"externalName": "primary",
+										"displayType": "TextBox"
+									}
+								},
+								"productcontainertype": {
+									"properties": {
+										"externalName": "Product Container Type",
+										"displayType": "ReferenceList",
+										"referenceEntityInfo": [
+											{
+												"thumbnail": "none",
+												"listTitle": "{entity.name}",
+												"listSubTitle": ""
+											}
+										]
+									}
+								},
+								"unitcostsupplier": {
+									"properties": {
+										"externalName": "unitcostsupplier",
+										"displayType": "TextBox"
+									}
+								},
+								"vpn": {
+									"properties": {
+										"externalName": "VPN",
+										"displayType": "TextBox"
+									}
+								},
+								"vpndescription": {
+									"properties": {
+										"externalName": "VPN Description",
+										"displayType": "TextBox"
+									}
+								},
+								"dropshipindicator": {
+									"properties": {
+										"externalName": "dropshipindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"itemsupplierrtvindicator": {
+									"properties": {
+										"externalName": "itemsupplierrtvindicator",
+										"displayType": "TextBox"
+									}
+								},
+								"leadtime": {
+									"properties": {
+										"externalName": "leadtime",
+										"displayType": "TextBox"
+									}
+								},
+								"maximumorderquantity": {
+									"properties": {
+										"externalName": "maximumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"minimumorderquantity": {
+									"properties": {
+										"externalName": "minimumorderquantity",
+										"displayType": "TextBox"
+									}
+								},
+								"msrp": {
+									"properties": {
+										"externalName": "MSRP",
+										"displayType": "NumericTextBox"
+									}
+								},
+								"ordermultiplenumber": {
+									"properties": {
+										"externalName": "ordermultiplenumber",
+										"displayType": "TextBox"
+									}
+								},
+								"countriesofmanufacture": {
+									"properties": {
+										"externalName": "countriesofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"origincountries": {
+									"properties": {
+										"externalName": "origincountries",
+										"displayType": "TextBox"
+									}
+								},
+								"primarycountryofmanufacture": {
+									"properties": {
+										"externalName": "primarycountryofmanufacture",
+										"displayType": "TextBox"
+									}
+								},
+								"vendorrole": {
+									"properties": {
+										"externalName": "vendorrole",
+										"displayType": "TextBox"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}
