@@ -21,7 +21,6 @@
 //      }
 // 3. delay and delayBetweenModelObjects to add delay beween two RDF calls
 
-
 var toolConfig = {
     "webUrl": "http://manage.qa1-us-east-1.riversand-dataplatform.com:8085",
     "templateVariables": {
@@ -42,9 +41,9 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "ns-v1",
-    "tenantId": "ns",
-    "option": "foundation"
+    "folderName": "jcp-v4",
+    "tenantId": "jcpenney",
+    "option": "uiconfig"
 }
 
 module.exports = {
