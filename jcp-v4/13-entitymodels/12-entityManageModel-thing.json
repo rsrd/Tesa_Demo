@@ -378,8 +378,9 @@
 					},
 					"haslot": {
 						"properties": {
-							"externalName": "haslot",
-							"dataType": "string"
+							"externalName": "Has Lot",
+							"groupName": "System",
+							"dataType": "boolean"
 						}
 					},
 					"lastmodifiedtimestamp": {
@@ -1070,6 +1071,20 @@
 							"dataType": "string"
 						}
 					},
+					"skuitemtype": {
+						"properties": {
+							"externalName": "RMS Item Type",
+							"groupName": "Basic",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "skuitemtypevalues"
+								}
+							]
+						}
+					},
 					"vpn": {
 						"properties": {
 							"externalName": "VPN",
@@ -1443,7 +1458,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "ecommpurchasetype"
+									"refEntityType": "ecommpurchasetypevalues"
 								}
 							]
 						}
@@ -1471,7 +1486,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "factoryshipuom"
+									"refEntityType": "factoryshipuomvalues"
 								}
 							]
 						}
@@ -1486,20 +1501,6 @@
 								{
 									"refRelationshipName": "hasReferenceTo",
 									"refEntityType": "ticketstocknovalues"
-								}
-							]
-						}
-					},
-					"ticketattribute": {
-						"properties": {
-							"externalName": "Ticket Attribute",
-							"groupName": "Item Details",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "ticketattributesvalues"
 								}
 							]
 						}
@@ -1814,21 +1815,15 @@
 					},
 					"shippointstate": {
 						"properties": {
-							"externalName": "Ship Point State",
+							"externalName": "Ship point city",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
 					},
 					"shippointcity": {
 						"properties": {
-							"externalName": "Ship Point City",
+							"externalName": "Ship point state",
 							"groupName": "Supplier",
-							"dataType": "string"
-						}
-					},
-					"stone": {
-						"properties": {
-							"externalName": "stone",
 							"dataType": "string"
 						}
 					},
@@ -2184,7 +2179,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "rmsbooleanyesnovalues"
+									"refEntityType": "rmsbooleanonezerovalues"
 								}
 							]
 						}
@@ -2422,7 +2417,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "rmsbooleanyesnovalues"
+									"refEntityType": "rmsbooleanynvalues"
 								}
 							]
 						}
@@ -2452,6 +2447,20 @@
 						"properties": {
 							"externalName": "ticketattributegrid",
 							"dataType": "string"
+						}
+					},
+					"ticketattribute": {
+						"properties": {
+							"externalName": "Ticket Attribute",
+							"groupName": "Item Details",
+							"dataType": "string",
+							"isReferenceType": true,
+							"referenceEntityInfo": [
+								{
+									"refRelationshipName": "hasReferenceTo",
+									"refEntityType": "ticketattributesvalues"
+								}
+							]
 						}
 					},
 					"storesetattribute": {
@@ -2822,6 +2831,13 @@
 							"externalName": "Supplier Number/Name",
 							"groupName": "Supplier",
 							"dataType": "string"
+						}
+					},
+					"imagesequencing": {
+						"properties": {
+							"externalName": "Image Sequencing",
+							"groupName": "Asset Information",
+							"dataType": "decimal"
 						}
 					}
 				}
@@ -3273,8 +3289,9 @@
 					},
 					"haspp": {
 						"properties": {
-							"externalName": "haspp",
-							"dataType": "string"
+							"externalName": "Has PP",
+							"groupName": "System",
+							"dataType": "boolean"
 						}
 					},
 					"lastmodifiedtimestamp": {
@@ -3719,20 +3736,6 @@
 			"domain": "generic",
 			"data": {
 				"attributes": {
-					"skutype": {
-						"properties": {
-							"externalName": "Sku Type",
-							"groupName": "Basic",
-							"dataType": "string",
-							"isReferenceType": true,
-							"referenceEntityInfo": [
-								{
-									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "skuitemtypevalues"
-								}
-							]
-						}
-					},
 					"lifecyclestage": {
 						"properties": {
 							"externalName": "Lifecycle Stage",
@@ -3786,13 +3789,6 @@
 						"properties": {
 							"externalName": "Creation Date",
 							"groupName": "Dates",
-							"dataType": "datetime"
-						}
-					},
-					"lastpublishdate": {
-						"properties": {
-							"externalName": "Last Publish Date",
-							"groupName": "System",
 							"dataType": "datetime"
 						}
 					},
@@ -4876,7 +4872,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "ecommpurchasetype"
+									"refEntityType": "ecommpurchasetypevalues"
 								}
 							]
 						}
@@ -4904,7 +4900,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "factoryshipuom"
+									"refEntityType": "factoryshipuomvalues"
 								}
 							]
 						}
@@ -5247,21 +5243,15 @@
 					},
 					"shippointstate": {
 						"properties": {
-							"externalName": "Ship Point State",
+							"externalName": "Ship point city",
 							"groupName": "Supplier",
 							"dataType": "string"
 						}
 					},
 					"shippointcity": {
 						"properties": {
-							"externalName": "Ship Point City",
+							"externalName": "Ship point state",
 							"groupName": "Supplier",
-							"dataType": "string"
-						}
-					},
-					"stone": {
-						"properties": {
-							"externalName": "stone",
 							"dataType": "string"
 						}
 					},
@@ -5365,8 +5355,9 @@
 					},
 					"haslot": {
 						"properties": {
-							"externalName": "haslot",
-							"dataType": "string"
+							"externalName": "Has Lot",
+							"groupName": "System",
+							"dataType": "boolean"
 						}
 					},
 					"createdby": {
@@ -5433,7 +5424,7 @@
 							"referenceEntityInfo": [
 								{
 									"refRelationshipName": "hasReferenceTo",
-									"refEntityType": "rmsbooleanyesnovalues"
+									"refEntityType": "rmsbooleanynvalues"
 								}
 							]
 						}
@@ -5471,6 +5462,13 @@
 									"refEntityType": "vdata"
 								}
 							]
+						}
+					},
+					"lastpublishdate": {
+						"properties": {
+							"externalName": "Last Publish Date",
+							"groupName": "System",
+							"dataType": "datetime"
 						}
 					}
 				},
