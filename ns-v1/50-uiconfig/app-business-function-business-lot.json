@@ -91,14 +91,17 @@
 													"133312": "Width should be less than Length"
 												},
 												"attribute-names": [
-"id",
-"longdescription",
-"shortdescription",
-"productlifecyclestatus"
+													"id",
+													"longdescription",
+													"shortdescription",
+													"productlifecyclestatus"
 												]
 											}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},
@@ -109,11 +112,13 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy":"productclasshierarchy",
+												"taxonomy": "productclasshierarchy",
 												"business-function-data": {}
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"skipEvent": "onSkip"
 									},
@@ -373,7 +378,9 @@
 												"import-profile-name": "datamodel_Profile_01"
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onNext"
 									},
 									{
@@ -425,11 +432,12 @@
 										"component": {
 											"name": "rock-upload-s3",
 											"path": "/../../src/elements/rock-upload-s3/rock-upload-s3.html",
-											"properties": {
-												
-											}
+											"properties": {}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},

@@ -697,15 +697,15 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config":{
-								"defaultJobStatus":"Completed",
-								"userToggleAllowed":true,
+							"config": {
+								"defaultJobStatus": "Completed",
+								"userToggleAllowed": true,
 								"viewMode": "List",
 								"title": "Simple Data Table",
 								"mode": "read",
-								"header" : {
-									"displayTitle" : false,
-									"defaultValue" :  "Simple Data Table"
+								"header": {
+									"displayTitle": false,
+									"defaultValue": "Simple Data Table"
 								},
 								"dataRequest": {
 									"attributes": [
@@ -750,7 +750,7 @@
 												"noTrim": true
 											},
 											{
-												"name":"viewDetails",
+												"name": "viewDetails",
 												"linkTemplate": "job-detail?id={taskId}"
 											}
 										]
@@ -760,7 +760,7 @@
 						}
 					}
 				]
-            }
+			}
 		}
 	]
 }

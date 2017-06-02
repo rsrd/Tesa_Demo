@@ -91,6 +91,11 @@
 													"133312": "Width should be less than Length"
 												},
 												"attribute-names": [
+													"id",
+													"longdescription",
+													"shortdescription",
+													"productlifecyclestatus",
+													"fullpriceskuid",
 													"identifier",
 													"primaryupc",
 													"primaryvpn",
@@ -437,9 +442,7 @@
 										"component": {
 											"name": "rock-upload-s3",
 											"path": "/../../src/elements/rock-upload-s3/rock-upload-s3.html",
-											"properties": {
-												
-											}
+											"properties": {}
 										},
 										"sharedProperties": {
 											"context-data": "contextData",

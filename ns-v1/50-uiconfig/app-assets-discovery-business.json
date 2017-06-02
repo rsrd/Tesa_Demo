@@ -70,7 +70,7 @@
 									"workflowTemplate": "in workflow: {workflow}, workflow Status: {workflowStatus}"
 								},
 								"dataRequest": {
-									"domains":[
+									"domains": [
 										"digitalAsset"
 									],
 									"typesCriterion": [
@@ -88,7 +88,7 @@
 									"settings": {
 										"isMultiSelect": false
 									},
-									"tileItems" : {
+									"tileItems": {
 										"image": "thumbnail",
 										"title": "xmptitle",
 										"subtitle": "headline",
@@ -290,11 +290,12 @@
 							"role": "business"
 						},
 						"jsonData": {
-							"config": [{
-								"title": "Create",
-								"actions": [
-								]
-							}]
+							"config": [
+								{
+									"title": "Create",
+									"actions": []
+								}
+							]
 						}
 					}
 				]
@@ -334,7 +335,7 @@
 												"name": "attribute-tab-menu-provider",
 												"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
 												"properties": {
-													"is-first-menu-item-selected" : true
+													"is-first-menu-item-selected": true
 												}
 											},
 											"component": {
@@ -342,7 +343,7 @@
 												"path": "/src/elements/rock-attribute-manage/rock-attribute-manage.html",
 												"properties": {
 													"allow-save-on-error": true,
-													"do-sync-validation": true,						"do-sync-validation": true,
+													"do-sync-validation": true,
 													"message-code-mapping": {
 														"Req001": "Required",
 														"MinLen001": "MIN_LENGTH",
@@ -406,25 +407,27 @@
 							"role": "business"
 						},
 						"jsonData": {
-							"config": [{
-								"title": "",
-								"actions": [
-									{
-										"name": "takeTask",
-										"icon": "pebble-xl-icons:taketask",
-										"text": "Take Task",
-										"visible": true,
-										"eventName": "action-takeTask"
-									},
-									{
-										"name": "releaseTask",
-										"icon": "pebble-xl-icons:releasetask",
-										"text": "Release Task",
-										"visible": true,
-										"eventName": "action-releaseTask"
-									}
-								]
-							}]
+							"config": [
+								{
+									"title": "",
+									"actions": [
+										{
+											"name": "takeTask",
+											"icon": "pebble-xl-icons:taketask",
+											"text": "Take Task",
+											"visible": true,
+											"eventName": "action-takeTask"
+										},
+										{
+											"name": "releaseTask",
+											"icon": "pebble-xl-icons:releasetask",
+											"text": "Release Task",
+											"visible": true,
+											"eventName": "action-releaseTask"
+										}
+									]
+								}
+							]
 						}
 					}
 				]

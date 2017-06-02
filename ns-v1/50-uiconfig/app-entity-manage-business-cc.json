@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-manage_components-list_ensemble_business_uiConfig",
-			"name": "app-entity-manage_components-list_ensemble_business",
+			"id": "app-entity-manage_components-list_customerchoice_business_uiConfig",
+			"name": "app-entity-manage_components-list_customerchoice_business",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-selector_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-dimension-selector_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -68,7 +68,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -187,7 +187,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-grid_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-dimension-grid_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-dimension-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -203,7 +203,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-grid",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -263,7 +263,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-header_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-header_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-header",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -279,7 +279,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-header",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -287,7 +287,7 @@
 								"headerConfig": [
 									{
 										"attributeName": "identifier",
-										"label": "Ensemble ID",
+										"label": "PP ID",
 										"noTrim": false
 									},
 									{
@@ -402,7 +402,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-summary_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-summary_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-summary",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -418,7 +418,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-summary",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -495,7 +495,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-tabs_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-tabs_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-tabs",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -511,7 +511,7 @@
 							"service": "_ALL",
 							"component": "rock-tabs",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -571,13 +571,13 @@
 														"onlineonly",														
 														"programtype",
 														"ratingreviewid",
-														"retailensemblenumber",
+														"retailcustomerchoicenumber",
 														"shortname",
-														"ensemblegrouping",
-														"ensembleitemtype",
-														"ensemblenumber",
-														"ensemblequantity",
-														"ensembletype",
+														"customerchoicegrouping",
+														"customerchoiceitemtype",
+														"customerchoicenumber",
+														"customerchoicequantity",
+														"customerchoicetype",
 														"source",
 														"status",
 														"stone",
@@ -642,7 +642,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-attribute-manage_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-attribute-manage_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-attribute-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -658,7 +658,7 @@
 							"service": "_ALL",
 							"component": "rock-attribute-manage",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -687,7 +687,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-variant_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-variant_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-variant",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -703,7 +703,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-variant",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -716,7 +716,7 @@
 									"dataRequest": {
 										"attributes": [
 											"description",
-											"ensembleid",
+											"customerchoiceid",
 											"startdate",
 											"status"
 										]
@@ -761,7 +761,7 @@
 												"filterable": false
 											},
 											{
-												"header": "ensemble Id",
+												"header": "customerchoice Id",
 												"name": "id",
 												"sortable": false,
 												"filterable": false
@@ -838,7 +838,7 @@
 									"name": "ehd1",
 									"levels": [
 										{
-											"entityType": "ensemble",
+											"entityType": "customerchoice",
 											"index": 1,
 											"optional": false,
 											"dimensionAttributes": [
@@ -874,7 +874,7 @@
 									"steps": [
 										{
 											"name": "step-1-selection-option",
-											"label": "Select Options to create ensembles",
+											"label": "Select Options to create customerchoices",
 											"component": {
 												"name": "rock-variants-option-select",
 												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
@@ -933,7 +933,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-asset-manage_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-asset-manage_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-asset-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -949,7 +949,7 @@
 							"service": "_ALL",
 							"component": "rock-asset-manage",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1098,7 +1098,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-relationship-manage_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-relationship-manage_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-relationship-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1114,17 +1114,17 @@
 							"service": "_ALL",
 							"component": "rock-relationship-manage",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"ensembletoproductpresentation": {
+									"customerchoicetolot": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Product Presentation",
+											"title": "Lots",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1140,7 +1140,7 @@
 												},
 												"columns": [
 													{
-														"header": "Product Presentation",
+														"header": "Style",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1217,7 +1217,7 @@
 											"titlePattern": "{entity.attributes.id}"
 										}
 									},
-									"ensembletoimage": {
+									"customerchoicetoimage": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
@@ -1339,7 +1339,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-todo_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-todo_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-todo",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1355,7 +1355,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-todo",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1399,7 +1399,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-tofix_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-tofix_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-tofix",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1415,7 +1415,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-tofix",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1430,7 +1430,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-titlebar_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-titlebar_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-titlebar",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1446,7 +1446,7 @@
 							"service": "_ALL",
 							"component": "rock-titlebar",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1461,7 +1461,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-productclasshierarchy_ensemble_business_uiConfig",
+			"id": "app-entity-manage_extension-manage-productclasshierarchy_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_extension-manage-productclasshierarchy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1477,7 +1477,7 @@
 							"service": "_ALL",
 							"component": "extension-manage-productclasshierarchy",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1506,7 +1506,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_ensemble_business_uiConfig",
+			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1522,7 +1522,7 @@
 							"service": "_ALL",
 							"component": "extension-manage-merchandisingtaxonomy",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1551,7 +1551,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_fix-attribute-errors_ensemble_business_uiConfig",
+			"id": "app-entity-manage_fix-attribute-errors_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_fix-attribute-errors",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1567,7 +1567,7 @@
 							"service": "_ALL",
 							"component": "fix-attribute-errors",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
@@ -1594,7 +1594,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-upload_ensemble_business_uiConfig",
+			"id": "app-entity-manage_rock-entity-upload_customerchoice_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-upload",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1610,7 +1610,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-upload",
 							"subComponent": "_ALL",
-							"entityType": "ensemble",
+							"entityType": "customerchoice",
 							"role": "business"
 						},
 						"jsonData": {
