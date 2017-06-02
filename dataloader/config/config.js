@@ -44,7 +44,7 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "ns-v1",
     "tenantId": "ns",
-    "option": "rsconnectprofiles"
+    "option": "foundation"
 }
 
 module.exports = {
