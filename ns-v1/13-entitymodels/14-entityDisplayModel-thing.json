@@ -696,81 +696,6 @@
 			}
 		},
 		{
-			"id": "productlabel_entityDisplayModel",
-			"name": "productlabel",
-			"type": "entityDisplayModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"displayType": "textbox",
-							"displaySequence": ""
-						}
-					},
-					"shortdescription": {
-						"properties": {
-							"displayType": "textbox",
-							"displaySequence": ""
-						}
-					},
-					"longdescription": {
-						"properties": {
-							"displayType": "textarea",
-							"displaySequence": ""
-						}
-					},
-					"isproductlabelactive": {
-						"properties": {
-							"displayType": "boolean",
-							"displaySequence": ""
-						}
-					},
-					"nordstromlabelind": {
-						"properties": {
-							"displayType": "boolean",
-							"displaySequence": ""
-						}
-					}
-				},
-				"relationships": {
-					"labelbrand": [
-						{
-							"properties": {
-								"externalName": "Label Brand",
-								"relationshipType": "",
-								"relatedEntityInfo": [
-									{
-										"relEntityType": "productbrand"
-									}
-								]
-							},
-							"attributes": {
-								"longdescription": {
-									"properties": {
-										"externalName": "Long Description",
-										"displayType": "TextArea"
-									}
-								},
-								"shortdescription": {
-									"properties": {
-										"externalName": "Short Description",
-										"displayType": "TextBox"
-									}
-								},
-								"productbrandinformation": {
-									"properties": {
-										"externalName": "Product Brand Information",
-										"displayType": "TextArea"
-									}
-								}
-							}
-						}
-					]
-				}
-			}
-		},
-		{
 			"id": "setpack_entityDisplayModel",
 			"name": "setpack",
 			"type": "entityDisplayModel",
@@ -6439,40 +6364,6 @@
 							}
 						}
 					]
-				}
-			}
-		},
-		{
-			"id": "productbrand_entityDisplayModel",
-			"name": "productbrand",
-			"type": "entityDisplayModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"displayType": "textbox",
-							"displaySequence": ""
-						}
-					},
-					"shortdescription": {
-						"properties": {
-							"displayType": "textbox",
-							"displaySequence": ""
-						}
-					},
-					"longdescription": {
-						"properties": {
-							"displayType": "textarea",
-							"displaySequence": ""
-						}
-					},
-					"productbrandinformation": {
-						"properties": {
-							"displayType": "textarea",
-							"displaySequence": ""
-						}
-					}
 				}
 			}
 		},

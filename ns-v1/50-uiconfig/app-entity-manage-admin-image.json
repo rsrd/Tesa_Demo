@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-manage_components-list_style_admin_uiConfig",
-			"name": "app-entity-manage_components-list_style_admin",
+			"id": "app-entity-manage_components-list_image_admin_uiConfig",
+			"name": "app-entity-manage_components-list_image_admin",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -39,10 +39,8 @@
 									"rock-entity-todo",
 									"rock-entity-tofix",
 									"rock-titlebar",
-									"variant-create",
-									"rock-variants-create-grid",
-                                   "extension-manage-productsetuptaxonomy",
-                                   "extension-manage-merchandisingtaxonomy",
+                                    "extension-manage-productclasshierarchy",
+                                    "extension-manage-merchandisingtaxonomy",
  									"fix-attribute-errors",
 									"rock-entity-upload"
 								]
@@ -53,7 +51,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-selector_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-dimension-selector_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -69,7 +67,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -90,7 +88,10 @@
 											"taxonomy"
 										]
 									},
-									"selectedItem": {},
+									"selectedItem": {
+										"id": "productclasshierarchy",
+										"type": "taxonomy"
+									},
 									"default": ""
 								},
 								{
@@ -116,7 +117,7 @@
 									"id": "source",
 									"title": "Source",
 									"icon": "pebble-lg-icons:Source",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -149,7 +150,7 @@
 									"id": "locale",
 									"title": "Locale",
 									"icon": "pebble-lg-icons:Language",
-									"visible": true,
+									"visible": false,
 									"dataRequestType": "entity-model",
 									"dataRequest": {
 										"params": {
@@ -185,7 +186,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-grid_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-dimension-grid_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-dimension-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -201,7 +202,7 @@
 							"service": "_ALL",
 							"component": "rock-dimension-grid",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -209,8 +210,8 @@
 								"dimension-gridConfig": {
 									"viewMode": "Tabular",
 									"title": "",
-									"mode": "Read",
 									"schemaType": "colModel",
+									"mode": "Read",
 									"header": {
 										"displayTitle": false,
 										"defaultValue": ""
@@ -261,7 +262,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-header_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-header_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-header",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -277,20 +278,16 @@
 							"service": "_ALL",
 							"component": "rock-entity-header",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
 								"headerConfig": [
+									
 									{
-										"attributeName": "id",
-										"label": "SKU ID",
-										"noTrim": false
-									},
-									{
-										"attributeName": "skuNumber",
-										"label": "SKU Number",
+										"attributeName": "about",
+										"label": "About",
 										"noTrim": false
 									},
 									{
@@ -299,19 +296,18 @@
 										"noTrim": false
 									},
 									{
-										"attributeName": "status",
-										"label": "Status",
+										"attributeName": "creator",
+										"label": "Creator",
 										"noTrim": false
 									},
 									{
-										"attributeName": "startDate",
-										"label": "Start Date",
-										"noTrim": false,
-										"dataType": "datetime"
+										"attributeName": "filesize",
+										"label": "File Size",
+										"noTrim": false
 									},
 									{
-										"attributeName": "webDiscount",
-										"label": "Web Discount",
+										"attributeName": "filetype",
+										"label": "File Type",
 										"noTrim": false
 									}
 								],
@@ -320,25 +316,25 @@
 										{
 											"buttons": [
 												{
-													"name": "addContext",
-													"icon":"pebble-lg-icons:Master",
+                                                  "name": "addContext",
+                                                  "icon":"pebble-lg-icons:Master",
 													"text": "",
-													"tooltip": "Add Context",
+                                                  "tooltip": "Add Context",
 													"visible": true,
-													"buttons": [
-														{
-															"name": "merchandisingtaxonomy",
-															"text": "Merchandising Taxonomy",
-															"visible": true,
-															"tooltip": "Merchandising Taxonomy"
-														},
-														{
-															"name": "productsetuptaxonomy",
-															"text": "Product Setup Taxonomy",
-															"visible": true,
-															"tooltip": "Product Setup Taxonomy"
-														}
-													]
+                                                  "buttons": [
+                                                    {
+                                                      "name": "merchandisingtaxonomy",
+                                                      "text": "Merchandising Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Merchandising Taxonomy"
+                                                    },
+                                                    {
+                                                      "name": "productclasshierarchy",
+                                                      "text": "Product Setup Taxonomy",
+                                                      "visible": true,
+                                                      "tooltip": "Product Setup Taxonomy"
+                                                    }
+                                                  ]
 												},
 												{
 													"name": "refresh",
@@ -348,58 +344,26 @@
 													"tooltip": "Refresh"
 												},
 												{
-													"name": "upload",
-													"icon": "pebble-md-icons:Upload",
-													"text": "",
-													"visible": true,
-													"tooltip": "Upload"
-												},
-												{
 													"name": "download",
 													"icon": "pebble-md-icons:Import",
 													"text": "",
 													"visible": true,
 													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
 												}
 											]
 										}
 									]
 								},
 								"summaryToFix": {
-									"completionPercentage": 65,
+									"completionPercentage": "",
 									"tofixes": [
-										{
-											"data": {
-												"name": "brandext",
-												"type": "error",
-												"label": "Images not associated",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "priceissue",
-												"type": "error",
-												"label": "Required Attributes not provided",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "error",
-												"label": "Incorrect MSRP",
-												"eventName": "tofixtap"
-											}
-										},
-										{
-											"data": {
-												"name": "msrpissue",
-												"type": "warning",
-												"label": "Missing videos",
-												"eventName": "tofixtap"
-											}
-										}
 									]
 								},
 								"assignmentActionsConfig": [{
@@ -428,7 +392,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-summary_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-summary_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-summary",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -444,7 +408,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-summary",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -521,7 +485,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-tabs_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-tabs_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-tabs",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -537,7 +501,7 @@
 							"service": "_ALL",
 							"component": "rock-tabs",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -548,6 +512,7 @@
 									{
 										"name": "summary",
 										"title": "Summary",
+										"selected": true,
 										"enableDropdownMenu": false,
 										"component": {
 											"name": "rock-entity-summary",
@@ -564,7 +529,7 @@
 											"path": "/src/elements/rock-attribute-split-screen/attribute-tab-menu-provider.html",
 											"properties": {}
 										},
-										"selected": true,
+										
 										"component": {
 											"name": "rock-attribute-split-screen",
 											"path": "/src/elements/rock-attribute-split-screen/rock-attribute-split-screen.html",
@@ -575,41 +540,28 @@
 												"do-sync-validation": true,
 												"config-context": {
 													"attributeNames": [
-														"alsoInStore",
-														"brand",
-														"brandLogo",
-														"channel",
-														"channelAvailability",
-														"description",
-														"displayAskAndAnswerSection",
-														"displayName",
-														"factSheet",
-														"featureColor",
-														"hideDisplayIndicator",
 														"id",
-														"isCustomerFavoriteOption",
-														"isHidden",
-														"isPreOrderOption",
-														"longDescription",
-														"lotSelectionType",
-														"lotType",
-														"onlineOnly",
-														"orin",
-														"programType",
-														"ratingReviewId",
-														"retailSkuNumber",
-														"shortName",
-														"skuGrouping",
-														"skuItemType",
-														"skuNumber",
-														"skuQuantity",
-														"skuType",
-														"source",
-														"status",
-														"stone",
-														"styleText",
-														"upcBarcode",
-														"warranty"
+														"about",
+														"description",
+														"headline",
+														"colorspace",
+														"creator",
+														"artist",
+														"datecreated",
+														"resolutionunit",
+														"xresolution",
+														"yresolution",
+														"digitalzoomratio",
+														"encodingprocess",
+														"filetype",
+														"filetypeextension",
+														"filesource",
+														"filesize",
+														"imagesize",
+														"imageheight",
+														"imagewidth",
+														"imagedescription",
+														"suppliernumbername"
 													]
 												}
 											}
@@ -646,16 +598,6 @@
 											"path": "/src/elements/app-entity-discovery/app-entity-discovery.html",
 											"properties": {}
 										}
-									},
-									{
-										"name": "entity-family",
-										"title": "Entity Family",
-										"enableDropdownMenu": false,
-										"component": {
-											"name": "rock-entity-variant",
-											"path": "/src/elements/rock-entity-variant/rock-entity-variant.html",
-											"properties": {}
-										}
 									}
 								]
 							}
@@ -665,7 +607,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-attribute-manage_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-attribute-manage_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-attribute-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -681,7 +623,7 @@
 							"service": "_ALL",
 							"component": "rock-attribute-manage",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -710,7 +652,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-variant_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-variant_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-variant",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -726,7 +668,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-variant",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -739,7 +681,7 @@
 									"dataRequest": {
 										"attributes": [
 											"description",
-											"skuId",
+											"imageId",
 											"startDate",
 											"status"
 										]
@@ -784,7 +726,7 @@
 												"filterable": false
 											},
 											{
-												"header": "SKU Id",
+												"header": "image Id",
 												"name": "id",
 												"sortable": false,
 												"filterable": false
@@ -861,7 +803,7 @@
 									"name": "ehd1",
 									"levels": [
 										{
-											"entityType": "style",
+											"entityType": "image",
 											"index": 1,
 											"optional": false,
 											"dimensionAttributes": [
@@ -878,148 +820,76 @@
 											]
 										}
 									]
-								}
-							}
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "app-entity-manage_variant-create_style_admin_uiConfig",
-			"name": "app-entity-manage_variant-create",
-			"version": "1.0",
-			"type": "uiConfig",
-			"properties": {
-				"createdByService": "entityservice",
-				"createdBy": "user"
-			},
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"app": "app-entity-manage",
-							"service": "_ALL",
-							"component": "variant-create",
-							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
-						},
-						"jsonData": {
-							"config": {
-								"stepperConfig": [
-									{
-										"index": "1",
-										"title": "Option Selection",
-										"status": "inprogress"
-									},
-									{
-										"index": "2",
-										"title": "Create Variants",
-										"status": ""
-									}
-								],
-								"name": "create-variants",
-								"label": "Create Variants",
-								"steps": [
-									{
-										"name": "step-1-selection-option",
-										"label": "Select Options to create Skus",
-										"component": {
-											"name": "rock-variants-option-select",
-											"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
-											"properties": {}
-										},
-										"nextEvent": "onSave",
-										"skipEvent": "onCancel"
-									},
-									{
-										"name": "step-2-create-variants",
-										"label": "Create variants for a given entity",
-										"component": {
-											"name": "rock-variants-create-grid",
-											"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
-											"properties": {}
-										},
-										"nextEvent": "onComplete",
-										"skipEvent": "onCancel"
-									}
-								]
-							}
-						}
-					}
-				]
-			}
-		},
-		{
-			"id": "app-entity-manage_rock-variants-create-grid_style_admin_uiConfig",
-			"name": "app-entity-manage_rock-variants-create-grid",
-			"version": "1.0",
-			"type": "uiConfig",
-			"properties": {
-				"createdByService": "entityservice",
-				"createdBy": "user"
-			},
-			"data": {
-				"contexts": [
-					{
-						"context": {
-							"app": "app-entity-manage",
-							"service": "_ALL",
-							"component": "rock-variants-create-grid",
-							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
-						},
-						"jsonData": {
-							"config": {
-								"createVariantsGridConfig": {
-									"viewMode": "Tabular",
-									"title": "Variant Data Table",
-									"mode": "Read",
-									"schemaType": "simple",
-									"tabular": {
-										"settings": {
-											"isMultiSelect": false,
-											"actions": [
-												{
-													"name": "delete",
-													"icon": "pebble-icons:Delete",
-													"eventName": "delete-item"
-												}
-											]
-										},
-										"columns": [
-											{
-												"header": "Existing",
-												"name": "existing",
-												"sortable": false,
-												"filterable": false
-											}
-										]
-									}
 								},
-								"variantDefinitionUI": {
-									"name": "ehd1",
-									"levels": [
+								"businessFunctionVariantsCreate": {
+									"stepperConfig": [
 										{
-											"entityType": "style",
-											"index": 1,
-											"optional": false,
-											"dimensionAttributes": [
-												{
-													"sourceAttribute": "color",
-													"targetAttribute": "color",
-													"optional": false
-												},
-												{
-													"sourceAttribute": "size",
-													"targetAttribute": "size",
-													"optional": true
-												}
-											]
+											"index": "1",
+											"title": "Option Selection",
+											"status": "inprogress"
+										},
+										{
+											"index": "2",
+											"title": "Create Variants",
+											"status": ""
+										}
+									],
+									"name": "create-variants",
+									"label": "Create Variants",
+									"steps": [
+										{
+											"name": "step-1-selection-option",
+											"label": "Select Options to create images",
+											"component": {
+												"name": "rock-variants-option-select",
+												"path": "/../../src/elements/rock-variants-option-select/rock-variants-option-select.html",
+												"properties": {}
+											},
+											"nextEvent": "onSave",
+											"skipEvent": "onCancel"
+										},
+										{
+											"name": "step-2-create-variants",
+											"label": "Create variants for a given entity",
+											"component": {
+												"name": "rock-variants-create-grid",
+												"path": "/../../src/elements/rock-variants-create-grid/rock-variants-create-grid.html",
+												"properties": {}
+											},
+											"nextEvent": "onComplete",
+											"skipEvent": "onCancel"
 										}
 									]
+								},
+								"rock-variants-create-grid": {
+									"config": {
+										"createVariantsGridConfig": {
+											"viewMode": "Tabular",
+											"title": "Variant Data Table",
+											"mode": "Read",
+											"schemaType": "simple",
+											"tabular": {
+												"settings": {
+													"isMultiSelect": false,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Existing",
+														"name": "existing",
+														"sortable": false,
+														"filterable": false
+													}
+												]
+											}
+										}
+									}
 								}
 							}
 						}
@@ -1028,7 +898,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-relationship-manage_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-relationship-manage_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-relationship-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1044,7 +914,7 @@
 							"service": "_ALL",
 							"component": "rock-relationship-manage",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1054,7 +924,7 @@
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Product Presentation To style",
+											"title": "Product Presentation To Style",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1075,8 +945,8 @@
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
-														"isRelatedEntityAttribute": false,
 														"readOnly": true,
+														"isRelatedEntityAttribute": false,
 														"linkTemplate": "entity-manage?id={id}&type={type}"
 													},
 													{
@@ -1169,14 +1039,14 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									},
 									"ischildof": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Is Child Of",
+											"title": "Parent Style",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1192,7 +1062,7 @@
 												},
 												"columns": [
 													{
-														"header": "Related Entity",
+														"header": "Parent Style",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1216,15 +1086,6 @@
 														"filterable": false,
 														"editType": "",
 														"isRelatedEntityAttribute": false
-													},
-													{
-														"header": "SKU Number",
-														"name": "skuNumber",
-														"sortable": true,
-														"filterable": false,
-														"editType": "",
-														"readOnly": true,
-														"isRelatedEntityAttribute": true
 													},
 													{
 														"header": "Display Name",
@@ -1283,14 +1144,14 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									},
-									"skuToImage": {
+									"imageToImage": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Sku To Image",
+											"title": "Images",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1306,7 +1167,7 @@
 												},
 												"columns": [
 													{
-														"header": "Related Entity",
+														"header": "Image",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1396,7 +1257,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									},
 									"productPresentationToImage": {
@@ -1493,7 +1354,7 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
 										}
 									}
 								},
@@ -1521,7 +1382,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-todo_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-todo_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-todo",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1537,7 +1398,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-todo",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1581,7 +1442,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-tofix_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-tofix_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-tofix",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1597,45 +1458,13 @@
 							"service": "_ALL",
 							"component": "rock-entity-tofix",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
-								"completionPercentage": 65,
+								"completionPercentage": "",
 								"tofixes": [
-									{
-										"data": {
-											"name": "brandext",
-											"type": "error",
-											"label": "Images not associated",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "priceissue",
-											"type": "error",
-											"label": "Required Attributes not provided",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "msrpissue",
-											"type": "error",
-											"label": "Incorrect MSRP",
-											"eventName": "tofixtap"
-										}
-									},
-									{
-										"data": {
-											"name": "msrpissue",
-											"type": "warning",
-											"label": "Missing videos",
-											"eventName": "tofixtap"
-										}
-									}
 								]
 							}
 						}
@@ -1644,7 +1473,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-titlebar_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-titlebar_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-titlebar",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1660,14 +1489,14 @@
 							"service": "_ALL",
 							"component": "rock-titlebar",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
 								"image": "",
-								"titleAttribute": "displayname",
-								"subtitleAttribute": "description"
+								"titleAttribute": "producttitle",
+								"subtitleAttribute": ""
 							}
 						}
 					}
@@ -1675,8 +1504,8 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_style_admin_uiConfig",
-			"name": "app-entity-manage_extension-manage-productsetuptaxonomy",
+			"id": "app-entity-manage_extension-manage-productclasshierarchy_image_admin_uiConfig",
+			"name": "app-entity-manage_extension-manage-productclasshierarchy",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -1689,14 +1518,14 @@
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
-							"component": "extension-manage-productsetuptaxonomy",
+							"component": "extension-manage-productclasshierarchy",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
-								"name": "extension-manage-productsetuptaxonomy",
+								"name": "extension-manage-productclasshierarchy",
 								"label": "Manage Extensions",
 								"steps": [
 									{
@@ -1706,7 +1535,7 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy": "productsetuptaxonomy"
+												"taxonomy": "productclasshierarchy"
 											}
 										},
 										"nextEvent": "onSave",
@@ -1720,7 +1549,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_style_admin_uiConfig",
+			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_image_admin_uiConfig",
 			"name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1736,7 +1565,7 @@
 							"service": "_ALL",
 							"component": "extension-manage-merchandisingtaxonomy",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1765,7 +1594,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_fix-attribute-errors_style_admin_uiConfig",
+			"id": "app-entity-manage_fix-attribute-errors_image_admin_uiConfig",
 			"name": "app-entity-manage_fix-attribute-errors",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1781,7 +1610,7 @@
 							"service": "_ALL",
 							"component": "fix-attribute-errors",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
@@ -1808,7 +1637,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-upload_style_admin_uiConfig",
+			"id": "app-entity-manage_rock-entity-upload_image_admin_uiConfig",
 			"name": "app-entity-manage_rock-entity-upload",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1824,7 +1653,7 @@
 							"service": "_ALL",
 							"component": "rock-entity-upload",
 							"subComponent": "_ALL",
-							"entityType": "style",
+							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {

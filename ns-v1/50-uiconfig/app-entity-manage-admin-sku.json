@@ -36,6 +36,7 @@
 									"rock-attribute-manage",
 									"rock-entity-variant",
 									"rock-relationship-manage",
+									"rock-asset-manage",
 									"rock-entity-todo",
 									"rock-entity-tofix",
 									"rock-titlebar",
@@ -88,7 +89,10 @@
 											"taxonomy"
 										]
 									},
-									"selectedItem": {},
+									"selectedItem": {
+										"id": "productclasshierarchy",
+										"type": "taxonomy"
+									},
 									"default": ""
 								},
 								{
@@ -396,18 +400,18 @@
 													"tooltip": "Refresh"
 												},
 												{
-													"name": "upload",
-													"icon": "pebble-md-icons:Upload",
-													"text": "",
-													"visible": true,
-													"tooltip": "Upload"
-												},
-												{
 													"name": "download",
 													"icon": "pebble-md-icons:Import",
 													"text": "",
 													"visible": true,
 													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
 												}
 											]
 										}
@@ -616,7 +620,9 @@
 										"menuProviderComponent": {
 											"name": "relationships-tab-menu-provider",
 											"path": "/src/elements/rock-relationship-split-screen/relationships-tab-menu-provider.html",
-											"properties": {}
+											"properties": {
+												"domain":"thing"
+											}
 										},
 										"component": {
 											"name": "rock-relationship-split-screen",
@@ -634,11 +640,22 @@
 									{
 										"name": "assets",
 										"title": "Assets",
-										"enableDropdownMenu": false,
+										"enableDropdownMenu": true,
+										"menuProviderComponent": {
+											"name": "relationships-tab-menu-provider",
+											"path": "/src/elements/rock-relationship-split-screen/relationships-tab-menu-provider.html",
+											"properties": {
+												"domain":"digitalAsset"
+											}
+										},
 										"component": {
-											"name": "app-entity-discovery",
-											"path": "/src/elements/app-entity-discovery/app-entity-discovery.html",
-											"properties": {}
+											"name": "rock-asset-manage",
+											"path": "/src/elements/rock-asset-manage/rock-asset-manage.html",
+											"properties": {
+												"config-context": {
+													"relationshipTypeName": "Assets"
+												}
+											}
 										}
 									}
 								]
@@ -940,6 +957,171 @@
 			}
 		},
 		{
+			"id": "app-entity-manage_rock-asset-manage_sku_admin_uiConfig",
+			"name": "app-entity-manage_rock-asset-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-entity-manage",
+							"service": "_ALL",
+							"component": "rock-asset-manage",
+							"subComponent": "_ALL",
+							"entityType": "sku",
+							"role": "admin"
+						},
+						"jsonData": {
+							"config": {
+								"assetsGridConfigs": {
+									"hasimages": {
+										"title":"Images",
+										"gridConfig": {
+											"viewMode": "Tile",
+											"title": "Related Images",
+											"mode": "Read",
+											"readOnly": true,
+											"schemaType": "simple",
+											"dataRequest": {
+												"typesCriterion": [
+													"image"
+												]
+											},
+											"tile": {
+												"settings": {
+													"isMultiSelect": false
+												},
+												"tileItems" : {
+													"image": "thumbnail",
+													"title": "xmptitle",
+													"subtitle": "headline",
+													"id": "id",
+													"fields": [
+														{
+															"label": "Image Size",
+															"name": "imagesize"
+														},
+														{
+															"label": "Description",
+															"name": "imagedescription"
+														}
+													]
+												}
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": false,
+																"tooltip": "Download"
+															}
+														]
+													}
+												]
+											}
+										}
+									},
+									"hasdocuments":{
+										"title":"Documents",
+										"gridConfig": {
+											"viewMode": "List",
+											"title": "Related Documents",
+											"mode": "Read",
+											"readOnly": true,
+											"schemaType": "simple",
+											"dataRequest": {
+												"typesCriterion": [
+													"document"
+												]
+											},
+											"list": {
+												"settings": {
+													"isMultiSelect": false
+												},
+												"listItems" : {
+													"image": "thumbnail",
+													"title": "xmptitle",
+													"subtitle": "headline",
+													"id": "id",
+													"fields": [
+														{
+															"label": "Description",
+															"name": "imagedescription"
+														},
+														{
+															"label": "File Type Extension",
+															"name": "filetypeextension"
+														},
+														{
+															"label": "Division",
+															"name": "division"
+														}
+													]
+												}
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": false,
+																"tooltip": "Download"
+															}
+														]
+													}
+												]
+											}
+										}
+
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		{
 			"id": "app-entity-manage_rock-relationship-manage_sku_admin_uiConfig",
 			"name": "app-entity-manage_rock-relationship-manage",
 			"version": "1.0",
@@ -962,11 +1144,11 @@
 						"jsonData": {
 							"config": {
 								"relationshipGridConfig": {
-									"ischildof": {
+									"productPresentationToLot": {
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Customer Choice",
+											"title": "Product Presentation To Style",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -982,7 +1164,129 @@
 												},
 												"columns": [
 													{
-														"header": "Customer Choice",
+														"header": "Related Entity",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Link Description",
+														"name": "linkDescription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Enabled",
+														"name": "enabled",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Display Name",
+														"name": "displayName",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													},
+													{
+														"header": "Description",
+														"name": "description",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": false,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": false,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.id}"
+										}
+									},
+									"ischildof": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Parent Style",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Parent Style",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1008,8 +1312,8 @@
 														"isRelatedEntityAttribute": false
 													},
 													{
-														"header": "Description",
-														"name": "shortdescription",
+														"header": "Display Name",
+														"name": "displayName",
 														"sortable": true,
 														"filterable": false,
 														"editType": "",
@@ -1064,7 +1368,104 @@
 										},
 										"addRelLovConfig": {
 											"idField": "id",
-											"titlePattern": "id"
+											"titlePattern": "{entity.attributes.id}"
+										}
+									},
+									"productPresentationToImage": {
+										"gridConfig": {
+											"viewMode": "Tabular",
+											"mode": "Read",
+											"title": "Product Presentation To Image",
+											"schemaType": "colModel",
+											"statusEnabled": true,
+											"tabular": {
+												"settings": {
+													"isMultiSelect": true,
+													"actions": [
+														{
+															"name": "delete",
+															"icon": "pebble-icons:Delete",
+															"eventName": "delete-item"
+														}
+													]
+												},
+												"columns": [
+													{
+														"header": "Related Entity",
+														"name": "Related Entity",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": false,
+														"linkTemplate": "entity-manage?id={id}&type={type}"
+													},
+													{
+														"header": "Status",
+														"name": "status",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"isRelatedEntityAttribute": false
+													},
+													{
+														"header": "Descriptioin",
+														"name": "discription",
+														"sortable": true,
+														"filterable": false,
+														"editType": "",
+														"readOnly": true,
+														"isRelatedEntityAttribute": true
+													}
+												]
+											},
+											"toolbarConfig": {
+												"buttonItems": [
+													{
+														"buttons": [
+															{
+																"name": "pageRange",
+																"icon": "",
+																"text": "0 - 0 / 0",
+																"visible": true,
+																"tooltip": "Page Range"
+															},
+															{
+																"name": "refresh",
+																"icon": "pebble-md-icons:ToolbarRefresh",
+																"text": "",
+																"visible": true,
+																"tooltip": "Refresh"
+															},
+															{
+																"name": "edit",
+																"icon": "pebble-md-icons:Edit",
+																"text": "",
+																"visible": true,
+																"tooltip": "Edit"
+															},
+															{
+																"name": "download",
+																"icon": "pebble-md-icons:Import",
+																"text": "",
+																"visible": true,
+																"tooltip": "Download"
+															},
+															{
+																"name": "upload",
+																"icon": "pebble-md-icons:Upload",
+																"text": "",
+																"visible": true,
+																"tooltip": "Upload"
+															}
+														]
+													}
+												]
+											}
+										},
+										"addRelLovConfig": {
+											"idField": "id",
+											"titlePattern": "{entity.attributes.id}"
 										}
 									}
 								},
@@ -1140,7 +1541,7 @@
 										},
 										"data": {
 											"name": "addnewvpn",
-											"label": "Assign Supplier",
+											"label": "Assign Supplier Number",
 											"eventName": "todotap"
 										}
 									}
@@ -1205,7 +1606,7 @@
 						"jsonData": {
 							"config": {
 								"image": "",
-								"titleAttribute": "displayName",
+								"titleAttribute": "shortdescription",
 								"subtitleAttribute": ""
 							}
 						}
@@ -1381,7 +1782,7 @@
 										"sharedProperties": {
 											"business-function-data": "businessFunctionData"
 										},
-										"nextEvent": "onNext"
+										"nextEvent": "onSave"
 									},
 									{
 										"name": "step-2-rock-entity-upload",

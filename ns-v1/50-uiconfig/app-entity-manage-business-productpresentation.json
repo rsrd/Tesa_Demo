@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-entity-manage_components-list_productpresentation_assetEnrichment_uiConfig",
-			"name": "app-entity-manage_components-list_productpresentation_assetEnrichment",
+			"id": "app-entity-manage_components-list_productpresentation_business_uiConfig",
+			"name": "app-entity-manage_components-list_productpresentation_business",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -23,7 +23,7 @@
 							"component": "components-list",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -40,7 +40,7 @@
 									"rock-entity-todo",
 									"rock-entity-tofix",
 									"rock-titlebar",
-                                    "extension-manage-productsetuptaxonomy",
+                                    "extension-manage-productclasshierarchy",
                                     "extension-manage-merchandisingtaxonomy",
  									"fix-attribute-errors",
 									"rock-entity-upload"
@@ -52,7 +52,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-selector_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-dimension-selector_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-dimension-selector",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -69,7 +69,7 @@
 							"component": "rock-dimension-selector",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": [
@@ -89,7 +89,10 @@
 											"taxonomy"
 										]
 									},
-									"selectedItem": {},
+									"selectedItem": {
+										"id": "productclasshierarchy",
+										"type": "taxonomy"
+									},
 									"default": ""
 								},
 								{
@@ -184,7 +187,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-dimension-grid_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-dimension-grid_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-dimension-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -201,7 +204,7 @@
 							"component": "rock-dimension-grid",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -260,7 +263,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-header_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-header_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-header",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -277,7 +280,7 @@
 							"component": "rock-entity-header",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -336,7 +339,7 @@
                                                       "tooltip": "Merchandising Taxonomy"
                                                     },
                                                     {
-                                                      "name": "productsetuptaxonomy",
+                                                      "name": "productclasshierarchy",
                                                       "text": "Product Setup Taxonomy",
                                                       "visible": true,
                                                       "tooltip": "Product Setup Taxonomy"
@@ -399,7 +402,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-summary_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-summary_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-summary",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -416,7 +419,7 @@
 							"component": "rock-entity-summary",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -492,7 +495,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-tabs_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-tabs_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-tabs",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -509,7 +512,7 @@
 							"component": "rock-tabs",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -609,7 +612,7 @@
 												}
 											}
 										}
-                                    },
+									},
 									{
 										"name": "assets",
 										"title": "Assets",
@@ -617,19 +620,19 @@
 										"menuProviderComponent": {
 											"name": "relationships-tab-menu-provider",
 											"path": "/src/elements/rock-relationship-split-screen/relationships-tab-menu-provider.html",
-                                                "properties": {
+											"properties": {
 												"domain":"digitalAsset"
-                                            }
-                                        },
-                                            "component": {
+											}
+										},
+										"component": {
 											"name": "rock-asset-manage",
 											"path": "/src/elements/rock-asset-manage/rock-asset-manage.html",
-                                                "properties": {
-                                                    "config-context": {
+											"properties": {
+												"config-context": {
 													"relationshipTypeName": "Assets"
-                                                    }
-                                                }
-                                            }
+												}
+											}
+										}
 									}
 								]
 							}
@@ -639,7 +642,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-attribute-manage_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-attribute-manage_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-attribute-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -656,7 +659,7 @@
 							"component": "rock-attribute-manage",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -684,7 +687,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-variant_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-variant_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-variant",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -701,7 +704,7 @@
 							"component": "rock-entity-variant",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -930,7 +933,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-asset-manage_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-asset-manage_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-asset-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -947,7 +950,7 @@
 							"component": "rock-asset-manage",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1095,23 +1098,24 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-relationship-manage_productpresentation_assetEnrichment_uiConfig",
-            "name": "app-entity-manage_rock-relationship-manage",
-            "version": "1.0",
-            "type": "uiConfig",
-            "properties": {
-                "createdByService": "entityservice",
-                "createdBy": "user"
-            },
-            "data": {
-                "contexts": [{
+			"id": "app-entity-manage_rock-relationship-manage_productpresentation_business_uiConfig",
+			"name": "app-entity-manage_rock-relationship-manage",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
 							"component": "rock-relationship-manage",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1136,7 +1140,7 @@
 												},
 												"columns": [
 													{
-														"header": "Lot",
+														"header": "Style",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1335,7 +1339,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-todo_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-todo_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-todo",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1352,7 +1356,7 @@
 							"component": "rock-entity-todo",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1395,7 +1399,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-tofix_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-tofix_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-tofix",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1412,7 +1416,7 @@
 							"component": "rock-entity-tofix",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1426,7 +1430,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-titlebar_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-titlebar_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-titlebar",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1443,7 +1447,7 @@
 							"component": "rock-titlebar",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1457,8 +1461,8 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_productpresentation_assetEnrichment_uiConfig",
-			"name": "app-entity-manage_extension-manage-productsetuptaxonomy",
+			"id": "app-entity-manage_extension-manage-productclasshierarchy_productpresentation_business_uiConfig",
+			"name": "app-entity-manage_extension-manage-productclasshierarchy",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -1471,14 +1475,14 @@
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
-							"component": "extension-manage-productsetuptaxonomy",
+							"component": "extension-manage-productclasshierarchy",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
-								"name": "extension-manage-productsetuptaxonomy",
+								"name": "extension-manage-productclasshierarchy",
 								"label": "Manage Extensions",
 								"steps": [
 									{
@@ -1488,7 +1492,7 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy": "productsetuptaxonomy"
+												"taxonomy": "productclasshierarchy"
 											}
 										},
 										"nextEvent": "onSave",
@@ -1502,7 +1506,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_extension-manage-merchandisingtaxonomy_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_extension-manage-merchandisingtaxonomy",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1519,7 +1523,7 @@
 							"component": "extension-manage-merchandisingtaxonomy",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1547,7 +1551,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_fix-attribute-errors_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_fix-attribute-errors_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_fix-attribute-errors",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1564,7 +1568,7 @@
 							"component": "fix-attribute-errors",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -1590,7 +1594,7 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_rock-entity-upload_productpresentation_assetEnrichment_uiConfig",
+			"id": "app-entity-manage_rock-entity-upload_productpresentation_business_uiConfig",
 			"name": "app-entity-manage_rock-entity-upload",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -1607,7 +1611,7 @@
 							"component": "rock-entity-upload",
 							"subComponent": "_ALL",
 							"entityType": "productpresentation",
-							"role": "assetEnrichment"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
