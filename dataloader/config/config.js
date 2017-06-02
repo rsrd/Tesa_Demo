@@ -23,13 +23,13 @@
 
 
 var toolConfig = {
-    "webUrl": "http://manage.qa2-us-east-1.riversand-dataplatform.com:8085",
+    "webUrl": "http://manage.qa1-us-east-1.riversand-dataplatform.com:8085",
     "templateVariables": {
         "rsconnectprofiles": {
-            "ENVNAME": "qa2-us-east-1",
+            "ENVNAME": "qa1-us-east-1",
             "AWSREGIONNAME": "us-east-1",
             "AWSCREDENTIALSTYPE": "AMAZON_EC2_INSTANCE_PROFILE",
-            "TENANT": "jcpenney"
+            "TENANT": "ns"
         }
     },
     "elasticUrl": "http://192.168.0.85:9200",
@@ -42,9 +42,9 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "jcp-v4",
-    "tenantId": "jcpenney",
-    "option": "governancemodel"
+    "folderName": "ns-v1",
+    "tenantId": "ns",
+    "option": "rsconnectprofiles"
 }
 
 module.exports = {
