@@ -39,7 +39,7 @@
                 "outboundChannel": {
                   "isDataPersistent": "false",
                   "kinesisStreamConnector": {
-									"streamName": "{{ENVNAME}}-export",
+									"streamName": "JCP-PIM-INT-PROD-DigitalPlatform-Catalog-Stream",
 									"regionName": "{{AWSREGIONNAME}}",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
                   }

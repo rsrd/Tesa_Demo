@@ -27,7 +27,7 @@
 								"isDataPersistent": "false",
 								"s3BucketConnector": {
 									"fileType": "json",
-									"bucketName": "{{ENVNAME}}-import-model",
+									"bucketName": "jcp-pim-prod-import-catalog-model",
 									"regionName": "{{AWSREGIONNAME}}",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
 								}

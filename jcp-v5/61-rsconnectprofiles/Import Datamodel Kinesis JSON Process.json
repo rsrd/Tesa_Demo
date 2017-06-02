@@ -26,7 +26,7 @@
 							"inboundChannel": {
 								"isDataPersistent": "false",
 								"kinesisStreamConnector": {
-									"streamName": "{{ENVNAME}}-import-model",
+									"streamName": "JCP-INT-PIM-PROD-DigitalPlatform-Catalog-Data-Model-Stream",
 									"regionName": "{{AWSREGIONNAME}}",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
 								}

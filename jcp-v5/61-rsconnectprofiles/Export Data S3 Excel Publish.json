@@ -39,7 +39,7 @@
 								"isDataPersistent": "true",
 								"s3ObjectConnector": {
 									"regionName": "{{AWSREGIONNAME}}",
-									"bucketName": "{{ENVNAME}}-export",
+									"bucketName": "jcp-pim-prod-export-catalog",
 									"key": "xlsx",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
 								}
