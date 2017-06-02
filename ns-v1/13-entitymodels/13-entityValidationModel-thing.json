@@ -572,80 +572,6 @@
 			}
 		},
 		{
-			"id": "productlabel_entityValidationModel",
-			"name": "productlabel",
-			"type": "entityValidationModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"shortdescription": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"longdescription": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"isproductlabelactive": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"nordstromlabelind": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					}
-				},
-				"relationships": {
-					"labelbrand": [
-						{
-							"properties": {
-								"cardinality": [
-									{
-										"minimum": 0,
-										"maximum": 0
-									}
-								]
-							},
-							"attributes": {
-								"longdescription": {
-									"properties": {
-										"precision": 0,
-										"required": false
-									}
-								},
-								"shortdescription": {
-									"properties": {
-										"precision": 0,
-										"required": false
-									}
-								},
-								"productbrandinformation": {
-									"properties": {
-										"precision": 0,
-										"required": false
-									}
-								}
-							}
-						}
-					]
-				}
-			}
-		},
-		{
 			"id": "setpack_entityValidationModel",
 			"name": "setpack",
 			"type": "entityValidationModel",
@@ -5298,40 +5224,6 @@
 							}
 						}
 					]
-				}
-			}
-		},
-		{
-			"id": "productbrand_entityValidationModel",
-			"name": "productbrand",
-			"type": "entityValidationModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"id": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"shortdescription": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"longdescription": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					},
-					"productbrandinformation": {
-						"properties": {
-							"precision": 0,
-							"required": false
-						}
-					}
 				}
 			}
 		},
