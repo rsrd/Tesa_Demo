@@ -2598,7 +2598,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "getclientid:=GetClientAttributesFromRequest[\"taskId.values[0].value\"];getlotgroup:=GetAttributeValue[\"lotgroup\"];IIF[IsNullOrEmpty[getclientid],true,SetAttributeValue[\"lotgroup\",concat[getclientid,\"_\",getlotgroup]]]"
+								"value": "getclientid:=GetClientAttributesFromRequest[\"taskId.values[0].value\"];getlotgroup:=GetAttributeValue[\"lotgroup\"];IIF[ValidateEmptyAttributes[\"lotgroup\"]=false AND IsNullOrEmpty[getclientid]=false,SetAttributeValue[\"lotgroup\",concat[getclientid,\"_\",getlotgroup]],false]"
 							}
 						]
 					},
