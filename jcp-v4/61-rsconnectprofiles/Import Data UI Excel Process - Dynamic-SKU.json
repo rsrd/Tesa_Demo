@@ -780,15 +780,6 @@
 											"enabled": true
 										},
 										{
-											"source": "LOT NUM",
-											"destination": "@attr(rmsitemid)",
-											"id": 1525975160,
-											"entityType": "sku",
-											"type": "string",
-											"required": true,
-											"enabled": true
-										},
-										{
 											"source": "Multi lot pp value",
 											"destination": "@attr(multilotppval)",
 											"id": 1973394824,
@@ -848,6 +839,272 @@
 											"destination": "@attr(voltage)",
 											"id": -1424620686,
 											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -220904672,
+											"source": "LOT NUM",
+											"destination": "@attr(lotgroup)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 951690282,
+											"source": "Lot ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 951690282,
+											"source": "LOT ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182326934,
+											"source": "V-DATA MODEL NUMBER",
+											"destination": "@attr(vdata)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182326934,
+											"source": "Variable Data",
+											"destination": "@attr(vdata)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2074210416,
+											"source": "Unit of Weight",
+											"destination": "@attr(weightunit)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -371731070,
+											"source": "Unit of Size",
+											"destination": "@attr(sizeunit)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -940901814,
+											"source": "Sub-Divisions",
+											"destination": "@attr(subdivision)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -982434582,
+											"source": "Planned OnSite Date (mm/dd/yyyy)",
+											"destination": "@attr(plannedonsitedate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -86163606,
+											"source": "Inventory",
+											"destination": "@attr(inventoryflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -861367928,
+											"source": "Warranty",
+											"destination": "@attr(warrantyflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2034556234,
+											"source": "Non Continental Transportation Prepaid",
+											"destination": "@attr(noncontinentalprepaid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1952967926,
+											"source": "BRAND NUMBER/NAME",
+											"destination": "@attr(brand)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -510580438,
+											"source": "Assembled Length(in inches)",
+											"destination": "@attr(assembledlength)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -223561622,
+											"source": "Assembled Weight(in pounds)",
+											"destination": "@attr(assembledweight)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127861430,
+											"source": "Disposal fee code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127861430,
+											"source": "Disposal Fee Code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1833921040,
+											"source": "WILL CALL RESTRICTED",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1833921040,
+											"source": "Will Call Restrict Code",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -794991254,
+											"source": "Width",
+											"destination": "@attr(shippingwidth)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1342526518,
+											"source": "ASSEMBLED HEIGHT(IN INCHES)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Direct Ship Restrict Code",
+											"destination": "@attr(directshiprestrict)",
+											"id": -819265793,
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1303438138,
+											"source": "DIRECT SHIP RESTRICTED",
+											"destination": "@attr(directshiprestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 194147800,
+											"source": "Continental Tranportation Prepaid",
+											"destination": "@attr(continentalprepaid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -475095062,
+											"source": "Size",
+											"destination": "@attr(skusize)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -622392600,
+											"source": "Sellable",
+											"destination": "@attr(sellableflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "Print/Pattern",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "PRINT/PATTERN",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
 											"type": "string",
 											"required": true,
 											"enabled": true

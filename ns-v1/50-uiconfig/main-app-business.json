@@ -6,8 +6,8 @@
 	},
 	"configObjects": [
 		{
-			"id": "main-app_components-list_admin_uiConfig",
-			"name": "main-app_components-list_admin",
+			"id": "main-app_components-list_business_uiConfig",
+			"name": "main-app_components-list_business",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -22,7 +22,7 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -40,7 +40,7 @@
 			}
 		},
 		{
-			"id": "main-app_app-repository_admin_uiConfig",
+			"id": "main-app_app-repository_business_uiConfig",
 			"name": "main-app_app-repository",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -56,7 +56,7 @@
 							"service": "_ALL",
 							"component": "app-repository",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -74,18 +74,6 @@
 										}
 									}
 								},
-								"asset-discovery": {
-									"title": "Assets Search & Discovery",
-									"data_route": "asset-discovery",
-									"icon": "pebble-icons:Search",
-									"nonClosable": true,
-									"nonMinimizable": true,
-									"component": {
-										"name": "app-assets-discovery",
-										"path": "../../src/elements/app-assets-discovery/app-assets-discovery.html",
-										"properties": {}
-									}
-								},
 								"entity-discovery": {
 									"title": "Entity Search & Discovery",
 									"data_route": "entity-discovery",
@@ -95,6 +83,18 @@
 									"component": {
 										"name": "app-entity-discovery",
 										"path": "../../src/elements/app-entity-discovery/app-entity-discovery.html",
+										"properties": {}
+									}
+								},
+								"asset-discovery": {
+									"title": "Assets Search & Discovery",
+									"data_route": "asset-discovery",
+									"icon": "pebble-icons:Search",
+									"nonClosable": true,
+									"nonMinimizable": true,
+									"component": {
+										"name": "app-assets-discovery",
+										"path": "../../src/elements/app-assets-discovery/app-assets-discovery.html",
 										"properties": {}
 									}
 								},
@@ -234,7 +234,7 @@
 			}
 		},
 		{
-			"id": "main-app_pebble-actions_admin_uiConfig",
+			"id": "main-app_pebble-actions_business_uiConfig",
 			"name": "main-app_pebble-actions",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -250,7 +250,7 @@
 							"service": "_ALL",
 							"component": "pebble-actions",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": [
@@ -271,14 +271,11 @@
 													"source": "internal",
 													"locale": "en-US"
 												},
-												"context": {
-													"channel": "webCatalog",
-													"classification": "_ALL"
-												}
+												"context": {}
 											}
 										},
 										{
-											"name": "createKit",
+											"name": "createLot",
 											"icon": "pebble-xl-icons:Kit",
 											"text": "Style",
 											"visible": true,
@@ -293,83 +290,22 @@
 												},
 												"context": {}
 											}
-										},
+										}
+									]
+								},
+								{
+									"title": "Upload / Update",
+									"actions": [
 										{
-											"name": "createKit",
-											"icon": "pebble-xl-icons:Kit",
-											"text": "PP",
+											"name": "uploadEntities",
+											"icon": "pebble-xl-icons:uploadassets",
+											"text": "Upload Entities",
 											"visible": true,
-											"dataRoute": "entity-create",
+											"dataRoute": "upload-excel",
 											"contextData": {
 												"itemContext": {
-													"type": "customerchoice"
+													"type": "sku"
 												},
-												"valueContext": {
-													"source": "internal",
-													"locale": "en-US"
-												},
-												"context": {}
-											}
-										},
-										{
-											"name": "createImage",
-											"icon": "pebble-xl-icons:Kit",
-											"text": "Image",
-											"visible": true,
-											"dataRoute": "entity-create",
-											"contextData": {
-												"itemContext": {
-													"type": "image"
-												},
-												"valueContext": {
-													"source": "internal",
-													"locale": "en-US"
-												},
-												"context": {}
-											}
-										},
-										{
-											"name": "createDocument",
-											"icon": "pebble-xl-icons:Kit",
-											"text": "Document",
-											"visible": true,
-											"dataRoute": "entity-create",
-											"contextData": {
-												"itemContext": {
-													"type": "document"
-												},
-												"valueContext": {
-													"source": "internal",
-													"locale": "en-US"
-												},
-												"context": {}
-											}
-										},
-										{
-											"name": "createEnsemble",
-											"icon": "pebble-xl-icons:Kit",
-											"text": "Ensemble",
-											"visible": true,
-											"dataRoute": "entity-create",
-											"contextData": {
-												"itemContext": {
-													"type": "ensemble"
-												},
-												"valueContext": {
-													"source": "internal",
-													"locale": "en-US"
-												},
-												"context": {}
-											}
-										},
-										{
-											"name": "dataModelImport",
-											"icon": "pebble-xl-icons:uploaddatamodel",
-											"text": "Upload Data Model",
-											"visible": true,
-											"dataRoute": "upload-model",
-											"contextData": {
-												"itemContext": {},
 												"valueContext": {
 													"source": "internal",
 													"locale": "en-US"
@@ -393,23 +329,6 @@
 												},
 												"context": {}
 											}
-										},
-										{
-											"name": "uploadEntities",
-											"icon": "pebble-xl-icons:uploadassets",
-											"text": "Upload Entities",
-											"visible": true,
-											"dataRoute": "upload-excel",
-											"contextData": {
-												"itemContext": {
-													"type": "sku"
-												},
-												"valueContext": {
-													"source": "internal",
-													"locale": "en-US"
-												},
-												"context": {}
-											}
 										}
 									]
 								}
@@ -420,7 +339,7 @@
 			}
 		},
 		{
-			"id": "main-app_rock-navmenu_admin_uiConfig",
+			"id": "main-app_rock-navmenu_business_uiConfig",
 			"name": "main-app_rock-navmenu",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -436,7 +355,7 @@
 							"service": "_ALL",
 							"component": "rock-navmenu",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": [
@@ -469,6 +388,15 @@
 									"name": "divider"
 								},
 								{
+									"name": "manageModel",
+									"title": "Manage Data Model",
+									"data_route": "manage-model",
+									"icon": "pebble-icons:DatamodelDb"
+								},
+								{
+									"name": "divider"
+								},
+								{
 									"name": "appStore",
 									"title": "App Store",
 									"data_route": "app-store",
@@ -481,7 +409,7 @@
 			}
 		},
 		{
-			"id": "main-app_tenant-config_admin_uiConfig",
+			"id": "main-app_tenant-config_business_uiConfig",
 			"name": "main-app_tenant-config",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -497,7 +425,7 @@
 							"service": "_ALL",
 							"component": "tenant-config",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -513,7 +441,7 @@
 			}
 		},
 		{
-			"id": "main-app_allowed-entity-types_admin_uiConfig",
+			"id": "main-app_allowed-entity-types_business_uiConfig",
 			"name": "main-app_allowed-entity-types",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -529,7 +457,7 @@
 							"service": "_ALL",
 							"component": "allowed-entity-types",
 							"subComponent": "_ALL",
-							"role": "admin"
+							"role": "business"
 						},
 						"jsonData": {
 							"config": [

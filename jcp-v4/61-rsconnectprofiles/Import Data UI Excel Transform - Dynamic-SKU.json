@@ -6,30 +6,28 @@
 	},
 	"configObjects": [
 		{
-			"id": "sku_S3Bucket_Excel_Import_Process",
-			"name": "sku_S3Bucket_Excel_Import_Process",
+			"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+			"name": "sku_Folder_Excel_Import_Transform_Dynamic",
 			"type": "COPProfile",
 			"data": {
 				"contexts": [
 					{
 						"context": {
 							"app": "RSConnect",
-							"service": "excelImportProcessService",
+							"service": "excelImportTransformService",
 							"list": "self"
 						},
 						"jsonData": {
-							"id": "sku_S3Bucket_Excel_Import_Process",
-							"name": "sku_S3Bucket_Excel_Import_Process",
+							"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+							"name": "sku_Folder_Excel_Import_Transform_Dynamic",
 							"tenantId": "",
 							"profileType": "ENTITY_IMPORT",
 							"enabled": "true",
 							"inboundChannel": {
-								"isDataPersistent": "true",
-								"s3BucketConnector": {
-									"fileType": "xlsx",
-									"bucketName": "{{ENVNAME}}-import",
-									"regionName": "{{AWSREGIONNAME}}",
-									"credentialsType": "{{AWSCREDENTIALSTYPE}}"
+								"isDataPersistent": "false",
+								"folderConnector": {
+									"sourceFolder": "",
+									"pattern": "*"
 								}
 							},
 							"outboundChannel": {

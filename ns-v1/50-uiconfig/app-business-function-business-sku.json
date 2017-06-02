@@ -6,7 +6,7 @@
 	},
 	"configObjects": [
 		{
-			"id": "app-business-function_components-list_style_admin_uiConfig",
+			"id": "app-business-function_components-list_sku_business_uiConfig",
 			"name": "app-business-function_components-list",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -22,8 +22,8 @@
 							"service": "_ALL",
 							"component": "components-list",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -32,7 +32,8 @@
 									"rock-variants-create-grid",
 									"extension-manage",
 									"upload-model",
-									"upload-assets"
+									"upload-assets",
+									"upload-excel"
 								]
 							}
 						}
@@ -41,8 +42,8 @@
 			}
 		},
 		{
-			"id": "app-business-function_create-entity_style_admin_uiConfig",
-			"name": "app-business-function_create-entity_style_admin",
+			"id": "app-business-function_create-entity_sku_business_uiConfig",
+			"name": "app-business-function_create-entity",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -57,8 +58,8 @@
 							"service": "_ALL",
 							"component": "create-entity",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -72,8 +73,6 @@
 											"name": "rock-entity-create",
 											"path": "/../../src/elements/rock-entity-create/rock-entity-create.html",
 											"properties": {
-												"import-profile-name": "sku_Folder_Excel_Import_Transform",
-												"process-profile-name": "sku_Folder_Excel_Import_Process",
 												"message-code-mapping": {
 													"Req001": "Required",
 													"MinLen001": "MIN_LENGTH",
@@ -92,18 +91,27 @@
 													"133312": "Width should be less than Length"
 												},
 												"attribute-names": [
-													"brand",
-													"description",
-													"displayName",
 													"id",
-													"retailSkuNumber",
-													"shortName",
-													"skuNumber",
-													"skuType"
+													"longdescription",
+													"shortdescription",
+													"productlifecyclestatus",
+													"fullpriceskuid",
+													"identifier",
+													"primaryupc",
+													"primaryvpn",
+													"shortdescription",
+													"createdate",
+													"departmentdescription",
+													"classdescription",
+													"subclassdescription",
+													"islocked"
 												]
 											}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},
@@ -114,11 +122,13 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy":"productsetuptaxonomy",
+												"taxonomy": "productclasshierarchy",
 												"business-function-data": {}
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"skipEvent": "onSkip"
 									},
@@ -141,7 +151,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_rock-variants-create-grid_style_admin_uiConfig",
+			"id": "app-business-function_rock-variants-create-grid_sku_business_uiConfig",
 			"name": "app-business-function_rock-variants-create-grid",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -157,8 +167,8 @@
 							"service": "_ALL",
 							"component": "rock-variants-create-grid",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -301,7 +311,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_extension-manage_style_admin_uiConfig",
+			"id": "app-business-function_extension-manage_sku_business_uiConfig",
 			"name": "app-business-function_extension-manage",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -317,8 +327,8 @@
 							"service": "_ALL",
 							"component": "extension-manage",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -344,7 +354,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-model_style_admin_uiConfig",
+			"id": "app-business-function_upload-model_sku_business_uiConfig",
 			"name": "app-business-function_upload-model",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -360,8 +370,8 @@
 							"service": "_ALL",
 							"component": "upload-model",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -378,7 +388,9 @@
 												"import-profile-name": "datamodel_Profile_01"
 											}
 										},
-										"sharedProperties":{"business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onNext"
 									},
 									{
@@ -400,7 +412,7 @@
 			}
 		},
 		{
-			"id": "app-business-function_upload-assets_style_admin_uiConfig",
+			"id": "app-business-function_upload-assets_sku_business_uiConfig",
 			"name": "app-business-function_upload-assets",
 			"version": "1.0",
 			"type": "uiConfig",
@@ -416,8 +428,8 @@
 							"service": "_ALL",
 							"component": "upload-assets",
 							"subComponent": "_ALL",
-							"entityType": "style",
-							"role": "admin"
+							"entityType": "sku",
+							"role": "business"
 						},
 						"jsonData": {
 							"config": {
@@ -430,11 +442,12 @@
 										"component": {
 											"name": "rock-upload-s3",
 											"path": "/../../src/elements/rock-upload-s3/rock-upload-s3.html",
-											"properties": {
-												
-											}
+											"properties": {}
 										},
-										"sharedProperties":{"context-data":"contextData", "business-function-data":"businessFunctionData"},
+										"sharedProperties": {
+											"context-data": "contextData",
+											"business-function-data": "businessFunctionData"
+										},
 										"nextEvent": "onSave",
 										"cancelEvent": "onCancel"
 									},
@@ -455,7 +468,61 @@
 					}
 				]
 			}
+		},
+		{
+			"id": "app-business-function_upload-excel_sku_business_uiConfig",
+			"name": "app-business-function_upload-excel",
+			"version": "1.0",
+			"type": "uiConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "app-business-function",
+							"service": "_ALL",
+							"component": "upload-excel",
+							"subComponent": "_ALL",
+							"entityType": "sku",
+							"role": "business"
+						},
+						"jsonData": {
+							"config": {
+								"name": "upload-entities",
+								"label": "Upload Entities",
+								"steps": [
+									{
+										"name": "step-1-upload-excel-file",
+										"label": "Upload Entities",
+										"component": {
+											"name": "rock-entity-upload",
+											"path": "/../../src/elements/rock-entity-upload/rock-entity-upload.html"
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onSave"
+									},
+									{
+										"name": "Entities uploaded successfully.",
+										"label": "Entities uploaded successfully.",
+										"component": {
+											"name": "rock-business-function-finish",
+											"path": "../../src/elements/rock-business-function-finish/rock-business-function-finish.html",
+											"properties": {
+												"business-function-data": {}
+											}
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
 		}
-
 	]
 }
