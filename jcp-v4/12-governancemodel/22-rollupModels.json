@@ -10,6 +10,53 @@
             "name": "sku_ischildof_lot",
             "type": "rollupModel",
             "domain": "generic",
+            "properties": {
+                "noMatchResult": [
+                    {
+                        "actions": [
+                            {
+                                "actionName": "CreateTarget"
+                            },
+                            {
+                                "actionName": "AddSourceRelationship"
+                            },
+                            {
+                                "actionName": "Rollup"
+                            }
+                        ]
+                    }
+                ],
+                "singleMatchResult": [
+                    {
+                        "actions": [
+                            {
+                                "actionName": "AddSourceRelationship"
+                            },
+                            {
+                                "actionName": "Rollup"
+                            }
+                        ]
+                    }
+                ],
+                "multiMatchResult": [
+                    {
+                        "actions": [
+                            {
+                                "actionName": "Error"
+                            }
+                        ]
+                    }
+                ],
+                "relExists":[
+                    {
+                        "actions": [
+                            {
+                                "actionName": "Rollup"
+                            }
+                        ]
+                    }
+                ]
+            },
             "data": {
                 "attributes": {
                     "skutype": {
