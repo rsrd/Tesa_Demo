@@ -31,6 +31,31 @@
 			}
 		},
 		{
+			"id": "ensemble_entityDefaultValuesModel",
+			"name": "ensemble",
+			"type": "entityDefaultValuesModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"identifier": {
+						"properties": {
+							"defaultValues": "ENP6[[uniqueid]]"
+						}
+					},
+					"creationdate": {
+						"properties": {
+							"defaultValues": "[[systemdatetime]]"
+						}
+					},
+					"source": {
+						"properties": {
+							"defaultValues": "PIM"
+						}
+					}
+				}
+			}
+		},
+		{
 			"id": "lot_entityDefaultValuesModel",
 			"name": "lot",
 			"type": "entityDefaultValuesModel",
@@ -40,6 +65,16 @@
 					"source": {
 						"properties": {
 							"defaultValues": "PIM"
+						}
+					},
+					"channel": {
+						"properties": {
+							"defaultValues": "DIR"
+						}
+					},
+					"skuitemtype": {
+						"properties": {
+							"defaultValues": "FS"
 						}
 					},
 					"ecomhangingindicator": {
@@ -81,125 +116,25 @@
 						"properties": {
 							"defaultValues": "{\"UserID\":\"PimUser\",\"ItemCount\":\"1\",\"RequestID\":\"TOKEN\"}"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "image_entityDefaultValuesModel",
-			"name": "image",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"suppliernumbername": {
+					},
+					"internationalshippable": {
 						"properties": {
-							"defaultValues": "[[currentuser.ownershipdata]]"
-						}
-					}
-				}
-			}
-		},
-		{
-			"id": "document_entityDefaultValuesModel",
-			"name": "document",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"suppliernumbername": {
-						"properties": {
-							"defaultValues": "[[currentuser.ownershipdata]]"
-						}
-					}
-				}
-			}
-		},
-		{
-			"id": "ensemble_entityDefaultValuesModel",
-			"name": "ensemble",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"identifier": {
-						"properties": {
-							"defaultValues": "ENP6[[uniqueid]]"
+							"defaultValues": "0"
 						}
 					},
-					"creationdate": {
+					"ecommoosdate": {
 						"properties": {
-							"defaultValues": "[[systemdatetime]]"
+							"defaultValues": "314"
 						}
 					},
-					"source": {
+					"storeoosdate": {
 						"properties": {
-							"defaultValues": "PIM"
+							"defaultValues": "314"
 						}
-					}
-				}
-			}
-		},
-		{
-			"id": "audio_entityDefaultValuesModel",
-			"name": "audio",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"suppliernumbername": {
-						"properties": {
-							"defaultValues": "[[currentuser.ownershipdata]]"
-						}
-					}
-				}
-			}
-		},
-		{
-			"id": "video_entityDefaultValuesModel",
-			"name": "video",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
-					"suppliernumbername": {
-						"properties": {
-							"defaultValues": "[[currentuser.ownershipdata]]"
-						}
-					}
-				}
-			}
-		},
-		{
-			"id": "sku_entityDefaultValuesModel",
-			"name": "sku",
-			"type": "entityDefaultValuesModel",
-			"domain": "generic",
-			"data": {
-				"attributes": {
+					},
 					"lifecyclestage": {
 						"properties": {
 							"defaultValues": "draft"
-						}
-					},
-					"creationdate": {
-						"properties": {
-							"defaultValues": "[[systemdatetime]]"
-						}
-					},
-					"source": {
-						"properties": {
-							"defaultValues": "PIM"
-						}
-					},
-					"skuitemtype": {
-						"properties": {
-							"defaultValues": "FS"
-						}
-					},
-					"channel": {
-						"properties": {
-							"defaultValues": "DIR"
 						}
 					},
 					"willcallfactoryshipind": {
@@ -282,11 +217,6 @@
 							"defaultValues": "LBS"
 						}
 					},
-					"ecomhangingindicator": {
-						"properties": {
-							"defaultValues": "0"
-						}
-					},
 					"effindicator": {
 						"properties": {
 							"defaultValues": "0"
@@ -294,7 +224,7 @@
 					},
 					"storeset": {
 						"properties": {
-							"defaultValues": "ALL"
+							"defaultValues": "3"
 						}
 					},
 					"christmasindicator": {
@@ -309,7 +239,7 @@
 					},
 					"ecommsuppliershippoint": {
 						"properties": {
-							"defaultValues": "0"
+							"defaultValues": "00"
 						}
 					},
 					"maxbackorderdays": {
@@ -382,6 +312,61 @@
 							"defaultValues": "0"
 						}
 					},
+					"ecommminorderqty": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"storeprimarysupplierid": {
+						"properties": {
+							"defaultValues": "Y"
+						}
+					},
+					"ecomprimarysupplierid": {
+						"properties": {
+							"defaultValues": "Y"
+						}
+					},
+					"supplierchannel": {
+						"properties": {
+							"defaultValues": "BTH"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": "sku_entityDefaultValuesModel",
+			"name": "sku",
+			"type": "entityDefaultValuesModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"source": {
+						"properties": {
+							"defaultValues": "PIM"
+						}
+					},
+					"channel": {
+						"properties": {
+							"defaultValues": "DIR"
+						}
+					},
+					"skuitemtype": {
+						"properties": {
+							"defaultValues": "FS"
+						}
+					},
+					"ecomhangingindicator": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"creationdate": {
+						"properties": {
+							"defaultValues": "[[systemdatetime]]"
+						}
+					},
 					"sellinguom": {
 						"properties": {
 							"defaultValues": "EA"
@@ -410,6 +395,221 @@
 					"orinfetchrequestbody": {
 						"properties": {
 							"defaultValues": "{\"UserID\":\"PimUser\",\"ItemCount\":\"1\",\"RequestID\":\"TOKEN\"}"
+						}
+					},
+					"internationalshippable": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"ecommoosdate": {
+						"properties": {
+							"defaultValues": "314"
+						}
+					},
+					"storeoosdate": {
+						"properties": {
+							"defaultValues": "314"
+						}
+					},
+					"lifecyclestage": {
+						"properties": {
+							"defaultValues": "draft"
+						}
+					},
+					"willcallfactoryshipind": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"noncontinentalprepaid": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"continentalprepaid": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"unusualdemandquantity": {
+						"properties": {
+							"defaultValues": "11"
+						}
+					},
+					"suppliernumbername": {
+						"properties": {
+							"defaultValues": "[[currentuser.ownershipdata]]"
+						}
+					},
+					"ecomminnerpack": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"specialprogramtype": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"storesubset": {
+						"properties": {
+							"defaultValues": "6"
+						}
+					},
+					"storejcpstatus": {
+						"properties": {
+							"defaultValues": "3"
+						}
+					},
+					"factoryshipleadtime": {
+						"properties": {
+							"defaultValues": "2"
+						}
+					},
+					"sizecase": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"lifestyle": {
+						"properties": {
+							"defaultValues": "M"
+						}
+					},
+					"suppliermfrshippoint": {
+						"properties": {
+							"defaultValues": "00"
+						}
+					},
+					"sizeinner": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"packagetype": {
+						"properties": {
+							"defaultValues": "EA"
+						}
+					},
+					"weightunitofmeasure": {
+						"properties": {
+							"defaultValues": "LBS"
+						}
+					},
+					"effindicator": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"storeset": {
+						"properties": {
+							"defaultValues": "3"
+						}
+					},
+					"christmasindicator": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"protectionplan": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"ecommsuppliershippoint": {
+						"properties": {
+							"defaultValues": "00"
+						}
+					},
+					"maxbackorderdays": {
+						"properties": {
+							"defaultValues": "7"
+						}
+					},
+					"storepurchasetype": {
+						"properties": {
+							"defaultValues": "B"
+						}
+					},
+					"ecommpurchasetype": {
+						"properties": {
+							"defaultValues": "SB"
+						}
+					},
+					"factoryshipuom": {
+						"properties": {
+							"defaultValues": "D"
+						}
+					},
+					"ticketstockno": {
+						"properties": {
+							"defaultValues": "NONE"
+						}
+					},
+					"season": {
+						"properties": {
+							"defaultValues": "401"
+						}
+					},
+					"ecommjcpstatus": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"enterpriseinventoryindicator": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"fashionpyramid": {
+						"properties": {
+							"defaultValues": "C"
+						}
+					},
+					"deliveryinstructions": {
+						"properties": {
+							"defaultValues": "S"
+						}
+					},
+					"pricetier": {
+						"properties": {
+							"defaultValues": "B"
+						}
+					},
+					"specialitemcode": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"factoryshiplimitedinvind": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"shippinginforequired": {
+						"properties": {
+							"defaultValues": "0"
+						}
+					},
+					"ecommminorderqty": {
+						"properties": {
+							"defaultValues": "1"
+						}
+					},
+					"storeprimarysupplierid": {
+						"properties": {
+							"defaultValues": "Y"
+						}
+					},
+					"ecomprimarysupplierid": {
+						"properties": {
+							"defaultValues": "Y"
+						}
+					},
+					"supplierchannel": {
+						"properties": {
+							"defaultValues": "BTH"
 						}
 					}
 				}
