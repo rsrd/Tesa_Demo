@@ -59,6 +59,16 @@
             },
             "data": {
                 "attributes": {
+                    "description": {
+                        "properties": {
+                            "strategy": "copyWhenEmpty"
+                        }
+                    },
+                    "skusize": {
+                        "properties": {
+                            "strategy": "copyWhenEmpty"
+                        }
+                    },
                     "startdate":{
                         "properties": {
                             "strategy": "min"
