@@ -229,11 +229,12 @@
 											"enabled": true
 										},
 										{
-											"id": 1625313845,
-											"source": "Print/Pattern",
+											"id": -862615972,
+											"source": "PRINT OR PATTERN",
 											"destination": "@attr(printpattern)",
 											"entityType": "sku",
 											"type": "string",
+											"collectionType": "collection",
 											"required": true,
 											"enabled": true
 										},
@@ -1044,7 +1045,7 @@
 											"id": -819265793,
 											"entityType": "lot",
 											"type": "string",
-                       						"collectionType": "collection",
+											"collectionType": "collection",
 											"required": true,
 											"enabled": true
 										},
@@ -1091,6 +1092,16 @@
 											"destination": "@attr(sellableflag)",
 											"entityType": "lot",
 											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -862622576,
+											"source": "PRINT OR PATTERN",
+											"destination": "@attr(printpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
 											"required": true,
 											"enabled": true
 										},
