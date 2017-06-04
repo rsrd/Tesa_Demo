@@ -59,6 +59,16 @@
             },
             "data": {
                 "attributes": {
+                    "startdate":{
+                        "properties": {
+                            "strategy": "min"
+                        }
+                    },
+                    "enddate":{
+                        "properties": {
+                            "strategy": "max"
+                        }
+                    },
                     "skutype": {
                         "properties": {
                             "strategy": "copyWhenEmpty"
