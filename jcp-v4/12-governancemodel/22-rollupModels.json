@@ -47,13 +47,35 @@
                         ]
                     }
                 ],
-                "relExists":[
+                "relExists": [
                     {
                         "actions": [
                             {
                                 "actionName": "Rollup"
                             }
                         ]
+                    }
+                ],
+                "smartIdAttributes": [
+                    {
+                        "attributeNames": [
+                            "lotgroup",
+                            "subproducttype",
+                            "itemtype",
+                            "cost",
+                            "length",
+                            "height",
+                            "grossweight",
+                            "diff1group",
+                            "diff2group",
+                            "colordesc",
+                            "assembledweight",
+                            "assembledlength",
+                            "assembledwidth",
+                            "assembledheight",
+                            "countryofmanufacture"
+                        ],
+                        "concatDelimiter": "_"
                     }
                 ]
             },
@@ -69,12 +91,12 @@
                             "strategy": "copyWhenEmpty"
                         }
                     },
-                    "startdate":{
+                    "startdate": {
                         "properties": {
                             "strategy": "min"
                         }
                     },
-                    "enddate":{
+                    "enddate": {
                         "properties": {
                             "strategy": "max"
                         }
