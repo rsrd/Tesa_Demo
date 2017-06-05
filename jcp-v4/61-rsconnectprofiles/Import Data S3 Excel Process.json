@@ -1102,6 +1102,69 @@
 											"type": "string",
 											"required": true,
 											"enabled": true
+										},
+										{
+											"id": 1787602458,
+											"source": "Assembled Height(in inches)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1932597607,
+											"source": "Assembled Length(in inches)",
+											"destination": "@attr(assembledlength)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1291546394,
+											"source": "Assembled Weight(in pounds)",
+											"destination": "@attr(assembledweight)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -934134918,
+											"source": "Off-Site Date",
+											"destination": "@attr(enddate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1919929142,
+											"source": "On-Site Date",
+											"destination": "@attr(startdate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -744868229,
+											"source": "Orderable",
+											"destination": "@attr(orderableflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
 										}
 									]
 								}
