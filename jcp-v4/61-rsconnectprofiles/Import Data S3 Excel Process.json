@@ -1174,6 +1174,33 @@
 											"type": "string",
 											"required": true,
 											"enabled": true
+										},
+										{
+											"id": -1190816732,
+											"source": "RMS Item Type",
+											"destination": "@attr(skuitemtype)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1693791245,
+											"source": "Secondary Description",
+											"destination": "@attr(secondarydesc)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -290283682,
+											"source": "Ticket Stock #",
+											"destination": "@attr(ticketstockno)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
 										}
 									]
 								}
