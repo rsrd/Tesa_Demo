@@ -1,1 +1,561 @@
-{"metaInfo":{"dataIndex":"entityModel","collectionName":"entityModels","responseObjectName":"response"},"entityModels":[{"id":"productpresentation_entityValidationModel","name":"productpresentation","type":"entityValidationModel","domain":"generic","data":{"attributes":{"subdivision":{"properties":{"isCollection":true,"required":false}},"alternateimages":{"properties":{"isCollection":true,"required":false}}},"relationships":{"productpresentationtolot":[{"properties":{"cardinality":[{"minimum":1}]},"attributes":{"linkdescription":{"properties":{"required":false}},"enabled":{"properties":{"required":false}},"status":{"properties":{"required":false}}}}],"hasimages":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasvideos":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasdocuments":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}]}}},{"id":"lot_entityValidationModel","name":"lot","type":"entityValidationModel","domain":"generic","data":{"attributes":{"producttype":{"properties":{"required":true}},"subproducttype":{"properties":{"required":true}},"itemtype":{"properties":{"required":true}},"class":{"properties":{"required":true}},"channel":{"properties":{"required":true}},"msrp":{"properties":{"precision":2,"required":false}},"storeunitcost":{"properties":{"precision":2,"required":false}},"ecommunitcost":{"properties":{"precision":2,"required":false}},"retail":{"properties":{"precision":2,"required":false}},"length":{"properties":{"precision":2,"required":false}},"shippingwidth":{"properties":{"precision":2,"required":false}},"height":{"properties":{"precision":2,"required":false}},"grossweight":{"properties":{"precision":2,"required":false}},"liquidvolume":{"properties":{"precision":2,"required":false}},"monogramcharge":{"properties":{"precision":2,"required":false}},"cost":{"properties":{"precision":2,"required":false}},"whseprocessingfee1":{"properties":{"precision":2,"required":false}},"assembledlength":{"properties":{"precision":2,"required":false}},"assembledwidth":{"properties":{"precision":2,"required":false}},"assembledheight":{"properties":{"precision":2,"required":false}},"assembledweight":{"properties":{"precision":2,"required":false}},"competitorprice":{"properties":{"precision":2,"required":false}},"initialmarkup":{"properties":{"precision":2,"rangeToInclusive":false,"rangeFromInclusive":false,"required":false}},"description":{"properties":{"required":true}},"division":{"properties":{"required":true}},"subdivision":{"properties":{"required":true}},"entity":{"properties":{"required":true}},"channelavailability":{"properties":{"isCollection":true,"required":false}},"directshiprestrict":{"properties":{"isCollection":true,"required":false}},"disposalfee":{"properties":{"isCollection":true,"required":false}},"willcallrestrict":{"properties":{"isCollection":true,"required":false}},"mailableindicator":{"properties":{"precision":2,"required":false}},"specialindicator":{"properties":{"precision":2,"required":false}},"parantheticamount":{"properties":{"precision":2,"required":false}},"brand":{"properties":{"required":true}},"factsheet":{"properties":{"isCollection":true,"required":false}},"warranty":{"properties":{"isCollection":true,"required":false}},"alternateimages":{"properties":{"isCollection":true,"required":false}}},"relationships":{"kitlottolot":[{"properties":{"cardinality":[{"minimum":1}]},"attributes":{}}],"hasimages":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasvideos":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasdocuments":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}]}}},{"id":"_entityValidationModel","name":"","type":"entityValidationModel","domain":"generic","data":{"attributes":{}}},{"id":"image_entityValidationModel","name":"image","type":"entityValidationModel","domain":"generic","data":{"attributes":{}}},{"id":"document_entityValidationModel","name":"document","type":"entityValidationModel","domain":"generic","data":{"attributes":{}}},{"id":"ensemble_entityValidationModel","name":"ensemble","type":"entityValidationModel","domain":"generic","data":{"attributes":{"subdivision":{"properties":{"isCollection":true,"required":false}},"alternateimages":{"properties":{"isCollection":true,"required":false}}},"relationships":{"ensembletoproductpresentation":[{"properties":{"cardinality":[{"minimum":1}]},"attributes":{"linkdescription":{"properties":{"required":false}},"enabled":{"properties":{"required":false}},"status":{"properties":{"required":false}}}}],"hasimages":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasvideos":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasdocuments":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}]}}},{"id":"audio_entityValidationModel","name":"audio","type":"entityValidationModel","domain":"generic","data":{"attributes":{}}},{"id":"video_entityValidationModel","name":"video","type":"entityValidationModel","domain":"generic","data":{"attributes":{}}},{"id":"sku_entityValidationModel","name":"sku","type":"entityValidationModel","domain":"generic","data":{"attributes":{"directshiprestrict":{"properties":{"isCollection":true,"required":false}},"disposalfee":{"properties":{"isCollection":true,"required":false}},"willcallrestrict":{"properties":{"isCollection":true,"required":false}},"parantheticamount":{"properties":{"precision":2,"required":false}},"msrp":{"properties":{"precision":2,"required":false}},"storeunitcost":{"properties":{"precision":2,"required":false}},"ecommunitcost":{"properties":{"precision":2,"required":false}},"retail":{"properties":{"precision":2,"required":false}},"length":{"properties":{"precision":2,"required":false}},"shippingwidth":{"properties":{"precision":2,"required":false}},"height":{"properties":{"precision":2,"required":false}},"grossweight":{"properties":{"precision":2,"required":false}},"liquidvolume":{"properties":{"precision":2,"required":false}},"monogramcharge":{"properties":{"precision":2,"required":false}},"cost":{"properties":{"precision":2,"required":false}},"whseprocessingfee1":{"properties":{"precision":2,"required":false}},"storeoosdate":{"properties":{"required":true}},"assembledlength":{"properties":{"precision":2,"required":false}},"assembledwidth":{"properties":{"precision":2,"required":false}},"assembledheight":{"properties":{"precision":2,"required":false}},"assembledweight":{"properties":{"precision":2,"required":false}},"competitorprice":{"properties":{"precision":2,"required":false}},"initialmarkup":{"properties":{"precision":2,"rangeToInclusive":false,"rangeFromInclusive":false,"required":false}},"primaryimage":{"properties":{"required":true}},"alternateimages":{"properties":{"isCollection":true,"required":false}}},"relationships":{"kitskutosku":[{"properties":{"cardinality":[{"minimum":1}]},"attributes":{"componentskuquantity":{"properties":{"required":false}}}}],"ischildof":[{"properties":{"cardinality":[{"minimum":1,"maximum":1}]},"attributes":{"linkdescription":{"properties":{"required":false}},"enabled":{"properties":{"required":false}}}}],"hasimages":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasvideos":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}],"hasdocuments":[{"properties":{"cardinality":[{"minimum":0}]},"attributes":{"status":{"properties":{"required":false}}}}]}}}]}
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "productpresentation_entityValidationModel",
+         "name": "productpresentation",
+         "type": "entityValidationModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "subdivision": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "alternateimages": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               }
+            },
+            "relationships": {
+               "productpresentationtolot": [
+                  {
+                     "properties": {
+                        "cardinality": [
+                           {
+                              "minimum": 1
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "linkdescription": {
+                           "properties": {
+                              "required": false
+                           }
+                        },
+                        "enabled": {
+                           "properties": {
+                              "required": false
+                           }
+                        },
+                        "status": {
+                           "properties": {
+                              "required": false
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "lot_entityValidationModel",
+         "name": "lot",
+         "type": "entityValidationModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "producttype": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "subproducttype": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "itemtype": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "class": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "channel": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "msrp": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "storeunitcost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "ecommunitcost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "retail": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "length": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "shippingwidth": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "height": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "grossweight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "liquidvolume": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "monogramcharge": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "cost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "whseprocessingfee1": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledlength": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledwidth": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledheight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledweight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "competitorprice": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "initialmarkup": {
+                  "properties": {
+                     "precision": 2,
+                     "rangeToInclusive": false,
+                     "rangeFromInclusive": false,
+                     "required": false
+                  }
+               },
+               "description": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "division": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "subdivision": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "entity": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "channelavailability": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "directshiprestrict": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "disposalfee": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "willcallrestrict": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "mailableindicator": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "specialindicator": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "parantheticamount": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "brand": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "factsheet": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "warranty": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "alternateimages": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               }
+            },
+            "relationships": {
+               "kitlottolot": [
+                  {
+                     "properties": {
+                        "cardinality": [
+                           {
+                              "minimum": 1
+                           }
+                        ]
+                     },
+                     "attributes": {}
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "ensemble_entityValidationModel",
+         "name": "ensemble",
+         "type": "entityValidationModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "subdivision": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "alternateimages": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               }
+            },
+            "relationships": {
+               "ensembletoproductpresentation": [
+                  {
+                     "properties": {
+                        "cardinality": [
+                           {
+                              "minimum": 1
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "linkdescription": {
+                           "properties": {
+                              "required": false
+                           }
+                        },
+                        "enabled": {
+                           "properties": {
+                              "required": false
+                           }
+                        },
+                        "status": {
+                           "properties": {
+                              "required": false
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "sku_entityValidationModel",
+         "name": "sku",
+         "type": "entityValidationModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "directshiprestrict": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "disposalfee": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "willcallrestrict": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               },
+               "parantheticamount": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "msrp": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "storeunitcost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "ecommunitcost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "retail": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "length": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "shippingwidth": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "height": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "grossweight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "liquidvolume": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "monogramcharge": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "cost": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "whseprocessingfee1": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "storeoosdate": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "assembledlength": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledwidth": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledheight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "assembledweight": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "competitorprice": {
+                  "properties": {
+                     "precision": 2,
+                     "required": false
+                  }
+               },
+               "initialmarkup": {
+                  "properties": {
+                     "precision": 2,
+                     "rangeToInclusive": false,
+                     "rangeFromInclusive": false,
+                     "required": false
+                  }
+               },
+               "primaryimage": {
+                  "properties": {
+                     "required": true
+                  }
+               },
+               "alternateimages": {
+                  "properties": {
+                     "isCollection": true,
+                     "required": false
+                  }
+               }
+            },
+            "relationships": {
+               "kitskutosku": [
+                  {
+                     "properties": {
+                        "cardinality": [
+                           {
+                              "minimum": 1
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "componentskuquantity": {
+                           "properties": {
+                              "required": false
+                           }
+                        }
+                     }
+                  }
+               ],
+               "ischildof": [
+                  {
+                     "properties": {
+                        "cardinality": [
+                           {
+                              "minimum": 1,
+                              "maximum": 1
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "linkdescription": {
+                           "properties": {
+                              "required": false
+                           }
+                        },
+                        "enabled": {
+                           "properties": {
+                              "required": false
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}

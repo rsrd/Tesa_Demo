@@ -1,0 +1,920 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "lot_entityDisplayModel",
+         "name": "lot",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "relationships": {
+               "hasimages": [
+                  {
+                     "properties": {
+                        "externalName": "Images",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "image"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasvideos": [
+                  {
+                     "properties": {
+                        "externalName": "Videos",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "videos"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasdocuments": [
+                  {
+                     "properties": {
+                        "externalName": "Documents",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "document"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "productpresentation_entityDisplayModel",
+         "name": "productpresentation",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "relationships": {
+               "hasimages": [
+                  {
+                     "properties": {
+                        "externalName": "Images",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "image"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasvideos": [
+                  {
+                     "properties": {
+                        "externalName": "Videos",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "videos"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasdocuments": [
+                  {
+                     "properties": {
+                        "externalName": "Documents",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "document"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "image_entityDisplayModel",
+         "name": "image",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "colorname": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "colorprofile": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "division": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "entity": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "imageformat": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "imageheightunit": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "imageresolution": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "imagesize": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "imagetype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "imagewidthunit": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "lastaccesseddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lastmodifieddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lifecyclestage": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.lifecyclestagevalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "maximagequality": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "mediatype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "month": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "shottype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "subdivision": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "suppliernumbername": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "year": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "imagesequencing": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "document_entityDisplayModel",
+         "name": "document",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "division": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "entity": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "lastaccesseddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lastmodifieddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lifecyclestage": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.lifecyclestagevalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "month": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "shottype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "subdivision": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "suppliernumbername": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "year": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "ensemble_entityDisplayModel",
+         "name": "ensemble",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "relationships": {
+               "hasimages": [
+                  {
+                     "properties": {
+                        "externalName": "Images",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "image"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasvideos": [
+                  {
+                     "properties": {
+                        "externalName": "Videos",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "videos"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasdocuments": [
+                  {
+                     "properties": {
+                        "externalName": "Documents",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "document"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "id": "audio_entityDisplayModel",
+         "name": "audio",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "division": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "entity": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "lastaccesseddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lastmodifieddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lifecyclestage": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.lifecyclestagevalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "month": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "shottype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "subdivision": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "suppliernumbername": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "year": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "video_entityDisplayModel",
+         "name": "video",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "attributes": {
+               "division": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "entity": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "lastaccesseddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lastmodifieddate": {
+                  "properties": {
+                     "displayType": "datetime",
+                     "displaySequence": ""
+                  }
+               },
+               "lifecyclestage": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.lifecyclestagevalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "month": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "shottype": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.referencedatavalue}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "subdivision": {
+                  "properties": {
+                     "displayType": "referencelist",
+                     "displaySequence": "",
+                     "referenceEntityInfo": [
+                        {
+                           "thumbnail": "none",
+                           "listTitle": "{entity.attributes.identifier}",
+                           "listSubTitle": ""
+                        }
+                     ]
+                  }
+               },
+               "suppliernumbername": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               },
+               "year": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": ""
+                  }
+               }
+            }
+         }
+      },
+      {
+         "id": "sku_entityDisplayModel",
+         "name": "sku",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "data": {
+            "relationships": {
+               "hasimages": [
+                  {
+                     "properties": {
+                        "externalName": "Images",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "image"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasvideos": [
+                  {
+                     "properties": {
+                        "externalName": "Videos",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "videos"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ],
+               "hasdocuments": [
+                  {
+                     "properties": {
+                        "externalName": "Documents",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "document"
+                           }
+                        ]
+                     },
+                     "attributes": {
+                        "status": {
+                           "properties": {
+                              "externalName": "Status",
+                              "displayType": "referencelist",
+                              "referenceEntityInfo": [
+                                 {
+                                    "thumbnail": "none",
+                                    "listTitle": "{entity.attributes.referencedatavalue}",
+                                    "listSubTitle": ""
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}
