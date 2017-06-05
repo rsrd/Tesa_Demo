@@ -27,7 +27,7 @@
 								"isDataPersistent": "false",
 								"s3BucketConnector": {
 									"regionName": "{{AWSREGIONNAME}}",
-									"bucketName": "{{ENVNAME}}-import-assets",
+									"bucketName": "rdp-media-assets-{{ENVNAME}}-{{TENANT}}",
 									"credentialsType": "{{AWSCREDENTIALSTYPE}}",
 									"fileType": "*"
 								}

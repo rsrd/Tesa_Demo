@@ -89,14 +89,20 @@
 										"sku"
 									],
 									"attributes": [
-										"primaryupc",
-										"primaryvpn",
-										"shortdescription",
-										"createdate",
-										"departmentdescription",
-										"classdescription",
-										"subclassdescription",
-										"islocked"
+                              "externalid",
+                              "primaryvpn",
+                              "longdescription",
+                              "primarysupplier",
+                              "departmentnumber",
+                              "classnumber",
+                              "subclassnumber",
+                              "departmentdescription",
+                              "classdescription",
+                              "subclassdescription",
+                              "rmsskuid",
+                              "rmsstyleid",
+                              "rmsstylegroupid",
+                              "primaryupc"
 									]
 								},
 								"tabular": {
@@ -112,17 +118,17 @@
 											"isMetaDataColumn": true
 										},
 										{
+											"header": "External Id",
+											"name": "externalid",
+											"sortable": false,
+											"filterable": false,
+											"linkTemplate": "entity-manage?id={id}&type={type}"
+										},
+										{
 											"header": "Primary VPN",
 											"name": "primaryvpn",
 											"sortable": false,
 											"filterable": false
-										},
-										{
-											"header": "Short Description",
-											"name": "shortdescription",
-											"sortable": false,
-											"filterable": false,
-											"linkTemplate": "entity-manage?id={id}&type={type}"
 										},
 										{
 											"header": "Long Description",
@@ -131,33 +137,50 @@
 											"filterable": false
 										},
 										{
+											"header": "Primary Supplier",
+											"name": "primarysupplier",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Department Number",
+											"name": "departmentnumber",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Class Number",
+											"name": "classnumber",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "Subclass Number",
+											"name": "subclassnumber",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "RMS SKU ID",
+											"name": "rmsskuid",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "RMS Style ID",
+											"name": "rmsstyleid",
+											"sortable": false,
+											"filterable": false
+										},
+										{
+											"header": "RMS Style Group ID",
+											"name": "rmsstylegroupid",
+											"sortable": false,
+											"filterable": false
+										},
+										{
 											"header": "Primary UPC",
 											"name": "primaryupc",
-											"sortable": false,
-											"filterable": false,
-											"linkTemplate": "entity-manage?id={id}&type={type}"
-										},
-										{
-											"header": "Primary Supplier",
-											"name": "primary supplier",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Department Description",
-											"name": "departmentdescription",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Class Description",
-											"name": "classdescription",
-											"sortable": false,
-											"filterable": false
-										},
-										{
-											"header": "Subclass Description",
-											"name": "subclassdescription",
 											"sortable": false,
 											"filterable": false
 										}
@@ -232,52 +255,55 @@
 									}
 								},
 								"toolbarConfig": {
-									"buttonItems": [{
-										"buttons": [{
-												"name": "pageRange",
-												"icon": "",
-												"text": "0 - 0 / 0",
-												"visible": true,
-												"tooltip": "Page Range"
-											},
-											{
-												"name": "refresh",
-												"icon": "pebble-md-icons:ToolbarRefresh",
-												"text": "",
-												"visible": true,
-												"tooltip": "Refresh"
-											},
-											{
-												"name": "edit",
-												"icon": "pebble-md-icons:Edit",
-												"text": "",
-												"visible": true,
-												"tooltip": "Edit"
-											},
-											{
-												"name": "addrow",
-												"icon": "pebble-sm-icons:Add",
-												"text": "",
-												"visible": true,
-												"tooltip": "Add"
-											},
-											{
-												"name": "download",
-												"icon": "pebble-md-icons:Import",
-												"text": "",
-												"visible": true,
-												"tooltip": "Download"
-											},
-											{
-												"name": "upload",
-												"icon": "pebble-md-icons:Upload",
-												"text": "",
-												"visible": true,
-												"tooltip": "Upload"
-											}
-										]
-									}]
-                            	}
+									"buttonItems": [
+										{
+											"buttons": [
+												{
+													"name": "pageRange",
+													"icon": "",
+													"text": "0 - 0 / 0",
+													"visible": true,
+													"tooltip": "Page Range"
+												},
+												{
+													"name": "refresh",
+													"icon": "pebble-md-icons:ToolbarRefresh",
+													"text": "",
+													"visible": true,
+													"tooltip": "Refresh"
+												},
+												{
+													"name": "edit",
+													"icon": "pebble-md-icons:Edit",
+													"text": "",
+													"visible": true,
+													"tooltip": "Edit"
+												},
+												{
+													"name": "addrow",
+													"icon": "pebble-sm-icons:Add",
+													"text": "",
+													"visible": true,
+													"tooltip": "Add"
+												},
+												{
+													"name": "download",
+													"icon": "pebble-md-icons:Import",
+													"text": "",
+													"visible": true,
+													"tooltip": "Download"
+												},
+												{
+													"name": "upload",
+													"icon": "pebble-md-icons:Upload",
+													"text": "",
+													"visible": true,
+													"tooltip": "Upload"
+												}
+											]
+										}
+									]
+								}
 							}
 						}
 					}
@@ -765,37 +791,30 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config": [{
-								"actions": [
-									{
-										"name": "groupEnsemble",
-										"icon": "pebble-xl-icons:Variants",
-										"text": "Group to Ensemble",										
-										"visible": true,
-										"eventName": "action-rollup",
-										"componentName": "rock-roll-up",
-										"componentConfigName": "roll-up-ensemble"										
-									},
-									{
-										"name": "groupProductPresentation",
-										"icon": "pebble-xl-icons:Brand",
-										"text": "Group to Product Presentation",										
-										"visible": true,
-										"eventName": "action-rollup",
-										"componentName": "rock-roll-up",
-										"componentConfigName": "roll-up-productpresentation"										
-									},									
-									{
-										"name": "groupLot",
-										"icon": "pebble-xl-icons:Channel",
-										"text": "Group to Lot",									
-										"visible": true,
-										"eventName": "action-rollup",
-										"componentName": "rock-roll-up",
-										"componentConfigName": "roll-up-lot"										
-									}
-								]
-							}]
+							"config": [
+								{
+									"actions": [
+										{
+											"name": "groupCustomerChoice",
+											"icon": "pebble-xl-icons:Brand",
+											"text": "Group to Product Presentation",
+											"visible": true,
+											"eventName": "action-rollup",
+											"componentName": "rock-roll-up",
+											"componentConfigName": "roll-up-customerchoice"
+										},
+										{
+											"name": "groupStyle",
+											"icon": "pebble-xl-icons:Channel",
+											"text": "Group to Style",
+											"visible": true,
+											"eventName": "action-rollup",
+											"componentName": "rock-roll-up",
+											"componentConfigName": "roll-up-style"
+										}
+									]
+								}
+							]
 						}
 					}
 				]
@@ -823,12 +842,12 @@
 						"jsonData": {
 							"config": [
 								{
-									"name": "displayName",
+									"name": "displayname",
 									"longName": "Display Name",
 									"displayType": "textBox"
 								},
 								{
-									"name": "skuNumber",
+									"name": "skunumber",
 									"longName": "Sku Number",
 									"value": "",
 									"displayType": "textBox"
@@ -1015,7 +1034,7 @@
 														"Range008": "RANGE_TO_EXCLUSIVE_FROM_INCLUSIVE",
 														"133311": "Length should be greater than Width",
 														"133312": "Width should be less than Length"
-													},	
+													},
 													"config-context": {
 														"attributeNames": [
 															"primaryupc",
@@ -1029,14 +1048,14 @@
 															"color",
 															"rmscolorid",
 															"hrmssize1",
-															"hrmssize2",															
+															"hrmssize2",
 															"size1",
 															"size1description",
 															"size2",
 															"size2description",
 															"size3",
 															"size3description",
-															"sizedisplaysequence",															
+															"sizedisplaysequence",
 															"sizetype",
 															"suppliersizedesccatalog",
 															"suppliercolordesccatalog",
@@ -1078,8 +1097,7 @@
 															},
 															"config-context": {
 																"groupName": "Advanced",
-																"attributeNames": [
-																]
+																"attributeNames": []
 															}
 														}
 													}
@@ -1089,44 +1107,48 @@
 									]
 								},
 								"pebble-toolbar": {
-									"buttonItems": [{
-										"buttons": [{
-												"name": "refresh",
-												"icon": "pebble-md-icons:ToolbarRefresh",
-												"text": "",
-												"visible": true,
-												"tooltip": "Refresh"
-											},
-											{
-												"name": "moreActions",
-												"icon": "pebble-md-icons:ToolbarMore",
-												"text": "",
-												"buttons": [{
-														"name": "add",
-														"icon": "pebble-sm-icons:Add",
-														"text": "",
-														"visible": true,
-														"tooltip": "Add"
-													},
-													{
-														"name": "delete",
-														"icon": "pebble-md-icons:Delete",
-														"text": "",
-														"visible": true,
-														"tooltip": "Delete"
-													},
-													{
-														"name": "cut",
-														"icon": "pebble-md-icons:Cut",
-														"text": "",
-														"visible": true,
-														"tooltip": "Cut"
-													}
-												]
-											}
-										]
-									}]
-                            	},
+									"buttonItems": [
+										{
+											"buttons": [
+												{
+													"name": "refresh",
+													"icon": "pebble-md-icons:ToolbarRefresh",
+													"text": "",
+													"visible": true,
+													"tooltip": "Refresh"
+												},
+												{
+													"name": "moreActions",
+													"icon": "pebble-md-icons:ToolbarMore",
+													"text": "",
+													"buttons": [
+														{
+															"name": "add",
+															"icon": "pebble-sm-icons:Add",
+															"text": "",
+															"visible": true,
+															"tooltip": "Add"
+														},
+														{
+															"name": "delete",
+															"icon": "pebble-md-icons:Delete",
+															"text": "",
+															"visible": true,
+															"tooltip": "Delete"
+														},
+														{
+															"name": "cut",
+															"icon": "pebble-md-icons:Cut",
+															"text": "",
+															"visible": true,
+															"tooltip": "Cut"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
 								"rock-entity-tofix": {
 									"completionPercentage": 65,
 									"tofixes": [
@@ -1190,41 +1212,43 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config": [{
-								"title": "Assignments",
-								"actions": [
-									{
-										"name": "takeTask",
-										"icon": "pebble-xl-icons:taketask",
-										"text": "Take Task",
-										"visible": true,
-										"eventName": "action-takeTask",
-										"componentName": "rock-workflow-assignment"
-									},
-									{
-										"name": "releaseTask",
-										"icon": "pebble-xl-icons:releasetask",
-										"text": "Release Task",
-										"visible": true,
-										"eventName": "action-releaseTask",
-										"componentName": "rock-workflow-assignment"
-									}
-								]
-							},
-							{
-								"title": "Transitions",
-								"actions": [
-									{
-										"group": "Transitions",
-										"name": "wfTransitions",
-										"icon": "pebble-xl-icons:taketask",
-										"text": "Workflow Transitions",
-										"visible": true,
-										"eventName": "action-wfTransitions",
-										"componentName": "rock-workflow-transition"
-									}
-								]
-							}]
+							"config": [
+								{
+									"title": "Assignments",
+									"actions": [
+										{
+											"name": "takeTask",
+											"icon": "pebble-xl-icons:taketask",
+											"text": "Take Task",
+											"visible": true,
+											"eventName": "action-takeTask",
+											"componentName": "rock-workflow-assignment"
+										},
+										{
+											"name": "releaseTask",
+											"icon": "pebble-xl-icons:releasetask",
+											"text": "Release Task",
+											"visible": true,
+											"eventName": "action-releaseTask",
+											"componentName": "rock-workflow-assignment"
+										}
+									]
+								},
+								{
+									"title": "Transitions",
+									"actions": [
+										{
+											"group": "Transitions",
+											"name": "wfTransitions",
+											"icon": "pebble-xl-icons:taketask",
+											"text": "Workflow Transitions",
+											"visible": true,
+											"eventName": "action-wfTransitions",
+											"componentName": "rock-workflow-transition"
+										}
+									]
+								}
+							]
 						}
 					}
 				]
@@ -1264,14 +1288,16 @@
 												"properties": {
 													"entity-type": "ensemble",
 													"entity-type-external-name": "Ensemble",
-													"relationship-name": "ensembletoproductpresentation",
+													"relationship-name": "ensembletocustomerchoice",
 													"relationship-type": "association",
-													"source-entity-type": "productpresentation",
+													"source-entity-type": "customerchoice",
 													"direction": "down",
-													"title-pattern": "displayname"													
+													"title-pattern": "displayname"
 												}
 											},
-											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"sharedProperties": {
+												"business-function-data": "businessFunctionData"
+											},
 											"nextEvent": "onComplete",
 											"backEvent": "onCancel"
 										},
@@ -1300,14 +1326,17 @@
 												"path": "/../../src/elements/rock-roll-up/rock-roll-up.html",
 												"properties": {
 													"entity-type": "customerchoice",
-													"relationship-name": "ischildof",
-													"relationship-type": "composition",
-													"source-entity-type": "sku",
-													"direction": "up",
+													"entity-type-external-name": "Product Presentation",
+													"relationship-name": "customerchoicetolot",
+													"relationship-type": "association",
+													"source-entity-type": "style",
+													"direction": "down",
 													"title-pattern": "displayname"
 												}
 											},
-											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"sharedProperties": {
+												"business-function-data": "businessFunctionData"
+											},
 											"nextEvent": "onComplete",
 											"backEvent": "onCancel"
 										},
@@ -1336,14 +1365,17 @@
 												"path": "/../../src/elements/rock-roll-up/rock-roll-up.html",
 												"properties": {
 													"entity-type": "style",
+													"entity-type-external-name": "Style",
 													"relationship-name": "ischildof",
-													"relationship-type": "composition",
-													"source-entity-type": "customerchoice",
+													"relationship-type": "association",
+													"source-entity-type": "sku",
 													"direction": "up",
-													"title-pattern": "displayname"
+													"title-pattern": "producttitle"
 												}
 											},
-											"sharedProperties":{"business-function-data": "businessFunctionData"},
+											"sharedProperties": {
+												"business-function-data": "businessFunctionData"
+											},
 											"nextEvent": "onComplete",
 											"backEvent": "onCancel"
 										},
@@ -1441,36 +1473,38 @@
 						},
 						"jsonData": {
 							"config": {
-									"name": "rock-workflow-transition",
-									"label": "Manage bulk transitions",
-									"steps": [
-										{
-											"name": "step-1-rock-workflow-transition",
-											"label": "Manage bulk transitions",
-											"component": {
-												"name": "rock-workflow-transition",
-												"path": "/../../src/elements/rock-workflow-transition/rock-workflow-transition.html",
-											"properties": {												
-													"result-attribute": "producttitle"
-												}
-											},
-											"sharedProperties":{"business-function-data": "businessFunctionData"},
-											"nextEvent": "onComplete",
-											"backEvent": "onCancel"
+								"name": "rock-workflow-transition",
+								"label": "Manage bulk transitions",
+								"steps": [
+									{
+										"name": "step-1-rock-workflow-transition",
+										"label": "Manage bulk transitions",
+										"component": {
+											"name": "rock-workflow-transition",
+											"path": "/../../src/elements/rock-workflow-transition/rock-workflow-transition.html",
+											"properties": {
+												"result-attribute": "producttitle"
+											}
 										},
-										{
-											"name": "step-2-rock-workflow-transition",
-											"label": "Workflow transitions finish",
-											"component": {
-												"name": "rock-bulk-action-result",
-												"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
-												"properties": {
-													"business-function-data": {}
-												}
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onComplete",
+										"backEvent": "onCancel"
+									},
+									{
+										"name": "step-2-rock-workflow-transition",
+										"label": "Workflow transitions finish",
+										"component": {
+											"name": "rock-bulk-action-result",
+											"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+											"properties": {
+												"business-function-data": {}
 											}
 										}
-									]
-								}
+									}
+								]
+							}
 						}
 					}
 				]
@@ -1497,39 +1531,41 @@
 						},
 						"jsonData": {
 							"config": {
-									"name": "rock-workflow-assignment",
-									"label": "Manage bulk assignments",
-									"steps": [
-										{
-											"name": "step-1-rock-workflow-assignment",
-											"label": "Manage bulk assignments",
-											"component": {
-												"name": "rock-workflow-assignment",
-												"path": "/../../src/elements/rock-workflow-assignment/rock-workflow-assignment.html",
-											"properties": {												
-													"result-attribute": {
-														"name": "producttitle", 
-														"externalName": "Product Title"
-													}
-												}
-											},
-											"sharedProperties":{"business-function-data": "businessFunctionData"},
-											"nextEvent": "onComplete",
-											"backEvent": "onCancel"
-										},
-										{
-											"name": "step-2-rock-workflow-assignment",
-											"label": "Workflow assignment finish",
-											"component": {
-												"name": "rock-bulk-action-result",
-												"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
-												"properties": {
-													"business-function-data": {}
+								"name": "rock-workflow-assignment",
+								"label": "Manage bulk assignments",
+								"steps": [
+									{
+										"name": "step-1-rock-workflow-assignment",
+										"label": "Manage bulk assignments",
+										"component": {
+											"name": "rock-workflow-assignment",
+											"path": "/../../src/elements/rock-workflow-assignment/rock-workflow-assignment.html",
+											"properties": {
+												"result-attribute": {
+													"name": "producttitle",
+													"externalName": "Product Title"
 												}
 											}
+										},
+										"sharedProperties": {
+											"business-function-data": "businessFunctionData"
+										},
+										"nextEvent": "onComplete",
+										"backEvent": "onCancel"
+									},
+									{
+										"name": "step-2-rock-workflow-assignment",
+										"label": "Workflow assignment finish",
+										"component": {
+											"name": "rock-bulk-action-result",
+											"path": "/../../src/elements/rock-bulk-action-result/rock-bulk-action-result.html",
+											"properties": {
+												"business-function-data": {}
+											}
 										}
-									]
-								}
+									}
+								]
+							}
 						}
 					}
 				]

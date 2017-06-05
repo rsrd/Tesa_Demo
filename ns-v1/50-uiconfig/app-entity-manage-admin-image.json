@@ -39,7 +39,7 @@
 									"rock-entity-todo",
 									"rock-entity-tofix",
 									"rock-titlebar",
-                                    "extension-manage-productsetuptaxonomy",
+                                    "extension-manage-productclasshierarchy",
                                     "extension-manage-merchandisingtaxonomy",
  									"fix-attribute-errors",
 									"rock-entity-upload"
@@ -89,7 +89,7 @@
 										]
 									},
 									"selectedItem": {
-										"id": "productsetuptaxonomy",
+										"id": "productclasshierarchy",
 										"type": "taxonomy"
 									},
 									"default": ""
@@ -329,7 +329,7 @@
                                                       "tooltip": "Merchandising Taxonomy"
                                                     },
                                                     {
-                                                      "name": "productsetuptaxonomy",
+                                                      "name": "productclasshierarchy",
                                                       "text": "Product Setup Taxonomy",
                                                       "visible": true,
                                                       "tooltip": "Product Setup Taxonomy"
@@ -924,7 +924,7 @@
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Product Presentation To Lot",
+											"title": "Product Presentation To Style",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1046,7 +1046,7 @@
 										"gridConfig": {
 											"viewMode": "Tabular",
 											"mode": "Read",
-											"title": "Parent Lot",
+											"title": "Parent Style",
 											"schemaType": "colModel",
 											"statusEnabled": true,
 											"tabular": {
@@ -1062,7 +1062,7 @@
 												},
 												"columns": [
 													{
-														"header": "Parent Lot",
+														"header": "Parent Style",
 														"name": "Related Entity",
 														"sortable": true,
 														"filterable": false,
@@ -1504,8 +1504,8 @@
 			}
 		},
 		{
-			"id": "app-entity-manage_extension-manage-productsetuptaxonomy_image_admin_uiConfig",
-			"name": "app-entity-manage_extension-manage-productsetuptaxonomy",
+			"id": "app-entity-manage_extension-manage-productclasshierarchy_image_admin_uiConfig",
+			"name": "app-entity-manage_extension-manage-productclasshierarchy",
 			"version": "1.0",
 			"type": "uiConfig",
 			"properties": {
@@ -1518,14 +1518,14 @@
 						"context": {
 							"app": "app-entity-manage",
 							"service": "_ALL",
-							"component": "extension-manage-productsetuptaxonomy",
+							"component": "extension-manage-productclasshierarchy",
 							"subComponent": "_ALL",
 							"entityType": "image",
 							"role": "admin"
 						},
 						"jsonData": {
 							"config": {
-								"name": "extension-manage-productsetuptaxonomy",
+								"name": "extension-manage-productclasshierarchy",
 								"label": "Manage Extensions",
 								"steps": [
 									{
@@ -1535,7 +1535,7 @@
 											"name": "rock-extension-manage",
 											"path": "/../../src/elements/rock-extension-manage/rock-extension-manage.html",
 											"properties": {
-												"taxonomy": "productsetuptaxonomy"
+												"taxonomy": "productclasshierarchy"
 											}
 										},
 										"nextEvent": "onSave",

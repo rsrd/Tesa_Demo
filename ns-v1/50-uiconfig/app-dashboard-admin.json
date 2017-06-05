@@ -188,21 +188,6 @@
 										}
 									},
 									{
-										"name": "rock-import-list",
-										"nonClosable": true,
-										"nonMaximizable": false,
-										"nonDraggable": false,
-										"iconButtons": "",
-										"config": {
-											"heading": "Batch Jobs",
-											"headerIcon": "pebble-lg-icons:InegrationDb",
-											"component": {
-												"name": "rock-import-list",
-												"path": "/src/elements/rock-import-list/rock-import-list.html"
-											}
-										}
-									},
-									{
 										"name": "rock-saved-searches",
 										"nonClosable": true,
 										"nonMaximizable": false,
@@ -217,6 +202,21 @@
 												"properties": {
 													"view-mode": true
 												}
+											}
+										}
+									},
+									{
+										"name": "rock-import-list",
+										"nonClosable": true,
+										"nonMaximizable": false,
+										"nonDraggable": false,
+										"iconButtons": "",
+										"config": {
+											"heading": "Batch Jobs",
+											"headerIcon": "pebble-lg-icons:InegrationDb",
+											"component": {
+												"name": "rock-import-list",
+												"path": "/src/elements/rock-import-list/rock-import-list.html"
 											}
 										}
 									}
@@ -697,14 +697,15 @@
 							"role": "admin"
 						},
 						"jsonData": {
-							"config":{
-								"userToggleAllowed":true,
+							"config": {
+								"defaultJobStatus": "Completed",
+								"userToggleAllowed": true,
 								"viewMode": "List",
 								"title": "Simple Data Table",
 								"mode": "read",
-								"header" : {
-									"displayTitle" : false,
-									"defaultValue" :  "Simple Data Table"
+								"header": {
+									"displayTitle": false,
+									"defaultValue": "Simple Data Table"
 								},
 								"dataRequest": {
 									"attributes": [
@@ -749,7 +750,7 @@
 												"noTrim": true
 											},
 											{
-												"name":"viewDetails",
+												"name": "viewDetails",
 												"linkTemplate": "job-detail?id={taskId}"
 											}
 										]
@@ -759,7 +760,7 @@
 						}
 					}
 				]
-            }
+			}
 		}
 	]
 }
