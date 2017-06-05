@@ -229,16 +229,6 @@
 											"enabled": true
 										},
 										{
-											"id": -862615972,
-											"source": "PRINT OR PATTERN",
-											"destination": "@attr(printpattern)",
-											"entityType": "sku",
-											"type": "string",
-											"collectionType": "collection",
-											"required": true,
-											"enabled": true
-										},
-										{
 											"id": -1890128953,
 											"source": "Furniture",
 											"destination": "@attr(isfurniture)",
@@ -1092,16 +1082,6 @@
 											"destination": "@attr(sellableflag)",
 											"entityType": "lot",
 											"type": "string",
-											"required": true,
-											"enabled": true
-										},
-										{
-											"id": -862622576,
-											"source": "PRINT OR PATTERN",
-											"destination": "@attr(printpattern)",
-											"entityType": "lot",
-											"type": "string",
-											"collectionType": "collection",
 											"required": true,
 											"enabled": true
 										},
