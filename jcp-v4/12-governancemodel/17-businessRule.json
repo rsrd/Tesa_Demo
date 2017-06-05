@@ -2669,7 +2669,7 @@
 					"definition": {
 						"values": [
 							{
-								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\",\"rollupToLot\"],SendEntityForGraphProcessing[\"sku_ischildof_lot\"],false]"
+								"value": "IIF[IsEntityInWorkflow[\"newProductSetup\",\"rollupToLot\"],SendEntityForGraphProcessing[\"sku_ischildof_lot\",\"newProductSetup\",\"rollupToLot\",\"Done\"],false]"
 							}
 						]
 					},
