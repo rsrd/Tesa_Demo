@@ -11,38 +11,46 @@
             "type": "rollupModel",
             "domain": "generic",
             "properties": {
-                "noMatchResult": [
+                "defaultValueSource": "internal",
+                "defaultValueLocale": "en-US",
+                "matchRules": [
                     {
-                        "actions": [
+                        "seq": 1,
+                        "matchType": "_DEFAULT",
+                        "noMatchResult": [
                             {
-                                "actionName": "CreateTarget"
-                            },
-                            {
-                                "actionName": "AddSourceRelationship"
-                            },
-                            {
-                                "actionName": "Rollup"
+                                "actions": [
+                                    {
+                                        "actionName": "CreateTarget"
+                                    },
+                                    {
+                                        "actionName": "AddSourceRelationship"
+                                    },
+                                    {
+                                        "actionName": "Rollup"
+                                    }
+                                ]
                             }
-                        ]
-                    }
-                ],
-                "singleMatchResult": [
-                    {
-                        "actions": [
+                        ],
+                        "singleMatchResult": [
                             {
-                                "actionName": "AddSourceRelationship"
-                            },
-                            {
-                                "actionName": "Rollup"
+                                "actions": [
+                                    {
+                                        "actionName": "AddSourceRelationship"
+                                    },
+                                    {
+                                        "actionName": "Rollup"
+                                    }
+                                ]
                             }
-                        ]
-                    }
-                ],
-                "multiMatchResult": [
-                    {
-                        "actions": [
+                        ],
+                        "multiMatchResult": [
                             {
-                                "actionName": "Error"
+                                "actions": [
+                                    {
+                                        "actionName": "Error"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -666,6 +674,103 @@
                     }
                 }
             }
+        },
+        {
+            "id": "sku_hasimages_image_rollupModel",
+            "name": "sku_hasimages_image",
+            "type": "rollupModel",
+            "domain": "generic",
+            "properties": {
+                "defaultValueSource": "internal",
+                "defaultValueLocale": "en-US",
+                "matchRules": [
+                    {
+                        "seq": 1,
+                        "matchType": "attributeBased",
+                        "attributeMaps": [
+                            {
+                                "primaryimage": "property_originalfilename",
+                                "suppliernumbername": "property_ownershipdata"
+                            }
+                        ],
+                        "noMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "DoNothing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "singleMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "AddSourceRelationship",
+                                        "setRelAttrValues": [
+                                            {
+                                                "isprimary": "true"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "multiMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "Error"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "seq": 2,
+                        "matchType": "attributeBased",
+                        "attributeMaps": [
+                            {
+                                "alternateimages": "property_originalfilename",
+                                "suppliernumbername": "property_ownershipdata"
+                            }
+                        ],
+                        "noMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "DoNothing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "singleMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "AddSourceRelationship",
+                                        "setRelAttrValues": [
+                                            {
+                                                "isprimary": "false"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "multiMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "Error"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "data": {}
         }
     ]
 }
