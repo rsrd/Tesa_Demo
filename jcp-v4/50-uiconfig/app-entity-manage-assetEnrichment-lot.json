@@ -1031,6 +1031,14 @@
                                             },
                                             "tile": {
                                                 "settings": {
+                                                    "actions": [
+                                                        {
+                                                            "name": "downloadOriginalAsset",
+                                                            "text": "Download Original Asset",
+                                                            "visible": true,
+                                                            "eventName": "download-original-asset"
+                                                        }
+                                                    ],
                                                     "isMultiSelect": false
                                                 },
                                                 "tileItems" : {
@@ -1096,6 +1104,14 @@
                                             },
                                             "list": {
                                                 "settings": {
+                                                    "actions": [
+                                                        {
+                                                            "name": "downloadOriginalAsset",
+                                                            "text": "Download Original Asset",
+                                                            "visible": true,
+                                                            "eventName": "download-original-asset"
+                                                        }
+                                                    ],
                                                     "isMultiSelect": false
                                                 },
                                                 "listItems" : {
@@ -1820,6 +1836,14 @@
                                     },
                                     "tile": {
                                         "settings": {
+                                            "actions": [
+                                                {
+                                                    "name": "downloadOriginalAsset",
+                                                    "text": "Download Original Asset",
+                                                    "visible": true,
+                                                    "eventName": "download-original-asset"
+                                                }
+                                            ],
                                             "isMultiSelect": true
                                         },
                                         "tileItems" : {
