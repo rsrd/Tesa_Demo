@@ -37,14 +37,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -79,7 +79,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -191,42 +191,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -247,34 +247,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -282,7 +280,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -296,14 +294,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -317,21 +315,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -345,14 +343,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -380,14 +378,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -408,14 +406,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -429,7 +427,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -443,7 +441,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -513,7 +511,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -541,7 +539,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -569,14 +567,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -604,14 +602,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -639,21 +637,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -667,14 +665,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -695,7 +693,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -758,7 +756,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -890,6 +888,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_objectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_user": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_type": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_ownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_originalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_role": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_fullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_filename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -928,14 +982,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -970,7 +1024,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -1082,42 +1136,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -1138,34 +1192,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -1173,7 +1225,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -1187,14 +1239,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -1208,21 +1260,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -1236,14 +1288,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -1271,14 +1323,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -1299,14 +1351,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -1320,7 +1372,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -1334,7 +1386,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -1404,7 +1456,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -1432,7 +1484,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -1460,14 +1512,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -1495,14 +1547,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -1530,21 +1582,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -1558,14 +1610,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -1586,7 +1638,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -1649,7 +1701,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -1781,6 +1833,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_objectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_user": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_type": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_ownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_originalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_role": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_fullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_filename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -1835,14 +1943,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -1877,7 +1985,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -1989,42 +2097,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -2045,34 +2153,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -2080,7 +2186,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -2094,14 +2200,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -2115,21 +2221,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -2143,14 +2249,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -2178,14 +2284,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -2206,14 +2312,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -2227,7 +2333,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -2241,7 +2347,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -2311,7 +2417,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -2339,7 +2445,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -2367,14 +2473,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -2402,14 +2508,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -2437,21 +2543,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -2465,14 +2571,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -2493,7 +2599,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -2556,7 +2662,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -2688,6 +2794,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_objectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_user": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_type": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_ownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_originalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_role": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_fullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_filename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -2726,14 +2888,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -2768,7 +2930,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -2880,42 +3042,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -2936,34 +3098,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -2971,7 +3131,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -2985,14 +3145,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -3006,21 +3166,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -3034,14 +3194,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -3069,14 +3229,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -3097,14 +3257,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -3118,7 +3278,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -3132,7 +3292,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -3202,7 +3362,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -3230,7 +3390,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -3258,14 +3418,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -3293,14 +3453,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -3328,21 +3488,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -3356,14 +3516,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -3384,7 +3544,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -3447,7 +3607,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -3579,6 +3739,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_objectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_user": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_type": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_ownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_originalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_role": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_fullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_filename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -3633,14 +3849,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -3675,7 +3891,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -3787,42 +4003,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -3843,34 +4059,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -3878,7 +4092,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -3892,14 +4106,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -3913,21 +4127,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -3941,14 +4155,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -3976,14 +4190,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -4004,14 +4218,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -4025,7 +4239,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -4039,7 +4253,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -4109,7 +4323,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -4137,7 +4351,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -4165,14 +4379,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -4200,14 +4414,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -4235,21 +4449,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -4263,14 +4477,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -4291,7 +4505,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -4354,7 +4568,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -4486,6 +4700,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_objectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_user": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_type": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_ownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyoriginalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_role": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_fullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "property_filename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -4524,14 +4794,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -4566,7 +4836,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -4678,42 +4948,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -4734,34 +5004,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -4769,7 +5037,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -4783,14 +5051,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -4804,21 +5072,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -4832,14 +5100,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -4867,14 +5135,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -4895,14 +5163,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -4916,7 +5184,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -4930,7 +5198,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -5000,7 +5268,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -5028,7 +5296,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -5056,14 +5324,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -5091,14 +5359,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -5126,21 +5394,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -5154,14 +5422,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -5182,7 +5450,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -5245,7 +5513,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -5377,6 +5645,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyobjectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyuser": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertytype": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyoriginalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyrole": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyfullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyfilename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
@@ -5415,14 +5739,14 @@
                         "properties": {
                             "externalName": "Credit Line",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "customrendered": {
                         "properties": {
                             "externalName": "Custom Rendered",
                             "groupName": "Asset Information",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "jobidentifier": {
@@ -5457,7 +5781,7 @@
                         "properties": {
                             "externalName": "Rating Percent",
                             "groupName": "Asset Information",
-                            "dataType": "string"
+                            "dataType": "integer"
                         }
                     },
                     "thumbnailimage": {
@@ -5569,42 +5893,42 @@
                         "properties": {
                             "externalName": "Aperture Value",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "bitspersample": {
                         "properties": {
                             "externalName": "Bits Per Sample",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "colorcomponents": {
                         "properties": {
                             "externalName": "Color Components",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "colorspace": {
                         "properties": {
                             "externalName": "Color Space",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "componentsconfiguration": {
                         "properties": {
                             "externalName": "Components Configuration",
                             "groupName": "EXIF",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "compressedbitsperpixel": {
                         "properties": {
                             "externalName": "Compressed Bits Per Pixel",
                             "groupName": "EXIF",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "compression": {
@@ -5625,34 +5949,32 @@
                         "properties": {
                             "externalName": "Exif Byte Order",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "exifimageheight": {
                         "properties": {
                             "externalName": "Exif Image Height",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exifimagewidth": {
                         "properties": {
                             "externalName": "Exif Image Width",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "exitmodel": {
                         "properties": {
-                            "externalName": "Exit Model",
-                            "groupName": "EXIF",
+                            "externalName": "exitmodel",
                             "dataType": "string"
                         }
                     },
                     "exitpadding": {
                         "properties": {
-                            "externalName": "Exit Padding",
-                            "groupName": "EXIF",
+                            "externalName": "exitpadding",
                             "dataType": "string"
                         }
                     },
@@ -5660,7 +5982,7 @@
                         "properties": {
                             "externalName": "Flash",
                             "groupName": "EXIF",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "flashpixversion": {
@@ -5674,14 +5996,14 @@
                         "properties": {
                             "externalName": "Related Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "relatedimagewidth": {
                         "properties": {
                             "externalName": "Related Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "imagedescription": {
@@ -5695,21 +6017,21 @@
                         "properties": {
                             "externalName": "Image Height",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "imagesize": {
                         "properties": {
                             "externalName": "Image Size",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "string"
                         }
                     },
                     "imagewidth": {
                         "properties": {
                             "externalName": "Image Width",
                             "groupName": "EXIF - Image Information",
-                            "dataType": "datetime"
+                            "dataType": "decimal"
                         }
                     },
                     "encodingprocess": {
@@ -5723,14 +6045,14 @@
                         "properties": {
                             "externalName": "Exif Version",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exiftoolversionnumber": {
                         "properties": {
                             "externalName": "ExifTool Version Number",
                             "groupName": "EXIF - System",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "jfifversion": {
@@ -5758,14 +6080,14 @@
                         "properties": {
                             "externalName": "Focal Plane Y Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "padding": {
                         "properties": {
                             "externalName": "Padding",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "scenecapturetype": {
@@ -5786,14 +6108,14 @@
                         "properties": {
                             "externalName": "White Balance",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "iso": {
                         "properties": {
                             "externalName": "ISO",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "lightsource": {
@@ -5807,7 +6129,7 @@
                         "properties": {
                             "externalName": "Max Aperture Value",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "meteringmode": {
@@ -5821,7 +6143,7 @@
                         "properties": {
                             "externalName": "Orientation",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "photometricinterpretation": {
@@ -5891,7 +6213,7 @@
                         "properties": {
                             "externalName": "X Resolution",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "ycbcrpositioning": {
@@ -5919,7 +6241,7 @@
                         "properties": {
                             "externalName": "Exposure bias",
                             "groupName": "EXIF - Technical",
-                            "dataType": "decimal"
+                            "dataType": "string"
                         }
                     },
                     "exposurecompensation": {
@@ -5947,14 +6269,14 @@
                         "properties": {
                             "externalName": "F Number",
                             "groupName": "EXIF - Technical",
-                            "dataType": "integer"
+                            "dataType": "decimal"
                         }
                     },
                     "focallength": {
                         "properties": {
                             "externalName": "Focal Length",
                             "groupName": "EXIF - Technical",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "megapixels": {
@@ -5982,14 +6304,14 @@
                         "properties": {
                             "externalName": "Date Acquired",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "datetimedigitized": {
                         "properties": {
                             "externalName": "Date/Time Digitized",
                             "groupName": "File Information",
-                            "dataType": "integer"
+                            "dataType": "datetime"
                         }
                     },
                     "interoperabilityversion": {
@@ -6017,21 +6339,21 @@
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileaccessdatetime": {
                         "properties": {
                             "externalName": "File Access DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filecreationdatetime": {
                         "properties": {
                             "externalName": "File Creation DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "fileinodechangedatetime": {
@@ -6045,14 +6367,14 @@
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filemodificationdatetime": {
                         "properties": {
                             "externalName": "File Modification DateTime",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "datetime"
                         }
                     },
                     "filename": {
@@ -6073,7 +6395,7 @@
                         "properties": {
                             "externalName": "File Size",
                             "groupName": "File Information",
-                            "dataType": "string"
+                            "dataType": "decimal"
                         }
                     },
                     "filesource": {
@@ -6136,7 +6458,7 @@
                         "properties": {
                             "externalName": "IPTC Subject Code",
                             "groupName": "IPTC",
-                            "dataType": "integer"
+                            "dataType": "string"
                         }
                     },
                     "sublocation": {
@@ -6268,6 +6590,62 @@
                     "lifecyclestage": {
                         "properties": {
                             "externalName": "lifecyclestage",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyobjectkey": {
+                        "properties": {
+                            "externalName": "Object Key Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyuser": {
+                        "properties": {
+                            "externalName": "User Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertytype": {
+                        "properties": {
+                            "externalName": "Type Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyownershipdata": {
+                        "properties": {
+                            "externalName": "Owner Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyoriginalfilename": {
+                        "properties": {
+                            "externalName": "Original File Name Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyrole": {
+                        "properties": {
+                            "externalName": "Role Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyfullobjectpath": {
+                        "properties": {
+                            "externalName": "Full Object Path Property",
+                            "groupName": "System",
+                            "dataType": "string"
+                        }
+                    },
+                    "propertyfilename": {
+                        "properties": {
+                            "externalName": "File Name Property",
+                            "groupName": "System",
                             "dataType": "string"
                         }
                     }
