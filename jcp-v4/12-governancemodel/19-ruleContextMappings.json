@@ -730,7 +730,52 @@
                     }
                   ]
                 }
-               
+              }
+            },
+            {
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessRules_SendSkuForAssetLinking_businessRule",
+              "relTo": {
+                "id": "SendSkuForAssetLinking_businessRule",
+                "type": "businessRule"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "asynconly"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "20"
+                    }
+                  ]
+                }
               }
             }
           ],
@@ -1145,51 +1190,51 @@
               }
             },
             {
-                  "direction": "both",
-                  "relationshipType": "association",
-                  "id": "hasBusinessConditions_categorySpecificRequiredAttributesArePopulated_businessCondition",
-                  "relTo": {
-                    "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
-                    "type": "businessCondition"
-                  },
-                  "attributes": {
-                    "ignoreChangeContext": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "isDeleted": {
-                      "values": [
-                        {
-                          "value": "false"
-                        }
-                      ]
-                    },
-                    "enabled": {
-                      "values": [
-                        {
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    "executionMode": {
-                      "values": [
-                        {
-                          "value": "any"
-                        }
-                      ]
-                    },
-                    "executionOrder": {
-                      "values": [
-                        {
-                          "value": "1"
-                        }
-                      ]
+              "direction": "both",
+              "relationshipType": "association",
+              "id": "hasBusinessConditions_categorySpecificRequiredAttributesArePopulated_businessCondition",
+              "relTo": {
+                "id": "categorySpecificRequiredAttributesArePopulated_businessCondition",
+                "type": "businessCondition"
+              },
+              "attributes": {
+                "ignoreChangeContext": {
+                  "values": [
+                    {
+                      "value": "true"
                     }
-                  }
+                  ]
+                },
+                "isDeleted": {
+                  "values": [
+                    {
+                      "value": "false"
+                    }
+                  ]
+                },
+                "enabled": {
+                  "values": [
+                    {
+                      "value": "true"
+                    }
+                  ]
+                },
+                "executionMode": {
+                  "values": [
+                    {
+                      "value": "any"
+                    }
+                  ]
+                },
+                "executionOrder": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
                 }
+              }
+            }
           ]
         },
         "contexts": [
@@ -1248,6 +1293,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "skipCriteria"
                         },
                         {
                           "value": "async"
@@ -1474,6 +1522,9 @@
                           "value": "exitCriteria"
                         },
                         {
+                          "value": "skipCriteria"
+                        },
+                        {
                           "value": "async"
                         }
                       ]
@@ -1550,6 +1601,9 @@
                       "values": [
                         {
                           "value": "exitCriteria"
+                        },
+                        {
+                          "value": "skipCriteria"
                         },
                         {
                           "value": "async"
