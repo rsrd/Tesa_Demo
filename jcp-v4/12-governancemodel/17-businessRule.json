@@ -2705,6 +2705,77 @@
 			}
 		},
 		{
+			"id": "SendSkuForAssetLinking_businessRule",
+			"type": "businessRule",
+			"data": {
+				"attributes": {
+					"name": {
+						"values": [
+							{
+								"value": "Send SKU for asset linking"
+							}
+						]
+					},
+					"description": {
+						"values": [
+							{
+								"value": "Send SKU for asset linking"
+							}
+						]
+					},
+					"ruleType": {
+						"values": [
+							{
+								"value": "computation"
+							}
+						]
+					},
+					"executionMode": {
+						"values": [
+							{
+								"value": "any"
+							}
+						]
+					},
+					"definition": {
+						"values": [
+							{
+								"value": "IIF[HasAnyAttributesChanged[\"primaryimage\",\"alternateimages\"],SendEntityForGraphProcessing[\"sku_hasimages_image\"],false]"
+							}
+						]
+					},
+					"enabled": {
+						"values": [
+							{
+								"value": "true"
+							}
+						]
+					},
+					"isDraft": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isDeleted": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					},
+					"isSystemRule": {
+						"values": [
+							{
+								"value": "false"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
 			"id": "resumeWorkFlowNewSkusToSubmitIfVendorFilled_businessRule",
 			"type": "businessRule",
 			"data": {
