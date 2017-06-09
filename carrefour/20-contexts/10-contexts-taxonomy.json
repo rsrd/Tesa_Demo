@@ -1,0 +1,314 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityData",
+        "collectionName": "entities",
+        "responseObjectName": "response"
+    },
+    "entities": [
+        
+        {
+            "id": "regularcheese_classification",
+            "name": "regularcheese",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "CHEESE"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "cheese_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fullfatmilk_classification",
+            "name": "fullfatmilk",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Full Fat Milk"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "milk_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "productsetuptaxonomy_taxonomy",
+            "name": "productsetuptaxonomy",
+            "type": "taxonomy",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "Product Setup Taxonomy"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "milk_classification",
+            "name": "milk",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "MILK"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "dairy_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1milk_classification",
+            "name": "1milk",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "1 % Milk"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "milk_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "artisanalcheese_classification",
+            "name": "artisanalcheese",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "ARTISANAL CHEESE"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "cheese_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dairy_classification",
+            "name": "dairy",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "DAIRY"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "_root_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2milk_classification",
+            "name": "2milk",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "2 % Milk"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "milk_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cheese_classification",
+            "name": "cheese",
+            "type": "classification",
+            "data": {
+                "attributes": {
+                    "externalName": {
+                        "values": [
+                            {
+                                "value": "CHEESE"
+                            }
+                        ]
+                    }
+                },
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "relationships": {
+                            "belongsto": [
+                                {
+                                    "direction": "both",
+                                    "source": "internal",
+                                    "operation": "aggregation",
+                                    "relTo": {
+                                        "id": "dairy_classification",
+                                        "type": "classification"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
