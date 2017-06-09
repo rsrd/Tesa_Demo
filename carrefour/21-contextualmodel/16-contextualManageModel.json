@@ -1,0 +1,131 @@
+{
+    "metaInfo": {
+        "dataIndex": "entityModel",
+        "collectionName": "entityModels",
+        "responseObjectName": "response"
+    },
+    "entityModels": [
+        {
+            "id": "milk_entityManageModel",
+            "name": "milk",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "attributes": {
+                            "fatcontent": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Fat Content",
+                                    "dataType": "string"
+                                }
+                            },
+                            "color": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Color",
+                                    "dataType": "string"
+                                }
+                            },
+                            "size": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Size",
+                                    "dataType": "string"
+                                }
+                            },
+                            "nutrifacts": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Nutrifacts",
+                                    "dataType": "string"
+                                }
+                            },
+                            "packagingtype": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Packaging Type",
+                                    "dataType": "string"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cheese_entityManageModel",
+            "name": "cheese",
+            "type": "entityManageModel",
+            "domain": "generic",
+            "data": {
+                "contexts": [
+                    {
+                        "context": {
+                            "taxonomy": "productsetuptaxonomy"
+                        },
+                        "attributes": {
+                            "fatcontent": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Fat Content",
+                                    "dataType": "string"
+                                }
+                            },
+                            "color": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Color",
+                                    "dataType": "string"
+                                }
+                            },
+                            "size": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Size",
+                                    "dataType": "string"
+                                }
+                            },
+                            "nutrifacts": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Nutrifacts",
+                                    "dataType": "string"
+                                }
+                            },
+                            "packagingtype": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Packaging Type",
+                                    "dataType": "string"
+                                }
+                            },
+                            "age": {
+                                "properties": {
+                                    "isEntityIdentifier": false,
+                                    "groupName": "Product Attributes",
+                                    "externalName": "Age",
+                                    "dataType": "integer"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
