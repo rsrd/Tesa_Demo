@@ -203,7 +203,8 @@
             "type": "attributeModel",
             "domain": "digitalAsset",
             "properties": {
-                "externalName": "Rating"
+                "externalName": "Rating",
+                "description": "1 to 5"
             },
             "data": {
                 "relationships": {
@@ -870,8 +871,8 @@
             }
         },
         {
-            "id": "exitmodel_attributeModel",
-            "name": "exitmodel",
+            "id": "exifmodel_attributeModel",
+            "name": "exifmodel",
             "type": "attributeModel",
             "domain": "digitalAsset",
             "properties": {
@@ -894,8 +895,8 @@
             }
         },
         {
-            "id": "exitpadding_attributeModel",
-            "name": "exitpadding",
+            "id": "exifpadding_attributeModel",
+            "name": "exifpadding",
             "type": "attributeModel",
             "domain": "digitalAsset",
             "properties": {
@@ -2988,6 +2989,198 @@
             "domain": "digitalAsset",
             "properties": {
                 "externalName": "Creator Contact Info"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_objectkey_attributeModel",
+            "name": "property_objectkey",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Object Key Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_user_attributeModel",
+            "name": "property_user",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "User Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_type_attributeModel",
+            "name": "property_type",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Type Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_ownershipdata_attributeModel",
+            "name": "property_ownershipdata",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Owner Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_originalfilename_attributeModel",
+            "name": "property_originalfilename",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Original File Name Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_role_attributeModel",
+            "name": "property_role",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Role Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_fullobjectpath_attributeModel",
+            "name": "property_fullobjectpath",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "Full Object Path Property"
+            },
+            "data": {
+                "relationships": {
+                    "listedUnder": [
+                        {
+                            "id": "",
+                            "direction": "both",
+                            "relationshipType": "aggregation",
+                            "relTo": {
+                                "id": "digitalAssetdomainattributemodels",
+                                "type": "list"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "property_filename_attributeModel",
+            "name": "property_filename",
+            "type": "attributeModel",
+            "domain": "digitalAsset",
+            "properties": {
+                "externalName": "File Name Property"
             },
             "data": {
                 "relationships": {
