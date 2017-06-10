@@ -13,10 +13,16 @@
             "properties": {
                 "defaultValueSource": "internal",
                 "defaultValueLocale": "en-US",
+                "matchRulesOperator": "or",
                 "matchRules": [
                     {
                         "seq": 1,
-                        "matchType": "_DEFAULT",
+                        "matchType": "attributeBased",
+                        "attributeMaps": [
+                            {
+                                "lotgroup": "lotgroup"
+                            }
+                        ],
                         "noMatchResult": [
                             {
                                 "actions": [
@@ -52,6 +58,97 @@
                                     }
                                 ]
                             }
+                        ],
+                        "smartIdAttributes": [
+                            {
+                                "attributeNames": "lotgroup",
+                                "concatDelimiter": ""
+                            }
+                        ]
+                    },
+                    {
+                        "seq": 2,
+                        "matchType": "attributeBased",
+                        "attributeMaps": [
+                            {
+                                "subproducttype": "subproducttype",
+                                "itemtype": "itemtype",
+                                "cost": "cost",
+                                "length": "length",
+                                "height": "height",
+                                "grossweight": "grossweight",
+                                "diff1group": "diff1group",
+                                "diff2group": "diff2group",
+                                "colordesc": "colordesc",
+                                "assembledweight": "assembledweight",
+                                "assembledlength": "assembledlength",
+                                "assembledwidth": "assembledwidth",
+                                "assembledheight": "assembledheight",
+                                "countryofmanufacture": "countryofmanufacture",
+                                "suppliernumbername": "suppliernumbername",
+                                "brand": "brand",
+                                "producttype": "producttype"
+                            }
+                        ],
+                        "noMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "CreateTarget"
+                                    },
+                                    {
+                                        "actionName": "AddSourceRelationship"
+                                    },
+                                    {
+                                        "actionName": "Rollup"
+                                    }
+                                ]
+                            }
+                        ],
+                        "singleMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "AddSourceRelationship"
+                                    },
+                                    {
+                                        "actionName": "Rollup"
+                                    }
+                                ]
+                            }
+                        ],
+                        "multiMatchResult": [
+                            {
+                                "actions": [
+                                    {
+                                        "actionName": "Error"
+                                    }
+                                ]
+                            }
+                        ],
+                        "smartIdAttributes": [
+                            {
+                                "attributeNames": [
+                                    "subproducttype",
+                                    "itemtype",
+                                    "cost",
+                                    "length",
+                                    "height",
+                                    "grossweight",
+                                    "diff1group",
+                                    "diff2group",
+                                    "colordesc",
+                                    "assembledweight",
+                                    "assembledlength",
+                                    "assembledwidth",
+                                    "assembledheight",
+                                    "countryofmanufacture",
+                                    "suppliernumbername",
+                                    "brand",
+                                    "producttype"
+                                ],
+                                "concatDelimiter": "_"
+                            }
                         ]
                     }
                 ],
@@ -62,31 +159,6 @@
                                 "actionName": "Rollup"
                             }
                         ]
-                    }
-                ],
-                "smartIdAttributes": [
-                    {
-                        "attributeNames": [
-                            "lotgroup",
-                            "subproducttype",
-                            "itemtype",
-                            "cost",
-                            "length",
-                            "height",
-                            "grossweight",
-                            "diff1group",
-                            "diff2group",
-                            "colordesc",
-                            "assembledweight",
-                            "assembledlength",
-                            "assembledwidth",
-                            "assembledheight",
-                            "countryofmanufacture",
-                            "suppliernumbername",
-                            "brand",
-                            "producttype"
-                        ],
-                        "concatDelimiter": "_"
                     }
                 ]
             },
@@ -668,6 +740,11 @@
                         }
                     },
                     "storesubset": {
+                        "properties": {
+                            "strategy": "copyWhenEmpty"
+                        }
+                    },
+                    "lotgroup": {
                         "properties": {
                             "strategy": "copyWhenEmpty"
                         }
