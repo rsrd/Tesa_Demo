@@ -43,18 +43,39 @@
 			}
 		},
 		{
-			"id": "digitalAsset_authorizationModel_business",
-			"name": "digitalAsset_authorizationModel_business",
+			"id": "digitalAsset_authorizationModel_assetEnrichment",
+			"name": "digitalAsset_authorizationModel_assetEnrichment",
 			"type": "authorizationModel",
 			"properties": {
 				"readPermission": true,
+				"writePermission": true,
 				"attributesPermission": [
 					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				],
 				"relationshipsPermission": [
 					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsAttributesPermission": [
+					{
+						"writePermission": true,
+						"readPermission": true
+					}
+				],
+				"contextsRelationshipsPermission": [
+					{
+						"writePermission": true,
 						"readPermission": true
 					}
 				]
