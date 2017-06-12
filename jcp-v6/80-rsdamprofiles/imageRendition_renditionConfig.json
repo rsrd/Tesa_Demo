@@ -1,0 +1,40 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "imageRendition_renditionConfig",
+			"name": "imageRendition",
+			"type": "renditionConfig",
+			"properties": {
+				"createdByService": "entityservice",
+				"createdBy": "user"
+			},
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSDAM",
+							"service": "assetRenditionService",
+							"enabled": "true",
+							"assetType": "image"
+						},
+						"jsonData": {
+							"renditions": [
+								{
+									"type": "thumbnail",
+									"uom": "pixels",
+									"width": 400,
+									"height": 400
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}
