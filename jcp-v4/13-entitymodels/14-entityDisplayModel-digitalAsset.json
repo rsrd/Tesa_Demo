@@ -10,6 +10,9 @@
             "name": "image",
             "type": "entityDisplayModel",
             "domain": "generic",
+            "properties": {
+                "defaultThumbnail": "/src/images/image-thumbnail.svg"
+            },
             "data": {
                 "attributes": {
                     "about": {
@@ -824,6 +827,9 @@
             "name": "videorendition",
             "type": "entityDisplayModel",
             "domain": "generic",
+            "properties": {
+                "defaultThumbnail": "/src/images/video-thumbnail.svg"
+            },
             "data": {
                 "attributes": {
                     "about": {
@@ -1654,6 +1660,9 @@
             "name": "document",
             "type": "entityDisplayModel",
             "domain": "generic",
+            "properties": {
+                "defaultThumbnail": "/src/images/document-thumbnail.svg"
+            },
             "data": {
                 "attributes": {
                     "about": {
@@ -3298,6 +3307,9 @@
             "name": "video",
             "type": "entityDisplayModel",
             "domain": "generic",
+            "properties": {
+                "defaultThumbnail": "/src/images/video-thumbnail.svg"
+            },
             "data": {
                 "attributes": {
                     "about": {
@@ -4112,6 +4124,9 @@
             "name": "audio",
             "type": "entityDisplayModel",
             "domain": "generic",
+            "properties": {
+                "defaultThumbnail": "/src/images/audio-thumbnail.svg"
+            },
             "data": {
                 "attributes": {
                     "about": {
