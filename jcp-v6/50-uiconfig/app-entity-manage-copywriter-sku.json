@@ -108,6 +108,9 @@
                                     ]
                                 },
                                 "selectedItem": {},
+                                "selectedItemInfo": {
+								    "taxonomy": "productsetuptaxonomy"										
+								},
                                 "default": ""
                             },
                             {
@@ -412,7 +415,13 @@
 											"eventName": "action-releaseTask"
 										}
 									]
-								}]
+								}],
+                            "thumbnailConfig":{
+                                "relationshipName":"hasimages",
+                                "thumbnailIdentifier":"thumbnailid",
+                                "relationshipFilterAttributeName":"isPrimary",
+                                "relationshipFilterAttributeValue":true
+                            }
                         }
                     }
                 }]
