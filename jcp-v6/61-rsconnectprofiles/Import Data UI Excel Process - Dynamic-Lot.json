@@ -1,0 +1,1212 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "lot_Folder_Excel_Import_Process_Dynamic",
+			"name": "lot_Folder_Excel_Import_Process_Dynamic",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportProcessService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "lot_Folder_Excel_Import_Process_Dynamic",
+							"name": "lot_Folder_Excel_Import_Process_Dynamic",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"folderConnector": {
+									"sourceFolder": "",
+									"pattern": "*"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "EXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8",
+										"headerRowNumber": 1,
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"supportsCollection": "true"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(Type)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "LOWER",
+												"removeSpecialCharacters": "true",
+												"removeWhitespace": "true",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@fieldExternalName(Classification)",
+												"taxonomy": "@fieldExternalName(Taxonomy)"
+											}
+										}
+									],
+									"fieldOverrides": [
+										{
+											"source": "UPC",
+											"destination": "@attr(upcbarcode)",
+											"id": 327204039,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1099835574,
+											"source": "On-Site Date",
+											"destination": "@attr(startdate)",
+											"entityType": "sku",
+											"type": "datetime",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -71103050,
+											"source": "RMS Item Type",
+											"destination": "@attr(skuitemtype)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1521906910,
+											"source": "PP SKU Swatches Rolledup Count",
+											"destination": "@attr(ppskuswatchesrolledupcount)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -750355834,
+											"source": "Id",
+											"destination": "@attr(identifier)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1833927644,
+											"source": "Will Call Restrict Code",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1251917238,
+											"source": "Orderable",
+											"destination": "@attr(orderableflag)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -183615169,
+											"source": "Disclaimers",
+											"destination": "@attr(disclaimercopy)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1319875109,
+											"source": "Sephora",
+											"destination": "@attr(issephora)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -2019512810,
+											"source": "Secondary Description",
+											"destination": "@attr(secondarydesc)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 538909622,
+											"source": "PPK #",
+											"destination": "@attr(ppkno)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -111566954,
+											"source": "Off-Site Date",
+											"destination": "@attr(enddate)",
+											"entityType": "sku",
+											"type": "datetime",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1376058790,
+											"source": "Size: Case",
+											"destination": "@attr(sizecase)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 194154404,
+											"source": "Continental Tranportation Prepaid",
+											"destination": "@attr(continentalprepaid)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -475088458,
+											"source": "Size",
+											"destination": "@attr(skusize)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1890128953,
+											"source": "Furniture",
+											"destination": "@attr(isfurniture)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 401307166,
+											"source": "Ticket Attribute Text",
+											"destination": "@attr(ticketattributeval)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 436919890,
+											"source": "Sample Ensemble",
+											"destination": "@attr(issampleensemble)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1259541857,
+											"source": "New To Clearance Timestamp",
+											"destination": "@attr(isnewclearancetimestamp)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1800047108,
+											"source": "Include SEO Tags",
+											"destination": "@attr(seotaginclude)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -849816633,
+											"source": "Truck Item",
+											"destination": "@attr(istruckitem)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 973652886,
+											"source": "Multi LOT PP Value",
+											"destination": "@attr(multilotppval)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -223555018,
+											"source": "Assembled Weight(in pounds)",
+											"destination": "@attr(assembledweight)",
+											"entityType": "sku",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 923548411,
+											"source": "Hide Display",
+											"destination": "@attr(ishidden)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127854826,
+											"source": "Disposal Fee Code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -794984650,
+											"source": "Width",
+											"destination": "@attr(shippingwidth)",
+											"entityType": "sku",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1342519914,
+											"source": "Assembled Height(in inches)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "sku",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1303444742,
+											"source": "Direct Ship Restrict Code",
+											"destination": "@attr(directshiprestrict)",
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -404949820,
+											"source": "SKU ID",
+											"destination": "@attr(rmsskuid)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -622385996,
+											"source": "Sellable",
+											"destination": "@attr(sellableflag)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1299760137,
+											"source": "LOT ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182320330,
+											"source": "Variable Data",
+											"destination": "@attr(vdata)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1780303018,
+											"source": "Unit of Size",
+											"destination": "@attr(sizeunit)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -982427978,
+											"source": "Planned OnSite Date (mm/dd/yyyy)",
+											"destination": "@attr(plannedonsitedate)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1972730544,
+											"source": "Search keywords & Navigation",
+											"destination": "@attr(searchkeywordsnavigation)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2034562838,
+											"source": "Non Continental Transportation Prepaid",
+											"destination": "@attr(noncontinentalprepaid)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 802306146,
+											"source": "Hide Display",
+											"destination": "@attr(hidedisplayindicator)",
+											"entityType": "sku",
+											"type": "boolean",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -726869189,
+											"source": "Source Feed",
+											"destination": "@attr(sourcefeedid)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1186004085,
+											"source": "Bopis Eligible",
+											"destination": "@attr(isbopiseligible)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059892012,
+											"source": "Assembled Width(in inches)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "sku",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 804807133,
+											"source": "Brand LOGO Image",
+											"destination": "@attr(brandlogo)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1257571708,
+											"source": "Feature Quote",
+											"destination": "@attr(featurequotetext)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1764469729,
+											"source": "Feature Header",
+											"destination": "@attr(featureheadertext)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 43155830,
+											"source": "Quantity",
+											"destination": "@attr(skuquantity)",
+											"entityType": "sku",
+											"type": "integer",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1210929892,
+											"source": "New To Clearance",
+											"destination": "@attr(isnewtoclearance)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1238179692,
+											"source": "UPS Code",
+											"destination": "@attr(commercialcarriercode)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1579170477,
+											"source": "Unit of Weight",
+											"destination": "@attr(weightunit)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -940895210,
+											"source": "Sub-Divisions",
+											"destination": "@attr(subdivision)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -841883114,
+											"source": "Size: Inner",
+											"destination": "@attr(sizeinner)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -86157002,
+											"source": "Inventory",
+											"destination": "@attr(inventoryflag)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1353171882,
+											"source": "Ticket Stock #",
+											"destination": "@attr(ticketstockno)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -510573834,
+											"source": "Assembled Length(in inches)",
+											"destination": "@attr(assembledlength)",
+											"entityType": "sku",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1933172502,
+											"source": "Customer Favorite",
+											"destination": "@attr(iscustomerfavoriteoption)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1713149866,
+											"source": "Will Call Factory Ship",
+											"destination": "@attr(willcallfactoryshipind)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1810198029,
+											"source": "Recycle Fee",
+											"destination": "@attr(recyclefeeindicator)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1564279421,
+											"source": "Promotional Image",
+											"destination": "@attr(promotionalimagecontent)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2060326753,
+											"source": "Mail Code",
+											"destination": "@attr(noncommercialcarriercode)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 154321445,
+											"source": "PreOrder Option",
+											"destination": "@attr(ispreorderoption)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506843638,
+											"source": "Print/Pattern",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "PRINT/PATTERN",
+											"destination": "@attr(skuprintpattern)",
+											"id": 174000161,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "SIZE",
+											"destination": "@attr(skusize)",
+											"id": -4175826,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WIDTH",
+											"destination": "@attr(shippingwidth)",
+											"id": 1013866857,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED HEIGHT(IN INCHES)",
+											"destination": "@attr(assembledheight)",
+											"id": 547170246,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED LENGTH(IN INCHES)",
+											"destination": "@attr(assembledlength)",
+											"id": 1121937477,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED WEIGHT(IN POUNDS)",
+											"destination": "@attr(assembledweight)",
+											"id": 51114182,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"id": 1754554345,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "BRAND NUMBER/NAME",
+											"destination": "@attr(brand)",
+											"id": -1830462089,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "CLASS/SUBCLASS",
+											"destination": "@attr(class)",
+											"id": -1560939168,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "CUSTOMER FACING: WARRANTY COVERAGE DESCRIPTION",
+											"destination": "@attr(warranty)",
+											"id": 1940273161,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "DEPT",
+											"destination": "@attr(subdivision)",
+											"id": 1454921578,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "DIRECT SHIP RESTRICTED",
+											"destination": "@attr(directshiprestrict)",
+											"id": 324747079,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Disposal fee code",
+											"destination": "@attr(disposalfee)",
+											"id": -363725479,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ECOMM SHORT DESC ATTR",
+											"destination": "@attr(shortdescription)",
+											"id": -1621262686,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ITEM DESCRIPTION",
+											"destination": "@attr(description)",
+											"id": -1998188256,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ITEM SHORT DESC",
+											"destination": "@attr(shortdescription)",
+											"id": -407345523,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Multi lot pp value",
+											"destination": "@attr(multilotppval)",
+											"id": 1973394824,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Planned onsite date (mm/dd/yyyy)",
+											"destination": "@attr(plannedonsitedate)",
+											"id": -340150406,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "RMS ITEM TYPE",
+											"destination": "@attr(skuitemtype)",
+											"id": 1509081584,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "V-DATA MODEL NUMBER",
+											"destination": "@attr(vdata)",
+											"id": -298900944,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WILL CALL RESTRICTED",
+											"destination": "@attr(willcallrestrict)",
+											"id": 958888032,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WEIGHT (LB.)",
+											"destination": "@attr(weight)",
+											"id": -2114741250,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "VOLTAGE (VOLTS)",
+											"destination": "@attr(voltage)",
+											"id": -1424620686,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -220904672,
+											"source": "LOT NUM",
+											"destination": "@attr(lotgroup)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 951690282,
+											"source": "Lot ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 951690282,
+											"source": "LOT ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182326934,
+											"source": "V-DATA MODEL NUMBER",
+											"destination": "@attr(vdata)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182326934,
+											"source": "Variable Data",
+											"destination": "@attr(vdata)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2074210416,
+											"source": "Unit of Weight",
+											"destination": "@attr(weightunit)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -371731070,
+											"source": "Unit of Size",
+											"destination": "@attr(sizeunit)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -940901814,
+											"source": "Sub-Divisions",
+											"destination": "@attr(subdivision)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -982434582,
+											"source": "Planned OnSite Date (mm/dd/yyyy)",
+											"destination": "@attr(plannedonsitedate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -86163606,
+											"source": "Inventory",
+											"destination": "@attr(inventoryflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -861367928,
+											"source": "Warranty",
+											"destination": "@attr(warrantyflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2034556234,
+											"source": "Non Continental Transportation Prepaid",
+											"destination": "@attr(noncontinentalprepaid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1952967926,
+											"source": "BRAND NUMBER/NAME",
+											"destination": "@attr(brand)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -510580438,
+											"source": "Assembled Length(in inches)",
+											"destination": "@attr(assembledlength)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -223561622,
+											"source": "Assembled Weight(in pounds)",
+											"destination": "@attr(assembledweight)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127861430,
+											"source": "Disposal fee code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127861430,
+											"source": "Disposal Fee Code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1833921040,
+											"source": "WILL CALL RESTRICTED",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -524089530,
+											"source": "Will Call Restrict Code",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -794991254,
+											"source": "Width",
+											"destination": "@attr(shippingwidth)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1342526518,
+											"source": "ASSEMBLED HEIGHT(IN INCHES)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Direct Ship Restrict Code",
+											"destination": "@attr(directshiprestrict)",
+											"id": -819265793,
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1303438138,
+											"source": "DIRECT SHIP RESTRICTED",
+											"destination": "@attr(directshiprestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 194147800,
+											"source": "Continental Tranportation Prepaid",
+											"destination": "@attr(continentalprepaid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -475095062,
+											"source": "Size",
+											"destination": "@attr(skusize)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -622392600,
+											"source": "Sellable",
+											"destination": "@attr(sellableflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "Print/Pattern",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "PRINT/PATTERN",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1787602458,
+											"source": "Assembled Height(in inches)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1932597607,
+											"source": "Assembled Length(in inches)",
+											"destination": "@attr(assembledlength)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1291546394,
+											"source": "Assembled Weight(in pounds)",
+											"destination": "@attr(assembledweight)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -934134918,
+											"source": "Off-Site Date",
+											"destination": "@attr(enddate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1919929142,
+											"source": "On-Site Date",
+											"destination": "@attr(startdate)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -744868229,
+											"source": "Orderable",
+											"destination": "@attr(orderableflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1829137341,
+											"source": "Will Call Factory Ship",
+											"destination": "@attr(willcallfactoryshipind)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1190816732,
+											"source": "RMS Item Type",
+											"destination": "@attr(skuitemtype)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1693791245,
+											"source": "Secondary Description",
+											"destination": "@attr(secondarydesc)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -290283682,
+											"source": "Ticket Stock #",
+											"destination": "@attr(ticketstockno)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

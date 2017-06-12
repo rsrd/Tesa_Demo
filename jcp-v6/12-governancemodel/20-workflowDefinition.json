@@ -1,0 +1,1677 @@
+{
+  "metaInfo": {
+    "dataIndex": "entityModel",
+    "collectionName": "entityModels",
+    "responseObjectName": "response"
+  },
+  "entityModels": [
+    {
+      "id": "newProductSetup_workflowDefinition",
+      "name": "newProductSetup",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "New Product Setup"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.3"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "e4d9b1cb-1a58-468f-a0c0-af8f00383c5c"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "newSkusToSubmit"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "New SKUs to Submit"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    },
+                    {
+                      "value": "buyer"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Submit"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Submit"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Submit.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }                   
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "a6bbf347-97a2-49df-99b2-aba14ce2865f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "reviewAssortment"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Review Assortment"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "buyer"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Approve Assortment"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Approve Assortment"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "ApproveAssortment.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Request Info"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Request Info"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "RequestInfo.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Mandatory"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Reject"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Reject"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Reject.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Mandatory"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "c08e3340-c343-476c-8432-21ad2cd9e1a2"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "provideAdditionalInfo"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Provide Additional Info"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    },
+                    {
+                      "value": "buyer"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Resubmit"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Resubmit"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Resubmit.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "6e507ff4-e7ef-4ad6-87ae-4288d3a0cef2"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "rollupToLot"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Rollup To Lot"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "business"
+                    },                   
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "None"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "aa582e37-90f1-45b6-ac95-725cea087981"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "assignInternalInformation"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Assign Internal Information"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "5"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Approve.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Request Info"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Request Info"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "RequestInfo.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Mandatory"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Reject"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Reject"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Reject.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Mandatory"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "695bbbad-a137-4c86-9cbf-1af7c4eab001"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "rejectedSkus"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Rejected SKUs"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "6"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    },
+                    {
+                      "value": "buyer"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "None"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publishToRmsForIds"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish to RMS for IDs"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "7"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "waitingForRms"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Waiting for RMS"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "8"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "None"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "48adc483-564a-4f71-93c5-1a1b60822c4f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publish"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "9"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "UpdateProductWorkflow_workflowDefinition",
+      "name": "UpdateProductWorkflow",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "Update Product Workflow"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.1"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "4feccba9-977c-44a3-9dc1-d2d13ab44bbf"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "reviewSKU"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Review SKU"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "buyer"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Approve.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publish"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "productPresentationCreateWorkflow_workflowDefinition",
+      "name": "productPresentationCreateWorkflow",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "Product Presentation Create Workflow"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.1"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "enrichCopy"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Enrich Copy"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "copywriter"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "enrichWithDigitalAssets"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Enrich with Digital Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "assetEnrichment"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publish"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ensembleCreateWorkflow_workflowDefinition",
+      "name": "ensembleCreateWorkflow",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "Ensemble Create Workflow"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "V1.1"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "832fe1a7-2498-4528-b568-1d001f898bd5"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "enrichCopy"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Enrich Copy"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "copywriter"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "412bf4f3-cd79-4057-9c19-6e48cc0c711e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "enrichWithDigitalAssets"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Enrich with Digital Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "assetEnrichment"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Complete"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "236d51c8-4820-46f1-9609-bf451d85bc8f"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publish"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityData",
+		"collectionName": "entities",
+		"responseObjectName": "response"
+	},
+	"entities": [
+		{
+			"id": "kitlot",
+			"name": "Kit Lot",
+			"type": "lottype",
+			"domain": "thing",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Kit Lot"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "servicelot",
+			"name": "Service Lot",
+			"type": "lottype",
+			"domain": "thing",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Service Lot"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": "kitsku",
+			"name": "Kit SKU",
+			"type": "skutype",
+			"domain": "thing",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"values": [
+							{
+								"value": "Kit SKU"
+							}
+						]
+					}
+				}
+			}
+		}
+	]
+}
