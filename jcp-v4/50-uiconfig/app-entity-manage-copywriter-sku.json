@@ -415,7 +415,13 @@
 											"eventName": "action-releaseTask"
 										}
 									]
-								}]
+								}],
+                            "thumbnailConfig":{
+                                "relationshipName":"hasimages",
+                                "thumbnailIdentifier":"thumbnailid",
+                                "relationshipFilterAttributeName":"isPrimary",
+                                "relationshipFilterAttributeValue":true
+                            }
                         }
                     }
                 }]
