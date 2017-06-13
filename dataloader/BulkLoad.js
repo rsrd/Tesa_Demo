@@ -333,6 +333,8 @@ function getServiceName(dataIndex) {
         return "entitymodelservice";
     } else if (dataIndex == "config") {
         return "configurationservice";
+    } else if (dataIndex == "binaryObject") {
+        return "binaryobjectservice";
     } else {
         return "entityservice";
     }
