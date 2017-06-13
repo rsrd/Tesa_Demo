@@ -435,8 +435,9 @@
          "type": "entityDisplayModel",
          "domain": "generic",
          "properties": {
-            "defaultThumbnail": "/src/images/lot-thumbnail.svg"
-         },
+            "defaultThumbnailId": "lot_defaultThumbnail_imagerendition",
+            "defaultIconId": "lot_defaultIcon_imagerendition"
+        },
          "data": {
             "attributes": {
                "lifecyclestage": {
@@ -2596,7 +2597,8 @@
          "type": "entityDisplayModel",
          "domain": "generic",
          "properties":{
-             "defaultThumbnail": "/src/images/sku-thumbnail.svg"
+             "defaultThumbnailId": "sku_defaultThumbnail_imagerendition",
+             "defaultIconId": "sku_defaultIcon_imagerendition"
          },
          "data": {
             "attributes": {
