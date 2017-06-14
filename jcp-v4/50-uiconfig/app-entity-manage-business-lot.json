@@ -1055,6 +1055,11 @@
                                                     "subtitle": "headline",
                                                     "id": "id",
                                                     "fields": [
+                                                      {
+                                                        "label": "Is Primary",
+                                                        "name": "isprimary",
+                                                        "isRelationshipAttribute":true
+                                                      },
                                                         {
                                                             "label": "Image Size",
                                                             "name": "imagesize"
