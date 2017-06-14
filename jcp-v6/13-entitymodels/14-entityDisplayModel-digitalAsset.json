@@ -10,6 +10,10 @@
          "name": "image",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties": {
+            "defaultThumbnailId": "image_defaultThumbnail_imagerendition",
+            "defaultIconId": "image_defaultIcon_imagerendition"
+         },
          "data": {
             "attributes": {
                "about": {
@@ -1630,6 +1634,10 @@
          "name": "document",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties": {
+            "defaultThumbnailId": "document_defaultThumbnail_imagerendition",
+            "defaultIconId": "document_defaultIcon_imagerendition"
+        },
          "data": {
             "attributes": {
                "about": {
@@ -3250,6 +3258,10 @@
          "name": "video",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties": {
+            "defaultThumbnailId": "video_defaultThumbnail_imagerendition",
+            "defaultIconId": "video_defaultIcon_imagerendition"
+         },
          "data": {
             "attributes": {
                "about": {
@@ -4052,6 +4064,10 @@
          "name": "audio",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties": {
+            "defaultThumbnailId": "audio_defaultThumbnail_imagerendition",
+            "defaultIconId": "audio_defaultIcon_imagerendition"
+        },
          "data": {
             "attributes": {
                "about": {

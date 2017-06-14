@@ -434,6 +434,10 @@
          "name": "lot",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties": {
+            "defaultThumbnailId": "lot_defaultThumbnail_imagerendition",
+            "defaultIconId": "lot_defaultIcon_imagerendition"
+         },
          "data": {
             "attributes": {
                "lifecyclestage": {
@@ -2592,6 +2596,10 @@
          "name": "sku",
          "type": "entityDisplayModel",
          "domain": "generic",
+         "properties":{
+             "defaultThumbnailId": "sku_defaultThumbnail_imagerendition",
+             "defaultIconId": "sku_defaultIcon_imagerendition"
+         },
          "data": {
             "attributes": {
                "lifecyclestage": {
