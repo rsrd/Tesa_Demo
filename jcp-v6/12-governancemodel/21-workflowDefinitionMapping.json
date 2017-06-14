@@ -73,6 +73,26 @@
                     ]
                 } 
             }
+        },
+        {
+            "id": "image_workflowDefinitionMapping",
+            "name": "image",
+            "type": "workflowDefinitionMapping",
+            "data": {
+                "relationships": {
+                    "hasWorkflowsDefined": [
+                        {
+                            "id": "rel101",
+                            "direction": "both",
+                            "relationshipType": "association",
+                            "relTo": {
+                                "id": "newDitigalAsset_workflowDefinition",
+                                "type": "workflowDefinition"
+                            }
+                        }
+                    ]
+                } 
+            }
         }
     ]
 }
