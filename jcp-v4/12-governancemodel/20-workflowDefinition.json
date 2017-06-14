@@ -1672,6 +1672,405 @@
           }
         }
       }
-    }
+    },
+    {
+      "id": "newDitigalAsset_workflowDefinition",
+      "name": "newDigitalAsset",
+      "type": "workflowDefinition",
+      "data": {
+        "attributes": {
+          "workflowName": {
+            "values": [
+              {
+                "value": "New Digital Asset"
+              }
+            ]
+          },
+          "workflowVersion": {
+            "values": [
+              {
+                "value": "v1.0"
+              }
+            ]
+          },
+          "published": {
+            "values": [
+              {
+                "value": true
+              }
+            ]
+          },
+          "activities": {
+            "group": [
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "269390c9-8f60-4aa3-a7ac-1c5fe167bb8e"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "invalidAssets"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Invalid Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "1"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Approve"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Reject Asset"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Reject Asset"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Complete.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "8ad49989-82e8-4166-9ca0-1a1605e79491"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "linkAssets"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Link Assets"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "assetEnrichment"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "8fed044c-702b-4d9f-994b-eb22b95c95cc"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "publishAssetMetadata"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Publish Asset Metadata"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "3"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": []
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "activityGuid": {
+                  "values": [
+                    {
+                      "value": "8fed044c-702b-4d9f-994b-eb22b95c95cc"
+                    }
+                  ]
+                },
+                "activityName": {
+                  "values": [
+                    {
+                      "value": "rejectedAsset"
+                    }
+                  ]
+                },
+                "externalName": {
+                  "values": [
+                    {
+                      "value": "Rejected Asset"
+                    }
+                  ]
+                },
+                "sequence": {
+                  "values": [
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                "assignmentType": {
+                  "values": [
+                    {
+                      "value": "Queue"
+                    }
+                  ]
+                },
+                "allowedRoles": {
+                  "values": [
+                    {
+                      "value": "vendor"
+                    },
+                    {
+                      "value": "business"
+                    },
+                    {
+                      "value": "admin"
+                    }
+                  ]
+                },
+                "allowedUsers": {
+                  "values": []
+                },
+                "actions": {
+                  "group": [
+                    {
+                      "actionName": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionText": {
+                        "values": [
+                          {
+                            "value": "Done"
+                          }
+                        ]
+                      },
+                      "actionIcon": {
+                        "values": [
+                          {
+                            "value": "Done.png"
+                          }
+                        ]
+                      },
+                      "commentsMode": {
+                        "values": [
+                          {
+                            "value": "Optional"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }  
   ]
 }
