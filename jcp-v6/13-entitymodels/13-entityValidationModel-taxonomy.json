@@ -1,0 +1,38 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "classification_entityValidationModel",
+			"name": "classification",
+			"type": "entityValidationModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"properties": {
+							"isCollection": false,
+							"required": true
+						}
+					}
+				},
+				"relationships": {
+					"belongsto": [
+						{
+							"properties": {
+								"cardinality": [
+									{
+										"minimum": 1
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}
