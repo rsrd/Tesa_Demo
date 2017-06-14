@@ -22,7 +22,7 @@
 // 3. delay and delayBetweenModelObjects to add delay beween two RDF calls
 
 var toolConfig = {
-    "webUrl": "http://manage.qa1-us-east-1.riversand-dataplatform.com:8085",
+    "webUrl": "http://manage.qa3.riversand-dataplatform.com:8085",
     "templateVariables": {
         "rsconnectprofiles": {
             "ENVNAME": "qa1-us-east-1",
@@ -41,7 +41,7 @@ var toolConfig = {
 // 2. option = tenant-config - to load tenant-config only
 var quiteLoadConfig = {
     "enabled": true,
-    "folderName": "jcp-v4",
+    "folderName": "jcp-v6",
     "tenantId": "jcpenney",
     "option": "uiconfig"
 }
