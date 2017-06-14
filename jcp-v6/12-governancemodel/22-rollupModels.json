@@ -748,7 +748,28 @@
                         "properties": {
                             "strategy": "copyWhenEmpty"
                         }
+                    },
+                    "plannedonsitedate": {
+                        "properties": {
+                            "strategy": "copyWhenEmpty"
+                        }
                     }
+                },
+                "relationships": {
+                    "hasimages": [
+                        {
+                            "properties": {
+                                "externalName": "Images",
+                                "strategy": "copyWhenEmpty",
+                                "relationshipType": "association",
+                                "relatedEntityInfo": [
+                                    {
+                                        "relEntityType": "image"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             }
         },
