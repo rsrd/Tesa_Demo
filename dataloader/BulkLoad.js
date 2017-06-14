@@ -345,11 +345,22 @@ function getSelectedFolderNames(option) {
     var selectedFolders = [];
     switch (option.toLowerCase()) {
         case "all":
-            //selectedFolders.push("00-tenant-config", "01-model", "02-data", "03-config");
-            //selectedFolders.push("01-model", "02-data", "03-config");
             selectedFolders.push(
                 "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", 
                 "30-referencemodel", "31-referencedata", "50-uiconfig", "51-matchconfig", "61-rsconnectprofiles");
+            break;
+        case "allmodels":
+            selectedFolders.push(
+                "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel",
+                "30-referencemodel");
+            break;
+        case "contextsandmodel":
+            selectedFolders.push(
+                "20-contexts", "21-contextualmodel");
+            break;
+        case "referencedataandmodel":
+            selectedFolders.push(
+                "30-referencemodel", "31-referencedata");
             break;
         case "tenant-config":
             selectedFolders.push("00-tenant-config");
