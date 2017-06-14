@@ -1,0 +1,41 @@
+{
+	"metaInfo": {
+		"dataIndex": "entityModel",
+		"collectionName": "entityModels",
+		"responseObjectName": "response"
+	},
+	"entityModels": [
+		{
+			"id": "classification_entityManageModel",
+			"name": "classification",
+			"type": "entityManageModel",
+			"domain": "generic",
+			"data": {
+				"attributes": {
+					"externalName": {
+						"properties": {
+							"externalName": "External Name",
+							"groupName": "Basic",
+							"dataType": "string"
+						}
+					}
+				},
+				"relationships": {
+					"belongsto": [
+						{
+							"properties": {
+								"enternalName": "Belongs To",
+								"relationshipType": "aggregation",
+								"relatedEntityInfo": [
+									{
+										"relEntityType": "classification"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

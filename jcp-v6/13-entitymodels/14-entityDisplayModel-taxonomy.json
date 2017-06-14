@@ -1,0 +1,44 @@
+{
+   "metaInfo": {
+      "dataIndex": "entityModel",
+      "collectionName": "entityModels",
+      "responseObjectName": "response"
+   },
+   "entityModels": [
+      {
+         "id": "classification_entityDisplayModel",
+         "name": "classification",
+         "type": "entityDisplayModel",
+         "domain": "generic",
+         "properties":{
+             "defaultThumbnailId": "classification_defaultThumbnail_imagerendition",
+             "defaultIconId": "classification_defaultIcon_imagerendition"
+         },
+         "data": {
+            "attributes": {
+               "externalName": {
+                  "properties": {
+                     "displayType": "textbox",
+                     "displaySequence": "1"
+                  }
+               }
+            },
+            "relationships": {
+               "belongsto": [
+                  {
+                     "properties": {
+                        "externalName": "Belongs To",
+                        "relationshipType": "association",
+                        "relatedEntityInfo": [
+                           {
+                              "relEntityType": "classification"
+                           }
+                        ]
+                     }
+                  }
+               ]
+            }
+         }
+      }
+   ]
+}
