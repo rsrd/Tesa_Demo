@@ -623,27 +623,6 @@
 												}
 											}
 										}
-									},
-									{
-										"name": "assets",
-										"title": "Assets",
-										"enableDropdownMenu": true,
-										"menuProviderComponent": {
-											"name": "relationships-tab-menu-provider",
-											"path": "/src/elements/rock-relationship-split-screen/relationships-tab-menu-provider.html",
-											"properties": {
-												"domain":"digitalAsset"
-											}
-										},
-										"component": {
-											"name": "rock-asset-manage",
-											"path": "/src/elements/rock-asset-manage/rock-asset-manage.html",
-											"properties": {
-												"config-context": {
-													"relationshipTypeName": "Assets"
-												}
-											}
-										}
 									}
 								]
 							}
