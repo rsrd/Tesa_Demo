@@ -288,7 +288,7 @@
                                         "name": "uploadAssets",
                                         "icon": "pebble-xl-icons:uploadassets",
                                         "text": "Upload Assets",
-                                        "visible": true,
+                                        "visible": false,
                                         "dataRoute": "upload-assets",
                                         "contextData": {
                                             "itemContext": {
@@ -341,12 +341,6 @@
 									"title": "Entity Search & Refine",
 									"data_route": "entity-discovery",
 									"icon": "pebble-lg-icons:SearchDb"
-								},
-								{
-									"name": "asset-discovery",
-									"title": "Asset Search & Refine",
-									"data_route": "asset-discovery",
-									"icon": "pebble-md-icons:Advancesearch"
 								},
 								{
 									"name": "divider"
