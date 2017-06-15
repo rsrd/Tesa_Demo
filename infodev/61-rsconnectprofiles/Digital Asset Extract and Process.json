@@ -1,0 +1,69 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "digitalAssetEntity_extractAndProcess",
+			"name": "digitalAssetEntity_extractAndProcess",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "assetImportProcessService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "digitalAssetEntity_extractAndProcess",
+							"name": "digitalAssetEntity_extractAndProcess",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"s3BucketConnector": {
+									"regionName": "{{AWSREGIONNAME}}",
+									"bucketName": "rdp-media-assets-{{ENVNAME}}-{{TENANT}}",
+									"credentialsType": "{{AWSCREDENTIALSTYPE}}",
+									"fileType": "*"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "IMAGE",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 0,
+									"settings": {
+										"encoding": "utf8"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}

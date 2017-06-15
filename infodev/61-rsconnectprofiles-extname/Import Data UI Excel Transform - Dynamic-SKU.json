@@ -1,0 +1,432 @@
+{
+	"metaInfo": {
+		"dataIndex": "config",
+		"collectionName": "configObjects",
+		"responseObjectName": "response"
+	},
+	"configObjects": [
+		{
+			"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+			"name": "sku_Folder_Excel_Import_Transform_Dynamic",
+			"type": "COPProfile",
+			"data": {
+				"contexts": [
+					{
+						"context": {
+							"app": "RSConnect",
+							"service": "excelImportTransformService",
+							"list": "self"
+						},
+						"jsonData": {
+							"id": "sku_Folder_Excel_Import_Transform_Dynamic",
+							"name": "sku_Folder_Excel_Import_Transform_Dynamic",
+							"tenantId": "",
+							"profileType": "ENTITY_IMPORT",
+							"enabled": "true",
+							"inboundChannel": {
+								"isDataPersistent": "false",
+								"folderConnector": {
+									"sourceFolder": "",
+									"pattern": "*"
+								}
+							},
+							"outboundChannel": {
+								"isDataPersistent": "false",
+								"rdpConnector": {
+									"type": "RSJSON",
+									"version": "1.1"
+								}
+							},
+							"transform": {
+								"inboundFormat": {
+									"type": "EXCEL",
+									"version": "1.1",
+									"settings": {
+										"encoding": "utf8",
+										"headerRowNumber": 1,
+										"sheetName": "Sheet1",
+										"supportsCollection": "false"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"outboundFormat": {
+									"type": "RSJSON",
+									"version": "1.1",
+									"batchSize": 1,
+									"settings": {
+										"encoding": "utf8",
+										"supportsCollection": "true"
+									},
+									"includeFilter": [],
+									"excludeFilter": []
+								},
+								"mapping": {
+									"settings": {
+										"entityType": "@field(Type)",
+										"defaultEntityType": "sku",
+										"enableDynamicMapping": "true",
+										"source": "",
+										"allowNullValues": "false",
+										"clearMissingAttributes": "false",
+										"collectionSeparator": "||",
+										"strategies": [
+											{
+												"caseFormat": "LOWER",
+												"removeSpecialCharacters": "true",
+												"removeWhitespace": "true",
+												"trimLeadingNumbers": "false",
+												"trimTrailingNumbers": "false",
+												"isDefault": "false"
+											}
+										]
+									},
+									"contexts": [
+										{
+											"context": {
+												"classification": "@fieldExternalName(Classification)",
+												"taxonomy": "@fieldExternalName(Taxonomy)"
+											}
+										}
+									],
+									"fieldOverrides": [
+										{
+											"id": 1521906910,
+											"source": "PP SKU Swatches Rolledup Count",
+											"destination": "@attr(ppskuswatchesrolledupcount)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "SIZE",
+											"destination": "@attr(skusize)",
+											"id": -4175826,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WIDTH",
+											"destination": "@attr(shippingwidth)",
+											"id": 1013866857,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED HEIGHT(IN INCHES)",
+											"destination": "@attr(assembledheight)",
+											"id": 547170246,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED LENGTH(IN INCHES)",
+											"destination": "@attr(assembledlength)",
+											"id": 1121937477,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED WEIGHT(IN POUNDS)",
+											"destination": "@attr(assembledweight)",
+											"id": 51114182,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"id": 1754554345,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "BRAND NUMBER/NAME",
+											"destination": "@attr(brand)",
+											"id": -1830462089,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "CLASS/SUBCLASS",
+											"destination": "@attr(class)",
+											"id": -1560939168,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "CUSTOMER FACING: WARRANTY COVERAGE DESCRIPTION",
+											"destination": "@attr(warranty)",
+											"id": 1940273161,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "DEPT",
+											"destination": "@attr(subdivision)",
+											"id": 1454921578,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "DIRECT SHIP RESTRICTED",
+											"destination": "@attr(directshiprestrict)",
+											"id": 324747079,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Disposal fee code",
+											"destination": "@attr(disposalfee)",
+											"id": -363725479,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ECOMM SHORT DESC ATTR",
+											"destination": "@attr(shortdescription)",
+											"id": -1621262686,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ITEM DESCRIPTION",
+											"destination": "@attr(description)",
+											"id": -1998188256,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "ITEM SHORT DESC",
+											"destination": "@attr(shortdescription)",
+											"id": -407345523,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "RMS ITEM TYPE",
+											"destination": "@attr(skuitemtype)",
+											"id": 1509081584,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "V-DATA MODEL NUMBER",
+											"destination": "@attr(vdata)",
+											"id": -298900944,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WILL CALL RESTRICTED",
+											"destination": "@attr(willcallrestrict)",
+											"id": 958888032,
+											"entityType": "sku",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "WEIGHT (LB.)",
+											"destination": "@attr(weight)",
+											"id": -2114741250,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "VOLTAGE (VOLTS)",
+											"destination": "@attr(voltage)",
+											"id": -1424620686,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -220904672,
+											"source": "LOT NUM",
+											"destination": "@attr(lotgroup)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 951690282,
+											"source": "LOT ID",
+											"destination": "@attr(rmsitemid)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -182326934,
+											"source": "V-DATA MODEL NUMBER",
+											"destination": "@attr(vdata)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1952967926,
+											"source": "BRAND NUMBER/NAME",
+											"destination": "@attr(brand)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1127861430,
+											"source": "Disposal fee code",
+											"destination": "@attr(disposalfee)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1833921040,
+											"source": "WILL CALL RESTRICTED",
+											"destination": "@attr(willcallrestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -1342526518,
+											"source": "ASSEMBLED HEIGHT(IN INCHES)",
+											"destination": "@attr(assembledheight)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1303438138,
+											"source": "DIRECT SHIP RESTRICTED",
+											"destination": "@attr(directshiprestrict)",
+											"entityType": "lot",
+											"type": "string",
+											"collectionType": "collection",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "decimal",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "PRINT/PATTERN",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 1506837034,
+											"source": "PRINT/PATTERN",
+											"destination": "@attr(skuprintpattern)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 2059885408,
+											"source": "ASSEMBLED WIDTH(IN INCHES)",
+											"destination": "@attr(assembledwidth)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": 973652886,
+											"source": "Multi LOT PP Value",
+											"destination": "@attr(multilotppval)",
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"source": "Planned onsite date (mm/dd/yyyy)",
+											"destination": "@attr(plannedonsitedate)",
+											"id": -340150406,
+											"entityType": "sku",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										},
+										{
+											"id": -861367928,
+											"source": "Warranty",
+											"destination": "@attr(warrantyflag)",
+											"entityType": "lot",
+											"type": "string",
+											"required": true,
+											"enabled": true
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	]
+}
