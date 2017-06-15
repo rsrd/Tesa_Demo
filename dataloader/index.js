@@ -22,7 +22,7 @@ if (quiteModeEnabled) {
 
     console.log('Quite load config: ', JSON.stringify(config.quiteLoadConfig, null, 2));
 
-    bulkLoad.startLoadingData(quiteLoadConfig.folderName, quiteLoadConfig.option, quiteLoadConfig.tenantId, 'N');
+    bulkLoad.startLoadingData(quiteLoadConfig.folderName, quiteLoadConfig.loadOptions, quiteLoadConfig.tenantId, 'N');
 }
 else {
     console.log("Hi, there! let us start the load..."); ``
@@ -63,7 +63,11 @@ else {
             console.log("rsconnectprofiles");
             console.log("\n----------------------------------------------------------------------------\n");
             rl.question('3. What option you like:', (option) => {
-                bulkLoad.startLoadingData(folder, option, tenantId, 'N');
+                bulkLoad.startLoadingData(
+                    folder, 
+                    { "foldersToRun": [option], "fileNamesToRun": [], "fileNamesToExclude": []}, 
+                    tenantId, 
+                    'N');
                 rl.close();
             });
         });

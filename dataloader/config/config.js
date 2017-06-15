@@ -43,7 +43,13 @@ var quiteLoadConfig = {
     "enabled": true,
     "folderName": "jcp-v6",
     "tenantId": "jcpenney",
-    "option": "uiconfig"
+    "loadOptions": {
+        "foldersToRun": ["uiconfig"],
+        "fileNamesToRun": [
+        ],
+        "fileNamesToExclude": [
+        ]
+    }
 }
 
 module.exports = {

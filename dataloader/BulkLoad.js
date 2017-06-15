@@ -22,9 +22,9 @@ function getListOfDir(path) {
     return fs.readdirSync(path);
 }
 
-function startLoadingData(folder, option, tenant, flush) {
+function startLoadingData(folder, loadOptions, tenant, flush) {
 
-    var selectedFolders = getSelectedFolderNames(option);
+    var selectedFolders = getSelectedFolderNames(loadOptions);
     if (this.path && selectedFolders && selectedFolders.length) {
 
         var path = this.path + "" + folder + "/";
@@ -39,7 +39,7 @@ function startLoadingData(folder, option, tenant, flush) {
             fs.mkdirSync(tenantLogDir);
         }
 
-        deleteAndCreateIndices(tenant, option, flush).then(function (results) {
+        deleteAndCreateIndices(tenant, loadOptions, flush).then(function (results) {
             
             console.log("\nStarted loading data from : " + folder + " for tenant : " + tenant);
             
@@ -63,7 +63,20 @@ function startLoadingData(folder, option, tenant, flush) {
                         console.log("\n----------------------------- Logs for " + selectedFolder + " -----------------------------------\n");
                         if (files && files.length > 0) {
                             files.forEach(function (file) {
-                                if (file != ".DS_Store" && file != "tenantserviceconfig_template.json") {
+                                var load = true;
+                                if (loadOptions.fileNamesToRun && loadOptions.fileNamesToRun.length > 0) {
+                                    if (loadOptions.fileNamesToRun.indexOf(file) < 0) {
+                                        load = false;
+                                    }
+                                }
+
+                                if (loadOptions.fileNamesToExclude && loadOptions.fileNamesToExclude.length > 0) {
+                                    if (loadOptions.fileNamesToExclude.indexOf(file) >= 0) {
+                                        load = false;
+                                    }
+                                }
+
+                                if (load && file != ".DS_Store" && file != "tenantserviceconfig_template.json") {
                                     console.log("reading file: " + file);
                                     var fileData = fs.readFileSync(dir + file);
                                     var fileDataAsString = fileData.toString();
@@ -340,72 +353,75 @@ function getServiceName(dataIndex) {
     }
 }
 
-function getSelectedFolderNames(option) {
-
+function getSelectedFolderNames(loadOptions) {
+    var foldersToRun = loadOptions.foldersToRun;
     var selectedFolders = [];
-    switch (option.toLowerCase()) {
-        case "all":
-            selectedFolders.push(
-                "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel", 
-                "30-referencemodel", "31-referencedata", "50-uiconfig", "51-matchconfig", "61-rsconnectprofiles", "80-rsdamprofiles");
-            break;
-        case "allmodels":
-            selectedFolders.push(
-                "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel",
-                "30-referencemodel");
-            break;
-        case "contextsandmodel":
-            selectedFolders.push(
-                "20-contexts", "21-contextualmodel");
-            break;
-        case "referencedataandmodel":
-            selectedFolders.push(
-                "30-referencemodel", "31-referencedata");
-            break;
-        case "tenant-config":
-            selectedFolders.push("00-tenant-config");
-            break;
-        case "foundation":
-            selectedFolders.push("10-foundation");
-            break;
-        case "authorizationmodel":
-            selectedFolders.push("11-authorizationmodel");
-            break;
-        case "governancemodel":
-            selectedFolders.push("12-governancemodel");
-            break; 
-        case "entitymodels":
-            selectedFolders.push("13-entitymodels");
-            break; 
-        case "contexts":
-            selectedFolders.push("20-contexts");
-            break; 
-        case "contextualmodel":
-            selectedFolders.push("21-contextualmodel");
-            break; 
-        case "referencemodel":
-            selectedFolders.push("30-referencemodel");
-            break; 
-        case "referencedata":
-            selectedFolders.push("31-referencedata");
-            break; 
-        case "data":
-            selectedFolders.push("40-data");
-            break;
-        case "uiconfig":
-            selectedFolders.push("50-uiconfig");
-            break;
-        case "matchconfig":
-            selectedFolders.push("51-matchconfig");
-            break;
-        case "rsconnectprofiles":
-            selectedFolders.push("61-rsconnectprofiles");
-            break;
-        case "rsdamprofiles":
-            selectedFolders.push("80-rsdamprofiles");
-            break;
-    }
 
+    for(var folderToRun of foldersToRun) {
+        switch (folderToRun.toLowerCase()) {
+            case "all":
+                selectedFolders.push(
+                    "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel",
+                    "30-referencemodel", "31-referencedata", "50-uiconfig", "51-matchconfig", "61-rsconnectprofiles", "80-rsdamprofiles");
+                break;
+            case "allmodels":
+                selectedFolders.push(
+                    "10-foundation", "11-authorizationmodel", "12-governancemodel", "13-entitymodels", "20-contexts", "21-contextualmodel",
+                    "30-referencemodel");
+                break;
+            case "contextsandmodel":
+                selectedFolders.push(
+                    "20-contexts", "21-contextualmodel");
+                break;
+            case "referencedataandmodel":
+                selectedFolders.push(
+                    "30-referencemodel", "31-referencedata");
+                break;
+            case "tenant-config":
+                selectedFolders.push("00-tenant-config");
+                break;
+            case "foundation":
+                selectedFolders.push("10-foundation");
+                break;
+            case "authorizationmodel":
+                selectedFolders.push("11-authorizationmodel");
+                break;
+            case "governancemodel":
+                selectedFolders.push("12-governancemodel");
+                break;
+            case "entitymodels":
+                selectedFolders.push("13-entitymodels");
+                break;
+            case "contexts":
+                selectedFolders.push("20-contexts");
+                break;
+            case "contextualmodel":
+                selectedFolders.push("21-contextualmodel");
+                break;
+            case "referencemodel":
+                selectedFolders.push("30-referencemodel");
+                break;
+            case "referencedata":
+                selectedFolders.push("31-referencedata");
+                break;
+            case "data":
+                selectedFolders.push("40-data");
+                break;
+            case "uiconfig":
+                selectedFolders.push("50-uiconfig");
+                break;
+            case "matchconfig":
+                selectedFolders.push("51-matchconfig");
+                break;
+            case "rsconnectprofiles":
+                selectedFolders.push("61-rsconnectprofiles");
+                break;
+            case "rsdamprofiles":
+                selectedFolders.push("80-rsdamprofiles");
+                break;
+        }
+    }
+    
     return selectedFolders;
 }
 
